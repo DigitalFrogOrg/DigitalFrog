@@ -1,5 +1,4 @@
 import React from 'react'
-import images from '../../../public/images/images.js';
 import { GoMoon } from "react-icons/go";
 import { MdWbSunny } from "react-icons/md";
 import { VscCallOutgoing } from "react-icons/vsc";
@@ -25,7 +24,7 @@ function header() {
               </div>
             </div>
             <div className='col-sm-2'>
-              <img src={images.logo} alt='Logo' />
+              <img src='./images/black-Logo.png' alt='Logo' />
             </div>
             <div className='col-sm-5'>
                <div className='buttons'>

@@ -1,3 +1,11 @@
+:root {
+    --heading-color: #2C3E52;
+    --sub-heading-color: #0A0A0E;
+    --text-color: #6B6B6B;
+    --orange: #E84C3D;
+    --white: #ffffff;
+  }
+
 a{
     text-decoration: none!important;
 }
@@ -20,14 +28,14 @@ header  {
     font-size: 23px;
 }
 .navigation ul li a{
-    color: #0A0A0E;
+    color: var(--sub-heading-color);
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 1px;
 }
 button.whole-btn {
     background: transparent;
-    border: 1px solid #E84C3D;
+    border: 1px solid var(--orange);
     border-radius: 30px;
     padding: 10px 50px;
     font-size: 18px;
@@ -36,7 +44,7 @@ button.whole-btn {
 }
 
 button.whole-btn:hover {
-    background: #E84C3D;
+    background: var(--orange);
     color: white;
     transition: 0.5s all;
 }
@@ -46,9 +54,9 @@ button.whole-btn:hover {
     gap: 22px;
 }
 button.second-btn{
-    background: #E84C3D;
+    background: var(--orange);
     color: white;
-    border: 1px solid #E84C3D;
+    border: 1px solid var(--orange);
     border-radius: 40px;
     padding: 6px 50px;
     font-size: 18px;
@@ -88,4 +96,14 @@ button.second-btn i {
     position: absolute;
     left: 18px;
     top: 17px;
+}
+
+/* Footer-css */
+
+footer{
+    border-top: 1px solid #d9d9d94f;
+    padding-top: 70px;
+}
+.first-row {
+    padding: 0px 60px;
 }
