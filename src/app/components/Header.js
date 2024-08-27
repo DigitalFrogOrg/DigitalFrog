@@ -1,5 +1,10 @@
 import React from 'react'
 import images from '../../../public/images/images.js';
+import { GoMoon } from "react-icons/go";
+import { MdWbSunny } from "react-icons/md";
+import { VscCallOutgoing } from "react-icons/vsc";
+import { RxHamburgerMenu } from "react-icons/rx";
+
 
 function header() {
   return (
@@ -10,6 +15,7 @@ function header() {
             <div className='col-sm-5'>
               <div className='navigation'>
                 <ul>
+                  <li><i><RxHamburgerMenu /></i></li>
                   <li><a href='#'>Home</a></li>
                   <li><a href='#'>Services</a></li>
                   <li><a href='#'>Our Process</a></li>
@@ -24,8 +30,9 @@ function header() {
             <div className='col-sm-5'>
                <div className='buttons'>
                   <button type="button" class="whole-btn">Contact Us</button>
-                  <button type="button" class="second-btn"><span>Call Now</span> <br/> +1 310 388 6435 </button>
-                  <button type="button" class="dark-mode">ful</button>
+                  <button type="button" class="second-btn"><i><VscCallOutgoing /></i><span>Call Now</span> <br/> +1 310 388 6435 </button>
+                  <button type="button" class="dark-mode"><GoMoon /></button>
+                  <button type="button" class="light-mode"><MdWbSunny /></button>
                </div>
             </div>
           </div>

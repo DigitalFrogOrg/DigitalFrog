@@ -11,10 +11,13 @@ header  {
     list-style: none;
     padding: 0px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
     margin: 0px;
+}
+.navigation ul li i {
+    font-size: 23px;
 }
 .navigation ul li a{
     color: #0A0A0E;
@@ -22,8 +25,6 @@ header  {
     font-weight: 400;
     letter-spacing: 1px;
 }
-
-
 button.whole-btn {
     background: transparent;
     border: 1px solid #E84C3D;
@@ -55,8 +56,36 @@ button.second-btn{
     transition: 0.5s all;
     text-align: left;
     line-height: 21px;
+    position: relative;
 }
 button.second-btn span{
     font-size: 11px;
 }
 
+button.dark-mode {
+    background: #2C3E52;
+    border: none;
+    color: white;
+    width: 60px;
+    border-radius: 100%;
+    font-size: 26px;
+    padding: 0px 0px 3px;
+    height: 60px;
+}
+button.light-mode {
+    background: white;
+    border: none;
+    color: #2C3E52;
+    width: 60px;
+    border-radius: 100%;
+    font-size: 26px;
+    padding: 0px 0px 3px;
+    height: 60px;
+    display: none;
+}
+button.second-btn i {
+    font-size: 22px;
+    position: absolute;
+    left: 18px;
+    top: 17px;
+}
