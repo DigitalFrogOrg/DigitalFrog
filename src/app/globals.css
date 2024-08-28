@@ -2,6 +2,7 @@
   --heading-color: #2c3e52;
   --sub-heading-color: #0a0a0e;
   --text-color: #6b6b6b;
+  --second-text-color: #7D818B;
   --orange: #e84c3d;
   --white: #ffffff;
 }
@@ -402,4 +403,106 @@ ul.footer-info li a {
   background-color: var(--orange);
   height: 2px;
   border-radius: 5px;
+}
+
+
+/* homepage-future-sec */
+section.future-mobile {
+  text-align: center;
+  padding: 50px 0;
+  background-image: url(/images/futuresec-bg.png);
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.future-head{
+  text-align: center;
+}
+.future-head h2 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  color: var(--heading-color);
+}
+.future-head p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--second-text-color);
+  width: 70%;
+  margin: 10px auto 50px;
+}
+section.future-mobile .row {
+  margin-bottom: 40px;
+}
+.future-box {
+  border: 1px solid var(--heading-color);
+  padding: 45px;
+  border-radius: 30px;
+  text-align: left;
+}
+.future-box .future-img {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.future-box .future-img::before {
+  content: "";
+  position: absolute;
+  width: 42px;
+  background: #e84c3d;
+  height: 40px;
+  left: -45px;
+  top: 14px;
+}
+
+.future-box .future-img::after {
+  content: "";
+  position: absolute;
+  width: 89%;
+  background: #e84c3d;
+  height: 40px;
+  left: 82px;
+  right: -82px;
+  top: 14px;
+}
+.future-box img {
+  width: 70px;
+}
+.future-box h4 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.future-box p {
+  font-size: 17px;
+  font-weight: 300;
+  color: var(--second-text-color);
+}
+.future-box ul {
+  padding: 0px;
+  list-style: none;
+  margin: 0px;
+}
+.future-box ul li {
+  font-size: 17px;
+  color: #343434;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+button.whole-btn2 {
+  background: transparent;
+  border: 1px solid var(--orange);
+  border-radius: 30px;
+  padding: 15px 50px;
+  font-size: 18px;
+  font-weight: 400;
+  transition: 0.5s all;
+  text-align: center;
+}
+
+button.whole-btn2:hover {
+  background: var(--orange);
+  color: white;
+  transition: 0.5s all;
 }
