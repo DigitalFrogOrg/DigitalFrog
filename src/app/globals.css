@@ -114,6 +114,91 @@ footer {
 .first-row {
   padding: 0px 60px;
 }
+.first-row {
+    padding: 0px 60px;
+}
+
+ul.footer-info {
+    margin-bottom: 0px;
+    padding: 0px;
+    list-style-type: none;
+    margin-top: 30px;
+}
+
+ul.footer-info li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: var(--heading-color);
+}
+
+ul.footer-info li span {
+    width: 100px;
+    display: inline-block;
+}
+
+ul.footer-info li a {
+    color: var(--heading-color);
+}
+
+.footer-link h5 {
+    font-size: 20px;
+    color: var(--heading-color);
+    font-weight: 600;
+}
+
+.footer-link ul {
+    margin-bottom: 0px;
+    padding: 0px;
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.footer-link ul li {
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+.footer-link {
+    border-left: 1px solid #d9d9d98f;
+    padding-left: 110px;
+}
+.second-row h2 {
+    text-align: center;
+    font-size: 280px;
+    font-weight: 800;
+    margin: 40px 0 0;
+    line-height: 280px;
+    background: linear-gradient(to bottom, #ebebeb, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.copyright-sec {
+    padding: 30px 60px 20px;
+    border-top: 1px solid #d9d9d94f;
+}
+.copyright-sec p {
+    margin: 0px;
+    font-size: 17px;
+    color: var(--heading-color);
+}
+
+.copyright-sec 
+ ul.social-media {
+    text-align: center;
+    padding: 0px;
+    list-style-type: none;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.copyright-sec ul.social-media li {
+    font-size: 20px;
+    color: var(--heading-color);
+}
 
 /* Hotspot-css */
 
