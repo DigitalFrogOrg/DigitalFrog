@@ -66,7 +66,9 @@ function FutureSection() {
             </div>
           </div>
         </div>
-        <button type="button" class="whole-btn2">Show More</button>
+        <button type="button" className="whole-btn2">
+          Show More
+        </button>
       </div>
     </section>
   );

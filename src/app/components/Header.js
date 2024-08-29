@@ -28,10 +28,10 @@ function header() {
             </div>
             <div className='col-sm-5'>
                <div className='buttons'>
-                  <button type="button" class="whole-btn">Contact Us</button>
-                  <button type="button" class="second-btn"><i><VscCallOutgoing /></i><span>Call Now</span> <br/> +1 310 388 6435 </button>
-                  <button type="button" class="dark-mode"><GoMoon /></button>
-                  <button type="button" class="light-mode"><MdWbSunny /></button>
+                  <button type="button" className="whole-btn">Contact Us</button>
+                  <button type="button" className="second-btn"><i><VscCallOutgoing /></i><span>Call Now</span> <br/> +1 310 388 6435 </button>
+                  <button type="button" className="dark-mode"><GoMoon /></button>
+                  <button type="button" className="light-mode"><MdWbSunny /></button>
                </div>
             </div>
           </div>
