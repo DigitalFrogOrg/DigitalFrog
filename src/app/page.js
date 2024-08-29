@@ -7,6 +7,7 @@ import BudgetSection from "./components/BudgetSection";
 import FutureSection from "./components/FutureSection";
 import Evolution from "./components/Evolution";
 import MidMobileScroll from "./components/MidMobileScroll";
+import TestimonialSlider from "./components/TestimonialSlider";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <FutureSection />
       <MidMobileScroll />
       <Evolution />
+      <TestimonialSlider />
       <FaqsSection />
       <BudgetSection />
       <CtaSection />
