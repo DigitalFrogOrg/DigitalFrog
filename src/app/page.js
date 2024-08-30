@@ -8,6 +8,7 @@ import FutureSection from "./components/FutureSection";
 import Evolution from "./components/Evolution";
 import MidMobileScroll from "./components/MidMobileScroll";
 import TestimonialSlider from "./components/TestimonialSlider";
+import Trustees from "./components/Trustees";
 
 export default function Home() {
   return (
@@ -17,9 +18,10 @@ export default function Home() {
       <MidMobileScroll />
       <Evolution />
       <TestimonialSlider />
+      <Trustees />
       <FaqsSection />
       <BudgetSection />
-      <CtaSection />
+      {/* <CtaSection /> */}
       <HotspotSection />
       <Footer />
     </>
