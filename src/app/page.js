@@ -10,6 +10,8 @@ import TestimonialSlider from "./components/TestimonialSlider";
 import Trustees from "./components/Trustees";
 import TestimonialTabs from "./components/TestimonialTabs";
 import MobileExperiences from "./components/MobileExperiences";
+import CynergyStudio from "./components/CynergyStudio";
+import RecentNews from "./components/RecentNews";
 
 export default function Home() {
   return (
@@ -18,6 +20,8 @@ export default function Home() {
       <FutureSection />
       <MidMobileScroll />
       <Evolution />
+      <CynergyStudio />
+      <RecentNews/>
       <TestimonialSlider />
       <MobileExperiences />
       <TestimonialTabs />
