@@ -12,16 +12,70 @@ import TestimonialTabs from "./components/TestimonialTabs";
 import MobileExperiences from "./components/MobileExperiences";
 import CynergyStudio from "./components/CynergyStudio";
 import RecentNews from "./components/RecentNews";
+// Icons
+import { CiPlay1 } from "react-icons/ci";
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import MarqueeSlider from "./components/MarqueeSlider";
 
 export default function Home() {
   return (
     <>
       <Header />
+      <div className="main-banner">
+        <div className="container-fluid h-100">
+          <div className="row">
+            <div className="col-md-4 d-flex align-items-center justify-content-center">
+              <div className="">
+                <h1>We Design Apps That Connect...</h1>
+                <p>
+                  We specialize in delivering creative mobile app solutions that
+                  make a real difference. Our mission is to combine creativity
+                  and technology to deliver solutions that exceed expectations
+                  and drive success.
+                </p>
+                <button>Start Now</button>
+              </div>
+            </div>
+            <div className="mid-mobile-div col-md-4 d-flex align-items-center justify-content-center">
+              <img
+                src="/images/mid-banner-mobile.png"
+                class="mid-mobile-img"
+                alt="mid-banner-mobile"
+              />
+            </div>
+            <div className="col-md-4 d-flex align-items-center justify-content-center">
+              <div className="banner-numbers">
+                <h4>98%</h4>
+                <p>
+                  The Data and Information <br /> Displayed is accurate.
+                </p>
+                <h4>875k+</h4>
+                <p>
+                  Users who are satisfied with the
+                  <br /> interface and experience of the app.
+                </p>
+                <button>
+                  How It Works <CiPlay1 />
+                </button>
+                <div className="right-banner-div">
+                  <div className="banner-social">
+                    <FaLinkedin />
+                    <FaInstagram />
+                    <FaFacebook />
+                  </div>
+                  <span>We Are The Mobile Business Builders</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <MarqueeSlider />
       <FutureSection />
       <MidMobileScroll />
       <Evolution />
       <CynergyStudio />
-      <RecentNews/>
+      <RecentNews />
       <TestimonialSlider />
       <MobileExperiences />
       <TestimonialTabs />
