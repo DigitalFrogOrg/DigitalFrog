@@ -8,16 +8,26 @@ function footer() {
     <footer>
       <div className="container-fluid">
         <div className="first-row">
-          <a href="/">
-            <img src="./images/black-Logo.png" alt="Logo" />
-          </a>
+          <img src="./images/get-in-touch.png" alt="get-in-touch" className="get-in-touch" />
           <br />
           <br />
           <br />
           <br />
           <div className="row" style={{ alignItems: "center" }}>
-            <div className="col-sm-6">
-              <ul className="footer-info">
+            <div className="col-sm-3">
+              <p>
+                After digesting your idea/project, our professional mobile app
+                designers will build out a beautiful  Prototype to bring your
+                project to life with color and brand.
+              </p>
+              <a href="/" className="pt-4">
+                <img
+                  src="./images/black-Logo.png"
+                  alt="Logo"
+                  className="pt-4"
+                />
+              </a>
+              {/* <ul className="footer-info">
                 <li>
                   <span>For Sales :</span>{" "}
                   <b>
@@ -44,9 +54,9 @@ function footer() {
                     <a>20 Cooper Square, New York, NY 10003, USA</a>
                   </b>
                 </li>
-              </ul>
+              </ul> */}
             </div>
-            <div className="col-sm-2">
+            <div className="col-sm-3">
               <div className="footer-link">
                 <h5>Quick Links</h5>
                 <ul>
@@ -58,7 +68,7 @@ function footer() {
                 </ul>
               </div>
             </div>
-            <div className="col-sm-2">
+            <div className="col-sm-3">
               <div className="footer-link">
                 <h5>Our Service</h5>
                 <ul>
@@ -70,7 +80,7 @@ function footer() {
                 </ul>
               </div>
             </div>
-            <div className="col-sm-2">
+            <div className="col-sm-3">
               <div className="footer-link">
                 <h5>Our Locations</h5>
                 <ul>
@@ -90,7 +100,11 @@ function footer() {
             <div className="col-sm-5">
               <p>Copyright @ 2024. Cynergy Studio. All Right Reserved.</p>
             </div>
-            <div className="col-sm-2">
+            <div className="col-sm-2"></div>
+            <div className="col-sm-5 d-flex justify-content-end">
+              {/* <p className="text-end">
+                Designed & Developed By Cynergy Studios
+              </p> */}
               <ul className="social-media">
                 <li>
                   <FaFacebookF />
@@ -102,11 +116,6 @@ function footer() {
                   <FaLinkedinIn />
                 </li>
               </ul>
-            </div>
-            <div className="col-sm-5">
-              <p className="text-end">
-                Designed & Developed By Cynergy Studios
-              </p>
             </div>
           </div>
         </div>

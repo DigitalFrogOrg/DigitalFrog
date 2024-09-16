@@ -55,7 +55,7 @@ function TestimonialSlider() {
         <div className="row">
           <div
             className="col-md-4 orange-sec"
-            style={{ background: "#e84c3d" }}
+            style={{ background: "#dc5f00" }}
           >
             <IoArrowBackOutline onClick={handlePrev} />
             {testimonials.map((testimonial, index) => (

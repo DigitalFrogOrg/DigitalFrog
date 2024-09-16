@@ -1,49 +1,32 @@
 @font-face {
-  font-family: "MaximaNouva";
-  src: url("../../public/fonts/MaximaNouva-Thin.woff2") format("woff2"),
-    url("../../public/fonts/MaximaNouva-Thin.woff") format("woff");
+  font-family: "nobel";
+  src: url("/fonts/fonnts.com-nobel_extralight-webfont.woff2") format("woff2"),
+    url("/fonts/fonnts.com-nobel_extralightcondensed-webfont.woff")
+      format("woff");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "MaximaNouva";
-  src: url("../../public/fonts/MaximaNouva-Regular.woff2") format("woff2"),
-    url("../../public/fonts/MaximaNouva-Regular.woff") format("woff");
+  font-family: "nobel";
+  src: url("/fonts/fonnts.com-nobel_book-webfont.woff2") format("woff2"),
+    url("/fonts/fonnts.com-nobel_book-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "MaximaNouva";
-  src: url("../../public/fonts/MaximaNouva-SemiBold.woff2") format("woff2"),
-    url("../../public/fonts/MaximaNouva-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "MaximaNouva";
-  src: url("../../public/fonts/MaximaNouva-Bold.woff2") format("woff2"),
-    url("../../public/fonts/MaximaNouva-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "MaximaNouva";
-  src: url("../../public/fonts/MaximaNouva-ExtraBold.woff2") format("woff2"),
-    url("../../public/fonts/MaximaNouva-ExtraBold.woff") format("woff");
+  font-family: "nobel";
+  src: url("/fonts/fonnts.com-nobel_bold-webfont.woff2") format("woff2"),
+    url("/fonts/fonnts.com-nobel_bold-webfont.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 body {
-  font-family: "MaximaNouva" !important;
+  font-family: "nobel" !important;
   overflow-x: hidden;
 }
