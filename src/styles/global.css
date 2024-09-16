@@ -1,32 +1,39 @@
 @font-face {
-  font-family: "nobel";
-  src: url("/fonts/fonnts.com-nobel_extralight-webfont.woff2") format("woff2"),
-    url("/fonts/fonnts.com-nobel_extralightcondensed-webfont.woff")
-      format("woff");
+  font-family: "NobelUno-Regular";
+  src: url("../../public/fonts/NobelUno-Regular.woff2") format("woff2"),
+    url("../../public/fonts/NobelUno-Regular.woff") format("woff");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "nobel";
-  src: url("/fonts/fonnts.com-nobel_book-webfont.woff2") format("woff2"),
-    url("/fonts/fonnts.com-nobel_book-webfont.woff") format("woff");
+  font-family: "NobelUno-Medium";
+  src: url("../../public/fonts/NobelUno-Medium.woff2") format("woff2"),
+    url("../../public/fonts/NobelUno-Medium.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "nobel";
-  src: url("/fonts/fonnts.com-nobel_bold-webfont.woff2") format("woff2"),
-    url("/fonts/fonnts.com-nobel_bold-webfont.woff") format("woff");
+  font-family: "NobelUno-Bold";
+  src: url("../../public/fonts/NobelUno-Bold.woff2") format("woff2"),
+    url("../../public/fonts/NobelUno-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
+@font-face {
+  font-family: "NobelUno-SemiBold";
+  src: url("../../public/fonts/NobelUno-SemiBold.woff2") format("woff2"),
+    url("../../public/fonts/NobelUno-SemiBold.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 body {
-  font-family: "nobel" !important;
+  font-family: "NobelUno-Regular" !important;
   overflow-x: hidden;
 }

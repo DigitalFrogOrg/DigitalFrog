@@ -2039,7 +2039,7 @@ section.recent_news {
 
 .mobile-experiences {
   padding: 100px 50px !important;
-  background: url("/images/back-gradient.png"), top center / cover, no-repeat;
+  /* background: url("/images/back-gradient.png"), top center / cover, no-repeat; */
 }
 .mobile-experiences h2 {
   font-weight: 600;

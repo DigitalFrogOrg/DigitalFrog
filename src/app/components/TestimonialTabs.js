@@ -23,26 +23,7 @@ function TestimonialTabs() {
                 visuals. It requires careful consideration.
               </p>
             </div>
-            <div className="review mt-4">
-              <div className="avatar">
-                <div className="me-2">
-                  <img src="/images/review-avatar-2.png" alt="avatar" />
-                </div>
-                <div className="d-flex flex-column justify-content-center">
-                  <h5>Alex James</h5>
-                  <h6>Happy Client</h6>
-                </div>
-              </div>
-              <p>
-                Mobile app branding plays a vital role in the creation of the
-                app’s specifications in terms of tone, voice, design, icons, and
-                visuals. It requires careful consideration. Mobile app branding
-                plays a vital role in the creation of the app’s specifications
-                in terms of tone, voice, design, icons, and visuals. It requires
-                careful consideration. Mobile app branding plays a vital role in
-                the creation of the app’s specifications in terms of tone.
-              </p>
-            </div>
+           
           </div>
           <div className="col-md-4">
             <div className="review">
@@ -65,22 +46,7 @@ function TestimonialTabs() {
                 the creation of the app’s specifications in terms of tone.
               </p>
             </div>
-            <div className="review review-2 mt-4">
-              <div className="avatar">
-                <div className="me-2">
-                  <img src="/images/review-avatar-1.png" alt="avatar" />
-                </div>
-                <div className="d-flex flex-column justify-content-center">
-                  <h5>Alex James</h5>
-                  <h6>Happy Client</h6>
-                </div>
-              </div>
-              <p>
-                Mobile app branding plays a vital role in the creation of the
-                app’s specifications in terms of tone, voice, design, icons, and
-                visuals. It requires careful consideration.
-              </p>
-            </div>
+        
           </div>
           <div className="col-md-4">
             <div className="review review-2">
@@ -99,26 +65,7 @@ function TestimonialTabs() {
                 visuals. It requires careful consideration.
               </p>
             </div>
-            <div className="review mt-4">
-              <div className="avatar">
-                <div className="me-2">
-                  <img src="/images/review-avatar-2.png" alt="avatar" />
-                </div>
-                <div className="d-flex flex-column justify-content-center">
-                  <h5>Alex James</h5>
-                  <h6>Happy Client</h6>
-                </div>
-              </div>
-              <p>
-                Mobile app branding plays a vital role in the creation of the
-                app’s specifications in terms of tone, voice, design, icons, and
-                visuals. It requires careful consideration. Mobile app branding
-                plays a vital role in the creation of the app’s specifications
-                in terms of tone, voice, design, icons, and visuals. It requires
-                careful consideration. Mobile app branding plays a vital role in
-                the creation of the app’s specifications in terms of tone.
-              </p>
-            </div>
+       
           </div>
         </div>
       </div>
