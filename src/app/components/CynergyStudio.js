@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const settings = {
-  dots: true,
+  dots: false,
   infinite: true,
   speed: 500,
   slidesToShow: 3,
@@ -24,53 +24,63 @@ function CynergyStudio() {
           <div className="cynergy_studio_detail container">
             <div className="row">
               <div className="col-sm-6">
-                <div className="cs_detail_col">
-                  <img src="/images/product_lab.png" alt="Product Lab" />
+                <div className="cs_detail_01">
+                  {/* <img src="/images/product_lab.png" alt="Product Lab" /> */}
                   <h4>Product Lab</h4>
-                  <p>
+                  {/* <p>
                     Yellow is a development company that creates its own
                     products. It allows us to gain extensive knowledge about the
                     product life cycle and apply it to your solution.
-                  </p>
+                  </p> */}
+                  <button>Read More</button>
                 </div>
               </div>
               <div className="col-sm-6">
-                <div className="cs_detail_col">
-                  <img
+                <div className="cs_detail_02">
+                  {/* <img
                     src="/images/product_lab.png"
                     alt="Business Before Technology"
-                  />
-                  <h4>Business Before Technology</h4>
-                  <p>
+                  /> */}
+                  <h4>
+                    Business Before <br /> Technology
+                  </h4>
+                  {/* <p>
                     {" "}
                     Our software developers do not just code. We put your
                     business needs first to ensure that the future app or
                     website will fit your requirements and bring you profit.{" "}
-                  </p>
+                  </p> */}
+                  <button>Read More</button>
                 </div>
               </div>
             </div>
             <div className="row">
               <div className="col-sm-6">
-                <div className="cs_detail_col">
-                  <img src="/images/product_lab.png" alt="Security" />
-                  <h4>Security</h4>
-                  <p>
+                <div className="cs_detail_03">
+                  {/* <img src="/images/product_lab.png" alt="Security" /> */}
+                  <h4>
+                    Excellent Track <br /> Record
+                  </h4>
+                  {/* <p>
                     Before the start, we sign a non-disclosure agreement (NDA)
                     with you so there is no reason to worry about your data
                     safety.
-                  </p>
+                  </p> */}
+                  <button>Read More</button>
                 </div>
               </div>
               <div className="col-sm-6">
-                <div className="cs_detail_col">
-                  <img src="/images/product_lab.png" alt="Product Lab" />
-                  <h4>Excellent Track Record</h4>
-                  <p>
+                <div className="cs_detail_04">
+                  {/* <img src="/images/product_lab.png" alt="Product Lab" /> */}
+                  <h4>
+                    Security <br /> Apps
+                  </h4>
+                  {/* <p>
                     Our partners have already highly rated Yellow as a
                     development company so for now we have 5 stars on Clutch and
                     GoodFirms.{" "}
-                  </p>
+                  </p> */}
+                  <button>Read More</button>
                 </div>
               </div>
             </div>
