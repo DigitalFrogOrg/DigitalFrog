@@ -36,14 +36,50 @@ function BudgetSection() {
       <div className="budget-sec">
         <div className="container">
           <div className="row">
-            <div className="col-md-6 pe-5">
-              <h2>Ready to Build Something Incredible?</h2>
-              <p>
-                Once you submit your choices, we’ll get in touch to guide you on
-                the feasibility of your project and ensure it's doable within
-                your budget.
-              </p>
-              <div className="divider"></div>
+            <div className="col-md-6">
+              {/* <img
+                src="/images/SmartObject.png"
+                alt="SmartObject"
+                className="w-100 h-100"
+              /> */}
+              <h2>
+                Exploring Our App
+                <br /> Development Services?
+              </h2>
+              <h3 className="mt-3">
+                We respond promptly, typically within 30 minutes!
+              </h3>
+              <h4 className="mt-3">Share Your Project Details!</h4>
+              <div
+                className="mt-4 p-3 rounded"
+                style={{ backgroundColor: "#f7f7f7" }}
+              >
+                <ul>
+                  <li>
+                    We’ll hop on a call and hear out your idea, protected by our
+                    NDA.
+                  </li>
+                  <li>
+                    We’ll provide a free quote + our thoughts on the best
+                    approach for you.
+                  </li>
+                  <li>
+                    Even if we don’t work together, feel free to consider us a
+                    free technicalresource to bounce your thoughts/questions off
+                    of.
+                  </li>
+                </ul>
+              </div>
+              {/* <div className="divider"></div> */}
+              <br />
+              <em>
+                <strong>
+                  Alternatively, contact us via phone +123 456 7890 or email
+                  INFO@CYNERGYSTUDIOS.COM
+                </strong>
+              </em>
+            </div>
+            <div className="col-md-6 px-5">
               <form onSubmit={handleSubmit} className="projectForm">
                 <div className="row">
                   <div className="col-md-6">
@@ -131,13 +167,6 @@ function BudgetSection() {
                   Start Your Project
                 </button>
               </form>
-            </div>
-            <div className="col-md-6">
-              <img
-                src="/images/SmartObject.png"
-                alt="SmartObject"
-                className="w-100 h-100"
-              />
             </div>
           </div>
         </div>
