@@ -1,10 +1,17 @@
-import React from "react";
+"use client";
+import { usePathname } from "next/navigation";
 // import { GoMoon } from "react-icons/go";
 // import { MdWbSunny } from "react-icons/md";
 // import { VscCallOutgoing } from "react-icons/vsc";
 // import { RxHamburgerMenu } from "react-icons/rx";
 
 function header() {
+  const pathname = usePathname();
+
+  const isActive = (href) => {
+    return pathname === href ? "active" : "";
+  };
+
   return (
     <>
       <header>
@@ -19,7 +26,16 @@ function header() {
               <div className="col-md-6">
                 <div className="navigation">
                   <ul>
-                    {/* <li><i><RxHamburgerMenu /></i></li> */}
+                    <li>
+                      <a href="/" className={isActive("/")}>
+                        Home
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/about-us" className={isActive("/about-us")}>
+                        About Us
+                      </a>
+                    </li>
                     <li>
                       <div className="what-we-do-container">
                         <a href="#" className="what-we-do">
@@ -31,11 +47,22 @@ function header() {
                             <div className="row">
                               <div className="col-md-4"></div>
                               <div className="col-md-4 mid-mega-option">
-                                <a href="/app-development">
+                                <a
+                                  href="/app-development"
+                                  className={isActive("/app-development")}
+                                >
                                   Mobile App Development Services
                                 </a>
-                                <a href="/">Design Services</a>
-                                <a href="/">
+                                <a
+                                  href="/design-services"
+                                  className={isActive("/design-services")}
+                                >
+                                  Design Services
+                                </a>
+                                <a
+                                  href="/maintenance-services"
+                                  className={isActive("/maintenance-services")}
+                                >
                                   Maintenance & Consulting Services
                                 </a>
                               </div>
@@ -43,39 +70,94 @@ function header() {
                                 <div className="right-mega-menu">
                                   <ul>
                                     <li>
-                                      <a href="/">
+                                      <a
+                                        href="/android-app-development-services"
+                                        className={isActive(
+                                          "/android-app-development-services"
+                                        )}
+                                      >
                                         Android App Development Services
                                       </a>
                                     </li>
                                     <li>
-                                      <a href="/">
+                                      <a
+                                        href="/ios-app-development-services"
+                                        className={isActive(
+                                          "/ios-app-development-services"
+                                        )}
+                                      >
                                         iOS App Development Services
                                       </a>
                                     </li>
                                     <li>
-                                      <a href="/">
+                                      <a
+                                        href="/native-app-development-services"
+                                        className={isActive(
+                                          "/native-app-development-services"
+                                        )}
+                                      >
                                         Native App Development Services
                                       </a>
                                     </li>
                                     <li>
-                                      <a href="/">
+                                      <a
+                                        href="/web-app-development-services"
+                                        className={isActive(
+                                          "/web-app-development-services"
+                                        )}
+                                      >
                                         Web App Development Services
                                       </a>
                                     </li>
                                     <li>
-                                      <a href="/">PWA Development Services</a>
+                                      <a
+                                        href="/pwa-development-services"
+                                        className={isActive(
+                                          "/pwa-development-services"
+                                        )}
+                                      >
+                                        PWA Development Services
+                                      </a>
                                     </li>
                                     <li>
-                                      <a href="/">Mobile Game Development</a>
+                                      <a
+                                        href="/mobile-game-development"
+                                        className={isActive(
+                                          "/mobile-game-development"
+                                        )}
+                                      >
+                                        Mobile Game Development
+                                      </a>
                                     </li>
                                     <li>
-                                      <a href="/">Mobile App Development</a>
+                                      <a
+                                        href="/mobile-app-development"
+                                        className={isActive(
+                                          "/mobile-app-development"
+                                        )}
+                                      >
+                                        Mobile App Development
+                                      </a>
                                     </li>
                                     <li>
-                                      <a href="/">AI App Development</a>
+                                      <a
+                                        href="/ai-app-development"
+                                        className={isActive(
+                                          "/ai-app-development"
+                                        )}
+                                      >
+                                        AI App Development
+                                      </a>
                                     </li>
                                     <li>
-                                      <a href="/">No-Code/Low-Code</a>
+                                      <a
+                                        href="/no-code-low-code"
+                                        className={isActive(
+                                          "/no-code-low-code"
+                                        )}
+                                      >
+                                        No-Code/Low-Code
+                                      </a>
                                     </li>
                                   </ul>
                                 </div>
@@ -86,10 +168,20 @@ function header() {
                       </div>
                     </li>
                     <li>
-                      <a href="#">How We Do It </a>
+                      <a
+                        href="/how-we-do-it"
+                        className={isActive("/how-we-do-it")}
+                      >
+                        How We Do It
+                      </a>
                     </li>
                     <li>
-                      <a href="#">Achievements</a>
+                      <a
+                        href="/achievements"
+                        className={isActive("/achievements")}
+                      >
+                        Achievements
+                      </a>
                     </li>
                   </ul>
                 </div>

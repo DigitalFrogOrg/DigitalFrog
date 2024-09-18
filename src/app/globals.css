@@ -22,7 +22,7 @@ a {
 /* header-css */
 
 #header {
-  position: fixed;
+  position: fixed !important;
   z-index: 99;
   background: #fff;
   width: 100%;
@@ -104,6 +104,9 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.navigation .active {
+  color: var(--orange) !important;
 }
 .navigation ul {
   list-style: none;
@@ -294,7 +297,7 @@ ul.footer-info li a {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 150px 100px 250px 100px !important;
+  padding: 200px 100px 250px 100px !important;
   position: relative;
 }
 .main-banner h1 {
@@ -2318,4 +2321,108 @@ section.recent_news {
   background-color: #000;
   padding: 100px 0px 0px 0px;
   color: #fff;
+}
+
+/* About page css */
+.about-banner {
+  padding: 100px 70px 20px 70px;
+  margin: 0px 0px 50px 0px;
+  border-top: 1px solid #d4d4d4;
+}
+.about-banner h1 {
+  font-size: 60px;
+  font-weight: 600;
+  margin: 100px 0px 120px 0px;
+}
+.about-text {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.about-text h2 {
+  font-size: 112px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-left: -318px;
+}
+.about-text h2 span {
+  color: #fff;
+}
+.about-text p {
+  font-size: 17px;
+}
+
+/* how we do it css */
+.react-tabs__tab-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+.react-tabs__tab-list li {
+  list-style: none;
+}
+.react-tabs__tab-list {
+  margin: 0px;
+}
+.tab-pannell {
+  background-color: #fef4ed;
+  padding: 100px 150px;
+}
+.tab-pannell h2 {
+  font-size: 200px;
+  color: var(--orange);
+  font-weight: bolder;
+  text-align: center;
+}
+.tab-pannell h3 {
+  font-size: 40px;
+  font-weight: bolder;
+  color: var(--orange);
+}
+.tab-pannell h4 {
+  font-size: 40px;
+  font-weight: bolder;
+}
+.tab-pannell h5 {
+  font-size: 30px;
+  font-weight: bolder;
+}
+.tab-pannell h4 span {
+  color: var(--orange);
+}
+.react-tabs__tab {
+  font-size: 24px;
+  color: #a5a3a3;
+  cursor: pointer;
+  padding: 14px 14px;
+  border-radius: 18px 18px 0px 0px;
+}
+.react-tabs__tab:focus-visible {
+  outline: -webkit-focus-ring-color auto 0px !important;
+}
+.react-tabs__tab--selected {
+  color: #000;
+  background-color: #fef4ed;
+  padding: 14px 14px;
+  border-radius: 18px 18px 0px 0px;
+  border-top-width: 1px !important;
+  border-left-width: 1px !important;
+  border-right-width: 1px !important;
+  border-bottom-width: 0px !important;
+  border: solid #dc5f00;
+}
+.how-steps {
+  margin-top: 26px !important;
+  padding: 50px 0px 0px 50px;
+  border-top: 6px solid #dfdfdf;
+  position: relative;
+}
+.dotted {
+  position: absolute;
+  width: 50px !important;
+  height: 50px !important;
+  top: -28px;
+  left: -28px;
+  z-index: 99;
+  object-position: center;
+  object-fit: contain;
 }

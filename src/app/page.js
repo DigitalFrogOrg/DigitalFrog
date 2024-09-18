@@ -5,7 +5,7 @@ import FaqsSection from "./components/FaqsSection";
 import BudgetSection from "./components/BudgetSection";
 import FutureSection from "./components/FutureSection";
 import Evolution from "./components/Evolution";
-import MidMobileScroll from "./components/MidMobileScroll";
+// import MidMobileScroll from "./components/MidMobileScroll";
 import TestimonialSlider from "./components/TestimonialSlider";
 import Trustees from "./components/Trustees";
 import TestimonialTabs from "./components/TestimonialTabs";
@@ -13,9 +13,8 @@ import MobileExperiences from "./components/MobileExperiences";
 import CynergyStudio from "./components/CynergyStudio";
 import RecentNews from "./components/RecentNews";
 // Icons
-import { CiPlay1 } from "react-icons/ci";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
-import MarqueeSlider from "./components/MarqueeSlider";
+// import MarqueeSlider from "./components/MarqueeSlider";
 import { VideoSec } from "./components/VideoSec";
 import GrowthSec from "./components/GrowthSec";
 
