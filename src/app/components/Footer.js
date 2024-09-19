@@ -8,7 +8,11 @@ function footer() {
     <footer>
       <div className="container-fluid">
         <div className="first-row">
-          <img src="./images/get-in-touch.png" alt="get-in-touch" className="get-in-touch" />
+          <img
+            src="./images/get-in-touch.png"
+            alt="get-in-touch"
+            className="get-in-touch"
+          />
           <br />
           <br />
           <br />
@@ -60,11 +64,22 @@ function footer() {
               <div className="footer-link">
                 <h5>Quick Links</h5>
                 <ul>
-                  <li>Home</li>
-                  <li>About Us</li>
-                  <li>Services</li>
-                  <li>Our Process</li>
-                  <li>Portfolio</li>
+                  <li>
+                    <a href="/">Home</a>
+                  </li>
+                  <li>
+                    <a href="/about-us">About Us</a>
+                  </li>
+                  <li>
+                    <a href="/terms-condition">Terms & Conditions</a>
+                  </li>
+                  <li>
+                    <a href="/privacy-policy">Privacy Policy</a>
+                  </li>
+
+                  <li>
+                    <a href="/faqs">Faqs</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -72,7 +87,9 @@ function footer() {
               <div className="footer-link">
                 <h5>Our Service</h5>
                 <ul>
-                  <li>Mobile App Development</li>
+                  <li>
+                    <a href="/app-development">Mobile App Development</a>
+                  </li>
                   <li>Android App Development</li>
                   <li>IOS App Development</li>
                   <li>App Consulting</li>
@@ -98,7 +115,10 @@ function footer() {
         <div className="copyright-sec">
           <div className="row" style={{ alignItems: "center" }}>
             <div className="col-sm-5">
-              <p>Copyright @ 2024. Cynergy Studio. All Right Reserved.</p>
+              <p>
+                Copyright @ 2024. <strong> Cynergy Studio</strong>. All Right
+                Reserved.
+              </p>
             </div>
             <div className="col-sm-2"></div>
             <div className="col-sm-5 d-flex justify-content-end">

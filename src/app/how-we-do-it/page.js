@@ -3,8 +3,40 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Tabs, TabList, TabPanel, Tab } from "react-tabs";
+import { useEffect, useRef } from "react";
 
 function page() {
+  const sectionsRef = useRef([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-active");
+          } else {
+            entry.target.classList.remove("is-active");
+          }
+        });
+      },
+      { threshold: 0.7 }
+    );
+
+    sectionsRef.current.forEach((section) => {
+      if (section) {
+        observer.observe(section);
+      }
+    });
+
+    return () => {
+      sectionsRef.current.forEach((section) => {
+        if (section) {
+          observer.unobserve(section);
+        }
+      });
+    };
+  }, []);
+
   return (
     <>
       <Header />
@@ -32,10 +64,13 @@ function page() {
               <div className="tab-pannell rounded">
                 <TabPanel>
                   <div className="row">
-                    <div className="col-md-2">
+                    <div
+                      className="col-md-3 sticky-number"
+                      ref={(el) => (sectionsRef.current[0] = el)}
+                    >
                       <h2>01</h2>
                     </div>
-                    <div className="col-md-10">
+                    <div className="col-md-9">
                       <h3>PHASE A - R&D</h3>
                       <div className="row how-steps">
                         <img
@@ -89,10 +124,13 @@ function page() {
                     </div>
                   </div>
                   <div className="row mt-5">
-                    <div className="col-md-2">
+                    <div
+                      className="col-md-3 sticky-number"
+                      ref={(el) => (sectionsRef.current[1] = el)}
+                    >
                       <h2>02</h2>
                     </div>
-                    <div className="col-md-10">
+                    <div className="col-md-9">
                       <div className="row how-steps">
                         <img
                           src="./images/dotted.png"
@@ -131,10 +169,13 @@ function page() {
                     </div>
                   </div>
                   <div className="row mt-5">
-                    <div className="col-md-2">
+                    <div
+                      className="col-md-3 sticky-number"
+                      ref={(el) => (sectionsRef.current[2] = el)}
+                    >
                       <h2>03</h2>
                     </div>
-                    <div className="col-md-10">
+                    <div className="col-md-9">
                       <div className="row how-steps">
                         <img
                           src="./images/dotted.png"
