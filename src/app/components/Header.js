@@ -175,14 +175,14 @@ function header() {
                         How We Do It
                       </a>
                     </li>
-                    <li>
+                    {/* <li>
                       <a
                         href="/achievements"
                         className={isActive("/achievements")}
                       >
                         Achievements
                       </a>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>
