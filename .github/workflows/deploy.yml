@@ -30,16 +30,5 @@ jobs:
       run: |
         echo "$SSH_KEY" > key.pem
         chmod 600 key.pem
-        
-        # Debugging output
-        echo "Username: $SERVER_USERNAME"
-        echo "Host: $SERVER_HOST"
-
-        # Check if HOST is valid
-        if [[ -z "$SERVER_HOST" ]]; then
-            echo "Error: SERVER_HOST is not set."
-            exit 1
-        fi
-
-        rsync -avz -e "ssh -i key.pem -o StrictHostKeyChecking=no" --exclude=.git ./ $SERVER_USERNAME@$SERVER_HOST:$DESTINATION
+        rsync -avz -e "ssh -i key.pem -o StrictHostKeyChecking=no" --exclude=node_modules --exclude=.git ./ $SERVER_USERNAME@$SERVER_HOST:$DESTINATION
         ssh -i key.pem -o StrictHostKeyChecking=no $SERVER_USERNAME@$SERVER_HOST "pm2 restart 0"
