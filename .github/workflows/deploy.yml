@@ -18,8 +18,9 @@ jobs:
       with:
         node-version: '20'
 
-    #- name: Install dependencies
-     # run: npm install --force
+    # - name: Install dependencies
+    #   run: npm install --force
+
     - name: Deploy to server
       env:
         SERVER_HOST: ${{ secrets.SERVER_HOST }}
@@ -29,5 +30,5 @@ jobs:
       run: |
         echo "$SSH_KEY" > key.pem
         chmod 600 key.pem
-      #  rsync -avz -e "ssh -i key.pem -o StrictHostKeyChecking=no" --exclude=node_modules --exclude=.git ./ $SERVER_USERNAME@$SERVER_HOST:$DESTINATION
+        # rsync -avz -e "ssh -i key.pem -o StrictHostKeyChecking=no" --exclude=node_modules --exclude=.git ./ $SERVER_USERNAME@$SERVER_HOST:$DESTINATION
         ssh -i key.pem -o StrictHostKeyChecking=no $SERVER_USERNAME@$SERVER_HOST "cd /var/www/html/CynergyStudio && npm i --force && pm2 restart 0"
