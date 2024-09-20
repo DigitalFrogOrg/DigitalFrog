@@ -31,4 +31,4 @@ jobs:
         echo "$SSH_KEY" > key.pem
         chmod 600 key.pem
         # rsync -avz -e "ssh -i key.pem -o StrictHostKeyChecking=no" --exclude=node_modules --exclude=.git ./ $SERVER_USERNAME@$SERVER_HOST:$DESTINATION
-        ssh -i key.pem -o StrictHostKeyChecking=no $SERVER_USERNAME@$SERVER_HOST "cd /var/www/html/CynergyStudio && npm i --force && pm2 restart 0"
+        ssh -i key.pem -o StrictHostKeyChecking=no $SERVER_USERNAME@$SERVER_HOST "cd /var/www/html/CynergyStudio && /root/.nvm/versions/node/v20.17.0/bin/npm i --force && pm2 restart 0"
