@@ -21,9 +21,6 @@ jobs:
     - name: Install dependencies
       run: npm install --force
 
-    - name: Build project
-      run: npm run build
-
     - name: Deploy to server
       env:
         HOST: ${{ secrets.SERVER_HOST }}
@@ -33,4 +30,5 @@ jobs:
       run: |
         echo "$SSH_KEY" > key.pem
         chmod 600 key.pem
+        rsync -avz -e "ssh -i key.pem -o StrictHostKeyChecking=no" --exclude=.git ./ $SERVER_USERNAME@$SERVER_HOST:$DESTINATION
         ssh -i key.pem -o StrictHostKeyChecking=no $SERVER_USERNAME@$SERVER_HOST "pm2 restart 0"
