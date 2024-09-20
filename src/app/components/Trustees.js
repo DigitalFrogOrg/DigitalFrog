@@ -13,7 +13,7 @@ function Trustees() {
       <h2>Trusted Customers and Partners</h2>
 
       {/* Tab Navigation */}
-      <ul className="nav justify-content-center">
+      {/* <ul className="nav justify-content-center">
         <li className="nav-item">
           <button
             className={`nav-link ${activeTab === 1 ? "active" : ""}`}
@@ -38,7 +38,7 @@ function Trustees() {
             Technologies
           </button>
         </li>
-      </ul>
+      </ul> */}
 
       {/* Tab Content */}
       <div className="tab-content mt-4">

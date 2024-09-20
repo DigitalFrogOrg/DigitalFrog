@@ -1,5 +1,6 @@
 "use client";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 // import { GoMoon } from "react-icons/go";
 // import { MdWbSunny } from "react-icons/md";
 // import { VscCallOutgoing } from "react-icons/vsc";
@@ -11,7 +12,7 @@ function header() {
   const isActive = (href) => {
     return pathname === href ? "active" : "";
   };
-
+  const [activeTab, setActiveTab] = useState(false);
   return (
     <>
       <header>
@@ -45,11 +46,12 @@ function header() {
                         <div className="mega_menu">
                           <div className="container-fluid">
                             <div className="row">
-                              <div className="col-md-4"></div>
-                              <div className="col-md-4 mid-mega-option">
+                              <div className="col-md-1"></div>
+                              <div className="col-md-6 mid-mega-option">
                                 <a
-                                  href="/app-development"
+                                  href="#"
                                   className={isActive("/app-development")}
+                                  onClick={() => setActiveTab(true)}
                                 >
                                   Mobile App Development Services
                                 </a>
@@ -66,12 +68,13 @@ function header() {
                                   Maintenance & Consulting Services
                                 </a>
                               </div>
-                              <div className="col-md-4">
+                              {activeTab ? 
+                              <div className="col-md-5">
                                 <div className="right-mega-menu">
                                   <ul>
                                     <li>
                                       <a
-                                        href="/android-app-development-services"
+                                        href="/app-development"
                                         className={isActive(
                                           "/android-app-development-services"
                                         )}
@@ -162,6 +165,7 @@ function header() {
                                   </ul>
                                 </div>
                               </div>
+                              : null}
                             </div>
                           </div>
                         </div>

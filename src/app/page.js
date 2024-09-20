@@ -15,10 +15,11 @@ import RecentNews from "./components/RecentNews";
 // Icons
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 // import MarqueeSlider from "./components/MarqueeSlider";
-import { VideoSec } from "./components/VideoSec";
+import CustomVideoPlayer from "./components/CustomVideoPlayer";
 import GrowthSec from "./components/GrowthSec";
 
 export default function Home() {
+  const VideoLink = "/path/Cynergy-video.mp4"
   return (
     <>
       <Header />
@@ -74,7 +75,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <VideoSec />
+      <CustomVideoPlayer videoSrc={VideoLink}/>
       <GrowthSec />
       {/* <MarqueeSlider /> */}
       <FutureSection />

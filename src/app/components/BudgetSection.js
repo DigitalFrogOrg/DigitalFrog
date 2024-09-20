@@ -42,14 +42,18 @@ function BudgetSection() {
                 alt="SmartObject"
                 className="w-100 h-100"
               /> */}
-              <h2>
+              <h2 style={{fontFamily:"NobelUno-Bold !important"}}>
                 Exploring Our App
                 <br /> Development Services?
               </h2>
               <h3 className="mt-3">
+                         <img
+                src="/images/clock_icon.png"
+                alt="SmartObject"
+                className="Clock-style"
+              />
                 We respond promptly, typically within 30 minutes!
               </h3>
-              <h4 className="mt-3">Share Your Project Details!</h4>
               <div
                 className="mt-4 p-3 rounded"
                 style={{ backgroundColor: "#f7f7f7" }}
@@ -120,7 +124,7 @@ function BudgetSection() {
                   </select>
                 </div>
 
-                <div className="form-group mt-3">
+                {/* <div className="form-group mt-3">
                   <label className="budgetLabel">Budget Range</label>
                   <input
                     type="range"
@@ -145,7 +149,7 @@ function BudgetSection() {
                     </span>
                     <span>500,000 $</span>
                   </div>
-                </div>
+                </div> */}
 
                 <div className="form-group mt-3">
                   <select
@@ -165,6 +169,9 @@ function BudgetSection() {
 
                 <button type="submit" className="btn mt-4">
                   Start Your Project
+                </button>
+                <button type="submit" className="btn m-4 file-btn">
+                <img src="./images/file-upload.png"  style={{width:25,height:25}}/>
                 </button>
               </form>
             </div>
