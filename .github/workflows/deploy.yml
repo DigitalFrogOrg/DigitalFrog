@@ -3,7 +3,7 @@ name: Deploy to Server
 on:
   push:
     branches:
-      - main # is branch pe jab push hoga tab deploy karega
+      - main # Deploy when there's a push to the main branch
 
 jobs:
   deploy:
@@ -23,12 +23,23 @@ jobs:
 
     - name: Deploy to server
       env:
-        HOST: ${{ secrets.SERVER_HOST }}
-        USERNAME: ${{ secrets.SERVER_USERNAME }}
+        SERVER_HOST: ${{ secrets.SERVER_HOST }}
+        SERVER_USERNAME: ${{ secrets.SERVER_USERNAME }}
         SSH_KEY: ${{ secrets.SERVER_SSH_KEY }}
         DESTINATION: ${{ secrets.DESTINATION_PATH }}
       run: |
         echo "$SSH_KEY" > key.pem
         chmod 600 key.pem
+        
+        # Debugging output
+        echo "Username: $SERVER_USERNAME"
+        echo "Host: $SERVER_HOST"
+
+        # Check if HOST is valid
+        if [[ -z "$SERVER_HOST" ]]; then
+            echo "Error: SERVER_HOST is not set."
+            exit 1
+        fi
+
         rsync -avz -e "ssh -i key.pem -o StrictHostKeyChecking=no" --exclude=.git ./ $SERVER_USERNAME@$SERVER_HOST:$DESTINATION
         ssh -i key.pem -o StrictHostKeyChecking=no $SERVER_USERNAME@$SERVER_HOST "pm2 restart 0"
