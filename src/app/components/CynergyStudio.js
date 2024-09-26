@@ -85,7 +85,7 @@ function CynergyStudio() {
               </div>
             </div>
           </div>
-          <div className="row">
+          {/* <div className="row">
             <div className="col-md-12 studio-slider">
               <Slider {...settings}>
                 <div className="d-flex align-items-center justify-content-center">
@@ -99,7 +99,7 @@ function CynergyStudio() {
                 </div>
               </Slider>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

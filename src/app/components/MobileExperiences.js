@@ -18,7 +18,7 @@ function MobileExperiences() {
           <div className="col-md-1"></div>
           <div className="col-md-2 text-center">
             <img
-              src="/images/Healthcare.png"
+              src="/images/firstimg.png"
               alt="Healthcare"
               className="w-100"
             />
@@ -26,26 +26,13 @@ function MobileExperiences() {
           </div>
           <div className="col-md-2 text-center">
             <img
-              src="/images/Ecommerce.png"
+              src="/images/imageTwo.png"
               alt="Ecommerce"
               className="w-100"
             />
             <h4 className="my-4">Ecommerce</h4>
           </div>
-          <div className="col-md-2 text-center">
-            <img
-              src="/images/Agriculture.png"
-              alt="Agriculture"
-              className="w-100"
-            />
-            <h4 className="my-4">Agriculture</h4>
-            <button>Show More</button>
-          </div>
-          <div className="col-md-2 text-center">
-            <img src="/images/Food.png" alt="Food" className="w-100" />
-            <h4 className="my-4">Food</h4>
-          </div>
-          <div className="col-md-2 text-center">
+            <div className="col-md-2 text-center">
             <img
               src="/images/Logistics.png"
               alt="Logistics"
@@ -53,6 +40,20 @@ function MobileExperiences() {
             />
             <h4 className="my-4">Logistics</h4>
           </div>
+          <div className="col-md-2 text-center">
+            <img src="/images/imageThree.png" alt="Food" className="w-100" />
+            <h4 className="my-4">Food</h4>
+          </div>
+   
+          <div className="col-md-2 text-center">
+            <img
+              src="/images/imageFour.png"
+              alt="Agriculture"
+              className="w-100"
+            />
+            <h4 className="my-4">Agriculture</h4>
+          </div>
+          <button>Show More</button>
 
           <div className="col-md-1"></div>
         </div>

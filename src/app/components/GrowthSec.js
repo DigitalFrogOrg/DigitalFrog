@@ -11,7 +11,7 @@ function GrowthSec() {
             <p>Of Clients Approval Initial Design</p>
           </div>
           <div className="col-md-2 border-end">
-            <h4>20+</h4>
+            <h4>10+</h4>
             <p>Million users of app we made</p>
           </div>
           <div className="col-md-2 border-end">

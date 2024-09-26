@@ -19,7 +19,7 @@ import CustomVideoPlayer from "./components/CustomVideoPlayer";
 import GrowthSec from "./components/GrowthSec";
 
 export default function Home() {
-  const VideoLink = "/path/Cynergy-video.mp4"
+  const VideoLink = "/path/Cynergy-Showreel-Final.mp4"
   return (
     <>
       <Header />

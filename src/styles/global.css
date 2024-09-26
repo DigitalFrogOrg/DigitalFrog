@@ -33,6 +33,14 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "NobelUno-Light";
+  src: url("../../public/fonts/NobelUno-Light.woff2") format("woff2"),
+    url("../../public/fonts/NobelUno-Light.woff2") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
 body {
   font-family: "NobelUno-Medium" !important;
   overflow-x: hidden;

@@ -10,32 +10,32 @@ function RecentNews() {
             <div className='row'>
                 <div className='col-sm-4'>
                     <div className='blog_col'>
-                        <img src='/images/blog01.png' alt='Blog 01' className='img-fluid'/>
+                        <img src='/images/recent2.png' alt='Blog 01' className='img-fluid'/>
                         <span className='date'>28 / Aug / 2024</span>
                         <h4>How To Develop an App For Apple Vision Pro</h4>
-                        <p>Yellow is a development company that creates its own products. It allows us to gain extensive knowledge about the product life cycle and apply it to your solution.</p>
-                        <button type='button' className='blog-btn'>#Development</button>
+                        <p>Delve into the Apple Vision Pro app development with us and unleash...</p>
+                        <button type='button' className='blog-btn'>#softwaredevelopment</button>
                     </div>
                 </div>
                 <div className='col-sm-4'>
                     <div className='blog_col'>
                         <div className='blog_col'>
-                            <img src='/images/blog02.png' alt='Blog 02' className='img-fluid'/>
+                            <img src='/images/recentOne.png' alt='Blog 02' className='img-fluid'/>
                             <span className='date'>28 / Aug / 2024</span>
-                            <h4>How To Develop an App For Apple Vision Pro</h4>
-                            <p>Yellow is a development company that creates its own products. It allows us to gain extensive knowledge about the product life cycle and apply it to your solution.</p>
-                            <button type='button' className='blog-btn'>#Development</button>
+                            <h4>AI Technology In Education Industry: Detailed Article</h4>
+                            <p>Forget outdated classrooms! AI is revolutionizing education, creati...</p>
+                            <button type='button' className='blog-btn'>#softwaredevelopment</button>
                         </div>
                     </div>
                 </div>
                 <div className='col-sm-4'>
                     <div className='blog_col'>
                         <div className='blog_col'>
-                            <img src='/images/blog03.png' alt='Blog 03' className='img-fluid'/>
+                            <img src='/images/recent3.png' alt='Blog 03' className='img-fluid'/>
                             <span className='date'>28 / Aug / 2024</span>
                             <h4>How to Integrate ChatGPT into Your Existing Software</h4>
-                            <p>Yellow is a development company that creates its own products. It allows us to gain extensive knowledge about the product life cycle and apply it to your solution.</p>
-                            <button type='button' className='blog-btn'>#Development</button>
+                            <p>Discover the process of incorporating ChatGPT into your current sof...</p>
+                            <button type='button' className='blog-btn'>#softwarechat</button>
                         </div>
                     </div>
                 </div>

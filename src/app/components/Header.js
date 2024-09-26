@@ -32,11 +32,11 @@ function header() {
                         Home
                       </a>
                     </li>
-                    <li>
+                    {/* <li>
                       <a href="/about-us" className={isActive("/about-us")}>
                         About Us
                       </a>
-                    </li>
+                    </li> */}
                     <li>
                       <div className="what-we-do-container">
                         <a href="#" className="what-we-do">
@@ -194,9 +194,9 @@ function header() {
               <div className="col-md-3">
                 <div className="buttons">
                   {/* <button type="button" className="whole-btn">Contact Us</button> */}
-                  <button type="button" className="dark-mode">
+                  {/* <button type="button" className="dark-mode">
                     <img src="./images/night-mode.svg" />
-                  </button>
+                  </button> */}
                   <button type="button" className="second-btn">
                     Contact Us
                   </button>

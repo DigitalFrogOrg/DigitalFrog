@@ -20,7 +20,7 @@ function Evolution() {
                     <div className="dot"></div>
                   </div>
                   <img
-                    src="/images/specifications.png"
+                    src="/images/clipboard.png"
                     alt="Specifications & Planning"
                   />
                   <h3>Specifications & Planning</h3>
@@ -37,7 +37,12 @@ function Evolution() {
                     </li>
                   </ul>
                   <button type="button" className="whole-btn2">
-                    Show More
+                  <img
+                    src="/images/linkbtn.png"
+                    alt="Specifications & Planning"
+                    className="btn-link"
+                  />
+                  View Specifications
                   </button>
                 </div>
               </div>
@@ -51,7 +56,7 @@ function Evolution() {
                     <div className="dot"></div>
                   </div>
                   <img
-                    src="/images/specifications.png"
+                    src="/images/prototype.png"
                     alt="Designs, Wireframe & Prototype"
                   />
                   <h3>Designs, Wireframe & Prototype</h3>
@@ -60,8 +65,21 @@ function Evolution() {
                     will look like, and how it will function (and make it
                     beautiful).
                   </p>
-                  <button type="button" className="whole-btn2">
-                    Show More
+                  <button type="button" class="whole-btn2" style={{marginRight:15}}>
+                  <img
+                    src="/images/linkbtn.png"
+                    alt="Specifications & Planning"
+                    className="btn-link"
+                  />
+                   Wireframe
+                  </button>
+                  <button type="button" class="whole-btn2">
+                  <img
+                    src="/images/linkbtn.png"
+                    alt="Specifications & Planning"
+                    className="btn-link"
+                  />
+               Prototype
                   </button>
                 </div>
               </div>
@@ -77,7 +95,7 @@ function Evolution() {
                     <div class="dot"></div>
                   </div>
                   <img
-                    src="/images/specifications.png"
+                    src="/images/Groupthree.png"
                     alt="Specifications & Planning"
                   />
                   <h3>Estimates & Timeline</h3>
@@ -87,9 +105,6 @@ function Evolution() {
                     timeline and total cost.
                   </p>
 
-                  <button type="button" class="whole-btn2">
-                    Show More
-                  </button>
                 </div>
               </div>
             </div>
@@ -108,18 +123,17 @@ function Evolution() {
                       <div class="dot"></div>
                     </div>
                     <img
-                      src="/images/specifications.png"
+                      src="/images/buildicon.png"
                       alt="Designs, Wireframe & Prototype"
                     />
+                    
                     <h3>Build</h3>
                     <p>
                       Engineers build the software, adding new features, fixing
                       old features & constantly improving code architecture &
                       scalability.
                     </p>
-                    <button type="button" class="whole-btn2">
-                      Show More
-                    </button>
+                
                   </div>
                 </div>
                 <div className="col-sm-6"></div>
@@ -134,7 +148,7 @@ function Evolution() {
                       <div class="dot"></div>
                     </div>
                     <img
-                      src="/images/specifications.png"
+                      src="/images/testicon.png"
                       alt="Specifications & Planning"
                     />
                     <h3>Test</h3>
@@ -142,9 +156,7 @@ function Evolution() {
                       QA tests the latest build, identifying any bugs that need
                       to be fixed or features that need improving.
                     </p>
-                    <button type="button" class="whole-btn2">
-                      Show More
-                    </button>
+                
                   </div>
                 </div>
               </div>
@@ -157,7 +169,7 @@ function Evolution() {
                       <div class="dot"></div>
                     </div>
                     <img
-                      src="/images/specifications.png"
+                      src="/images/deploy.png"
                       alt="Designs, Wireframe & Prototype"
                     />
                     <h3>Deploy</h3>
@@ -167,9 +179,7 @@ function Evolution() {
                       testing platforms, or live, to the App Store, Google Play
                       store or website.{" "}
                     </p>
-                    <button type="button" class="whole-btn2">
-                      Show More
-                    </button>
+                
                   </div>
                 </div>
                 <div className="col-sm-6"></div>
@@ -184,7 +194,7 @@ function Evolution() {
                       <div class="dot"></div>
                     </div>
                     <img
-                      src="/images/specifications.png"
+                      src="/images/measure.png"
                       alt="Specifications & Planning"
                     />
                     <h3>Measure</h3>
@@ -192,9 +202,7 @@ function Evolution() {
                       QA tests the latest build, identifying any bugs that need
                       to be fixed or features that need improving.
                     </p>
-                    <button type="button" class="whole-btn2">
-                      Show More
-                    </button>
+               
                   </div>
                 </div>
               </div>
@@ -209,7 +217,7 @@ function Evolution() {
                       <div class="dot"></div>
                     </div>
                     <img
-                      src="/images/specifications.png"
+                      src="/images/maintain.png"
                       alt="Designs, Wireframe & Prototype"
                     />
                     <h3>Maintain</h3>
@@ -218,9 +226,7 @@ function Evolution() {
                       lightweight plans available for continued, long-term
                       maintenance.
                     </p>
-                    <button type="button" class="whole-btn2">
-                      Show More
-                    </button>
+                  
                   </div>
                 </div>
                 <div className="col-sm-6"></div>
