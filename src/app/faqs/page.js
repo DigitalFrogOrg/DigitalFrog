@@ -1,6 +1,10 @@
+"use client";
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import CaseStudy from "../components/CaseStudy";
+import RecentNews from "../components/RecentNews";
+import InnerCta from "../components/InnerCta";
 function page() {
   return (
     <>
@@ -462,6 +466,16 @@ function page() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="mt-3" style={{ backgroundColor: "#f0f0f0" }}>
+        <CaseStudy />
+      </div>
+      <div className="mt-5">
+        <RecentNews />
+      </div>
+      <div className="mt-5">
+        <InnerCta />
       </div>
       <Footer />
     </>

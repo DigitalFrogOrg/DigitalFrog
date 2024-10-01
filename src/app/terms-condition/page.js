@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import InnerCta from "../components/InnerCta";
 
 const page = () => {
   return (
@@ -187,6 +188,10 @@ const page = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="mt-5">
+        <InnerCta />
       </div>
       <Footer />
     </>
