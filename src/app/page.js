@@ -7,19 +7,19 @@ import FutureSection from "./components/FutureSection";
 import Evolution from "./components/Evolution";
 // import MidMobileScroll from "./components/MidMobileScroll";
 import TestimonialSlider from "./components/TestimonialSlider";
-import Trustees from "./components/Trustees";
+// import Trustees from "./components/Trustees";
 import TestimonialTabs from "./components/TestimonialTabs";
 import MobileExperiences from "./components/MobileExperiences";
 import CynergyStudio from "./components/CynergyStudio";
 import RecentNews from "./components/RecentNews";
 // Icons
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
-// import MarqueeSlider from "./components/MarqueeSlider";
+import MarqueeSlider from "./components/MarqueeSlider";
 import CustomVideoPlayer from "./components/CustomVideoPlayer";
 import GrowthSec from "./components/GrowthSec";
 
 export default function Home() {
-  const VideoLink = "/path/Cynergy-Showreel-Final.mp4"
+  const VideoLink = "/path/Cynergy-Showreel-Final.mp4";
   return (
     <>
       <Header />
@@ -75,18 +75,16 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <CustomVideoPlayer videoSrc={VideoLink}/>
+      <CustomVideoPlayer videoSrc={VideoLink} />
       <GrowthSec />
-      {/* <MarqueeSlider /> */}
       <FutureSection />
-      {/* <MidMobileScroll /> */}
       <Evolution />
       <CynergyStudio />
       <RecentNews />
       <TestimonialSlider />
       <MobileExperiences />
       <TestimonialTabs />
-      <Trustees />
+      <MarqueeSlider />
       <FaqsSection />
       <BudgetSection />
       <HotspotSection />

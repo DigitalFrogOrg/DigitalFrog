@@ -4,6 +4,8 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Tabs, TabList, TabPanel, Tab } from "react-tabs";
 import { useEffect, useRef } from "react";
+import RecentNews from "../components/RecentNews";
+import CaseStudy from "../components/CaseStudy";
 
 function page() {
   const sectionsRef = useRef([]);
@@ -226,6 +228,12 @@ function page() {
             </Tabs>
           </div>
         </div>
+      </div>
+      <div className="mt-5">
+        <CaseStudy />
+      </div>
+      <div className="mt-5">
+        <RecentNews />
       </div>
       <Footer />
     </>

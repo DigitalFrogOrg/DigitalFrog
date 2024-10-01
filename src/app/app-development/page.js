@@ -1,72 +1,15 @@
 "use client";
 import React from "react";
-// Slider
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import OneTestimonial from "../components/OneTestimonial";
+// import OneTestimonial from "../components/OneTestimonial";
 import RecentNews from "../components/RecentNews";
+import TestimonialTabs from "../components/TestimonialTabs";
+import MarqueeSlider from "../components/MarqueeSlider";
+import CaseStudy from "../components/CaseStudy";
 
 function page() {
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
-  };
-  const marqueeItems = [
-    {
-      src: "./images/client/img-1.png",
-      text: "$850m",
-      description: "Funding secured for our clients",
-      class: "clr-r",
-    },
-    {
-      src: "./images/client/img-2.png",
-      text: "35M+",
-      description: "Downloads of our developed apps",
-      class: "clr-t",
-    },
-    {
-      src: "./images/client/img-3.png",
-      text: "420",
-      description: "Successful projects completed",
-      class: "clr-r",
-    },
-    {
-      src: "./images/client/img-4.png",
-      text: "95%",
-      description: "Client satisfaction rate",
-      class: "clr-y",
-    },
-    {
-      src: "./images/client/img-5.png",
-      text: "18+",
-      description: "Years of combined team experience",
-      class: "clr-t",
-    },
-    {
-      src: "./images/client/img-6.png",
-      text: "120+",
-      description: "Awards won for our designs",
-      class: "clr-r",
-    },
-    {
-      src: "./images/client/img-7.png",
-      text: "40K+",
-      description: "Lines of code written",
-      class: "clr-u",
-    },
-  ];
-
-  const duplicatedMarqueeItems = [...marqueeItems, ...marqueeItems];
-
   return (
     <>
       <Header />
@@ -109,8 +52,14 @@ function page() {
       <div className="second-section">
         <div className="container">
           <div className="row">
-            <div className="col-md-7"></div>
-            <div className="col-md-5">
+            <div className="col-md-6 pe-5 py-2">
+              <img
+                src="./images/faqs-sec.png"
+                alt="faqs-sec"
+                className="h-100 w-100"
+              />
+            </div>
+            <div className="col-md-6 d-flex align-items-center justify-content-center">
               <div className="accordion" id="accordionExample">
                 <div className="accordion-item">
                   <h2 className="accordion-header">
@@ -235,63 +184,10 @@ function page() {
       </div>
 
       {/* Third Section */}
-      <div className="case-study container py-5 my-5">
-        <div className="row">
-          <div className="col-md-10">
-            <h2>Case Studies</h2>
-          </div>
-          <div className="col-md-2">
-            <button>All Work</button>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-md-12">
-            <div className="slider-container">
-              <Slider {...settings}>
-                <div>
-                  <img
-                    src="./images/slider-imgs/image-1.png"
-                    alt="image-1"
-                    className="w-100"
-                  />
-                  <h3>VideoApply</h3>
-                  <p>promo website, saas</p>
-                </div>
-                <div>
-                  <img
-                    src="./images/slider-imgs/image-2.png"
-                    alt="image-1"
-                    className="w-100"
-                  />
-                  <h3>Follow Art</h3>
-                  <p>Promo Website, Saas</p>
-                </div>
-                <div>
-                  <img
-                    src="./images/slider-imgs/image-3.png"
-                    alt="image-1"
-                    className="w-100"
-                  />
-                  <h3>Disona</h3>
-                  <p>Promo website, Trading platform</p>
-                </div>
-                <div>
-                  <img
-                    src="./images/slider-imgs/image-2.png"
-                    alt="image-1"
-                    className="w-100"
-                  />
-                  <h3>Follow Art</h3>
-                  <p>promo website, saas</p>
-                </div>
-              </Slider>
-            </div>
-          </div>
-        </div>
-      </div>
+      <CaseStudy />
 
       {/* Fourth Section */}
-      <div className="second-trusted">
+      {/* <div className="second-trusted">
         <div className="container">
           <div className="row">
             <h2 className="text-center">
@@ -314,9 +210,6 @@ function page() {
                   {duplicatedMarqueeItems.map((item, index) => (
                     <div className={`item ${item.class}`} key={index}>
                       <img src={item.src} />
-                      {/* <span>{item.text}</span> */}
-                      {/* <br /> */}
-                      {/* {item.description} */}
                     </div>
                   ))}
                 </div>
@@ -324,7 +217,10 @@ function page() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+      <TestimonialTabs />
+
+      <MarqueeSlider />
       <div className="mt-5">
         <RecentNews />
       </div>
@@ -333,23 +229,5 @@ function page() {
   );
 }
 
-const NextArrow = ({ className, style, onClick }) => {
-  return (
-    <div
-      className={`${className} custom-arrow next-arrow`}
-      style={{ ...style }}
-      onClick={onClick}
-    />
-  );
-};
 
-const PrevArrow = ({ className, style, onClick }) => {
-  return (
-    <div
-      className={`${className} custom-arrow prev-arrow`}
-      style={{ ...style }}
-      onClick={onClick}
-    />
-  );
-};
 export default page;

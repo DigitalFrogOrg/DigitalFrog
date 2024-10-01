@@ -44,10 +44,9 @@ function header() {
                         </a>
 
                         <div className="mega_menu">
-                          <div className="container-fluid">
+                          <div className="container">
                             <div className="row">
-                              <div className="col-md-1"></div>
-                              <div className="col-md-6 mid-mega-option">
+                              <div className="col-md-5 mid-mega-option">
                                 <a
                                   href="#"
                                   className={isActive("/app-development")}
@@ -68,9 +67,10 @@ function header() {
                                   Maintenance & Consulting Services
                                 </a>
                               </div>
-                              {activeTab ? 
-                              <div className="col-md-5">
+                              {/* {activeTab ?  */}
+                              <div className="col-md-7">
                                 <div className="right-mega-menu">
+                                  <h2>Mobile App Development Services</h2>
                                   <ul>
                                     <li>
                                       <a
@@ -165,7 +165,7 @@ function header() {
                                   </ul>
                                 </div>
                               </div>
-                              : null}
+                              {/* // : null} */}
                             </div>
                           </div>
                         </div>

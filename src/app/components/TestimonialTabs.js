@@ -6,7 +6,7 @@ function TestimonialTabs() {
       <div className="container-fluid testimonial-tabs">
         <h2 className="text-center">Trusted by Innovators, Loved by Users</h2>
         <div className="row">
-          <div className="col-md-4">
+          <div className="col-md-4 d-flex justify-content-center align-items-center">
             <div className="review review-2">
               <div className="avatar">
                 <div className="me-2">
@@ -48,7 +48,7 @@ function TestimonialTabs() {
             </div>
         
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 d-flex justify-content-center align-items-center">
             <div className="review review-2">
               <div className="avatar">
                 <div className="me-2">
