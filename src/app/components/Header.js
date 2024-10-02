@@ -44,13 +44,13 @@ function header() {
                         </a>
 
                         <div className="mega_menu">
-                          <div className="container">
+                          <div className="container-fluid">
                             <div className="row">
-                              <div className="col-md-5 mid-mega-option">
+                              <div className="col-md-1"></div>
+                              <div className="col-md-4 mid-mega-option">
                                 <a
                                   href="#"
-                                  className={isActive("/app-development")}
-                                  onClick={() => setActiveTab(true)}
+                                  className=""
                                 >
                                   Mobile App Development Services
                                 </a>
@@ -197,9 +197,9 @@ function header() {
                   {/* <button type="button" className="dark-mode">
                     <img src="./images/night-mode.svg" />
                   </button> */}
-                  <button type="button" className="second-btn">
+                  <a className="second-btn" href="/contact-us">
                     Contact Us
-                  </button>
+                  </a>
                   {/* <button type="button" className="light-mode">
                   <MdWbSunny />
                 </button> */}
