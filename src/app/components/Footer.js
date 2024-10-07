@@ -2,6 +2,8 @@ import React from "react";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
 
 function footer() {
   return (
@@ -19,50 +21,37 @@ function footer() {
           <br />
           <div className="row" style={{ alignItems: "center" }}>
             <div className="col-sm-3">
-              <p>
+              {/* <p>
                 After digesting your idea/project, our professional mobile app
                 designers will build out a beautiful  Prototype to bring your
                 project to life with color and brand.
-              </p>
+              </p> */}
               <a href="/" className="pt-4">
                 <img
                   src="./images/black-Logo.png"
                   alt="Logo"
-                  className="pt-4"
+                // className="pt-4"
                 />
               </a>
-              {/* <ul className="footer-info">
+              <ul className="footer-info">
                 <li>
-                  <span>For Sales :</span>{" "}
-                  <b>
-                    <a href="tel:8635106352">(863) 510-6352</a>
-                  </b>
+
+                  <FaPhoneAlt />{" "}
+                  <a href="tel:13463608407">+1 (346) 360-8407</a>
                 </li>
                 <li>
-                  <span>For Billing :</span>{" "}
-                  <b>
-                    <a href="tel:+18568635034">+1 856-863-5034</a>
-                  </b>
+                  <FaEnvelope />{" "}
+                  <a href="mailto:info@cynergystudio.com">info@cynergystudio.com</a>
                 </li>
                 <li>
-                  <span>Email :</span>{" "}
-                  <b>
-                    <a href="mailto:info@cynergystudio.com">
-                      info@cynergystudio.com
-                    </a>
-                  </b>
+                  <FaLocationDot />{" "}
+                  <a>1 E Erie St Ste 525 Chicago, IL 60611</a>
                 </li>
-                <li>
-                  <span>Address :</span>{" "}
-                  <b>
-                    <a>20 Cooper Square, New York, NY 10003, USA</a>
-                  </b>
-                </li>
-              </ul> */}
+              </ul>
             </div>
             <div className="col-sm-3">
               <div className="footer-link">
-                <h5>Quick Links</h5>
+                <h5>Overview</h5>
                 <ul>
                   <li>
                     <a href="/">Home</a>
@@ -85,7 +74,7 @@ function footer() {
             </div>
             <div className="col-sm-3">
               <div className="footer-link">
-                <h5>Our Service</h5>
+                <h5>What we do</h5>
                 <ul>
                   <li>
                     <a href="/app-development">Mobile App Development</a>
@@ -99,11 +88,13 @@ function footer() {
             </div>
             <div className="col-sm-3">
               <div className="footer-link">
-                <h5>Our Locations</h5>
+                <h5>Follow Us</h5>
                 <ul>
-                  <li>Dallas </li>
-                  <li>New York </li>
-                  <li>Chicago</li>
+                  <li>Facebook </li>
+                  <li>Instagram </li>
+                  <li>Github</li>
+                  <li>LinkedIn</li>
+                  <li>X</li>
                 </ul>
               </div>
             </div>
@@ -125,7 +116,7 @@ function footer() {
               {/* <p className="text-end">
                 Designed & Developed By Cynergy Studios
               </p> */}
-              <ul className="social-media">
+              {/* <ul className="social-media">
                 <li>
                   <FaFacebookF />
                 </li>
@@ -135,7 +126,7 @@ function footer() {
                 <li>
                   <FaLinkedinIn />
                 </li>
-              </ul>
+              </ul> */}
             </div>
           </div>
         </div>
