@@ -20,6 +20,23 @@ button.btn.m-4.file-btn {
 a {
   text-decoration: none !important;
 }
+
+h1.title-page{
+  font-size: 60px;
+  font-weight: 700px;
+  color: #000;
+  text-transform: capitalize;
+  font-family: "NobelUno-Bold";
+}
+.second-last-section{
+  margin: 100px 0px 50px 0px;
+}
+.title-page-p {
+  font-size: 18px;
+  line-height: 29px;
+  color: #454545;
+}
+
 .btn {
   background-color: var(--orange) !important;
   border-color: var(--orange) !important;
@@ -2355,19 +2372,74 @@ section.recent_news {
 /* Slider - 1 */
 .slider-container {
   position: relative;
-  margin-right: -400px;
+  /* margin-right: -400px; */
   margin-top: 50px;
   margin-bottom: 50px;
+  /* background-color: #DD5F00; */
+}
+
+.slider-container div{
+  position: relative;
+  /* margin-right: -400px; */
+  margin-top: 50px;
+  margin-bottom: 50px;
+  /* width: 320px; */
+  /* background-color: #DD5F00; */
+  background: linear-gradient(178.64deg, #F854AB -6.27%, #F33D5A 101.93%);
+
+}
+.case-study h2{
+  text-align: center;
+  text-transform: capitalize;
+}
+.case-study p{
+  text-align: center;
+  width: 900px;
+  margin: 0 auto;
+  font-size: 18px;
+  /* text-transform: capitalize; */
 }
 .slider-container h3 {
   font-size: 26px;
   font-weight: 600;
   margin-top: 30px;
+  text-align: center;
+}
+.slider-container p {
+  text-align: center;
 }
 .slider-container img {
-  height: 250px;
-  object-fit: cover;
+  height: 120px;
   object-position: center;
+  width: 120px;
+  width: 120px !important;
+  justify-content: center;
+  margin: 80px auto;
+  border-radius: 100%;
+  display: table !important;
+}
+
+.line-image{
+  height: 500px;
+  width: 60px;
+}
+.title-page-p-2 p {
+font-size: 14px;
+}
+
+.text-section-hover {
+  padding: 15px 20px;
+  background-color: #FBFBFB;
+  border-radius: 15px;
+  margin: 20px 0;
+}
+
+.text-section-hover:hover {
+  background-color: #dc5f00;
+}
+.line-image {
+  height: 540px;
+  width: 60px;
 }
 .custom-arrow {
   position: absolute !important;
@@ -2406,6 +2478,13 @@ section.recent_news {
   font-size: 60px !important;
   font-weight: 600;
   margin: 100px 0px 120px 0px;
+}
+h1.title-page-2 {
+  font-size: 30px;
+  font-weight: 700px;
+  color: #000;
+  text-transform: capitalize;
+  font-family: "NobelUno-Bold";
 }
 .about-middle h2 {
   font-size: 50px;
