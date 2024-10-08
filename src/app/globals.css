@@ -43,7 +43,7 @@ h1.title-page {
 }
 /* header-css */
 #header {
-  position: fixed !important;
+  /* position: fixed !important; */
   z-index: 99;
   background: #fff;
   width: 100%;
@@ -2355,6 +2355,10 @@ section.recent_news {
   background-repeat: no-repeat;
   background-size: contain;
 }
+.second-section .accordion-button:focus {
+  border-bottom: 1px solid var(--orange) !important;
+  box-shadow: none !important;
+}
 .accordion-button:focus {
   border: 0px !important;
   box-shadow: none !important;
@@ -2981,4 +2985,116 @@ h1.title-page-2 {
   padding: 12px 20px;
   color: #fff;
   margin-top: 26px;
+}
+.navs-app {
+  padding: 100px 50px !important;
+  background-color: #fffbf8;
+}
+@keyframes tiltAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.tilt-effect {
+  animation: tiltAnimation 3s ease-in-out infinite;
+}
+
+.name-slide {
+  background-color: var(--orange);
+}
+.about-bottom-ban {
+  height: 100vh;
+  background-image: url("/images/about-banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bars-btn-container {
+  position: relative;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+.bars-btn {
+  background-color: #ffd7b8;
+  border-radius: 100px;
+  border: 0px;
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  top: 26px;
+  right: 26px;
+  z-index: 9;
+}
+.bars-btn svg {
+  font-size: 26px;
+  fill: var(--heading-color);
+}
+.bars-btn-container.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* .bars-btn::after {
+  content: "";
+  transform: translate(-50%, -50%);
+  background-color: var(--orange);
+  border-radius: 70%;
+  animation: faBars 1.5s infinite;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  z-index: 7;
+}
+@keyframes faBars {
+  0% {
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+  }
+  50% {
+    width: 80px;
+    height: 80px;
+    opacity: 0.5;
+  }
+  100% {
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+  }
+} */
+
+.achievements-page h2 {
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.achievements-page p {
+  margin-bottom: 80px;
+  width: 85%;
+}
+.achievements-page .tags {
+  display: flex;
+  gap: 20px;
+}
+.achievements-page .tags button {
+  background-color: #ffd7b8;
+  color: var(--orange);
+  border: 0;
+  padding: 10px 16px;
+  border-radius: 100px;
+}
+.arrows-div {
+  position: relative;
+}
+.arrows-div img {
+  right: 0;
+  top: 35px;
+  position: absolute;
 }

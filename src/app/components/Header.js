@@ -1,10 +1,7 @@
 "use client";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
-// import { GoMoon } from "react-icons/go";
-// import { MdWbSunny } from "react-icons/md";
-// import { VscCallOutgoing } from "react-icons/vsc";
-// import { RxHamburgerMenu } from "react-icons/rx";
+import { useState, useEffect } from "react";
+import { FaBars } from "react-icons/fa6";
 
 function header() {
   const pathname = usePathname();
@@ -12,7 +9,22 @@ function header() {
   const isActive = (href) => {
     return pathname === href ? "active" : "";
   };
-  const [activeTab, setActiveTab] = useState(false);
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <>
       <header>
@@ -32,11 +44,6 @@ function header() {
                         Home
                       </a>
                     </li>
-                    {/* <li>
-                      <a href="/about-us" className={isActive("/about-us")}>
-                        About Us
-                      </a>
-                    </li> */}
                     <li>
                       <div className="what-we-do-container">
                         <a href="#" className="what-we-do">
@@ -48,10 +55,7 @@ function header() {
                             <div className="row">
                               <div className="col-md-1"></div>
                               <div className="col-md-4 mid-mega-option">
-                                <a
-                                  href="#"
-                                  className=""
-                                >
+                                <a href="#" className="">
                                   Mobile App Development Services
                                 </a>
                                 <a
@@ -67,7 +71,6 @@ function header() {
                                   Maintenance & Consulting Services
                                 </a>
                               </div>
-                              {/* {activeTab ?  */}
                               <div className="col-md-7">
                                 <div className="right-mega-menu">
                                   <h2>Mobile App Development Services</h2>
@@ -165,7 +168,6 @@ function header() {
                                   </ul>
                                 </div>
                               </div>
-                              {/* // : null} */}
                             </div>
                           </div>
                         </div>
@@ -179,14 +181,14 @@ function header() {
                         How We Do It
                       </a>
                     </li>
-                    {/* <li>
+                    <li>
                       <a
                         href="/achievements"
                         className={isActive("/achievements")}
                       >
                         Achievements
                       </a>
-                    </li> */}
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -208,52 +210,12 @@ function header() {
             </div>
           </div>
         </div>
-        {/* <div className="mega_menu">
-          <div className="container-fluid">
-            <div className="row">
-              <div className="col-md-4"></div>
-              <div className="col-md-4 mid-mega-option">
-                <a href="/">Mobile App Development Services</a>
-                <a href="/">Design Services</a>
-                <a href="/">Maintenance & Consulting Services</a>
-              </div>
-              <div className="col-md-4">
-                <div className="right-mega-menu">
-                  <ul>
-                    <li>
-                      <a href="/">Android App Development Services</a>
-                    </li>
-                    <li>
-                      <a href="/">iOS App Development Services</a>
-                    </li>
-                    <li>
-                      <a href="/">Native App Development Services</a>
-                    </li>
-                    <li>
-                      <a href="/">Web App Development Services</a>
-                    </li>
-                    <li>
-                      <a href="/">PWA Development Services</a>
-                    </li>
-                    <li>
-                      <a href="/">Mobile Game Development</a>
-                    </li>
-                    <li>
-                      <a href="/">Mobile App Development</a>
-                    </li>
-                    <li>
-                      <a href="/">AI App Development</a>
-                    </li>
-                    <li>
-                      <a href="/">No-Code/Low-Code</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
       </header>
+      <div className={`bars-btn-container ${showButton ? "show" : ""}`}>
+        <button className="bars-btn">
+          <FaBars />
+        </button>
+      </div>
     </>
   );
 }
