@@ -1,10 +1,27 @@
 "use client";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
-import { FaBars } from "react-icons/fa6";
+import {
+  FaBars
+} from "react-icons/fa6";
+import {
+  FaTimes,
+  FaFacebookF, FaInstagram,
+  FaLinkedinIn
+} from "react-icons/fa";
+import Popup from "./Popup";
 
 function header() {
+  const [showMenu, setShowMenu] = useState(false);
   const pathname = usePathname();
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+
+  const togglePopup = () => {
+    setIsPopupVisible(!isPopupVisible);
+  };
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
 
   const isActive = (href) => {
     return pathname === href ? "active" : "";
@@ -199,9 +216,11 @@ function header() {
                   {/* <button type="button" className="dark-mode">
                     <img src="./images/night-mode.svg" />
                   </button> */}
-                  <a className="second-btn" href="/contact-us">
+                  {/* <a className="second-btn" href="/contact-us">
                     Contact Us
-                  </a>
+                  </a> */}
+                  <button onClick={togglePopup} className="second-btn">Contact Us</button>
+              
                   {/* <button type="button" className="light-mode">
                   <MdWbSunny />
                 </button> */}
@@ -211,11 +230,62 @@ function header() {
           </div>
         </div>
       </header>
-      <div className={`bars-btn-container ${showButton ? "show" : ""}`}>
-        <button className="bars-btn">
-          <FaBars />
+      {/* Button to toggle the menu */}
+      <div className={`bars-btn-container ${showMenu,showButton ? "show" : ""}`}>
+        <button className="bars-btn" onClick={toggleMenu}>
+          {showMenu ? <FaTimes /> : <FaBars />}
         </button>
       </div>
+
+      {/* Main full-screen menu */}
+      <div className={`main-full-menu ${showMenu ? "menu-active" : ""}`}>
+        <div className="row h-100">
+          <div className="col-md-8 h-100 right-main-menu">
+            <a href="/">
+              <img src="./images/black-Logo.png" alt="Logo" />
+            </a>
+
+            <ul className="main-ul-li">
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="/about-us">About us</a>
+              </li>
+              <li>
+                <a href="/app-development">What we do</a>
+              </li>
+              <li>
+                <a href="/how-we-do-it">How we do it</a>
+              </li>
+              <li>
+                <a href="/achievements">Achievements</a>
+              </li>
+              <li>
+                <a href="/faqs">Faqs</a>
+              </li>
+              <li>
+                <a href="/contact-us">Contact us</a>
+              </li>
+            </ul>
+
+            <ul className="social-media">
+              <li>
+                <FaFacebookF />
+              </li>
+              <li>
+                <FaInstagram />
+              </li>
+              <li>
+                <FaLinkedinIn />
+              </li>
+            </ul>
+          </div>
+          <div className="col-md-4 left-menu-img h-100"></div>
+        </div>
+      </div>
+
+      {isPopupVisible && <Popup togglePopup={togglePopup} />}
     </>
   );
 }

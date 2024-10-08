@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import CaseStudy from "../components/CaseStudy";
 import RecentNews from "../components/RecentNews";
 import InnerCta from "../components/InnerCta";
+import CaseStudySlider from "../components/CaseStudySlider";
 function page() {
   return (
     <>
@@ -469,7 +470,7 @@ function page() {
       </div>
 
       <div className="mt-3" style={{ backgroundColor: "#f0f0f0" }}>
-        <CaseStudy />
+        <CaseStudySlider />
       </div>
       <div className="mt-5">
         <RecentNews />

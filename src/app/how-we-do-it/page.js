@@ -6,6 +6,7 @@ import { Tabs, TabList, TabPanel, Tab } from "react-tabs";
 import { useEffect, useRef } from "react";
 import RecentNews from "../components/RecentNews";
 import CaseStudy from "../components/CaseStudy";
+import CaseStudySlider from "../components/CaseStudySlider";
 
 function page() {
   const sectionsRef = useRef([]);
@@ -230,7 +231,7 @@ function page() {
         </div>
       </div>
       <div className="mt-5">
-        <CaseStudy />
+        <CaseStudySlider />
       </div>
       <div className="mt-5">
         <RecentNews />
