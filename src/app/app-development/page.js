@@ -85,8 +85,8 @@ function page() {
                 className="h-100 w-100"
               />
             </div>
-            <div className="col-md-6 d-flex align-items-center justify-content-center">
-              <div className="accordion" id="accordionExample">
+            <div className="col-md-6 mt-5">
+              <div className="accordion mt-2" id="accordionExample">
                 <div className="accordion-item">
                   <h2 className="accordion-header">
                     <button
@@ -475,22 +475,60 @@ function page() {
           />
         </div>
       </div>
-      <div
-        className="last-section"
-        style={{ backgroundColor: "#fff", padding: "30px 0px 100px 0px" }}
-      >
+      <div className="container-fluid navs-app">
         <div className="row">
-          <div className="col-md-12 py-5 d-flex align-items-center justify-content-center">
-            <div className="text-section">
-              <h1 className="title-page">optimized process</h1>
-            </div>
+          <div className="col-md-1"></div>
+          <div className="col-md-1 d-flex align-items-end">
+            <img
+              src="./images/App-Navs/python.svg"
+              alt="python"
+              className="w-100 mb-5 tilt-effect"
+            />
           </div>
+          <div className="col-md-1 d-flex align-items-center">
+            <img
+              src="./images/App-Navs/kotlin.svg"
+              alt="kotlin"
+              className="w-100 mb-5 tilt-effect"
+            />
+          </div>
+          <div className="col-md-1 d-flex align-items-start">
+            <img
+              src="./images/App-Navs/react-native.svg"
+              alt="react-native"
+              className="w-100 mt-5 tilt-effect"
+            />
+          </div>
+          <div className="col-md-4">
+            <img
+              src="./images/App-Navs/main-laptop.png"
+              alt="main-laptop"
+              className="w-100"
+            />
+          </div>
+          <div className="col-md-1 d-flex align-items-start">
+            <img
+              src="./images/App-Navs/ruby.svg"
+              alt="ruby"
+              className="w-100 mt-5 tilt-effect"
+            />
+          </div>
+          <div className="col-md-1 d-flex align-items-center">
+            <img
+              src="./images/App-Navs/flutter.svg"
+              alt="flutter"
+              className="w-100 mb-5 tilt-effect"
+            />
+          </div>
+          <div className="col-md-1 d-flex align-items-end">
+            <img
+              src="./images/App-Navs/xios.svg"
+              alt="xios"
+              className="w-100 mb-5 tilt-effect"
+            />
+          </div>
+          <div className="col-md-1"></div>
         </div>
-        <img
-          src="./images/techbanner.png"
-          alt="faqs-sec"
-          className="h-100 w-100"
-        />
       </div>
       <div className="case-study py-5 my-5">
         <div className="row">
@@ -516,13 +554,13 @@ function page() {
                 <h4>User Centric Design</h4>
                 <p>
                   Consider your users while structuring the layout of the app.
-                  Focusing on users will lead you to a victory-based app. And, to
-                  acquire user-appealing demographics the experts of Dignite
+                  Focusing on users will lead you to a victory-based app. And,
+                  to acquire user-appealing demographics the experts of Dignite
                   Studios frame a highly interactive, innovative, and
-                  user-friendly app for your more active users, higher engagement,
-                  and wide audiences. Therefore, our top-tier mobile app
-                  development services lie in shaping a highly functional and
-                  operational software solution.
+                  user-friendly app for your more active users, higher
+                  engagement, and wide audiences. Therefore, our top-tier mobile
+                  app development services lie in shaping a highly functional
+                  and operational software solution.
                 </p>
               </div>
             </div>
@@ -531,13 +569,13 @@ function page() {
                 <h4>Modern Technology</h4>
                 <p>
                   Consider your users while structuring the layout of the app.
-                  Focusing on users will lead you to a victory-based app. And, to
-                  acquire user-appealing demographics the experts of Dignite
+                  Focusing on users will lead you to a victory-based app. And,
+                  to acquire user-appealing demographics the experts of Dignite
                   Studios frame a highly interactive, innovative, and
-                  user-friendly app for your more active users, higher engagement,
-                  and wide audiences. Therefore, our top-tier mobile app
-                  development services lie in shaping a highly functional and
-                  operational software solution.
+                  user-friendly app for your more active users, higher
+                  engagement, and wide audiences. Therefore, our top-tier mobile
+                  app development services lie in shaping a highly functional
+                  and operational software solution.
                 </p>
               </div>
             </div>
@@ -546,13 +584,13 @@ function page() {
                 <h4>Intuitive UX and UI</h4>
                 <p>
                   Consider your users while structuring the layout of the app.
-                  Focusing on users will lead you to a victory-based app. And, to
-                  acquire user-appealing demographics the experts of Dignite
+                  Focusing on users will lead you to a victory-based app. And,
+                  to acquire user-appealing demographics the experts of Dignite
                   Studios frame a highly interactive, innovative, and
-                  user-friendly app for your more active users, higher engagement,
-                  and wide audiences. Therefore, our top-tier mobile app
-                  development services lie in shaping a highly functional and
-                  operational software solution.
+                  user-friendly app for your more active users, higher
+                  engagement, and wide audiences. Therefore, our top-tier mobile
+                  app development services lie in shaping a highly functional
+                  and operational software solution.
                 </p>
               </div>
             </div>
@@ -561,13 +599,13 @@ function page() {
                 <h4>Cross-Platform App</h4>
                 <p>
                   Consider your users while structuring the layout of the app.
-                  Focusing on users will lead you to a victory-based app. And, to
-                  acquire user-appealing demographics the experts of Dignite
+                  Focusing on users will lead you to a victory-based app. And,
+                  to acquire user-appealing demographics the experts of Dignite
                   Studios frame a highly interactive, innovative, and
-                  user-friendly app for your more active users, higher engagement,
-                  and wide audiences. Therefore, our top-tier mobile app
-                  development services lie in shaping a highly functional and
-                  operational software solution.
+                  user-friendly app for your more active users, higher
+                  engagement, and wide audiences. Therefore, our top-tier mobile
+                  app development services lie in shaping a highly functional
+                  and operational software solution.
                 </p>
               </div>
             </div>
@@ -580,11 +618,17 @@ function page() {
         <div className="row app-cta">
           <div className="col-md-1"></div>
           <div className="col-md-6">
-            <h2>into an Innovative <br /> Mobile App.</h2>
+            <h2>
+              into an Innovative <br /> Mobile App.
+            </h2>
             <button>Schedule A call</button>
           </div>
           <div className="col-md-5">
-            <img src="./images/mobile-cta.png" alt="mobile-cta" className="w-100 mobile-cta" />
+            <img
+              src="./images/mobile-cta.png"
+              alt="mobile-cta"
+              className="w-100 mobile-cta"
+            />
           </div>
         </div>
       </div>

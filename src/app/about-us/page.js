@@ -2,8 +2,35 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import InnerCta from "../components/InnerCta";
+import RecentNews from "../components/RecentNews";
 
 function page() {
+  const marqueeItems = [
+    {
+      src: "./images/vector-star.png",
+    },
+    {
+      src: "./images/cynergy-studios.png",
+    },
+    {
+      src: "./images/vector-star.png",
+    },
+    {
+      src: "./images/cynergy-studios.png",
+    },
+    {
+      src: "./images/vector-star.png",
+    },
+    {
+      src: "./images/cynergy-studios.png",
+    },
+    // {
+    //   src: "./images/trustees/client-7.png",
+    // },
+  ];
+
+  const duplicatedMarqueeItems = [...marqueeItems, ...marqueeItems];
+
   return (
     <>
       <Header />
@@ -20,16 +47,16 @@ function page() {
       </div>
       <div className="container py-4 about-middle">
         <div className="row pb-5">
-          <h2 className="text-center mb-5 fw-bold">
+          {/* <h2 className="text-center mb-5 fw-bold">
             Web Design Company
             <br />
             You Can Trust
-          </h2>
-          <div className="col-md-4 text-start">
-            <h3>
+          </h2> */}
+          <div className="col-md-4 text-start d-flex justify-content-center flex-column">
+            <h3 className="w-100">
               Mobile App <br /> Development Services
             </h3>
-            <p>
+            <p className="w-100">
               We may share the information that we collect, both personal and
               non-personal, with third parties such as advertisers, contest
               sponsors, promotional and marketing partners, and others who
@@ -49,7 +76,7 @@ function page() {
               className="w-100"
             />
           </div>
-          <div className="col-md-4 text-end">
+          <div className="col-md-4 text-end d-flex justify-content-center flex-column">
             <h3>
               Problem-Solving Pioneers in a <br /> Strove Digital World
             </h3>
@@ -67,6 +94,7 @@ function page() {
             </p>
           </div>
         </div>
+
         {/* <div className="row">
           <div className="col-md-6">
             <img
@@ -168,7 +196,7 @@ function page() {
           </div>
         </div> */}
       </div>
-      <div className="container py-4">
+      {/* <div className="container py-4">
         <div className="row">
           <div className="col-md-6">
             <h2>Digital Challenges Bow to cynergy studio Services</h2>
@@ -225,8 +253,29 @@ function page() {
             </div>
           </div>
         </div>
+      </div> */}
+
+      <div className="name-slide">
+        <div className="row">
+          <div className="col-md-12">
+            <div className="marquee-slider">
+              <div className="marquee-content">
+                {duplicatedMarqueeItems.map((item, index) => (
+                  <div className={`m-2`} key={index}>
+                    <img src={item.src} />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
+      <div className="about-bottom-ban"></div>
+
+      <div className="mt-5">
+        <RecentNews />
+      </div>
       <div className="mt-5">
         <InnerCta />
       </div>
