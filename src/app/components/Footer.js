@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import { useState, useEffect } from "react";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -6,12 +7,23 @@ import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 
 function footer() {
+  const [theme, setTheme] = useState("light");
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme") || "light";
+    setTheme(savedTheme);
+    document.documentElement.setAttribute("data-theme", savedTheme);
+  }, []);
+
   return (
     <footer>
       <div className="container-fluid">
         <div className="first-row">
           <img
-            src="./images/get-in-touch.png"
+            src={
+              theme === "light"
+                ? "./images/get-in-touch.png"
+                : "./images/get-in-touch-white.png"
+            }
             alt="get-in-touch"
             className="get-in-touch"
           />
@@ -28,24 +40,26 @@ function footer() {
               </p> */}
               <a href="/" className="pt-4">
                 <img
-                  src="./images/black-Logo.png"
+                  src={
+                    theme === "light"
+                      ? "./images/black-Logo.png"
+                      : "./images/white-Logo.png"
+                  }
                   alt="Logo"
-                // className="pt-4"
                 />
               </a>
               <ul className="footer-info">
                 <li>
-
-                  <FaPhoneAlt />{" "}
-                  <a href="tel:13463608407">+1 (346) 360-8407</a>
+                  <FaPhoneAlt /> <a href="tel:13463608407">+1 (346) 360-8407</a>
                 </li>
                 <li>
                   <FaEnvelope />{" "}
-                  <a href="mailto:info@cynergystudio.com">info@cynergystudio.com</a>
+                  <a href="mailto:info@cynergystudio.com">
+                    info@cynergystudio.com
+                  </a>
                 </li>
                 <li>
-                  <FaLocationDot />{" "}
-                  <a>1 E Erie St Ste 525 Chicago, IL 60611</a>
+                  <FaLocationDot /> <a>1 E Erie St Ste 525 Chicago, IL 60611</a>
                 </li>
               </ul>
             </div>
