@@ -40,6 +40,9 @@ button.btn.m-4.file-btn {
   padding: 10px !important;
   margin: 20px 0 0 20px !important;
 }
+.navbar-expand-lg .navbar-collapse{
+  align-items: center;
+}
 .Clock-style {
   width: 50px;
   height: 50px;

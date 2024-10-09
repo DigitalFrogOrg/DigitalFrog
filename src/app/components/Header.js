@@ -60,7 +60,195 @@ function header() {
   }, []);
   return (
     <>
-      <header>
+      <header className="navbar navbar-expand-lg">
+        <div className="container-fluid" id="header">
+          <a href="/">
+            <img
+              src={
+                theme === "light"
+                  ? "./images/black-Logo.png"
+                  : "./images/white-Logo.png"
+              }
+              alt="Logo"
+            />
+          </a>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav m-auto mb-2 mb-lg-0">
+              <div className="navigation">
+                <ul>
+                  <li>
+                    {/* <a href="/" className={isActive("/")}>
+                      Home
+                    </a> */}
+                  </li>
+                  <li className="nav-item">
+                    <div className="what-we-do-container">
+                      <a href="#" className="what-we-do">
+                        What We Do
+                      </a>
+
+                      <div className="mega_menu">
+                        <div className="container-fluid">
+                          <div className="row">
+                            <div className="col-md-1"></div>
+                            <div className="col-md-4 mid-mega-option">
+                              <a href="#" className="">
+                                Mobile App Development Services
+                              </a>
+                              <a
+                                href="/design-services"
+                                className={isActive("/design-services")}
+                              >
+                                Design Services
+                              </a>
+                              <a
+                                href="/maintenance-services"
+                                className={isActive("/maintenance-services")}
+                              >
+                                Maintenance & Consulting Services
+                              </a>
+                            </div>
+                            <div className="col-md-7">
+                              <div className="right-mega-menu">
+                                <h2>Mobile App Development Services</h2>
+                                <ul>
+                                  <li>
+                                    <a
+                                      href="/app-development"
+                                      className={isActive(
+                                        "/android-app-development-services"
+                                      )}
+                                    >
+                                      Android App Development Services
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="/ios-app-development-services"
+                                      className={isActive(
+                                        "/ios-app-development-services"
+                                      )}
+                                    >
+                                      iOS App Development Services
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="/native-app-development-services"
+                                      className={isActive(
+                                        "/native-app-development-services"
+                                      )}
+                                    >
+                                      Native App Development Services
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="/web-app-development-services"
+                                      className={isActive(
+                                        "/web-app-development-services"
+                                      )}
+                                    >
+                                      Web App Development Services
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="/pwa-development-services"
+                                      className={isActive(
+                                        "/pwa-development-services"
+                                      )}
+                                    >
+                                      PWA Development Services
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="/mobile-game-development"
+                                      className={isActive(
+                                        "/mobile-game-development"
+                                      )}
+                                    >
+                                      Mobile Game Development
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="/mobile-app-development"
+                                      className={isActive(
+                                        "/mobile-app-development"
+                                      )}
+                                    >
+                                      Mobile App Development
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="/ai-app-development"
+                                      className={isActive(
+                                        "/ai-app-development"
+                                      )}
+                                    >
+                                      AI App Development
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="/no-code-low-code"
+                                      className={isActive("/no-code-low-code")}
+                                    >
+                                      No-Code/Low-Code
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a
+                      href="/how-we-do-it"
+                      className={isActive("/how-we-do-it")}
+                    >
+                      How We Do It
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/achievements"
+                      className={isActive("/achievements")}
+                    >
+                      Achievements
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </ul>
+            <div>
+              <div className="buttons">
+                <button onClick={togglePopup} className="second-btn">
+                  Contact Us
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      {/* <header>
         <div id="header">
           <div className="container-fluid">
             <div className="row" style={{ alignItems: "center" }}>
@@ -235,30 +423,15 @@ function header() {
 
               <div className="col-md-3">
                 <div className="buttons">
-                  {/* <button type="button" className="whole-btn">Contact Us</button> */}
-                  {/* <button type="button" className="dark-mode">
-                    <img src="./images/night-mode.svg" />
-                  </button> */}
-                  {/* <a className="second-btn" href="/contact-us">
-                    Contact Us
-                  </a> */}
                   <button onClick={togglePopup} className="second-btn">
                     Contact Us
-                  </button>
-
-                  <button
-                    onClick={toggleTheme}
-                    className={theme === "light" ? "light-mode" : "dark-mode"}
-                    aria-label="Toggle Theme"
-                  >
-                    {theme === "light" ? <MdWbSunny /> : <FaMoon />}
                   </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </header>
+      </header> */}
       {/* Button to toggle the menu */}
       <div
         className={`bars-btn-container ${(showMenu, showButton ? "show" : "")}`}
@@ -324,6 +497,15 @@ function header() {
       </div>
 
       {isPopupVisible && <Popup togglePopup={togglePopup} />}
+
+      {/* Dark Mode Button */}
+      {/* <button
+        onClick={toggleTheme}
+        className={theme === "light" ? "light-mode" : "dark-mode"}
+        aria-label="Toggle Theme"
+      >
+        {theme === "light" ? <MdWbSunny /> : <FaMoon />}
+      </button> */}
     </>
   );
 }
