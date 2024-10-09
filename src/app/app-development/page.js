@@ -464,15 +464,72 @@ function page() {
           <div className="row">
             <div className="col-md-12 py-5 d-flex align-items-center justify-content-center">
               <div className="text-section">
-                <h1 className="title-page">optimized process</h1>
+                <h1 className="title-page">Optimized Process</h1>
               </div>
             </div>
           </div>
-          <img
-            src="./images/banner-bottom.png"
-            alt="faqs-sec"
-            className="h-100 w-100"
-          />
+          {/* <div className="own-process w-100">
+            <div className="process-bottom-1">
+              <img
+                src="./images/app-process/Gaaga-Process-Img-1.png"
+                alt="Gaaga-Process-Img-1"
+              />
+              <div className="process-bottom-div"></div>
+              <div class="dot"></div>
+              <h3>01</h3>
+              <p>
+                Ued vehicula mattis purus. Curabitur at pretium odio, sit amet
+                tincidunt erat. Pellentesque fringilla rutrum nisl, nec
+                vulputate libero mattis vel. Integer bibendum metus ac metus
+                varius, eget vestibulum arcu.
+              </p>
+            </div>
+            <div className="process-bottom-1 process-bottom-2">
+              <p>
+                Ued vehicula mattis purus. Curabitur at pretium odio, sit amet
+                tincidunt erat. Pellentesque fringilla rutrum nisl, nec
+                vulputate libero mattis vel. Integer bibendum metus ac metus
+                varius, eget vestibulum arcu.
+              </p>
+              <h3>02</h3>
+              <div class="dot"></div>
+              <div className="process-bottom-div"></div>
+              <img
+                src="./images/app-process/Gaaga-Process-Img-2.png"
+                alt="Gaaga-Process-Img-1"
+              />
+            </div>
+            <div className="process-bottom-1">
+              <img
+                src="./images/app-process/Gaaga-Process-Img-3.png"
+                alt="Gaaga-Process-Img-1"
+              />
+              <div className="process-bottom-div"></div>
+              <div class="dot"></div>
+              <h3>03</h3>
+              <p>
+                Ued vehicula mattis purus. Curabitur at pretium odio, sit amet
+                tincidunt erat. Pellentesque fringilla rutrum nisl, nec
+                vulputate libero mattis vel. Integer bibendum metus ac metus
+                varius, eget vestibulum arcu.
+              </p>
+            </div>
+            <div className="process-bottom-1">
+              <p>
+                Ued vehicula mattis purus. Curabitur at pretium odio, sit amet
+                tincidunt erat. Pellentesque fringilla rutrum nisl, nec
+                vulputate libero mattis vel. Integer bibendum metus ac metus
+                varius, eget vestibulum arcu.
+              </p>
+              <h3>04</h3>
+              <div class="dot"></div>
+              <div className="process-bottom-div"></div>
+              <img
+                src="./images/app-process/Gaaga-Process-Img-4.png"
+                alt="Gaaga-Process-Img-1"
+              />
+            </div>
+          </div> */}
         </div>
       </div>
       <div className="container-fluid navs-app">

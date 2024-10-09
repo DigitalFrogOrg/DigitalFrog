@@ -42,22 +42,19 @@ function BudgetSection() {
                 alt="SmartObject"
                 className="w-100 h-100"
               /> */}
-              <h2 style={{fontFamily:"NobelUno-Bold !important"}}>
+              <h2 style={{ fontFamily: "NobelUno-Bold !important" }}>
                 Exploring Our App
                 <br /> Development Services?
               </h2>
               <h3 className="mt-3">
-                         <img
-                src="/images/clock_icon.png"
-                alt="SmartObject"
-                className="Clock-style"
-              />
+                <img
+                  src="/images/clock_icon.png"
+                  alt="SmartObject"
+                  className="Clock-style"
+                />
                 We respond promptly, typically within 30 minutes!
               </h3>
-              <div
-                className="mt-4 p-3 rounded"
-                style={{ backgroundColor: "#f7f7f7" }}
-              >
+              <div className="mt-4 p-3 rounded budg-sec">
                 <ul>
                   <li>
                     We’ll hop on a call and hear out your idea, protected by our
@@ -171,7 +168,10 @@ function BudgetSection() {
                   Start Your Project
                 </button>
                 <button type="submit" className="btn m-4 file-btn">
-                <img src="./images/file-upload.png"  style={{width:25,height:25}}/>
+                  <img
+                    src="./images/file-upload.png"
+                    style={{ width: 25, height: 25 }}
+                  />
                 </button>
               </form>
             </div>

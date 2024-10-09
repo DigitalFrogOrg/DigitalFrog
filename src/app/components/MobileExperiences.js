@@ -25,14 +25,10 @@ function MobileExperiences() {
             <h4 className="my-4">Healthcare</h4>
           </div>
           <div className="col-md-2 text-center">
-            <img
-              src="/images/imageTwo.png"
-              alt="Ecommerce"
-              className="w-100"
-            />
+            <img src="/images/imageTwo.png" alt="Ecommerce" className="w-100" />
             <h4 className="my-4">Ecommerce</h4>
           </div>
-            <div className="col-md-2 text-center">
+          <div className="col-md-2 text-center">
             <img
               src="/images/Logistics.png"
               alt="Logistics"
@@ -44,7 +40,6 @@ function MobileExperiences() {
             <img src="/images/imageThree.png" alt="Food" className="w-100" />
             <h4 className="my-4">Food</h4>
           </div>
-   
           <div className="col-md-2 text-center">
             <img
               src="/images/imageFour.png"
@@ -53,9 +48,10 @@ function MobileExperiences() {
             />
             <h4 className="my-4">Agriculture</h4>
           </div>
-          <button>Show More</button>
-
           <div className="col-md-1"></div>
+        </div>
+        <div className="row">
+          <button>Show More</button>
         </div>
       </div>
     </>

@@ -1,20 +1,36 @@
 "use client";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
-import {
-  FaBars
-} from "react-icons/fa6";
+import { FaBars } from "react-icons/fa6";
 import {
   FaTimes,
-  FaFacebookF, FaInstagram,
-  FaLinkedinIn
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
 } from "react-icons/fa";
 import Popup from "./Popup";
+import { MdWbSunny } from "react-icons/md";
+import { FaMoon } from "react-icons/fa";
 
 function header() {
   const [showMenu, setShowMenu] = useState(false);
   const pathname = usePathname();
   const [isPopupVisible, setIsPopupVisible] = useState(false);
+
+  const [theme, setTheme] = useState("light");
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme") || "light";
+    setTheme(savedTheme);
+    document.documentElement.setAttribute("data-theme", savedTheme);
+  }, []);
+
+  const toggleTheme = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+    document.documentElement.setAttribute("data-theme", newTheme);
+    localStorage.setItem("theme", newTheme);
+  };
 
   const togglePopup = () => {
     setIsPopupVisible(!isPopupVisible);
@@ -50,7 +66,14 @@ function header() {
             <div className="row" style={{ alignItems: "center" }}>
               <div className="col-md-3">
                 <a href="/">
-                  <img src="./images/black-Logo.png" alt="Logo" />
+                  <img
+                    src={
+                      theme === "light"
+                        ? "./images/black-Logo.png"
+                        : "./images/white-Logo.png"
+                    }
+                    alt="Logo"
+                  />
                 </a>
               </div>
               <div className="col-md-6">
@@ -219,11 +242,17 @@ function header() {
                   {/* <a className="second-btn" href="/contact-us">
                     Contact Us
                   </a> */}
-                  <button onClick={togglePopup} className="second-btn">Contact Us</button>
-              
-                  {/* <button type="button" className="light-mode">
-                  <MdWbSunny />
-                </button> */}
+                  <button onClick={togglePopup} className="second-btn">
+                    Contact Us
+                  </button>
+
+                  <button
+                    onClick={toggleTheme}
+                    className={theme === "light" ? "light-mode" : "dark-mode"}
+                    aria-label="Toggle Theme"
+                  >
+                    {theme === "light" ? <MdWbSunny /> : <FaMoon />}
+                  </button>
                 </div>
               </div>
             </div>
@@ -231,7 +260,9 @@ function header() {
         </div>
       </header>
       {/* Button to toggle the menu */}
-      <div className={`bars-btn-container ${showMenu,showButton ? "show" : ""}`}>
+      <div
+        className={`bars-btn-container ${(showMenu, showButton ? "show" : "")}`}
+      >
         <button className="bars-btn" onClick={toggleMenu}>
           {showMenu ? <FaTimes /> : <FaBars />}
         </button>
@@ -242,7 +273,14 @@ function header() {
         <div className="row h-100">
           <div className="col-md-8 h-100 right-main-menu">
             <a href="/">
-              <img src="./images/black-Logo.png" alt="Logo" />
+              <img
+                src={
+                  theme === "light"
+                    ? "./images/black-Logo.png"
+                    : "./images/white-Logo.png"
+                }
+                alt="Logo"
+              />
             </a>
 
             <ul className="main-ul-li">
