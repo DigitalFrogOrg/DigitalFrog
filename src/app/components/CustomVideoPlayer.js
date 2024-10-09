@@ -18,7 +18,7 @@ const CustomVideoPlayer = ({ videoSrc }) => {
   return (
     <div className="video-banner">
       <div
-        className="col-md-12 vh-100 d-flex justify-content-center align-items-center"
+        className="video-second col-md-12 d-flex justify-content-center align-items-center"
         style={{
           position: "relative",
         }}

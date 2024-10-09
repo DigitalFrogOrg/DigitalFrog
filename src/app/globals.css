@@ -48,6 +48,9 @@ button.btn.m-4.file-btn {
   height: 50px;
   margin: -13px 10px 0 0px;
 }
+.video-second{
+  height: 100vh;
+}
 a {
   text-decoration: none !important;
 }
@@ -3337,4 +3340,44 @@ h1.title-page-2 {
   height: 10px;
   width: 100%;
   margin: 30px 0px 0px 0px;
+}
+
+.mobile-sidebar {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0d0d0d;
+  z-index: 9999;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  padding: 20px;
+  color: #fff;
+}
+.mobile-sidebar.open {
+  display: block;
+  transform: translateX(0);
+}
+.div-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.close-btn{
+  background-color: var(--orange);
+  padding: 4px 7px !important;
+  margin: 0;
+  border: 0;
+  border-radius: 100px;
+}
+.close-btn svg{
+  color: #fff !important;
+  fill: #fff !important;
+}
+.nav-link{
+  text-align: center;
+    font-size: 26px !important;
+    margin-top: 10px;
 }
