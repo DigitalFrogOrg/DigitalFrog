@@ -1,10 +1,32 @@
-// components/CustomVideoPlayer.js
 "use client";
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 
 const CustomVideoPlayer = ({ videoSrc }) => {
   const videoRef = useRef(null);
+  const containerRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
+
+  useEffect(() => {
+    const video = videoRef.current;
+
+    const playVideo = async () => {
+      try {
+        await video.play();
+        setIsPlaying(true);
+      } catch (error) {
+        console.error("Error trying to play the video:", error);
+      }
+    };
+
+    if (video) {
+      playVideo();
+    }
+
+    return () => {
+      video.pause();
+      setIsPlaying(false);
+    };
+  }, [videoSrc]);
 
   const handlePlayPause = () => {
     if (isPlaying) {
@@ -15,6 +37,29 @@ const CustomVideoPlayer = ({ videoSrc }) => {
     setIsPlaying(!isPlaying);
   };
 
+  useEffect(() => {
+    const initialHeight = 600;
+    const maxHeight = 800;
+
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      let newHeight = initialHeight + scrollPosition * 0.3;
+
+      if (newHeight < initialHeight) newHeight = initialHeight;
+      if (newHeight > maxHeight) newHeight = maxHeight;
+
+      if (containerRef.current) {
+        containerRef.current.style.height = `${newHeight}px`;
+        containerRef.current.style.transform = `translateY(${scrollPosition * 0.2}px)`;
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="video-banner">
       <div
@@ -22,14 +67,15 @@ const CustomVideoPlayer = ({ videoSrc }) => {
         style={{
           position: "relative",
         }}
+        ref={containerRef}
       >
         <video
           ref={videoRef}
           src={videoSrc}
-          style={{ width: "100%", display: isPlaying ? "block" : "none" }}
-          onEnded={() => setIsPlaying(false)}
+          style={{ width: "100%", height: "100%", objectFit: "cover" }}
           muted
-          onClick={() => setIsPlaying()}
+          onEnded={() => setIsPlaying(false)}
+          onClick={handlePlayPause}
         />
         <button
           onClick={handlePlayPause}
@@ -42,7 +88,6 @@ const CustomVideoPlayer = ({ videoSrc }) => {
             fontSize: "16px",
             backgroundColor: "transparent",
             border: "none",
-            // borderRadius: '5px',
             cursor: "pointer",
             zIndex: 1,
           }}

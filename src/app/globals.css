@@ -48,9 +48,33 @@ button.btn.m-4.file-btn {
   height: 50px;
   margin: -13px 10px 0 0px;
 }
-.video-second {
-  height: 100vh;
+.video-banner {
+  /* background-image: url("/images/video-banner.png"); */
+  /* background-position: center; */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  /* background-color: #000; */
+  height: 800px;
+  position: relative;
+  overflow: hidden;
 }
+.video-second {
+  height: 600px;
+  transition: height 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.video-second.parallax {
+  background-attachment: fixed;
+}
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 a {
   text-decoration: none !important;
 }
@@ -367,7 +391,7 @@ ul.footer-info li a {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 200px 100px 250px 100px !important;
+  padding: 150px 100px 150px 100px !important;
   position: relative;
 }
 .main-banner h1 {
@@ -2764,14 +2788,6 @@ h1.title-page-2 {
   background-image: url("/images/background-terms.png");
 }
 
-.video-banner {
-  background-image: url("/images/video-banner.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #000;
-}
-
 .accordion-button::after {
   background-image: url("/images/minus-icon.svg") !important;
   background-position: center;
@@ -3391,5 +3407,4 @@ h1.title-page-2 {
   background-image: url("/images/white-bar.png") !important;
   width: 26px !important;
   height: 26px !important;
-
 }
