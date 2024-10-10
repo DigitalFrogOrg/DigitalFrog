@@ -462,10 +462,11 @@ function page() {
       >
         <div className="container">
           <div className="row">
-            <div className="col-md-12 py-5 d-flex align-items-center justify-content-center">
+            <div className="col-md-12 py-5 d-flex align-items-center justify-content-center flex-column">
               <div className="text-section">
                 <h1 className="title-page">Optimized Process</h1>
               </div>
+              <img src="./images/banner-bottom.png" alt="banner-bottom" className="w-100 mt-5"/>
             </div>
           </div>
           {/* <div className="own-process w-100">

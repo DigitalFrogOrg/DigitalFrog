@@ -87,8 +87,15 @@ function header() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className={`collapse navbar-collapse ${isOpen ? "d-none" : ""}`} id="navbarSupportedContent">
-            <ul className={`navbar-nav m-auto mb-2 mb-lg-0 ${isOpen ? "d-none" : ""}`}>
+          <div
+            className={`collapse navbar-collapse ${isOpen ? "d-none" : ""}`}
+            id="navbarSupportedContent"
+          >
+            <ul
+              className={`navbar-nav m-auto mb-2 mb-lg-0 ${
+                isOpen ? "d-none" : ""
+              }`}
+            >
               <div className="navigation">
                 <ul>
                   <li>
@@ -333,7 +340,7 @@ function header() {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/about">
+            <a className="nav-link" href="/about-us">
               About
             </a>
           </li>

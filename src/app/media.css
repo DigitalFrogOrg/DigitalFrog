@@ -158,20 +158,32 @@
   .hotspot {
     transform: translate(-11%, -70%);
   }
-  .orange-sec{
+  .orange-sec {
     padding: 26px 6px !important;
   }
-  .video-second{
+  .video-second {
     height: 50vh;
   }
-  .orange-sec .image-container.next{
+  .orange-sec .image-container.next {
     display: none;
   }
   .mobile-sidebar {
     display: block;
   }
-  .testimonial-tabs{
+  .testimonial-tabs {
     padding: 26px !important;
+  }
+  .about-banner {
+    padding: 50px 26px;
+  }
+  .about-bottom-ban {
+    height: 45vh;
+  }
+  .app-page {
+    padding: 50px 26px;
+  }
+  .app-page h1{
+    font-size: 36px;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
