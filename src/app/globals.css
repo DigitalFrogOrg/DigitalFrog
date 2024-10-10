@@ -40,15 +40,15 @@ button.btn.m-4.file-btn {
   padding: 10px !important;
   margin: 20px 0 0 20px !important;
 }
-.navbar-expand-lg .navbar-collapse{
-  align-items: center;
-}
+/* .navbar-expand-lg .navbar-collapse{
+  align-items: center !important;
+} */
 .Clock-style {
   width: 50px;
   height: 50px;
   margin: -13px 10px 0 0px;
 }
-.video-second{
+.video-second {
   height: 100vh;
 }
 a {
@@ -3305,7 +3305,7 @@ h1.title-page-2 {
   width: 104px;
   border-right: 1px solid var(--orange);
 }
-.process-bottom-1 p{
+.process-bottom-1 p {
   width: 268px;
 }
 .process-bottom-1 .dot {
@@ -3360,24 +3360,36 @@ h1.title-page-2 {
   display: block;
   transform: translateX(0);
 }
-.div-header{
+.div-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.close-btn{
+.close-btn {
   background-color: var(--orange);
-  padding: 4px 7px !important;
+  padding: 9px 12px !important;
   margin: 0;
   border: 0;
   border-radius: 100px;
 }
-.close-btn svg{
+.close-btn svg {
   color: #fff !important;
   fill: #fff !important;
 }
-.nav-link{
+.nav-link {
   text-align: center;
-    font-size: 26px !important;
-    margin-top: 10px;
+  font-size: 26px !important;
+  margin-top: 10px;
+}
+.navbar-toggler {
+  background-color: var(--orange) !important;
+  color: #fff;
+  border-radius: 100px !important;
+  padding: 10px !important;
+}
+.navbar-toggler-icon {
+  background-image: url("/images/white-bar.png") !important;
+  width: 26px !important;
+  height: 26px !important;
+
 }
