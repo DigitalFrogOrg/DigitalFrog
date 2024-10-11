@@ -91,11 +91,7 @@ function header() {
             className={`collapse navbar-collapse ${isOpen ? "d-none" : ""}`}
             id="navbarSupportedContent"
           >
-            <ul
-              className={`navbar-nav m-auto mb-2 mb-lg-0 ${
-                isOpen ? "d-none" : ""
-              }`}
-            >
+            <ul className={`navbar-nav m-auto ${isOpen ? "d-none" : ""}`}>
               <div className="navigation">
                 <ul>
                   <li>
