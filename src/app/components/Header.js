@@ -110,7 +110,10 @@ function header() {
                           <div className="row">
                             <div className="col-md-1"></div>
                             <div className="col-md-4 mid-mega-option">
-                              <a href="#" className="">
+                              <a
+                                href="/app-development"
+                                className={isActive("/app-development")}
+                              >
                                 Mobile App Development Services
                               </a>
                               <a

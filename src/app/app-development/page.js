@@ -89,7 +89,7 @@ function page() {
             <div className="col-md-6 mt-5">
               <div className="accordion mt-2" id="accordionExample">
                 <div className="accordion-item">
-                  <h2 className="accordion-header">
+                  <h2 className="accordion-header w-100">
                     <button
                       className="accordion-button"
                       type="button"
@@ -639,6 +639,8 @@ function page() {
                 </p>
               </div>
             </div>
+          </div>
+          <div className="row mt-4">
             <div className="col-md-6">
               <div className="up-to-mints-div">
                 <h4>Intuitive UX and UI</h4>
@@ -672,16 +674,12 @@ function page() {
           </div>
         </div>
       </div>
-      {/* <TestimonialTabs /> */}
 
       <AppCta />
 
-      {/* <MarqueeSlider /> */}
       <div className="mt-5">
         <FaqsSection />
         <BudgetSection />
-        {/* <HotspotSection /> */}
-        {/* <RecentNews /> */}
       </div>
       <Footer />
     </>

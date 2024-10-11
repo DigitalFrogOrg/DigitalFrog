@@ -610,9 +610,16 @@ ul.footer-info li a {
 .accordion-body {
   text-align: left;
 }
-.accordion-item {
+.faqs .accordion-item {
   border: #d9d9d9 2px solid !important;
   border-radius: 10px !important;
+  display: flex;
+}
+.accordion-item .number {
+  font-size: 30px;
+  color: #b5b5b5;
+  padding: 14px 2px 2px 26px;
+  font-weight: bold;
 }
 .accordion-button {
   border-radius: 10px !important;
@@ -2789,12 +2796,15 @@ h1.title-page-2 {
   background-image: url("/images/background-terms.png");
 }
 
-.accordion-button::after {
-  background-image: url("/images/minus-icon.svg") !important;
+.faqs .accordion-button::after {
+  width: 40px !important;
+  height: 40px !important;
+  background-image: url("/images/minus.svg") !important;
   background-position: center;
+  background-size: cover !important;
 }
-.collapsed::after {
-  background-image: url("/images/plus-icon.svg") !important;
+.faqs .collapsed::after {
+  background-image: url("/images/plus.svg") !important;
   background-position: center;
 }
 .inner-cta {
@@ -2958,6 +2968,141 @@ h1.title-page-2 {
   font-size: 66px;
   font-weight: bold;
 }
+.maintenance-process {
+  background-color: #fffbf8;
+  padding: 100px 0px;
+}
+.maintenance-process h2 {
+  font-size: 66px;
+  font-weight: bold;
+}
+.maintain-process {
+  background-color: #fff;
+  padding: 26px;
+  -webkit-box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.229);
+  -moz-box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.229);
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.229);
+  border-radius: 12px;
+  cursor: pointer;
+  height: 180px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+.maintain-process h3 {
+  font-size: 26px;
+}
+.maintain-process p {
+  font-size: 14px;
+  margin: 0;
+}
+.maintain-process:hover {
+  background-image: url("/images/back-maintainence.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.6s all;
+}
+.maintain-process:hover h3 {
+  color: var(--orange) !important;
+  transition: 0.6s all;
+}
+.MobileAppTabs {
+  padding: 100px 0px;
+}
+.MobileAppTabs h2 {
+  font-size: 66px;
+  font-weight: bold;
+}
+.MobileAppTabs .tabs {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+.MobileAppTabs .tabs li {
+  margin-right: 20px;
+  cursor: pointer;
+  font-size: 26px;
+  font-weight: bold;
+  color: #999999;
+  padding: 12px;
+  border: 2px solid var(--white);
+  border-radius: 12px;
+}
+.MobileAppTabs .tabs li:hover,
+.MobileAppTabs .tabs li.active {
+  font-weight: bold;
+  border: 2px solid var(--orange);
+  color: var(--orange);
+  -webkit-box-shadow: 0px 10px 26px -8px rgba(0, 0, 0, 0.275);
+  -moz-box-shadow: 0px 10px 26px -8px rgba(0, 0, 0, 0.275);
+  box-shadow: 0px 10px 26px -8px rgba(0, 0, 0, 0.275);
+  transition: 0.6s all;
+}
+.MobileAppTabs .tab-content {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.MobileAppTabs .tab-image {
+  width: 70%;
+  height: auto;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.app-quality-main {
+  padding: 100px 0px;
+}
+.app-quality-main h2 {
+  font-size: 50px;
+  font-weight: bold;
+}
+.app-quality-main h2 span {
+  color: var(--orange);
+}
+.app-quality {
+  background-color: #fff;
+  padding: 26px;
+  -webkit-box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.229);
+  -moz-box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.229);
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.229);
+  border-radius: 12px;
+  cursor: pointer;
+  height: 180px;
+  width: 80%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  transition: transform 0.6s ease, background-image 0.6s ease;
+  margin-top: 26px;
+}
+.app-quality h3 {
+  font-size: 26px;
+}
+.app-quality p {
+  font-size: 14px;
+  margin: 0;
+}
+.app-quality:hover {
+  background-image: url("/images/back-maintainence.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.6s all;
+  transform: translateX(40px);
+}
+.app-quality:hover h3 {
+  color: var(--orange) !important;
+  transition: 0.6s all;
+}
+
 .specialists-for-platforms {
   background-color: #fffbf8;
   padding: 100px 0px;
@@ -3528,4 +3673,62 @@ h1.title-page-2 {
 .why-choose-us h2 {
   font-size: 45px;
   font-weight: bold;
+}
+
+.why-choose-sec {
+  padding: 100px 0px;
+  background-color: #fffbf8;
+}
+.why-choose-sec h2 {
+  font-size: 66px;
+  font-weight: bold;
+}
+
+
+.choose-sec-1 {
+  text-align: center;
+  padding: 26px;
+  background-color: #fafafa;
+  -webkit-box-shadow: 0px 0px 5px 5px rgb(110 110 110 / 7%);
+  -moz-box-shadow: 0px 0px 5px 5px rgb(110 110 110 / 7%);
+  box-shadow: 0px 0px 5px 5px rgb(110 110 110 / 7%);
+  height: 200px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  cursor: pointer;
+  margin: 0px 10px;
+}
+.choose-sec-1:hover .choose-rectangle {
+  transition: all 0.6s;
+  background-color: var(--orange);
+}
+.choose-sec-1:hover {
+  background-color: #fff;
+  transition: all 0.6s;
+  background-image: url("/images/choose-back.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: fadeInUp 0.6s forwards;
+}
+.choose-sec-1:hover h4 {
+  color: var(--orange);
+}
+.choose-rectangle {
+  background-color: #ababab;
+  height: 4px;
+  border-radius: 100px;
+  width: 50%;
+  margin-bottom: -22px;
+}
+.choose-sec-1 h4 {
+  font-size: 28px;
+  font-weight: bold;
+}
+.choose-sec-1 p {
+  font-size: 14px;
+  color: #656565;
 }
