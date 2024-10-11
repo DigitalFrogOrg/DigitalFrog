@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AppCta from "../components/AppCta";
 import FaqsSection from "../components/FaqsSection";
+import BudgetSection from "../components/BudgetSection";
 
 const page = () => {
   return (
@@ -11,7 +12,7 @@ const page = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-8">
-              <h1 className="mb-4">Design Services</h1>
+              <h1 className="mb-4">Mobile App Design<br/> Services</h1>
               <br />
               <br />
               <br />
@@ -20,8 +21,6 @@ const page = () => {
               <br />
               <br />
               <br />
-              <br />
-              {/* <h3></h3> */}
             </div>
             <div className="col-md-4"></div>
           </div>
@@ -312,6 +311,7 @@ const page = () => {
       <div className="my-4">
         <FaqsSection />
       </div>
+      <BudgetSection />
       <Footer />
     </>
   );

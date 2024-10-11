@@ -80,8 +80,8 @@ function BudgetSection() {
                 </strong>
               </em>
             </div>
-            <div className="col-md-6 px-5">
-              <form onSubmit={handleSubmit} className="projectForm">
+            <div className="col-md-6 px-5 d-flex align-items-center">
+              <form onSubmit={handleSubmit} className="projectForm w-100">
                 <div className="row">
                   <div className="col-md-6">
                     <input
