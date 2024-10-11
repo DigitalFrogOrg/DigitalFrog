@@ -11,6 +11,7 @@ import CaseStudy from "../components/CaseStudy";
 import HotspotSection from "../components/HotspotSection";
 import FaqsSection from "../components/FaqsSection";
 import BudgetSection from "../components/BudgetSection";
+import AppCta from "../components/AppCta";
 
 function page() {
   return (
@@ -466,7 +467,11 @@ function page() {
               <div className="text-section">
                 <h1 className="title-page">Optimized Process</h1>
               </div>
-              <img src="./images/banner-bottom.png" alt="banner-bottom" className="w-100 mt-5"/>
+              <img
+                src="./images/banner-bottom.png"
+                alt="banner-bottom"
+                className="w-100 mt-5"
+              />
             </div>
           </div>
           {/* <div className="own-process w-100">
@@ -600,9 +605,6 @@ function page() {
               a global recognition of your mobile applications.
             </p>
           </div>
-          {/* <div className="col-md-2">
-          <button>All Work</button>
-        </div> */}
         </div>
 
         <div className="container mt-5">
@@ -672,24 +674,7 @@ function page() {
       </div>
       {/* <TestimonialTabs /> */}
 
-      <div className="container">
-        <div className="row app-cta">
-          <div className="col-md-1"></div>
-          <div className="col-md-6">
-            <h2>
-              into an Innovative <br /> Mobile App.
-            </h2>
-            <button>Schedule A call</button>
-          </div>
-          <div className="col-md-5">
-            <img
-              src="./images/mobile-cta.png"
-              alt="mobile-cta"
-              className="w-100 mobile-cta"
-            />
-          </div>
-        </div>
-      </div>
+      <AppCta />
 
       {/* <MarqueeSlider /> */}
       <div className="mt-5">
