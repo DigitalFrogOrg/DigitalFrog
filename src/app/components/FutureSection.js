@@ -5,7 +5,7 @@ function FutureSection() {
     <section className="future-mobile">
       <div className="container">
         <div className="future-head">
-          <h2>We Build the Future of Mobile Experiences</h2>
+          <h2>We Build The Future of Mobile Experiences</h2>
           {/* <p>
             We specialize in delivering creative mobile app solutions that make
             a real difference. Our mission is to combine creativity and
@@ -80,16 +80,16 @@ function FutureSection() {
           <div className="col-md-6 text-start d-flex align-items-center justify-content-center">
             <div>
               <h2>
-                <strong>
-                  Mobile App Development
-                </strong>
+                <strong>App and Web Design</strong>
               </h2>
               <p>
-                After digesting your idea/project, our professional mobile app designers will build out a beautiful Wireframe & Clickable Prototype to bring your project to life with color and brand.After digesting your idea/project, our professional mobile app designers will build out a beautiful Wireframe.
+                After reviewing your idea or project, our skilled mobile app
+                designers will craft a stunning wireframe and clickable
+                prototype, showcasing your concept with color and brand elements
               </p>
-              <h6>
+              {/* <h6>
                 <strong> Average Time: 2 weeks Average Cost: $5,000</strong>
-              </h6>
+              </h6> */}
             </div>
             {/* <img
               src="./images/mingcute_arrow-up-line.png"
@@ -100,22 +100,24 @@ function FutureSection() {
         </div>
 
         <div className="row process-02">
-        <div className="col-md-6 text-start d-flex align-items-center justify-content-center">
+          <div className="col-md-6 text-start d-flex align-items-center justify-content-center">
             <div>
               <h2>
-                <strong>
-                  Android Development
-                </strong>
+                <strong>App Development</strong>
               </h2>
-
-              Have our top developers build your iPhone, android or iPad app.
-              <ul className="android-list">
-                <li>Custom Code - Ideal for apps that will scale to many users and long term use. We use React, React Native, Flutter, Python, Java, Swift, Node, Mongo, MySQL, AWS & GCP and much more.</li>
-                <li>MVP with Low-Code (Ideal for apps being used to test out an idea) Bubble, Webflow</li>
-              </ul>
-         
+              Let our top developers create your iPhone, Android, or iPad app.
+              <ol className="android-list">
+                <li>
+                  Custom Code: Best for apps that need to scale and have
+                  long-term use. We utilize React, React Native, Flutter,
+                  Python, Java, Swift, Node, MongoDB, MySQL, AWS, GCP, and more.
+                </li>
+                <li>
+                  MVP with Low-Code: Ideal for testing ideas quickly. We use
+                  platforms like Bubble and Webflow.
+                </li>
+              </ol>
             </div>
-       
           </div>
           <div className="col-md-6">
             <img
@@ -136,19 +138,22 @@ function FutureSection() {
           <div className="col-md-6 text-start d-flex align-items-center justify-content-center">
             <div>
               <h2>
-                <strong>
-                Webapp Development
-                </strong>
+                <strong>Web app Development</strong>
               </h2>
-
               Top Web Development in Los Angeles
-              <ul style={{}}>
-                <li>Webapp: Build a web-version of your app idea so your users can access your content from their computers. Example</li>
-                <li>Website: Build a low cost website with Wordpress, Wix or Shopify to market and showcase your awesome product. Example</li>
-              </ul>
-           
+              <ol>
+                <li>
+                  Web App: Develop a web-based version of your app idea so users
+                  can conveniently access your content via computers. Perfect
+                  for extending reach across platforms.
+                </li>
+                <li>
+                  Website: Create a budget-friendly website using platforms like
+                  WordPress, Wix, or Shopify. Ideal for marketing and showcasing
+                  your product in a sleek, user-friendly manner.
+                </li>
+              </ol>
             </div>
-           
           </div>
         </div>
       </div>

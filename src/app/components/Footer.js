@@ -79,9 +79,11 @@ function footer() {
                   <li>
                     <a href="/privacy-policy">Privacy Policy</a>
                   </li>
-
                   <li>
                     <a href="/faqs">Faqs</a>
+                  </li>
+                  <li>
+                    <a href="/contact-us">Contact Us</a>
                   </li>
                 </ul>
               </div>

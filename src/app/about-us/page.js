@@ -57,17 +57,22 @@ function page() {
               Mobile App <br /> Development Services
             </h3>
             <p className="w-100">
-              We may share the information that we collect, both personal and
-              non-personal, with third parties such as advertisers, contest
-              sponsors, promotional and marketing partners, and others who
-              provide our content or whose products or services we think may
-              interest you. We may also share it with our current and future
-              affiliated companies and business partners, and if we are involved
-              in a merger, asset sale or other business reorganization, we may
-              also share or transfer your personal and non-personal information
-              to our successors-in-interest.connection speed, whether you have
-              visited the website in a shared location.
+              Cynergy Studios' Mobile App Development Services bring your
+              creative ideas to life with sleek, high-performance mobile apps.
+              Our expert developers use advanced technology and industry
+              knowledge to craft apps that are intuitive, engaging, and
+              versatile across platforms.
+              <br />
+              Whether it’s native, hybrid, or cross-platform solutions, we
+              ensure seamless functionality across iOS, Android, and more. Our
+              collaborative process keeps you involved from concept to launch,
+              guaranteeing your vision shines through.
+              <br />
+              With strengths in UI/UX design, coding, rigorous testing, and
+              ongoing support, we deliver mobile solutions that enhance user
+              engagement and drive business success.
             </p>
+            <button className="second-btn text-center w-50">Build Now</button>
           </div>
           <div className="col-md-4">
             <img
@@ -76,22 +81,28 @@ function page() {
               className="w-100"
             />
           </div>
-          <div className="col-md-4 text-end d-flex justify-content-center flex-column">
+          <div className="col-md-4 text-end d-flex align-items-end justify-content-center flex-column">
             <h3>
               Problem-Solving Pioneers in a <br /> Strove Digital World
             </h3>
             <p>
-              We may share the information that we collect, both personal and
-              non-personal, with third parties such as advertisers, contest
-              sponsors, promotional and marketing partners, and others who
-              provide our content or whose products or services we think may
-              interest you. We may also share it with our current and future
-              affiliated companies and business partners, and if we are involved
-              in a merger, asset sale or other business reorganization, we may
-              also share or transfer your personal and non-personal information
-              to our successors-in-interest.connection speed, whether you have
-              visited the website in a shared location.
+              In today’s digital age, Cynergy Studios leads the way in solving
+              complex challenges with smart technological solutions. Our
+              expertise spans app development, web design, and digital
+              transformation, all tailored to meet diverse business needs and
+              elevate efficiency.
+              <br />
+              Driven by innovation and data insights, we focus on crafting
+              solutions that enhance user experiences and ensure clients stay
+              competitive.
+              <br />
+              From optimizing existing systems to building custom applications,
+              we turn challenges into growth opportunities, empowering
+              businesses to thrive in a fast-evolving tech landscape.
             </p>
+            <button className="second-btn text-center w-50">
+              Find Solutions
+            </button>
           </div>
         </div>
 
