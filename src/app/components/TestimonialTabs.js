@@ -4,7 +4,7 @@ function TestimonialTabs() {
   return (
     <>
       <div className="container-fluid testimonial-tabs">
-        <h2 className="text-center">Trusted by Innovators, Loved by Users</h2>
+        <h2 className="text-center">Trusted Innovators, Loved by Users</h2>
         <div className="row">
           <div className="col-md-4 d-flex justify-content-center align-items-center">
             <div className="review review-2">
@@ -13,17 +13,17 @@ function TestimonialTabs() {
                   <img src="/images/review-avatar-1.png" alt="avatar" />
                 </div>
                 <div className="d-flex flex-column justify-content-center">
-                  <h5>Alex James</h5>
-                  <h6>Happy Client</h6>
+                  <h5>Alex R.</h5>
+                  <h6>Tech Startup Founder</h6>
                 </div>
               </div>
               <p>
-                Mobile app branding plays a vital role in the creation of the
-                app’s specifications in terms of tone, voice, design, icons, and
-                visuals. It requires careful consideration.
+                Working with Cynergy Studios was a game-changer for our
+                business. Their team turned our vision into a stunning mobile
+                app, delivered on time, and exceeded our expectations. Highly
+                recommend!
               </p>
             </div>
-           
           </div>
           <div className="col-md-4">
             <div className="review">
@@ -32,21 +32,17 @@ function TestimonialTabs() {
                   <img src="/images/review-avatar-2.png" alt="avatar" />
                 </div>
                 <div className="d-flex flex-column justify-content-center">
-                  <h5>Alex James</h5>
-                  <h6>Happy Client</h6>
+                  <h5>Maria T.</h5>
+                  <h6>E-commerce Business Owner</h6>
                 </div>
               </div>
               <p>
-                Mobile app branding plays a vital role in the creation of the
-                app’s specifications in terms of tone, voice, design, icons, and
-                visuals. It requires careful consideration. Mobile app branding
-                plays a vital role in the creation of the app’s specifications
-                in terms of tone, voice, design, icons, and visuals. It requires
-                careful consideration. Mobile app branding plays a vital role in
-                the creation of the app’s specifications in terms of tone.
+                Cynergy Studios' expertise in web development is unmatched.
+                They understood our needs, offered creative solutions, and
+                delivered a flawless product. The ongoing support has been
+                exceptional.
               </p>
             </div>
-        
           </div>
           <div className="col-md-4 d-flex justify-content-center align-items-center">
             <div className="review review-2">
@@ -55,17 +51,16 @@ function TestimonialTabs() {
                   <img src="/images/review-avatar-3.png" alt="avatar" />
                 </div>
                 <div className="d-flex flex-column justify-content-center">
-                  <h5>Alex James</h5>
-                  <h6>Happy Client</h6>
+                  <h5>John K.</h5>
+                  <h6>Digital Marketing Agency CEO</h6>
                 </div>
               </div>
               <p>
-                Mobile app branding plays a vital role in the creation of the
-                app’s specifications in terms of tone, voice, design, icons, and
-                visuals. It requires careful consideration.
+                From concept to launch, Cynergy Studios was with us every step
+                of the way. Their professionalism, technical skills, and focus
+                on security made our web app a great success.
               </p>
             </div>
-       
           </div>
         </div>
       </div>

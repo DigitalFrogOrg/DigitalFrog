@@ -88,40 +88,44 @@ function page() {
                         </div>
                         <div className="col-md-8">
                           <h5>
-                            Specifications & Planning Comprehensive Approach to
-                            Website and App Development Process
+                            Holistic Approach to Website and App Development
                           </h5>
                           <p>
-                            Through several guided discovery sessions, we build
-                            out a specifications document that clearly outlines
-                            our project goal.
+                            At Cynergy Studios, we employ a thorough and
+                            collaborative approach to our website and app
+                            development process. Through a series of structured
+                            discovery sessions, we create a detailed
+                            specifications document that outlines our project
+                            objectives clearly.
                           </p>
-                          <ul>
-                            <li>
-                              What are we building, for what users, and with
-                              what features?
-                            </li>
-                            <li>
-                              What languages, frameworks & services should we
-                              use to optimize cost vs functionality?
-                            </li>
-                          </ul>
+                          <strong>
+                            <ul>
+                              <li>What are we developing?</li>
+                              <li>Who are the intended users?</li>
+                              <li>What features will be included?</li>
+                              <li>
+                                Which languages, frameworks, and services should
+                                we utilize to balance cost and functionality?
+                              </li>
+                            </ul>
+                          </strong>
                           <p>
-                            Our team of professionals help guide this process
-                            through
+                            Our team of experts actively supports this process
+                            by providing:
                           </p>
                           <ul>
                             <li>
-                              Feature Suggestions (for example, did you think of
-                              building an admin panel to track usership &
-                              analytics).
+                              Feature Recommendations: For instance, we may
+                              suggest incorporating an admin panel to monitor
+                              user engagement and analytics.
                             </li>
                             <li>
-                              80/20 principles where its possible to build a
-                              similar feature but for much cheaper.
+                              Cost-Effective Solutions: We apply the 80/20
+                              principle, identifying opportunities to develop
+                              similar features at a lower cost without
+                              sacrificing quality.
                             </li>
                           </ul>
-                          <p>Here is a sample of a Specifications Sheet.</p>
                         </div>
                       </div>
                     </div>
@@ -146,26 +150,16 @@ function page() {
                           </h4>
                         </div>
                         <div className="col-md-8">
-                          <h5>Designs, Wireframe & Prototype </h5>
+                          <h5>Designs, Wireframes & Prototypes</h5>
                           <p>
-                            Through several guided discovery sessions, we build
-                            out a specifications document that clearly outlines
-                            our project goal.
-                          </p>
-                          <ul>
-                            <li>
-                              Based on our specifications, we create a beautiful
-                              wireframe + prototype.
-                            </li>
-                            <li>
-                              We then click through it together to make sure it
-                              looks and feels the way we want our final product
-                              to feel.
-                            </li>
-                          </ul>
-                          <p>
-                            Sample Wireframe & Prototype (feel free to click
-                            around on the prototype).
+                            Building on our specifications, we craft an
+                            aesthetically pleasing wireframe and prototype.
+                            <br />
+                            Once the initial design is ready, we conduct a
+                            collaborative walkthrough, allowing us to interact
+                            with the prototype and ensure that it aligns with
+                            our vision for the final product in both look and
+                            feel.
                           </p>
                         </div>
                       </div>
@@ -191,23 +185,17 @@ function page() {
                           </h4>
                         </div>
                         <div className="col-md-8">
-                          <h5>Estimates & Timeline </h5>
+                          <h5>Estimates & Timeline</h5>
                           <p>
-                            Through several guided discovery sessions, we build
-                            out a specifications document that clearly outlines
-                            our project goal.
+                            After finalizing the specifications and designs, we
+                            develop a comprehensive estimate that outlines the
+                            project costs along with a timeline for deployment.
                           </p>
-                          <ul>
-                            <li>
-                              Based on specifications and designs, we’ll create
-                              a detailed estimate on the project cost + a
-                              timeline to deployment.
-                            </li>
-                            <li>
-                              The estimate can then be modified, removing or
-                              adding optional features to suit your budget
-                            </li>
-                          </ul>
+                          <p>
+                            This estimate is flexible, allowing for adjustments
+                            by adding or removing optional features to align
+                            with your budgetary requirements.
+                          </p>
                         </div>
                       </div>
                     </div>

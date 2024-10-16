@@ -106,21 +106,22 @@ const page = () => {
               <div className="steps">
                 <div className="step-1">
                   <p>
-                    Our experts will analyze your requirements and contact you
-                    within 1-2 business days.
+                    Our experts will review your requirements and reach out to
+                    you within 1-2 business days.
                   </p>
                 </div>
                 <div className="step-2">
                   <p>
-                    Our team will collect all requirements for your project, and
-                    if needed, we will sign an NDA to ensure the highest level
-                    of privacy.
+                    Our team will gather all the requirements for your project,
+                    and if necessary, we'll sign an NDA to ensure complete
+                    confidentiality and privacy.
                   </p>
                 </div>
                 <div className="step-3">
                   <p>
-                    We will develop a comprehensive proposal and an action plan
-                    for your project with estimates, timelines etc.
+                    We will create a detailed proposal and action plan for your
+                    project, including estimates, timelines, and other essential
+                    details.
                   </p>
                 </div>
               </div>

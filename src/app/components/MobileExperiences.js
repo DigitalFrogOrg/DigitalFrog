@@ -5,14 +5,14 @@ function MobileExperiences() {
     <>
       <div className="container-fluid mobile-experiences">
         <h2 className="text-center">
-          Make the industries section like the screenshot <br /> Reimagine
-          Mobile Experiences Across Every Industry
+          Make the industries section like the screenshot
+          <br /> Reimagine Mobile Experiences Across Every Industry.
         </h2>
         <p className="text-center">
-          Cynergy Studios delivers impactful mobile apps across a variety of
-          industries. From healthcare to retail, education to <br />{" "}
-          entertainment, we create solutions that drive success and enhance user
-          experiences, no matter the field.
+          Cynergy Studios crafts powerful mobile apps across a wide range of
+          industries. Whether in healthcare, retail, education, <br/> or
+          entertainment, we design solutions that foster success and enhance
+          user experiences, regardless of the sector.
         </p>
         <div className="row mt-5">
           <div className="col-md-1"></div>
