@@ -1847,7 +1847,7 @@ button.dive_buttons::before {
 }
 .cs_detail_01 {
   background-color: #161d23;
-  background-size: 57%;
+  background-size: contain;
   background-image: url("/images/faceOne.png");
   background-position: right;
   background-repeat: no-repeat;
@@ -1859,8 +1859,44 @@ button.dive_buttons::before {
   padding: 50px;
   border-radius: 20px;
   margin: 15px 0;
-  height: 400px;
+  height: 300px;
 }
+.flip-box-01 {
+  perspective: 1000px;
+  height: 300px;
+  cursor: pointer;
+  margin: 20px 0px 0px 0px;
+}
+.flip-box-01-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.flip-box-01:hover .flip-box-01-inner {
+  transform: rotateY(180deg);
+}
+.flip-box-01-front,
+.flip-box-01-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 20px;
+}
+.flip-box-01-back {
+  background-color: #161d23;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  transform: rotateY(180deg);
+  text-align: left;
+  margin-top: 15px;
+}
+
 .cs_detail_01 button {
   background-color: #0000;
   color: #fff;
@@ -1884,8 +1920,43 @@ button.dive_buttons::before {
   padding: 50px;
   border-radius: 20px;
   margin: 15px 0;
-  height: 400px;
-  background-size: 49%;
+  height: 300px;
+  background-size: contain;
+}
+.flip-box-02 {
+  perspective: 1000px;
+  height: 300px;
+  cursor: pointer;
+  margin: 20px 0px 0px 0px;
+}
+.flip-box-02-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.flip-box-02:hover .flip-box-02-inner {
+  transform: rotateY(180deg);
+}
+.flip-box-02-front,
+.flip-box-02-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 20px;
+}
+.flip-box-02-back {
+  background-color: #686d76;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  transform: rotateY(180deg);
+  text-align: left;
+  margin-top: 15px;
 }
 .cs_detail_02 button {
   background-color: #0000;
@@ -1910,9 +1981,44 @@ button.dive_buttons::before {
   padding: 50px;
   border-radius: 20px;
   margin: 15px 0;
-  height: 400px;
+  height: 300px;
   color: #000;
-  background-size: 44%;
+  background-size: 40%;
+}
+.flip-box-03 {
+  perspective: 1000px;
+  height: 300px;
+  cursor: pointer;
+  margin: 20px 0px 0px 0px;
+}
+.flip-box-03-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.flip-box-03:hover .flip-box-03-inner {
+  transform: rotateY(180deg);
+}
+.flip-box-03-front,
+.flip-box-03-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 20px;
+}
+.flip-box-03-back {
+  background-color: #fafafa;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  transform: rotateY(180deg);
+  text-align: left;
+  margin-top: 15px;
 }
 .cs_detail_03 button {
   background-color: #0000;
@@ -1937,8 +2043,43 @@ button.dive_buttons::before {
   padding: 50px;
   border-radius: 20px;
   margin: 15px 0;
-  height: 400px;
+  height: 300px;
   color: #fff;
+}
+.flip-box-04 {
+  perspective: 1000px;
+  height: 300px;
+  cursor: pointer;
+  margin: 20px 0px 0px 0px;
+}
+.flip-box-04-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.flip-box-04:hover .flip-box-04-inner {
+  transform: rotateY(180deg);
+}
+.flip-box-04-front,
+.flip-box-04-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 20px;
+}
+.flip-box-04-back {
+  background-color: #dc5f00;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  transform: rotateY(180deg);
+  text-align: left;
+  margin-top: 15px;
 }
 .cs_detail_04 button {
   background-color: #0000;
@@ -1966,6 +2107,7 @@ button.dive_buttons::before {
   font-size: 17px;
   font-weight: 600;
 }
+
 .studio-slider {
   margin-top: 50px !important;
 }
