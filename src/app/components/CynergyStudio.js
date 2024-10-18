@@ -24,85 +24,66 @@ function CynergyStudio() {
           <div className="cynergy_studio_detail container">
             <div className="row">
               <div className="col-sm-6">
-                <div className="flip-box-01">
-                  <div className="flip-box-01-inner">
-                    <div className="flip-box-01-front cs_detail_01">
-                      <h4>Product Lab</h4>
-                      <button>Read More</button>
-                    </div>
-                    <div className="flip-box-01-back">
-                      <p>
-                        Our Product Lab fosters creativity and innovation,
-                        turning your concepts into practical, market-ready
-                        solutions. We refine ideas, prototype, and develop,
-                        ensuring each product is optimized for success and user
-                        engagement.
-                      </p>
-                    </div>
+                <div className="cs_detail_01">
+                  <h4>Product Lab</h4>
+                  <button>Read More</button>
+                  <div className="blur-box-01">
+                    <p>
+                      Our Product Lab fosters creativity and innovation, turning
+                      your concepts into practical, market-ready solutions. We
+                      refine ideas, prototype, and develop, ensuring each
+                      product is optimized for success and user engagement.
+                    </p>
                   </div>
                 </div>
               </div>
               <div className="col-sm-6">
-                <div className="flip-box-02">
-                  <div className="flip-box-02-inner">
-                    <div className="flip-box-02-front cs_detail_02">
-                      <h4>
-                        Business Before
-                        <br /> Technology
-                      </h4>
-                      <button>Read More</button>
-                    </div>
-                    <div className="flip-box-02-back">
-                      <p>
-                        We prioritize understanding your business goals before
-                        recommending technology. By aligning solutions with your
-                        objectives, we deliver digital products that drive
-                        growth and efficiency, putting your business needs
-                        first.
-                      </p>
-                    </div>
+                <div className="cs_detail_02">
+                  <h4>
+                    Business Before
+                    <br /> Technology
+                  </h4>
+                  <button>Read More</button>
+                  <div className="blur-box-02">
+                    <p>
+                      We prioritize understanding your business goals before
+                      recommending technology. By aligning solutions with your
+                      objectives, we deliver digital products that drive growth
+                      and efficiency, putting your business needs first.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
             <div className="row">
               <div className="col-sm-6">
-                <div className="flip-box-03">
-                  <div className="flip-box-03-inner">
-                    <div className="flip-box-03-front cs_detail_03">
-                      <h4>
-                        Excellent Track
-                        <br /> Record
-                      </h4>
-                      <button>Read More</button>
-                    </div>
-                    <div className="flip-box-03-back">
-                      <p>
-                        Cynergy Studios has a proven history of delivering
-                        successful projects across various industries. Our
-                        consistent quality and timely execution have earned us
-                        trust and long-term partnerships with clients worldwide.
-                      </p>
-                    </div>
+                <div className="cs_detail_03">
+                  <h4>
+                    Excellent Track
+                    <br /> Record
+                  </h4>
+                  <button>Read More</button>
+                  <div className="blur-box-03">
+                    <p>
+                      Cynergy Studios has a proven history of delivering
+                      successful projects across various industries. Our
+                      consistent quality and timely execution have earned us
+                      trust and long-term partnerships with clients worldwide.
+                    </p>
                   </div>
                 </div>
               </div>
               <div className="col-sm-6">
-                <div className="flip-box-04">
-                  <div className="flip-box-04-inner">
-                    <div className="flip-box-04-front cs_detail_04">
-                      <h4>Security</h4>
-                      <button>Read More</button>
-                    </div>
-                    <div className="flip-box-04-back">
-                      <p>
-                        We prioritize security in every aspect of our
-                        development. From data encryption to secure coding
-                        practices, we ensure your digital products are
-                        safeguarded against threats, protecting your business
-                        and user data.
-                      </p>
-                    </div>
+                <div className="cs_detail_04">
+                  <h4>Security</h4>
+                  <button>Read More</button>
+                  <div className="blur-box-04">
+                    <p>
+                      We prioritize security in every aspect of our development.
+                      From data encryption to secure coding practices, we ensure
+                      your digital products are safeguarded against threats,
+                      protecting your business and user data.
+                    </p>
                   </div>
                 </div>
               </div>

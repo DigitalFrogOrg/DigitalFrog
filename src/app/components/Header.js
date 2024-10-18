@@ -14,6 +14,58 @@ import { FaMoon } from "react-icons/fa";
 import { RxCross1 } from "react-icons/rx";
 
 function header() {
+  const [activeTab, setActiveTab] = useState("development");
+  const tabsContent = {
+    development: {
+      heading: "Development",
+      links: [
+        { href: "/app-development", text: "Android App Development Services" },
+        {
+          href: "/ios-app-development-services",
+          text: "iOS App Development Services",
+        },
+        {
+          href: "/native-app-development-services",
+          text: "Native App Development Services",
+        },
+        {
+          href: "/web-app-development-services",
+          text: "Web App Development Services",
+        },
+      ],
+      links2: [
+        {
+          href: "/mobile-game-development",
+          text: "Hire Android App Developers",
+        },
+        { href: "/mobile-app-development", text: "Hire iOS App Developers" },
+        { href: "/ai-app-development", text: "Hybrid App Development Service" },
+        { href: "/pwa-development-services", text: "PWA Development Services" },
+      ],
+    },
+    design: {
+      heading: "Design",
+      links: [
+        { href: "/android-app-design", text: "Android App Design Services" },
+        { href: "/ios-app-design", text: "iOS App Design Services" },
+      ],
+      links2: [
+        { href: "/mobile-app-design", text: "Mobile App Design Services" },
+      ],
+    },
+    maintenance: {
+      heading: "Maintenance & Consulting",
+      links: [
+        { href: "/mobile-app-consulting", text: "Mobile App Consulting" },
+        {
+          href: "/mobile-app-support-and-maintenance",
+          text: "Mobile App Support and Maintenance",
+        },
+      ],
+      links2: [{ href: "/mobile-app-testing", text: "Mobile App Testing" }],
+    },
+  };
+
   const [showMenu, setShowMenu] = useState(false);
   const pathname = usePathname();
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -94,11 +146,6 @@ function header() {
             <ul className={`navbar-nav m-auto ${isOpen ? "d-none" : ""}`}>
               <div className="navigation">
                 <ul>
-                  <li>
-                    {/* <a href="/" className={isActive("/")}>
-                      Home
-                    </a> */}
-                  </li>
                   <li className="nav-item">
                     <div className="what-we-do-container">
                       <a href="#" className="what-we-do">
@@ -111,117 +158,63 @@ function header() {
                             <div className="col-md-1"></div>
                             <div className="col-md-4 mid-mega-option">
                               <a
-                                href="/app-development"
-                                className={isActive("/app-development")}
+                                onMouseEnter={() => setActiveTab("development")}
+                                className={
+                                  activeTab === "development" ? "active" : ""
+                                }
                               >
-                                Mobile App Development Services
+                                Development
                               </a>
                               <a
-                                href="/design-services"
-                                className={isActive("/design-services")}
+                                onMouseEnter={() => setActiveTab("design")}
+                                className={
+                                  activeTab === "design" ? "active" : ""
+                                }
                               >
-                                Design Services
+                                Design
                               </a>
                               <a
-                                href="/maintenance-services"
-                                className={isActive("/maintenance-services")}
+                                onMouseEnter={() => setActiveTab("maintenance")}
+                                className={
+                                  activeTab === "maintenance" ? "active" : ""
+                                }
                               >
-                                Maintenance & Consulting Services
+                                Maintenance & Consulting
                               </a>
                             </div>
                             <div className="col-md-7">
                               <div className="right-mega-menu">
-                                <h2>Mobile App Development Services</h2>
-                                <ul>
-                                  <li>
-                                    <a
-                                      href="/app-development"
-                                      className={isActive(
-                                        "/android-app-development-services"
-                                      )}
-                                    >
-                                      Android App Development Services
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="/ios-app-development-services"
-                                      className={isActive(
-                                        "/ios-app-development-services"
-                                      )}
-                                    >
-                                      iOS App Development Services
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="/native-app-development-services"
-                                      className={isActive(
-                                        "/native-app-development-services"
-                                      )}
-                                    >
-                                      Native App Development Services
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="/web-app-development-services"
-                                      className={isActive(
-                                        "/web-app-development-services"
-                                      )}
-                                    >
-                                      Web App Development Services
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="/pwa-development-services"
-                                      className={isActive(
-                                        "/pwa-development-services"
-                                      )}
-                                    >
-                                      PWA Development Services
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="/mobile-game-development"
-                                      className={isActive(
-                                        "/mobile-game-development"
-                                      )}
-                                    >
-                                      Mobile Game Development
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="/mobile-app-development"
-                                      className={isActive(
-                                        "/mobile-app-development"
-                                      )}
-                                    >
-                                      Mobile App Development
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="/ai-app-development"
-                                      className={isActive(
-                                        "/ai-app-development"
-                                      )}
-                                    >
-                                      AI App Development
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a
-                                      href="/no-code-low-code"
-                                      className={isActive("/no-code-low-code")}
-                                    >
-                                      No-Code/Low-Code
-                                    </a>
-                                  </li>
-                                </ul>
+                                <h2>{tabsContent[activeTab].heading}</h2>
+                                <div className="d-flex align-items-center justify-content-evenly pb-5">
+                                  <ul>
+                                    {tabsContent[activeTab].links.map(
+                                      (link, index) => (
+                                        <li key={index}>
+                                          <a
+                                            href={link.href}
+                                            className={isActive(link.href)}
+                                          >
+                                            {link.text}
+                                          </a>
+                                        </li>
+                                      )
+                                    )}
+                                  </ul>
+                                  <ul>
+                                    {tabsContent[activeTab].links2.map(
+                                      (link, index) => (
+                                        <li key={index}>
+                                          <a
+                                            href={link.href}
+                                            className={isActive(link.href)}
+                                          >
+                                            {link.text}
+                                          </a>
+                                        </li>
+                                      )
+                                    )}
+                                  </ul>
+                                </div>
                               </div>
                             </div>
                           </div>

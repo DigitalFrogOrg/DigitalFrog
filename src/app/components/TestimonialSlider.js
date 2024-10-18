@@ -17,7 +17,7 @@ function TestimonialSlider() {
       subTitle: "Case Study:",
       title: "ASL Flurry",
       text: "ASL Flurry is an educational app designed to make learning American Sign Language (ASL) both engaging and accessible. Offering interactive lessons, games, and quizzes, the app helps all of the users of skill levels, from beginners to advanced, master ASL at their own pace. With a vast library of vocabulary and phrases, ASL Flurry supports visual learners through high-quality video demonstrations of each sign. Its gamified approach encourages regular practice, boosting retention and fluency. By providing a user-friendly and immersive experience, ASL Flurry plays a pivotal role in fostering communication within the Deaf community and beyond.",
-      imgSrc: "/images/mobile-slide.png",
+      imgSrc: "/images/mobileSlider.png",
     },
     {
       id: 3,
@@ -31,7 +31,7 @@ function TestimonialSlider() {
       subTitle: "Case Study:",
       title: "The Fortune Teller App by Full Moon",
       text: "The Fortune Teller App by Full Moon offers users a captivating experience with personalized fortune readings and insights. Leveraging astrology, tarot, and palmistry, the app provides daily, weekly, and monthly predictions tailored to individual users' life paths. With an intuitive interface and visually appealing design, users can explore multiple facets of their future, including love, career, and health. The app’s interactive features, such as daily horoscopes and live fortune-telling sessions, engage users and keep them returning for insights. After you combine ancient wisdom with modern technology, The Fortune Teller App has built a loyal user base seeking guidance and entertainment.",
-      imgSrc: "/images/mobile-slide.png",
+      imgSrc: "/images/mobileSlider.png",
     },
   ];
 
@@ -69,12 +69,12 @@ function TestimonialSlider() {
           </div>
           <div className="col-md-8 testimonials">
             <div className="one-test">
-              <div className="divider"></div>
               <div className="number-selector">
                 {testimonials.map((_, index) => (
                   <h4
                     key={index}
                     onClick={() => handleNumberClick(index)}
+                    className={activeIndex === index ? "active" : ""}
                     style={{ cursor: "pointer" }}
                   >
                     {index + 1}
