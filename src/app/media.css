@@ -3,13 +3,14 @@
     overflow-x: none;
   }
   .main-banner {
-    padding: 50px 30px !important;
+    height: auto;
+    padding: 50px 15px !important;
   }
   .main-banner h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
   #header {
-    padding: 20px;
+    padding: 5px 10px;
   }
   #header img {
     width: 200px;
@@ -182,11 +183,11 @@
   .app-page {
     padding: 50px 26px;
   }
-  .app-page h1{
+  .app-page h1 {
     font-size: 36px;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
 }
-@media only screen and (min-width: 1024) {
+@media only screen and (min-width: 1024px) {
 }
