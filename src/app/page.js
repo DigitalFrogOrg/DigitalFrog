@@ -60,7 +60,7 @@ export default function Home() {
       <Header />
       <div className="main-banner">
         <div className="container-fluid h-100">
-          <div className="row">
+          <div className="row h-100">
             <div className="col-md-10 d-flex align-items-center justify-content-center">
               <CustomizeHeading />
             </div>

@@ -30,8 +30,8 @@ const CustomizeHeading = () => {
   }, [charIndex, currentWordIndex]);
   return (
     <>
-      <h1 className="mt-5">
-        We Design Apps That{" "}
+      <h1 className="w-100">
+        We Design Apps <br/> That{" "}
         <span style={{ color: "#dc5f00" }}>{displayedText}</span>
       </h1>
     </>
