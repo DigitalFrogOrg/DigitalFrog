@@ -41,6 +41,14 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  src: url("../../public/fonts/Poppins-SemiBold.woff2") format("woff2"),
+    url("../../public/fonts/Poppins-SemiBold.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+}
 body {
   font-family: "NobelUno-Medium" !important;
   overflow-x: hidden;
