@@ -46,7 +46,7 @@ function header() {
     design: {
       heading: "Design",
       links: [
-        { href: "/android-app-design", text: "Android App Design Services" },
+        { href: "#", text: "Android App Design Services" },
         { href: "/ios-app-design", text: "iOS App Design Services" },
       ],
       links2: [

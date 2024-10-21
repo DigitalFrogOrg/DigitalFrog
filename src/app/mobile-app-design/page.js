@@ -356,7 +356,7 @@ const page = () => {
       </div>
 
       <div className="my-4">
-        <AppCta />
+        <AppCta CtaHeading={"Cynergy’s Service Scope?"} />
       </div>
       <div className="my-4">
         <FaqsSection faqs={faqData} />
