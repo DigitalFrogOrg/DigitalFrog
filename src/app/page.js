@@ -18,6 +18,7 @@ import MarqueeSlider from "./components/MarqueeSlider";
 import CustomVideoPlayer from "./components/CustomVideoPlayer";
 import GrowthSec from "./components/GrowthSec";
 import CustomizeHeading from "./components/CustomizeHeading";
+import VideoPlayer from "./components/VideoPlayer/VideoPlayer";
 
 export default function Home() {
   const VideoLink = "/path/Cynergy-Showreel-Final.mp4";
@@ -80,7 +81,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <CustomVideoPlayer videoSrc={VideoLink} />
+      {/* <CustomVideoPlayer videoSrc={VideoLink} /> */}
+      <VideoPlayer />
       <GrowthSec />
       <FutureSection />
       <Evolution />

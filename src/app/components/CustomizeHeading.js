@@ -6,8 +6,8 @@ const CustomizeHeading = () => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
   const [charIndex, setCharIndex] = useState(0);
-  const typingSpeed = 150;
-  const delayBetweenWords = 4000;
+  const typingSpeed = 130;
+  const delayBetweenWords = 1500;
 
   useEffect(() => {
     let typingTimeout;

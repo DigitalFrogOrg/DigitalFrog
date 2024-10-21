@@ -1,150 +1,121 @@
-// "use client";
-// import React from "react";
-// import Slider from "react-slick";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
-
-// const testimonialsData = [
-//   {
-//     name: "Alex R.",
-//     role: "Tech Startup Founder",
-//     avatar: "/images/review-avatar-1.png",
-//     review:
-//       "Working with Cynergy Studios was a game-changer for our business. Their team turned our vision into a stunning mobile app, delivered on time, and exceeded our expectations. Highly recommend!",
-//   },
-//   {
-//     name: "Maria T.",
-//     role: "E-commerce Business Owner",
-//     avatar: "/images/review-avatar-2.png",
-//     review:
-//       "Cynergy Studios' expertise in web development is unmatched. They understood our needs, offered creative solutions, and delivered a flawless product. The ongoing support has been exceptional.",
-//   },
-//   {
-//     name: "John K.",
-//     role: "Digital Marketing Agency CEO",
-//     avatar: "/images/review-avatar-3.png",
-//     review:
-//       "From concept to launch, Cynergy Studios was with us every step of the way. Their professionalism, technical skills, and focus on security made our web app a great success.",
-//   },
-//   // Add more testimonials as needed...
-// ];
-
-// function TestimonialTabs() {
-//   const settings = {
-//     dots: true,
-//     infinite: true,
-//     speed: 500,
-//     slidesToShow: 3,
-//     slidesToScroll: 1,
-//     responsive: [
-//       {
-//         breakpoint: 1024,
-//         settings: {
-//           slidesToShow: 2,
-//           slidesToScroll: 1,
-//         },
-//       },
-//       {
-//         breakpoint: 600,
-//         settings: {
-//           slidesToShow: 1,
-//           slidesToScroll: 1,
-//         },
-//       },
-//     ],
-//   };
-
-//   return (
-//     <div className="container-fluid testimonial-tabs">
-//       <h2 className="text-center">Trusted Innovators, Loved by Users</h2>
-//       <Slider {...settings}>
-//         {testimonialsData.map((testimonial, index) => (
-//           <div key={index} className="review">
-//             <div className="avatar d-flex">
-//               <div className="me-2">
-//                 <img src={testimonial.avatar} alt="avatar" />
-//               </div>
-//               <div className="d-flex flex-column justify-content-center">
-//                 <h5>{testimonial.name}</h5>
-//                 <h6>{testimonial.role}</h6>
-//               </div>
-//             </div>
-//             <p>{testimonial.review}</p>
-//           </div>
-//         ))}
-//       </Slider>
-//     </div>
-//   );
-// }
-
-// export default TestimonialTabs;
-
+"use client";
 import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+const testimonialsData = [
+  {
+    name: "Alex Ron",
+    role: "Tech Startup Founder",
+    avatar: "/images/review-avatar-1.png",
+    review:
+      "Working with Cynergy Studios was a game-changer for our business. Their team turned our vision into a stunning mobile app, delivered on time, and exceeded our expectations. Highly recommend!",
+    backgroundClass: "review-2",
+  },
+  {
+    name: "Shamus Tom",
+    role: "E-commerce Business Owner",
+    avatar: "/images/review-avatar-2.png",
+    review:
+      "Cynergy Studios' expertise in web development is unmatched. They understood our needs, offered creative solutions, and delivered a flawless product. The ongoing support has been exceptional.",
+    backgroundClass: " ",
+  },
+  {
+    name: "John Kally",
+    role: "Digital Marketing Agency CEO",
+    avatar: "/images/review-avatar-3.png",
+    review:
+      "From concept to launch, Cynergy Studios was with us every step of the way. Their professionalism, technical skills, and focus on security made our web app a great success.",
+    backgroundClass: "review-2",
+  },
+  {
+    name: "Raj Patel",
+    role: "E-commerce Business Admin",
+    avatar: "/images/review-avatar-5.jpg",
+    review:
+      "Working with Cynergy was a game-changer! They took our concept and turned it into an engaging app that our users love. Truly a remarkable experience!",
+    backgroundClass: " ",
+  },
+  {
+    name: "Maria Thompson",
+    role: "Tech Startup CEO",
+    avatar: "/images/review-avatar-4.jpg",
+    review:
+      "Cynergy Studios transformed our idea into a sleek app! Their team understood our vision and delivered beyond expectations. Highly recommend!",
+    backgroundClass: "review-2",
+  },
+  {
+    name: "John Davis",
+    role: "Marketing Agency Invester",
+    avatar: "/images/review-avatar-6.jpg",
+    review:
+      "We were blown away by the professionalism and expertise of Cynergy Studios. Our app not only looks amazing but performs flawlessly!",
+    backgroundClass: "review-2",
+  },
+];
 
 function TestimonialTabs() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    arrows: false,
+    autoplaySpeed: 6000,
+    customPaging: (i) => (
+      <div
+        className="custom-dot"
+        style={{
+          width: "30px",
+          height: "2px",
+          backgroundColor: "#ddd",
+          borderRadius: "0px",
+          margin: "30px 0px",
+          transition: "background-color 0.3s",
+        }}
+      />
+    ),
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
-    <>
-      <div className="container-fluid testimonial-tabs">
-        <h2 className="text-center">Trusted Innovators, Loved by Users</h2>
-        <div className="row">
-          <div className="col-md-4 d-flex justify-content-center align-items-center">
-            <div className="review review-2">
-              <div className="avatar">
-                <div className="me-2">
-                  <img src="/images/review-avatar-1.png" alt="avatar" />
-                </div>
-                <div className="d-flex flex-column justify-content-center">
-                  <h5>Alex R.</h5>
-                  <h6>Tech Startup Founder</h6>
-                </div>
+    <div className="container-fluid testimonial-tabs">
+      <h2 className="text-center">Trusted Innovators, Loved by Users</h2>
+      <Slider {...settings}>
+        {testimonialsData.map((testimonial, index) => (
+          <div key={index} className={`review ${testimonial.backgroundClass}`}>
+            <div className="avatar d-flex">
+              <div className="me-2">
+                <img src={testimonial.avatar} alt="avatar" />
               </div>
-              <p>
-                Working with Cynergy Studios was a game-changer for our
-                business. Their team turned our vision into a stunning mobile
-                app, delivered on time, and exceeded our expectations. Highly
-                recommend!
-              </p>
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div className="review">
-              <div className="avatar">
-                <div className="me-2">
-                  <img src="/images/review-avatar-2.png" alt="avatar" />
-                </div>
-                <div className="d-flex flex-column justify-content-center">
-                  <h5>Maria T.</h5>
-                  <h6>E-commerce Business Owner</h6>
-                </div>
+              <div className="d-flex flex-column justify-content-center">
+                <h5>{testimonial.name}</h5>
+                <h6>{testimonial.role}</h6>
               </div>
-              <p>
-                Cynergy Studios' expertise in web development is unmatched. They
-                understood our needs, offered creative solutions, and delivered
-                a flawless product. The ongoing support has been exceptional.
-              </p>
             </div>
+            <p>{testimonial.review}</p>
           </div>
-          <div className="col-md-4 d-flex justify-content-center align-items-center">
-            <div className="review review-2">
-              <div className="avatar">
-                <div className="me-2">
-                  <img src="/images/review-avatar-3.png" alt="avatar" />
-                </div>
-                <div className="d-flex flex-column justify-content-center">
-                  <h5>John K.</h5>
-                  <h6>Digital Marketing Agency CEO</h6>
-                </div>
-              </div>
-              <p>
-                From concept to launch, Cynergy Studios was with us every step
-                of the way. Their professionalism, technical skills, and focus
-                on security made our web app a great success.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
+        ))}
+      </Slider>
+    </div>
   );
 }
 

@@ -391,7 +391,7 @@ ul.footer-info li a {
   background-size: cover;
   padding: 100px !important;
   position: relative;
-  height: 100vh;
+  height: 90vh;
 }
 .main-banner h1 {
   color: var(--heading-color);
@@ -850,10 +850,9 @@ button.whole-btn2:hover {
   padding: 50px;
   position: relative;
   color: #000;
-  /* Add this */
   position: -webkit-sticky;
   position: sticky;
-  top: 50px;
+  top: 226px;
   z-index: 1;
   transition: opacity 0.5s ease;
 }
@@ -1251,9 +1250,9 @@ section.evolution-sec::after {
 .phase_b-process::after {
   content: "We Repeat Until It’s Finished!";
   font-size: 26px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: capitalize;
+  font-weight: bold;
   color: var(--heading-color);
   position: absolute;
   left: 0;
@@ -1564,15 +1563,15 @@ section.evolution-sec::after {
 }
 .phase_b-inprocess::after {
   content: "";
-  border-right: 2px dashed #d2d2d3;
+  border-right: 2px dashed #e84c3d80;
   width: 0px;
   left: 0;
   right: 0;
-  height: 78.8%;
+  height: 55%;
   margin: 0 auto;
   position: absolute;
   z-index: -1;
-  bottom: 89%;
+  bottom: 70%;
 }
 
 .phase_b-fifth-row {
@@ -1586,7 +1585,7 @@ section.evolution-sec::after {
   width: 0px;
   left: 0;
   right: 0;
-  height: 250px;
+  height: 175px;
   margin: 0 auto;
   position: absolute;
   z-index: -1;
@@ -1600,7 +1599,9 @@ section.evolution-sec::after {
 
 /* key-added */
 .phase_a-first-col::after {
-  content: "A1";
+  content: " ";
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
   color: var(--orange);
   width: 60px;
   height: 60px;
@@ -1610,13 +1611,15 @@ section.evolution-sec::after {
   font-size: 40px;
   text-align: center;
   padding: 0px 0;
-  /* background-image: url(/images/aimg.png);
+  background-image: url("/images/A1.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain; */
+  background-size: 65%;
 }
 .phase_a-second-col::after {
-  content: "A2";
+  content: " ";
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
   color: var(--orange);
   width: 60px;
   height: 60px;
@@ -1626,13 +1629,15 @@ section.evolution-sec::after {
   font-size: 40px;
   text-align: center;
   padding: 0px 0;
-  /* background-image: url(/images/aimg.png);
+  background-image: url("/images/A2.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain; */
+  background-size: 70%;
 }
 .phase_a-third-col::after {
-  content: "A3";
+  content: " ";
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
   color: var(--orange);
   width: 60px;
   height: 60px;
@@ -1642,13 +1647,15 @@ section.evolution-sec::after {
   font-size: 40px;
   text-align: center;
   padding: 0px 0;
-  /* background-image: url(/images/aimg.png);
+  background-image: url("/images/A3.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain; */
+  background-size: 70%;
 }
 .phase_b-first-col::after {
-  content: "B1";
+  content: " ";
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
   color: var(--orange);
   width: 60px;
   height: 60px;
@@ -1658,13 +1665,15 @@ section.evolution-sec::after {
   font-size: 40px;
   text-align: center;
   padding: 0px 0;
-  /* background-image: url(/images/aimg.png);
+  background-image: url("/images/B1.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain; */
+  background-size: 50%;
 }
 .phase_b-second-col::after {
-  content: "B2";
+  content: " ";
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
   color: var(--orange);
   width: 60px;
   height: 60px;
@@ -1674,13 +1683,15 @@ section.evolution-sec::after {
   font-size: 40px;
   text-align: center;
   padding: 0px 0;
-  /* background-image: url(/images/aimg.png);
+  background-image: url("/images/B2.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain; */
+  background-size: 65%;
 }
 .phase_b-third-col::after {
-  content: "B3";
+  content: " ";
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
   color: var(--orange);
   width: 60px;
   height: 60px;
@@ -1690,13 +1701,15 @@ section.evolution-sec::after {
   font-size: 40px;
   text-align: center;
   padding: 0px 0;
-  /* background-image: url(/images/aimg.png);
+  background-image: url("/images/B3.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain; */
+  background-size: 60%;
 }
 .phase_b-forth-col::after {
-  content: "B4";
+  content: " ";
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
   color: var(--orange);
   width: 60px;
   height: 60px;
@@ -1706,13 +1719,15 @@ section.evolution-sec::after {
   font-size: 40px;
   text-align: center;
   padding: 0px 0;
-  /* background-image: url(/images/aimg.png);
+  background-image: url("/images/B4.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain; */
+  background-size: 65%;
 }
 .phase_b-fifth-col::after {
-  content: "B5";
+  content: " ";
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
   color: var(--orange);
   width: 60px;
   height: 60px;
@@ -1722,10 +1737,10 @@ section.evolution-sec::after {
   font-size: 40px;
   text-align: center;
   padding: 0px 0;
-  /* background-image: url(/images/aimg.png);
+  background-image: url("/images/B5.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain; */
+  background-size: 65%;
   background-color: var(--white);
 }
 /* key-ended */
@@ -2288,10 +2303,16 @@ section.recent_news {
   background-color: #ffeadb;
   padding: 40px;
   border-radius: 12px;
+  width: 98% !important;
+  height: 260px;
 }
 .review-2 {
   background-color: #fbfbfb !important;
 }
+.testimonial-tabs .slick-active .custom-dot {
+  background-color: var(--orange) !important;
+}
+
 .avatar {
   display: flex;
   width: 200px;
@@ -2299,6 +2320,9 @@ section.recent_news {
 }
 .avatar img {
   width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 .avatar h5 {
   font-size: 16px;
@@ -3213,7 +3237,7 @@ h1.title-page-2 {
   -webkit-box-shadow: 0px 0px 5px 5px rgb(110 110 110 / 7%);
   -moz-box-shadow: 0px 0px 5px 5px rgb(110 110 110 / 7%);
   box-shadow: 0px 0px 5px 5px rgb(110 110 110 / 7%);
-  height: 275px;
+  height: 240px;
   border-radius: 16px;
   display: flex;
   align-items: center;
@@ -3802,4 +3826,11 @@ h1.title-page-2 {
 }
 #accordion-main .accordion-body {
   padding: 0px 26px 26px 20px !important;
+}
+
+/* Video Section */
+.main-video-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

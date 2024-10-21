@@ -1,11 +1,8 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
 import "./media.css";
 import "../styles/global.css";
 import "bootstrap/dist/css/bootstrap.css";
 import AddBootstrap from "./addbootstrap/AddBootstrap";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Cynergy Studio",
@@ -15,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <AddBootstrap />
         {children}
       </body>
