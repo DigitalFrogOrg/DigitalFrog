@@ -45,7 +45,7 @@ const page = () => {
           <div className="row">
             <div className="col-md-8">
               <h1 className="mb-4">
-                Mobile App Design
+                IOS App Design
                 <br /> Services
               </h1>
               <br />
@@ -66,8 +66,15 @@ const page = () => {
       <div className="why-choose-us">
         <div className="container">
           <div className="row">
-            <div className="col-md-6 d-flex align-items-start justify-content-center flex-column">
-              <h2>Why Choose Us</h2>
+            <div className="col-md-6">
+              <img
+                src="./images/ios-sec-img.png"
+                alt="why-choose-us"
+                className="w-100"
+              />
+            </div>
+            <div className="col-md-6 d-flex align-items-end justify-content-center flex-column text-end">
+              <h2 className="w-100">Why Choose Us</h2>
               <p>
                 At Cynergy Studios, we excel in mobile app design, delivering
                 exceptional UI/UX solutions that cater to a diverse clientele.
@@ -80,14 +87,7 @@ const page = () => {
                 ensuring your app is developed with precision and innovation to
                 keep your business at the forefront.
               </p>
-              <button className="second-btn">Get A Quote</button>
-            </div>
-            <div className="col-md-6">
-              <img
-                src="./images/why-choose-us.png"
-                alt="why-choose-us"
-                className="w-100"
-              />
+              <button className="second-btn">Start Your Project</button>
             </div>
           </div>
         </div>
@@ -350,7 +350,7 @@ const page = () => {
       </div>
 
       <div className="my-4">
-        <AppCta />
+        <AppCta CtaHeading="Into an Innovative Mobile App." />
       </div>
       <div className="my-4">
         <FaqsSection faqs={faqData} />

@@ -1,6 +1,6 @@
 import React from "react";
 
-const AppCta = () => {
+const AppCta = ({CtaHeading}) => {
   return (
     <>
       <div className="container">
@@ -8,7 +8,7 @@ const AppCta = () => {
           <div className="col-md-1"></div>
           <div className="col-md-6">
             <h2>
-              into an Innovative <br /> Mobile App.
+              {CtaHeading}
             </h2>
             <button>Schedule A call</button>
           </div>
