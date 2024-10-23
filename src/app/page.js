@@ -21,7 +21,6 @@ import CustomizeHeading from "./components/CustomizeHeading";
 import VideoPlayer from "./components/VideoPlayer/VideoPlayer";
 
 export default function Home() {
-  const VideoLink = "/path/Cynergy-Showreel-Final.mp4";
   const faqData = [
     {
       questionId: "01",
@@ -81,7 +80,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* <CustomVideoPlayer videoSrc={VideoLink} /> */}
       <VideoPlayer />
       <GrowthSec />
       <FutureSection />
