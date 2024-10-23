@@ -46,6 +46,7 @@ function BudgetSection() {
                 Exploring Our App
                 <br /> Development Services?
               </h2>
+              <h4>Share Your Project Details!</h4>
               <h3 className="mt-3">
                 <img
                   src="/images/clock_icon.png"
@@ -73,12 +74,13 @@ function BudgetSection() {
               </div>
               {/* <div className="divider"></div> */}
               <br />
-              <em>
-                <strong>
-                  Alternatively, contact us via phone +123 456 7890 or email
-                  INFO@CYNERGYSTUDIOS.COM
-                </strong>
-              </em>
+
+              <h6>
+                Alternatively, contact us via phone
+                <span> +1 (346) 360-8407 </span>
+                or email
+                <span> info@cynergystudios.com</span>
+              </h6>
             </div>
             <div className="col-md-6 px-5 d-flex align-items-center">
               <form onSubmit={handleSubmit} className="projectForm w-100">
@@ -170,7 +172,6 @@ function BudgetSection() {
                 <button type="submit" className="btn m-4 file-btn">
                   <img
                     src="./images/file-upload.png"
-                    style={{ width: 25, height: 25 }}
                   />
                 </button>
               </form>

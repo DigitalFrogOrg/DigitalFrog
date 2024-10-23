@@ -17,21 +17,21 @@ function TestimonialSlider() {
       subTitle: "Case Study:",
       title: "ASL Flurry",
       text: "ASL Flurry is an educational app designed to make learning American Sign Language (ASL) both engaging and accessible. Offering interactive lessons, games, and quizzes, the app helps all of the users of skill levels, from beginners to advanced, master ASL at their own pace. With a vast library of vocabulary and phrases, ASL Flurry supports visual learners through high-quality video demonstrations of each sign. Its gamified approach encourages regular practice, boosting retention and fluency. By providing a user-friendly and immersive experience, ASL Flurry plays a pivotal role in fostering communication within the Deaf community and beyond.",
-      imgSrc: "/images/mobileSlider.png",
+      imgSrc: "/images/mobileSlider-2.png",
     },
     {
       id: 3,
       subTitle: "Case Study:",
       title: "Eksperience MyApp",
       text: "Experience MyApp is a versatile tool tailored for professionals in the beauty and wellness industry. Designed to streamline salon and spa operations, the app provides features such as appointment scheduling, client management, and inventory tracking. By centralizing these essential tasks, Eksperience MyApp helps businesses enhance efficiency, reduce manual work, and improve customer service. The app also supports staff management, allowing easy tracking of schedules and performance. With an intuitive interface and customizable options, Eksperience MyApp empowers beauty businesses to focus more on delivering exceptional services while keeping administrative tasks organized and simplified.",
-      imgSrc: "/images/mobileSlider.png",
+      imgSrc: "/images/mobileSlider-3.png",
     },
     {
       id: 4,
       subTitle: "Case Study:",
       title: "The Fortune Teller App by Full Moon",
       text: "The Fortune Teller App by Full Moon offers users a captivating experience with personalized fortune readings and insights. Leveraging astrology, tarot, and palmistry, the app provides daily, weekly, and monthly predictions tailored to individual users' life paths. With an intuitive interface and visually appealing design, users can explore multiple facets of their future, including love, career, and health. The app’s interactive features, such as daily horoscopes and live fortune-telling sessions, engage users and keep them returning for insights. After you combine ancient wisdom with modern technology, The Fortune Teller App has built a loyal user base seeking guidance and entertainment.",
-      imgSrc: "/images/mobileSlider.png",
+      imgSrc: "/images/mobileSlider-4.png",
     },
   ];
 
