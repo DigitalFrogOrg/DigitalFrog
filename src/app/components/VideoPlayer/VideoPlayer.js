@@ -93,6 +93,7 @@ const VideoPlayer = () => {
           opacity: 0,
           transition: "opacity 0.3s",
           borderRadius: "50%",
+          cursor: "none"
         }}
         // onClick={handleCursorClick}
       >

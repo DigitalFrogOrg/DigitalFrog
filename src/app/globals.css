@@ -3635,7 +3635,7 @@ h1.title-page-2 {
   left: 50%;
   transform: translate(50%, 100%);
   padding: 20px;
-  background-color: #00000032;
+  background-color: #00000080;
   z-index: 1000;
   opacity: 0;
   animation: shutterEffect 0.7s ease forwards;

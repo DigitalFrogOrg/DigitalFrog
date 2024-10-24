@@ -64,8 +64,10 @@ function HotspotSection() {
           <div className="col-md-4 d-flex align-items-center justify-content-center">
             <div className="contactContainer">
               <h2 className="fw-bold">
-                Let's Start <br /> Working Together.
-                <br /> Get In Touch!
+                <strong>
+                  Let's Start <br /> Working Together.
+                  <br /> Get In Touch!
+                </strong>
               </h2>
               <a href="#" className="btn">
                 Make An Appointment
