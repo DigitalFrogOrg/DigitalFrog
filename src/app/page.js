@@ -15,7 +15,6 @@ import RecentNews from "./components/RecentNews";
 // Icons
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import MarqueeSlider from "./components/MarqueeSlider";
-import CustomVideoPlayer from "./components/CustomVideoPlayer";
 import GrowthSec from "./components/GrowthSec";
 import CustomizeHeading from "./components/CustomizeHeading";
 import VideoPlayer from "./components/VideoPlayer/VideoPlayer";

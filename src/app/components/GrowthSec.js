@@ -48,7 +48,7 @@ function GrowthSec() {
         <div className="col-md-2 border-end">
           <h4>
             {inView && (
-              <CountUp start={0} end={1.2} decimals={1} prefix="$" suffix="b" duration={2} />
+              <CountUp start={0} end={150} prefix="$" suffix="m" duration={2} />
             )}
           </h4>
           <p>Raised by our startup clients</p>
@@ -56,16 +56,16 @@ function GrowthSec() {
 
         <div className="col-md-2 border-end">
           <h4>
-            {inView && <CountUp start={0} end={300} duration={2} />}
+            {inView && <CountUp start={0} end={350} suffix="+" duration={2} />}
           </h4>
           <p>Finished Projects</p>
         </div>
 
         <div className="col-md-2 border-end">
           <h4>
-            {inView && <CountUp start={0} end={90} suffix="%" duration={2} />}
+            {inView && <CountUp start={0} end={5} suffix="+" duration={2} />}
           </h4>
-          <p>Of Clients Approval Initial Design</p>
+          <p>Years of experience</p>
         </div>
 
         <div className="col-md-2">
