@@ -709,7 +709,7 @@ function page() {
         </div>
       </div>
 
-      <AppCta />
+      <AppCta CtaHeading="Into an Innovative Mobile App." />
 
       <div className="mt-5">
         <FaqsSection faqs={faqData} />

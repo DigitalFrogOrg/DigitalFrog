@@ -32,7 +32,9 @@ const CustomizeHeading = () => {
     <>
       <h1 className="w-100">
         We Design Apps <br/> That{" "}
+        <strong>
         <span style={{ color: "#dc5f00" }}>{displayedText}</span>
+        </strong>
       </h1>
     </>
   );

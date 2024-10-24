@@ -37,12 +37,12 @@ function Evolution() {
                     </li>
                   </ul>
                   <button type="button" className="whole-btn2">
-                  <img
-                    src="/images/linkbtn.png"
-                    alt="Specifications & Planning"
-                    className="btn-link"
-                  />
-                  View Specifications
+                    <img
+                      src="/images/linkbtn.png"
+                      alt="Specifications & Planning"
+                      className="btn-link"
+                    />
+                    View Specifications
                   </button>
                 </div>
               </div>
@@ -65,22 +65,31 @@ function Evolution() {
                     will look like, and how it will function (and make it
                     beautiful).
                   </p>
-                  <button type="button" class="whole-btn2" style={{marginRight:15}}>
-                  <img
-                    src="/images/linkbtn.png"
-                    alt="Specifications & Planning"
-                    className="btn-link"
-                  />
-                   Wireframe
-                  </button>
-                  <button type="button" class="whole-btn2">
-                  <img
-                    src="/images/linkbtn.png"
-                    alt="Specifications & Planning"
-                    className="btn-link"
-                  />
-               Prototype
-                  </button>
+                  <a
+                    href="https://www.figma.com/design/0B1dqt4hJ4WqW3HR5glJRo/Project---Four-Elements---Final-File?node-id=0-1&node-type=canvas&t=Bqf8eBgtvtNICCQ5-0"
+                    target="_blank"
+                    class="whole-btn2"
+                    style={{ marginRight: 15 }}
+                  >
+                    <img
+                      src="/images/linkbtn.png"
+                      alt="Specifications & Planning"
+                      className="btn-link"
+                    />
+                    Wireframe
+                  </a>
+                  <a
+                    href="https://www.figma.com/proto/FcoNpNKsCP1pWMmlSFoP8j/Project---Four-Elements---Prototype?page-id=0%3A1&node-id=1-5277&node-type=canvas&viewport=1885%2C3497%2C0.73&t=RNnX7HkfZoIY10L0-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A5277"
+                    target="_blank"
+                    class="whole-btn2"
+                  >
+                    <img
+                      src="/images/linkbtn.png"
+                      alt="Specifications & Planning"
+                      className="btn-link"
+                    />
+                    Prototype
+                  </a>
                 </div>
               </div>
               <div className="col-sm-6"></div>
@@ -104,7 +113,6 @@ function Evolution() {
                     build a spreadsheet estimating all the tasks involved,
                     timeline and total cost.
                   </p>
-
                 </div>
               </div>
             </div>
@@ -126,14 +134,13 @@ function Evolution() {
                       src="/images/buildicon.png"
                       alt="Designs, Wireframe & Prototype"
                     />
-                    
+
                     <h3>Build</h3>
                     <p>
                       Engineers build the software, adding new features, fixing
                       old features & constantly improving code architecture &
                       scalability.
                     </p>
-                
                   </div>
                 </div>
                 <div className="col-sm-6"></div>
@@ -156,7 +163,6 @@ function Evolution() {
                       QA tests the latest build, identifying any bugs that need
                       to be fixed or features that need improving.
                     </p>
-                
                   </div>
                 </div>
               </div>
@@ -179,7 +185,6 @@ function Evolution() {
                       testing platforms, or live, to the App Store, Google Play
                       store or website.{" "}
                     </p>
-                
                   </div>
                 </div>
                 <div className="col-sm-6"></div>
@@ -202,7 +207,6 @@ function Evolution() {
                       QA tests the latest build, identifying any bugs that need
                       to be fixed or features that need improving.
                     </p>
-               
                   </div>
                 </div>
               </div>
@@ -226,7 +230,6 @@ function Evolution() {
                       lightweight plans available for continued, long-term
                       maintenance.
                     </p>
-                  
                   </div>
                 </div>
                 <div className="col-sm-6"></div>
@@ -235,11 +238,13 @@ function Evolution() {
           </div>
           <div className="dive_button">
             <div className="row">
-                <div className="col-sm-6"></div>
-                <div className="col-sm-6 text-center">
-                    <button type="button" className="dive_buttons">Deep Dive Into Our Process</button>
-                </div>
-            </div> 
+              <div className="col-sm-6"></div>
+              <div className="col-sm-6 text-center">
+                <button type="button" className="dive_buttons">
+                  Deep Dive Into Our Process
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -40,7 +40,7 @@ const page = () => {
         "Payments can be made through a flexible structure, which may include milestone-based or scheduled payments, using secure and convenient payment options.",
     },
   ];
-  
+
   return (
     <>
       <Header />
@@ -396,7 +396,7 @@ const page = () => {
       </div>
 
       <div className="my-4">
-        <AppCta />
+        <AppCta CtaHeading="Into an Innovative Mobile App." />
       </div>
       <div className="my-4">
         <FaqsSection faqs={faqData} />

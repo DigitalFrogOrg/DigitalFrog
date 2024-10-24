@@ -58,7 +58,7 @@ function header() {
       links: [
         { href: "/mobile-app-consulting", text: "Mobile App Consulting" },
         {
-          href: "/mobile-app-support-and-maintenance",
+          href: "/mobile-app-support",
           text: "Mobile App Support and Maintenance",
         },
       ],
