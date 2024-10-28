@@ -22,7 +22,10 @@ function FaqItem({ questionId, question, answer, isOpen }) {
           className={`accordion-collapse collapse ${isOpen ? "show" : ""}`}
           data-bs-parent="#accordion-main"
         >
-          <div className="accordion-body">{answer}</div>
+          <div
+            className="accordion-body"
+            dangerouslySetInnerHTML={{ __html: answer }}
+          />
         </div>
       </div>
     </div>

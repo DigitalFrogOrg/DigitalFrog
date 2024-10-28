@@ -17,35 +17,34 @@ function page() {
   const faqData = [
     {
       questionId: "01",
-      question: "Who will be working on my project?",
+      question: "How much does it cost to build an Android app?",
       answer:
-        "Your project will be handled by a dedicated team of experts, including developers, designers, and project managers, all selected based on the specific needs of your project.",
+        "The cost of building an Android app can vary widely based on several factors, including the app's complexity, features, design, and the development team’s location and expertise. On average, a basic app can range from $5,000 to $50,000, while more complex applications with advanced features can cost upwards of $100,000. At Cynergy Studios, we provide tailored estimates based on your specific project requirements.",
     },
     {
       questionId: "02",
-      question:
-        "Who owns the legal rights to the technology developed by Cynergy Studios?",
+      question: "Is Android app development profitable?",
       answer:
-        "Once the project is completed and payment is finalized, you will retain full legal rights and ownership of the technology developed by our team.",
+        "Yes, Android app development can be highly profitable. With a vast user base and the increasing popularity of mobile applications, businesses can tap into new revenue streams through in-app purchases, subscriptions, and advertising. Additionally, Android apps often reach a wider audience due to the platform's global market share, particularly in emerging markets.",
     },
     {
       questionId: "03",
-      question:
-        "How do you ensure the data security of mobile apps and websites?",
+      question: "Which technology is best for Android app development?",
       answer:
-        "We prioritize data security through stringent protocols, including encryption, secure coding practices, regular audits, and adherence to industry standards, ensuring your data remains safe.",
+        "The best technology for Android app development largely depends on the specific requirements of your project. Commonly used technologies include: <ul> <li><b>Java and Kotlin:</b> The primary programming languages for native Android app development.</li> <li><b>Flutter:</b>A UI toolkit by Google for building natively compiled applications for mobile, web, and desktop from a single codebase.</li> <li><b>React Native:</b> A popular framework for building cross-platform apps using JavaScript. At Cynergy Studios, we choose the technology that best aligns with your project goals and target audience.</li></ul>",
     },
     {
       questionId: "04",
-      question: "How frequently do you share updates on the process?",
+      question: "Which software is required for Android app development?",
       answer:
-        "We provide regular updates throughout the development cycle. The frequency of communication can be customized to meet your preferences, ensuring you’re always informed.",
+        "To develop Android apps, several software tools are commonly used: <ul><li><b>Android Studio:</b>The official integrated development environment (IDE) for Android development.</li> <li><b>Java Development Kit (JDK):</b>Required for writing Java code.</li> <li><b>Android Software Development Kit (SDK):</b>A set of development tools for building Android apps.</li> <li><b>Emulators:</b>For testing apps on different Android devices and screen sizes. These tools enable developers to efficiently create, test, and deploy Android applications.</li></ul>",
     },
     {
       questionId: "05",
-      question: "How will I be making the payments?",
+      question:
+        "How much does it cost to hire a custom Android application development agency?",
       answer:
-        "Payments can be made through a flexible structure, which may include milestone-based or scheduled payments, using secure and convenient payment options.",
+        "The cost to hire a custom Android application development agency can vary based on factors such as the agency's expertise, location, and the complexity of your project. Typically, hourly rates can range from $25 to $150, depending on the agency’s experience and the services offered. For a complete project, costs can range from $10,000 to $200,000 or more. At Cynergy Studios, we offer flexible pricing models to fit your budget while delivering high-quality development services.",
     },
   ];
   return (
@@ -55,7 +54,7 @@ function page() {
         <div className="container">
           <div className="row">
             <div className="col-md-8">
-              <h1>Mobile App Development Services.</h1>
+              <h1>Android App Development Services.</h1>
               <br />
               <br />
               <br />
@@ -77,26 +76,19 @@ function page() {
           <div className="row">
             <div className="col-md-6 d-flex align-items-center justify-content-center">
               <div className="text-section">
-                <h1 className="title-page">discover our history</h1>
+                <h2 className="title-page">Android App Development Company</h2>
                 <p className="title-page-p">
-                  Leading with years of experience, Dignite Studios has been
-                  centering on the modernization of mobile software
-                  specifications to create magnificent web and mobile
-                  applications for their valuable clients. Our company of mobile
-                  business intelligence has a proven track record of triumphant
-                  mobile projects which are illustrious in today’s digital
-                  realm.
+                  At Cynergy Studios, we have spent years delivering innovative
+                  Android app development solutions on a global scale. Our team
+                  of expert Android developers is dedicated to enhancing your
+                  business dynamics through unmatched custom Android
+                  applications, stunning designs, and exceptional app
+                  conceptualization. We are committed to providing outstanding
+                  and reliable services tailored to meet industry standards and
+                  drive your success.
                 </p>
-                <p className="title-page-p">
-                  We have achieved phenomenal growth in empowering diverse
-                  businesses with innovation and contemporary ideas to enliven
-                  various blueprints. We have globally earned remarkable
-                  endorsement and apprehension in the “INC 5000 list.”
-                  Throughout the journey, our unwavering focus has remained on
-                  transformation, client satisfaction, and making an indelible
-                  impact in the realms of technology and software.
-                </p>
-                <button className="btn-app">Start Your Project</button>
+
+                <button className="btn-app">Join Our Journey</button>
               </div>
             </div>
             <div className="col-md-6 pe-5 py-2">

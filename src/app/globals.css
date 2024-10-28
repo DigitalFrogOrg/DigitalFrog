@@ -40,9 +40,9 @@ button.btn.m-4.file-btn {
   padding: 10px 14px 14px 14px !important;
   margin: 20px 0 0 20px !important;
 }
-.file-btn img{
+.file-btn img {
   height: 20px;
-  width:  20px;
+  width: 20px;
 }
 .navbar-expand-lg .navbar-collapse {
   align-items: center !important;
@@ -78,19 +78,18 @@ video {
   height: 100%;
   object-fit: cover;
 }
-
 a {
   text-decoration: none !important;
 }
-h1.title-page {
-  font-size: 60px;
+.title-page {
+  font-size: 45px;
   font-weight: 700px;
   color: #000;
   text-transform: capitalize;
   font-family: "NobelUno-Bold";
 }
 .second-last-section {
-  margin: 100px 0px 50px 0px;
+  padding: 100px 0px 50px 0px;
 }
 .title-page-p {
   font-size: 18px;
@@ -658,10 +657,10 @@ ul.footer-info li a {
 .budget-sec p {
   color: var(--text-color);
 }
-.budget-sec h6{
+.budget-sec h6 {
   font-size: 15px;
 }
-.budget-sec h6 span{
+.budget-sec h6 span {
   color: var(--orange);
   font-style: italic;
 }
@@ -669,12 +668,12 @@ ul.footer-info li a {
   background-color: #f7f7f7;
   color: #000;
 }
-.budg-sec ul{
+.budg-sec ul {
   list-style: none;
   padding: 0;
 }
-.budg-sec ul li{
-  background: url('/images/check-mark.png') no-repeat left center;
+.budg-sec ul li {
+  background: url("/images/check-mark.png") no-repeat left center;
   padding: 0px 0px 6px 27px;
 }
 .divider {
@@ -876,7 +875,9 @@ section.future-mobile .row {
   position: relative;
   z-index: 1;
 }
-.process-01, .process-02, .process-03 {
+.process-01,
+.process-02,
+.process-03 {
   background-color: #d6dcdc;
   color: #000;
   margin-top: 40px !important;
@@ -901,9 +902,6 @@ section.future-mobile .row {
   background-color: #686d76;
   color: #fff;
 }
-
-
-
 
 /* homepage-evolution-sec */
 section.evolution-sec {
@@ -984,9 +982,9 @@ section.evolution-sec::after {
   width: 60px;
   margin: -40px 0 37px 0;
 }
-.whole-btn2:hover img{
+.whole-btn2:hover img {
   /* convert white img */
-  filter: brightness(0) invert(1); 
+  filter: brightness(0) invert(1);
 }
 
 .phase_a-first-col h3 {
@@ -2256,8 +2254,7 @@ section.recent_news {
 
 .orange-sec .image-container.prev,
 .orange-sec .image-container.next,
-.orange-sec .image-container.hidden
- {
+.orange-sec .image-container.hidden {
   transform: rotateY(150deg) scale(0.8);
   z-index: 2;
   opacity: 0 !important;
@@ -2712,7 +2709,8 @@ section.recent_news {
   color: #fff;
   cursor: pointer;
 }
-.text-section-hover:hover h1 {
+.text-section-hover:hover h1,
+.text-section-hover:hover h2 {
   color: #fff;
 }
 .top-ranked {
@@ -2761,7 +2759,7 @@ section.recent_news {
   font-weight: 600;
   margin: 100px 0px 120px 0px;
 }
-h1.title-page-2 {
+.title-page-2 {
   font-size: 30px;
   font-weight: 700px;
   color: #000;
@@ -3178,16 +3176,17 @@ h1.title-page-2 {
   transition: 0.6s all;
 }
 .MobileAppTabs .tab-content {
-  margin-top: 20px;
+  margin-top: 26px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  gap: 50px;
 }
 .MobileAppTabs .tab-image {
-  width: 70%;
-  height: auto;
-  margin-right: 10px;
+  width: 200px;
+  height: 160px;
+  object-fit: contain;
   margin-bottom: 10px;
 }
 .app-quality-main {
@@ -3381,7 +3380,7 @@ h1.title-page-2 {
   border-radius: 12px;
   padding: 24px 28px;
   margin-top: 26px;
-  height: 100%;
+  height: 96%;
 }
 .up-to-mints-div h4 {
   font-weight: bold;
@@ -3889,4 +3888,51 @@ h1.title-page-2 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.orange-wrap {
+  background-color: #fffbf8;
+}
+
+.text-section-01 {
+  padding: 20px 20px 6px 20px;
+  background-color: #fbfbfb;
+  border-radius: 15px;
+  margin: 20px 0;
+}
+.text-section-01 h2 {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+.text-section-01 p {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+.text-section-01:hover {
+  background-color: #dc5f00;
+  color: #fff;
+  cursor: pointer;
+}
+.text-section-01:hover h1,
+.text-section-01:hover h2 {
+  color: #fff;
+}
+.line-image-1 {
+  height: 675px;
+  width: 100px;
+  object-fit: contain;
+}
+
+.right-let-mid{
+  padding: 100px 0px;
+}
+.right-let-mid h2{
+  font-size: 54px;
+  font-weight: bold;
+}
+.right-let-mid button{
+  color: var(--orange);
+    border: 0;
+    background: #0000;
+    text-decoration: underline;
+    padding: 0;
 }

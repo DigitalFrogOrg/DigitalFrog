@@ -2,25 +2,58 @@
 import React, { useState } from "react";
 
 const MobileAppTabs = () => {
-  const [activeTab, setActiveTab] = useState(2);
+  const [activeTab, setActiveTab] = useState(0);
 
   const tabs = [
-    { label: "Android", images: ["./images/andriod-image.png"] },
+    {
+      label: "Android",
+      images: [
+        "./images/work-tabs/java.png",
+        "./images/work-tabs/kotlin.png",
+        "./images/work-tabs/android.png",
+        "./images/work-tabs/visual-studios.png",
+      ],
+      texts: ["Java", "Kotlin", "Android Studio", "Visual Studio"],
+    },
     {
       label: "IOS",
-      images: ["./images/andriod-image.png"],
+      images: [
+        "./images/work-tabs/swift.png",
+        "./images/work-tabs/redux.png",
+        "./images/work-tabs/obj-c.png",
+        "./images/work-tabs/xcode.png",
+      ],
+      texts: ["Swift", "Redux", "Objective-C", "Xcode"],
     },
     {
       label: "Cross-Platform",
-      images: ["./images/andriod-image.png"],
+      images: [
+        "./images/work-tabs/react.png",
+        "./images/work-tabs/flutter.png",
+        "./images/work-tabs/lonic.png",
+        "./images/work-tabs/xamarin.png",
+      ],
+      texts: ["React", "Flutter", "Lonic", "Xamarin"],
     },
     {
       label: "PWA",
-      images: ["./images/andriod-image.png"],
+      images: [
+        "./images/work-tabs/react.png",
+        "./images/work-tabs/redux.png",
+        "./images/work-tabs/angular.png",
+        "./images/work-tabs/vue-js.png",
+      ],
+      texts: ["React", "Redux", "Angular", "Vue Js"],
     },
     {
       label: "Other Tools",
-      images: ["./images/andriod-image.png"],
+      images: [
+        "./images/work-tabs/firebase.png",
+        "./images/work-tabs/postgre-sql.png",
+        "./images/work-tabs/github.png",
+        "./images/work-tabs/apche-jmeter.png",
+      ],
+      texts: ["Firebase", "Postgre SQL", "Github", "Apache Jmeter"],
     },
   ];
 
@@ -57,12 +90,17 @@ const MobileAppTabs = () => {
           <div className="col-md-12">
             <div className="tab-content">
               {tabs[activeTab].images.map((image, index) => (
-                <img
+                <div
                   key={index}
-                  src={image}
-                  alt={`Image ${index + 1}`}
-                  className="tab-image"
-                />
+                  className="d-flex flex-column align-items-center gap-2"
+                >
+                  <img
+                    src={image}
+                    alt={`Image ${index + 1}`}
+                    className="tab-image"
+                  />
+                  <h4>{tabs[activeTab].texts[index]}</h4>
+                </div>
               ))}
             </div>
           </div>
