@@ -332,7 +332,7 @@ const page = () => {
             </div>
             <div className="col-md-4">
               <div className="choose-sec-1">
-                <h4>Track Record Of Bug Fixing</h4>
+                <h4>Track Record Of Bugs</h4>
                 <p>
                   We formulate effective measures to identify errors and bugs
                   promptly. Our strategic approach secures data integration and

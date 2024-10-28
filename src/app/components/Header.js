@@ -56,7 +56,7 @@ function header() {
     maintenance: {
       heading: "Maintenance & Consulting",
       links: [
-        { href: "/mobile-app-consulting", text: "Mobile App Consulting" },
+        { href: "/app-consulting", text: "Mobile App Consulting" },
         {
           href: "/mobile-app-support",
           text: "Mobile App Support and Maintenance",
