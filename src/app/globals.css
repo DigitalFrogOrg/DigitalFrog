@@ -3922,17 +3922,103 @@ section.recent_news {
   object-fit: contain;
 }
 
-.right-let-mid{
+.right-let-mid {
   padding: 100px 0px;
 }
-.right-let-mid h2{
+.right-let-mid h2 {
   font-size: 54px;
   font-weight: bold;
 }
-.right-let-mid button{
+.right-let-mid button {
   color: var(--orange);
-    border: 0;
-    background: #0000;
-    text-decoration: underline;
-    padding: 0;
+  border: 0;
+  background: #0000;
+  text-decoration: underline;
+  padding: 0;
+}
+
+.app-testing {
+  padding: 100px 0px;
+}
+.app-testing h2 {
+  font-size: 55px;
+  font-weight: bold;
+}
+.appTestRight {
+  background-image: url("/images/Group1707479836.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 500px;
+}
+.appTestBox {
+  background-color: #fff;
+  box-shadow: 2.84px 5.68px 23.6px 0px #0000002b;
+  padding: 46px 20px 15px 20px;
+  text-align: center;
+  border-radius: 12px;
+  transition: all 0.4s;
+  cursor: pointer;
+  height: 292px;
+  width: 100%;
+  margin-bottom: -18px;
+}
+.appTestBox:hover {
+  background-image: url("/images/Group1707479837.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: translateY(-10px);
+}
+.appTestBox:hover h4 {
+  color: var(--orange);
+}
+.appTestBox h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.appTestBox p {
+  font-size: 13px;
+  margin: 0;
+}
+
+.TestingProcess {
+  padding: 100px 0px;
+}
+.TestingProcess h2 {
+  font-size: 66px;
+  font-weight: bold;
+}
+.topNotchSection {
+  background-image: url("/images/Group17074798435.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0px;
+  background-color: #fffbf8;
+}
+.topNotchSection h2 {
+  font-size: 50px;
+  font-weight: bold;
+}
+.topNotchSection h2 span {
+  color: var(--orange);
+}
+.topNotchSection p {
+  color: #454545;
+  font-size: 14px;
+}
+.topNotchSection h4 {
+  margin-top: 36px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.StudiosWhy {
+  background-color: #fffbf8;
+  padding: 100px 0px;
+}
+.StudiosWhy h2{
+  font-size: 60px;
+  font-weight: bold;
 }

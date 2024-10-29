@@ -46,7 +46,7 @@ function header() {
     design: {
       heading: "Design",
       links: [
-        { href: "#", text: "Android App Design Services" },
+        { href: "/android-app-design", text: "Android App Design Services" },
         { href: "/ios-app-design", text: "iOS App Design Services" },
       ],
       links2: [
@@ -56,7 +56,7 @@ function header() {
     maintenance: {
       heading: "Maintenance & Consulting",
       links: [
-        { href: "/app-consulting", text: "Mobile App Consulting" },
+        { href: "/mobile-app-consulting", text: "Mobile App Consulting" },
         {
           href: "/mobile-app-support",
           text: "Mobile App Support and Maintenance",
