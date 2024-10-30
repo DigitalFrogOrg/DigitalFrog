@@ -104,10 +104,12 @@ a {
   border-radius: 100px !important;
 }
 /* header-css */
+header {
+  background-color: var(--white) !important;
+}
 #header {
   /* position: fixed !important; */
   z-index: 99;
-  background: var(--white);
   width: 100%;
   padding: 0px 60px;
   position: relative;
@@ -388,7 +390,7 @@ ul.footer-info li a {
 /* Main Banner */
 .main-banner {
   /* background: url("/images/main-banner.png"); */
-  background-color: var(--white);
+  background-color: #f8f8f8 !important;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3888,6 +3890,7 @@ section.recent_news {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #f8f8f8 !important;
 }
 .orange-wrap {
   background-color: #fffbf8;
@@ -4018,7 +4021,131 @@ section.recent_news {
   background-color: #fffbf8;
   padding: 100px 0px;
 }
-.StudiosWhy h2{
+.StudiosWhy h2 {
   font-size: 60px;
+  font-weight: bold;
+}
+
+.IOS-services {
+  padding: 100px 0px;
+}
+.IOS-services h2 {
+  font-size: 55px;
+  font-weight: bold;
+}
+.IOS-services p {
+  font-size: 16px;
+}
+.IOS-services .IOS-slider {
+  text-align: center;
+  padding: 26px 16px;
+  box-shadow: 0px 5.19px 16.62px 0px #f66a0026;
+  background-color: var(--white);
+  border-radius: 20px;
+  margin: 16px;
+  height: 275px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 16px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.IOS-services .IOS-slider:hover {
+  background-color: var(--orange);
+  background-image: url("/images/Group534584.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.IOS-services .IOS-slider:hover h3,
+.IOS-services .IOS-slider:hover p,
+.IOS-services .IOS-slider:hover button {
+  color: var(--white);
+}
+.IOS-services .IOS-slider h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+.IOS-services .IOS-slider p {
+  font-size: 14px;
+  color: #666666;
+  margin: 0;
+}
+.IOS-services .IOS-slider button {
+  background: #0000;
+  border: 0px;
+  text-decoration: underline;
+  color: #000;
+  font-size: 14px;
+}
+.IOS-services .slick-prev,
+.IOS-services .slick-next {
+  position: absolute;
+}
+.IOS-services .slick-prev{
+  top: -50%;
+  left: 88% !important;
+}
+.IOS-services .slick-next{
+  top: -50%;
+  right: 5%;
+}
+.IOS-services .slick-prev:before {
+  background-image: url("/images/Group353453.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 70px;
+  width: 70px;
+  display: block;
+  content: " " !important;
+}
+.IOS-services .slick-next:before {
+  background-image: url("/images/Group353454.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 70px;
+  width: 70px;
+  display: block;
+  content: " " !important;
+}
+
+.iosDesignProcess{
+  padding: 100px 0px;
+background-color: #fffbf8;
+}
+.iosDesignProcess h2{
+  font-size: 55px;
+  font-weight: bold;
+  text-align: center;
+}
+.iosDesignProcess p{
+  font-size: 14px;
+}
+.iosDesignBox{
+  box-shadow: 0px 5.19px 16.62px 0px #f66a0026;
+  background-color: var(--white);
+  padding: 45px 40px;
+  margin-top: 28px;
+  border-radius: 20px;
+  height: 86%;
+}
+.iosDesignBox:hover{
+  background-image: url("/images/Group1707479838.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}  
+.iosDesignBox:hover h4, .iosDesignBox:hover p{
+  color: var(--white);
+}
+.iosDesignBox h4{
+  font-size: 24px;
   font-weight: bold;
 }
