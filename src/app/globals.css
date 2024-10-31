@@ -3386,7 +3386,12 @@ section.recent_news {
 }
 .up-to-mints-div h4 {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 24px;
+  margin: 0px 0px 10px 0px;
+}
+.up-to-mints-div p {
+  font-size: 14px;
+  margin: 0px;
 }
 .up-to-mints-div p,
 .up-to-mints-div h4 {
@@ -3398,9 +3403,10 @@ section.recent_news {
   transition: 0.4s all;
   background-color: var(--orange);
   color: #fff;
-  background-image: url("/images/back-top-notch.png");
-  background-position: top right;
+  background-image: url("/images/Group1707479840.png");
+  background-position: center center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .up-to-mints-div:hover h4 {
   color: #fff;
@@ -4274,4 +4280,159 @@ section.recent_news {
 }
 .IosChooseBox:hover span {
   background-color: var(--orange);
+}
+
+.mobileAppDesign {
+  padding: 100px 0px;
+}
+.mobileAppDesign h2 {
+  font-size: 55px;
+  font-weight: bold;
+}
+.mobileAppDesign p {
+  font-size: 14px;
+}
+.mobileAppDesignBox {
+  height: 345px;
+  background-color: var(--white);
+  border-radius: 12px;
+  padding: 26px;
+  box-shadow: 2.84px 5.68px 23.21px 0px #0000001e;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.mobileAppDesignBox img {
+  width: 50px;
+  filter: brightness(1) invert(0);
+  transition: filter 0.3s;
+}
+.mobileAppDesignBox h4 {
+  font-weight: bold;
+  font-size: 24px;
+  margin: 12px 0;
+}
+.mobileAppDesignBox p {
+  margin: 0;
+}
+
+.mobileAppDesignBox:hover {
+  background-image: url("/images/Group453767.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--orange);
+}
+
+.mobileAppDesignBox:hover h4 {
+  color: var(--white);
+}
+.mobileAppDesignBox:hover p {
+  color: var(--white);
+}
+.mobileAppDesignBox:hover img {
+  filter: brightness(0) invert(1);
+}
+
+.DesignProcess {
+  padding: 100px 0px;
+  background-color: #fffbf8;
+}
+.DesignProcess h2 {
+  font-size: 55px;
+  font-weight: bold;
+}
+.DesignProcess p {
+  font-size: 14px;
+}
+
+.DesignProcessBox {
+  padding: 36px 28px;
+  background-color: var(--white);
+  box-shadow: 1px 1px 23.21px 0px #0000001e;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  margin-top: 20px;
+  height: 365px;
+}
+.DesignProcessBox h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 12px 0px;
+}
+.DesignProcessBox p {
+  font-size: 14px;
+  margin: 0;
+  line-height: 24px;
+  color: #656565;
+}
+
+.DesignProcessBox:hover {
+  background-color: var(--orange);
+}
+.DesignProcessBox:hover h4 {
+  color: var(--white);
+}
+.DesignProcessBox:hover p {
+  color: var(--white);
+}
+
+.highAndroid {
+  padding: 100px 0px;
+}
+.highAndroid h2 {
+  font-size: 55px;
+  font-weight: bold;
+}
+.highAndroid p {
+  font-size: 14px;
+}
+
+.WhyChooseUsMobile {
+  padding: 100px 0px;
+  background-color: #fffbf8;
+}
+.WhyChooseUsMobile h2 {
+  font-size: 55px;
+  font-weight: bold;
+  text-align: center;
+}
+.WhyChooseUsMobile p {
+  font-size: 14px;
+}
+
+.MobileQaBoxes {
+  background-color: var(--white);
+  border-radius: 20px;
+  box-shadow: 1px 1px 23.21px 0px #0000001e;
+  padding: 36px 20px 26px 20px;
+  text-align: center;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+.MobileQaBoxes h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0px 0px 10px 0px;
+}
+.MobileQaBoxes p {
+  margin: 0px;
+}
+.MobileQaBoxes:hover {
+  background-image: url("/images/Group1707479841.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--orange);
+}
+.MobileQaBoxes:hover h4 {
+  color: var(--white);
+}
+.MobileQaBoxes:hover  p{
+  color: var(--white);
 }
