@@ -195,6 +195,196 @@ const page = () => {
         </div>
       </div>
 
+      <div className="container workingWithCynergy">
+        <h2>
+          Working With
+          <br /> Cynergy Studios
+        </h2>
+        <p className="text-center">
+          Our team has a rich history of creating intuitive and coherent user
+          experiences, ensuring customers have an enjoyable
+          <br /> experience when interacting with your product or website. We
+          provide comprehensive research and analysis to
+          <br /> identify user needs and goals, so you can be sure the end
+          product is tailored to your audience.
+        </p>
+        <div className="row mt-5">
+          <div className="col-md-3">
+            <div className="workingWithCynergyBox">
+              <span></span>
+              <img
+                src="./images/lightbulb_122683131.png"
+                alt="lightbulb_122683131"
+              />
+              <h4>Leverage Strong idea</h4>
+              <p>
+                It's a significant approach to creating easy-to-navigate user
+                experiences of an app to make it prior successful. Our mobile
+                app designers collaborate closely with consultants to determine
+                the project's flow, it’s reliability, and credibility in future
+                outcomes. Here atCynergy Studios, rigorous implementation sets
+                in designing and building productive iPhone app design projects
+                to transform the game of digitalization.
+              </p>
+            </div>
+          </div>
+          <div className="col-md-3">
+            <div className="workingWithCynergyBox">
+              <span></span>
+              <img
+                src="./images/transport_162231042.png"
+                alt="transport_162231042"
+              />
+              <h4>Visualize Mockups</h4>
+              <p>
+                The top-notch iOS app design company Cynergy Studios performs
+                rigorous wireframes and interactive mockups to structure the
+                navigation and functions of the product from the beginning. Once
+                the solution is finalized, the iOS mobile app design will be
+                streamlined as per the foundational requisition. Modify your iOS
+                app design with ultimate perfection from certified experts in
+                iOS app design.
+              </p>
+            </div>
+          </div>
+          <div className="col-md-3">
+            <div className="workingWithCynergyBox">
+              <span></span>
+              <img
+                src="./images/renewable_26533201.png"
+                alt="renewable_26533201"
+              />
+              <h4>End-to-End Testing</h4>
+              <p>
+                Make your iOS mobile app journey vibrant and protected with
+                Dignite Studios. We systemize the entire process of designing
+                iOS apps with full-end testing service to ensure the integrity
+                and believability of an app. We burgeon to yield adequate
+                strategies to make your iOS UIUX design guarded and secured.
+              </p>
+            </div>
+          </div>
+          <div className="col-md-3">
+            <div className="workingWithCynergyBox">
+              <span></span>
+              <img
+                src="./images/graphic-design_699245.png"
+                alt="graphic-design_699245"
+              />
+              <h4>Absolute User Feedback</h4>
+              <p>
+                By placing feedback option it helps to protect iPhone app design
+                projects from malfunctions and inappropriate design strategies.
+                The preeminent iOS app design company Dignite Studios, pursues
+                proper implementation of consumer feedback and makes liable
+                changes as required.By placing feedback option it helps to
+                protect iPhone app design projects from malfunctions and
+                inappropriate design strategies. feedback and makes liable
+                changes as required.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="IosChoose">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-8">
+              <h2>Why Choose Us</h2>
+              <p>
+                To streamline the entire process of development hire iOS
+                developers from Dignite Studios. Here, hiring an iOS developer
+                can ensure smooth collaboration and on-time delivery of
+                projects. Our team of mobile app developers works closely to
+                lead to higher productivity and better app performance. You can
+                benefit from our extravagant expertise by hiring iOS developers
+                for your consumer apps.
+              </p>
+            </div>
+            <div className="col-md-4"></div>
+
+            <div className="col-md-4">
+              <div className="IosChooseBox">
+                <h4>Multi-Industry Discipline</h4>
+                <p>
+                  We build an ingenious iOS app design portfolio to boost
+                  businesses across international industries. We craft tailored
+                  solutions for your app idea and develop productive iPhone app
+                  designs holding a powerful process with in-depth research,
+                  seamless user experience
+                </p>
+                <span></span>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="IosChooseBox">
+                <h4>Primed for Perfection</h4>
+                <p>
+                  Cynergy’s iOS app design services bestow the leading design
+                  structure that undergoes in-house standards, meticulous
+                  specifications, and tested monitoring system to forge a
+                  well-versed validated approach that prevails myriad excellence
+                </p>
+                <span></span>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="IosChooseBox">
+                <h4>A Decade of Scaling Design Heights</h4>
+                <p>
+                  Designing an iPhone app for years has created an interactive
+                  approach to bring industries with innovative app idea with
+                  cutting-edge tools and technologies to make your brand
+                  categorized among prestigious Apple award winners. The premium
+                  iPhone app UI\UX designing company
+                </p>
+                <span></span>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="IosChooseBox">
+                <h4>Monetization Opportunities</h4>
+                <p>
+                  Prevailing a well-designed and functional app can provide your
+                  business with a competitive edge in the marketplace. Here, you
+                  can avail better monetization opportunities to robust your
+                  business leads and generate revenue through our profitable
+                  strategies.
+                </p>
+                <span></span>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="IosChooseBox">
+                <h4>Embrace App Builder Technology</h4>
+                <p>
+                  The leading iPhone app design company Cynergy Studios,
+                  determines the finest app-builder technology to construct
+                  coercive infrastructure of finest app-builder technology to
+                  construct coercive infrastructureyour apps to make an
+                  effective communication path for the users.
+                </p>
+                <span></span>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="IosChooseBox">
+                <h4>Enhanced Security</h4>
+                <p>
+                  Security is a top priority, especially when dealing with
+                  sensitive customer data. We furnish a safe and secure app
+                  development environment with advanced security protocols that
+                  include data encryption for our users.Security is a top
+                  priority, especially when environment with advanced security
+                  protocols that include data encryption for our users.
+                </p>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="my-4">
         <AppCta CtaHeading="Into an Innovative Mobile App." />
       </div>
