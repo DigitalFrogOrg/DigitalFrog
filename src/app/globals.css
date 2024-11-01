@@ -23,6 +23,9 @@ body {
   color: var(--heading-color) !important;
   transition: background-color 0.5s ease, color 0.5s ease;
 }
+hr {
+  margin: 0 !important;
+}
 button.dark-mode,
 button.light-mode {
   background-color: var(--orange);
@@ -2506,7 +2509,7 @@ section.recent_news {
 /* app-page css */
 .app-page {
   background-color: #f8f8f8;
-  padding: 200px 0px 20px 0px;
+  padding: 200px 0px 0px 0px;
   border-top: 2px solid #eaeaea;
 }
 .app-page h1 {
@@ -4433,6 +4436,56 @@ section.recent_news {
 .MobileQaBoxes:hover h4 {
   color: var(--white);
 }
-.MobileQaBoxes:hover  p{
+.MobileQaBoxes:hover p {
   color: var(--white);
 }
+
+.webAppDev {
+  padding: 100px 0px 100px 140px !important;
+}
+.webAppDev h2 {
+  font-size: 55px;
+  font-weight: bold;
+}
+
+/* TechAndTools Slider */
+
+.TechAndTools {
+  padding: 100px 0px;
+}
+.TechAndTools h2 {
+  font-size: 55px;
+  font-weight: bold;
+  text-align: center;
+}
+.TechAndTools p {
+  text-align: center;
+}
+.TechAndToolSlider {
+  margin-top: 26px;
+  padding-top: 12px;
+}
+.TechAndToolSlider .TechBoxSlide img {
+  width: 165px;
+  height: 135px;
+  object-fit: contain;
+  background-color: var(--white);
+  box-shadow: 0px 0px 20px 0px #00000012;
+  padding: 12px 30px;
+  margin: 50px 30px;
+  border-radius: 10px;
+}
+.TechBoxSlide {
+  transition: transform 0.3s ease;
+}
+.TechBoxSlide.scale-up {
+  background-image: url("/images/Rectangle955762.png");
+  background-position: 4px 29px;
+  background-repeat: no-repeat;
+  background-size: 99%;
+  transform: scale(1.5);
+}
+.TechBoxSlide.scale-up img{
+  box-shadow: none;
+}
+
