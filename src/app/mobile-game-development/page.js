@@ -12,6 +12,7 @@ import HotspotSection from "../components/HotspotSection";
 import FaqsSection from "../components/FaqsSection";
 import BudgetSection from "../components/BudgetSection";
 import AppCta from "../components/AppCta";
+import MainBanner from "../components/MainBanner";
 
 function page() {
   const faqData = [
@@ -50,24 +51,7 @@ function page() {
   return (
     <>
       <Header />
-      <div className="app-page">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-8">
-              <h1>Android App Development Services.</h1>
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <h3></h3>
-            </div>
-            <div className="col-md-4"></div>
-          </div>
-          <hr />
-        </div>
-      </div>
+      <MainBanner MainBannerHeading="Android App Development Services" />
 
       {/* Second Section */}
 

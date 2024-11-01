@@ -9,8 +9,8 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 import Popup from "./Popup";
-import { MdWbSunny } from "react-icons/md";
-import { FaMoon } from "react-icons/fa";
+// import { MdWbSunny } from "react-icons/md";
+// import { FaMoon } from "react-icons/fa";
 import { RxCross1 } from "react-icons/rx";
 
 function header() {
@@ -19,28 +19,28 @@ function header() {
     development: {
       heading: "Development",
       links: [
-        { href: "/app-development", text: "Android App Development Services" },
+        { href: "/web-app-development", text: "Web App Development Services" },
         {
-          href: "/ios-app-development-services",
-          text: "iOS App Development Services",
+          href: "/pwa-development",
+          text: "PWA Development Services",
         },
         {
-          href: "/native-app-development-services",
-          text: "Native App Development Services",
+          href: "/native-app-development",
+          text: "Native App Development Service",
         },
         {
-          href: "/web-app-development-services",
-          text: "Web App Development Services",
+          href: "/mobile-game-development",
+          text: "Mobile Game Development Services",
         },
       ],
       links2: [
         {
-          href: "/mobile-game-development",
-          text: "Hire Android App Developers",
+          href: "/ios-development",
+          text: "IOS Development Services",
         },
-        { href: "/mobile-app-development", text: "Hire iOS App Developers" },
-        { href: "/ai-app-development", text: "Hybrid App Development Service" },
-        { href: "/pwa-development-services", text: "PWA Development Services" },
+        { href: "/android-development", text: "Android Development Services" },
+        { href: "/no-code-development", text: "No Code/Low Code Development Services" },
+        { href: "/ai-app-development", text: "AI App Development Services" },
       ],
     },
     design: {
@@ -56,13 +56,13 @@ function header() {
     maintenance: {
       heading: "Maintenance & Consulting",
       links: [
-        { href: "/mobile-app-consulting", text: "Mobile App Consulting" },
+        { href: "/mobile-app-consulting", text: "Mobile App Consulting Services" },
         {
           href: "/mobile-app-support",
-          text: "Mobile App Support and Maintenance",
+          text: "Mobile App Support & Maintenance Services",
         },
       ],
-      links2: [{ href: "/mobile-app-testing", text: "Mobile App Testing" }],
+      links2: [{ href: "/mobile-app-testing", text: "Mobile App Testing Services" }],
     },
   };
 

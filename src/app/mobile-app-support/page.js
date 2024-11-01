@@ -5,6 +5,7 @@ import AppCta from "../components/AppCta";
 import FaqsSection from "../components/FaqsSection";
 import BudgetSection from "../components/BudgetSection";
 import MaintenanceProcess from "../components/MaintenanceProcess";
+import MainBanner from "../components/MainBanner";
 
 const page = () => {
   const faqData = [
@@ -45,29 +46,7 @@ const page = () => {
   return (
     <>
       <Header />
-      <div className="app-page">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-8">
-              <h1 className="mb-4">
-                Mobile App Support
-                <br /> & Maintenance
-                <br /> Services
-              </h1>
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-            </div>
-            <div className="col-md-4"></div>
-          </div>
-          <hr />
-        </div>
-      </div>
+      <MainBanner MainBannerHeading="Mobile App Support <br /> & Maintenance <br /> Services" />
 
       <div className="second-last-section">
         <div className="container">
