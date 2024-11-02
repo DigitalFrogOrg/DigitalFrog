@@ -2417,7 +2417,9 @@ section.recent_news {
   /* margin: 0 auto; */
   width: 200px;
 }
-
+.mobile-experiences img{
+  border-radius: 20px;
+}
 .nav-item button {
   background-color: #0000 !important;
   color: #000 !important;
