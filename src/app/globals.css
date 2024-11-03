@@ -4491,3 +4491,87 @@ section.recent_news {
   box-shadow: none;
 }
 
+.WebAppDevelopmentServices{
+  padding: 100px 0px;
+}
+
+.WebAppDevelopmentServices h2{
+  font-size: 55px;
+  font-weight: bold;
+}
+.WebAppDevBox{
+  background-color: var(--white);
+  padding: 26px;
+  border-radius: 12px;
+  box-shadow: 1px 1px 23.21px 0px #0000001e;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.WebAppDevBox h4{
+  margin-bottom: 12px;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--third-text-color);
+}
+.WebAppDevBox p{
+  font-size: 14px;
+  color: var(--third-text-color);
+  margin-bottom: 0px;
+}
+
+.WebAppDevBox:hover{
+  background-color: var(--orange) !important;
+  transform: translateX(-20px);
+}
+.WebAppDevBox:hover h4, .WebAppDevBox:hover p{
+  color: var(--white);
+}
+
+
+
+.DevelopmentProcess{
+  padding: 100px 0px;
+  background-color: #fffbf8;
+}
+.DevelopmentProcess h2{
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.DevelopmentProcessBox{
+  background-color: var(--white);
+  padding: 36px;
+  border-radius: 12px;
+  box-shadow: 1px 1px 23.21px 0px #0000001e;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  margin-top: 26px;
+  height: 220px;
+}
+.DevelopmentProcessBox h4{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.DevelopmentProcessBox p{
+  font-size: 13px;
+  margin: 0px;
+}
+.DevelopmentProcessBox:hover{
+  background-image: url("/images/back-maintainence.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.WebAppSolutions h2{
+  font-size: 55px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.WebAppSolutions p{
+  text-align: center;
+  font-size: 14px;
+}

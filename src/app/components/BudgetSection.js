@@ -160,9 +160,9 @@ function BudgetSection() {
                     <option value="" hidden>
                       Select Timeline
                     </option>
-                    <option value="1month">1 Month</option>
-                    <option value="3months">3 Months</option>
-                    <option value="6months">6 Months</option>
+                    <option value="1_month">1 Month</option>
+                    <option value="2_months">2 Months</option>
+                    <option value="3_months">3 Months</option>
                   </select>
                 </div>
 
