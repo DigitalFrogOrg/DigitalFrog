@@ -2417,7 +2417,7 @@ section.recent_news {
   /* margin: 0 auto; */
   width: 200px;
 }
-.mobile-experiences img{
+.mobile-experiences img {
   border-radius: 20px;
 }
 .nav-item button {
@@ -4487,19 +4487,19 @@ section.recent_news {
   background-size: 99%;
   transform: scale(1.5);
 }
-.TechBoxSlide.scale-up img{
+.TechBoxSlide.scale-up img {
   box-shadow: none;
 }
 
-.WebAppDevelopmentServices{
+.WebAppDevelopmentServices {
   padding: 100px 0px;
 }
 
-.WebAppDevelopmentServices h2{
+.WebAppDevelopmentServices h2 {
   font-size: 55px;
   font-weight: bold;
 }
-.WebAppDevBox{
+.WebAppDevBox {
   background-color: var(--white);
   padding: 26px;
   border-radius: 12px;
@@ -4508,38 +4508,37 @@ section.recent_news {
   cursor: pointer;
   transition: all 0.4s ease;
 }
-.WebAppDevBox h4{
+.WebAppDevBox h4 {
   margin-bottom: 12px;
   font-size: 24px;
   font-weight: bold;
   color: var(--third-text-color);
 }
-.WebAppDevBox p{
+.WebAppDevBox p {
   font-size: 14px;
   color: var(--third-text-color);
   margin-bottom: 0px;
 }
 
-.WebAppDevBox:hover{
+.WebAppDevBox:hover {
   background-color: var(--orange) !important;
   transform: translateX(-20px);
 }
-.WebAppDevBox:hover h4, .WebAppDevBox:hover p{
+.WebAppDevBox:hover h4,
+.WebAppDevBox:hover p {
   color: var(--white);
 }
 
-
-
-.DevelopmentProcess{
+.DevelopmentProcess {
   padding: 100px 0px;
   background-color: #fffbf8;
 }
-.DevelopmentProcess h2{
+.DevelopmentProcess h2 {
   font-size: 55px;
   font-weight: bold;
 }
 
-.DevelopmentProcessBox{
+.DevelopmentProcessBox {
   background-color: var(--white);
   padding: 36px;
   border-radius: 12px;
@@ -4549,29 +4548,74 @@ section.recent_news {
   margin-top: 26px;
   height: 220px;
 }
-.DevelopmentProcessBox h4{
+.DevelopmentProcessBox h4 {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 12px;
 }
-.DevelopmentProcessBox p{
+.DevelopmentProcessBox p {
   font-size: 13px;
   margin: 0px;
 }
-.DevelopmentProcessBox:hover{
+.DevelopmentProcessBox:hover {
   background-image: url("/images/back-maintainence.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.WebAppSolutions h2{
+.WebAppSolutions h2 {
   font-size: 55px;
   font-weight: bold;
   text-align: center;
 }
-
-.WebAppSolutions p{
+.WebAppSolutions p {
   text-align: center;
   font-size: 14px;
+}
+
+.LowCodeNoCode {
+  padding: 100px 0px;
+}
+.LowCodeNoCode h2 {
+  font-size: 55px;
+  font-weight: bold;
+}
+.LowCodeNoCode h4 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.SuccessfullDeveloped {
+  padding: 100px 0px;
+}
+.SuccessfullDeveloped h2 {
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.SuccessfullBox {
+  position: relative;
+}
+.SuccessfullBox h3 {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 24px 0px 14px 0px;
+}
+.SuccessfullBox p {
+  font-size: 14px;
+  width: 80%;
+}
+.SuccessfullBox button {
+  border: 0;
+  background-color: #fbd7bb;
+  color: var(--orange);
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 100px;
+}
+.SuccessfullBox .Arrow17 {
+  position: absolute;
+  top: 70%;
+  right: 2%;
+  width: 30px;
 }
