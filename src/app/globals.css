@@ -3629,7 +3629,7 @@ section.recent_news {
 }
 
 /* popup css */
-@keyframes shutterEffect {
+/* @keyframes shutterEffect {
   0% {
     opacity: 0;
     transform: translate(-50%, -100%);
@@ -3638,20 +3638,28 @@ section.recent_news {
     opacity: 1;
     transform: translate(-50%, -50%);
   }
-}
+} */
 .main-popup {
   position: fixed;
   height: 100vh;
   width: 100vw;
-  top: 50%;
-  left: 50%;
-  transform: translate(50%, 100%);
+  top: 0;
+  left: 0;
   padding: 20px;
-  background-color: #00000080;
+  background-color: hsla(0, 0%, 9%, 0.5);
   z-index: 1000;
   opacity: 0;
-  animation: shutterEffect 0.7s ease forwards;
+  animation: fadeIn 0.3s ease-in-out forwards;
 }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .popup-inner {
   background-color: var(--white);
   border-radius: 16px;
@@ -4069,6 +4077,9 @@ section.recent_news {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.IOS-services .slick-list{
+  margin-right: -300px;
 }
 .IOS-services .IOS-slider:hover h3,
 .IOS-services .IOS-slider:hover p,
@@ -4618,4 +4629,57 @@ section.recent_news {
   top: 70%;
   right: 2%;
   width: 30px;
+}
+
+.AISoftwareDevelopment{
+  padding: 100px 0px;
+}
+.AISoftwareDevelopment h2{
+  font-size: 55px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: capitalize;
+}
+.AISoftwareDevelopment p{
+  font-size: 14px;
+  text-align: center;
+}
+
+.AISoftwareDevBox{
+  text-align: center;
+  box-shadow: 1px 1px 23.21px 0px #0000001e;
+  padding: 46px 32px 26px 32px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  height: 430px;
+}
+.AISoftwareDevBox img{
+  width: 126px;
+  height: 126px;
+  margin-bottom: 16px;
+}
+.AISoftwareDevBox h4{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.AISoftwareDevBox:hover {
+  background-color: var(--orange); 
+}
+.AISoftwareDevBox:hover h4 , .AISoftwareDevBox:hover p{
+  color: var(--white);
+}
+
+.KeyOfAi{
+  padding: 100px 0px;
+  background-color: #fffbf8;
+}
+.KeyOfAi h2 {
+  font-size: 55px;
+  font-weight: bold;
+}
+.KeyOfAi h4{
+  color: var(--orange);
+  font-weight: bold;
 }

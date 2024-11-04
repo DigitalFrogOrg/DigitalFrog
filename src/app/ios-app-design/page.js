@@ -365,6 +365,7 @@ const page = () => {
           </div>
         </div>
       </div>
+      
       <div className="my-4">
         <AppCta CtaHeading="Into an Innovative Mobile App." />
       </div>
