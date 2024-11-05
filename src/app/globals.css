@@ -4683,3 +4683,34 @@ section.recent_news {
   color: var(--orange);
   font-weight: bold;
 }
+
+
+.weCommitbox{
+  box-shadow: 0px 5.19px 16.62px 0px #f66a0026;
+  background-color: var(--white);
+  border-radius: 10px;
+  margin: 10px 20px;
+  height: 520px;
+}
+.weCommitbox img{
+  border-radius: 10px;
+}
+.weCommitbox h4{
+  padding: 28px 28px 0px 28px;
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.weCommitbox p{
+  padding: 0px 24px 28px 28px;
+  font-size: 13px;
+  color: #656565;
+}
+.weCommitboxNavs .slick-prev {
+  top: -30%;
+  left: 88% !important;
+}
+.weCommitboxNavs .slick-next {
+  top: -30%;
+  right: 5%;
+}
