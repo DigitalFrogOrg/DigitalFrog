@@ -4714,3 +4714,23 @@ section.recent_news {
   top: -30%;
   right: 5%;
 }
+
+.OurChooseOpt{
+  padding: 100px 0px;
+}
+.OurChooseOpt h2{
+  font-size: 55px;
+  font-weight: bold;
+}
+.OurChooseOpt p{
+  font-size: 14px;
+}
+.OurChooseOpt .IosChooseBox:hover{
+  background-color: var(--orange);
+}
+.OurChooseOpt .IosChooseBox:hover h4{
+  color: var(--white);
+}
+.OurChooseOpt .IosChooseBox:hover p{
+  color: var(--white);
+}

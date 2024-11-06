@@ -86,7 +86,22 @@ export default function Home() {
       <CynergyStudio />
       <RecentNews />
       <TestimonialSlider />
-      <MobileExperiences />
+      <div className="container-fluid mobile-experiences">
+        <h2 className="text-center">
+          Make the industries section like the screenshot
+          <br /> Reimagine Mobile Experiences Across Every Industry.
+        </h2>
+        <p className="text-center">
+          Cynergy Studios crafts powerful mobile apps across a wide range of
+          industries. Whether in healthcare, retail, education, <br /> or
+          entertainment, we design solutions that foster success and enhance
+          user experiences, regardless of the sector.
+        </p>
+        <MobileExperiences />
+        <div className="row">
+          <button>Show More</button>
+        </div>
+      </div>
       <TestimonialTabs />
       <MarqueeSlider />
       <FaqsSection faqs={faqData} />
