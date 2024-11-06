@@ -4078,7 +4078,7 @@ section.recent_news {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.IOS-services .slick-list{
+.IOS-services .slick-list {
   margin-right: -300px;
 }
 .IOS-services .IOS-slider:hover h3,
@@ -4631,21 +4631,21 @@ section.recent_news {
   width: 30px;
 }
 
-.AISoftwareDevelopment{
+.AISoftwareDevelopment {
   padding: 100px 0px;
 }
-.AISoftwareDevelopment h2{
+.AISoftwareDevelopment h2 {
   font-size: 55px;
   font-weight: bold;
   text-align: center;
   text-transform: capitalize;
 }
-.AISoftwareDevelopment p{
+.AISoftwareDevelopment p {
   font-size: 14px;
   text-align: center;
 }
 
-.AISoftwareDevBox{
+.AISoftwareDevBox {
   text-align: center;
   box-shadow: 1px 1px 23.21px 0px #0000001e;
   padding: 46px 32px 26px 32px;
@@ -4654,24 +4654,25 @@ section.recent_news {
   transition: all 0.4s ease;
   height: 430px;
 }
-.AISoftwareDevBox img{
+.AISoftwareDevBox img {
   width: 126px;
   height: 126px;
   margin-bottom: 16px;
 }
-.AISoftwareDevBox h4{
+.AISoftwareDevBox h4 {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 16px;
 }
 .AISoftwareDevBox:hover {
-  background-color: var(--orange); 
+  background-color: var(--orange);
 }
-.AISoftwareDevBox:hover h4 , .AISoftwareDevBox:hover p{
+.AISoftwareDevBox:hover h4,
+.AISoftwareDevBox:hover p {
   color: var(--white);
 }
 
-.KeyOfAi{
+.KeyOfAi {
   padding: 100px 0px;
   background-color: #fffbf8;
 }
@@ -4679,29 +4680,28 @@ section.recent_news {
   font-size: 55px;
   font-weight: bold;
 }
-.KeyOfAi h4{
+.KeyOfAi h4 {
   color: var(--orange);
   font-weight: bold;
 }
 
-
-.weCommitbox{
+.weCommitbox {
   box-shadow: 0px 5.19px 16.62px 0px #f66a0026;
   background-color: var(--white);
   border-radius: 10px;
   margin: 10px 20px;
   height: 520px;
 }
-.weCommitbox img{
+.weCommitbox img {
   border-radius: 10px;
 }
-.weCommitbox h4{
+.weCommitbox h4 {
   padding: 28px 28px 0px 28px;
   font-size: 23px;
   font-weight: bold;
   margin-bottom: 16px;
 }
-.weCommitbox p{
+.weCommitbox p {
   padding: 0px 24px 28px 28px;
   font-size: 13px;
   color: #656565;
@@ -4715,22 +4715,104 @@ section.recent_news {
   right: 5%;
 }
 
-.OurChooseOpt{
+.OurChooseOpt {
   padding: 100px 0px;
 }
-.OurChooseOpt h2{
+.OurChooseOpt h2 {
   font-size: 55px;
   font-weight: bold;
 }
-.OurChooseOpt p{
+.OurChooseOpt p {
   font-size: 14px;
 }
-.OurChooseOpt .IosChooseBox:hover{
+.OurChooseOpt .IosChooseBox:hover {
   background-color: var(--orange);
 }
-.OurChooseOpt .IosChooseBox:hover h4{
+.OurChooseOpt .IosChooseBox:hover h4 {
   color: var(--white);
 }
-.OurChooseOpt .IosChooseBox:hover p{
+.OurChooseOpt .IosChooseBox:hover p {
   color: var(--white);
+}
+
+.midMobileAdd {
+  padding: 100px 0px;
+  position: relative;
+}
+.midMobileAdd h2 {
+  font-size: 55px;
+  font-weight: bold;
+}
+.midMobileAdd p {
+  font-size: 14px;
+}
+
+.panelBoxLeft{
+  margin-left: -70px;
+}
+.panelBoxLeft h2{
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.panelBoxLeft h4{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.panelBoxRight{
+  margin-right: -140px;
+  margin-left: 60px;
+}
+.panelBoxRight h4{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.lines-1, .lines-2, .lines-3, .lines-4{
+  position: absolute;
+}
+
+.lines-1 {
+  width: 600px !important;
+  left: -75px;
+  top: 330px;
+}
+.lines-2{
+  width: 380px !important;
+  left: 150px;
+  top: 640px;
+}
+.lines-3 {
+  width: 250px !important;
+  right: 190px;
+  top: 530px;
+}
+.lines-4 {
+  width: 400px !important;
+  right: 100px;
+  bottom: 375px;
+}
+.mid-mob{
+  margin: -50px 0px 120px 0px;
+}
+
+.androidDeveloper{
+  padding: 100px 0px;
+}
+.androidDeveloper h2{
+  font-weight: bold;
+  font-size: 55px;
+}
+.line-android{
+  width: 170%;
+  height: 485px;
+  object-fit: cover;
+}
+.lines-andrd h4 {
+  font-size: 22px;
+  font-weight: bold;
+}
+.lines-andrd P{
+  font-size: 14px;
 }
