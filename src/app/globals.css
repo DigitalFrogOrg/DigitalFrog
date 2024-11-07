@@ -4816,3 +4816,15 @@ section.recent_news {
 .lines-andrd P{
   font-size: 14px;
 }
+
+.IOSDevelopmentServices{
+  padding: 100px 0px;
+}
+.IOSDevelopmentServices h2{
+  font-size: 55px;
+  font-weight: bold;
+}
+.ahh2 .accordion-item h2 button{
+  font-size: 36px !important;
+  font-weight: 400 !important;
+}
