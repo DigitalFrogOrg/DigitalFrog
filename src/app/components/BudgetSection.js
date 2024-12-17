@@ -6,7 +6,7 @@ function BudgetSection() {
     fullName: "",
     email: "",
     projectType: "",
-    budget: 100000,
+    // budget: 100000,
     timeline: "",
   });
 
@@ -26,7 +26,6 @@ function BudgetSection() {
       fullName: "",
       email: "",
       projectType: "",
-      budget: 100000,
       timeline: "",
     });
   };
