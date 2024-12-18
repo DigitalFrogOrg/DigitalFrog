@@ -5,6 +5,7 @@ import FaqsSection from "../components/FaqsSection";
 import BudgetSection from "../components/BudgetSection";
 import MainBanner from "../components/MainBanner";
 import TechAndTools from "../components/TechAndTools";
+import Link from "next/link";
 
 const page = () => {
   const faqData = [
@@ -58,7 +59,9 @@ const page = () => {
                 deliver the fastest, reliable, and engaging development process
                 to meet the needs of the users.
               </p>
-              <button className="second-btn">Schedule A Call</button>
+              <a href="tel:13463608407">
+                <button className="second-btn">Schedule A Call</button>
+              </a>
             </div>
             <div className="col-md-6">
               <img
@@ -451,7 +454,9 @@ const page = () => {
               </p>
             </div>
             <div className="col-md-4 d-flex align-items-center justify-content-end">
+             <Link href="#getInTouch">
               <button className="second-btn">Start Your Project</button>
+             </Link>
             </div>
 
             <div className="col-md-4 mt-3">

@@ -4,6 +4,7 @@ import AppCta from "../components/AppCta";
 import FaqsSection from "../components/FaqsSection";
 import BudgetSection from "../components/BudgetSection";
 import MainBanner from "../components/MainBanner";
+import Link from "next/link";
 
 const page = () => {
   const faqData = [
@@ -67,7 +68,9 @@ const page = () => {
                 beyond innovation to maximize user engagement and brand
                 identity.
               </p>
+            <Link href="#getInTouch">
               <button className="second-btn">Start Your Project</button>
+            </Link>
             </div>
           </div>
         </div>
@@ -83,7 +86,9 @@ const page = () => {
               experienced designers deliver ever-evolving custom designs to
               create user-friendly interfaces that stand out globally.
             </p>
-            <button className="second-btn">Start Your Project</button>
+            <Link href="#getInTouch">
+              <button className="second-btn">Start Your Project</button>
+            </Link>
           </div>
           <div className="col-md-6">
             <div className="row">
@@ -167,7 +172,9 @@ const page = () => {
               </p>
             </div>
             <div className="col-md-4 d-flex align-items-center justify-content-end">
+            <a href="tel:13463608407">
               <button className="second-btn">Schedule A Call</button>
+            </a>
             </div>
           </div>
           <div className="row mt-5">
@@ -278,7 +285,9 @@ const page = () => {
             </p>
           </div>
           <div className="col-md-4 d-flex align-items-center justify-content-end">
+          <a href="tel:13463608407">
             <button className="second-btn">Schedule A Call</button>
+          </a>
           </div>
         </div>
         <div className="row">

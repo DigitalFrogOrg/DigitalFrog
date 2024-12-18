@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { submitForm } from "@/api/formServices";
 
 function BudgetSection() {
   const [formData, setFormData] = useState({
@@ -19,9 +20,16 @@ function BudgetSection() {
     setFormData({ ...formData, budget: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form Data:", formData);
+
+    try {
+      const response = await submitForm(formData)
+      alert(response.data.message)
+    } catch (error) {
+      alert("Failed to submit form.")
+    }
+
     setFormData({
       fullName: "",
       email: "",
@@ -32,7 +40,7 @@ function BudgetSection() {
 
   return (
     <>
-      <div className="budget-sec">
+      <div id="getInTouch" className="budget-sec">
         <div className="container">
           <div className="row">
             <div className="col-md-6">
@@ -76,9 +84,11 @@ function BudgetSection() {
 
               <h6>
                 Alternatively, contact us via phone
-                <span> +1 (346) 360-8407 </span>
+                <a href="tel:13463608407"><span> +1 (346) 360-8407 </span></a>
                 or email
+                <a href="mailto:info@cynergystudio.com">
                 <span> info@cynergystudios.com</span>
+                </a>
               </h6>
             </div>
             <div className="col-md-6 px-5 d-flex align-items-center">
@@ -168,7 +178,7 @@ function BudgetSection() {
                 <button type="submit" className="btn mt-4">
                   Start Your Project
                 </button>
-                <button type="submit" className="btn m-4 file-btn">
+                <button type="button" className="btn m-4 file-btn">
                   <img
                     src="./images/file-upload.png"
                   />

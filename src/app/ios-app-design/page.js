@@ -5,6 +5,7 @@ import FaqsSection from "../components/FaqsSection";
 import BudgetSection from "../components/BudgetSection";
 import IOSAppDesignServices from "../components/IosDesignServices";
 import MainBanner from "../components/MainBanner";
+import Link from "next/link";
 
 const page = () => {
   const faqData = [
@@ -68,7 +69,9 @@ const page = () => {
                 ensuring your app is developed with precision and innovation to
                 keep your business at the forefront.
               </p>
-              <button className="second-btn">Start Your Project</button>
+              <Link href="#getInTouch">
+                <button className="second-btn">Start Your Project</button>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 function HotspotSection() {
   return (
@@ -69,9 +70,9 @@ function HotspotSection() {
                   <br /> Get In Touch!
                 </strong>
               </h2>
-              <a href="#" className="btn">
+              <Link href="#" className="btn">
                 Make An Appointment
-              </a>
+              </Link>
             </div>
           </div>
         </div>

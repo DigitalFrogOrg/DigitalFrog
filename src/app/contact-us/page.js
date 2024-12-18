@@ -4,18 +4,41 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import HotspotSection from "../components/HotspotSection";
+import Link from "next/link";
+import { submitForm } from "@/api/formServices";
 
 const page = () => {
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
-    projectType: "",
+    phoneNumber:"",
     budget: 0,
-    timeline: "",
   });
   const handleBudgetChange = (e) => {
     setFormData({ ...formData, budget: e.target.value });
   };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+   const handleSubmit = async (e) => {
+      e.preventDefault();
+      try {
+        const response = await submitForm(formData)
+        alert(response.data.message)
+      } catch (error) {
+        alert("Failed to submit form.")
+      }
+  
+      setFormData({
+        fullName: "",
+        email: "",
+        phoneNumber:"",
+        budget: 0,
+      });
+    };
 
   return (
     <>
@@ -34,36 +57,45 @@ const page = () => {
       <div className="container contact-main">
         <div className="row">
           <h6>
-            <a href="/" style={{ color: "#000" }}>
+            <Link href="/" style={{ color: "#000" }}>
               Home
-            </a>{" "}
+            </Link>{" "}
             /{" "}
-            <a href="/contact-us" style={{ color: "#000" }}>
+            <Link href="/contact-us" style={{ color: "#000" }}>
               Contact Us
-            </a>
+            </Link>
           </h6>
         </div>
         <div className="row mt-3">
           <div className="col-md-7">
             <h2>Got a project in mind?</h2>
             <p>Fill in this form or send us an e-mail</p>
-            <form className="contact-form">
+            <form onSubmit={handleSubmit} className="contact-form">
               <input
                 type="text"
+                name="fullName"
+                value={formData.fullName}
                 placeholder="Name *"
                 className="w-100 form-control"
+                onChange={handleChange}
               />
               <div className="d-flex justify-content-between mt-3">
                 <input
                   type="tel"
+                  value={formData.phoneNumber}
+                  name="phoneNumber"
                   placeholder="Phone number *"
                   className="form-control"
                   style={{ width: "48%" }}
+                  onChange={handleChange}
                 />
                 <input
                   type="email"
+                  name="email"
+                  value={formData.email}
                   placeholder="Email *"
                   className="form-control"
+                  onChange={handleChange}
                   style={{ width: "48%" }}
                 />
               </div>
@@ -77,7 +109,7 @@ const page = () => {
                   step="10000"
                   name="budget"
                   value={formData.budget}
-                  onChange={handleBudgetChange}
+                  onChange={handleChange}
                 />
                 <div className="budgetDisplay">
                   <span>0 $</span>

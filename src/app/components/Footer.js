@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useState, useEffect } from "react";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -38,7 +39,7 @@ function footer() {
                 designers will build out a beautiful  Prototype to bring your
                 project to life with color and brand.
               </p> */}
-              <a href="/" className="pt-4">
+              <Link href="/" className="pt-4">
                 <img
                   src={
                     theme === "light"
@@ -47,7 +48,7 @@ function footer() {
                   }
                   alt="Logo"
                 />
-              </a>
+              </Link>
               <ul className="footer-info">
                 <li>
                   <FaPhoneAlt /> <a href="tel:13463608407">+1 (346) 360-8407</a>
@@ -68,22 +69,22 @@ function footer() {
                 <h5>Overview</h5>
                 <ul>
                   <li>
-                    <a href="/">Home</a>
+                    <Link href="/">Home</Link>
                   </li>
                   <li>
-                    <a href="/about-us">About Us</a>
+                    <Link href="/about-us">About Us</Link>
                   </li>
                   <li>
-                    <a href="/terms-condition">Terms & Conditions</a>
+                    <Link href="/terms-condition">Terms & Conditions</Link>
                   </li>
                   <li>
-                    <a href="/privacy-policy">Privacy Policy</a>
+                    <Link href="/privacy-policy">Privacy Policy</Link>
                   </li>
                   <li>
-                    <a href="/faqs">Faqs</a>
+                    <Link href="/faqs">Faqs</Link>
                   </li>
                   <li>
-                    <a href="/contact-us">Contact Us</a>
+                    <Link href="/contact-us">Contact Us</Link>
                   </li>
                 </ul>
               </div>
@@ -93,12 +94,18 @@ function footer() {
                 <h5>What we do</h5>
                 <ul>
                   <li>
-                    <a href="/app-development">Mobile App Development</a>
+                    <Link href="/native-app-development">Mobile App Development</Link>
                   </li>
-                  <li>Android App Development</li>
-                  <li>IOS App Development</li>
-                  <li>App Consulting</li>
-                  <li>See More.</li>
+                  <li>
+                    <Link href="/android-development"> Android App Development</Link>
+                  </li>
+                  <li>
+                  <Link href="/ios-development">IOS App Development</Link>
+                  </li>
+                  <li>
+                  <Link href="/mobile-app-consulting">App Consulting</Link>
+                  </li>
+                  {/* <li>See More.</li> */}
                 </ul>
               </div>
             </div>

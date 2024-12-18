@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 function Evolution() {
   return (
@@ -36,14 +37,19 @@ function Evolution() {
                       elements.
                     </li>
                   </ul>
+                    <a
+                    
+                    target="_blank"
+                    href="https://www.figma.com/design/0B1dqt4hJ4WqW3HR5glJRo/Project---Four-Elements---Final-File?node-id=0-1&node-type=canvas&t=Bqf8eBgtvtNICCQ5-0">
                   <button type="button" className="whole-btn2">
                     <img
                       src="/images/linkbtn.png"
                       alt="Specifications & Planning"
                       className="btn-link"
-                    />
+                      />
                     View Specifications
                   </button>
+                      </a>
                 </div>
               </div>
             </div>
@@ -240,9 +246,11 @@ function Evolution() {
             <div className="row">
               <div className="col-sm-6"></div>
               <div className="col-sm-6 text-center">
+                <Link href="/how-we-do-it">
                 <button type="button" className="dive_buttons">
                   Deep Dive Into Our Process
                 </button>
+                </Link>
               </div>
             </div>
           </div>

@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Link from "next/link";
 
 function TestimonialSlider() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -88,6 +89,7 @@ function TestimonialSlider() {
               <br />
               <br />
               <div className="d-flex w-100 gap-5">
+                <Link href="/mobile-app-design">
                 <button
                   style={{
                     backgroundColor: "transparent",
@@ -95,12 +97,15 @@ function TestimonialSlider() {
                     borderColor: "#DC5F00",
                     borderWidth: 1,
                   }}
-                >
+                  >
                   App Design
                 </button>
+                  </Link>
+                  <Link href="/native-app-development">
                 <button style={{ backgroundColor: "#DC5F00", color: "#fff" }}>
                   App Development
                 </button>
+                  </Link>
               </div>
             </div>
           </div>

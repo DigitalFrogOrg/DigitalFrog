@@ -4,6 +4,7 @@ import AppCta from "../components/AppCta";
 import FaqsSection from "../components/FaqsSection";
 import BudgetSection from "../components/BudgetSection";
 import MainBanner from "../components/MainBanner";
+import Link from "next/link";
 
 const page = () => {
   const faqData = [
@@ -56,7 +57,9 @@ const page = () => {
               ERPs, and facilitating the complete development lifecycle of
               products destined for launch and scale.
             </p>
+            <Link href="#getInTouch">
             <button className="second-btn">Start Your Project</button>
+            </Link>
           </div>
           <div className="col-md-6">
             <img
@@ -165,7 +168,9 @@ const page = () => {
               </h2>
             </div>
             <div className="col-md-6 d-flex align-items-center justify-content-end">
+            <Link href="#getInTouch">
               <button className="second-btn">Start Your Project</button>
+            </Link>
             </div>
           </div>
 

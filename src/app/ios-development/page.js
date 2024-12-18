@@ -4,6 +4,7 @@ import AppCta from "../components/AppCta";
 import FaqsSection from "../components/FaqsSection";
 import BudgetSection from "../components/BudgetSection";
 import MainBanner from "../components/MainBanner";
+import Link from "next/link";
 
 const page = () => {
   const faqData = [
@@ -64,9 +65,11 @@ const page = () => {
               business of digital cosmos. Make your iOS app development the most
               advanced with current functionalities and operations.
             </p>
+            <Link href="#getInTouch">
             <button className="second-btn mt-2">
               Let’s Start Your Project
             </button>
+            </Link>
           </div>
         </div>
       </div>

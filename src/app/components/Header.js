@@ -12,6 +12,7 @@ import Popup from "./Popup";
 // import { MdWbSunny } from "react-icons/md";
 // import { FaMoon } from "react-icons/fa";
 import { RxCross1 } from "react-icons/rx";
+import Link from "next/link";
 
 function header() {
   const [activeTab, setActiveTab] = useState("development");
@@ -117,7 +118,7 @@ function header() {
     <>
       <header className="navbar navbar-expand-lg">
         <div className="container-fluid" id="header">
-          <a href="/">
+          <Link href="/">
             <img
               src={
                 theme === "light"
@@ -126,7 +127,7 @@ function header() {
               }
               alt="Logo"
             />
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -148,9 +149,9 @@ function header() {
                 <ul>
                   <li className="nav-item">
                     <div className="what-we-do-container">
-                      <a href="#" className="what-we-do">
+                      <Link href="#" className="what-we-do">
                         What We Do
-                      </a>
+                      </Link>
 
                       <div className="mega_menu">
                         <div className="container-fluid">
@@ -190,12 +191,12 @@ function header() {
                                     {tabsContent[activeTab].links.map(
                                       (link, index) => (
                                         <li key={index}>
-                                          <a
+                                          <Link
                                             href={link.href}
                                             className={isActive(link.href)}
                                           >
                                             {link.text}
-                                          </a>
+                                          </Link>
                                         </li>
                                       )
                                     )}
@@ -204,12 +205,12 @@ function header() {
                                     {tabsContent[activeTab].links2.map(
                                       (link, index) => (
                                         <li key={index}>
-                                          <a
+                                          <Link
                                             href={link.href}
                                             className={isActive(link.href)}
                                           >
                                             {link.text}
-                                          </a>
+                                          </Link>
                                         </li>
                                       )
                                     )}
@@ -223,20 +224,20 @@ function header() {
                     </div>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/how-we-do-it"
                       className={isActive("/how-we-do-it")}
                     >
                       How We Do It
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/achievements"
                       className={isActive("/achievements")}
                     >
                       Achievements
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -264,7 +265,7 @@ function header() {
       <div className={`main-full-menu ${showMenu ? "menu-active" : ""}`}>
         <div className="row h-100">
           <div className="col-md-8 h-100 right-main-menu">
-            <a href="/">
+            <Link href="/">
               <img
                 src={
                   theme === "light"
@@ -273,29 +274,29 @@ function header() {
                 }
                 alt="Logo"
               />
-            </a>
+            </Link>
 
             <ul className="main-ul-li">
               <li>
-                <a href="/">Home</a>
+                <Link href="/">Home</Link>
               </li>
               <li>
-                <a href="/about-us">About us</a>
+                <Link href="/about-us">About us</Link>
               </li>
               <li>
-                <a href="/app-development">What we do</a>
+                <Link href="/app-development">What we do</Link>
               </li>
               <li>
-                <a href="/how-we-do-it">How we do it</a>
+                <Link href="/how-we-do-it">How we do it</Link>
               </li>
               <li>
-                <a href="/achievements">Achievements</a>
+                <Link href="/achievements">Achievements</Link>
               </li>
               <li>
-                <a href="/faqs">Faqs</a>
+                <Link href="/faqs">Faqs</Link>
               </li>
               <li>
-                <a href="/contact-us">Contact us</a>
+                <Link href="/contact-us">Contact us</Link>
               </li>
             </ul>
 
@@ -318,53 +319,53 @@ function header() {
       {/* Mobile Screen Navbar */}
       <div className={`mobile-sidebar ${isOpen ? "open" : ""}`}>
         <div className="div-header">
-          <a className="navbar-brand" href="/">
+          <Link className="navbar-brand" href="/">
             <img src="./images/white-Logo.png" alt="MainLogo" />
-          </a>
+          </Link>
           <button className="close-btn" onClick={toggleNavbar}>
             <RxCross1 />
           </button>
         </div>
         <ul className="navbar-nav">
           <li className="nav-item">
-            <a className="nav-link" aria-current="page" href="/">
+            <Link className="nav-link" aria-current="page" href="/">
               Home
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/about-us">
+            <Link className="nav-link" href="/about-us">
               About
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/">
+            <Link className="nav-link" href="/">
               Services
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/app-development">
+            <Link className="nav-link" href="/app-development">
               What We Do
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/how-we-do-it">
+            <Link className="nav-link" href="/how-we-do-it">
               How We Do It
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/achievements">
+            <Link className="nav-link" href="/achievements">
               Achievements
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/faqs">
+            <Link className="nav-link" href="/faqs">
               Faqs
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/contact-us">
+            <Link className="nav-link" href="/contact-us">
               Contact us
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

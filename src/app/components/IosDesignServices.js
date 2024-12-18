@@ -3,6 +3,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Link from "next/link";
 
 const IOSAppDesignServices = () => {
   const settings = {
@@ -42,7 +43,7 @@ const IOSAppDesignServices = () => {
                   to roadmap the right path to your app idea, particularly to
                   dispense highly intuitive.
                 </p>
-                <button>Start your project</button>
+                <Link href="#getInTouch"><button>Start your project</button> </Link>
               </div>
             </div>
             <div>
@@ -56,7 +57,7 @@ const IOSAppDesignServices = () => {
                   out among global businesses. easy-to-use interfaces to hook
                   large audiences promptly.
                 </p>
-                <button>Start your project</button>
+                <Link href="#getInTouch"><button>Start your project</button> </Link>
               </div>
             </div>
             <div>
@@ -70,7 +71,7 @@ const IOSAppDesignServices = () => {
                   consumers or clients effectively. Our top iPhone app design
                   team uses multiple graphic combinations.
                 </p>
-                <button>Start your project</button>
+                <Link href="#getInTouch"><button>Start your project</button></Link>
               </div>
             </div>
             <div>
@@ -84,7 +85,7 @@ const IOSAppDesignServices = () => {
                   out among global businesses. easy-to-use interfaces to hook
                   large audiences promptly.
                 </p>
-                <button>Start your project</button>
+                <Link href="#getInTouch"><button>Start your project</button> </Link>
               </div>
             </div>
           </Slider>

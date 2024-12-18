@@ -6,6 +6,7 @@ import MainBanner from "../components/MainBanner";
 import FaqsSection from "../components/FaqsSection";
 import BudgetSection from "../components/BudgetSection";
 import AppCta from "../components/AppCta";
+import Link from "next/link";
 
 const page = () => {
   const faqData = [
@@ -55,7 +56,9 @@ const page = () => {
               The first-class mobile testing team of cynergy Studios fabricates
               automated testing of apps to hasten effective solutions instantly.
             </p>
-            <button className="second-btn">Get In Touch</button>
+            <Link href="#getInTouch">
+              <button className="second-btn">Get In Touch</button>
+            </Link>
           </div>
           <div className="col-md-6 appTestRight">
             <div className="row">

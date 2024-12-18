@@ -6,6 +6,7 @@ import FaqsSection from "../components/FaqsSection";
 import BudgetSection from "../components/BudgetSection";
 import MaintenanceProcess from "../components/MaintenanceProcess";
 import MainBanner from "../components/MainBanner";
+import Link from "next/link";
 
 const page = () => {
   const faqData = [
@@ -69,7 +70,9 @@ const page = () => {
                   mobile app with astounded tech features to achieve your
                   productive business goals.
                 </p>
-                <button className="btn-app">Start Your Project</button>
+                <Link href="#getInTouch">
+                  <button className="btn-app">Start Your Project</button>
+                </Link>
               </div>
             </div>
             <div className="col-md-5 pe-5 py-2">
@@ -211,7 +214,9 @@ const page = () => {
               </p>
             </div>
             <div className="col-md-5 d-flex justify-content-end align-items-center">
+            <Link href="#getInTouch">
               <button className="second-btn">Start Your Project</button>
+            </Link>
             </div>
           </div>
           <div className="row mt-5">

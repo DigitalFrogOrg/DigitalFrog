@@ -4828,3 +4828,8 @@ section.recent_news {
   font-size: 36px !important;
   font-weight: 400 !important;
 }
+
+.budget-btn-active{
+  background-color: var(--orange) !important;
+  color: var(--white) !important;
+}

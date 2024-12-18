@@ -13,6 +13,7 @@ import FaqsSection from "../components/FaqsSection";
 import BudgetSection from "../components/BudgetSection";
 import AppCta from "../components/AppCta";
 import MainBanner from "../components/MainBanner";
+import Link from "next/link";
 
 function page() {
   const faqData = [
@@ -71,8 +72,9 @@ function page() {
                   and reliable services tailored to meet industry standards and
                   drive your success.
                 </p>
-
-                <button className="btn-app">Join Our Journey</button>
+                <Link href="/contact-us">
+                  <button className="btn-app">Join Our Journey</button>
+                </Link>
               </div>
             </div>
             <div className="col-md-6 pe-5 py-2">
@@ -367,7 +369,9 @@ function page() {
               </h2>
             </div>
             <div className="col-md-3 d-flex align-items-center justify-content-end">
+             <Link href="#getInTouch">
               <button className="btn-app">Start Your Project</button>
+             </Link>
             </div>
           </div>
           <div className="row">
