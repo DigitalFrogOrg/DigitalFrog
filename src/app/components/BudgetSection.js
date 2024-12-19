@@ -22,6 +22,12 @@ function BudgetSection() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    for (const [key, value] of Object.entries(formData)) {
+      if (!value.trim()) { 
+        alert(`Please fill in the ${key} field.`);
+        return;
+    }
+  }
 
     try {
       const response = await submitForm(formData)

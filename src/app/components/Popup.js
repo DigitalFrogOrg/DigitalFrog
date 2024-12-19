@@ -4,10 +4,10 @@ import { submitForm } from '@/api/formServices';
 function Popup({ togglePopup }) {
     const [formData,setFormData] = useState({
         fullName: "",
-        email: "",
         phoneNumber: "",
-        budget: "",
+        email: "",
         description: "",  
+        budget: "",
     })
     const budgets = ['20-50K','50-100K','100-500K','500-1,000K','1,000K']
 
@@ -18,6 +18,14 @@ function Popup({ togglePopup }) {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        
+        for (const [key, value] of Object.entries(formData)) {
+            if (!value.trim()) { 
+                alert(`Please fill in the ${key} field.`);
+                return;
+            }
+        }
+    
         try {
             const response = await submitForm(formData)
             alert(response.data.message)
@@ -31,6 +39,7 @@ function Popup({ togglePopup }) {
             budget: "",
             description: "",  
         })
+        togglePopup()
     }
 
     const handleBudget = (val)=>{
@@ -46,7 +55,7 @@ function Popup({ togglePopup }) {
                         <div className="popup-inner w-100">
                             <h2>Ready to discuss your project with us?</h2>
                             <form onSubmit={handleSubmit} className='popup-form'>
-                                <input name="fullName" value={formData.fullName} onChange={handleChange} placeholder='Name*' />
+                                <input name="fullName" value={formData.fullName} onChange={handleChange} placeholder='Full name*' />
                                 <input name="phoneNumber" value={formData.phoneNumber} onChange={handleChange} placeholder='Phone number *' />
                                 <input name="email" value={formData.email} onChange={handleChange} placeholder='Email *' />
                                 <textarea name="description" value={formData.description} onChange={handleChange} placeholder='Description *' rows={3}>

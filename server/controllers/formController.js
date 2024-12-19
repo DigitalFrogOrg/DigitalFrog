@@ -21,7 +21,7 @@ const submitForm = async(req,res) => {
             Timeline: ${timeline || 'N/A'}\n
             phoneNumber: ${phoneNumber || 'N/A'}\n
             description: ${description || 'N/A'}\n
-            budget: ${budget || 'N/A'}`
+            budget: ${budget ? `$${budget}` : 'N/A'}`
         }
 
         //send email

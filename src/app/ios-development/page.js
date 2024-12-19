@@ -10,35 +10,35 @@ const page = () => {
   const faqData = [
     {
       questionId: "01",
-      question: "Who designs Android mobile apps?",
+      question: "What is an iOS app development service?",
       answer:
-        "Android mobile apps are designed by a team that typically includes Android app designers, UI/UX specialists, and developers. This collaboration ensures that the app is visually appealing, user-friendly, and functional.",
+        "At Cynergy Studios, iOS app development services encompass creating high-quality applications for Apple devices. Our expert team guides you from concept to deployment, utilizing the latest tools and best practices to ensure a functional and user-friendly app.",
     },
     {
       questionId: "02",
-      question: "What does an Android mobile app designer do?",
+      question: "How much does it cost to develop an app for iOS?",
       answer:
-        "An Android mobile app designer focuses on creating the visual and interactive elements of the app. They ensure the user interface is engaging and intuitive, aligning with user needs and business goals.",
+        "The cost to develop an iOS app at Cynergy Studios varies based on complexity and features. Simple apps may start around $5,000, while more complex applications can range from $20,000 to over $100,000. We provide tailored estimates based on your specific needs.",
     },
     {
       questionId: "03",
       question:
-        "What is the difference between an Android app developer and an Android app designer?",
+        "How to choose an iOS app development company?",
       answer:
-        "An Android app developer is responsible for coding and building the app’s functionality, while an Android app designer concentrates on the app's aesthetics and user experience. Together, they create a cohesive product.",
+        "When selecting an iOS app development company like Cynergy Studios, consider: <br /> <br />  1. <b>Experience:</b> Review our portfolio of past projects. <br />2. <b>Client Reviews:</b> Check testimonials and case studies for feedback.<br /> 3. <b>Technical Expertise:</b> Ensure our team is skilled in the latest iOS technologies.<br /> 4. <b>Communication:</b> Look for clear and continuous collaboration.<br /> 5. <b>Post-Launch Support:</b> Choose a company that offers ongoing maintenance.",
     },
     {
       questionId: "04",
       question:
-        "What is the difference between Android app design vs. iOS app design?",
+        "How can I develop an iOS app?",
       answer:
-        "The primary difference lies in the design guidelines and user interface principles dictated by Google for Android and Apple for iOS. Each platform has distinct design philosophies, affecting layout, navigation, and overall user experience.",
+        "To develop an iOS app with Cynergy Studios:<br /> <br /> 1. <b>Define Your Vision:</b> Collaborate to outline your app’s purpose. <br /> 2. <b>Market Research:</b> We assess competitors and user needs. <br /> 3. <b>Design:</b> Our team creates wireframes and prototypes.<br />  4. <b>Development:</b> We build your app using Xcode and Swift.<br /> 5. <b>Testing:</b> Extensive testing is conducted before launch.<br /> 6. <b>Launch:</b> We assist with the App Store submission process.<br /> 7. <b>Ongoing Support:</b> We provide updates based on feedback.",
     },
     {
       questionId: "05",
-      question: "How much does it cost to design an Android app?",
+      question: "What is the hourly rate for iOS app development?",
       answer:
-        "The cost of designing an Android app can vary widely, depending on factors such as complexity, features, and the designer's experience. On average, you might expect costs to range from a few thousand to tens of thousands of dollars.",
+        "Cynergy Studios' hourly rates for iOS app development typically range from $50 to $200, depending on project complexity and expertise. Our rates reflect the high-quality services we provide, ensuring value for your investment.",
     },
   ];
   return (
@@ -57,17 +57,13 @@ const page = () => {
             />
           </div>
           <div className="col-md-6 d-flex align-items-start justify-content-center flex-column px-5">
-            <h2>Development Company</h2>
+            <h2>iOS Development Company</h2>
             <p>
-              Experience well-structured development of mobile apps, with our
-              years of strong acquaintance in the field of iOS development that
-              leverage unique tools, languages, and wireframes to excel in the
-              business of digital cosmos. Make your iOS app development the most
-              advanced with current functionalities and operations.
+              Experience a seamless mobile app development process with Cynergy Studios, backed by years of expertise in iOS development. We utilize cutting-edge tools, programming languages, and innovative wireframes to thrive in the digital landscape. Elevate your iOS app development to new heights by integrating the latest functionalities and operations for an exceptional user experience.
             </p>
             <Link href="#getInTouch">
             <button className="second-btn mt-2">
-              Let’s Start Your Project
+              Join Our Journey
             </button>
             </Link>
           </div>
@@ -79,12 +75,9 @@ const page = () => {
         className="IOSDevelopmentServices"
       >
         <div className="container">
-          <h2 className="text-center">IOS Development Services</h2>
+          <h2 className="text-center">iOS App Development Services</h2>
           <p className="text-center">
-            The leading iOS application development company Cynergy Studios
-            provides the best layout of
-            <br /> applications with a standardized and well-developed approach
-            for user-friendly apps.
+            As a premier iOS application development company, Cynergy Studios delivers top-notch application layouts through a standardized and well-structured approach, ensuring user-friendly experiences.
           </p>
           <div className="row mt-5">
             <div className="col-md-6 pe-5 second-section">
@@ -99,7 +92,7 @@ const page = () => {
                       aria-expanded="true"
                       aria-controls="collapseOne"
                     >
-                      Custom IOS App Development
+                      Custom iOS App Development
                     </button>
                   </h2>
                   <div
@@ -108,13 +101,8 @@ const page = () => {
                     data-bs-parent="#accordionExample"
                   >
                     <div className="accordion-body">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen bookIt has survived not only five centuries,
-                      but also the leap into electronic typesetting, remaining
-                      essentially unchanged. It was popularised in the 1960s
+                      As Apple's market presence continues to grow rapidly, iOS apps remain a powerful choice, boasting a significant base of paying consumers despite Android's dominance. At Cynergy Studios, our expert team delivers premium iOS solutions through custom app development services, driving industry advancement, structural development, and overall growth.
+
                     </div>
                   </div>
                 </div>
@@ -128,7 +116,7 @@ const page = () => {
                       aria-expanded="false"
                       aria-controls="collapseTwo"
                     >
-                      IPhone App Designing
+                      iPhone App Designing
                     </button>
                   </h2>
                   <div
@@ -137,13 +125,7 @@ const page = () => {
                     data-bs-parent="#accordionExample"
                   >
                     <div className="accordion-body">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen bookIt has survived not only five centuries,
-                      but also the leap into electronic typesetting, remaining
-                      essentially unchanged. It was popularised in the 1960s
+                      Utilizing advanced, collaborative tools, our iOS app developers create exceptional UI/UX designs for both websites and mobile applications. With a focus on crafting visually appealing user interfaces, we build prototypes, animations, and wireframes that elevate the quality of iOS apps. Our talented team is dedicated to developing seamless user experiences tailored to any device.
                     </div>
                   </div>
                 </div>
@@ -166,13 +148,8 @@ const page = () => {
                     data-bs-parent="#accordionExample"
                   >
                     <div className="accordion-body">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen bookIt has survived not only five centuries,
-                      but also the leap into electronic typesetting, remaining
-                      essentially unchanged. It was popularised in the 1960s
+                    Looking to enhance the operational capabilities of your iOS apps? Cynergy Studios specializes in integrating your app ideas with various third-party services, ensuring secure data exchange through monitored API integration. We can enhance user engagement by adding features such as payment gateways, chatbots, social media connections, and biometric authentication to your iPhone app development.
+
                     </div>
                   </div>
                 </div>
@@ -195,13 +172,8 @@ const page = () => {
                     data-bs-parent="#accordionExample"
                   >
                     <div className="accordion-body">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen bookIt has survived not only five centuries,
-                      but also the leap into electronic typesetting, remaining
-                      essentially unchanged. It was popularised in the 1960s
+                    Migrating and upgrading your app involves transferring data from one operating system to another while maintaining its functionality and performance. At Cynergy Studios, we intuitively transition your app's framework to uphold its quality and ensure smooth operations. We leverage the latest tools and technologies to keep your app functional and compatible, all while minimizing iOS app development costs.
+
                     </div>
                   </div>
                 </div>
