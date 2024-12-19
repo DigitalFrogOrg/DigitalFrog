@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState,useRef } from "react";
 import { submitForm } from "@/api/formServices";
 
 function BudgetSection() {
@@ -10,11 +10,25 @@ function BudgetSection() {
     // budget: 100000,
     timeline: "",
   });
+  const fileInputRef = useRef(null);
+    const [loading,setLoading] = useState(false)
+  const [selectedFile, setSelectedFile] = useState(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
+
+  const handleFileButtonClick = () => {
+    if (fileInputRef.current) {
+        fileInputRef.current.click(); 
+    }
+};
+
+const handleFileChange = (e) => {
+  const file = e.target.files[0];
+  setSelectedFile(file); 
+};
 
   const handleBudgetChange = (e) => {
     setFormData({ ...formData, budget: e.target.value });
@@ -28,20 +42,34 @@ function BudgetSection() {
         return;
     }
   }
-
+  setLoading(true)
     try {
-      const response = await submitForm(formData)
+      const payload = new FormData();
+      payload.append("fullName", formData.fullName);
+      payload.append("email", formData.email);
+      payload.append("projectType", formData.projectType);
+      payload.append("timeline", formData.timeline);
+      if (selectedFile) {
+        payload.append("file", selectedFile);
+      }
+
+      const response = await submitForm(payload)
       alert(response.data.message)
     } catch (error) {
       alert("Failed to submit form.")
     }
-
+    setLoading(false)
+    setSelectedFile(null); 
     setFormData({
       fullName: "",
       email: "",
       projectType: "",
       timeline: "",
     });
+   
+    if (fileInputRef.current) {
+      fileInputRef.current.value = ""; 
+    }
   };
 
   return (
@@ -179,16 +207,27 @@ function BudgetSection() {
                     <option value="2_months">2 Months</option>
                     <option value="3_months">3 Months</option>
                   </select>
+                  <input
+                    type="file"
+                    ref={fileInputRef}
+                    style={{ display: "none" }}
+                    onChange={handleFileChange}
+                />
                 </div>
 
-                <button type="submit" className="btn mt-4">
+                <button type="submit" disabled={loading} className="btn mt-4">
                   Start Your Project
                 </button>
-                <button type="button" className="btn m-4 file-btn">
+                <button type="button" onClick={handleFileButtonClick} className="btn m-4 file-btn">
                   <img
                     src="./images/file-upload.png"
                   />
+                {selectedFile && (<span className="m-2">
+                  {selectedFile.name}
+                </span>)}
                 </button>
+              
+                
               </form>
             </div>
           </div>

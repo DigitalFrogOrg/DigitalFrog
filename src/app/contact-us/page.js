@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState,useRef } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
@@ -14,6 +14,9 @@ const page = () => {
     email: "",
     budget: 0,
   });
+  const fileInputRef = useRef(null);
+  const [loading,setLoading] = useState(false)
+  const [selectedFile, setSelectedFile] = useState(null);
   const handleBudgetChange = (e) => {
     setFormData({ ...formData, budget: e.target.value });
   };
@@ -23,20 +26,40 @@ const page = () => {
     setFormData({ ...formData, [name]: value });
   };
 
+  const handleFileChange = (e) => {
+    setSelectedFile(e.target.files[0]);
+  };
+
+
    const handleSubmit = async (e) => {
       e.preventDefault();
+      
       for (const [key, value] of Object.entries(formData)) {
         if (!value.trim()) { 
           alert(`Please fill in the ${key} field.`);
           return;
       }
     }
+    setLoading(true)
       try {
-        const response = await submitForm(formData)
+        const payload = new FormData();
+        payload.append("fullName", formData.fullName);
+        payload.append("email", formData.email);
+        payload.append("phoneNumber", formData.phoneNumber);
+        payload.append("budget", formData.budget);
+        if (selectedFile) {
+          payload.append("file", selectedFile);
+        }
+
+
+        const response = await submitForm(payload)
+
         alert(response.data.message)
       } catch (error) {
         alert("Failed to submit form.")
       }
+
+      setLoading(false)
   
       setFormData({
         fullName: "",
@@ -44,6 +67,11 @@ const page = () => {
         phoneNumber:"",
         budget: 0,
       });
+      setSelectedFile(null); 
+
+      if (fileInputRef.current) {
+          fileInputRef.current.value = ""; 
+      }
     };
 
   return (
@@ -132,9 +160,11 @@ const page = () => {
                 </div>
               </div>
               <div className="mt-3">
-                <input className="form-control" type="file" id="formFile" />
+                <input className="form-control"  ref={fileInputRef} type="file" name="file" onChange={handleFileChange} id="formFile" />
+              </div> 
+              <div className='mt-2 d-flex align-items-center justify-content-end'>
+                    <button type='submit' disabled={loading} className='second-btn'>Send Message</button>
               </div>
-              <button type="submit">Contact Us</button>
             </form>
           </div>
           <div className="col-md-1"></div>

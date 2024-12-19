@@ -1,7 +1,6 @@
-import apiClient from "./apiService";
+import fileApiClient from "./fileInterceptor"
 
 export const submitForm = async (formData)=>{
-    console.log("form data",formData)
-    const res = await apiClient.post('/form/submit',formData)
+    const res = await fileApiClient.post('/form/submit',formData)
     return res
 }

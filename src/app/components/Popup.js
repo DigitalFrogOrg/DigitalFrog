@@ -9,6 +9,7 @@ function Popup({ togglePopup }) {
         description: "",  
         budget: "",
     })
+    const [loading,setLoading] = useState(false)
     const budgets = ['20-50K','50-100K','100-500K','500-1,000K','1,000K']
 
     const handleChange = (e) => {
@@ -25,13 +26,20 @@ function Popup({ togglePopup }) {
                 return;
             }
         }
-    
+        setLoading(true)
         try {
-            const response = await submitForm(formData)
+            const payload = new FormData();
+            payload.append("fullName", formData.fullName);
+            payload.append("email", formData.email);
+            payload.append("phoneNumber", formData.phoneNumber);
+            payload.append("budget", formData.budget);
+            payload.append("description", formData.description);
+            const response = await submitForm(payload)
             alert(response.data.message)
         } catch (error) {
             alert("Failed to submit form.")
         }
+        setLoading(false)
         setFormData({
             fullName: "",
             email: "",
@@ -68,7 +76,7 @@ function Popup({ togglePopup }) {
                                 </div>
                             <div className='mt-4 d-flex align-items-center justify-content-end gap-4'>
                                 <button onClick={togglePopup} type='button' className='cancel-btn'>Cancel</button>
-                                <button type='submit' className='second-btn'>Send Message</button>
+                                <button type='submit' disabled={loading} className='second-btn'>Send Message</button>
                             </div>
                             </form>
                         </div>
