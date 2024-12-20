@@ -89,7 +89,7 @@ function footer() {
                 </ul>
               </div>
             </div>
-            <div className="col-sm-3">
+            <div className="col-sm-3 footerSection">
               <div className="footer-link">
                 <h5>What we do</h5>
                 <ul>

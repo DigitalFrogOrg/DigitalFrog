@@ -2448,7 +2448,7 @@ section.recent_news {
   overflow: hidden;
   white-space: nowrap;
   width: 100%;
-  padding: 20px 0;
+  padding: 20px 0px;
   position: relative;
 }
 .marquee-content {
@@ -2760,6 +2760,7 @@ section.recent_news {
   padding: 100px 70px 20px 70px;
   margin: 0px 0px 50px 0px;
   border-top: 1px solid #d4d4d4;
+  background-color: #f8f8f8;
 }
 .about-banner h1 {
   font-size: 60px !important;
@@ -3465,6 +3466,7 @@ section.recent_news {
 
 .name-slide {
   background-color: var(--orange);
+  overflow: hidden !important;
 }
 .about-bottom-ban {
   height: 100vh;
@@ -4154,7 +4156,7 @@ section.recent_news {
   padding: 45px 40px;
   margin-top: 28px;
   border-radius: 20px;
-  height: 86%;
+  min-height: 86%;
 }
 .iosDesignBox:hover {
   background-image: url("/images/Group1707479838.png");
@@ -4264,7 +4266,7 @@ section.recent_news {
   flex-direction: column;
   cursor: pointer;
   transition: all 0.4s ease;
-  height: 90%;
+  min-height: 90%;
 }
 .IosChooseBox h4 {
   font-size: 24px;
@@ -4374,7 +4376,7 @@ section.recent_news {
   cursor: pointer;
   transition: all 0.4s ease;
   margin-top: 20px;
-  height: 365px;
+  min-height: 365px;
 }
 .DesignProcessBox h4 {
   font-size: 24px;
@@ -4557,7 +4559,7 @@ section.recent_news {
   cursor: pointer;
   transition: all 0.4s ease;
   margin-top: 26px;
-  height: 220px;
+  min-height: 220px;
 }
 .DevelopmentProcessBox h4 {
   font-size: 24px;
@@ -4832,4 +4834,111 @@ section.recent_news {
 .budget-btn-active{
   background-color: var(--orange) !important;
   color: var(--white) !important;
+}
+
+.divPadding{
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+}
+
+.paddingLeft3{
+  padding-left: 3rem !important;
+}
+.paddingRight3{
+  padding-right: 3rem !important;
+}
+
+.contactusContainer{
+  margin-top: 6rem;
+}
+
+@media only screen and (max-width: 430px) {
+  .divPadding{
+    padding-left: 0rem !important;
+    padding-right: 0rem  !important;
+  }
+  .bannerHeading{
+    font-size: 11vw !important;
+  }
+  .bannerContainer{
+    height: 250px !important;
+  }
+  
+ .appMobilePadding{
+  padding: 50px 20px !important;
+ }
+ .appMobilePaddingSmall{
+  padding: 50px 10px !important;
+ }
+ .mainHeadingMobile{
+  font-size: 7vw !important;
+ }
+ .subHeading{
+  font-size: 5vw !important;
+ }
+ .webAppDevContainer{
+  gap: 30px !important;
+ }
+
+ .case-study p{
+  width: 100% !important;
+ }
+
+ .mgBottom{
+  margin-bottom: 50px !important;
+ }
+
+ .TechAndToolSlider .TechBoxSlide img {
+  width: 165px;
+  height: 135px;
+  padding: 12px 30px;
+  margin-left: 30vw !important;
+}
+.MobileQaBoxes{
+  margin-top: 20px !important;
+}
+.scheduleBtn{
+  position: absolute;
+  bottom: 10px;
+}
+.mobile-cta{
+  margin: 0px 0px 0px 12px !important;
+}
+.accordion-item .number{
+  font-size: 20px;
+}
+.footerSection{
+  margin-top: 50px !important;
+}
+
+.mgTop25{
+  margin-top: 25px !important;
+}
+
+.marginTopMobile{
+  margin-top: 2rem !important;
+}
+
+.paddingLeft3{
+  padding-left: 1rem !important;
+}
+.paddingRight3{
+  padding-right: 1rem !important;
+}
+.accordion-button::after{
+  width: 30px !important;
+  height: 30px !important;
+}
+.faqs .accordion-button::after{
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.weCommitboxNavs .slick-next{
+ top: -3rem !important;
+ right: 3rem !important;
+}
+
+
+
 }

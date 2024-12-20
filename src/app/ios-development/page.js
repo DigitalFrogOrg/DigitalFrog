@@ -56,8 +56,8 @@ const page = () => {
               style={{ margin: "-50px" }}
             />
           </div>
-          <div className="col-md-6 d-flex align-items-start justify-content-center flex-column px-5">
-            <h2>iOS Development Company</h2>
+          <div className="col-md-6 d-flex align-items-start justify-content-center flex-column paddingLeft3 paddingRight3 footerSection">
+            <h2 className="mainHeadingMobile">iOS Development Company</h2>
             <p>
               Experience a seamless mobile app development process with Cynergy Studios, backed by years of expertise in iOS development. We utilize cutting-edge tools, programming languages, and innovative wireframes to thrive in the digital landscape. Elevate your iOS app development to new heights by integrating the latest functionalities and operations for an exceptional user experience.
             </p>
@@ -72,15 +72,15 @@ const page = () => {
 
       <div
         style={{ backgroundColor: "#FFFBF8" }}
-        className="IOSDevelopmentServices"
+        className="IOSDevelopmentServices appMobilePaddingSmall"
       >
         <div className="container">
-          <h2 className="text-center">iOS App Development Services</h2>
+          <h2 className="text-center mainHeadingMobile">iOS App Development Services</h2>
           <p className="text-center">
             As a premier iOS application development company, Cynergy Studios delivers top-notch application layouts through a standardized and well-structured approach, ensuring user-friendly experiences.
           </p>
           <div className="row mt-5">
-            <div className="col-md-6 pe-5 second-section">
+            <div className="col-md-6 paddingRight3 second-section">
               <div className="accordion mt-2 ahh2" id="accordionExample">
                 <div className="accordion-item">
                   <h2 className="accordion-header w-100">
@@ -92,7 +92,9 @@ const page = () => {
                       aria-expanded="true"
                       aria-controls="collapseOne"
                     >
-                      Custom iOS App Development
+                      <span className="subHeading">
+                        Custom iOS App Development
+                      </span>
                     </button>
                   </h2>
                   <div
@@ -116,7 +118,9 @@ const page = () => {
                       aria-expanded="false"
                       aria-controls="collapseTwo"
                     >
+                      <span className="subHeading">
                       iPhone App Designing
+                      </span>
                     </button>
                   </h2>
                   <div
@@ -139,7 +143,9 @@ const page = () => {
                       aria-expanded="false"
                       aria-controls="collapseThree"
                     >
-                      Integration Services
+                      <span className="subHeading">
+                        Integration Services
+                      </span>
                     </button>
                   </h2>
                   <div
@@ -163,7 +169,9 @@ const page = () => {
                       aria-expanded="false"
                       aria-controls="collapseFour"
                     >
-                      App Migration and Upgrades
+                      <span className="subHeading">
+                        App Migration and Upgrades
+                      </span>
                     </button>
                   </h2>
                   <div
@@ -179,7 +187,7 @@ const page = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-6 ps-5">
+            <div className="col-md-6 paddingLeft3">
               <img
                 src="./images/Group1707479746.png"
                 alt="Group1707479746"

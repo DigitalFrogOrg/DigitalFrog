@@ -45,11 +45,11 @@ const page = () => {
       <Header />
       <MainBanner MainBannerHeading="No Code/Low-Code<br /> Revolution" />
 
-      <div className="container LowCodeNoCode">
+      <div className="container LowCodeNoCode appMobilePadding">
         <div className="row">
           <div className="col-md-6 d-flex align-items-start justify-content-center flex-column">
-            <h2>Low-Code/No-Code Mastery: Platforms We Excel In</h2>
-            <h4>Our Expertise in Action Services</h4>
+            <h2 className="mainHeadingMobile">Low-Code/No-Code Mastery: Platforms We Excel In</h2>
+            <h4 className="subHeading">Our Expertise in Action Services</h4>
             <p>
               At cynergy LA, we bring low-code and no-code solutions to life
               with a comprehensive suite of services. From rapid prototyping for
@@ -61,7 +61,7 @@ const page = () => {
             <button className="second-btn">Start Your Project</button>
             </Link>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 footerSection">
             <img
               src="./images/Group37653456.png"
               alt="Group37653456"
@@ -71,9 +71,9 @@ const page = () => {
         </div>
       </div>
 
-      <div className="DesignProcess">
+      <div className="DesignProcess appMobilePaddingSmall">
         <div className="container">
-          <h2 className="text-center">
+          <h2 className="text-center mainHeadingMobile">
             Empower with Ease: No-
             <br />
             Code/Low-Code
@@ -159,15 +159,15 @@ const page = () => {
         </div>
       </div>
 
-      <div className="SuccessfullDeveloped">
+      <div className="SuccessfullDeveloped appMobilePaddingSmall">
         <div className="container">
           <div className="row">
             <div className="col-md-6">
-              <h2>
+              <h2 className="mainHeadingMobile">
                 Our Successfully <br /> Developed Projects
               </h2>
             </div>
-            <div className="col-md-6 d-flex align-items-center justify-content-end">
+            <div className="col-md-6 d-flex align-items-center justify-content-end footerSection">
             <Link href="#getInTouch">
               <button className="second-btn">Start Your Project</button>
             </Link>
@@ -194,7 +194,7 @@ const page = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 marginTopMobile">
             <div className="SuccessfullBox">
                 <img src="./images/756834.png" alt="756834" className="w-100" />
                 <h3>KC Elite Ecommerce Store</h3>
@@ -233,7 +233,7 @@ const page = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 marginTopMobile">
             <div className="SuccessfullBox">
                 <img src="./images/396874.png" alt="396874" className="w-100" />
                 <h3>Disfruta</h3>

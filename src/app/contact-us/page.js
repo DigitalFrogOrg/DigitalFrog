@@ -6,6 +6,7 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import HotspotSection from "../components/HotspotSection";
 import Link from "next/link";
 import { submitForm } from "@/api/formServices";
+import MainBanner from "../components/MainBanner";
 
 const page = () => {
   const [formData, setFormData] = useState({
@@ -77,7 +78,9 @@ const page = () => {
   return (
     <>
       <Header />
-      <div className="about-banner">
+      <MainBanner MainBannerHeading="Contact Us" />
+
+      {/* <div className="about-banner">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
@@ -86,9 +89,9 @@ const page = () => {
           </div>
           <hr />
         </div>
-      </div>
+      </div> */}
 
-      <div className="container contact-main">
+      <div className="container contact-main appMobilePadding contactusContainer">
         <div className="row">
           <h6>
             <Link href="/" style={{ color: "#000" }}>
@@ -168,7 +171,7 @@ const page = () => {
             </form>
           </div>
           <div className="col-md-1"></div>
-          <div className="col-md-4">
+          <div className="col-md-4 footerSection">
             <div className="contact-right">
               <h4>What's next?</h4>
               <div className="steps">

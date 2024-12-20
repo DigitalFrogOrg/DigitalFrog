@@ -77,18 +77,18 @@ const handleFileChange = (e) => {
       <div id="getInTouch" className="budget-sec">
         <div className="container">
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-6 divPadding">
               {/* <img
                 src="/images/SmartObject.png"
                 alt="SmartObject"
                 className="w-100 h-100"
               /> */}
-              <h2 style={{ fontFamily: "NobelUno-Bold !important" }}>
+              <h2 style={{ fontFamily: "NobelUno-Bold !important" }} className="mainHeadingMobile">
                 Exploring Our App
                 <br /> Development Services?
               </h2>
-              <h4>Share Your Project Details!</h4>
-              <h3 className="mt-3">
+              <h4 className="subHeading">Share Your Project Details!</h4>
+              <h3 className="mt-3 subHeading">
                 <img
                   src="/images/clock_icon.png"
                   alt="SmartObject"
@@ -125,10 +125,10 @@ const handleFileChange = (e) => {
                 </a>
               </h6>
             </div>
-            <div className="col-md-6 px-5 d-flex align-items-center">
+            <div className="col-md-6 divPadding d-flex align-items-center">
               <form onSubmit={handleSubmit} className="projectForm w-100">
                 <div className="row">
-                  <div className="col-md-6">
+                  <div className="col-md-6 mt-3">
                     <input
                       type="text"
                       className="form-control"
@@ -138,7 +138,7 @@ const handleFileChange = (e) => {
                       onChange={handleChange}
                     />
                   </div>
-                  <div className="col-md-6">
+                  <div className="col-md-6 mt-3">
                     <input
                       type="email"
                       className="form-control"

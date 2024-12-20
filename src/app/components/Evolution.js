@@ -3,6 +3,7 @@ import Link from "next/link";
 
 function Evolution() {
   return (
+    <>
     <section className="evolution-sec">
       <div className="container">
         <div className="evolution-head">
@@ -96,6 +97,7 @@ function Evolution() {
                     />
                     Prototype
                   </a>
+
                 </div>
               </div>
               <div className="col-sm-6"></div>
@@ -257,6 +259,7 @@ function Evolution() {
         </div>
       </div>
     </section>
+    </>
   );
 }
 

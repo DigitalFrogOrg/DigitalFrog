@@ -5,7 +5,7 @@ function RecentNews() {
     <section className='recent_news'>
         <div className='container'>
             <div className='recent_news_head'>
-                <h2>Recent News & Tech Insights</h2>
+                <h2 className='mainHeadingMobile'>Recent News & Tech Insights</h2>
             </div>
             <div className='row'>
                 <div className='col-sm-4'>
