@@ -45,7 +45,7 @@ const page = () => {
       <Header />
       <MainBanner MainBannerHeading="IOS App Design <br /> Services" />
 
-      <div className="why-choose-us">
+      <div className="why-choose-us appMobilePaddingSmall">
         <div className="container">
           <div className="row">
             <div className="col-md-6">
@@ -56,7 +56,7 @@ const page = () => {
               />
             </div>
             <div className="col-md-6 d-flex align-items-end justify-content-center flex-column text-end">
-              <h2 className="w-100">Why Choose Us</h2>
+              <h2 className="w-100 mainHeadingMobile mgTop25">Why Choose Us</h2>
               <p>
                 At Cynergy Studios, we excel in mobile app design, delivering
                 exceptional UI/UX solutions that cater to a diverse clientele.
@@ -79,9 +79,9 @@ const page = () => {
 
       <IOSAppDesignServices />
 
-      <div className="iosDesignProcess">
+      <div className="iosDesignProcess appMobilePaddingSmall">
         <div className="container">
-          <h2>Design Process</h2>
+          <h2 className="mainHeadingMobile">Design Process</h2>
           <p className="text-center">
             Since we have refined the UI/UX design process of iOS apps, our top
             mobile app designers adhere to strict guidelines
@@ -178,8 +178,8 @@ const page = () => {
         </div>
       </div>
 
-      <div className="container workingWithCynergy">
-        <h2>
+      <div className="container workingWithCynergy appMobilePadding">
+        <h2 className="mainHeadingMobile">
           Working With
           <br /> Cynergy Studios
         </h2>
@@ -211,7 +211,7 @@ const page = () => {
               </p>
             </div>
           </div>
-          <div className="col-md-3">
+          <div className="col-md-3 mgTop25">
             <div className="workingWithCynergyBox">
               <span></span>
               <img
@@ -230,7 +230,7 @@ const page = () => {
               </p>
             </div>
           </div>
-          <div className="col-md-3">
+          <div className="col-md-3 mgTop25">
             <div className="workingWithCynergyBox">
               <span></span>
               <img
@@ -247,7 +247,7 @@ const page = () => {
               </p>
             </div>
           </div>
-          <div className="col-md-3">
+          <div className="col-md-3 mgTop25">
             <div className="workingWithCynergyBox">
               <span></span>
               <img
@@ -270,11 +270,11 @@ const page = () => {
         </div>
       </div>
 
-      <div className="IosChoose">
+      <div className="IosChoose appMobilePaddingSmall">
         <div className="container">
           <div className="row">
             <div className="col-md-8">
-              <h2>Why Choose Us</h2>
+              <h2 className="mainHeadingMobile">Why Choose Us</h2>
               <p>
                 To streamline the entire process of development hire iOS
                 developers from Dignite Studios. Here, hiring an iOS developer
@@ -372,6 +372,7 @@ const page = () => {
       <div className="my-4">
         <AppCta CtaHeading="Into an Innovative Mobile App." />
       </div>
+
       <div className="my-4">
         <FaqsSection faqs={faqData} />
       </div>

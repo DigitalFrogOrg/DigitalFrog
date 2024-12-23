@@ -16,10 +16,10 @@ const IOSAppDesignServices = () => {
   };
 
   return (
-    <div className="container IOS-services">
+    <div className="container IOS-services appMobilePadding">
       <div className="row">
         <div className="col-md-8">
-          <h2>IOS App Design Services</h2>
+          <h2 className="mainHeadingMobile">IOS App Design Services</h2>
           <p>
             We create app designs that combine modern design aesthetics with
             user experience research to deliver outstanding app experiences for

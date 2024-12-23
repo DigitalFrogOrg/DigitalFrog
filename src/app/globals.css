@@ -4048,6 +4048,7 @@ section.recent_news {
 }
 
 .IOS-services {
+  position: relative;
   padding: 100px 0px;
 }
 .IOS-services h2 {
@@ -4064,7 +4065,8 @@ section.recent_news {
   background-color: var(--white);
   border-radius: 20px;
   margin: 16px;
-  height: 275px;
+  position: relative;
+  min-height: 275px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -4911,6 +4913,10 @@ section.recent_news {
   margin-top: 50px !important;
 }
 
+.IOS-services {
+  overflow-x: hidden !important;
+}
+
 .mgTop25{
   margin-top: 25px !important;
 }
@@ -4929,6 +4935,10 @@ section.recent_news {
   width: 30px !important;
   height: 30px !important;
 }
+
+.IOS-services .slick-list{
+  margin-right: -45rem !important;
+}
 .faqs .accordion-button::after{
   width: 30px !important;
   height: 30px !important;
@@ -4939,6 +4949,20 @@ section.recent_news {
  right: 3rem !important;
 }
 
+.IOS-services .slick-next:before,
+.IOS-services .slick-prev:before {
+  position: absolute; /* Position relative to the parent */
+  top: 7.5rem;
+}
+
+.IOS-services .slick-next:before {
+  left:-1rem;
+
+}
+
+.IOS-services .slick-prev:before {
+  right:2rem;
+}
 
 
 }
