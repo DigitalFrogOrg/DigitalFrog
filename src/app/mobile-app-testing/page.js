@@ -48,10 +48,10 @@ const page = () => {
       <Header />
       <MainBanner MainBannerHeading="Mobile App testing<br /> Services" />
 
-      <div className="container app-testing">
+      <div className="container app-testing appMobilePadding" >
         <div className="row">
           <div className="col-md-6 d-flex align-items-start justify-content-center flex-column">
-            <h2>Mobile App Testing Services</h2>
+            <h2 className="mainHeadingMobile">Mobile App Testing Services</h2>
             <p>
               The first-class mobile testing team of cynergy Studios fabricates
               automated testing of apps to hasten effective solutions instantly.
@@ -60,7 +60,7 @@ const page = () => {
               <button className="second-btn">Get In Touch</button>
             </Link>
           </div>
-          <div className="col-md-6 appTestRight">
+          <div className="col-md-6 appTestRight footerSection">
             <div className="row">
               <div className="col-md-6">
                 <div className="appTestBox">
@@ -94,7 +94,7 @@ const page = () => {
                   </p>
                 </div>
               </div>
-              <div className="col-md-6">
+              <div className="col-md-6 footerSection">
                 <div className="appTestBox">
                   <h4>
                     Software Data Testing
@@ -132,11 +132,11 @@ const page = () => {
         </div>
       </div>
 
-      <div className="topNotchSection">
+      <div className="topNotchSection appMobilePaddingSmall">
         <div className="container">
           <div className="row">
             <div className="col-md-6 d-flex align-items-start justify-content-center flex-column">
-              <h2>
+              <h2 className="mainHeadingMobile">
                 Top-Notch <span>Benefits</span>
               </h2>
               <p>
@@ -195,7 +195,7 @@ const page = () => {
               </p>
             </div>
             <div className="col-md-6">
-              <img src="./images/Group1707479828.png" alt="Group1707479828" />
+              <img className="imgWidth95" src="./images/Group1707479828.png" alt="Group1707479828" />
             </div>
           </div>
         </div>
@@ -203,11 +203,11 @@ const page = () => {
 
       <MobileAppTabs />
 
-      <div className="TestingProcess">
+      <div className="TestingProcess appMobilePaddingSmall">
         <div className="container">
           <div className="row">
             <div className="col-md-9">
-              <h2>Inevitable Testing Process</h2>
+              <h2 className="mainHeadingMobile">Inevitable Testing Process</h2>
               <p>
                 The top-class mobile app testing services of Cynergy Studios
                 streamline highly effective testing methodology to prevent
@@ -218,7 +218,7 @@ const page = () => {
                 solutions to their partners and customers.
               </p>
             </div>
-            <div className="col-md-3 d-flex align-items-center justify-content-end">
+            <div className="col-md-3 mgBottom25 d-flex align-items-center justify-content-end">
               <button className="second-btn">Get A Quote</button>
             </div>
           </div>
@@ -226,11 +226,11 @@ const page = () => {
         </div>
       </div>
 
-      <div className="StudiosWhy">
+      <div className="StudiosWhy appMobilePaddingSmall">
         <div className="container">
           <div className="row">
             <div className="col-md-7">
-              <h2>Why Cynergy Studios</h2>
+              <h2 className="mainHeadingMobile">Why Cynergy Studios</h2>
               <p>
                 The top-class mobile app testing services of Cynergy Studios
                 streamline highly effective testing methodology to prevent
@@ -243,7 +243,7 @@ const page = () => {
             </div>
           </div>
           <div className="row">
-            <div className="col-md-4">
+            <div className="col-md-4 mgTop25">
               <div className="up-to-mints-div">
                 <h4 className="text-center mt-2">
                   Innovative Mobile Performance Testing
@@ -257,7 +257,7 @@ const page = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 mgTop15">
               <div className="up-to-mints-div">
                 <h4 className="text-center mt-2">Quality Assessment</h4>
                 <p className="text-center">
@@ -271,7 +271,7 @@ const page = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 mgTop15">
               <div className="up-to-mints-div">
                 <h4 className="text-center mt-2">Proven Track Record</h4>
                 <p className="text-center">
@@ -293,6 +293,7 @@ const page = () => {
         <FaqsSection faqs={faqData} />
         <BudgetSection />
       </div>
+
       <Footer />
     </>
   );

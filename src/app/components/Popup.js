@@ -61,7 +61,7 @@ function Popup({ togglePopup }) {
                     <div className='col-md-3'></div>
                     <div className='col-md-6 h-100 d-flex align-items-center justify-content-center'>
                         <div className="popup-inner w-100">
-                            <h2>Ready to discuss your project with us?</h2>
+                            <h2 className='mainHeadingMobile'>Ready to discuss your project with us?</h2>
                             <form onSubmit={handleSubmit} className='popup-form'>
                                 <input name="fullName" value={formData.fullName} onChange={handleChange} placeholder='Full name*' />
                                 <input name="phoneNumber" value={formData.phoneNumber} onChange={handleChange} placeholder='Phone number *' />
@@ -75,8 +75,8 @@ function Popup({ togglePopup }) {
                                     ))}
                                 </div>
                             <div className='mt-4 d-flex align-items-center justify-content-end gap-4'>
-                                <button onClick={togglePopup} type='button' className='cancel-btn'>Cancel</button>
-                                <button type='submit' disabled={loading} className='second-btn'>Send Message</button>
+                                <button onClick={togglePopup} type='button' className='cancel-btn formBtn'>Cancel</button>
+                                <button type='submit' disabled={loading} className='second-btn formBtn'>Send Message</button>
                             </div>
                             </form>
                         </div>

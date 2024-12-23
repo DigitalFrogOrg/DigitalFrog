@@ -3124,7 +3124,7 @@ section.recent_news {
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.229);
   border-radius: 12px;
   cursor: pointer;
-  height: 180px;
+  min-height: 180px;
   display: flex;
   align-items: start;
   justify-content: center;
@@ -3695,6 +3695,7 @@ section.recent_news {
   border: 1px solid var(--orange);
   border-radius: 8px;
   font-size: 16px;
+  white-space: nowrap;
   padding: 10px 20px;
 }
 .cancel-btn {
@@ -4865,15 +4866,25 @@ section.recent_news {
   .bannerContainer{
     height: 250px !important;
   }
+
+  .popup-inner{
+    padding: 20px 20px !important;
+  }
   
  .appMobilePadding{
   padding: 50px 20px !important;
+ }
+ .imgWidth95{
+  width: 95% !important;
+ }
+ .main-popup{
+  padding: 2px;
  }
  .appMobilePaddingSmall{
   padding: 50px 10px !important;
  }
  .mainHeadingMobile{
-  font-size: 7vw !important;
+  font-size: 6.5vw !important;
  }
  .subHeading{
   font-size: 5vw !important;
@@ -4920,9 +4931,18 @@ section.recent_news {
 .mgTop25{
   margin-top: 25px !important;
 }
-
+.mgTop15{
+  margin-top: 15px !important;
+}
+.mgBottom25{
+  margin-bottom: 25px !important;
+}
 .marginTopMobile{
   margin-top: 2rem !important;
+}
+
+.about-banner h1{
+  font-size: 7vw !important;
 }
 
 .paddingLeft3{
@@ -4963,6 +4983,31 @@ section.recent_news {
 .IOS-services .slick-prev:before {
   right:2rem;
 }
+.appTestBox:hover{
+  background-size: cover;
+}
 
+.MobileAppTabs .tabs{
+  width: 95% !important;
+  overflow-x: auto !important;
+}
+.MobileAppTabs .tabs::-webkit-scrollbar{
+ display: none !important;
+}
+.budget-btns{
+  flex-wrap: wrap;
+  justify-content:flex-start;
+  gap: 15px;
+}
+.formBtn{
+  white-space: nowrap;
+  padding: 10px 20px !important;
+  font-size: 15px;
+}
+
+.popup-inner{
+  max-height: 90%;
+  overflow-y: auto;
+}
 
 }
