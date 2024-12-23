@@ -15,11 +15,11 @@ const WeCommitSlider = () => {
   };
 
   return (
-    <div className="container IOS-services weCommitboxNavs">
+    <div className="container IOS-services weCommitboxNavs appMobilePaddingSmall">
       <div className="row">
         <div className="col-md-2"></div>
         <div className="col-md-8 text-center">
-          <h2>We Commit To Deliver</h2>
+          <h2 className="mainHeadingMobile">We Commit To Deliver</h2>
           <p>
             Among premier mobile app development companies, we batten
             exceptional assistance on a wider scale to flourish Android and iOS

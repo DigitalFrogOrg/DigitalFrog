@@ -4657,7 +4657,7 @@ section.recent_news {
   border-radius: 16px;
   cursor: pointer;
   transition: all 0.4s ease;
-  height: 430px;
+  min-height: 430px;
 }
 .AISoftwareDevBox img {
   width: 126px;
@@ -4959,6 +4959,7 @@ section.recent_news {
 .IOS-services .slick-list{
   margin-right: -45rem !important;
 }
+
 .faqs .accordion-button::after{
   width: 30px !important;
   height: 30px !important;
@@ -4975,8 +4976,22 @@ section.recent_news {
   top: 7.5rem;
 }
 
+.weCommitboxNavs .slick-prev:before {
+  position: absolute; /* Position relative to the parent */
+  top: 6.8rem;
+}
+.weCommitboxNavs .slick-list{
+  margin-right: -65rem !important;
+}
+.weCommitboxNavs .slick-next:before{
+  position: absolute; /* Position relative to the parent */
+  top: -0.3rem;
+  left: 5px !important;
+}
+
+
 .IOS-services .slick-next:before {
-  left:-1rem;
+  left:-0.5rem;
 
 }
 
@@ -5008,6 +5023,9 @@ section.recent_news {
 .popup-inner{
   max-height: 90%;
   overflow-y: auto;
+}
+.case-study{
+  overflow-x: hidden !important;
 }
 
 }
