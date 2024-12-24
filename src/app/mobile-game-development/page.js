@@ -52,11 +52,11 @@ function page() {
   return (
     <>
       <Header />
-      <MainBanner MainBannerHeading="Android App Development Services" />
+      <MainBanner MainBannerHeading="Mobile Game Development Services" />
 
       {/* Second Section */}
 
-      <div className="second-last-section">
+      {/* <div className="second-last-section">
         <div className="container">
           <div className="row">
             <div className="col-md-6 d-flex align-items-center justify-content-center">
@@ -86,9 +86,9 @@ function page() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="second-section">
+      {/* <div className="second-section">
         <div className="container">
           <div className="row">
             <div className="col-md-6 pe-5 py-2">
@@ -220,11 +220,13 @@ function page() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Third Section */}
-      <CaseStudy />
-      <div
+      
+      {/* <CaseStudy /> */}
+      
+      {/* <div
         className="second-last-section"
         style={{ backgroundColor: "#FFFBF8", padding: "30px 0px 60px 0px" }}
       >
@@ -286,9 +288,9 @@ function page() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="second-last-section">
+      {/* <div className="second-last-section">
         <div className="container">
           <div className="row">
             <h1 className="top-ranked">
@@ -355,9 +357,9 @@ function page() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div
+      {/* <div
         className="second-last-section"
         style={{ backgroundColor: "#FFFBF8", padding: "30px 0px 60px 0px" }}
       >
@@ -469,9 +471,9 @@ function page() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div
+      {/* <div
         className="last-section"
         style={{ backgroundColor: "#fff", padding: "30px 0px 100px 0px" }}
       >
@@ -488,71 +490,12 @@ function page() {
               />
             </div>
           </div>
-          {/* <div className="own-process w-100">
-            <div className="process-bottom-1">
-              <img
-                src="./images/app-process/Gaaga-Process-Img-1.png"
-                alt="Gaaga-Process-Img-1"
-              />
-              <div className="process-bottom-div"></div>
-              <div class="dot"></div>
-              <h3>01</h3>
-              <p>
-                Ued vehicula mattis purus. Curabitur at pretium odio, sit amet
-                tincidunt erat. Pellentesque fringilla rutrum nisl, nec
-                vulputate libero mattis vel. Integer bibendum metus ac metus
-                varius, eget vestibulum arcu.
-              </p>
-            </div>
-            <div className="process-bottom-1 process-bottom-2">
-              <p>
-                Ued vehicula mattis purus. Curabitur at pretium odio, sit amet
-                tincidunt erat. Pellentesque fringilla rutrum nisl, nec
-                vulputate libero mattis vel. Integer bibendum metus ac metus
-                varius, eget vestibulum arcu.
-              </p>
-              <h3>02</h3>
-              <div class="dot"></div>
-              <div className="process-bottom-div"></div>
-              <img
-                src="./images/app-process/Gaaga-Process-Img-2.png"
-                alt="Gaaga-Process-Img-1"
-              />
-            </div>
-            <div className="process-bottom-1">
-              <img
-                src="./images/app-process/Gaaga-Process-Img-3.png"
-                alt="Gaaga-Process-Img-1"
-              />
-              <div className="process-bottom-div"></div>
-              <div class="dot"></div>
-              <h3>03</h3>
-              <p>
-                Ued vehicula mattis purus. Curabitur at pretium odio, sit amet
-                tincidunt erat. Pellentesque fringilla rutrum nisl, nec
-                vulputate libero mattis vel. Integer bibendum metus ac metus
-                varius, eget vestibulum arcu.
-              </p>
-            </div>
-            <div className="process-bottom-1">
-              <p>
-                Ued vehicula mattis purus. Curabitur at pretium odio, sit amet
-                tincidunt erat. Pellentesque fringilla rutrum nisl, nec
-                vulputate libero mattis vel. Integer bibendum metus ac metus
-                varius, eget vestibulum arcu.
-              </p>
-              <h3>04</h3>
-              <div class="dot"></div>
-              <div className="process-bottom-div"></div>
-              <img
-                src="./images/app-process/Gaaga-Process-Img-4.png"
-                alt="Gaaga-Process-Img-1"
-              />
-            </div>
-          </div> */}
+        
         </div>
-      </div>
-      <div className="container-fluid navs-app">
+      </div> */}
+
+
+      {/* <div className="container-fluid navs-app">
         <div className="row">
           <div className="col-md-1"></div>
           <div className="col-md-1 d-flex align-items-end">
@@ -606,8 +549,9 @@ function page() {
           </div>
           <div className="col-md-1"></div>
         </div>
-      </div>
-      <div className="case-study py-5 my-5">
+      </div> */}
+
+      {/* <div className="case-study py-5 my-5">
         <div className="row">
           <div className="col-md-12">
             <h2>up-to-the-minute</h2>
@@ -687,15 +631,15 @@ function page() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <AppCta CtaHeading="Into an Innovative Mobile App." />
+      {/* <AppCta CtaHeading="Into an Innovative Mobile App." /> */}
 
-      <div className="mt-5">
+      {/* <div className="mt-5">
         <FaqsSection faqs={faqData} />
         <BudgetSection />
-      </div>
-      <Footer />
+      </div> */}
+      {/* <Footer /> */}
     </>
   );
 }

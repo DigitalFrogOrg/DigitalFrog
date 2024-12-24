@@ -3215,7 +3215,7 @@ section.recent_news {
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.229);
   border-radius: 12px;
   cursor: pointer;
-  height: 180px;
+  min-height: 180px;
   width: 80%;
   display: flex;
   align-items: start;
@@ -3848,7 +3848,7 @@ section.recent_news {
   -webkit-box-shadow: 0px 0px 5px 5px rgb(110 110 110 / 7%);
   -moz-box-shadow: 0px 0px 5px 5px rgb(110 110 110 / 7%);
   box-shadow: 0px 0px 5px 5px rgb(110 110 110 / 7%);
-  height: 200px;
+  min-height: 200px;
   border-radius: 16px;
   display: flex;
   align-items: center;
@@ -4855,6 +4855,10 @@ section.recent_news {
   margin-top: 6rem;
 }
 
+.cardTopMargin{
+  margin-top: 3rem !important;
+}
+
 @media only screen and (max-width: 430px) {
   .divPadding{
     padding-left: 0rem !important;
@@ -4885,6 +4889,9 @@ section.recent_news {
  }
  .mainHeadingMobile{
   font-size: 6.5vw !important;
+ }
+ .app-quality{
+  width: 100%;
  }
  .subHeading{
   font-size: 5vw !important;
@@ -4933,6 +4940,9 @@ section.recent_news {
 }
 .mgTop15{
   margin-top: 15px !important;
+}
+.mgTopNegative15{
+  margin-top: -15px !important;
 }
 .mgBottom25{
   margin-bottom: 25px !important;
@@ -5027,5 +5037,20 @@ section.recent_news {
 .case-study{
   overflow-x: hidden !important;
 }
+.achievements-page .tags{
+  flex-wrap: wrap !important;
+  gap: 10px;
+  margin-top: -2rem;
+}
+.case-studies-slider {
+  overflow-x: hidden !important;
+}
+.case-studies-slider .slick-list {
+  margin-right: -45rem !important;
+}
+.cardTopMargin{
+  margin-top: 1rem !important;
+}
+
 
 }

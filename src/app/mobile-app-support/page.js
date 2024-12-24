@@ -49,12 +49,12 @@ const page = () => {
       <Header />
       <MainBanner MainBannerHeading="Mobile App Support <br /> & Maintenance <br /> Services" />
 
-      <div className="second-last-section">
+      <div className="second-last-section appMobilePaddingSmall">
         <div className="container">
           <div className="row">
-            <div className="col-md-7 d-flex align-items-center justify-content-center pe-5">
+            <div className="col-md-7 d-flex align-items-center justify-content-center paddingRight3">
               <div className="text-section">
-                <h1 className="title-page">Mobile App Maintenance Company</h1>
+                <h1 className="title-page mainHeadingMobile">Mobile App Maintenance Company</h1>
                 <p className="title-page-p">
                   With years of proven track record in maintenance and support,
                   Dignite Studios furnishes comprehensive mobile app maintenance
@@ -75,7 +75,7 @@ const page = () => {
                 </Link>
               </div>
             </div>
-            <div className="col-md-5 pe-5 py-2">
+            <div className="col-md-5 mgTop25 paddingRight3 py-2">
               <img
                 src="./images/image-consulting.png"
                 alt="image-consulting"
@@ -86,10 +86,10 @@ const page = () => {
         </div>
       </div>
 
-      <div className="container benefits-of-working py-5">
+      <div className="container benefits-of-working py-5 appMobilePadding">
         <div className="row">
           <div className="col-md-12 py-5 d-flex align-items-center justify-content-center flex-column text-center">
-            <h2 className="mb-4">Support and Maintenance Services</h2>
+            <h2 className="mb-4 mainHeadingMobile">Support and Maintenance Services</h2>
             <p className="mb-4">
               The scope of our services prevails in new app features, app
               compliance, and maintenance KPIs throughout the process to boost
@@ -109,9 +109,9 @@ const page = () => {
         </div>
       </div>
 
-      <div className="maintenance-process">
+      <div className="maintenance-process appMobilePaddingSmall">
         <div className="container">
-          <h2 className="text-center">Maintenance Process</h2>
+          <h2 className="text-center mainHeadingMobile">Maintenance Process</h2>
           <p className="text-center">
             The top management of Dignite Studios characterizes each support and
             maintenance step with beneficial
@@ -130,9 +130,9 @@ const page = () => {
 
       <MobileAppTabs />
 
-      <div className="app-quality-main">
+      <div className="app-quality-main appMobilePaddingSmall">
         <div className="container">
-          <h2 className="text-center">
+          <h2 className="text-center mainHeadingMobile">
             Cynergy <span>Studios</span>
           </h2>
           <p className="text-center">
@@ -187,7 +187,7 @@ const page = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-5">
+            <div className="col-md-5 marginTopMobile">
               <img
                 src="./images/landing_prospecting.png"
                 alt="landing_prospecting"
@@ -198,11 +198,11 @@ const page = () => {
         </div>
       </div>
 
-      <div className="why-choose-sec">
+      <div className="why-choose-sec appMobilePaddingSmall">
         <div className="container">
           <div className="row">
             <div className="col-md-7">
-              <h2>Why Choose Us</h2>
+              <h2 className="mainHeadingMobile">Why Choose Us</h2>
               <p>
                 In the modern times of technological enhancement software mobile
                 app support and maintenance is as necessary as a penny, to keep
@@ -222,7 +222,7 @@ const page = () => {
           <div className="row mt-5">
             <div className="col-md-4">
               <div className="choose-sec-1">
-                <h4>Expert Developers</h4>
+                <h4 className="mainHeadingMobile">Expert Developers</h4>
                 <p>
                   The top-notch specialists of Cynergy Studios dive deep into
                   project dimensions and the latest trends to provide reliable
@@ -232,9 +232,9 @@ const page = () => {
                 <div className="choose-rectangle"></div>
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 mgTop25">
               <div className="choose-sec-1">
-                <h4>Track Record Of Bugs</h4>
+                <h4 className="mainHeadingMobile">Track Record Of Bugs</h4>
                 <p>
                   We formulate effective measures to identify errors and bugs
                   promptly. Our strategic approach secures data integration and
@@ -243,9 +243,9 @@ const page = () => {
                 <div className="choose-rectangle"></div>
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 mgTop25">
               <div className="choose-sec-1">
-                <h4>Exeptional Performance</h4>
+                <h4 className="mainHeadingMobile">Exeptional Performance</h4>
                 <p>
                   We prioritize user experience and optimization of performance
                   closely. Dignite’s reliable services will develop your mobile
@@ -256,10 +256,10 @@ const page = () => {
               </div>
             </div>
           </div>
-          <div className="row mt-5">
-            <div className="col-md-4">
+          <div className="row cardTopMargin">
+            <div className="col-md-4 mgTop15">
               <div className="choose-sec-1">
-                <h4>Proative & Preventive</h4>
+                <h4 className="mainHeadingMobile">Proative & Preventive</h4>
                 <p>
                   The secret recipe of our services anticipates your potential
                   problems and ensures highly innovative mobile app design with
@@ -269,9 +269,9 @@ const page = () => {
                 <div className="choose-rectangle"></div>
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 mgTop25">
               <div className="choose-sec-1">
-                <h4>Flexibility & Scalability</h4>
+                <h4 className="mainHeadingMobile">Flexibility & Scalability</h4>
                 <p>
                   Our services endow flexible and unique services to meet the
                   needs of the valuable client or partner. We stand out in
@@ -281,9 +281,9 @@ const page = () => {
                 <div className="choose-rectangle"></div>
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 mgTop25">
               <div className="choose-sec-1">
-                <h4>Transparency Processes</h4>
+                <h4 className="mainHeadingMobile">Transparency Processes</h4>
                 <p>
                   You will experience a transparent process throughout the
                   project maintenance at Dignite Studios. With regular

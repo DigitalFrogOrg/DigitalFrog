@@ -44,7 +44,7 @@ const CaseStudySlider = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6">
-                            <h2>Case Studies</h2>
+                            <h2 className="mainHeadingMobile">Case Studies</h2>
                         </div>
                         <div className="col-md-6 d-flex align-items-center justify-content-end gap-2">
                             <button onClick={() => slider?.current?.slickPrev()}>
