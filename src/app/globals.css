@@ -3388,7 +3388,7 @@ section.recent_news {
   border-radius: 12px;
   padding: 24px 28px;
   margin-top: 26px;
-  height: 96%;
+  min-height: 96%;
 }
 .up-to-mints-div h4 {
   font-weight: bold;

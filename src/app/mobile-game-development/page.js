@@ -559,10 +559,10 @@ function page() {
         </div>
       </div>
 
-      {/* <div className="case-study py-5 my-5">
+      <div className="case-study py-5 my-5 appMobilePaddingSmall">
         <div className="row">
           <div className="col-md-12">
-            <h2>up-to-the-minute</h2>
+            <h2 className="mainHeadingMobile">up-to-the-minute</h2>
             <p>
               Our software development life cycle empowers companies to
               functionalize their brand identity by building an effective and
@@ -590,8 +590,8 @@ function page() {
                 </p>
               </div>
             </div>
-            <div className="col-md-6">
-              <div className="up-to-mints-div">
+            <div className="col-md-6 mgTop25">
+              <div className="up-to-mints-div ">
                 <h4>Modern Technology</h4>
                 <p>
                   Consider your users while structuring the layout of the app.
@@ -622,7 +622,7 @@ function page() {
                 </p>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 mgTop25">
               <div className="up-to-mints-div">
                 <h4>Cross-Platform App</h4>
                 <p>
@@ -639,15 +639,15 @@ function page() {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
-      {/* <AppCta CtaHeading="Into an Innovative Mobile App." /> */}
+      <AppCta CtaHeading="Into an Innovative Mobile App." />
 
-      {/* <div className="mt-5">
+      <div className="mt-5">
         <FaqsSection faqs={faqData} />
         <BudgetSection />
-      </div> */}
-      {/* <Footer /> */}
+      </div>
+      <Footer />
     </>
   );
 }
