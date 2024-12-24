@@ -5086,4 +5086,34 @@ section.recent_news {
 .line-area2{
   width: 25% !important;
 }
+.step-1::before{
+  width: 100px;
+  height: 45px;
+}
+.step-2::before{
+  width: 160px;
+  height: 45px;
+}
+.step-3::before{
+  width: 140px;
+  height: 45px;
+}
+.steps::before {
+  left: 22px;
+}
+}
+
+@media only screen and (max-width: 400px) {
+  .step-1::before{
+    width: 120px;
+  }
+  .step-2::before{
+    width: 200px;
+  }
+  .step-3::before{
+    width: 180px;
+  }
+  .steps::before {
+    left: 22px;
+  }
 }
