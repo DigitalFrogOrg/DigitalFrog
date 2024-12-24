@@ -11,14 +11,21 @@ function BudgetSection() {
     timeline: "",
   });
   const fileInputRef = useRef(null);
+  const [nda, setNda] = useState(false);
     const [loading,setLoading] = useState(false)
   const [selectedFile, setSelectedFile] = useState(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
   };
 
+  const handleNdaChange = (e) => {
+    setNda(e.target.checked);
+  };
   const handleFileButtonClick = () => {
     if (fileInputRef.current) {
         fileInputRef.current.click(); 
@@ -49,6 +56,7 @@ const handleFileChange = (e) => {
       payload.append("email", formData.email);
       payload.append("projectType", formData.projectType);
       payload.append("timeline", formData.timeline);
+      payload.append("nda", nda ? 'Yes' : 'No');
       if (selectedFile) {
         payload.append("file", selectedFile);
       }
@@ -66,7 +74,7 @@ const handleFileChange = (e) => {
       projectType: "",
       timeline: "",
     });
-   
+    setNda(false)
     if (fileInputRef.current) {
       fileInputRef.current.value = ""; 
     }
@@ -215,17 +223,37 @@ const handleFileChange = (e) => {
                 />
                 </div>
 
-                <button type="submit" disabled={loading} className="btn mt-4">
+                <div className="form-group d-flex gap-2 ms-2 align-items-center mt-4 mb-3">
+                <div class="custom-checkbox">
+                  <input type="checkbox" name='nda' checked={nda} onChange={handleNdaChange}  id="checkbox" />
+                  <label for="checkbox"></label>
+                </div>
+                <div style={{fontSize: "16px",color:'#2C3E52',fontWeight:'400',marginLeft:'5px'}}>
+                  Protect Under NDA
+                </div>
+                </div>
+
+                <div className="d-flex align-items-center gap-3 flex-wrap">
+                <button type="submit" disabled={loading} className="btn">
                   Start Your Project
                 </button>
-                <button type="button" onClick={handleFileButtonClick} className="btn m-4 file-btn">
+                <button type="button" onClick={handleFileButtonClick} className="file-btn">
+                <img
+                    src="./images/file-upload.png"
+                    />
+                </button>
+                {selectedFile && (<span>
+                  {selectedFile.name}
+                </span>)}
+                {/* <button type="button" onClick={handleFileButtonClick} className="btn file-btn">
                   <img
                     src="./images/file-upload.png"
-                  />
+                    />
                 {selectedFile && (<span className="m-2">
                   {selectedFile.name}
                 </span>)}
-                </button>
+                </button> */}
+                </div>  
               
                 
               </form>

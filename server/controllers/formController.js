@@ -3,7 +3,7 @@ const {validateEmail} = require('../utils/validators')
 
 const submitForm = async(req,res) => {
     try{
-        const {fullName,email,projectType,timeline,phoneNumber,description,budget} = req.body
+        const {fullName,email,projectType,timeline,phoneNumber,description,budget,nda} = req.body
         
         if (!email || !validateEmail(email)) {
             return res.status(400).json({ error: "Invalid email format. Please provide a valid email address." });
@@ -32,11 +32,11 @@ const submitForm = async(req,res) => {
             phoneNumber: ${phoneNumber || 'N/A'}\n
             description: ${description || 'N/A'}\n
             budget: ${budget ? `$${budget}` : 'N/A'}\n
-            File: ${uploadedFile ? uploadedFile.savedName : "N/A"}\n`
+            File: ${uploadedFile ? uploadedFile.savedName : "N/A"}\n
+            Nda: ${nda ? nda : "N/A"}\n`
         }
 
         //send email
-        // console.log('mail send',mailOptions)
         await transporter.sendMail(mailOptions)
         res.status(200).json({message:'Form submitted successfully.'})
     }catch(error){

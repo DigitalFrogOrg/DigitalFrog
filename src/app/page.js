@@ -18,6 +18,7 @@ import MarqueeSlider from "./components/MarqueeSlider";
 import GrowthSec from "./components/GrowthSec";
 import CustomizeHeading from "./components/CustomizeHeading";
 import VideoPlayer from "./components/VideoPlayer/VideoPlayer";
+import Link from "next/link";
 
 export default function Home() {
   const faqData = [
@@ -99,7 +100,11 @@ export default function Home() {
         </p>
         <MobileExperiences />
         <div className="row">
-          <button>Show More</button>
+          <div className="d-flex justify-content-center">
+          <Link href="/achievements">
+            <button>Show More</button>
+          </Link>
+          </div>
         </div>
       </div>
       <TestimonialTabs />

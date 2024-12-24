@@ -120,6 +120,7 @@ function header() {
         <div className="container-fluid" id="header">
           <Link href="/">
             <img
+            className="logo"
               src={
                 theme === "light"
                   ? "./images/black-Logo.png"
@@ -242,13 +243,15 @@ function header() {
                 </ul>
               </div>
             </ul>
-            <div className={`${isOpen ? "d-none" : ""}`}>
+            {/* <div className={`${isOpen ? "d-none" : ""}`}> */}
               <div className="buttons">
-                <button onClick={togglePopup} className="second-btn">
+                <Link href="contact-us">
+                <button className="second-btn">
                   Contact Us
                 </button>
+                </Link>
               </div>
-            </div>
+            {/* </div> */}
           </div>
         </div>
       </header>

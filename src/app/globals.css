@@ -39,9 +39,17 @@ button.light-mode {
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-button.btn.m-4.file-btn {
-  padding: 10px 14px 14px 14px !important;
-  margin: 20px 0 0 20px !important;
+.file-btn {
+  width: 50px;
+  display: flex;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: var(--orange);
+  border-radius: 100%;
+  /* padding: 10px 10px 10px 10px !important; */
+  /* margin: 0px 0 0 0px !important; */
 }
 .file-btn img {
   height: 20px;
@@ -121,6 +129,9 @@ header {
   /* -moz-box-shadow: 0px 6px 28px -22px rgba(0, 0, 0, 0.75); */
   /* box-shadow: 0px 6px 28px -22px rgba(0, 0, 0, 0.75); */
 }
+.logo{
+  width: 150px !important;
+}
 /* mega menu */
 .mega_menu {
   background-color: #373a40;
@@ -141,6 +152,13 @@ header {
   opacity: 1;
   transition: padding-top 0.3s ease-in-out, max-height 0.5s ease-in-out,
     opacity 0.5s ease-in-out;
+}
+
+.contactusBtnArea{
+  margin-top: 3rem !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .mid-mega-option {
@@ -577,6 +595,36 @@ ul.footer-info li a {
   margin-top: -40px;
   margin-left: -11px;
   margin-right: -11px;
+}
+.custom-checkbox {
+  display: inline-block;
+  position: relative;
+}
+
+.custom-checkbox input[type="checkbox"] {
+  display: none; /* Hide the default checkbox */
+}
+
+.custom-checkbox label {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #DC5F00;
+  border-radius: 2px;
+  position: relative;
+  cursor: pointer;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + label::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  width: 5px;
+  height: 8px;
+  border: solid #DC5F00;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 }
 .label p {
   color: #000;

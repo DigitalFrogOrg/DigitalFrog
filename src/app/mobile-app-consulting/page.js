@@ -74,7 +74,7 @@ const page = () => {
                 </Link>
                 </div>
               </div>
-              <div className="col-md-5 pe-5 py-2">
+              <div className="col-md-5 paddingRight3 py-2">
                 <img
                   src="./images/Group1707479835.png"
                   alt="image-consulting"

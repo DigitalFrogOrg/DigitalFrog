@@ -178,7 +178,7 @@ const page = () => {
             <div className="col-md-6">
               <div className="SuccessfullBox">
                 <img src="./images/232343.png" alt="232343" className="w-100" />
-                <h3>App Store Preview</h3>
+                <h3 className="mainHeadingMobile">App Store Preview</h3>
                 <p>
                   We may share the information that we collect, both personal
                   and non-personal, with third parties such as advertisers,
@@ -197,7 +197,7 @@ const page = () => {
             <div className="col-md-6 marginTopMobile">
             <div className="SuccessfullBox">
                 <img src="./images/756834.png" alt="756834" className="w-100" />
-                <h3>KC Elite Ecommerce Store</h3>
+                <h3 className="mainHeadingMobile">KC Elite Ecommerce Store</h3>
                 <p>
                   We may share the information that we collect, both personal
                   and non-personal, with third parties such as advertisers,
@@ -218,7 +218,7 @@ const page = () => {
             <div className="col-md-6">
               <div className="SuccessfullBox">
                 <img src="./images/748358.jpg" alt="748358" className="w-100" />
-                <h3>Cooper's Hawk</h3>
+                <h3 className="mainHeadingMobile">Cooper's Hawk</h3>
                 <p>
                   We may share the information that we collect, both personal
                   and non-personal, with third parties such as advertisers,
@@ -236,7 +236,7 @@ const page = () => {
             <div className="col-md-6 marginTopMobile">
             <div className="SuccessfullBox">
                 <img src="./images/396874.png" alt="396874" className="w-100" />
-                <h3>Disfruta</h3>
+                <h3 className="mainHeadingMobile">Disfruta</h3>
                 <p>
                   We may share the information that we collect, both personal
                   and non-personal, with third parties such as advertisers,
