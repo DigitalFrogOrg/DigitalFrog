@@ -3,6 +3,7 @@ import React, { useRef, useEffect, useState } from "react";
 
 const VideoPlayer = () => {
   const videoRef = useRef(null);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const [videoSize, setVideoSize] = useState({ width: "26vw", height: "36vh" });
   const [popupOpen, setPopupOpen] = useState(false);
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
@@ -69,8 +70,8 @@ const VideoPlayer = () => {
         autoPlay
         loop
         style={{
-          width: videoSize.width,
-          height: videoSize.height,
+          width: screenWidth < 480 ? '100%' : videoSize.width,
+          height: screenWidth < 480 ? ''  : videoSize.height,
           objectFit: "cover",
           transition: "width 0.6s, height 0.6s",
         }}
