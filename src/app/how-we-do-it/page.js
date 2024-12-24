@@ -59,9 +59,9 @@ function page() {
             <Tabs>
               <TabList>
                 <Tab>Our Process</Tab>
-                <Tab>Agile</Tab>
+                {/* <Tab>Agile</Tab>
                 <Tab>Waterfall</Tab>
-                <Tab>Hybrid</Tab>
+                <Tab>Hybrid</Tab> */}
               </TabList>
 
               <div className="tab-pannell rounded">

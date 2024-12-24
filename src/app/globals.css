@@ -2882,7 +2882,8 @@ section.recent_news {
 }
 .tab-pannell {
   background-color: #fef4ed;
-  padding: 100px 150px;
+  padding: 50px 0 30px 0;
+  /* padding: 0 0 40px 0; */
 }
 
 .tab-pannell h2 {
@@ -2895,10 +2896,12 @@ section.recent_news {
   height: 600px;
 }
 .sticky-number {
-  height: 200px;
+  height: 260px;
+  position: -webkit-sticky;
   position: sticky;
-  top: 100px;
+  top: 90px;
   left: 0px;
+  z-index: 999;
 }
 .is-active {
   animation: fadeOutDown 0.8s ease forwards;
@@ -2913,16 +2916,19 @@ section.recent_news {
   }
 }
 .tab-pannell h3 {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bolder;
   color: var(--orange);
+  text-align: center;
+  margin: 20px 0 30px 0;
 }
 .tab-pannell h4 {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bolder;
 }
+
 .tab-pannell h5 {
-  font-size: 30px;
+  font-size: 22px;
   font-weight: bolder;
 }
 .tab-pannell h4 span {
@@ -4907,17 +4913,67 @@ section.recent_news {
   margin-top: 3rem !important;
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 480px) {
   .divPadding{
     padding-left: 0rem !important;
     padding-right: 0rem  !important;
   }
+  .sticky-number {
+    height: 260px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 90px;
+    left: 0px;
+    /* z-index: 999; */
+    display: none;
+}
+
+.tab-pannell h4 {
+  font-size: 26px;
+  font-weight: bold;
+  /* display: none; */
+}
+  .phase_b-fifth-row::after {
+    content: "";
+    border-right: 2px dashed #e84c3d80;
+    width: 0px;
+    left: 0;
+    right: 0;
+    height: 175px;
+    margin: 0 auto;
+    position: absolute;
+    z-index: -1;
+    top: 130px;
+    height: 0;
+}
+
+button.dive_buttons::before {
+  content: "";
+  position: absolute;
+  left: -188px;
+  height: 1px;
+  width: 60%;
+  top: 28px;
+  border-bottom: 2px dashed #e84c3d80;
+  width: 0;
+}
   .bannerHeading{
     font-size: 11vw !important;
   }
   .bannerContainer{
     height: 250px !important;
   }
+  .whole-btn2 {
+    background: transparent;
+    border: 1px solid var(--orange);
+    border-radius: 30px;
+    padding: 15px 10px;
+    font-size: 13px;
+    font-weight: 400;
+    transition: 0.5s all;
+    text-align: center;
+    color: var(--heading-color);
+}
 
   .popup-inner{
     padding: 20px 20px !important;
