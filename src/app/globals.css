@@ -3359,7 +3359,7 @@ section.recent_news {
   -webkit-box-shadow: 0px 5px 16px 0px #f66b0021;
   -moz-box-shadow: 0px 5px 16px 0px #f66b0021;
   box-shadow: 0px 5px 16px 0px #f66b0021;
-  height: 370px;
+  min-height: 370px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -4890,6 +4890,16 @@ section.recent_news {
  .mainHeadingMobile{
   font-size: 6.5vw !important;
  }
+ .navappImg img{
+  width: 30% !important;              
+  margin: 2rem 0 2rem 0 !important;
+ }
+ .navappImg{
+  justify-content: center;
+ }
+ .navs-app{
+  overflow-x: hidden !important;
+ }
  .app-quality{
   width: 100%;
  }
@@ -5047,6 +5057,9 @@ section.recent_news {
 }
 .case-studies-slider .slick-list {
   margin-right: -45rem !important;
+}
+.caseStudy .slick-list {
+  margin-right: -50rem !important;
 }
 .cardTopMargin{
   margin-top: 1rem !important;

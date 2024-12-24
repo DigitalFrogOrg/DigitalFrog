@@ -56,12 +56,12 @@ function page() {
 
       {/* Second Section */}
 
-      {/* <div className="second-last-section">
+      <div className="second-last-section appMobilePaddingSmall">
         <div className="container">
           <div className="row">
             <div className="col-md-6 d-flex align-items-center justify-content-center">
               <div className="text-section">
-                <h2 className="title-page">Android App Development Company</h2>
+                <h2 className="title-page mainHeadingMobile">Android App Development Company</h2>
                 <p className="title-page-p">
                   At Cynergy Studios, we have spent years delivering innovative
                   Android app development solutions on a global scale. Our team
@@ -77,7 +77,7 @@ function page() {
                 </Link>
               </div>
             </div>
-            <div className="col-md-6 pe-5 py-2">
+            <div className="col-md-6 py-2 mgTop25 paddingRight3">
               <img
                 src="./images/third-section.png"
                 alt="faqs-sec"
@@ -86,12 +86,12 @@ function page() {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
-      {/* <div className="second-section">
+      <div className="second-section appMobilePaddingSmall">
         <div className="container">
           <div className="row">
-            <div className="col-md-6 pe-5 py-2">
+            <div className="col-md-6 paddingRight3 py-2">
               <img
                 src="./images/faqs-sec.png"
                 alt="faqs-sec"
@@ -110,7 +110,9 @@ function page() {
                       aria-expanded="true"
                       aria-controls="collapseOne"
                     >
-                      Strategy
+                      <span className="mainHeadingMobile">
+                        Strategy
+                      </span>
                     </button>
                   </h2>
                   <div
@@ -139,7 +141,9 @@ function page() {
                       aria-expanded="false"
                       aria-controls="collapseTwo"
                     >
-                      UI Design
+                      <span className="mainHeadingMobile">
+                        UI Design
+                      </span>
                     </button>
                   </h2>
                   <div
@@ -168,7 +172,9 @@ function page() {
                       aria-expanded="false"
                       aria-controls="collapseThree"
                     >
-                      UX Design
+                      <span className="mainHeadingMobile">
+                        UX Design
+                      </span>
                     </button>
                   </h2>
                   <div
@@ -197,7 +203,9 @@ function page() {
                       aria-expanded="false"
                       aria-controls="collapseFour"
                     >
-                      Front-end development
+                      <span className="mainHeadingMobile">
+                        Front-end development
+                      </span>
                     </button>
                   </h2>
                   <div
@@ -220,21 +228,21 @@ function page() {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
       {/* Third Section */}
       
-      {/* <CaseStudy /> */}
+      <CaseStudy />
       
-      {/* <div
-        className="second-last-section"
+      <div
+        className="second-last-section appMobilePaddingSmall"
         style={{ backgroundColor: "#FFFBF8", padding: "30px 0px 60px 0px" }}
       >
         <div className="container ios-android">
           <div className="row">
             <div className="col-md-9 py-5 d-flex align-items-center justify-content-center">
               <div className="text-section">
-                <h1 className="title-page">
+                <h1 className="title-page mainHeadingMobile">
                   Mobile app development services for <span>IOS & ANDROID</span>
                 </h1>
                 <p className="title-page-p">
@@ -256,9 +264,9 @@ function page() {
               />
             </div>
 
-            <div className="col-md-7 pe-5 py-2 ps-5">
+            <div className="col-md-7  py-2 mgTop25 paddingLeft3 paddingRight3">
               <div className="text-section">
-                <h1 className="title-page-2">
+                <h1 className="title-page-2 mainHeadingMobile">
                   <span>Android App Development</span>
                 </h1>
                 <p className="title-page-p-2">
@@ -271,7 +279,7 @@ function page() {
                 </p>
               </div>
               <div className="text-section">
-                <h1 className="title-page-2">
+                <h1 className="title-page-2 mainHeadingMobile">
                   <span>iOS App Development</span>
                 </h1>
                 <p className="title-page-p-2">
@@ -288,12 +296,12 @@ function page() {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
-      {/* <div className="second-last-section">
+      <div className="second-last-section appMobilePaddingSmall">
         <div className="container">
           <div className="row">
-            <h1 className="top-ranked">
+            <h1 className="top-ranked mainHeadingMobile">
               Top Ranked Solutions for
               <br /> Multiple Platforms
             </h1>
@@ -305,7 +313,7 @@ function page() {
               />
               <div>
                 <div className="text-section-hover">
-                  <h1 className="title-page-2">
+                  <h1 className="title-page-2 subHeading">
                     Native Mobile App Development
                   </h1>
                   <p className="title-page-p-2">
@@ -315,7 +323,7 @@ function page() {
                   </p>
                 </div>
                 <div className="text-section-hover">
-                  <h1 className="title-page-2">
+                  <h1 className="title-page-2 subHeading">
                     Cross-Platform App Developmen
                   </h1>
                   <p className="title-page-p-2">
@@ -326,7 +334,7 @@ function page() {
                   </p>
                 </div>
                 <div className="text-section-hover">
-                  <h1 className="title-page-2">
+                  <h1 className="title-page-2 subHeading">
                     Hybrid Mobile App Development
                   </h1>
                   <p className="title-page-p-2">
@@ -337,7 +345,7 @@ function page() {
                   </p>
                 </div>
                 <div className="text-section-hover">
-                  <h1 className="title-page-2">
+                  <h1 className="title-page-2 subHeading">
                     Progressive Web App Development
                   </h1>
                   <p className="title-page-p-2">
@@ -348,7 +356,7 @@ function page() {
                 </div>
               </div>
             </div>
-            <div className="col-md-6 pe-5 py-2">
+            <div className="col-md-6 py-2 paddingRight3">
               <img
                 src="./images/solution.png"
                 alt="faqs-sec"
@@ -357,16 +365,16 @@ function page() {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
-      {/* <div
-        className="second-last-section"
+      <div
+        className="second-last-section appMobilePaddingSmall"
         style={{ backgroundColor: "#FFFBF8", padding: "30px 0px 60px 0px" }}
       >
         <div className="container benefits-of-working">
           <div className="row">
             <div className="col-md-9 py-5">
-              <h2>
+              <h2 className="mainHeadingMobile">
                 Benefits of working with <br /> Cynergy Studios
               </h2>
             </div>
@@ -471,17 +479,17 @@ function page() {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
-      {/* <div
-        className="last-section"
+      <div
+        className="last-section appMobilePaddingSmall"
         style={{ backgroundColor: "#fff", padding: "30px 0px 100px 0px" }}
       >
         <div className="container">
           <div className="row">
             <div className="col-md-12 py-5 d-flex align-items-center justify-content-center flex-column">
               <div className="text-section">
-                <h1 className="title-page">Optimized Process</h1>
+                <h1 className="title-page mainHeadingMobile">Optimized Process</h1>
               </div>
               <img
                 src="./images/banner-bottom.png"
@@ -492,55 +500,55 @@ function page() {
           </div>
         
         </div>
-      </div> */}
+      </div>
 
 
-      {/* <div className="container-fluid navs-app">
+      <div className="container-fluid navs-app appMobilePadding">
         <div className="row">
           <div className="col-md-1"></div>
-          <div className="col-md-1 d-flex align-items-end">
+          <div className="col-md-1 navappImg d-flex align-items-end">
             <img
               src="./images/App-Navs/python.svg"
               alt="python"
-              className="w-100 mb-5 tilt-effect"
+              className="w-100  mb-5 tilt-effect"
             />
           </div>
-          <div className="col-md-1 d-flex align-items-center">
+          <div className="col-md-1 navappImg d-flex align-items-center">
             <img
               src="./images/App-Navs/kotlin.svg"
               alt="kotlin"
               className="w-100 mb-5 tilt-effect"
             />
           </div>
-          <div className="col-md-1 d-flex align-items-start">
+          <div className="col-md-1 navappImg d-flex align-items-start">
             <img
               src="./images/App-Navs/react-native.svg"
               alt="react-native"
               className="w-100 mt-5 tilt-effect"
             />
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 ">
             <img
               src="./images/App-Navs/main-laptop.png"
               alt="main-laptop"
               className="w-100"
             />
           </div>
-          <div className="col-md-1 d-flex align-items-start">
+          <div className="col-md-1 navappImg d-flex align-items-start">
             <img
               src="./images/App-Navs/ruby.svg"
               alt="ruby"
               className="w-100 mt-5 tilt-effect"
             />
           </div>
-          <div className="col-md-1 d-flex align-items-center">
+          <div className="col-md-1 navappImg d-flex align-items-center">
             <img
               src="./images/App-Navs/flutter.svg"
               alt="flutter"
               className="w-100 mb-5 tilt-effect"
             />
           </div>
-          <div className="col-md-1 d-flex align-items-end">
+          <div className="col-md-1 navappImg d-flex align-items-end">
             <img
               src="./images/App-Navs/xios.svg"
               alt="xios"
@@ -549,7 +557,7 @@ function page() {
           </div>
           <div className="col-md-1"></div>
         </div>
-      </div> */}
+      </div>
 
       {/* <div className="case-study py-5 my-5">
         <div className="row">
