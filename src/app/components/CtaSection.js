@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 function CtaSection() {
@@ -12,7 +13,7 @@ function CtaSection() {
                             </h2>
                         </div>
                         <div className='col-md-4 d-flex justify-content-end align-items-center'>
-                            <a href='/' className='btn'>Contact Us Now</a>
+                            <Link href='/contact-us' className='btn'>Contact Us Now</Link>
                         </div>
                     </div>
                 </div>

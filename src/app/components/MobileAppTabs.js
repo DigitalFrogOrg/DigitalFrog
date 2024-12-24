@@ -58,9 +58,9 @@ const MobileAppTabs = () => {
   ];
 
   return (
-    <div className="MobileAppTabs">
+    <div className="MobileAppTabs appMobilePadding">
       <div className="container">
-        <h2 className="text-center">
+        <h2 className="text-center mainHeadingMobile">
           Mobile app development
           <br /> technologies we use
         </h2>

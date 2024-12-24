@@ -44,11 +44,11 @@ const page = () => {
       <Header />
       <MainBanner MainBannerHeading="Mobile App Design<br /> Services" />
 
-      <div className="why-choose-us">
+      <div className="why-choose-us appMobilePaddingSmall">
         <div className="container">
           <div className="row">
             <div className="col-md-6 d-flex align-items-start justify-content-center flex-column">
-              <h2>Why Choose Us</h2>
+              <h2 className="mainHeadingMobile">Why Choose Us</h2>
               <p>
                 At Cynergy Studios, we bring vast expertise in mobile app
                 design, having delivered standout UI/UX solutions to a diverse
@@ -64,7 +64,7 @@ const page = () => {
               </p>
               <button className="second-btn">Get A Quote</button>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 footerSection">
               <img
                 src="./images/why-choose-us.png"
                 alt="why-choose-us"
@@ -75,10 +75,10 @@ const page = () => {
         </div>
       </div>
 
-      <div className="case-study py-5 my-5">
+      <div style={{overflowX:'hidden'}} className="case-study py-5 my-5 appMobilePaddingSmall">
         <div className="row">
           <div className="col-md-12">
-            <h2>
+            <h2 className="mainHeadingMobile">
               Top Notch Team of <br /> Cynergy Studios
             </h2>
             <p>
@@ -104,7 +104,7 @@ const page = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 mgTop25">
               <div className="up-to-mints-div">
                 <h4>UI/UX Research & Strategy</h4>
                 <p>
@@ -133,7 +133,7 @@ const page = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 mgTop25">
               <div className="up-to-mints-div">
                 <h4>Wireframing</h4>
                 <p>
@@ -164,7 +164,7 @@ const page = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 mgTop25">
               <div className="up-to-mints-div">
                 <h4>Iteration</h4>
                 <p>
@@ -192,7 +192,7 @@ const page = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 mgTop25">
               <div className="up-to-mints-div">
                 <h4>Deployment</h4>
                 <p>
@@ -208,11 +208,11 @@ const page = () => {
         </div>
       </div>
 
-      <div className="specialists-for-platforms">
+      <div className="specialists-for-platforms appMobilePaddingSmall">
         <div className="container">
           <div className="row">
             <div className="col-md-8 py-5">
-              <h2>Specialists for Platforms</h2>
+              <h2 className="mainHeadingMobile">Specialists for Platforms</h2>
               <p>
                 Cynergy Studios boasts a top-tier team of designers dedicated to
                 creating an engaging operational framework that meets the needs
@@ -221,7 +221,7 @@ const page = () => {
                 solutions for further use.
               </p>
             </div>
-            <div className="col-md-4 d-flex align-items-center justify-content-end">
+            <div className="col-md-4 mgBottom d-flex align-items-center justify-content-end">
               <button className="btn-app">Get A Quote</button>
             </div>
           </div>
@@ -242,7 +242,7 @@ const page = () => {
                 <div className="col-md-6"></div>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 mgTop25">
               <div className="m-1 inner-blog-section-2 row">
                 <div className="col-md-6">
                   <h3>Cross-Platform Android App Design</h3>
@@ -263,7 +263,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="container benefits-cynergy">
+      <div className="container benefits-cynergy appMobilePadding">
         <div className="row">
           <div className="col-md-5">
             <img
@@ -272,8 +272,8 @@ const page = () => {
               className="w-100 h-100"
             />
           </div>
-          <div className="col-md-7 ps-5">
-            <h2>
+          <div className="col-md-7 paddingLeft3 footerSection">
+            <h2 className="mainHeadingMobile">
               Benefits Of Cynergy <br /> Studios
             </h2>
             <div className="row">
@@ -290,7 +290,7 @@ const page = () => {
                   <div className="benefit-rectangle"></div>
                 </div>
               </div>
-              <div className="col-md-6">
+              <div className="col-md-6 mgTop25">
                 <div className="benefit-col-1">
                   <h4>Galvanizing Designs</h4>
                   <p>
@@ -318,7 +318,7 @@ const page = () => {
                   <div className="benefit-rectangle"></div>
                 </div>
               </div>
-              <div className="col-md-6">
+              <div className="col-md-6 mgTop25">
                 <div className="benefit-col-1">
                   <h4>Emerging Tech</h4>
                   <p>

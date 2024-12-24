@@ -5,6 +5,7 @@ import AppCta from "../components/AppCta";
 import FaqsSection from "../components/FaqsSection";
 import BudgetSection from "../components/BudgetSection";
 import TechAndTools from "../components/TechAndTools";
+import Link from "next/link";
 
 const page = () => {
   const faqData = [
@@ -46,10 +47,10 @@ const page = () => {
       <Header />
       <MainBanner MainBannerHeading="Web App Development<br/> Services" />
 
-      <div className="container-fluid webAppDev">
-        <div className="row">
+      <div className="container-fluid webAppDev appMobilePadding">
+        <div className="row webAppDevContainer">
           <div className="col-md-6 d-flex align-items-start justify-content-center flex-column gap-4">
-            <h2>
+            <h2 className="mainHeadingMobile">
               Web App Development
               <br /> Company
             </h2>
@@ -64,7 +65,9 @@ const page = () => {
               business growth depends on perfect app strategies and monitoring
               of the app.
             </p>
-            <button className="second-btn">Start Your Project</button>
+            <Link href="#getInTouch">
+              <button className="second-btn">Start Your Project</button>
+            </Link>
           </div>
           <div className="col-md-6">
             <img src="./images/image82.png" alt="image82" className="w-100" />
@@ -72,8 +75,8 @@ const page = () => {
         </div>
       </div>
 
-      <div className="container highAndroid">
-        <h2 className="text-center">
+      <div className="container highAndroid appMobilePadding" >
+        <h2 className="text-center mainHeadingMobile">
           Web Application
           <br /> Development Services
         </h2>
@@ -85,7 +88,7 @@ const page = () => {
           project.
         </p>
         <div className="row">
-          <div className="col-md-6">
+          <div className="col-md-6 mt-3">
             <div className="up-to-mints-div">
               <h4>Enterprise Web Apps</h4>
               <p>
@@ -100,7 +103,7 @@ const page = () => {
               </p>
             </div>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 mt-3">
             <div className="up-to-mints-div">
               <h4>Progressive Web App Development</h4>
               <p>
@@ -114,7 +117,7 @@ const page = () => {
               </p>
             </div>
           </div>
-          <div className="col-md-6 mt-4">
+          <div className="col-md-6 mt-3">
             <div className="up-to-mints-div">
               <h4>Web Portal</h4>
               <p>
@@ -128,7 +131,7 @@ const page = () => {
               </p>
             </div>
           </div>
-          <div className="col-md-6 mt-4">
+          <div className="col-md-6 mt-3">
             <div className="up-to-mints-div">
               <h4>Cross-Platform Web App Development</h4>
               <p>
@@ -139,7 +142,7 @@ const page = () => {
               </p>
             </div>
           </div>
-          <div className="col-md-6 mt-4">
+          <div className="col-md-6 mt-3">
             <div className="up-to-mints-div">
               <h4>Web App Consultation</h4>
               <p>
@@ -152,7 +155,7 @@ const page = () => {
               </p>
             </div>
           </div>
-          <div className="col-md-6 mt-4">
+          <div className="col-md-6 mt-3">
             <div className="up-to-mints-div">
               <h4>E-commerce Web App Development</h4>
               <p>
@@ -166,7 +169,7 @@ const page = () => {
               </p>
             </div>
           </div>
-          <div className="col-md-6 mt-4">
+          <div className="col-md-6 mt-3">
             <div className="up-to-mints-div">
               <h4>Custom Web Application</h4>
               <p>
@@ -180,7 +183,7 @@ const page = () => {
               </p>
             </div>
           </div>
-          <div className="col-md-6 mt-4">
+          <div className="col-md-6 mt-3">
             <div className="up-to-mints-div">
               <h4>Single-Page Web Apps</h4>
               <p>
@@ -197,9 +200,10 @@ const page = () => {
         </div>
       </div>
 
-      <div className="DesignProcess">
+
+      <div className="DesignProcess appMobilePaddingSmall">
         <div className="container">
-          <h2 className="text-center">Web App Process</h2>
+          <h2 className="text-center mainHeadingMobile">Web App Process</h2>
           <p className="text-center">
             To build web applications strikingly absolute, we create
             constructive methodologies to fabricate a<br /> well-organized web
@@ -303,9 +307,9 @@ const page = () => {
 
       <TechAndTools />
 
-      <div className="iosDesignProcess" style={{ background: "#fff" }}>
+      <div className="iosDesignProcess appMobilePaddingSmall" style={{ background: "#fff" }}>
         <div className="container">
-          <h2>
+          <h2 className="mainHeadingMobile">
             Web App Development
             <br /> With{" "}
             <span style={{ color: "#d35e1e" }}>Cynergy Studios</span>
@@ -406,9 +410,9 @@ const page = () => {
         </div>
       </div>
 
-      <div className="WhyChooseUsMobile">
+      <div className="WhyChooseUsMobile appMobilePaddingSmall">
         <div className="container">
-          <h2>Why Choose Us</h2>
+          <h2 className="mainHeadingMobile">Why Choose Us</h2>
           <p className="text-center">
             We construct strategic, creative, and technical methodologies to
             produce an exceptional user experience that transcends

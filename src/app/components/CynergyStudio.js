@@ -1,8 +1,9 @@
 "use client";
-import React from "react";
+import React,{useState} from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Popup from "./Popup";
 
 const settings = {
   dots: false,
@@ -16,8 +17,14 @@ const settings = {
 };
 
 function CynergyStudio() {
+  // const [isOpen, setIsOpen] = useState(false);
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+  const togglePopup = () => {
+    setIsPopupVisible(!isPopupVisible);
+  };
   return (
     <section className="cynergy_studio">
+      {isPopupVisible && <Popup togglePopup={togglePopup} />}
       <div className="container-fluid">
         <div className="cynergy_studio_col">
           <h2>Why Cynergy Studios?</h2>
@@ -89,6 +96,16 @@ function CynergyStudio() {
               </div>
             </div>
           </div>
+
+          <div className="row d-flex align-items-center justify-content-center">
+             <div className={`contactusBtnArea`}>
+             <div className="buttons" onClick={togglePopup}>
+                <button className="second-btn">
+                  Contact Us
+                </button>
+              </div>
+             </div>
+          </div>
           {/* <div className="row">
             <div className="col-md-12 studio-slider">
               <Slider {...settings}>
@@ -105,7 +122,9 @@ function CynergyStudio() {
             </div>
           </div> */}
         </div>
+       
       </div>
+      
     </section>
   );
 }

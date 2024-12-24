@@ -18,10 +18,10 @@ const CaseStudy = () => {
   };
 
   return (
-    <div className="case-study py-5 my-5">
+    <div className="case-study py-5 my-5 appMobilePaddingSmall">
       <div className="row">
         <div className="col-md-12">
-          <h2>Mobile Apps We Develop</h2>
+          <h2 className="mainHeadingMobile">Mobile Apps We Develop</h2>
           <p>
             Diginite Studios creates top-notch mobile applications and
             cutting-edge mobile features for their users to clinch their potency
@@ -35,7 +35,7 @@ const CaseStudy = () => {
       </div>
       <div className="row">
         <div className="col-md-12 mt-5">
-          <div className="mt-5 over-all-h3">
+          <div className="mt-5 caseStudy over-all-h3">
             <Slider {...settings}>
               <div>
                 <div className="slide-1">

@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 function HotspotSection() {
   return (
@@ -12,7 +13,6 @@ function HotspotSection() {
                 alt="World Map"
                 className="mapImage"
               />
-              {/* Hotspot Markers */}
               <div className="hotspot" style={{ top: "-15%", left: "34%" }}>
                 <div className="label">
                   <h6>USA</h6>
@@ -39,7 +39,7 @@ function HotspotSection() {
                 </div>
                 <div className="marker"></div>
               </div>
-              <div className="hotspot" style={{ top: "7%", left: "73%" }}>
+              {/* <div className="hotspot" style={{ top: "7%", left: "73%" }}>
                 <div className="label">
                   <h6>UAE</h6>
                   <p>
@@ -49,8 +49,8 @@ function HotspotSection() {
                   </p>
                 </div>
                 <div className="marker"></div>
-              </div>
-              <div className="hotspot" style={{ top: "1%", left: "89%" }}>
+              </div> */}
+              <div className="hotspot" style={{ top: "1%", left: "84%" }}>
                 <div className="label">
                   <h6 style={{ width: "100px" }}>AUSTRALIA</h6>
                   <p>
@@ -63,15 +63,15 @@ function HotspotSection() {
           </div>
           <div className="col-md-4 d-flex align-items-center justify-content-center">
             <div className="contactContainer">
-              <h2 className="fw-bold">
+              <h2 className="fw-bold mainHeadingMobile">
                 <strong>
                   Let's Start <br /> Working Together.
                   <br /> Get In Touch!
                 </strong>
               </h2>
-              <a href="#" className="btn">
+              <Link href="#" className="btn">
                 Make An Appointment
-              </a>
+              </Link>
             </div>
           </div>
         </div>

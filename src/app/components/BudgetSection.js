@@ -1,53 +1,102 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState,useRef } from "react";
+import { submitForm } from "@/api/formServices";
 
 function BudgetSection() {
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
     projectType: "",
-    budget: 100000,
+    // budget: 100000,
     timeline: "",
   });
+  const fileInputRef = useRef(null);
+  const [nda, setNda] = useState(false);
+    const [loading,setLoading] = useState(false)
+  const [selectedFile, setSelectedFile] = useState(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
   };
+
+  const handleNdaChange = (e) => {
+    setNda(e.target.checked);
+  };
+  const handleFileButtonClick = () => {
+    if (fileInputRef.current) {
+        fileInputRef.current.click(); 
+    }
+};
+
+const handleFileChange = (e) => {
+  const file = e.target.files[0];
+  setSelectedFile(file); 
+};
 
   const handleBudgetChange = (e) => {
     setFormData({ ...formData, budget: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form Data:", formData);
+    for (const [key, value] of Object.entries(formData)) {
+      if (!value.trim()) { 
+        alert(`Please fill in the ${key} field.`);
+        return;
+    }
+  }
+  setLoading(true)
+    try {
+      const payload = new FormData();
+      payload.append("fullName", formData.fullName);
+      payload.append("email", formData.email);
+      payload.append("projectType", formData.projectType);
+      payload.append("timeline", formData.timeline);
+      payload.append("nda", nda ? 'Yes' : 'No');
+      if (selectedFile) {
+        payload.append("file", selectedFile);
+      }
+
+      const response = await submitForm(payload)
+      alert(response.data.message)
+    } catch (error) {
+      alert("Failed to submit form.")
+    }
+    setLoading(false)
+    setSelectedFile(null); 
     setFormData({
       fullName: "",
       email: "",
       projectType: "",
-      budget: 100000,
       timeline: "",
     });
+    setNda(false)
+    if (fileInputRef.current) {
+      fileInputRef.current.value = ""; 
+    }
   };
 
   return (
     <>
-      <div className="budget-sec">
+      <div id="getInTouch" className="budget-sec">
         <div className="container">
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-6 divPadding">
               {/* <img
                 src="/images/SmartObject.png"
                 alt="SmartObject"
                 className="w-100 h-100"
               /> */}
-              <h2 style={{ fontFamily: "NobelUno-Bold !important" }}>
+              <h2 style={{ fontFamily: "NobelUno-Bold !important" }} className="mainHeadingMobile">
                 Exploring Our App
                 <br /> Development Services?
               </h2>
-              <h4>Share Your Project Details!</h4>
-              <h3 className="mt-3">
+              <h4 className="subHeading">Share Your Project Details!</h4>
+              <h3 className="mt-3 subHeading">
                 <img
                   src="/images/clock_icon.png"
                   alt="SmartObject"
@@ -77,15 +126,17 @@ function BudgetSection() {
 
               <h6>
                 Alternatively, contact us via phone
-                <span> +1 (346) 360-8407 </span>
+                <a href="tel:13463608407"><span> +1 (346) 360-8407 </span></a>
                 or email
+                <a href="mailto:info@cynergystudio.com">
                 <span> info@cynergystudios.com</span>
+                </a>
               </h6>
             </div>
-            <div className="col-md-6 px-5 d-flex align-items-center">
+            <div className="col-md-6 divPadding d-flex align-items-center">
               <form onSubmit={handleSubmit} className="projectForm w-100">
                 <div className="row">
-                  <div className="col-md-6">
+                  <div className="col-md-6 mt-3">
                     <input
                       type="text"
                       className="form-control"
@@ -95,7 +146,7 @@ function BudgetSection() {
                       onChange={handleChange}
                     />
                   </div>
-                  <div className="col-md-6">
+                  <div className="col-md-6 mt-3">
                     <input
                       type="email"
                       className="form-control"
@@ -164,16 +215,47 @@ function BudgetSection() {
                     <option value="2_months">2 Months</option>
                     <option value="3_months">3 Months</option>
                   </select>
+                  <input
+                    type="file"
+                    ref={fileInputRef}
+                    style={{ display: "none" }}
+                    onChange={handleFileChange}
+                />
                 </div>
 
-                <button type="submit" className="btn mt-4">
+                <div className="form-group d-flex gap-2 ms-2 align-items-center mt-4 mb-3">
+                <div class="custom-checkbox">
+                  <input type="checkbox" name='nda' checked={nda} onChange={handleNdaChange}  id="checkbox" />
+                  <label for="checkbox"></label>
+                </div>
+                <div style={{fontSize: "16px",color:'#2C3E52',fontWeight:'400',marginLeft:'5px'}}>
+                  Protect Under NDA
+                </div>
+                </div>
+
+                <div className="d-flex align-items-center gap-3 flex-wrap">
+                <button type="submit" disabled={loading} className="btn">
                   Start Your Project
                 </button>
-                <button type="submit" className="btn m-4 file-btn">
+                <button type="button" onClick={handleFileButtonClick} className="file-btn">
+                <img
+                    src="./images/file-upload.png"
+                    />
+                </button>
+                {selectedFile && (<span>
+                  {selectedFile.name}
+                </span>)}
+                {/* <button type="button" onClick={handleFileButtonClick} className="btn file-btn">
                   <img
                     src="./images/file-upload.png"
-                  />
-                </button>
+                    />
+                {selectedFile && (<span className="m-2">
+                  {selectedFile.name}
+                </span>)}
+                </button> */}
+                </div>  
+              
+                
               </form>
             </div>
           </div>

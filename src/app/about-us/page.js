@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import InnerCta from "../components/InnerCta";
 import RecentNews from "../components/RecentNews";
+import MainBanner from "../components/MainBanner";
 
 function page() {
   const marqueeItems = [
@@ -35,7 +36,7 @@ function page() {
     <>
       <Header />
       {/* main banner */}
-      <div className="about-banner">
+      {/* <div className="about-banner">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
@@ -44,8 +45,11 @@ function page() {
           </div>
           <hr />
         </div>
-      </div>
-      <div className="container py-4 about-middle">
+      </div> */}
+      <MainBanner MainBannerHeading="About Us" />
+
+
+      <div className="container py-4 about-middle appMobilePadding">
         <div className="row pb-5">
           {/* <h2 className="text-center mb-5 fw-bold">
             Web Design Company
@@ -53,7 +57,7 @@ function page() {
             You Can Trust
           </h2> */}
           <div className="col-md-4 text-start d-flex justify-content-center flex-column">
-            <h3 className="w-100">
+            <h3 className="w-100 mainHeadingMobile">
               Mobile App <br /> Development Services
             </h3>
             <p className="w-100">
@@ -74,15 +78,15 @@ function page() {
             </p>
             <button className="second-btn text-center w-50">Build Now</button>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 footerSection">
             <img
               src="./images/about-middle.png"
               alt="about-middle"
               className="w-100"
             />
           </div>
-          <div className="col-md-4 text-end d-flex align-items-end justify-content-center flex-column">
-            <h3>
+          <div className="col-md-4 footerSection text-end d-flex align-items-end justify-content-center flex-column">
+            <h3 className="subHeading">
               Problem-Solving Pioneers in a <br /> Strove Digital World
             </h3>
             <p>
@@ -100,7 +104,7 @@ function page() {
               we turn challenges into growth opportunities, empowering
               businesses to thrive in a fast-evolving tech landscape.
             </p>
-            <button className="second-btn text-center w-50">
+            <button className="second-btn text-center">
               Find Solutions
             </button>
           </div>
@@ -284,7 +288,7 @@ function page() {
 
       <div className="about-bottom-ban"></div>
 
-      <div className="mt-5">
+      <div className="mt-5 appMobilePaddingSmall">
         <RecentNews />
       </div>
       <div className="mt-5">

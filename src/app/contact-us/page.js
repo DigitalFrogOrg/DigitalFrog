@@ -1,26 +1,86 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState,useRef } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import HotspotSection from "../components/HotspotSection";
+import Link from "next/link";
+import { submitForm } from "@/api/formServices";
+import MainBanner from "../components/MainBanner";
 
 const page = () => {
   const [formData, setFormData] = useState({
     fullName: "",
+    phoneNumber:"",
     email: "",
-    projectType: "",
     budget: 0,
-    timeline: "",
   });
+  const fileInputRef = useRef(null);
+  const [loading,setLoading] = useState(false)
+  const [selectedFile, setSelectedFile] = useState(null);
   const handleBudgetChange = (e) => {
     setFormData({ ...formData, budget: e.target.value });
   };
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleFileChange = (e) => {
+    setSelectedFile(e.target.files[0]);
+  };
+
+
+   const handleSubmit = async (e) => {
+      e.preventDefault();
+      
+      for (const [key, value] of Object.entries(formData)) {
+        if (!value.trim()) { 
+          alert(`Please fill in the ${key} field.`);
+          return;
+      }
+    }
+    setLoading(true)
+      try {
+        const payload = new FormData();
+        payload.append("fullName", formData.fullName);
+        payload.append("email", formData.email);
+        payload.append("phoneNumber", formData.phoneNumber);
+        payload.append("budget", formData.budget);
+        if (selectedFile) {
+          payload.append("file", selectedFile);
+        }
+
+
+        const response = await submitForm(payload)
+
+        alert(response.data.message)
+      } catch (error) {
+        alert("Failed to submit form.")
+      }
+
+      setLoading(false)
+  
+      setFormData({
+        fullName: "",
+        email: "",
+        phoneNumber:"",
+        budget: 0,
+      });
+      setSelectedFile(null); 
+
+      if (fileInputRef.current) {
+          fileInputRef.current.value = ""; 
+      }
+    };
+
   return (
     <>
       <Header />
-      <div className="about-banner">
+      <MainBanner MainBannerHeading="Contact Us" />
+
+      {/* <div className="about-banner">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
@@ -29,41 +89,50 @@ const page = () => {
           </div>
           <hr />
         </div>
-      </div>
+      </div> */}
 
-      <div className="container contact-main">
+      <div className="container contact-main appMobilePadding contactusContainer">
         <div className="row">
           <h6>
-            <a href="/" style={{ color: "#000" }}>
+            <Link href="/" style={{ color: "#000" }}>
               Home
-            </a>{" "}
+            </Link>{" "}
             /{" "}
-            <a href="/contact-us" style={{ color: "#000" }}>
+            <Link href="/contact-us" style={{ color: "#000" }}>
               Contact Us
-            </a>
+            </Link>
           </h6>
         </div>
         <div className="row mt-3">
           <div className="col-md-7">
             <h2>Got a project in mind?</h2>
             <p>Fill in this form or send us an e-mail</p>
-            <form className="contact-form">
+            <form onSubmit={handleSubmit} className="contact-form">
               <input
                 type="text"
+                name="fullName"
+                value={formData.fullName}
                 placeholder="Name *"
                 className="w-100 form-control"
+                onChange={handleChange}
               />
               <div className="d-flex justify-content-between mt-3">
                 <input
                   type="tel"
+                  value={formData.phoneNumber}
+                  name="phoneNumber"
                   placeholder="Phone number *"
                   className="form-control"
                   style={{ width: "48%" }}
+                  onChange={handleChange}
                 />
                 <input
                   type="email"
+                  name="email"
+                  value={formData.email}
                   placeholder="Email *"
                   className="form-control"
+                  onChange={handleChange}
                   style={{ width: "48%" }}
                 />
               </div>
@@ -77,7 +146,7 @@ const page = () => {
                   step="10000"
                   name="budget"
                   value={formData.budget}
-                  onChange={handleBudgetChange}
+                  onChange={handleChange}
                 />
                 <div className="budgetDisplay">
                   <span>0 $</span>
@@ -94,13 +163,15 @@ const page = () => {
                 </div>
               </div>
               <div className="mt-3">
-                <input className="form-control" type="file" id="formFile" />
+                <input className="form-control"  ref={fileInputRef} type="file" name="file" onChange={handleFileChange} id="formFile" />
+              </div> 
+              <div className='mt-2 d-flex align-items-center justify-content-end'>
+                    <button type='submit' disabled={loading} className='second-btn'>Send Message</button>
               </div>
-              <button type="submit">Contact Us</button>
             </form>
           </div>
           <div className="col-md-1"></div>
-          <div className="col-md-4">
+          <div className="col-md-4 footerSection">
             <div className="contact-right">
               <h4>What's next?</h4>
               <div className="steps">

@@ -4,6 +4,7 @@ import AppCta from "../components/AppCta";
 import FaqsSection from "../components/FaqsSection";
 import BudgetSection from "../components/BudgetSection";
 import MainBanner from "../components/MainBanner";
+import Link from "next/link";
 
 const page = () => {
   const faqData = [
@@ -44,11 +45,11 @@ const page = () => {
       <Header />
       <MainBanner MainBannerHeading="No Code/Low-Code<br /> Revolution" />
 
-      <div className="container LowCodeNoCode">
+      <div className="container LowCodeNoCode appMobilePadding">
         <div className="row">
           <div className="col-md-6 d-flex align-items-start justify-content-center flex-column">
-            <h2>Low-Code/No-Code Mastery: Platforms We Excel In</h2>
-            <h4>Our Expertise in Action Services</h4>
+            <h2 className="mainHeadingMobile">Low-Code/No-Code Mastery: Platforms We Excel In</h2>
+            <h4 className="subHeading">Our Expertise in Action Services</h4>
             <p>
               At cynergy LA, we bring low-code and no-code solutions to life
               with a comprehensive suite of services. From rapid prototyping for
@@ -56,9 +57,11 @@ const page = () => {
               ERPs, and facilitating the complete development lifecycle of
               products destined for launch and scale.
             </p>
+            <Link href="#getInTouch">
             <button className="second-btn">Start Your Project</button>
+            </Link>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 footerSection">
             <img
               src="./images/Group37653456.png"
               alt="Group37653456"
@@ -68,9 +71,9 @@ const page = () => {
         </div>
       </div>
 
-      <div className="DesignProcess">
+      <div className="DesignProcess appMobilePaddingSmall">
         <div className="container">
-          <h2 className="text-center">
+          <h2 className="text-center mainHeadingMobile">
             Empower with Ease: No-
             <br />
             Code/Low-Code
@@ -156,16 +159,18 @@ const page = () => {
         </div>
       </div>
 
-      <div className="SuccessfullDeveloped">
+      <div className="SuccessfullDeveloped appMobilePaddingSmall">
         <div className="container">
           <div className="row">
             <div className="col-md-6">
-              <h2>
+              <h2 className="mainHeadingMobile">
                 Our Successfully <br /> Developed Projects
               </h2>
             </div>
-            <div className="col-md-6 d-flex align-items-center justify-content-end">
+            <div className="col-md-6 d-flex align-items-center justify-content-end footerSection">
+            <Link href="#getInTouch">
               <button className="second-btn">Start Your Project</button>
+            </Link>
             </div>
           </div>
 
@@ -173,7 +178,7 @@ const page = () => {
             <div className="col-md-6">
               <div className="SuccessfullBox">
                 <img src="./images/232343.png" alt="232343" className="w-100" />
-                <h3>App Store Preview</h3>
+                <h3 className="mainHeadingMobile">App Store Preview</h3>
                 <p>
                   We may share the information that we collect, both personal
                   and non-personal, with third parties such as advertisers,
@@ -189,10 +194,10 @@ const page = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 marginTopMobile">
             <div className="SuccessfullBox">
                 <img src="./images/756834.png" alt="756834" className="w-100" />
-                <h3>KC Elite Ecommerce Store</h3>
+                <h3 className="mainHeadingMobile">KC Elite Ecommerce Store</h3>
                 <p>
                   We may share the information that we collect, both personal
                   and non-personal, with third parties such as advertisers,
@@ -213,7 +218,7 @@ const page = () => {
             <div className="col-md-6">
               <div className="SuccessfullBox">
                 <img src="./images/748358.jpg" alt="748358" className="w-100" />
-                <h3>Cooper's Hawk</h3>
+                <h3 className="mainHeadingMobile">Cooper's Hawk</h3>
                 <p>
                   We may share the information that we collect, both personal
                   and non-personal, with third parties such as advertisers,
@@ -228,10 +233,10 @@ const page = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 marginTopMobile">
             <div className="SuccessfullBox">
                 <img src="./images/396874.png" alt="396874" className="w-100" />
-                <h3>Disfruta</h3>
+                <h3 className="mainHeadingMobile">Disfruta</h3>
                 <p>
                   We may share the information that we collect, both personal
                   and non-personal, with third parties such as advertisers,

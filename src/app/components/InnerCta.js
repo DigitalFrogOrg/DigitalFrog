@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const InnerCta = () => {
@@ -13,7 +14,9 @@ const InnerCta = () => {
                 <br />
                 your dream product?
               </h2>
-              <button>Contact us</button>
+              <Link href="/contact-us">
+                <button>Contact us</button>
+              </Link>
             </div>
             <div className="col-md-2"></div>
           </div>

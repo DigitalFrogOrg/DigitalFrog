@@ -5,6 +5,7 @@ import FaqsSection from "../components/FaqsSection";
 import BudgetSection from "../components/BudgetSection";
 import MainBanner from "../components/MainBanner";
 import TechAndTools from "../components/TechAndTools";
+import Link from "next/link";
 
 const page = () => {
   const faqData = [
@@ -45,11 +46,11 @@ const page = () => {
       <Header />
       <MainBanner MainBannerHeading="PWA Development<br/> Services" />
 
-      <div className="why-choose-us">
+      <div className="why-choose-us appMobilePadding">
         <div className="container">
-          <div className="row">
+          <div className="row webAppDevContainer">
             <div className="col-md-6 d-flex align-items-start justify-content-center flex-column gap-3">
-              <h2>Web App Development Company</h2>
+              <h2 className="mainHeadingMobile">Web App Development Company</h2>
               <p>
                 With years of proven track record, Cynergy Studios lays an
                 efficient structure to build a highly intuitive progressive web
@@ -58,7 +59,9 @@ const page = () => {
                 deliver the fastest, reliable, and engaging development process
                 to meet the needs of the users.
               </p>
-              <button className="second-btn">Schedule A Call</button>
+              <a href="tel:13463608407">
+                <button className="second-btn">Schedule A Call</button>
+              </a>
             </div>
             <div className="col-md-6">
               <img
@@ -71,12 +74,12 @@ const page = () => {
         </div>
       </div>
 
-      <div className="container WebAppDevelopmentServices">
+      <div className="container WebAppDevelopmentServices appMobilePadding">
         <div className="row">
-          <div className="col-md-6">
-            <h2>Web App Development Services</h2>
+          <div className="col-md-6 ">
+            <h2 className="mainHeadingMobile">Web App Development Services</h2>
           </div>
-          <div className="col-md-6 ps-5 d-flex align-items-center justify-content-center">
+          <div className="col-md-6 paddingLeft3 d-flex align-items-center justify-content-center">
             <p>
               Combining all the aspects of curating PWAs, the industry-leading
               progressive web application development company Cynergy Studios
@@ -88,14 +91,14 @@ const page = () => {
         </div>
 
         <div className="row mt-5">
-          <div className="col-md-6 pe-5">
+          <div className="col-md-6 paddingRight3">
             <img
               src="./images/Group1707479693.png"
               alt="Group1707479693"
               className="w-100 h-100"
             />
           </div>
-          <div className="col-md-6 ps-5 d-flex align-items-center justify-content-center flex-column">
+          <div className="col-md-6 paddingLeft3 d-flex align-items-center justify-content-center flex-column">
             <div className="WebAppDevBox">
               <h4>Custom Progressive Web App Development</h4>
               <p>
@@ -139,11 +142,11 @@ const page = () => {
         </div>
       </div>
 
-      <div className="DevelopmentProcess">
+      <div className="DevelopmentProcess appMobilePaddingSmall">
         <div className="container">
           <div className="row">
             <div className="col-md-8">
-              <h2>Development Process</h2>
+              <h2 className="mainHeadingMobile">Development Process</h2>
               <p>
                 Manifesting key steps to your PWA idea, we follow an agile
                 methodology that allows us to fine-tune the PWA app development
@@ -244,10 +247,10 @@ const page = () => {
       <TechAndTools />
 
       <div
-        className="container second-section WebAppSolutions"
+        className="container second-section WebAppSolutions appMobilePadding"
         style={{ backgroundColor: "#fff" }}
       >
-        <h2>Web App Solutions</h2>
+        <h2 className="mainHeadingMobile">Web App Solutions</h2>
         <p>
           Our progressive web app development services craft an aesthetic
           landscape of progressive web apps with the
@@ -268,7 +271,9 @@ const page = () => {
                     aria-expanded="true"
                     aria-controls="collapseOne"
                   >
-                    Offline Functionality
+                    <span className="subHeading">
+                      Offline Functionality
+                    </span>
                   </button>
                 </h2>
                 <div
@@ -294,7 +299,11 @@ const page = () => {
                     aria-expanded="false"
                     aria-controls="collapseTwo"
                   >
+                    <span className="subHeading">
+
                     Cross-Platform Compatibility
+                    </span>
+                  
                   </button>
                 </h2>
                 <div
@@ -323,7 +332,10 @@ const page = () => {
                     aria-expanded="false"
                     aria-controls="collapseThree"
                   >
+                    <span className="subHeading">
+
                     Improved Performance
+                    </span>
                   </button>
                 </h2>
                 <div
@@ -352,7 +364,10 @@ const page = () => {
                     aria-expanded="false"
                     aria-controls="collapseFour"
                   >
+                    <span className="subHeading">
+
                     Add Link Experience
+                    </span>
                   </button>
                 </h2>
                 <div
@@ -381,7 +396,10 @@ const page = () => {
                     aria-expanded="false"
                     aria-controls="collapseFive"
                   >
+                    <span className="subHeading">
+                    
                     Seamless Integration
+                    </span>
                   </button>
                 </h2>
                 <div
@@ -410,7 +428,9 @@ const page = () => {
                     aria-expanded="false"
                     aria-controls="collapseSix"
                   >
+                    <span className="subHeading">
                     Lower Development & Maintenance
+                    </span>
                   </button>
                 </h2>
                 <div
@@ -435,11 +455,11 @@ const page = () => {
         </div>
       </div>
 
-      <div className="IosChoose">
+      <div className="IosChoose appMobilePaddingSmall">
         <div className="container">
           <div className="row">
             <div className="col-md-8">
-              <h2>Why Choose Us</h2>
+              <h2 className="mainHeadingMobile">Why Choose Us</h2>
               <p>
                 To streamline the entire process of development hire iOS
                 developers from Dignite Studios. Here, hiring an iOS developer
@@ -451,7 +471,9 @@ const page = () => {
               </p>
             </div>
             <div className="col-md-4 d-flex align-items-center justify-content-end">
+             <Link href="#getInTouch">
               <button className="second-btn">Start Your Project</button>
+             </Link>
             </div>
 
             <div className="col-md-4 mt-3">

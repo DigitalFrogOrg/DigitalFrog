@@ -16,7 +16,7 @@ const MaintenanceProcess = () => {
             </p>
           </div>
         </div>
-        <div className="col-md-6">
+        <div className="col-md-6 mgTop25">
           <div className="maintain-process">
             <h3>Service Plannin</h3>
             <p>
@@ -44,7 +44,7 @@ const MaintenanceProcess = () => {
             </p>
           </div>
         </div>
-        <div className="col-md-6">
+        <div className="col-md-6 mgTop25">
           <div className="maintain-process">
             <h3>Scheduled Maintenance</h3>
             <p>
@@ -70,7 +70,7 @@ const MaintenanceProcess = () => {
             </p>
           </div>
         </div>
-        <div className="col-md-6">
+        <div className="col-md-6 mgTop25">
           <div className="maintain-process">
             <h3>User Feedback Integration</h3>
             <p>

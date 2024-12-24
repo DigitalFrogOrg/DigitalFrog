@@ -14,7 +14,9 @@ function FaqItem({ questionId, question, answer, isOpen }) {
             aria-expanded={isOpen ? "true" : "false"}
             aria-controls={`collapse${questionId}`}
           >
-            {question}
+            <span>
+              {question}
+            </span>
           </button>
         </h2>
         <div
@@ -34,11 +36,11 @@ function FaqItem({ questionId, question, answer, isOpen }) {
 
 function FaqsSection({ faqs }) {
   return (
-    <div className="container faqs py-5">
+    <div className="container faqs py-5 appMobilePadding">
       <div className="row">
         <div className="col-md-1"></div>
         <div className="col-md-10 text-center">
-          <h2 className="mb-5">Frequently Asked Questions</h2>
+          <h2 className="mb-5 mainHeadingMobile">Frequently Asked Questions</h2>
           <div className="accordion" id="accordion-main">
             {faqs.map((faq, index) => (
               <FaqItem

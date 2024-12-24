@@ -4,6 +4,7 @@ import MainBanner from "../components/MainBanner";
 import AppCta from "../components/AppCta";
 import FaqsSection from "../components/FaqsSection";
 import BudgetSection from "../components/BudgetSection";
+import Link from "next/link";
 
 const page = () => {
   const faqData = [
@@ -46,12 +47,12 @@ const page = () => {
       <MainBanner MainBannerHeading="Android Development<br/> Services" />
 
       <div
-        className="container-fluid webAppDev"
+        className="container-fluid webAppDev appMobilePadding"
         style={{ backgroundColor: "#FFFBF8" }}
       >
         <div className="row">
           <div className="col-md-6 d-flex align-items-start justify-content-center flex-column gap-4">
-            <h2>Android App Developer</h2>
+            <h2 className="mainHeadingMobile">Android App Developer</h2>
             <p>
               Make your Android app with strikingly enticing modern features and
               design elements. Our team of skilled developers thrive to produce
@@ -76,8 +77,8 @@ const page = () => {
         </div>
       </div>
 
-      <div className="container midMobileAdd">
-        <h2 className="text-center">Development Services</h2>
+      <div className="container midMobileAdd appMobilePadding">
+        <h2 className="text-center mainHeadingMobile">Development Services</h2>
         <p className="text-center">
           At Cynergy Studios, we execute feature-rich Android app using a modern
           tech stack. Our Android app
@@ -126,14 +127,14 @@ const page = () => {
               </p>
             </div>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 mgTop25">
             <img
               src="./images/image85.png"
               alt="image85"
               className="w-100 z-3 position-relative mid-mob"
             />
           </div>
-          <div className="col-md-3 d-flex align-items-center justify-content-evenly flex-column">
+          <div className="col-md-3 d-flex mgTop25 align-items-center justify-content-evenly flex-column">
             <div className="panelBoxRight">
               <h4>Stringent Testing Process</h4>
               <p>
@@ -156,11 +157,11 @@ const page = () => {
         </div>
       </div>
 
-      <div className="DevelopmentProcess">
+      <div className="DevelopmentProcess appMobilePaddingSmall">
         <div className="container">
           <div className="row">
             <div className="col-md-8">
-              <h2>Developers Adequacies</h2>
+              <h2 className="mainHeadingMobile">Developers Adequacies</h2>
               <p>
                 Skilled developers can lead your project scope up to the highest
                 level with constructive solutions to foster business growth.
@@ -257,7 +258,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="container androidDeveloper">
+      <div className="container androidDeveloper appMobilePadding">
         <div className="row">
           <div className="col-md-6 d-flex align-items-center justify-content-start">
             <img
@@ -267,8 +268,8 @@ const page = () => {
               style={{ margin: "-75px" }}
             />
           </div>
-          <div className="col-md-6">
-            <h2 className="text-end">Android Developers</h2>
+          <div className="col-md-6 footerSection">
+            <h2 className="text-end mainHeadingMobile">Android Developers</h2>
             <p className="text-end">
               Forming your Android app with a broad spectrum of expertise and
               proven track record. Hire a team of Cynergy Studios to accomplish
@@ -278,7 +279,7 @@ const page = () => {
               and challenges.
             </p>
             <div className="row mt-5 lines-andrd">
-              <div className="col-md-11">
+              <div className="col-md-11 line-area1">
                 <h4 className="text-end mt-2">Junior Developer</h4>
                 <p className="text-end">
                   Android developers often work alongside experienced Android
@@ -307,7 +308,7 @@ const page = () => {
                   engagement rates.
                 </p>
               </div>
-              <div className="col-md-1">
+              <div className="col-md-1 line-area2">
                 <img
                   src="./images/Group1707479692.png"
                   alt="Group1707479692"
@@ -319,11 +320,11 @@ const page = () => {
         </div>
       </div>
 
-      <div className="IosChoose">
+      <div className="IosChoose appMobilePaddingSmall">
         <div className="container">
           <div className="row">
             <div className="col-md-8">
-              <h2>Why Choose Us</h2>
+              <h2 className="mainHeadingMobile">Why Choose Us</h2>
               <p>
                 To streamline the entire process of development hire iOS
                 developers from Dignite Studios. Here, hiring an iOS developer
@@ -335,12 +336,14 @@ const page = () => {
               </p>
             </div>
             <div className="col-md-4 d-flex align-items-center justify-content-end">
+              <Link href="#getInTouch">
               <button className="second-btn">Start Your Project</button>
+              </Link>
             </div>
 
             <div className="col-md-4 mt-3">
               <div className="IosChooseBox">
-                <h4>Multi-Industry Discipline</h4>
+                <h4 className="mainHeadingMobile">Multi-Industry Discipline</h4>
                 <p>
                   We build an ingenious iOS app design portfolio to boost
                   businesses across international industries. We craft tailored
@@ -353,7 +356,7 @@ const page = () => {
             </div>
             <div className="col-md-4 mt-3">
               <div className="IosChooseBox">
-                <h4>Primed for Perfection</h4>
+                <h4 className="mainHeadingMobile">Primed for Perfection</h4>
                 <p>
                   Cynergy’s iOS app design services bestow the leading design
                   structure that undergoes in-house standards, meticulous
@@ -365,7 +368,7 @@ const page = () => {
             </div>
             <div className="col-md-4 mt-3">
               <div className="IosChooseBox">
-                <h4>A Decade of Scaling Design Heights</h4>
+                <h4 className="mainHeadingMobile">A Decade of Scaling Design Heights</h4>
                 <p>
                   Designing an iPhone app for years has created an interactive
                   approach to bring industries with innovative app idea with
@@ -378,7 +381,7 @@ const page = () => {
             </div>
             <div className="col-md-4">
               <div className="IosChooseBox">
-                <h4>Monetization Opportunities</h4>
+                <h4 className="mainHeadingMobile">Monetization Opportunities</h4>
                 <p>
                   Prevailing a well-designed and functional app can provide your
                   business with a competitive edge in the marketplace. Here, you
@@ -391,7 +394,7 @@ const page = () => {
             </div>
             <div className="col-md-4">
               <div className="IosChooseBox">
-                <h4>Embrace App Builder Technology</h4>
+                <h4 className="mainHeadingMobile">Embrace App Builder Technology</h4>
                 <p>
                   The leading iPhone app design company Cynergy Studios,
                   determines the finest app-builder technology to construct
@@ -404,7 +407,7 @@ const page = () => {
             </div>
             <div className="col-md-4">
               <div className="IosChooseBox">
-                <h4>Enhanced Security</h4>
+                <h4 className="mainHeadingMobile">Enhanced Security</h4>
                 <p>
                   Security is a top priority, especially when dealing with
                   sensitive customer data. We furnish a safe and secure app
@@ -423,10 +426,13 @@ const page = () => {
       <div className="my-4">
         <AppCta CtaHeading="Into an Innovative Mobile App." />
       </div>
+
       <div className="my-4">
         <FaqsSection faqs={faqData} />
       </div>
+
       <BudgetSection />
+      
       <Footer />
     </>
   );

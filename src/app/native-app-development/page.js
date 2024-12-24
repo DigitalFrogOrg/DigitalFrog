@@ -50,9 +50,9 @@ const page = () => {
 
       <WeCommitSlider />
 
-      <div style={{ backgroundColor: "#fffbf8" }}>
-        <div className="container-fluid mobile-experiences">
-          <h2 className="text-center fs-1">
+      <div style={{ backgroundColor: "#fffbf8" }} >
+        <div className="container-fluid mobile-experiences appMobilePaddingSmall">
+          <h2 className="text-center fs-1 mainHeadingMobile">
             Empowering Industries With <br /> State-Of The Art Solutions
           </h2>
           <p className="text-center">
@@ -69,8 +69,8 @@ const page = () => {
         </div>
       </div>
 
-      <div className="TechAndTools">
-        <h2>Development Process</h2>
+      <div className="TechAndTools appMobilePaddingSmall">
+        <h2 className="mainHeadingMobile">Development Process</h2>
         <p>
           We create accelerated methodologies to revolutionize native mobile app
           development processes for more competent
@@ -82,7 +82,7 @@ const page = () => {
         <div className="container mt-5">
           <div className="row">
             <div className="col-md-4">
-              <div className="MobileQaBoxes" style={{ height: "250px" }}>
+              <div className="MobileQaBoxes" style={{ minHeight: "250px" }}>
                 <h4>Product Analysis</h4>
                 <p>
                   To build highly intuitive native mobile applications we
@@ -91,8 +91,8 @@ const page = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-4">
-              <div className="MobileQaBoxes" style={{ height: "250px" }}>
+            <div className="col-md-4 mgTop15">
+              <div className="MobileQaBoxes" style={{ minHeight: "250px" }}>
                 <h4>Wireframes & Mockups</h4>
                 <p>
                   The top-notch Android and iOS developers of Cynergy Studios
@@ -101,8 +101,8 @@ const page = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-4">
-              <div className="MobileQaBoxes" style={{ height: "250px" }}>
+            <div className="col-md-4 mgTop15">
+              <div className="MobileQaBoxes" style={{ minHeight: "250px" }}>
                 <h4>Deployment</h4>
                 <p>
                   As per the client's approval, we start the development process
@@ -112,9 +112,9 @@ const page = () => {
               </div>
             </div>
           </div>
-          <div className="row mt-4">
+          <div className="row mt-4 mgTop15">
             <div className="col-md-4">
-              <div className="MobileQaBoxes" style={{ height: "250px" }}>
+              <div className="MobileQaBoxes" style={{ minHeight: "250px" }}>
                 <h4>Development</h4>
                 <p>
                   Final deployment on the App Store takes place after the
@@ -125,8 +125,8 @@ const page = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-4">
-              <div className="MobileQaBoxes" style={{ height: "250px" }}>
+            <div className="col-md-4 mgTop15">
+              <div className="MobileQaBoxes" style={{ minHeight: "250px" }}>
                 <h4>Support And Maintenance</h4>
                 <p>
                   After our native app development services, we establish
@@ -136,8 +136,8 @@ const page = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-4">
-              <div className="MobileQaBoxes" style={{ height: "250px" }}>
+            <div className="col-md-4 mgTop15">
+              <div className="MobileQaBoxes" style={{ minHeight: "250px" }}>
                 <h4>Prototype</h4>
                 <p>
                   After establishing wireframes we design a prototype of the app
@@ -153,7 +153,9 @@ const page = () => {
 
           <div className="row mt-5">
             <div className="col-md-12 d-flex align-items-center justify-content-center">
+            <a href="tel:13463608407">
               <button className="second-btn">Schedule A Call</button>
+            </a>
             </div>
           </div>
         </div>
@@ -162,8 +164,8 @@ const page = () => {
       <TechAndTools />
 
       <div style={{ backgroundColor: "#fffbf8" }}>
-        <div className="container workingWithCynergy">
-          <h2>Cynergy’s Knack Of Skills</h2>
+        <div className="container workingWithCynergy appMobilePadding">
+          <h2 className="mainHeadingMobile">Cynergy’s Knack Of Skills</h2>
           <p className="text-center">
             Over the past several years there has been a significant increase in
             the usage of smartphones, where people typically have become more
@@ -200,7 +202,7 @@ const page = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-3 mgTop25">
               <div className="workingWithCynergyBox">
                 <span></span>
                 <img
@@ -219,7 +221,7 @@ const page = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-3 mgTop25">
               <div className="workingWithCynergyBox">
                 <span></span>
                 <img
@@ -236,7 +238,7 @@ const page = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-3 mgTop25">
               <div className="workingWithCynergyBox">
                 <span></span>
                 <img
@@ -259,14 +261,16 @@ const page = () => {
           </div>
           <div className="row mt-5">
             <div className="col-md-12 d-flex align-items-center justify-content-center">
+            <a href="tel:13463608407">
               <button className="second-btn">Schedule A Call</button>
+            </a>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="container text-center OurChooseOpt">
-        <h2>Why Choose Us</h2>
+      <div className="container text-center OurChooseOpt appMobilePadding">
+        <h2 className="mainHeadingMobile">Why Choose Us</h2>
         <p>
           Since Cynergy Studios stepped into the world of digitalization, it has
           been marking a prestigious reputation in the
@@ -362,7 +366,9 @@ const page = () => {
         </div>
         <div className="row mt-5">
             <div className="col-md-12 d-flex align-items-center justify-content-center">
+            <a href="tel:13463608407">
               <button className="second-btn">Schedule A Call</button>
+            </a>
             </div>
           </div>
       </div>

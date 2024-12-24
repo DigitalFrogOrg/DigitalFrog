@@ -46,10 +46,10 @@ const Page = () => {
       <Header />
       <MainBanner MainBannerHeading="AI App Development<br /> Services" />
 
-      <div className="container app-testing">
+      <div className="container app-testing appMobilePadding">
         <div className="row">
           <div className="col-md-6 d-flex align-items-start justify-content-center flex-column">
-            <h2>Why is AI Important in Education?</h2>
+            <h2 className="mainHeadingMobile">Why is AI Important in Education?</h2>
             <p>
               Artificial Intelligence in education refers to the use of machine
               learning algorithms, data analytics, and AI-powered tools to
@@ -74,8 +74,8 @@ const Page = () => {
         </div>
       </div>
 
-      <div className="container AISoftwareDevelopment">
-        <h2>
+      <div className="container AISoftwareDevelopment appMobilePadding">
+        <h2 className="mainHeadingMobile">
           AI software development
           <br /> services we provide
         </h2>
@@ -101,7 +101,7 @@ const Page = () => {
               </p>
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 mgTop25">
             <div className="AISoftwareDevBox">
               <img src="./images/IconStore2.png" alt="IconStore2" />
               <h4>Custom AI applications</h4>
@@ -115,7 +115,7 @@ const Page = () => {
               </p>
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 mgTop25">
             <div className="AISoftwareDevBox">
               <img src="./images/IconStore3.png" alt="IconStore3" />
               <h4>Computer Vision</h4>
@@ -147,7 +147,7 @@ const Page = () => {
               </p>
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 mgTop25">
             <div className="AISoftwareDevBox">
               <img src="./images/IconStore5.png" alt="IconStore5" />
               <h4>Neural Networks</h4>
@@ -162,7 +162,7 @@ const Page = () => {
               </p>
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 mgTop25">
             <div className="AISoftwareDevBox">
               <img src="./images/IconStore6.png" alt="IconStore6" />
               <h4>Chatbots</h4>
@@ -180,9 +180,9 @@ const Page = () => {
         </div>
       </div>
 
-      <div className="KeyOfAi">
+      <div className="KeyOfAi appMobilePaddingSmall">
         <div className="container">
-          <h2>
+          <h2 className="mainHeadingMobile">
             Key Applications of AI
             <br /> Technology in Education
           </h2>
@@ -195,14 +195,14 @@ const Page = () => {
             content accordingly.
           </p>
           <div className="row mt-5">
-            <div className="col-md-6 pe-5">
+            <div className="col-md-6 paddingRight3">
               <img
                 src="./images/2353Group.png"
                 alt="2353Group"
                 className="w-100 h-100"
               />
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 footerSection">
               <h4>Intelligent Tutoring Systems (ITS):</h4>
               <p>
                 AI-based tutors can identify a student's strengths and
@@ -231,10 +231,10 @@ const Page = () => {
 
       <IOSAppDesignServices />
 
-      <div className="case-study py-5" style={{backgroundColor: "#fffbf8"}}>
+      <div className="case-study py-5 appMobilePaddingSmall" style={{backgroundColor: "#fffbf8"}}>
         <div className="row pt-5">
           <div className="col-md-12">
-            <h2>Benefits of AI in Education</h2>
+            <h2 className="mainHeadingMobile">Benefits of AI in Education</h2>
             <p>
               Our software development life cycle empowers companies to
               functionalize their brand identity by building an effective and
@@ -260,8 +260,8 @@ const Page = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-6">
-              <div className="up-to-mints-div">
+            <div className="col-md-6 mgTop25">
+              <div className="up-to-mints-div ">
                 <h4>UI/UX Research & Strategy</h4>
                 <p>
                   Our thorough research process involves interviews, usability
@@ -289,7 +289,7 @@ const Page = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 mgTop25">
               <div className="up-to-mints-div">
                 <h4>Wireframing</h4>
                 <p>
@@ -320,7 +320,7 @@ const Page = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 mgTop25">
               <div className="up-to-mints-div">
                 <h4>Iteration</h4>
                 <p>
@@ -348,7 +348,7 @@ const Page = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 mgTop25" >
               <div className="up-to-mints-div">
                 <h4>Deployment</h4>
                 <p>

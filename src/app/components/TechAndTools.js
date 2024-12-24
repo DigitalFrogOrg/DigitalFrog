@@ -47,9 +47,9 @@ const TechAndTools = () => {
 
   return (
     <div className="TechAndTools">
-      <div className="container">
-        <div className="row">
-          <h2>Technology And Tools</h2>
+      <div className="container appMobilePadding">
+        <div className="row ">
+          <h2 className="mainHeadingMobile">Technology And Tools</h2>
           <p>
             We impart cutting-edge tech solutions for your stellar web
             development projects that deliver exclusive

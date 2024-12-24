@@ -4,6 +4,7 @@ import AppCta from "../components/AppCta";
 import FaqsSection from "../components/FaqsSection";
 import BudgetSection from "../components/BudgetSection";
 import MainBanner from "../components/MainBanner";
+import Link from "next/link";
 
 const page = () => {
   const faqData = [
@@ -45,7 +46,7 @@ const page = () => {
       <Header />
       <MainBanner MainBannerHeading="Android App Design <br /> Services" />
 
-      <div className="why-choose-us">
+      <div className="why-choose-us appMobilePaddingSmall">
         <div className="container">
           <div className="row">
             <div className="col-md-6">
@@ -55,8 +56,8 @@ const page = () => {
                 className="w-100"
               />
             </div>
-            <div className="col-md-6 d-flex align-items-start justify-content-center flex-column ps-5">
-              <h2>Android Mobile App Design Company</h2>
+            <div className="col-md-6 d-flex align-items-start justify-content-center flex-column paddingLeft3">
+              <h2 className="mainHeadingMobile marginTopMobile">Android Mobile App Design Company</h2>
               <p>
                 Setting the eccentric platform of Android mobile app design
                 services for years, our top-notch company follows design
@@ -67,23 +68,27 @@ const page = () => {
                 beyond innovation to maximize user engagement and brand
                 identity.
               </p>
+            <Link href="#getInTouch">
               <button className="second-btn">Start Your Project</button>
+            </Link>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="container mobileAppDesign">
+      <div className="container mobileAppDesign appMobilePadding ">
         <div className="row">
-          <div className="col-md-6 d-flex align-items-start flex-column justify-content-center">
-            <h2> Mobile App Design Services</h2>
+          <div className="col-md-6 d-flex align-items-start mgBottom flex-column justify-content-center">
+            <h2 className="mainHeadingMobile"> Mobile App Design Services</h2>
             <p>
               Focusing on our definite approach and unwavering efforts to craft
               phenomenal Android mobile screens. Our well-qualified and
               experienced designers deliver ever-evolving custom designs to
               create user-friendly interfaces that stand out globally.
             </p>
-            <button className="second-btn">Start Your Project</button>
+            <Link href="#getInTouch">
+              <button className="second-btn">Start Your Project</button>
+            </Link>
           </div>
           <div className="col-md-6">
             <div className="row">
@@ -115,7 +120,7 @@ const page = () => {
                   </p>
                 </div>
               </div>
-              <div className="col-md-6">
+              <div className="col-md-6 mgTop25">
                 <div className="mobileAppDesignBox">
                   <img
                     src="./images/mobile-development_70753731.png"
@@ -152,11 +157,11 @@ const page = () => {
         </div>
       </div>
 
-      <div className="DesignProcess">
+      <div className="DesignProcess appMobilePaddingSmall">
         <div className="container">
           <div className="row">
             <div className="col-md-8">
-              <h2>Design Process</h2>
+              <h2 className="mainHeadingMobile">Design Process</h2>
               <p>
                 We harness tried-and-tested strategies to streamline the Android
                 app design process in full stack. To ensure the app
@@ -167,7 +172,9 @@ const page = () => {
               </p>
             </div>
             <div className="col-md-4 d-flex align-items-center justify-content-end">
+            <a href="tel:13463608407">
               <button className="second-btn">Schedule A Call</button>
+            </a>
             </div>
           </div>
           <div className="row mt-5">
@@ -265,10 +272,10 @@ const page = () => {
         </div>
       </div>
 
-      <div className="container highAndroid">
+      <div className="container highAndroid appMobilePadding">
         <div className="row">
           <div className="col-md-8">
-            <h2>Android Mobile App Design</h2>
+            <h2 className="mainHeadingMobile">Android Mobile App Design</h2>
             <p>
               The high-end Android mobile app design service scope lies in
               strategizing project flow with proficiency and addressing complex
@@ -278,7 +285,9 @@ const page = () => {
             </p>
           </div>
           <div className="col-md-4 d-flex align-items-center justify-content-end">
+          <a href="tel:13463608407">
             <button className="second-btn">Schedule A Call</button>
+          </a>
           </div>
         </div>
         <div className="row">
@@ -360,9 +369,9 @@ const page = () => {
         </div>
       </div>
 
-      <div className="WhyChooseUsMobile">
+      <div className="WhyChooseUsMobile appMobilePaddingSmall">
         <div className="container">
-          <h2>Why Choose Us</h2>
+          <h2 className="mainHeadingMobile">Why Choose Us</h2>
           <p className="text-center">
             We construct strategic, creative, and technical methodologies to
             produce an exceptional user experience that transcends
