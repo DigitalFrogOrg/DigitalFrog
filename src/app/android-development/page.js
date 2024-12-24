@@ -52,7 +52,7 @@ const page = () => {
       >
         <div className="row">
           <div className="col-md-6 d-flex align-items-start justify-content-center flex-column gap-4">
-            <h2>Android App Developer</h2>
+            <h2 className="mainHeadingMobile">Android App Developer</h2>
             <p>
               Make your Android app with strikingly enticing modern features and
               design elements. Our team of skilled developers thrive to produce
