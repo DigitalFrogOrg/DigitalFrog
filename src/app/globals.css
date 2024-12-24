@@ -5065,5 +5065,25 @@ section.recent_news {
   margin-top: 1rem !important;
 }
 
+.lines-1, .lines-2, .lines-3, .lines-4{
+  display: none !important;
+}
+.panelBoxLeft , .panelBoxRight{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.mid-mob{
+  margin: 0px;
+}
+.line-android{
+  width: 100%;
+  height: 95%;
+}
 
+.line-area1{
+  width: 75% !important;
+}
+.line-area2{
+  width: 25% !important;
+}
 }
