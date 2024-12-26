@@ -85,7 +85,7 @@ const handleFileChange = (e) => {
       <div id="getInTouch" className="budget-sec">
         <div className="container">
           <div className="row">
-            <div className="col-md-6 divPadding">
+            <div className="col-md-7 divPadding">
               {/* <img
                 src="/images/SmartObject.png"
                 alt="SmartObject"
@@ -126,14 +126,14 @@ const handleFileChange = (e) => {
 
               <h6>
                 Alternatively, contact us via phone
-                <a href="tel:13463608407"><span> +1 (346) 360-8407 </span></a>
+                <a href="tel:13463608407"><span style={{fontWeight:"bold"}}> +1 (346) 360-8407 </span></a>
                 or email
                 <a href="mailto:info@cynergystudio.com">
-                <span> info@cynergystudios.com</span>
+                <span style={{fontWeight:"bold"}}> info@cynergystudios.com</span>
                 </a>
               </h6>
             </div>
-            <div className="col-md-6 divPadding d-flex align-items-center">
+            <div className="col-md-5 divPadding d-flex align-items-center">
               <form onSubmit={handleSubmit} className="projectForm w-100">
                 <div className="row">
                   <div className="col-md-6 mt-3">

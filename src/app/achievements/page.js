@@ -7,7 +7,7 @@ const page = () => {
   return (
     <>
       <Header />
-      <div className="about-banner">
+      <div className="about-banner" style={{ paddingBottom: "2rem" }}>
         <div className="container">
           <div className="row">
             <div className="col-md-12">
@@ -32,7 +32,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="container achievements-page appMobilePadding">
+      <div className="container achievements-page appMobilePadding mt-4">
         <div className="row">
           <div className="col-md-6">
             <img

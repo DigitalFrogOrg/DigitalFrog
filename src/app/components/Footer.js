@@ -22,8 +22,8 @@ function footer() {
           <img
             src={
               theme === "light"
-                ? "./images/get-in-touch.png"
-                : "./images/get-in-touch-white.png"
+                ? "/images/get-in-touch.png"
+                : "/images/get-in-touch-white.png"
             }
             alt="get-in-touch"
             className="get-in-touch"
@@ -43,8 +43,8 @@ function footer() {
                 <img
                   src={
                     theme === "light"
-                      ? "./images/black-Logo.png"
-                      : "./images/white-Logo.png"
+                      ? "/images/black-Logo.png"
+                      : "/images/white-Logo.png"
                   }
                   alt="Logo"
                 />

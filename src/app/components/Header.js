@@ -116,15 +116,15 @@ function header() {
   }, []);
   return (
     <>
-      <header className="navbar navbar-expand-lg">
+      <header className="navbar navbar-expand-lg py-3">
         <div className="container-fluid" id="header">
           <Link href="/">
             <img
             className="logo"
               src={
                 theme === "light"
-                  ? "./images/black-Logo.png"
-                  : "./images/white-Logo.png"
+                  ? "/images/black-Logo.png"
+                  : "/images/white-Logo.png"
               }
               alt="Logo"
             />
@@ -245,7 +245,7 @@ function header() {
             </ul>
             {/* <div className={`${isOpen ? "d-none" : ""}`}> */}
               <div className="buttons">
-                <Link href="contact-us">
+                <Link href="/contact-us">
                 <button className="second-btn">
                   Contact Us
                 </button>
