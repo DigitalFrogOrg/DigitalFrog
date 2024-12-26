@@ -50,7 +50,7 @@ const page = () => {
         <div className="container">
           <div className="row webAppDevContainer">
             <div className="col-md-6 d-flex align-items-start justify-content-center flex-column gap-3">
-              <h2 className="mainHeadingMobile">Web App Development Company</h2>
+              <h2 className="mainHeadingMobile">PWA Development Company</h2>
               <p>
                 With years of proven track record, Cynergy Studios lays an
                 efficient structure to build a highly intuitive progressive web
@@ -77,7 +77,7 @@ const page = () => {
       <div className="container WebAppDevelopmentServices appMobilePadding">
         <div className="row">
           <div className="col-md-6 ">
-            <h2 className="mainHeadingMobile">Web App Development Services</h2>
+            <h2 className="mainHeadingMobile">PWA Development Services</h2>
           </div>
           <div className="col-md-6 paddingLeft3 d-flex align-items-center justify-content-center">
             <p>

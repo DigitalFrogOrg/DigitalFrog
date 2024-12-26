@@ -21,7 +21,7 @@ const CaseStudy = () => {
     <div className="case-study py-5 my-5 appMobilePaddingSmall">
       <div className="row">
         <div className="col-md-12">
-          <h2 className="mainHeadingMobile">Mobile Apps We Develop</h2>
+          <h2 className="mainHeadingMobile">Mobile Game We Develop</h2>
           <p>
             Diginite Studios creates top-notch mobile applications and
             cutting-edge mobile features for their users to clinch their potency

@@ -3,6 +3,7 @@ import "./media.css";
 import "../styles/global.css";
 import "bootstrap/dist/css/bootstrap.css";
 import AddBootstrap from "./addbootstrap/AddBootstrap";
+import BackToTop from "./components/BackToTop";
 
 export const metadata = {
   title: "Cynergy Studio",
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
       <body>
         <AddBootstrap />
         {children}
+        <BackToTop />
       </body>
     </html>
   );

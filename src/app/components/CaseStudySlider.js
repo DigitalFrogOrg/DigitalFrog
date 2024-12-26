@@ -47,6 +47,9 @@ const CaseStudySlider = () => {
                             <h2 className="mainHeadingMobile">Case Studies</h2>
                         </div>
                         <div className="col-md-6 d-flex align-items-center justify-content-end gap-2">
+                            <div className="second-btn ps-4 pe-4 py-2">
+                                All Work
+                            </div>
                             <button onClick={() => slider?.current?.slickPrev()}>
                                 {/* <FaArrowAltCircleLeft /> */}
                                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">

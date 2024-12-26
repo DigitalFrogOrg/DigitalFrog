@@ -61,7 +61,7 @@ function page() {
           <div className="row">
             <div className="col-md-6 d-flex align-items-center justify-content-center">
               <div className="text-section">
-                <h2 className="title-page mainHeadingMobile">Android App Development Company</h2>
+                <h2 className="title-page mainHeadingMobile">Mobile Game Development Company</h2>
                 <p className="title-page-p">
                   At Cynergy Studios, we have spent years delivering innovative
                   Android app development solutions on a global scale. Our team
@@ -243,7 +243,7 @@ function page() {
             <div className="col-md-9 py-5 d-flex align-items-center justify-content-center">
               <div className="text-section">
                 <h1 className="title-page mainHeadingMobile">
-                  Mobile app development services for <span>IOS & ANDROID</span>
+                  Mobile Game development services for <span>IOS & ANDROID</span>
                 </h1>
                 <p className="title-page-p">
                   Our software development life cycle empowers companies to

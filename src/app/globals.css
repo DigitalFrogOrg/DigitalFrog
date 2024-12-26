@@ -1907,6 +1907,35 @@ button.dive_buttons::before {
   width: 80%;
   margin: 0 auto;
 }
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+  background-color: #DC5F00;
+  color: white;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  background-color: #bf4d00;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
 .cs_detail_01 {
   background-color: #161d23;
   background-size: contain;
@@ -2589,12 +2618,17 @@ section.recent_news {
   color: #000 !important;
   padding: 26px 6px;
 }
+.accordion-button:not(.collapsed) {
+  border-bottom: none !important; /* Removes the border when expanded */
+}
+
 .second-section .accordion-button {
   width: 100%;
   border-bottom: 1px solid var(--orange);
+  /* border-bottom: 1px solid #848484; */
   background-color: #0000 !important;
   color: #000 !important;
-  padding: 20px 0px !important;
+  padding: 30px 0px !important;
   font-size: 40px !important;
   font-weight: bold !important;
   border-radius: 0px !important;
@@ -4552,14 +4586,32 @@ section.recent_news {
   transition: transform 0.3s ease;
 }
 .TechBoxSlide.scale-up {
-  background-image: url("/images/Rectangle955762.png");
-  background-position: 4px 29px;
-  background-repeat: no-repeat;
-  background-size: 99%;
-  transform: scale(1.5);
+  /* background-image: url("/images/Rectangle955762.png"); */
+  /* background-position: 70px 29px; */
+  /* background-repeat: no-repeat; */
+  /* background-size: 100%; */
+  /* transform: scale(1.5); */
+
+  /* height: 15rem;   */
+  /* border-radius: 20px; */
+  /* background-color: white; */
+  /* border-top: 2px solid var(--orange); */
+  /* border-bottom: 2px solid var(--orange); */
 }
 .TechBoxSlide.scale-up img {
-  box-shadow: none;
+  /* box-shadow: none; */
+}
+.TechBoxSlide.scale-up img {
+  transform: scale(1.5); 
+  border-top: 2px solid var(--orange);
+  border-bottom: 2px solid var(--orange);
+  transition: transform 0.3s ease;
+  /* box-shadow: none; */
+}
+
+.TechBoxSlide img{
+  width: 150px !important;
+  height: 120px !important;
 }
 
 .WebAppDevelopmentServices {
@@ -4628,8 +4680,11 @@ section.recent_news {
   font-size: 13px;
   margin: 0px;
 }
+.DevelopmentProcessBox:hover h4 {
+  color: var(--orange);
+}
 .DevelopmentProcessBox:hover {
-  background-image: url("/images/back-maintainence.png");
+  background-image: url("/images/Group3485457.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -5172,6 +5227,9 @@ button.dive_buttons::before {
 
 .lines-1, .lines-2, .lines-3, .lines-4{
   display: none !important;
+}
+.back-to-top{
+  left: 5px;
 }
 .panelBoxLeft , .panelBoxRight{
   margin-left: 0px;
