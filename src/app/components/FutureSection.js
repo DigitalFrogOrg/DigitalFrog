@@ -60,7 +60,7 @@ function FutureSection() {
               />
             </div>
           </div>
-          {/* <div className="row process-03">
+          <div className="row process-03">
             <div className="col-md-6">
               <img
                 src="./images/span-03.svg"
@@ -88,7 +88,7 @@ function FutureSection() {
                 </ol>
               </div>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </section>
