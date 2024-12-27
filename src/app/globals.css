@@ -78,6 +78,10 @@ input:focus::placeholder{
   max-width: 85% !important;
 }
 
+.webAppDevContainerFirst{
+  margin-top: 5rem !important;
+}
+
 .video-banner {
   /* background-image: url("/images/video-banner.png"); */
   /* background-position: center; */
@@ -5126,6 +5130,9 @@ color: var(--orange) !important;
    }
    .MobileQaBoxes{
     margin-top: 20px !important;
+  }
+  .webAppDevContainerFirst{
+    margin-top: 0px !important;
   }
 }
 

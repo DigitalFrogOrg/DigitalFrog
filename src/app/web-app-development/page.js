@@ -17,7 +17,7 @@ const page = () => {
 
       <div className="container-fluid webAppDev appMobilePadding">
         <div className="row webAppDevContainer">
-          <div className="col-md-6 d-flex align-items-start flex-column gap-4">
+          <div className="col-md-6 d-flex align-items-start flex-column gap-4 webAppDevContainerFirst">
             <h2 className="mainHeadingMobile">
               Web App Development
               <br /> Company
