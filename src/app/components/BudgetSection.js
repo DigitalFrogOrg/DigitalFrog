@@ -85,17 +85,17 @@ const handleFileChange = (e) => {
       <div id="getInTouch" className="budget-sec">
         <div className="container">
           <div className="row">
-            <div className="col-md-7 divPadding">
+            <div className="col-md-7">
               {/* <img
                 src="/images/SmartObject.png"
                 alt="SmartObject"
                 className="w-100 h-100"
               /> */}
-              <h2 style={{ fontFamily: "NobelUno-Bold !important" }} className="mainHeadingMobile">
+              <h2 style={{ fontFamily: "NobelUno-Bold !important" }} className="budgetHeading">
                 Exploring Our App
                 <br /> Development Services?
               </h2>
-              <h4 className="subHeading">Share Your Project Details!</h4>
+              <h4 className="subHeading my-4 budgetSubHeading">Share Your Project Details!</h4>
               <h3 className="mt-3 subHeading">
                 <img
                   src="/images/clock_icon.png"
@@ -124,7 +124,7 @@ const handleFileChange = (e) => {
               {/* <div className="divider"></div> */}
               <br />
 
-              <h6>
+              <h6 className="budgetLast">
                 Alternatively, contact us via phone
                 <a href="tel:13463608407"><span style={{fontWeight:"bold"}}> +1 (346) 360-8407 </span></a>
                 or email

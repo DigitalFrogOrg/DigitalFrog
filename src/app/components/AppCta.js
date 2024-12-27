@@ -7,11 +7,11 @@ const AppCta = ({CtaHeading}) => {
         <div className="row app-cta">
           <div className="col-md-1"></div>
           <div  className="col-md-6">
-            <h2>
+            <h2 className="innovativeHeading">
               {CtaHeading}
             </h2>
             <a className="scheduleBtn" href="tel:13463608407">
-            <button>
+            <button className="btn-schedule">
               Schedule A call
             </button>
             </a>

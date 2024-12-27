@@ -57,6 +57,8 @@ button.light-mode {
 }
 .navbar-expand-lg .navbar-collapse {
   align-items: center !important;
+  padding-top: 0.5rem ;
+  padding-bottom: 0.5rem ;
 }
 .Clock-style {
   width: 30px;
@@ -70,6 +72,10 @@ input:focus,select:focus{
 }
 input:focus::placeholder{
   color: var(--orange) !important;
+}
+
+.container{
+  max-width: 85% !important;
 }
 
 .video-banner {
@@ -131,15 +137,15 @@ header {
   /* position: fixed !important; */
   z-index: 99;
   width: 100%;
-  padding: 0px 60px;
+  padding: 0px 5.3% !important;
   position: relative;
-  border-bottom: solid 1px var(--white);
+  /* border-bottom: solid 1px var(--white); */
   /* -webkit-box-shadow: 0px 6px 28px -22px rgba(0, 0, 0, 0.75); */
   /* -moz-box-shadow: 0px 6px 28px -22px rgba(0, 0, 0, 0.75); */
   /* box-shadow: 0px 6px 28px -22px rgba(0, 0, 0, 0.75); */
 }
 .logo{
-  width: 150px !important;
+  width: 158px !important;
 }
 /* mega menu */
 .mega_menu {
@@ -161,6 +167,10 @@ header {
   opacity: 1;
   transition: padding-top 0.3s ease-in-out, max-height 0.5s ease-in-out,
     opacity 0.5s ease-in-out;
+}
+
+.navHeading{
+  font-size: 16px !important;
 }
 
 .contactusBtnArea{
@@ -285,9 +295,9 @@ button.whole-btn:hover {
   color: white;
   border: 1px solid var(--orange);
   border-radius: 40px;
-  padding: 13px 40px;
+  padding: 13px 30px;
   /* padding: 18px 44px; */
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   transition: 0.5s all;
   text-align: left;
@@ -671,7 +681,12 @@ ul.footer-info li a {
   font-weight: 600;
   color: var(--heading-color);
 }
-
+.accordion-header{
+  margin-top: 1rem;
+}
+.budgetHeading{
+  font-size: 2.5vw !important;
+}
 .accordion-button:not(.collapsed) {
   color: var(--orange) !important;
   background-color: #0000 !important;
@@ -679,6 +694,7 @@ ul.footer-info li a {
 }
 .accordion-body {
   text-align: left;
+  font-size: 18px !important;
 }
 .faqs .accordion-item {
   border: #d9d9d9 0px solid !important;
@@ -687,14 +703,14 @@ ul.footer-info li a {
   background-color: #f9f9f9 !important;
 }
 .accordion-item .number {
-  font-size: 30px;
-  color: #b5b5b5;
+  font-size: 50px;
+  color: #B5B5B5;
   padding: 14px 2px 2px 26px;
   font-weight: bold;
 }
 .accordion-button {
   border-radius: 0px 10px 10px 0px !important;
-  font-size: 18px !important;
+  font-size: 24px !important;
   background-color: #f9f9f9 !important;
   font-weight: bold !important;
 }
@@ -729,7 +745,13 @@ ul.footer-info li a {
 }
 .budg-sec {
   background-color: #f7f7f7;
-  color: #000;
+  color: #2C3E52;
+  font-size: 18px;
+}
+.budgetLast{
+  color: #2C3E52;
+  font-size: 18px !important;
+  
 }
 .budg-sec ul {
   list-style: none;
@@ -2861,15 +2883,15 @@ section.recent_news {
 
 /* About page css */
 .about-banner {
-  padding: 100px 70px 0px 70px;
+  padding: 10px 70px 0px 0px;
   margin: 0px 0px 0px 0px;
-  border-top: 1px solid #d4d4d4;
+  /* border-top: 1px solid #d4d4d4; */
   background-color: #f8f8f8;
 }
 .about-banner h1 {
-  font-size: 60px !important;
-  font-weight: 600;
-  margin: 100px 0px 120px 0px;
+  font-size: 77px !important;
+  font-weight: 700;
+  margin: 100px 0px 18rem 0px;
 }
 .title-page-2 {
   font-size: 30px;
@@ -3496,9 +3518,20 @@ section.recent_news {
   -moz-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.3);
   border-radius: 12px;
-  padding: 24px 28px;
+  padding: 2rem 2rem 0.5rem 3rem;
   margin-top: 26px;
   min-height: 96%;
+}
+.cardHeading{
+  font-size: 30px !important;
+  font-weight: 600 !important;
+}
+.cardDesc{
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  color: #656565 !important;
+  line-height: 25px !important;
+  margin-top: 15px !important;
 }
 .up-to-mints-div h4 {
   font-weight: bold;
@@ -3526,6 +3559,9 @@ section.recent_news {
 }
 .up-to-mints-div:hover h4 {
   color: #fff;
+}
+.up-to-mints-div:hover p {
+  color: #fff !important;
 }
 .app-cta {
   background-color: var(--orange);
@@ -4308,10 +4344,11 @@ section.recent_news {
 .iosDesignBox {
   box-shadow: 0px 5.19px 16.62px 0px #f66a0026;
   background-color: var(--white);
-  padding: 45px 40px;
+  padding: 4rem 3rem 0.5rem 3rem;
   margin-top: 28px;
   border-radius: 20px;
-  min-height: 86%;
+  width: 95%;
+  min-height: 280px;
 }
 .iosDesignBox:hover {
   background-image: url("/images/Group1707479838.png");
@@ -4323,7 +4360,7 @@ section.recent_news {
 }
 .iosDesignBox:hover h4,
 .iosDesignBox:hover p {
-  color: var(--white);
+  color: var(--white) !important;
 }
 .iosDesignBox h4 {
   font-size: 24px;
@@ -4513,6 +4550,7 @@ section.recent_news {
 .DesignProcess {
   padding: 100px 0px;
   background-color: #fffbf8;
+  margin-top: 6rem !important;
 }
 .DesignProcess h2 {
   font-size: 55px;
@@ -4523,7 +4561,7 @@ section.recent_news {
 }
 
 .DesignProcessBox {
-  padding: 36px 28px;
+  padding: 3rem 1rem 1rem 1rem;
   background-color: var(--white);
   box-shadow: 1px 1px 23.21px 0px #0000001e;
   border-radius: 20px;
@@ -4531,7 +4569,7 @@ section.recent_news {
   cursor: pointer;
   transition: all 0.4s ease;
   margin-top: 20px;
-  min-height: 365px;
+  min-height: 400px;
 }
 .DesignProcessBox h4 {
   font-size: 24px;
@@ -4552,11 +4590,11 @@ section.recent_news {
   color: var(--white);
 }
 .DesignProcessBox:hover p {
-  color: var(--white);
+  color: var(--white) !important;
 }
 
 .highAndroid {
-  padding: 100px 0px;
+  padding: 40px 0px;
 }
 .highAndroid h2 {
   font-size: 55px;
@@ -4579,14 +4617,25 @@ section.recent_news {
   font-size: 14px;
 }
 
+.innovativeHeading{
+  font-size: 4.5vw !important;
+  font-weight: 700 !important;
+  margin-top: 30px !important;
+}
+.btn-schedule:hover{
+background-color: white !important;
+color: var(--orange) !important;
+}
 .MobileQaBoxes {
   background-color: var(--white);
   border-radius: 20px;
   box-shadow: 1px 1px 23.21px 0px #0000001e;
-  padding: 36px 20px 26px 20px;
+  padding: 4rem 2rem 0.5rem 2rem;
   text-align: center;
   transition: all 0.4s ease;
   cursor: pointer;
+  min-height: 260px;
+  width: 98%;
 }
 .MobileQaBoxes h4 {
   font-size: 24px;
@@ -4607,15 +4656,14 @@ section.recent_news {
   color: var(--white);
 }
 .MobileQaBoxes:hover p {
-  color: var(--white);
+  color: var(--white) !important;
 }
 
 .webAppDev {
-  padding: 100px 0px 100px 140px !important;
+  padding: 80px 0px 100px 140px !important;
 }
 .webAppDev h2 {
-  font-size: 55px;
-  font-weight: bold;
+ margin-top: 7rem;
 }
 
 /* TechAndTools Slider */
@@ -5015,13 +5063,34 @@ section.recent_news {
   color: var(--white) !important;
 }
 
+.budgetSubHeading{
+  font-size: 2.1vw !important;
+  font-weight: 500 !important;
+}
+
 .divPadding{
   padding-left: 3rem !important;
   padding-right: 3rem !important;
 }
 
+.mainHeadingMobile{
+  font-size: 3.9vw !important;
+  font-weight: 700 !important;
+}
+
+.paragraphText{
+  font-size: 18px !important;
+  line-height: 26px !important;
+  font-weight: 400 !important;
+  color: #454545 !important;
+  /* text-align: justify; */
+}
+
 .paddingLeft3{
   padding-left: 3rem !important;
+}
+.webAppDev h2{
+  margin-top: 2rem !important;
 }
 .paddingRight3{
   padding-right: 3rem !important;
@@ -5039,6 +5108,15 @@ section.recent_news {
   .divPadding{
     padding-left: 0rem !important;
     padding-right: 0rem  !important;
+  }
+  .container{
+    max-width: 100% !important;
+  }
+  .paragraphText{
+    margin-top: 20px !important;
+  }
+  .mobileCardPadding{
+    padding: 1.5rem !important;
   }
   .sticky-number {
     height: 260px;
@@ -5085,6 +5163,7 @@ button.dive_buttons::before {
   .bannerContainer{
     height: 250px !important;
   }
+ 
   .whole-btn2 {
     background: transparent;
     border: 1px solid var(--orange);
@@ -5119,8 +5198,12 @@ button.dive_buttons::before {
  .appMobilePaddingSmall{
   padding: 50px 10px !important;
  }
- .mainHeadingMobile{
+ .mainHeadingMobile,.budgetHeading{
   font-size: 6.5vw !important;
+ }
+ .budgetLast{
+  font-size: 16px !important;
+  line-height: 24px !important;
  }
  .navappImg img{
   width: 30% !important;              
@@ -5166,6 +5249,7 @@ button.dive_buttons::before {
   position: absolute;
   bottom: 10px;
 }
+
 .mobile-cta{
   margin: 0px 0px 0px 12px !important;
 }
@@ -5189,8 +5273,17 @@ button.dive_buttons::before {
 .mgTopNegative15{
   margin-top: -15px !important;
 }
+.iosDesignBox,.MobileQaBoxes{
+  width: 100% !important;
+}
+.removemb{
+  margin-bottom: 10rem !important;
+}
 .mgBottom25{
   margin-bottom: 25px !important;
+}
+.innovativeHeading{
+  font-size: 70px !important;
 }
 .blogSection2{
   margin: 0 !important;
@@ -5200,8 +5293,9 @@ button.dive_buttons::before {
   margin-top: 2rem !important;
 }
 
-.about-banner h1{
+.about-banner h1 {
   font-size: 7vw !important;
+  margin: 100px 0px 5rem 0px;
 }
 
 .paddingLeft3{
@@ -5326,7 +5420,16 @@ button.dive_buttons::before {
   width: 100%;
   height: 95%;
 }
-
+.accordion-header{
+  margin-top: 0 !important;
+}
+.accordion-button{
+  font-size: 16px !important;
+  margin-right: 10px !important;
+}
+.accordion-body{
+  font-size: 14px !important;
+}
 .line-area1{
   width: 75% !important;
 }

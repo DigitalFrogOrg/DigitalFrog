@@ -17,12 +17,12 @@ const page = () => {
 
       <div className="container-fluid webAppDev appMobilePadding">
         <div className="row webAppDevContainer">
-          <div className="col-md-6 d-flex align-items-start justify-content-center flex-column gap-4">
+          <div className="col-md-6 d-flex align-items-start flex-column gap-4">
             <h2 className="mainHeadingMobile">
               Web App Development
               <br /> Company
             </h2>
-            <p>
+            <p className="paragraphText col-md-11">
               Industry-leading web application development company Cynergy
               Studios holds exclusive practices to drive more value to
               businesses and enterprises. We develop top-notch custom apps,
@@ -48,7 +48,7 @@ const page = () => {
           Web Application
           <br /> Development Services
         </h2>
-        <p className="text-center">
+        <p className="text-center paragraphText">
           Unleash Cynergy’s intuitive web-based solutions in the growing market
           of Digital Space. We harness futuristic approaches to <br /> build
           intuitive web apps for businesses. Ensure a seamless web portal,
@@ -58,9 +58,9 @@ const page = () => {
         <div className="row">
           {section2Data.map((item,index)=>(
             <div className="col-md-6 mt-3" key={index}>
-            <div className="up-to-mints-div">
-              <h4>{item.heading}</h4>
-              <p>
+            <div className="up-to-mints-div mobileCardPadding">
+              <h4 className="cardHeading">{item.heading}</h4>
+              <p className="cardDesc">
                 {item.description}
               </p>
             </div>
@@ -75,17 +75,17 @@ const page = () => {
       <div className="DesignProcess appMobilePaddingSmall">
         <div className="container">
           <h2 className="text-center mainHeadingMobile">Web App Process</h2>
-          <p className="text-center">
+          <p className="text-center paragraphText">
             To build web applications strikingly absolute, we create
             constructive methodologies to fabricate a<br /> well-organized web
             app development process.
-          </p>
+          </p> 
           <div className="row">
             {section3Data?.map((item,i)=>(
               <div className="col-md-4" key={i}>
-              <div className="DesignProcessBox">
-                <h4>{item.heading}</h4>
-                <p>
+              <div className="DesignProcessBox mobileCardPadding">
+                <h4 className="cardHeading">{item.heading}</h4>
+                <p className="cardDesc text-center">
                     {item.description}
                 </p>
               </div>
@@ -104,7 +104,7 @@ const page = () => {
             <br /> With{" "}
             <span style={{ color: "#d35e1e" }}>Cynergy Studios</span>
           </h2>
-          <p className="text-center">
+          <p className="text-center paragraphText">
             Since we have refined the UI/UX design process of iOS apps, our top
             mobile app designers adhere to strict guidelines
             <br /> leveraging a broad suite of technologies, modernized
@@ -113,10 +113,10 @@ const page = () => {
           </p>
           <div className="row">
             {section5Data?.map((item,i)=>(
-                  <div className="col-md-6" key={i}>
-                  <div className="iosDesignBox">
-                    <h4>{item.heading}</h4>
-                    <p>
+                  <div className="col-md-6  mb-5" key={i}>
+                  <div className="iosDesignBox mobileCardPadding">
+                    <h4 className="cardHeading">{item.heading}</h4>
+                    <p className="cardDesc">
                       {item.description}
                     </p>
                   </div>
@@ -129,7 +129,7 @@ const page = () => {
       <div className="WhyChooseUsMobile appMobilePaddingSmall">
         <div className="container">
           <h2 className="mainHeadingMobile">Why Choose Us</h2>
-          <p className="text-center">
+          <p className="text-center paragraphText">
             We construct strategic, creative, and technical methodologies to
             produce an exceptional user experience that transcends
             <br /> the client’s requisites. Our phenomenal Android mobile app
@@ -139,9 +139,9 @@ const page = () => {
           <div className="row mt-5">
             {chooseUsData?.map((item,i)=>(
                <div className="col-md-4">
-               <div className="MobileQaBoxes">
-                 <h4>{item.heading}</h4>
-                 <p>
+               <div className="MobileQaBoxes mobileCardPadding">
+                 <h4 className="cardHeading">{item.heading}</h4>
+                 <p className="cardDesc">
                   {item.description}
                  </p>
                </div>
