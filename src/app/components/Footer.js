@@ -8,6 +8,7 @@ import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 
 function footer() {
+  const currentYear = new Date().getFullYear();
   const [theme, setTheme] = useState("light");
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme") || "light";
@@ -130,7 +131,7 @@ function footer() {
           <div className="row" style={{ alignItems: "center" }}>
             <div className="col-sm-5">
               <p>
-                Copyright @ 2024. <strong> Cynergy Studio</strong>. All Right
+                Copyright @ {currentYear}. <strong> Cynergy Studio</strong>. All Right
                 Reserved.
               </p>
             </div>
