@@ -4,6 +4,7 @@ import "../styles/global.css";
 import "bootstrap/dist/css/bootstrap.css";
 import AddBootstrap from "./addbootstrap/AddBootstrap";
 import BackToTop from "./components/BackToTop";
+import CallButton from "./components/CallButton";
 
 export const metadata = {
   title: "Cynergy Studio",
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
         <AddBootstrap />
         {children}
         <BackToTop />
+        <CallButton />
       </body>
     </html>
   );

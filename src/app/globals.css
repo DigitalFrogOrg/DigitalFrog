@@ -1950,9 +1950,8 @@ button.dive_buttons::before {
   width: 80%;
   margin: 0 auto;
 }
-.back-to-top {
+.back-to-top, .callBtn {
   position: fixed;
-  bottom: 20px;
   left: 20px;
   z-index: 1000;
   background-color: #DC5F00;
@@ -1969,12 +1968,25 @@ button.dive_buttons::before {
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
+.back-to-top{
+  bottom:80px;
+}
+.callBtn{
+  bottom: 20px !important;
+}
+
+
 .back-to-top.visible {
   opacity: 1;
   transform: translateY(0);
 }
+.callBtn.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
-.back-to-top:hover {
+
+.back-to-top:hover, .callBtn:hover {
   background-color: #bf4d00;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
