@@ -48,6 +48,7 @@ function footer() {
                       : "/images/white-Logo.png"
                   }
                   alt="Logo"
+                  className="logoFoot"
                 />
               </Link>
               <ul className="footer-info">
@@ -90,7 +91,7 @@ function footer() {
                 </ul>
               </div>
             </div>
-            <div className="col-sm-3 footerSection">
+            <div className="col-sm-3 whatwedo">
               <div className="footer-link">
                 <h5>What we do</h5>
                 <ul>

@@ -372,7 +372,7 @@ ul.footer-info li a {
 }
 
 .footer-link ul li {
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   font-size: 16px;
   color: var(--text-color);
 }
@@ -5104,10 +5104,38 @@ color: var(--orange) !important;
   margin-top: 3rem !important;
 }
 
+.logoFoot{
+  width: 16vw !important;
+}
+
+@media only screen and (max-width: 948px) {
+  .webAppDev{
+    padding-left: 40px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .webAppDevContainer{
+    gap: 30px !important;
+   }
+   .mainHeadingMobile,.budgetHeading{
+    font-size: 6vw !important;
+   }
+   .innovativeHeading{
+    font-size: 70px !important;
+   }
+   .MobileQaBoxes{
+    margin-top: 20px !important;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .divPadding{
     padding-left: 0rem !important;
     padding-right: 0rem  !important;
+  }
+  .logoFoot{
+    width: 14rem !important;
   }
   .container{
     max-width: 100% !important;
@@ -5224,10 +5252,7 @@ button.dive_buttons::before {
  .subHeading{
   font-size: 5vw !important;
  }
- .webAppDevContainer{
-  gap: 30px !important;
- }
-
+ 
  .case-study p{
   width: 100% !important;
  }
@@ -5242,9 +5267,7 @@ button.dive_buttons::before {
   padding: 12px 30px;
   margin-left: 30vw !important;
 }
-.MobileQaBoxes{
-  margin-top: 20px !important;
-}
+
 .scheduleBtn{
   position: absolute;
   bottom: 10px;
@@ -5256,6 +5279,11 @@ button.dive_buttons::before {
 .accordion-item .number{
   font-size: 20px;
 }
+
+.whatwedo{
+  margin-top: 70px !important;
+}
+
 .footerSection{
   margin-top: 50px !important;
 }
@@ -5282,9 +5310,7 @@ button.dive_buttons::before {
 .mgBottom25{
   margin-bottom: 25px !important;
 }
-.innovativeHeading{
-  font-size: 70px !important;
-}
+
 .blogSection2{
   margin: 0 !important;
   padding: 4rem 0.5rem !important;
