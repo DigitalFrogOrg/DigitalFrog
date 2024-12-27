@@ -63,6 +63,15 @@ button.light-mode {
   height: 30px;
   margin: 0px 10px 0 0px;
 }
+
+input:focus,select:focus{
+  box-shadow: none !important;
+  border-color: var(--orange) !important;
+}
+input:focus::placeholder{
+  color: var(--orange) !important;
+}
+
 .video-banner {
   /* background-image: url("/images/video-banner.png"); */
   /* background-position: center; */
