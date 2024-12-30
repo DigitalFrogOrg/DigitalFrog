@@ -22,7 +22,7 @@ const CaseStudy = () => {
       <div className="row">
         <div className="col-md-12">
           <h2 className="mainHeadingMobile">Mobile Game We Develop</h2>
-          <p>
+          <p className="paragraphText">
             Diginite Studios creates top-notch mobile applications and
             cutting-edge mobile features for their users to clinch their potency
             and worthiness. Our mobile app services endeavor to build Android

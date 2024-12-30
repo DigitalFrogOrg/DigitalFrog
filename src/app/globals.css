@@ -2937,24 +2937,30 @@ section.recent_news {
 }
 
 .text-section-hover {
-  padding: 20px 20px 6px 20px;
-  background-color: #fbfbfb;
+  padding: 2rem 1.5rem 0.5rem 2rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 5px 16px 0px #f66b0021;
+  -moz-box-shadow: 0px 5px 16px 0px #f66b0021;
+  box-shadow: 0px 5px 16px 0px #f66b0021;
   border-radius: 15px;
   margin: 20px 0;
+  box-shadow: 10px 5px 10px 0px #f66b0021;
 }
 
 .text-section-hover:hover {
   background-color: #dc5f00;
-  color: #fff;
+  color: #fff !important;
   cursor: pointer;
 }
 .text-section-hover:hover h1,
-.text-section-hover:hover h2 {
-  color: #fff;
+.text-section-hover:hover h2,
+.text-section-hover:hover p
+ {
+  color: #fff !important;
 }
 .top-ranked {
-  font-size: 66px;
-  font-weight: bold;
+  /* font-size: 66px;
+  font-weight: bold; */
 }
 .line-image {
   height: 540px;
@@ -3346,6 +3352,7 @@ section.recent_news {
   padding: 16px 26px;
   border-radius: 100px;
 }
+
 .benefits-of-working h2 {
   font-size: 66px;
   font-weight: bold;
@@ -3595,7 +3602,7 @@ section.recent_news {
   color: #656565;
 }
 .mid-app-divs {
-  padding: 26px;
+  padding: 2rem 2rem 0.5rem 2rem;
   border-radius: 16px;
   background-color: #fff;
   -webkit-box-shadow: 0px 5px 16px 0px #f66b0021;
@@ -3609,14 +3616,43 @@ section.recent_news {
   text-align: center;
   margin-top: 20px;
 }
+
+.pythonImg{
+  margin-left: 60%;
+  margin-bottom: 1rem;
+}
+.kotlinImg{
+  margin-left: 70%;
+  margin-bottom: -8rem;
+}
+.reactnativeImg{
+  margin-left: 90%;
+  margin-top: 10rem !important;
+}
+.rubyImg{
+  margin-left: -60%;
+  margin-top: 10rem !important;
+}
+.flutterImg{
+  margin-left: -40%;
+  margin-top: 8rem !important;
+}
+.xiosImg{
+  margin-left: -30%;
+  margin-top: 10rem !important;
+}
+
 .mid-app-divs:hover {
   cursor: pointer;
   transition: 0.4s all;
   background-color: var(--orange);
-  color: #fff;
+  color: #fff ;
 }
 .mid-app-divs:hover h4 {
   color: #fff;
+}
+.mid-app-divs:hover p {
+  color: #fff !important;
 }
 .mid-app-divs h4 {
   font-weight: bold;
@@ -5188,6 +5224,12 @@ color: var(--orange) !important;
   padding-right: 3rem !important;
 }
 
+.accordionText{
+  font-size: 60px !important;
+  font-weight: 600 !important;
+}
+
+
 .mainHeadingMobile{
   font-size: 3.9vw !important;
   font-weight: 700 !important;
@@ -5196,6 +5238,7 @@ color: var(--orange) !important;
 .paragraphText{
   font-size: 18px !important;
   line-height: 26px !important;
+  /* margin-top: 25px; */
   font-weight: 400 !important;
   color: #454545 !important;
   /* text-align: justify; */
@@ -5242,7 +5285,7 @@ color: var(--orange) !important;
   .webAppDevContainer{
     gap: 30px !important;
    }
-   .mainHeadingMobile,.budgetHeading{
+   .mainHeadingMobile,.budgetHeading,.accordionText{
     font-size: 6vw !important;
    }
    .innovativeHeading{
@@ -5353,7 +5396,7 @@ button.dive_buttons::before {
  .appMobilePaddingSmall{
   padding: 50px 10px !important;
  }
- .mainHeadingMobile,.budgetHeading{
+ .mainHeadingMobile,.budgetHeading,.accordionText{
   font-size: 6.5vw !important;
  }
  .budgetLast{
