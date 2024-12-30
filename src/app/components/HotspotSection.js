@@ -13,7 +13,7 @@ function HotspotSection() {
                 alt="World Map"
                 className="mapImage"
               />
-              <div className="hotspot" style={{ top: "-15%", left: "34%" }}>
+              <div className="hotspot" style={{ top: "1%", left: "33%" }}>
                 <div className="label">
                   <h6>USA</h6>
                   <p>
@@ -23,7 +23,7 @@ function HotspotSection() {
                 </div>
                 <div className="marker"></div>
               </div>
-              <div className="hotspot" style={{ top: "-8%", left: "61%" }}>
+              <div className="hotspot" style={{ top: "-0.2%", left: "55%" }}>
                 <div className="label">
                   <h6>UK</h6>
                   <p>
@@ -32,7 +32,7 @@ function HotspotSection() {
                 </div>
                 <div className="marker"></div>
               </div>
-              <div className="hotspot" style={{ top: "0%", left: "76%" }}>
+              <div className="hotspot" style={{ top: "23%", left: "76%" }}>
                 <div className="label">
                   <h6>USA</h6>
                   <p>1 E Erie St Ste 525 Chicago, IL 60611</p>
@@ -50,7 +50,7 @@ function HotspotSection() {
                 </div>
                 <div className="marker"></div>
               </div> */}
-              <div className="hotspot" style={{ top: "1%", left: "84%" }}>
+              <div className="hotspot" style={{ top: "30%", left: "89%" }}>
                 <div className="label">
                   <h6 style={{ width: "100px" }}>AUSTRALIA</h6>
                   <p>

@@ -50,7 +50,7 @@ const TechAndTools = () => {
       <div className="container appMobilePadding">
         <div className="row ">
           <h2 className="mainHeadingMobile">Technology And Tools</h2>
-          <p>
+          <p className="paragraphText">
             We impart cutting-edge tech solutions for your stellar web
             development projects that deliver exclusive
             <br /> programming languages, frameworks, and libraries that enable

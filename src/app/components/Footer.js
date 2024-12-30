@@ -8,6 +8,7 @@ import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 
 function footer() {
+  const currentYear = new Date().getFullYear();
   const [theme, setTheme] = useState("light");
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme") || "light";
@@ -22,8 +23,8 @@ function footer() {
           <img
             src={
               theme === "light"
-                ? "./images/get-in-touch.png"
-                : "./images/get-in-touch-white.png"
+                ? "/images/get-in-touch.png"
+                : "/images/get-in-touch-white.png"
             }
             alt="get-in-touch"
             className="get-in-touch"
@@ -43,10 +44,11 @@ function footer() {
                 <img
                   src={
                     theme === "light"
-                      ? "./images/black-Logo.png"
-                      : "./images/white-Logo.png"
+                      ? "/images/black-Logo.png"
+                      : "/images/white-Logo.png"
                   }
                   alt="Logo"
+                  className="logoFoot"
                 />
               </Link>
               <ul className="footer-info">
@@ -89,7 +91,7 @@ function footer() {
                 </ul>
               </div>
             </div>
-            <div className="col-sm-3 footerSection">
+            <div className="col-sm-3 whatwedo">
               <div className="footer-link">
                 <h5>What we do</h5>
                 <ul>
@@ -130,7 +132,7 @@ function footer() {
           <div className="row" style={{ alignItems: "center" }}>
             <div className="col-sm-5">
               <p>
-                Copyright @ 2024. <strong> Cynergy Studio</strong>. All Right
+                Copyright @ {currentYear}. <strong> Cynergy Studio</strong>. All Right
                 Reserved.
               </p>
             </div>

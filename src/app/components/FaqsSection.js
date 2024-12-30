@@ -2,7 +2,7 @@ import React from "react";
 
 function FaqItem({ questionId, question, answer, isOpen }) {
   return (
-    <div className="accordion-item mb-3">
+    <div className="accordion-item mb-3 ">
       <div className="number">{questionId}</div>
       <div className="w-100">
         <h2 className="accordion-header">
