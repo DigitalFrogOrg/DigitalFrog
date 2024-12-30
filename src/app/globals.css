@@ -4599,6 +4599,9 @@ section.recent_news {
 .IosChooseBox:hover h4 {
   color: var(--orange);
 }
+.IosChooseBox:hover p {
+  color: white !important;
+}
 .IosChooseBox:hover span {
   background-color: var(--orange);
 }
@@ -4741,7 +4744,7 @@ color: var(--orange) !important;
   background-color: var(--white);
   border-radius: 20px;
   box-shadow: 1px 1px 23.21px 0px #0000001e;
-  padding: 4rem 2rem 0.5rem 2rem;
+  padding: 3rem 1.5rem 1rem 1.5rem;
   text-align: center;
   transition: all 0.4s ease;
   cursor: pointer;
@@ -5031,20 +5034,20 @@ color: var(--orange) !important;
   background-color: var(--white);
   border-radius: 10px;
   margin: 10px 20px;
-  height: 520px;
+  min-height: 520px;
 }
 .weCommitbox img {
   border-radius: 10px;
 }
 .weCommitbox h4 {
   padding: 28px 28px 0px 28px;
-  font-size: 23px;
+  font-size: 30px;
   font-weight: bold;
   margin-bottom: 16px;
 }
 .weCommitbox p {
-  padding: 0px 24px 28px 28px;
-  font-size: 13px;
+  padding: 10px 24px 28px 28px;
+  font-size: 14px;
   color: #656565;
 }
 .weCommitboxNavs .slick-prev {
