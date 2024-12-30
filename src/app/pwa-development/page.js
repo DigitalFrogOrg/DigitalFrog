@@ -6,41 +6,10 @@ import BudgetSection from "../components/BudgetSection";
 import MainBanner from "../components/MainBanner";
 import TechAndTools from "../components/TechAndTools";
 import Link from "next/link";
+import { pwaDevelopmentService,faqData,developmentProcess,whyChooseUs } from "./data";
 
 const page = () => {
-  const faqData = [
-    {
-      questionId: "01",
-      question: "How much does a mobile app designer cost?",
-      answer:
-        "The cost of hiring a mobile app designer varies widely based on experience, location, and project complexity. On average, freelance designers may charge between $50 to $150 per hour, while design agencies can range from $100 to $250 per hour or more.",
-    },
-    {
-      questionId: "02",
-      question: "What does a mobile app designer do?",
-      answer:
-        "A mobile app designer is responsible for creating the visual elements and user experience of an app. They design the layout, icons, and overall aesthetics, ensuring the app is user-friendly and aligns with branding.",
-    },
-    {
-      questionId: "03",
-      question: "Who designs mobile apps?",
-      answer:
-        "Mobile apps are designed by a combination of professionals, including UI/UX designers, graphic designers, and sometimes product managers, who collaborate to create an intuitive and visually appealing user experience.",
-    },
-    {
-      questionId: "04",
-      question:
-        "What is the difference between an app developer and an app designer?",
-      answer:
-        "An app developer focuses on coding and building the app's functionality, while an app designer concentrates on the visual aspects and user experience. Both roles are essential for successful app development.",
-    },
-    {
-      questionId: "05",
-      question: "How can to improve the app experience?",
-      answer:
-        "To enhance the app experience, prioritize user feedback, conduct usability testing, streamline navigation, optimize loading times, and ensure consistent updates with new features. User-centric design and continuous improvement are key.",
-    },
-  ];
+
   return (
     <>
       <Header />
@@ -51,7 +20,7 @@ const page = () => {
           <div className="row webAppDevContainer">
             <div className="col-md-6 d-flex align-items-start justify-content-center flex-column gap-3">
               <h2 className="mainHeadingMobile">PWA Development Company</h2>
-              <p>
+              <p className="paragraphText col-md-11">
                 With years of proven track record, Cynergy Studios lays an
                 efficient structure to build a highly intuitive progressive web
                 app (PWA), connecting iOS, Android, and Web assets under a
@@ -80,7 +49,7 @@ const page = () => {
             <h2 className="mainHeadingMobile">PWA Development Services</h2>
           </div>
           <div className="col-md-6 paddingLeft3 d-flex align-items-center justify-content-center">
-            <p>
+            <p className="paragraphText col-md-11">
               Combining all the aspects of curating PWAs, the industry-leading
               progressive web application development company Cynergy Studios
               dispenses the premium layout to design PWAs. Heretofore, we
@@ -99,45 +68,16 @@ const page = () => {
             />
           </div>
           <div className="col-md-6 paddingLeft3 d-flex align-items-center justify-content-center flex-column">
-            <div className="WebAppDevBox">
-              <h4>Custom Progressive Web App Development</h4>
-              <p>
-                Customized PWAs are built with a merger of both web and
-                native-like app technologies to create stable cross-platform
-                apps with a single codebase. As, a PWA development company, we
-                use cutting-edge technologies to build your PWA.
+            {pwaDevelopmentService?.map((item,index)=>(
+              <div className="WebAppDevBox" key={index}>
+              <h4  className="cardHeading">{item?.heading}</h4>
+              <p className="cardDesc">
+                {item?.description}
               </p>
             </div>
-            <div className="WebAppDevBox">
-              <h4>Application Shell Architecture</h4>
-              <p>
-                With modern tools and technologies, high-performance PWAs can be
-                established that make your customers fall in love with your
-                native-like progressive web app experience. It enhances the
-                navigation, PWA's functionality, and trouble-free interactions
-                of your customer-centric PWAs.
-              </p>
-            </div>
-            <div className="WebAppDevBox">
-              <h4>PWA Migration</h4>
-              <p>
-                It indicates shifting the website to mobile with the process of
-                progressive web app development that is designed to function
-                like a regular native mobile app on your browsers without
-                installation. As a professional progressive web apps development
-                team we enable a secure and fastest way to migrate data across
-                browsers exclusively.
-              </p>
-            </div>
-            <div className="WebAppDevBox">
-              <h4>Responsive Web App Design</h4>
-              <p>
-                The design approach suggests responding to the user’s behavior
-                while creating PWAs based on the environment including screen
-                size, platform, and orientation. With the premier pwa app
-                development company, you can experience interactive solutions
-              </p>
-            </div>
+            ))}
+            
+          
           </div>
         </div>
       </div>
@@ -147,7 +87,7 @@ const page = () => {
           <div className="row">
             <div className="col-md-8">
               <h2 className="mainHeadingMobile">Development Process</h2>
-              <p>
+              <p className="paragraphText">
                 Manifesting key steps to your PWA idea, we follow an agile
                 methodology that allows us to fine-tune the PWA app development
                 process and craft feature-riched masterpieces of your
@@ -162,84 +102,19 @@ const page = () => {
           </div>
 
           <div className="row mt-5">
-            <div className="col-md-6">
+            {developmentProcess?.map((item,index)=>(
+              <div className="col-md-6" key={index}>
               <div className="DevelopmentProcessBox">
-                <h4>PWA Consulting</h4>
-                <p>
-                  PWA Consultants are professionals who have years of experience
-                  to provide tremendous recommendations and suggestions for your
-                  PWA development project idea, its futuristic scope, and strong
-                  methodology to develop PWA effectively. Get feature-rich PWA
-                  applications for your business to expand your business
-                  worldwide.
+                <h4 className="cardHeading">{item.heading}</h4>
+                <p className="cardDesc">
+                  {item.description}
                 </p>
               </div>
             </div>
-            <div className="col-md-6">
-              <div className="DevelopmentProcessBox">
-                <h4>PWA UI/UX Design</h4>
-                <p>
-                  PWA design builds an easy-to-use and user-friendly interface
-                  that provides a clear and concise menu with a limited number
-                  of options to assist users in finding their required
-                  information as quickly as possible. This results in enhanced
-                  user engagement and get more leads to your website. Here, our
-                  top PWA experts create intuitive UIUX app designs to establish
-                  a unique application shell architecture with strong app
-                  functionality. We provide the finest PWA solutions in
-                  designing wireframing, prototyping, and user testing.
-                </p>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="DevelopmentProcessBox">
-                <h4>PWA Development</h4>
-                <p>
-                  The progressive web app development incorporates best
-                  practices of mobile apps and websites to offer an app-like
-                  experience with a diversified development approach. It also
-                  has multiple frameworks like React, Angular, or Vue.js to
-                  manifest your app needs. If you set up a preferred development
-                  structure your PWA can work across all devices and can
-                  function offline
-                </p>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="DevelopmentProcessBox">
-                <h4>QA Testing</h4>
-                <p>
-                  While developing high-performing PWAs, our pre-eminent PWA
-                  development services provide manual and automated testing to
-                  ensure bug-free PWA development with a flawless operating
-                  system. We strive to impart business-oriented PWA solutions
-                  for our users, and also to seascape an effective landscape of
-                  custom progressive web app development.
-                </p>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="DevelopmentProcessBox">
-                <h4>PWA Deployment And Launch</h4>
-                <p>
-                  After the testing process, the team of progressive web app
-                  development services Initiates the launching phase, to deploy
-                  on the required platform. Here, we conduct effective measures
-                  throughout the process.
-                </p>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="DevelopmentProcessBox">
-                <h4>Support and Maintenance</h4>
-                <p>
-                  A progressive web app is easy to maintain under strong
-                  technical support 24/7. Our progressive web application
-                  development services resolve all your PWA issues and hurdles
-                  in the growth of your web app.
-                </p>
-              </div>
-            </div>
+            ))}
+
+            
+           
           </div>
         </div>
       </div>
@@ -251,7 +126,7 @@ const page = () => {
         style={{ backgroundColor: "#fff" }}
       >
         <h2 className="mainHeadingMobile">Web App Solutions</h2>
-        <p>
+        <p className="paragraphText">
           Our progressive web app development services craft an aesthetic
           landscape of progressive web apps with the
           <br /> latest PWA technology to make your app stand among leading PWA
@@ -460,7 +335,7 @@ const page = () => {
           <div className="row">
             <div className="col-md-8">
               <h2 className="mainHeadingMobile">Why Choose Us</h2>
-              <p>
+              <p className="paragraphText">
                 To streamline the entire process of development hire iOS
                 developers from Dignite Studios. Here, hiring an iOS developer
                 can ensure smooth collaboration and on-time delivery of
@@ -475,86 +350,23 @@ const page = () => {
               <button className="second-btn">Start Your Project</button>
              </Link>
             </div>
-
-            <div className="col-md-4 mt-3">
-              <div className="IosChooseBox">
-                <h4>Multi-Industry Discipline</h4>
-                <p>
-                  We build an ingenious iOS app design portfolio to boost
-                  businesses across international industries. We craft tailored
-                  solutions for your app idea and develop productive iPhone app
-                  designs holding a powerful process with in-depth research,
-                  seamless user experience
-                </p>
-                <span></span>
-              </div>
             </div>
-            <div className="col-md-4 mt-3">
-              <div className="IosChooseBox">
-                <h4>Primed for Perfection</h4>
-                <p>
-                  Cynergy’s iOS app design services bestow the leading design
-                  structure that undergoes in-house standards, meticulous
-                  specifications, and tested monitoring system to forge a
-                  well-versed validated approach that prevails myriad excellence
-                </p>
-                <span></span>
+            <div className="row mt-4">
+            {whyChooseUs.map((item, index) => (
+                <div className="col-md-4" key={index}>
+                <div className="IosChooseBox">
+                  <h4 className="cardHeading">{item.heading}</h4>
+                  <p className="cardDesc">
+                    {item.description}
+                  </p>
+                  <span></span>
+                </div>
               </div>
+            ))
+            }
             </div>
-            <div className="col-md-4 mt-3">
-              <div className="IosChooseBox">
-                <h4>A Decade of Scaling Design Heights</h4>
-                <p>
-                  Designing an iPhone app for years has created an interactive
-                  approach to bring industries with innovative app idea with
-                  cutting-edge tools and technologies to make your brand
-                  categorized among prestigious Apple award winners. The premium
-                  iPhone app UI\UX designing company
-                </p>
-                <span></span>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="IosChooseBox">
-                <h4>Monetization Opportunities</h4>
-                <p>
-                  Prevailing a well-designed and functional app can provide your
-                  business with a competitive edge in the marketplace. Here, you
-                  can avail better monetization opportunities to robust your
-                  business leads and generate revenue through our profitable
-                  strategies.
-                </p>
-                <span></span>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="IosChooseBox">
-                <h4>Embrace App Builder Technology</h4>
-                <p>
-                  The leading iPhone app design company Cynergy Studios,
-                  determines the finest app-builder technology to construct
-                  coercive infrastructure of finest app-builder technology to
-                  construct coercive infrastructureyour apps to make an
-                  effective communication path for the users.
-                </p>
-                <span></span>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="IosChooseBox">
-                <h4>Enhanced Security</h4>
-                <p>
-                  Security is a top priority, especially when dealing with
-                  sensitive customer data. We furnish a safe and secure app
-                  development environment with advanced security protocols that
-                  include data encryption for our users.Security is a top
-                  priority, especially when environment with advanced security
-                  protocols that include data encryption for our users.
-                </p>
-                <span></span>
-              </div>
-            </div>
-          </div>
+          
+           
         </div>
       </div>
 

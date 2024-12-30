@@ -184,6 +184,10 @@ header {
   justify-content: center;
 }
 
+.formContainer{
+  width: 45rem !important;
+}
+
 .mid-mega-option {
   display: flex;
   align-items: start;
@@ -310,6 +314,10 @@ button.whole-btn:hover {
 }
 button.second-btn span {
   font-size: 11px;
+}
+
+.second-btn:hover{
+  background-color: #bf4d00 !important;
 }
 
 button.second-btn i {
@@ -696,6 +704,7 @@ ul.footer-info li a {
   background-color: #0000 !important;
   box-shadow: none !important;
 }
+
 .accordion-body {
   text-align: left;
   font-size: 18px !important;
@@ -1970,6 +1979,7 @@ button.dive_buttons::before {
 
 .underlineHover:hover{
   text-decoration: underline;  
+  cursor: pointer;
 }
 .underlineHover a{
   color: #1f1f1f;
@@ -1988,6 +1998,10 @@ button.dive_buttons::before {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   height: auto; 
   overflow: hidden;
+}
+
+.formHeading{
+  font-size: 40px !important;
 }
 
 .call-icon {
@@ -2052,6 +2066,9 @@ button.dive_buttons::before {
   bottom: 20px !important;
 }
 
+.formHeading{
+  font-size: 35px !important;
+}
 
 .back-to-top.visible {
   opacity: 1;
@@ -4541,7 +4558,8 @@ section.recent_news {
 .IosChooseBox {
   box-shadow: 2px 2px 20px -6px #0000001e;
   background-color: var(--white);
-  padding: 26px 16px 6px 16px;
+  /* padding: 26px 16px 6px 16px; */
+  padding: 2rem 1.5rem 0rem 1.5rem;
   margin: 16px 0px;
   border-radius: 16px;
   text-align: center;
@@ -4831,7 +4849,8 @@ color: var(--orange) !important;
 }
 .WebAppDevBox {
   background-color: var(--white);
-  padding: 26px;
+  /* padding: 26px; */
+  padding: 2rem 2rem 1.5rem 2.5rem;
   border-radius: 12px;
   box-shadow: 1px 1px 23.21px 0px #0000001e;
   margin-top: 20px;
@@ -4856,7 +4875,7 @@ color: var(--orange) !important;
 }
 .WebAppDevBox:hover h4,
 .WebAppDevBox:hover p {
-  color: var(--white);
+  color: var(--white) !important;
 }
 
 .DevelopmentProcess {
@@ -5201,9 +5220,18 @@ color: var(--orange) !important;
   width: 16vw !important;
 }
 
+
 @media only screen and (max-width: 948px) {
   .webAppDev{
     padding-left: 40px !important;
+  }
+}
+
+@media only screen and (max-width: 831px) {
+  .budget-btns{
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    gap: 15px;
   }
 }
 
@@ -5484,11 +5512,7 @@ button.dive_buttons::before {
 .MobileAppTabs .tabs::-webkit-scrollbar{
  display: none !important;
 }
-.budget-btns{
-  flex-wrap: wrap;
-  justify-content:flex-start;
-  gap: 15px;
-}
+
 .formBtn{
   white-space: nowrap;
   padding: 10px 20px !important;
@@ -5537,6 +5561,9 @@ button.dive_buttons::before {
 }
 .mid-mob{
   margin: 0px;
+}
+.formHeading{
+  font-size: 25px !important;
 }
 .line-android{
   width: 100%;
