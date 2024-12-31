@@ -1,44 +1,33 @@
 "use client";
-import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
-import { FaBars } from "react-icons/fa6";
-import {
-  FaTimes,
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedinIn,
-} from "react-icons/fa";
-import Popup from "./Popup";
-// import { MdWbSunny } from "react-icons/md";
-// import { FaMoon } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { RxCross1 } from "react-icons/rx";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import Popup from "./Popup";
+import PopupMenu from "./PopupMenu";
 
-function header() {
+function Header() {
   const [activeTab, setActiveTab] = useState("development");
+  const [isOpen, setIsOpen] = useState(false); // Use a single state for toggling both menus
+  const [theme, setTheme] = useState("light");
+  const [dropdownOpen, setDropdownOpen] = useState(false); // State for controlling dropdown visibility
+  const [showButton, setShowButton] = useState(false); // State for scroll button
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+  const [isPopupVisible2, setIsPopupVisible2] = useState(false);
+
   const tabsContent = {
     development: {
       heading: "Development",
       links: [
         { href: "/web-app-development", text: "Web App Development Services" },
-        {
-          href: "/pwa-development",
-          text: "PWA Development Services",
-        },
-        {
-          href: "/native-app-development",
-          text: "Native App Development Service",
-        },
-        {
-          href: "/mobile-game-development",
-          text: "Mobile Game Development Services",
-        },
+        { href: "/pwa-development", text: "PWA Development Services" },
+        { href: "/native-app-development", text: "Native App Development Service" },
+        { href: "/mobile-game-development", text: "Mobile Game Development Services" },
       ],
       links2: [
-        {
-          href: "/ios-development",
-          text: "IOS Development Services",
-        },
+        { href: "/ios-development", text: "IOS Development Services" },
         { href: "/android-development", text: "Android Development Services" },
         { href: "/no-code-development", text: "No Code/Low Code Development Services" },
         { href: "/ai-app-development", text: "AI App Development Services" },
@@ -58,49 +47,22 @@ function header() {
       heading: "Maintenance & Consulting",
       links: [
         { href: "/mobile-app-consulting", text: "Mobile App Consulting Services" },
-        {
-          href: "/mobile-app-support",
-          text: "Mobile App Support & Maintenance Services",
-        },
+        { href: "/mobile-app-support", text: "Mobile App Support & Maintenance Services" },
       ],
-      links2: [{ href: "/mobile-app-testing", text: "Mobile App Testing Services" }],
+      links2: [
+        { href: "/mobile-app-testing", text: "Mobile App Testing Services" },
+      ],
     },
   };
 
-  const [showMenu, setShowMenu] = useState(false);
   const pathname = usePathname();
-  const [isPopupVisible, setIsPopupVisible] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
-  const [theme, setTheme] = useState("light");
-  const toggleNavbar = () => {
-    setIsOpen(!isOpen);
-  };
+
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme") || "light";
     setTheme(savedTheme);
     document.documentElement.setAttribute("data-theme", savedTheme);
-  }, []);
 
-  const toggleTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
-    setTheme(newTheme);
-    document.documentElement.setAttribute("data-theme", newTheme);
-    localStorage.setItem("theme", newTheme);
-  };
-
-  const togglePopup = () => {
-    setIsPopupVisible(!isPopupVisible);
-  };
-  const toggleMenu = () => {
-    setShowMenu(!showMenu);
-  };
-
-  const isActive = (href) => {
-    return pathname === href ? "active" : "";
-  };
-  const [showButton, setShowButton] = useState(false);
-
-  useEffect(() => {
+    // Handle scroll event for button visibility
     const handleScroll = () => {
       if (window.scrollY > 100) {
         setShowButton(true);
@@ -114,43 +76,57 @@ function header() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen); // Toggle both the mobile menu and full-screen menu
+  };
+
+
+  const toggleNavbarMobile = () => {
+    // setIsOpen(!isOpen)
+    // setDropdownOpen(!dropdownOpen)
+    setIsPopupVisible2(!isPopupVisible2); // Toggle both the mobile menu and full-screen menu
+  };
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!dropdownOpen); // Toggle the dropdown for mobile
+  };
+
+  const isActive = (href) => {
+    return pathname === href ? "active" : "";
+  };
+
   return (
     <>
       <header className="navbar navbar-expand-lg">
         <div className="container-fluid" id="header">
           <Link href="/">
             <img
-            className="logo"
-              src={
-                theme === "light"
-                  ? "/images/black-Logo.png"
-                  : "/images/white-Logo.png"
-              }
+              className="logo"
+              src={theme === "light" ? "/images/black-Logo.png" : "/images/white-Logo.png"}
               alt="Logo"
             />
           </Link>
           <button
             className="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
             onClick={toggleNavbar}
+            aria-expanded={isOpen ? "true" : "false"}
+            aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon"></span>
           </button>
+
           <div
-            className={`collapse navbar-collapse ${isOpen ? "d-none" : ""}`}
+            className={`collapse navbar-collapse ${isOpen ? "d-none" : ""}`}  // Show/hide navbar based on isOpen
             id="navbarSupportedContent"
           >
             <ul className={`navbar-nav m-auto ${isOpen ? "d-none" : ""}`}>
               <div className="navigation">
                 <ul>
-                  <li className="nav-item">
-                    <div className="what-we-do-container">
-                      <Link href="#" className="what-we-do navHeading">
+                <li className="nav-item">
+                <div className="what-we-do-container">
+                <Link href="#" className="what-we-do navHeading">
                         What We Do
                       </Link>
 
@@ -222,8 +198,9 @@ function header() {
                           </div>
                         </div>
                       </div>
-                    </div>
+                </div>
                   </li>
+                
                   <li>
                     <Link
                       href="/how-we-do-it"
@@ -243,84 +220,115 @@ function header() {
                 </ul>
               </div>
             </ul>
-            {/* <div className={`${isOpen ? "d-none" : ""}`}> */}
-              <div className="buttons">
-                <Link href="/contact-us">
-                <button className="second-btn">
-                  Contact Us
-                </button>
-                </Link>
-              </div>
-            {/* </div> */}
+            <div className="buttons">
+              <Link href="/contact-us">
+                <button className="second-btn">Contact Us</button>
+              </Link>
+            </div>
           </div>
         </div>
       </header>
-      {/* Button to toggle the menu */}
-      <div
-        className={`bars-btn-container ${(showMenu, showButton ? "show" : "")}`}
-      >
-        <button className="bars-btn" onClick={toggleMenu}>
-          {showMenu ? <FaTimes /> : <FaBars />}
+
+      {/* Button to toggle the full-screen menu */}
+      <div className={`bars-btn-container ${showButton ? "show" : ""}`}>
+        <button className="bars-btn" onClick={toggleNavbar}>
+          {isOpen ? <FaTimes /> : <FaBars />}
         </button>
       </div>
 
-      {/* Main full-screen menu */}
-      <div className={`main-full-menu ${showMenu ? "menu-active" : ""}`}>
+      {/* Full-screen menu */}
+      <div className={`main-full-menu ${isOpen ? "menu-active" : ""}`}>
         <div className="row h-100">
           <div className="col-md-8 h-100 right-main-menu">
             <Link href="/">
               <img
-                src={
-                  theme === "light"
-                    ? "./images/black-Logo.png"
-                    : "./images/white-Logo.png"
-                }
+                src={theme === "light" ? "./images/black-Logo.png" : "./images/white-Logo.png"}
                 alt="Logo"
               />
             </Link>
-
             <ul className="main-ul-li">
-              <li>
-                <Link href="/">Home</Link>
-              </li>
-              <li>
-                <Link href="/about-us">About us</Link>
-              </li>
-              <li>
-                <Link href="/app-development">What we do</Link>
-              </li>
-              <li>
-                <Link href="/how-we-do-it">How we do it</Link>
-              </li>
-              <li>
-                <Link href="/achievements">Achievements</Link>
-              </li>
-              <li>
-                <Link href="/faqs">Faqs</Link>
-              </li>
-              <li>
-                <Link href="/contact-us">Contact us</Link>
-              </li>
+              <li><Link href="/">Home</Link></li>
+              <li><Link href="/about-us">About Us</Link></li>
+             <li>
+            <Link href="#" onClick={toggleDropdown}>What We Do</Link>
+            {dropdownOpen && (
+                <div className="col-md-12 mid-mega-option">
+                  <ul>
+                  <li>
+                                <a
+                                onClick={toggleNavbarMobile}
+                                  onMouseEnter={() => setActiveTab("development")}
+                                  className={activeTab === "development" ? "active" : ""}
+                                >
+                                  Development
+                                </a>
+                                {isPopupVisible2 && 
+                                                                <div className="col-md-12 right-mega-menu">
+                                                                {/* <h2>{tabsContent[activeTab]?.heading || "Select a Category"}</h2> */}
+                                                                <div className="mobile-menu-updated">
+                                                                  <ul>
+                                                                    {tabsContent[activeTab]?.links?.map((link, index) => (
+                                                                      <li key={index}>
+                                                                        <Link href={link.href} className={isActive(link.href)}>
+                                                                          {link.text}
+                                                                        </Link>
+                                                                      </li>
+                                                                    ))}
+                                                                  </ul>
+                                                                  <ul>
+                                                                    {tabsContent[activeTab]?.links2?.map((link, index) => (
+                                                                      <li key={index}>
+                                                                        <Link href={link.href} className={isActive(link.href)}>
+                                                                          {link.text}
+                                                                        </Link>
+                                                                      </li>
+                                                                    ))}
+                                                                  </ul>
+                                                                </div>
+                                                              </div>
+                                }
+
+                                </li>
+                                <li>
+                                <a
+                                  onMouseEnter={() => setActiveTab("design")}
+                                  className={activeTab === "design" ? "active" : ""}
+                                >
+                                  Design
+                                </a>
+                                </li>
+                                <li>
+                                <a
+                                  onMouseEnter={() => setActiveTab("maintenance")}
+                                  className={activeTab === "maintenance" ? "active" : ""}
+                                >
+                                  Maintenance & Consulting
+                                </a>
+                                </li>
+                                </ul>
+                              </div>
+            )}
+            
+
+            
+          </li>
+              <li><Link href="/achievements">Achievements</Link></li>
+              <li><Link href="/faqs">FAQs</Link></li>
+              <li><Link href="/contact-us">Contact Us</Link></li>
             </ul>
 
             <ul className="social-media">
-              <li>
-                <FaFacebookF />
-              </li>
-              <li>
-                <FaInstagram />
-              </li>
-              <li>
-                <FaLinkedinIn />
-              </li>
+              <li><FaFacebookF /></li>
+              <li><FaInstagram /></li>
+              <li><FaLinkedinIn /></li>
             </ul>
           </div>
           <div className="col-md-4 left-menu-img h-100"></div>
         </div>
       </div>
 
-      {/* Mobile Screen Navbar */}
-      <div className={`mobile-sidebar ${isOpen ? "open" : ""}`}>
+      {/* Mobile Sidebar
+      <div className={`mobile-sidebar ${dropdownOpen ? "open" : ""}`}>
         <div className="div-header">
           <Link className="navbar-brand" href="/">
             <img src="./images/white-Logo.png" alt="MainLogo" />
@@ -330,61 +338,28 @@ function header() {
           </button>
         </div>
         <ul className="navbar-nav">
-          <li className="nav-item">
-            <Link className="nav-link" aria-current="page" href="/">
-              Home
-            </Link>
+          <li><Link href="/">Home</Link></li>
+          <li><Link href="/about-us">About</Link></li>
+          <li>
+            <Link href="#" onClick={toggleDropdown}>What We Do</Link>
+            {dropdownOpen && (
+              <div className="dropdown-menu">
+                <Link href="/web-app-development">Web App Development</Link>
+                <Link href="/pwa-development">PWA Development</Link>
+                <Link href="/mobile-app-development">Mobile App Development</Link>
+              </div>
+            )}
           </li>
-          <li className="nav-item">
-            <Link className="nav-link" href="/about-us">
-              About
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" href="/">
-              Services
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" href="/app-development">
-              What We Do
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" href="/how-we-do-it">
-              How We Do It
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" href="/achievements">
-              Achievements
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" href="/faqs">
-              Faqs
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" href="/contact-us">
-              Contact us
-            </Link>
-          </li>
+          <li><Link href="/how-we-do-it">How We Do It</Link></li>
+          <li><Link href="/achievements">Achievements</Link></li>
+          <li><Link href="/faqs">FAQs</Link></li>
+          <li><Link href="/contact-us">Contact Us</Link></li>
         </ul>
-      </div>
+      </div> */}
 
-      {isPopupVisible && <Popup togglePopup={togglePopup} />}
-
-      {/* Dark Mode Button */}
-      {/* <button
-        onClick={toggleTheme}
-        className={theme === "light" ? "light-mode" : "dark-mode"}
-        aria-label="Toggle Theme"
-      >
-        {theme === "light" ? <MdWbSunny /> : <FaMoon />}
-      </button> */}
+      {isPopupVisible && <Popup togglePopup={() => setIsPopupVisible(false)} />}
     </>
   );
 }
 
-export default header;
+export default Header;
