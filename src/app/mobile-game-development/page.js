@@ -44,7 +44,7 @@ function page() {
             </div>
             <div className="col-md-5 py-2 mgTop25 paddingRight3">
               <img
-                src="./images/third-section.png"
+                src="./images/gameImage.jpg"
                 alt="faqs-sec"
                 className="h-100 w-100"
               />

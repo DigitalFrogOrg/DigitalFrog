@@ -7,6 +7,7 @@ import HotspotSection from "../components/HotspotSection";
 import Link from "next/link";
 import { submitForm } from "@/api/formServices";
 import MainBanner from "../components/MainBanner";
+import { links } from "./data";
 
 const page = () => {
   const [formData, setFormData] = useState({
@@ -165,8 +166,8 @@ const page = () => {
               <div className="mt-3">
                 <input className="form-control"  ref={fileInputRef} type="file" name="file" onChange={handleFileChange} id="formFile" />
               </div> 
-              <div className='mt-2 d-flex align-items-center justify-content-end'>
-                    <button type='submit' disabled={loading} className='second-btn'>Send Message</button>
+              <div className='mt-2 d-flex align-items-center'>
+                    <button type='submit' disabled={loading} className='second-btn'>Submit Now</button>
               </div>
             </form>
           </div>
@@ -203,28 +204,24 @@ const page = () => {
           </div>
         </div>
 
-        <div className="row mt-5">
+        <div className="row" style={{ marginTop: "100px",marginBottom:'40px' }}>
           <div className="col-md-7">
             <div className="row">
               <div className="col-md-6">
                 <h6>Phones:</h6>
-                <ul className="phone-details">
-                  <li>+1 (415) 470-2865</li>
+                <ul className="phone-details gap-2">
+                  <li>+1 (346) 360-8407</li>
                   <li>info@cynergystudios.com</li>
                 </ul>
               </div>
               <div className="col-md-6">
                 <h6>Follow:</h6>
-                <ul className="social-media">
-                  <li>
-                    <FaFacebookF />
+                <ul className="social-media gap-4 mt-2">
+                  {links.map((item,i)=>(
+                  <li key={i} className="linkCircle">
+                    <img src={`/images/${item.imgUrl}.png`} />
                   </li>
-                  <li>
-                    <FaInstagram />
-                  </li>
-                  <li>
-                    <FaLinkedinIn />
-                  </li>
+                  ))}
                 </ul>
               </div>
             </div>

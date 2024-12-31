@@ -3377,6 +3377,24 @@ section.recent_news {
   margin-top: 26px;
 }
 
+.linkCircle{
+  padding: 10px 15px;
+  border: 1px solid #cbcbcb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.linkCircle:hover{
+  border-color: var(--orange);
+}
+
+.linkCircle img{
+  width: 20px;
+}
+
 .contact-main .social-media {
   display: flex;
   list-style: none;
