@@ -57,7 +57,7 @@ const page = () => {
                 <h1 className="title-page mainHeadingMobile">Mobile App Maintenance Company</h1>
                 <p className="title-page-p">
                   With years of proven track record in maintenance and support,
-                  Dignite Studios furnishes comprehensive mobile app maintenance
+                  Cynergy Studios furnishes comprehensive mobile app maintenance
                   services, compliance management services, and security
                   management services to keep your app updated and optimized to
                   ensure technological amelioration.
@@ -71,7 +71,7 @@ const page = () => {
                   productive business goals.
                 </p>
                 <Link href="#getInTouch">
-                  <button className="btn-app">Start Your Project</button>
+                  <button className="btn-app">Drop us a line</button>
                 </Link>
               </div>
             </div>
@@ -113,7 +113,7 @@ const page = () => {
         <div className="container">
           <h2 className="text-center mainHeadingMobile">Maintenance Process</h2>
           <p className="text-center">
-            The top management of Dignite Studios characterizes each support and
+            The top management of Cynergy Studios characterizes each support and
             maintenance step with beneficial
             <br />
             processes to streamline the app's performance and potency with
@@ -147,7 +147,7 @@ const page = () => {
                 <h3>Enhance App Quality</h3>
                 <p>
                   Under one roof you can build and maintain your application
-                  with the impeccable maintenance and support team of Dignite
+                  with the impeccable maintenance and support team of Cynergy
                   Studios. Here, we offer tremendous mobile solutions from
                   mobile app code to mobile app updates. Our services present
                   continuous support in developing several types of mobile apps
@@ -207,7 +207,7 @@ const page = () => {
                 In the modern times of technological enhancement software mobile
                 app support and maintenance is as necessary as a penny, to keep
                 the IT environment healthy and viable. So, are you wondering
-                about hiring app support and maintenance partners? At Dignite
+                about hiring app support and maintenance partners? At Cynergy
                 Studios, we not only update mobile applications but also
                 discover and implement new launch processes to scale apps in a
                 split second.
@@ -215,7 +215,7 @@ const page = () => {
             </div>
             <div className="col-md-5 d-flex justify-content-end align-items-center">
             <Link href="#getInTouch">
-              <button className="second-btn">Start Your Project</button>
+              <button className="second-btn">Drop us a line</button>
             </Link>
             </div>
           </div>
@@ -248,7 +248,7 @@ const page = () => {
                 <h4 className="mainHeadingMobile">Exeptional Performance</h4>
                 <p>
                   We prioritize user experience and optimization of performance
-                  closely. Dignite’s reliable services will develop your mobile
+                  closely. Cynergy’s reliable services will develop your mobile
                   app with the latest tools and technology to upgrade your
                   software.
                 </p>
@@ -286,7 +286,7 @@ const page = () => {
                 <h4 className="mainHeadingMobile">Transparency Processes</h4>
                 <p>
                   You will experience a transparent process throughout the
-                  project maintenance at Dignite Studios. With regular
+                  project maintenance at Cynergy Studios. With regular
                   monitoring, we provide progress reports to bring to your
                   knowledge timely.
                 </p>

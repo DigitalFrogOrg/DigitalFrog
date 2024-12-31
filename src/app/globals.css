@@ -3490,6 +3490,14 @@ section.recent_news {
   font-size: 50px;
   font-weight: bold;
 }
+
+.heading50{
+  font-size: 2.5vw;
+  font-weight: bold;
+  color : #292929
+}
+
+
 .app-quality-main h2 span {
   color: var(--orange);
 }
@@ -4774,6 +4782,13 @@ section.recent_news {
   color: #656565;
 }
 
+.contactUsPara{
+  font-size: 22.93px !important;
+  color: #AFAFAF !important;
+  line-height: 27px !important;
+  font-weight: 400 !important;
+}
+
 .DesignProcessBox:hover {
   background-color: var(--orange);
 }
@@ -5459,7 +5474,7 @@ button.dive_buttons::before {
  .appMobilePaddingSmall{
   padding: 50px 10px !important;
  }
- .mainHeadingMobile,.budgetHeading,.accordionText,.lineHeading,.cardHeading,.blogHeading,.blogHeadingSub{
+ .mainHeadingMobile,.budgetHeading,.accordionText,.lineHeading,.cardHeading,.blogHeading,.blogHeadingSub,.heading50{
   font-size: 6.5vw !important;
  }
  .budgetLast{

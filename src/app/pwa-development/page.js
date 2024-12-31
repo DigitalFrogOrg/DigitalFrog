@@ -29,7 +29,7 @@ const page = () => {
                 to meet the needs of the users.
               </p>
               <a href="tel:13463608407">
-                <button className="second-btn">Schedule A Call</button>
+                <button className="second-btn">Contact Us</button>
               </a>
             </div>
             <div className="col-md-6">
@@ -337,7 +337,7 @@ const page = () => {
               <h2 className="mainHeadingMobile">Why Choose Us</h2>
               <p className="paragraphText">
                 To streamline the entire process of development hire iOS
-                developers from Dignite Studios. Here, hiring an iOS developer
+                developers from Cynergy Studios. Here, hiring an iOS developer
                 can ensure smooth collaboration and on-time delivery of
                 projects. Our team of mobile app developers works closely to
                 lead to higher productivity and better app performance. You can
@@ -347,7 +347,7 @@ const page = () => {
             </div>
             <div className="col-md-4 d-flex align-items-center justify-content-end">
              <Link href="#getInTouch">
-              <button className="second-btn">Start Your Project</button>
+              <button className="second-btn">Drop us a line</button>
              </Link>
             </div>
             </div>

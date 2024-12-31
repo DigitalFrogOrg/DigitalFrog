@@ -34,7 +34,7 @@ const page = () => {
               of the app.
             </p>
             <Link href="#getInTouch">
-              <button className="second-btn">Start Your Project</button>
+              <button className="second-btn">Drop us a line</button>
             </Link>
           </div>
           <div className="col-md-6">

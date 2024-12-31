@@ -65,7 +65,7 @@ const MobileAppTabs = () => {
           <br /> technologies we use
         </h2>
         <p className="text-center">
-          The top management of Dignite Studios characterizes each support and
+          The top management of Cynergy Studios characterizes each support and
           maintenance step with beneficial
           <br />
           processes to streamline the app's performance and potency with

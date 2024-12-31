@@ -70,7 +70,7 @@ const page = () => {
                 keep your business at the forefront.
               </p>
               <Link href="#getInTouch">
-                <button className="second-btn">Start Your Project</button>
+                <button className="second-btn">Drop us a line</button>
               </Link>
             </div>
           </div>
@@ -240,7 +240,7 @@ const page = () => {
               <h4>End-to-End Testing</h4>
               <p>
                 Make your iOS mobile app journey vibrant and protected with
-                Dignite Studios. We systemize the entire process of designing
+                Cynergy Studios. We systemize the entire process of designing
                 iOS apps with full-end testing service to ensure the integrity
                 and believability of an app. We burgeon to yield adequate
                 strategies to make your iOS UIUX design guarded and secured.
@@ -258,7 +258,7 @@ const page = () => {
               <p>
                 By placing feedback option it helps to protect iPhone app design
                 projects from malfunctions and inappropriate design strategies.
-                The preeminent iOS app design company Dignite Studios, pursues
+                The preeminent iOS app design company Cynergy Studios, pursues
                 proper implementation of consumer feedback and makes liable
                 changes as required.By placing feedback option it helps to
                 protect iPhone app design projects from malfunctions and
@@ -277,7 +277,7 @@ const page = () => {
               <h2 className="mainHeadingMobile">Why Choose Us</h2>
               <p>
                 To streamline the entire process of development hire iOS
-                developers from Dignite Studios. Here, hiring an iOS developer
+                developers from Cynergy Studios. Here, hiring an iOS developer
                 can ensure smooth collaboration and on-time delivery of
                 projects. Our team of mobile app developers works closely to
                 lead to higher productivity and better app performance. You can

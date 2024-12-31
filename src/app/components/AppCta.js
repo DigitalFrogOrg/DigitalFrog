@@ -12,7 +12,7 @@ const AppCta = ({CtaHeading}) => {
             </h2>
             <a className="scheduleBtn" href="tel:13463608407">
             <button className="btn-schedule">
-              Schedule A call
+              Contact Us
             </button>
             </a>
           </div>

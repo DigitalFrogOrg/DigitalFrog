@@ -69,7 +69,7 @@ const page = () => {
                 identity.
               </p>
             <Link href="#getInTouch">
-              <button className="second-btn">Start Your Project</button>
+              <button className="second-btn">Drop us a line</button>
             </Link>
             </div>
           </div>
@@ -87,7 +87,7 @@ const page = () => {
               create user-friendly interfaces that stand out globally.
             </p>
             <Link href="#getInTouch">
-              <button className="second-btn">Start Your Project</button>
+              <button className="second-btn">Drop us a line</button>
             </Link>
           </div>
           <div className="col-md-6">
@@ -173,7 +173,7 @@ const page = () => {
             </div>
             <div className="col-md-4 d-flex align-items-center justify-content-end">
             <a href="tel:13463608407">
-              <button className="second-btn">Schedule A Call</button>
+              <button className="second-btn">Contact Us</button>
             </a>
             </div>
           </div>
@@ -202,7 +202,7 @@ const page = () => {
                   trends, behavior insights, and app performance. Our UIUX
                   design for Android apps shapes businesses to nurture
                   evolutionary growth.The leading Android app design services of
-                  Dignite Studios yield comprehensive market analysis by
+                  Cynergy Studios yield comprehensive market analysis by
                   recommending top design trends, behavior insights, and app
                   performance. Our UIUX design for Android apps shapes
                   businesses to nurture evolutionary growth.
@@ -286,7 +286,7 @@ const page = () => {
           </div>
           <div className="col-md-4 d-flex align-items-center justify-content-end">
           <a href="tel:13463608407">
-            <button className="second-btn">Schedule A Call</button>
+            <button className="second-btn">Contact Us</button>
           </a>
           </div>
         </div>
@@ -361,7 +361,7 @@ const page = () => {
                 build a custom app to generate third-party plugins and tools
                 that can easily integrated and run smoothly on an ERP system.
                 The first-class custom Android application development of
-                Dignite Studios prevails with practical methodologies to build
+                Cynergy Studios prevails with practical methodologies to build
                 an intuitive Android system for its consumers.
               </p>
             </div>
@@ -405,7 +405,7 @@ const page = () => {
               <div className="MobileQaBoxes">
                 <h4>Design Innovation</h4>
                 <p>
-                  Top-notch Android mobile app design company Dignite Studios
+                  Top-notch Android mobile app design company Cynergy Studios
                   caters to cutting-edge technologies to produce stand-alone
                   Android apps that help streamline our clients’ business
                   processes efficiently

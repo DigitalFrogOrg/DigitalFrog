@@ -27,7 +27,7 @@ const page = () => {
               products destined for launch and scale.
             </p>
             <Link href="#getInTouch">
-            <button className="second-btn">Start Your Project</button>
+            <button className="second-btn">Drop us a line</button>
             </Link>
           </div>
           <div className="col-md-6 footerSection">
@@ -82,7 +82,7 @@ const page = () => {
             </div>
             <div className="col-md-6 d-flex align-items-center justify-content-end footerSection">
             <Link href="#getInTouch">
-              <button className="second-btn">Start Your Project</button>
+              <button className="second-btn">Drop us a line</button>
             </Link>
             </div>
           </div>

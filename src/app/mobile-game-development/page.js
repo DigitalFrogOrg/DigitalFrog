@@ -32,13 +32,13 @@ function page() {
               <div className="text-section">
                 <h2 className="mainHeadingMobile">Discover Our History</h2>
                 <p className="paragraphText col-md-11 mt-4">
-                Leading with years of experience, Dignite Studios has been centering on the modernization of mobile software specifications to create magnificent web and mobile applications for their valuable clients. Our company of mobile business intelligence has a proven track record of triumphant mobile projects which are illustrious in today’s digital realm. 
+                Leading with years of experience, Cynergy Studios has been centering on the modernization of mobile software specifications to create magnificent web and mobile applications for their valuable clients. Our company of mobile business intelligence has a proven track record of triumphant mobile projects which are illustrious in today’s digital realm. 
                 <br />
                 <br />
                 We have achieved phenomenal growth in empowering diverse businesses with innovation and contemporary ideas to enliven various blueprints. We have globally earned remarkable endorsement and apprehension in the “INC 5000 list.” Throughout the journey, our unwavering focus has remained on transformation, client satisfaction, and making an indelible impact in the realms of technology and software.
                 </p>
                 <Link href="/contact-us">
-                  <button className="second-btn mt-3">Start Your Project</button>
+                  <button className="second-btn mt-3">Drop us a line</button>
                 </Link>
               </div>
             </div>
@@ -250,7 +250,7 @@ function page() {
                 <p className="paragraphText">
                   Turn your illustrations into an unprecedented model that
                   robust iOS mobile applications in an exclusive manner. From
-                  code to launch, the top-notch developers of Dignite Studios
+                  code to launch, the top-notch developers of Cynergy Studios
                   will transform your entire mobile app with eminent
                   methodologies of mobile development to make your app version
                   highly functional, optimized, systemized, and scalable on any
@@ -313,7 +313,7 @@ function page() {
             </div>
             <div className="col-md-3 d-flex align-items-center justify-content-end">
              <Link href="#getInTouch">
-              <button className="second-btn">Start Your Project</button>
+              <button className="second-btn">Drop us a line</button>
              </Link>
             </div>
           </div>

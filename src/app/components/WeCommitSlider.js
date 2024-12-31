@@ -78,7 +78,7 @@ const WeCommitSlider = () => {
                   devices such as tablets and iPads. In modern technology,
                   developing tablet apps are still in immense demand. With years
                   of successful experience the native app development company
-                  Dignite Studios has provided comprehensive native app
+                  Cynergy Studios has provided comprehensive native app
                   development services
                 </p>
               </div>

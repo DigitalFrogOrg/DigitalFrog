@@ -64,7 +64,7 @@ const IOSAppDesignServices = () => {
                   to roadmap the right path to your app idea, particularly to
                   dispense highly intuitive.
                 </p>
-                {/* <Link href="#getInTouch"><button>Start your project</button> </Link> */}
+                {/* <Link href="#getInTouch"><button>Drop us a line</button> </Link> */}
               </div>
             </div>
             <div>
@@ -78,7 +78,7 @@ const IOSAppDesignServices = () => {
                   out among global businesses. easy-to-use interfaces to hook
                   large audiences promptly.
                 </p>
-                {/* <Link href="#getInTouch"><button>Start your project</button> </Link> */}
+                {/* <Link href="#getInTouch"><button>Drop us a line</button> </Link> */}
               </div>
             </div>
             <div>
@@ -92,7 +92,7 @@ const IOSAppDesignServices = () => {
                   consumers or clients effectively. Our top iPhone app design
                   team uses multiple graphic combinations.
                 </p>
-                {/* <Link href="#getInTouch"><button>Start your project</button></Link> */}
+                {/* <Link href="#getInTouch"><button>Drop us a line</button></Link> */}
               </div>
             </div>
             <div>
@@ -106,7 +106,7 @@ const IOSAppDesignServices = () => {
                   out among global businesses. easy-to-use interfaces to hook
                   large audiences promptly.
                 </p>
-                {/* <Link href="#getInTouch"><button>Start your project</button> </Link> */}
+                {/* <Link href="#getInTouch"><button>Drop us a line</button> </Link> */}
               </div>
             </div>
           </Slider>

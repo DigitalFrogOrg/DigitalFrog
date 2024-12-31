@@ -16,7 +16,7 @@ export const developmentProcess = [
 
 export const whyChooseUs = [
     {heading:"Diversified Experience",description:"We hold productive web app development expertise with comprehensive data handling, in multiple client-focused industries like Education, Healthcare, eCommerce, and Fintech, etc. Our top PWA development services impart value-added assistance to meet customer satisfaction."},
-    {heading:"Multi-Module Approach",description:"Here we establish constructive methodologies to build progressive web apps efficiently. The professional development team of Dignite Studios furnishes various collaboration strategies to provide simple Staff Augmentation and managed delivery."},
+    {heading:"Multi-Module Approach",description:"Here we establish constructive methodologies to build progressive web apps efficiently. The professional development team of Cynergy Studios furnishes various collaboration strategies to provide simple Staff Augmentation and managed delivery."},
     {heading:"Customer-Centered Policy",description:"Our progressive web app development company views each project with attention to detail and focuses on a full-fledged development process to build web apps. Here we use modernized PWA technology to accomplish shared goals and long-term partnership"},
     {heading:"UI/UX design excellence",description:"Our first-class developers are moving towards the latest integration of the app adaptable with Mac and iOS platforms. Where you can directly compile iPad apps on the Mac through highly optimized iPad app development."},
     {heading:"Tech Mastery",description:"Cynergy’s dynamic team has professional experience in progressive web app technology and tools like Java, Angular React, and Vue to build apps swiftly and seamlessly."},

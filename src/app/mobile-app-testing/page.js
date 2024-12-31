@@ -239,7 +239,7 @@ const page = () => {
               </p>
             </div>
             <div className="col-md-5 d-flex align-items-center justify-content-end">
-              <button className="second-btn">Start Your Project</button>
+              <button className="second-btn">Drop us a line</button>
             </div>
           </div>
           <div className="row">
@@ -276,7 +276,7 @@ const page = () => {
                 <h4 className="text-center mt-2">Proven Track Record</h4>
                 <p className="text-center">
                   With our commitment to excellence, we take pride in delivering
-                  the best solutions to our clients and partners. Dignite’s
+                  the best solutions to our clients and partners. Cynergy’s
                   reliability and loyalty can’t be ever judged. We always strive
                   to produce the required mobile app testing procedure for
                   valuable customers under the mentioned testing time.

@@ -94,19 +94,19 @@ const page = () => {
       <div className="container contact-main appMobilePadding contactusContainer">
         <div className="row">
           <h6>
-            <Link href="/" style={{ color: "#000" }}>
+            <Link href="/" style={{ color: "#AFAFAF" }}>
               Home
-            </Link>{" "}
-            /{" "}
-            <Link href="/contact-us" style={{ color: "#000" }}>
-              Contact Us
             </Link>
+            <span className="ms-2 me-2" style={{ color: "#AFAFAF" }}>
+              /
+            </span>
+              Contact Us
           </h6>
         </div>
         <div className="row mt-3">
           <div className="col-md-7">
-            <h2>Got a project in mind?</h2>
-            <p>Fill in this form or send us an e-mail</p>
+            <h2 className="heading50">Got a project in mind?</h2>
+            <p className="contactUsPara">Fill in this form or <a style={{color:'#AFAFAF'}} href="mailto:info@cynergystudio.com">send us an e-mail</a></p>
             <form onSubmit={handleSubmit} className="contact-form">
               <input
                 type="text"

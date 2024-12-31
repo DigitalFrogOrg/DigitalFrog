@@ -22,7 +22,7 @@ const MaintenanceProcess = () => {
             <p>
               The glamour of ideation depends on the rigorous effort of mobile
               app development planning to accomplish the successful app
-              requirement. The experts of Dignite Studios develop tailor-made
+              requirement. The experts of Cynergy Studios develop tailor-made
               strategies and maintenance packages of eradicating bugs, and
               security rejuvenation to protect advanced features throughout the
               process.
