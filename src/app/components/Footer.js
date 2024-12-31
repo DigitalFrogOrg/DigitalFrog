@@ -57,8 +57,8 @@ function footer() {
                 </li>
                 <li>
                   <FaEnvelope />{" "}
-                  <a href="mailto:info@cynergystudio.com">
-                    info@cynergystudio.com
+                  <a href="mailto:info@cynergystudios.com">
+                    info@cynergystudios.com
                   </a>
                 </li>
                 <li>

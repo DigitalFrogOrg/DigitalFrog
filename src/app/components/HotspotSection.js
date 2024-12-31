@@ -6,6 +6,19 @@ function HotspotSection() {
     <>
       <div className="container-fluid hotspotSection">
         <div className="row">
+        <div className="col-md-4 d-flex align-items-center justify-content-center">
+            <div className="contactContainer">
+              <h2 className="fw-bold text60">
+                <strong>
+                  Let's Start <br /> Working Together.
+                  <br /> Get In Touch!
+                </strong>
+              </h2>
+              <Link href="#" className="btn">
+                Make An Appointment
+              </Link>
+            </div>
+          </div>
           <div className="col-md-8">
             <div className="mapContainer">
               <img
@@ -61,19 +74,7 @@ function HotspotSection() {
               </div>
             </div>
           </div>
-          <div className="col-md-4 d-flex align-items-center justify-content-center">
-            <div className="contactContainer">
-              <h2 className="fw-bold mainHeadingMobile">
-                <strong>
-                  Let's Start <br /> Working Together.
-                  <br /> Get In Touch!
-                </strong>
-              </h2>
-              <Link href="#" className="btn">
-                Make An Appointment
-              </Link>
-            </div>
-          </div>
+         
         </div>
       </div>
     </>

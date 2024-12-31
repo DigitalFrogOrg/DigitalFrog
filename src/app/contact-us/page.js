@@ -106,7 +106,7 @@ const page = () => {
         <div className="row mt-3">
           <div className="col-md-7">
             <h2 className="heading50">Got a project in mind?</h2>
-            <p className="contactUsPara">Fill in this form or <a style={{color:'#AFAFAF'}} href="mailto:info@cynergystudio.com">send us an e-mail</a></p>
+            <p className="contactUsPara">Fill in this form or <span style={{textDecoration:'underline'}}><a style={{color:'#AFAFAF'}} href="mailto:info@cynergystudios.com">send us an e-mail</a></span></p>
             <form onSubmit={handleSubmit} className="contact-form">
               <input
                 type="text"
@@ -174,22 +174,25 @@ const page = () => {
           <div className="col-md-4 footerSection">
             <div className="contact-right">
               <h4>What's next?</h4>
-              <div className="steps">
-                <div className="step-1">
-                  <p>
+              <div className="steps d-flex flex-column">
+                <div className="d-flex gap-4 my-3">
+                  <div className="col-md-1 lineCircle">1</div>
+                  <p className="col-md-10" style={{marginLeft:'55px'}}>
                     Our experts will review your requirements and reach out to
                     you within 1-2 business days.
                   </p>
                 </div>
-                <div className="step-2">
-                  <p>
+                <div className="d-flex  gap-4 my-3">
+                  <div className="col-md-1 lineCircle">2</div>
+                  <p className="col-md-10" style={{marginLeft:'55px'}}>
                     Our team will gather all the requirements for your project,
                     and if necessary, we'll sign an NDA to ensure complete
                     confidentiality and privacy.
                   </p>
                 </div>
-                <div className="step-3">
-                  <p>
+                <div className="d-flex gap-4 my-3">
+                  <div className="col-md-1 lineCircle">3</div>
+                  <p className="col-md-10" style={{marginLeft:'55px'}}>
                     We will create a detailed proposal and action plan for your
                     project, including estimates, timelines, and other essential
                     details.
@@ -207,7 +210,7 @@ const page = () => {
                 <h6>Phones:</h6>
                 <ul className="phone-details">
                   <li>+1 (415) 470-2865</li>
-                  <li>info@cynergystudio.com</li>
+                  <li>info@cynergystudios.com</li>
                 </ul>
               </div>
               <div className="col-md-6">

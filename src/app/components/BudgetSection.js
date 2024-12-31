@@ -128,7 +128,7 @@ const handleFileChange = (e) => {
                 Alternatively, contact us via phone
                 <a href="tel:13463608407"><span style={{fontWeight:"bold"}}> +1 (346) 360-8407 </span></a>
                 or email
-                <a href="mailto:info@cynergystudio.com">
+                <a href="mailto:info@cynergystudios.com">
                 <span style={{fontWeight:"bold"}}> info@cynergystudios.com</span>
                 </a>
               </h6>

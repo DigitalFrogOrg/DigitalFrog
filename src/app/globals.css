@@ -81,6 +81,23 @@ button.light-mode {
   padding-top: 0.5rem ;
   padding-bottom: 0.5rem ;
 }
+
+.lineCircle{
+  background-color: var(--orange);
+  color: #ffffff;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9;
+  border-radius: 50%;
+  width: 40px !important;
+  height: 40px !important;
+
+}
+
+
+
 .Clock-style {
   width: 30px;
   height: 30px;
@@ -3274,11 +3291,11 @@ section.recent_news {
 .steps::before {
   content: " ";
   display: block;
-  height: 290px;
+  height: 70%;
   width: 2px;
   background-color: #dcdcdc;
   position: absolute;
-  left: 32px;
+  left: 5%;
   top: 18px;
   z-index: 7;
 }
@@ -3295,11 +3312,12 @@ section.recent_news {
   text-align: center;
   background-color: var(--orange);
   font-size: 20px;
-  height: 67px;
-  width: 150px;
+  /* height: 3.5rem;
+  width: 6rem; */
+  padding: 15px 27px;
   margin: 6px 18px 18px 0px;
   color: #fff;
-  border-radius: 100px;
+  border-radius: 50%;
 }
 .step-2 {
   display: flex;
@@ -3315,11 +3333,12 @@ section.recent_news {
   text-align: center;
   background-color: var(--orange);
   font-size: 20px;
-  height: 70px;
-  width: 236px;
+  /* height: 3.5rem;
+  width: 6rem; */
+  padding: 15px 27px;
   margin: 6px 18px 18px 0px;
   color: #fff;
-  border-radius: 100px;
+  border-radius: 50%;
 }
 .step-3 {
   display: flex;
@@ -3335,11 +3354,12 @@ section.recent_news {
   text-align: center;
   background-color: var(--orange);
   font-size: 20px;
-  height: 70px;
-  width: 206px;
+  /* height: 3.5rem;
+  width: 6rem; */
+  padding: 15px 27px;
   margin: 6px 18px 18px 0px;
   color: #fff;
-  border-radius: 100px;
+  border-radius: 50%;
 }
 .contact-form input {
   border: 0px;
@@ -4782,8 +4802,12 @@ section.recent_news {
   color: #656565;
 }
 
+.text60{
+  font-size: 3vw !important;
+}
+
 .contactUsPara{
-  font-size: 22.93px !important;
+  font-size: 20px !important;
   color: #AFAFAF !important;
   line-height: 27px !important;
   font-weight: 400 !important;
@@ -5474,7 +5498,7 @@ button.dive_buttons::before {
  .appMobilePaddingSmall{
   padding: 50px 10px !important;
  }
- .mainHeadingMobile,.budgetHeading,.accordionText,.lineHeading,.cardHeading,.blogHeading,.blogHeadingSub,.heading50{
+ .mainHeadingMobile,.budgetHeading,.accordionText,.lineHeading,.cardHeading,.blogHeading,.blogHeadingSub,.heading50,.text60{
   font-size: 6.5vw !important;
  }
  .budgetLast{

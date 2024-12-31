@@ -53,8 +53,8 @@ const CallButton = () => {
           </svg>
           </div>
           <div className='underlineHover'>
-          <a href="mailto:info@cynergystudio.com">
-            info@cynergystudio.com
+          <a href="mailto:info@cynergystudios.com">
+            info@cynergystudios.com
           </a>
           </div>
          </div>
@@ -71,7 +71,7 @@ const CallButton = () => {
             <FaSkype color='#dc5f00' size={20} />
           </div>
           <div className='underlineHover'>
-            <a href="skype:cynergystudio?chat" target='_blank'>
+            <a href="skype:cynergystudios?chat" target='_blank'>
             Cynergy
             </a>
           </div>
