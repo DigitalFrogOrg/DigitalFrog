@@ -1801,6 +1801,12 @@ section.evolution-sec::after {
   background-repeat: no-repeat;
   background-size: 70%;
 }
+.smallParaText{
+  font-size: 15px !important;
+  line-height: 22px !important;
+  color: #454545 !important;
+  font-weight: 400 !important;
+}
 .phase_b-first-col::after {
   content: " ";
   font-family: "Poppins", sans-serif;
@@ -2540,6 +2546,9 @@ section.recent_news {
   line-height: 30px;
   font-family: "NobelUno-Light";
 }
+
+
+
 .one-test button {
   background-color: #f2f2f6;
   border: 1px solid #0000;
@@ -4638,6 +4647,9 @@ section.recent_news {
 .IosChooseBox:hover p {
   color: white !important;
 }
+.IosChooseBox:hover p.textBlack {
+  color: #454545 !important;
+}
 .IosChooseBox:hover span {
   background-color: var(--orange);
 }
@@ -4928,7 +4940,8 @@ color: var(--orange) !important;
 
 .DevelopmentProcessBox {
   background-color: var(--white);
-  padding: 36px;
+  /* padding: 36px; */
+  padding: 2rem 2.5rem 1rem 2.5rem;
   border-radius: 12px;
   box-shadow: 1px 1px 23.21px 0px #0000001e;
   cursor: pointer;
@@ -5154,24 +5167,28 @@ color: var(--orange) !important;
 }
 
 .lines-1 {
-  width: 600px !important;
+  width: 40% !important;
   left: -75px;
-  top: 330px;
+  top: 31%;
+}
+.lineHeading{
+  font-size: 1.5vw !important;
+  font-weight: 600 !important;
 }
 .lines-2{
-  width: 380px !important;
-  left: 150px;
-  top: 640px;
+  width: 28% !important;
+  left: 4%;
+  top: 58%;
 }
 .lines-3 {
-  width: 250px !important;
-  right: 190px;
-  top: 530px;
+  width: 18% !important;
+  right: 17%;
+  top: 52%;
 }
 .lines-4 {
-  width: 400px !important;
-  right: 100px;
-  bottom: 375px;
+  width: 25% !important;
+  right: 8%;
+  top: 60%;
 }
 .mid-mob{
   margin: -50px 0px 120px 0px;
@@ -5185,7 +5202,7 @@ color: var(--orange) !important;
   font-size: 55px;
 }
 .line-android{
-  width: 170%;
+  width: 100%;
   height: 485px;
   object-fit: cover;
 }
@@ -5267,11 +5284,19 @@ color: var(--orange) !important;
 }
 
 
+@media only screen and (min-width:1900px) {
+  .lineHeading{
+    font-size: 30px !important;
+  }
+}
+
 @media only screen and (max-width: 948px) {
   .webAppDev{
     padding-left: 40px !important;
   }
 }
+
+
 
 @media only screen and (max-width: 831px) {
   .budget-btns{
@@ -5396,7 +5421,7 @@ button.dive_buttons::before {
  .appMobilePaddingSmall{
   padding: 50px 10px !important;
  }
- .mainHeadingMobile,.budgetHeading,.accordionText{
+ .mainHeadingMobile,.budgetHeading,.accordionText,.lineHeading,.cardHeading{
   font-size: 6.5vw !important;
  }
  .budgetLast{
@@ -5564,6 +5589,8 @@ button.dive_buttons::before {
   padding: 10px 20px !important;
   font-size: 15px;
 }
+
+
 
 .popup-inner{
   max-height: 90%;
