@@ -123,8 +123,8 @@ function header() {
             className="logo"
               src={
                 theme === "light"
-                  ? "./images/black-Logo.png"
-                  : "./images/white-Logo.png"
+                  ? "/images/black-Logo.png"
+                  : "/images/white-Logo.png"
               }
               alt="Logo"
             />
@@ -150,7 +150,7 @@ function header() {
                 <ul>
                   <li className="nav-item">
                     <div className="what-we-do-container">
-                      <Link href="#" className="what-we-do">
+                      <Link href="#" className="what-we-do navHeading">
                         What We Do
                       </Link>
 
@@ -227,7 +227,7 @@ function header() {
                   <li>
                     <Link
                       href="/how-we-do-it"
-                      className={isActive("/how-we-do-it")}
+                      className={`${isActive("/how-we-do-it")} navHeading`}
                     >
                       How We Do It
                     </Link>
@@ -235,7 +235,7 @@ function header() {
                   <li>
                     <Link
                       href="/achievements"
-                      className={isActive("/achievements")}
+                      className={`${isActive("/achievements")} navHeading`}
                     >
                       Achievements
                     </Link>
@@ -245,7 +245,7 @@ function header() {
             </ul>
             {/* <div className={`${isOpen ? "d-none" : ""}`}> */}
               <div className="buttons">
-                <Link href="contact-us">
+                <Link href="/contact-us">
                 <button className="second-btn">
                   Contact Us
                 </button>

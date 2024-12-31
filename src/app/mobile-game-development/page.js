@@ -14,41 +14,10 @@ import BudgetSection from "../components/BudgetSection";
 import AppCta from "../components/AppCta";
 import MainBanner from "../components/MainBanner";
 import Link from "next/link";
+import {topRanked,faqData,benefitsWorking,uptoTime} from './data'
 
 function page() {
-  const faqData = [
-    {
-      questionId: "01",
-      question: "How much does it cost to build an Android app?",
-      answer:
-        "The cost of building an Android app can vary widely based on several factors, including the app's complexity, features, design, and the development team’s location and expertise. On average, a basic app can range from $5,000 to $50,000, while more complex applications with advanced features can cost upwards of $100,000. At Cynergy Studios, we provide tailored estimates based on your specific project requirements.",
-    },
-    {
-      questionId: "02",
-      question: "Is Android app development profitable?",
-      answer:
-        "Yes, Android app development can be highly profitable. With a vast user base and the increasing popularity of mobile applications, businesses can tap into new revenue streams through in-app purchases, subscriptions, and advertising. Additionally, Android apps often reach a wider audience due to the platform's global market share, particularly in emerging markets.",
-    },
-    {
-      questionId: "03",
-      question: "Which technology is best for Android app development?",
-      answer:
-        "The best technology for Android app development largely depends on the specific requirements of your project. Commonly used technologies include: <ul> <li><b>Java and Kotlin:</b> The primary programming languages for native Android app development.</li> <li><b>Flutter:</b>A UI toolkit by Google for building natively compiled applications for mobile, web, and desktop from a single codebase.</li> <li><b>React Native:</b> A popular framework for building cross-platform apps using JavaScript. At Cynergy Studios, we choose the technology that best aligns with your project goals and target audience.</li></ul>",
-    },
-    {
-      questionId: "04",
-      question: "Which software is required for Android app development?",
-      answer:
-        "To develop Android apps, several software tools are commonly used: <ul><li><b>Android Studio:</b>The official integrated development environment (IDE) for Android development.</li> <li><b>Java Development Kit (JDK):</b>Required for writing Java code.</li> <li><b>Android Software Development Kit (SDK):</b>A set of development tools for building Android apps.</li> <li><b>Emulators:</b>For testing apps on different Android devices and screen sizes. These tools enable developers to efficiently create, test, and deploy Android applications.</li></ul>",
-    },
-    {
-      questionId: "05",
-      question:
-        "How much does it cost to hire a custom Android application development agency?",
-      answer:
-        "The cost to hire a custom Android application development agency can vary based on factors such as the agency's expertise, location, and the complexity of your project. Typically, hourly rates can range from $25 to $150, depending on the agency’s experience and the services offered. For a complete project, costs can range from $10,000 to $200,000 or more. At Cynergy Studios, we offer flexible pricing models to fit your budget while delivering high-quality development services.",
-    },
-  ];
+ 
   return (
     <>
       <Header />
@@ -59,25 +28,21 @@ function page() {
       <div className="second-last-section appMobilePaddingSmall">
         <div className="container">
           <div className="row">
-            <div className="col-md-6 d-flex align-items-center justify-content-center">
+            <div className="col-md-7 d-flex align-items-center justify-content-center">
               <div className="text-section">
-                <h2 className="title-page mainHeadingMobile">Android App Development Company</h2>
-                <p className="title-page-p">
-                  At Cynergy Studios, we have spent years delivering innovative
-                  Android app development solutions on a global scale. Our team
-                  of expert Android developers is dedicated to enhancing your
-                  business dynamics through unmatched custom Android
-                  applications, stunning designs, and exceptional app
-                  conceptualization. We are committed to providing outstanding
-                  and reliable services tailored to meet industry standards and
-                  drive your success.
+                <h2 className="mainHeadingMobile">Discover Our History</h2>
+                <p className="paragraphText col-md-11 mt-4">
+                Leading with years of experience, Dignite Studios has been centering on the modernization of mobile software specifications to create magnificent web and mobile applications for their valuable clients. Our company of mobile business intelligence has a proven track record of triumphant mobile projects which are illustrious in today’s digital realm. 
+                <br />
+                <br />
+                We have achieved phenomenal growth in empowering diverse businesses with innovation and contemporary ideas to enliven various blueprints. We have globally earned remarkable endorsement and apprehension in the “INC 5000 list.” Throughout the journey, our unwavering focus has remained on transformation, client satisfaction, and making an indelible impact in the realms of technology and software.
                 </p>
                 <Link href="/contact-us">
-                  <button className="btn-app">Join Our Journey</button>
+                  <button className="second-btn mt-3">Start Your Project</button>
                 </Link>
               </div>
             </div>
-            <div className="col-md-6 py-2 mgTop25 paddingRight3">
+            <div className="col-md-5 py-2 mgTop25 paddingRight3">
               <img
                 src="./images/third-section.png"
                 alt="faqs-sec"
@@ -110,7 +75,7 @@ function page() {
                       aria-expanded="true"
                       aria-controls="collapseOne"
                     >
-                      <span className="mainHeadingMobile">
+                      <span className="accordionText">
                         Strategy
                       </span>
                     </button>
@@ -141,7 +106,7 @@ function page() {
                       aria-expanded="false"
                       aria-controls="collapseTwo"
                     >
-                      <span className="mainHeadingMobile">
+                      <span className="accordionText">
                         UI Design
                       </span>
                     </button>
@@ -172,7 +137,7 @@ function page() {
                       aria-expanded="false"
                       aria-controls="collapseThree"
                     >
-                      <span className="mainHeadingMobile">
+                      <span className="accordionText">
                         UX Design
                       </span>
                     </button>
@@ -203,7 +168,7 @@ function page() {
                       aria-expanded="false"
                       aria-controls="collapseFour"
                     >
-                      <span className="mainHeadingMobile">
+                      <span className="accordionText">
                         Front-end development
                       </span>
                     </button>
@@ -242,10 +207,10 @@ function page() {
           <div className="row">
             <div className="col-md-9 py-5 d-flex align-items-center justify-content-center">
               <div className="text-section">
-                <h1 className="title-page mainHeadingMobile">
-                  Mobile app development services for <span>IOS & ANDROID</span>
+                <h1 className="mainHeadingMobile">
+                  Mobile Game Development Services For <span>IOS & ANDROID</span>
                 </h1>
-                <p className="title-page-p">
+                <p className="paragraphText">
                   Our software development life cycle empowers companies to
                   functionalize their brand identity by building an effective
                   and powerful mobile app for its users. To create more clicks
@@ -266,10 +231,10 @@ function page() {
 
             <div className="col-md-7  py-2 mgTop25 paddingLeft3 paddingRight3">
               <div className="text-section">
-                <h1 className="title-page-2 mainHeadingMobile">
+                <h1 className="title-page-2">
                   <span>Android App Development</span>
                 </h1>
-                <p className="title-page-p-2">
+                <p className="paragraphText">
                   Struggling to find an innovative partner for your android
                   mobile app development? Here we offer the best mobile app
                   solutions to propel your business in the world of the mobile
@@ -279,10 +244,10 @@ function page() {
                 </p>
               </div>
               <div className="text-section">
-                <h1 className="title-page-2 mainHeadingMobile">
+                <h1 className="title-page-2">
                   <span>iOS App Development</span>
                 </h1>
-                <p className="title-page-p-2">
+                <p className="paragraphText">
                   Turn your illustrations into an unprecedented model that
                   robust iOS mobile applications in an exclusive manner. From
                   code to launch, the top-notch developers of Dignite Studios
@@ -312,55 +277,23 @@ function page() {
                 className="line-image"
               />
               <div>
-                <div className="text-section-hover">
-                  <h1 className="title-page-2 subHeading">
-                    Native Mobile App Development
-                  </h1>
-                  <p className="title-page-p-2">
-                    Our software development life cycle empowers companies to
-                    functionalize their brand identity by building an effective
-                    and powerful mobile app for its users.
-                  </p>
-                </div>
-                <div className="text-section-hover">
-                  <h1 className="title-page-2 subHeading">
-                    Cross-Platform App Developmen
-                  </h1>
-                  <p className="title-page-p-2">
-                    React Native, Xamarin, and Flutter are the most popular
-                    languages to increase a project's versatility, efficiency,
-                    and speed. Thus, that can be delivered promptly through our
-                    mobile application services.
-                  </p>
-                </div>
-                <div className="text-section-hover">
-                  <h1 className="title-page-2 subHeading">
-                    Hybrid Mobile App Development
-                  </h1>
-                  <p className="title-page-p-2">
-                    Mobile app development technologies have created a strong
-                    and unique amalgamate of cross-platform apps that cater to a
-                    suitable environment and we make it happen in a smooth way
-                    to provide a required mobile solution.
-                  </p>
-                </div>
-                <div className="text-section-hover">
-                  <h1 className="title-page-2 subHeading">
-                    Progressive Web App Development
-                  </h1>
-                  <p className="title-page-p-2">
-                    You can easily communicate with anyone with our exclusive
-                    progressive web app functionality, which is similar to
-                    native-like potential and competency.
-                  </p>
-                </div>
+                  {topRanked.map((item,i)=>(
+                      <div className="text-section-hover" key={i}>
+                      <h1 className="cardHeading">
+                        {item.heading}
+                      </h1>
+                      <p className="cardDesc">
+                        {item.description}
+                      </p>
+                      </div>
+                  ))}
               </div>
             </div>
             <div className="col-md-6 py-2 paddingRight3">
               <img
                 src="./images/solution.png"
                 alt="faqs-sec"
-                className="h-100 w-100"
+                className="w-100"
               />
             </div>
           </div>
@@ -380,103 +313,35 @@ function page() {
             </div>
             <div className="col-md-3 d-flex align-items-center justify-content-end">
              <Link href="#getInTouch">
-              <button className="btn-app">Start Your Project</button>
+              <button className="second-btn">Start Your Project</button>
              </Link>
             </div>
           </div>
           <div className="row">
-            <div className="col-md-4">
-              <div className="mid-app-divs">
-                <h4>Project Outlook</h4>
-                <p>
-                  Cynergy Studios eradicates all risk factors including
-                  incomplete business requirements, unrealistic client
-                  expectations, and conducts in-depth interviews concerning
-                  value-added improvements in the process, resources, and clear
-                  workflow to conduct the projects. We aim to meet project
-                  dimensions, milestones, and fast development in the given
-                  period. We have established hundreds of successful mobile app
-                  development projects by promising clients obligations{" "}
-                </p>
-              </div>
-            </div>
-
-            <div className="col-md-4">
-              <div className="mid-app-divs">
-                <h4>Collaboration</h4>
-                <p>
-                  Mobile apps we develop with proper research and interpretation
-                  to cater to in-depth project flow. Also, we contribute to
-                  collaborate frequently with the client to provide all the
-                  updates in the app's development process.Mobile apps we
-                  develop with proper research and interpretation to cater to
-                  in-depth project flow. Also, we contribute to collaborate
-                  frequently with the client to provide all the updates in the
-                  app's development process.
-                </p>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="mid-app-divs">
-                <h4>Cost Estimation</h4>
-                <p>
-                  Explore a wide range of factors that include creating mobile
-                  development effectively and under time constraints with our
-                  mobile app developers.Therefore, development costs vary from
-                  project to project, however clear and precise project
-                  estimation can help to build accurate mobile project planning
-                  by covering all its variables. We also analyze various
-                  complexities of the apps before moving it further.
-                </p>
-              </div>
-            </div>
+            {benefitsWorking.slice(0,3).map((item, i) => (
+               <div className="col-md-4" key={i}>
+               <div className="mid-app-divs">
+                 <h4 className="cardHeading">{item.heading}</h4>
+                 <p className="cardDesc">
+                   {item.description}
+                 </p>
+               </div>
+             </div>
+            ))
+            }
           </div>
           <div className="row">
-            <div className="col-md-4">
-              <div className="mid-app-divs">
-                <h4>Project Outlook</h4>
-                <p>
-                  Cynergy Studios eradicates all risk factors including
-                  incomplete business requirements, unrealistic client
-                  expectations, and conducts in-depth interviews concerning
-                  value-added improvements in the process, resources, and clear
-                  workflow to conduct the projects. We aim to meet project
-                  dimensions, milestones, and fast development in the given
-                  period. We have established hundreds of successful mobile app
-                  development projects by promising clients obligations{" "}
-                </p>
-              </div>
-            </div>
-
-            <div className="col-md-4">
-              <div className="mid-app-divs">
-                <h4>Collaboration</h4>
-                <p>
-                  Mobile apps we develop with proper research and interpretation
-                  to cater to in-depth project flow. Also, we contribute to
-                  collaborate frequently with the client to provide all the
-                  updates in the app's development process.Mobile apps we
-                  develop with proper research and interpretation to cater to
-                  in-depth project flow. Also, we contribute to collaborate
-                  frequently with the client to provide all the updates in the
-                  app's development process.
-                </p>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="mid-app-divs">
-                <h4>Cost Estimation</h4>
-                <p>
-                  Explore a wide range of factors that include creating mobile
-                  development effectively and under time constraints with our
-                  mobile app developers.Therefore, development costs vary from
-                  project to project, however clear and precise project
-                  estimation can help to build accurate mobile project planning
-                  by covering all its variables. We also analyze various
-                  complexities of the apps before moving it further.
-                </p>
-              </div>
-            </div>
+          {benefitsWorking.slice(3,6).map((item, i) => (
+               <div className="col-md-4" key={i}>
+               <div className="mid-app-divs">
+                 <h4 className="cardHeading">{item.heading}</h4>
+                 <p className="cardDesc">
+                   {item.description}
+                 </p>
+               </div>
+             </div>
+            ))
+            }
           </div>
         </div>
       </div>
@@ -489,7 +354,7 @@ function page() {
           <div className="row">
             <div className="col-md-12 py-5 d-flex align-items-center justify-content-center flex-column">
               <div className="text-section">
-                <h1 className="title-page mainHeadingMobile">Optimized Process</h1>
+                <h1 className=" mainHeadingMobile">Optimized Process</h1>
               </div>
               <img
                 src="./images/banner-bottom.png"
@@ -505,29 +370,29 @@ function page() {
 
       <div className="container-fluid navs-app appMobilePadding">
         <div className="row">
-          <div className="col-md-1"></div>
+          {/* <div className="col-md-1"></div> */}
           <div className="col-md-1 navappImg d-flex align-items-end">
             <img
               src="./images/App-Navs/python.svg"
               alt="python"
-              className="w-100  mb-5 tilt-effect"
+              className="w-100 pythonImg tilt-effect"
             />
           </div>
           <div className="col-md-1 navappImg d-flex align-items-center">
             <img
               src="./images/App-Navs/kotlin.svg"
               alt="kotlin"
-              className="w-100 mb-5 tilt-effect"
+              className="w-100 kotlinImg tilt-effect"
             />
           </div>
           <div className="col-md-1 navappImg d-flex align-items-start">
             <img
               src="./images/App-Navs/react-native.svg"
               alt="react-native"
-              className="w-100 mt-5 tilt-effect"
+              className="w-100 reactnativeImg tilt-effect"
             />
           </div>
-          <div className="col-md-4 ">
+          <div className="col-md-6">
             <img
               src="./images/App-Navs/main-laptop.png"
               alt="main-laptop"
@@ -538,24 +403,24 @@ function page() {
             <img
               src="./images/App-Navs/ruby.svg"
               alt="ruby"
-              className="w-100 mt-5 tilt-effect"
+              className="w-100 rubyImg tilt-effect"
             />
           </div>
           <div className="col-md-1 navappImg d-flex align-items-center">
             <img
               src="./images/App-Navs/flutter.svg"
               alt="flutter"
-              className="w-100 mb-5 tilt-effect"
+              className="w-100 flutterImg tilt-effect"
             />
           </div>
           <div className="col-md-1 navappImg d-flex align-items-end">
             <img
               src="./images/App-Navs/xios.svg"
               alt="xios"
-              className="w-100 mb-5 tilt-effect"
+              className="w-100 xiosImg tilt-effect"
             />
           </div>
-          <div className="col-md-1"></div>
+          {/* <div className="col-md-1"></div> */}
         </div>
       </div>
 
@@ -563,7 +428,7 @@ function page() {
         <div className="row">
           <div className="col-md-12">
             <h2 className="mainHeadingMobile">up-to-the-minute</h2>
-            <p>
+            <p className="paragraphText">
               Our software development life cycle empowers companies to
               functionalize their brand identity by building an effective and
               powerful mobile app for its users. To create more clicks and
@@ -575,68 +440,18 @@ function page() {
 
         <div className="container mt-5">
           <div className="row">
-            <div className="col-md-6">
+            {uptoTime.map((item, i) => (
+              <div className={`col-md-6 ${i > 1 ? "mt-3" : "mgTop15"} `} key={i}>
               <div className="up-to-mints-div">
-                <h4>User Centric Design</h4>
-                <p>
-                  Consider your users while structuring the layout of the app.
-                  Focusing on users will lead you to a victory-based app. And,
-                  to acquire user-appealing demographics the experts of Dignite
-                  Studios frame a highly interactive, innovative, and
-                  user-friendly app for your more active users, higher
-                  engagement, and wide audiences. Therefore, our top-tier mobile
-                  app development services lie in shaping a highly functional
-                  and operational software solution.
+                <h4 className="cardHeading">{item.heading}</h4>
+                <p className="cardDesc">
+                  {item.description}
                 </p>
               </div>
             </div>
-            <div className="col-md-6 mgTop25">
-              <div className="up-to-mints-div ">
-                <h4>Modern Technology</h4>
-                <p>
-                  Consider your users while structuring the layout of the app.
-                  Focusing on users will lead you to a victory-based app. And,
-                  to acquire user-appealing demographics the experts of Dignite
-                  Studios frame a highly interactive, innovative, and
-                  user-friendly app for your more active users, higher
-                  engagement, and wide audiences. Therefore, our top-tier mobile
-                  app development services lie in shaping a highly functional
-                  and operational software solution.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="row mt-4">
-            <div className="col-md-6">
-              <div className="up-to-mints-div">
-                <h4>Intuitive UX and UI</h4>
-                <p>
-                  Consider your users while structuring the layout of the app.
-                  Focusing on users will lead you to a victory-based app. And,
-                  to acquire user-appealing demographics the experts of Dignite
-                  Studios frame a highly interactive, innovative, and
-                  user-friendly app for your more active users, higher
-                  engagement, and wide audiences. Therefore, our top-tier mobile
-                  app development services lie in shaping a highly functional
-                  and operational software solution.
-                </p>
-              </div>
-            </div>
-            <div className="col-md-6 mgTop25">
-              <div className="up-to-mints-div">
-                <h4>Cross-Platform App</h4>
-                <p>
-                  Consider your users while structuring the layout of the app.
-                  Focusing on users will lead you to a victory-based app. And,
-                  to acquire user-appealing demographics the experts of Dignite
-                  Studios frame a highly interactive, innovative, and
-                  user-friendly app for your more active users, higher
-                  engagement, and wide audiences. Therefore, our top-tier mobile
-                  app development services lie in shaping a highly functional
-                  and operational software solution.
-                </p>
-              </div>
-            </div>
+            ))}
+          
+    
           </div>
         </div>
       </div>

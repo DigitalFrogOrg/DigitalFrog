@@ -7,7 +7,7 @@ const page = () => {
   return (
     <>
       <Header />
-      <div className="about-banner">
+      <div className="about-banner" style={{ paddingBottom: "2rem" }}>
         <div className="container">
           <div className="row">
             <div className="col-md-12">
@@ -32,24 +32,20 @@ const page = () => {
         </div>
       </div>
 
-      <div className="container achievements-page appMobilePadding">
+      <div className="container achievements-page appMobilePadding mt-4">
         <div className="row">
           <div className="col-md-6">
             <img
-              src="./images/achievement-page/image-1.png"
+              src="./images/achievement-page/orderPaying.png"
               alt="image-1"
               className="w-100"
             />
           </div>
           <div className="arrows-div mgTop25 col-md-6 d-flex align-items-start justify-content-center flex-column paddingLeft3">
             <img src="./images/achievement-page/arrow-1.png" alt="arrow-1" />
-            <h2 className="mainHeadingMobile">Active SOS</h2>
+            <h2 className="mainHeadingMobile">OrderPay: Mobile Ordering</h2>
             <p>
-              We may share the information that we collect, both personal and
-              non-personal, with third parties such as advertisers, contest
-              sponsors, promotional and marketing partners, and others who
-              provide our content or whose products or services we think may
-              interest you.
+            Take more tips, drive higher spend and turn tables faster, with the UK’s most cost-effective order and payment provider.We don’t believe in one-size-fits-all technology. Whether you’re a national restaurant chain, an independent cafe or an 18-hole golf course, we’ll help you find the right solution for your business.Let your customers order and pay the way that suits them, with no need to download an app or wait for a card terminal.
             </p>
             <div className="tags">
               <button>#softwaredevelopment</button>
@@ -85,13 +81,13 @@ const page = () => {
           </div>
           <div className="col-md-6 paddingLeft3 mgTop25">
             <img
-              src="./images/achievement-page/image-5.png"
+              src="./images/achievement-page/kcElite.png"
               className="w-100"
               alt="image-2"
             />
             <div className="arrows-div d-flex align-items-start justify-content-center flex-column mt-4">
               <img src="./images/achievement-page/arrow-1.png" alt="arrow-1" />
-              <h2 className="mainHeadingMobile">Disfruta</h2>
+              <h2 className="mainHeadingMobile">KC Elite ecommerce store</h2>
               <p>
                 We may share the information that we collect, both personal and
                 non-personal, with third parties such as advertisers, contest
@@ -102,7 +98,53 @@ const page = () => {
               <div className="tags">
                 <button>#softwaredevelopment</button>
                 <button>#strategy</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr className="my-5" />
+        <div className="row">
+          <div className="col-md-6 paddingRight3">
+            <img
+              src="./images/achievement-page/appStore.png"
+              className="w-100"
+              alt="image-2"
+            />
+            <div className="arrows-div d-flex align-items-start justify-content-center flex-column mt-4">
+              <img src="./images/achievement-page/arrow-1.png" alt="arrow-1" />
+              <h2 className="mainHeadingMobile">App Store Preview</h2>
+              <p>
+                We may share the information that we collect, both personal and
+                non-personal, with third parties such as advertisers, contest
+                sponsors, promotional and marketing partners, and others who
+                provide our content or whose products or services we think may
+                interest you.
+              </p>
+              <div className="tags">
+                <button>#softwaredevelopment</button>
                 <button>#designservices</button>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-6 paddingLeft3 mgTop25">
+            <img
+              src="./images/achievement-page/image-5.png"
+              className="w-100"
+              alt="image-2"
+            />
+            <div className="arrows-div d-flex align-items-start justify-content-center flex-column mt-4">
+              <img src="./images/achievement-page/arrow-1.png" alt="arrow-1" />
+              <h2 className="mainHeadingMobile">disfruta</h2>
+              <p>
+                We may share the information that we collect, both personal and
+                non-personal, with third parties such as advertisers, contest
+                sponsors, promotional and marketing partners, and others who
+                provide our content or whose products or services we think may
+                interest you.
+              </p>
+              <div className="tags">
+                <button>#designservices</button>
+                <button>#strategy</button>
               </div>
             </div>
           </div>
@@ -117,7 +159,7 @@ const page = () => {
             />
             <div className="arrows-div d-flex align-items-start justify-content-center flex-column mt-4">
               <img src="./images/achievement-page/arrow-1.png" alt="arrow-1" />
-              <h2 className="mainHeadingMobile">Pauseitive</h2>
+              <h2 className="mainHeadingMobile">Pauseitive </h2>
               <p>
                 We may share the information that we collect, both personal and
                 non-personal, with third parties such as advertisers, contest
@@ -127,7 +169,6 @@ const page = () => {
               </p>
               <div className="tags">
                 <button>#softwaredevelopment</button>
-                <button>#strategy</button>
                 <button>#designservices</button>
               </div>
             </div>
@@ -149,13 +190,13 @@ const page = () => {
                 interest you.
               </p>
               <div className="tags">
-                <button>#softwaredevelopment</button>
-                <button>#strategy</button>
                 <button>#designservices</button>
+                <button>#strategy</button>
               </div>
             </div>
           </div>
         </div>
+
         <hr className="my-5" />
         <div className="row">
           <div className="col-md-6 paddingRight3">
@@ -176,7 +217,6 @@ const page = () => {
               </p>
               <div className="tags">
                 <button>#softwaredevelopment</button>
-                <button>#strategy</button>
                 <button>#designservices</button>
               </div>
             </div>
@@ -198,9 +238,8 @@ const page = () => {
                 interest you.
               </p>
               <div className="tags">
-                <button>#softwaredevelopment</button>
-                <button>#strategy</button>
                 <button>#designservices</button>
+                <button>#strategy</button>
               </div>
             </div>
           </div>
