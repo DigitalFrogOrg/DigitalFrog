@@ -116,7 +116,7 @@ const BlogDetail = () => {
         </div>    
     </div>   
 
-     <div className="container WebAppDevelopmentServices appMobilePadding">
+     {/* <div className="container WebAppDevelopmentServices appMobilePadding">
         <div className="row">
           <div className="col-md-6 ">
             <h2 className="blogHeading" style={{fontWeight:'bold',fontSize:'55px'}}>Challenges of AI Integration in Education</h2>
@@ -154,10 +154,10 @@ const BlogDetail = () => {
            
           </div>
         </div>
-      </div> 
+      </div>  */}
 
     
-      <div
+      {/* <div
       
         className="IOSDevelopmentServices appMobilePaddingSmall"
         style={{paddingTop:'2rem',paddingBottom:'2rem'}}
@@ -277,9 +277,9 @@ const BlogDetail = () => {
           
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="blogLastSection">
+      <div className="blogLastSection mt-5">
         <p className="text-center mobSmallHeading" style={{fontSize:'36px',fontWeight:'700',color:'#fff'}}>Have More Questions Or Ready To <span style={{color:'#DC5F00'}}>Start Building</span> <br /> Your Dream product?</p>
         <div className="row d-flex align-items-center justify-content-center" style={{marginTop:'-2rem'}}>
              <div className={`contactusBtnArea`}>
