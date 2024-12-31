@@ -50,7 +50,7 @@ const Page = () => {
         <div className="row">
           <div className="col-md-6 d-flex align-items-start justify-content-center flex-column">
             <h2 className="mainHeadingMobile">Why is AI Important in Education?</h2>
-            <p>
+            <p className="paragraphText">
               Artificial Intelligence in education refers to the use of machine
               learning algorithms, data analytics, and AI-powered tools to
               enhance teaching and learning experiences. It includes
@@ -79,7 +79,7 @@ const Page = () => {
           AI software development
           <br /> services we provide
         </h2>
-        <p>
+        <p className="paragraphText">
           One of the most significant contributions of AI in education is
           personalized learning. Traditional classrooms often struggle
           <br /> to address the diverse learning needs of each student. AI

@@ -4751,7 +4751,7 @@ section.recent_news {
 }
 
 .DesignProcessBox {
-  padding: 3rem 1rem 1rem 1rem;
+  padding: 3rem 1rem 2rem 1rem;
   background-color: var(--white);
   box-shadow: 1px 1px 23.21px 0px #0000001e;
   border-radius: 20px;
@@ -4759,7 +4759,7 @@ section.recent_news {
   cursor: pointer;
   transition: all 0.4s ease;
   margin-top: 20px;
-  min-height: 400px;
+  /* min-height: 400px; */
 }
 .DesignProcessBox h4 {
   font-size: 24px;
@@ -5280,6 +5280,14 @@ color: var(--orange) !important;
   font-weight: 700 !important;
 }
 
+.blogHeading{
+  font-size: 3vw !important;
+}
+.blogHeadingSub{
+  font-size: 2.5vw !important;
+}
+
+
 .paragraphText{
   font-size: 18px !important;
   line-height: 26px !important;
@@ -5449,7 +5457,7 @@ button.dive_buttons::before {
  .appMobilePaddingSmall{
   padding: 50px 10px !important;
  }
- .mainHeadingMobile,.budgetHeading,.accordionText,.lineHeading,.cardHeading{
+ .mainHeadingMobile,.budgetHeading,.accordionText,.lineHeading,.cardHeading,.blogHeading,.blogHeadingSub{
   font-size: 6.5vw !important;
  }
  .budgetLast{
@@ -5540,6 +5548,9 @@ button.dive_buttons::before {
 }
 .marginTopMobile{
   margin-top: 2rem !important;
+}
+.mobSmallHeading{
+  font-size: 5vw !important;
 }
 
 .about-banner h1 {
