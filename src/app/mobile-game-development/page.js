@@ -278,7 +278,7 @@ function page() {
               />
               <div>
                   {topRanked.map((item,i)=>(
-                      <div className="text-section-hover" key={i}>
+                      <div className="text-section-hover mobileCardPadding" key={i}>
                       <h1 className="cardHeading">
                         {item.heading}
                       </h1>
@@ -333,8 +333,8 @@ function page() {
           <div className="row">
           {benefitsWorking.slice(3,6).map((item, i) => (
                <div className="col-md-4" key={i}>
-               <div className="mid-app-divs">
-                 <h4 className="cardHeading">{item.heading}</h4>
+               <div className="mid-app-divs mobileCardPadding">
+                 <h4 className="cardHeading ">{item.heading}</h4>
                  <p className="cardDesc">
                    {item.description}
                  </p>
@@ -442,7 +442,7 @@ function page() {
           <div className="row">
             {uptoTime.map((item, i) => (
               <div className={`col-md-6 ${i > 1 ? "mt-3" : "mgTop15"} `} key={i}>
-              <div className="up-to-mints-div">
+              <div className="up-to-mints-div mobileCardPadding">
                 <h4 className="cardHeading">{item.heading}</h4>
                 <p className="cardDesc">
                   {item.description}

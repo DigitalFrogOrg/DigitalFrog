@@ -69,7 +69,7 @@ const page = () => {
           </div>
           <div className="col-md-6 paddingLeft3 d-flex align-items-center justify-content-center flex-column">
             {pwaDevelopmentService?.map((item,index)=>(
-              <div className="WebAppDevBox" key={index}>
+              <div className="WebAppDevBox mobileCardPadding" key={index}>
               <h4  className="cardHeading">{item?.heading}</h4>
               <p className="cardDesc">
                 {item?.description}
@@ -104,7 +104,7 @@ const page = () => {
           <div className="row mt-5">
             {developmentProcess?.map((item,index)=>(
               <div className="col-md-6" key={index}>
-              <div className="DevelopmentProcessBox">
+              <div className="DevelopmentProcessBox mobileCardPadding">
                 <h4 className="cardHeading">{item.heading}</h4>
                 <p className="cardDesc">
                   {item.description}
@@ -354,7 +354,7 @@ const page = () => {
             <div className="row mt-4">
             {whyChooseUs.map((item, index) => (
                 <div className="col-md-4" key={index}>
-                <div className="IosChooseBox">
+                <div className="IosChooseBox mobileCardPadding">
                   <h4 className="cardHeading">{item.heading}</h4>
                   <p className="cardDesc">
                     {item.description}
