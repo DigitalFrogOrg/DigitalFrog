@@ -58,7 +58,7 @@ const page = () => {
           </div>
           <div className="col-md-6 d-flex align-items-start justify-content-center flex-column paddingLeft3 paddingRight3 footerSection">
             <h2 className="mainHeadingMobile">iOS Development Company</h2>
-            <p>
+            <p className="paragraphText">
               Experience a seamless mobile app development process with Cynergy Studios, backed by years of expertise in iOS development. We utilize cutting-edge tools, programming languages, and innovative wireframes to thrive in the digital landscape. Elevate your iOS app development to new heights by integrating the latest functionalities and operations for an exceptional user experience.
             </p>
             <Link href="#getInTouch">
@@ -74,11 +74,17 @@ const page = () => {
         style={{ backgroundColor: "#FFFBF8" }}
         className="IOSDevelopmentServices appMobilePaddingSmall"
       >
-        <div className="container">
+        <div className="row d-flex flex-column align-items-center">
+        <div className="col-md-7">
           <h2 className="text-center mainHeadingMobile">iOS App Development Services</h2>
-          <p className="text-center">
+        </div>
+        <div className="col-md-6">
+          <p className="text-center paragraphText mt-4">
             As a premier iOS application development company, Cynergy Studios delivers top-notch application layouts through a standardized and well-structured approach, ensuring user-friendly experiences.
-          </p>
+            </p>
+        </div>
+        </div>
+        <div className="container">
           <div className="row mt-5">
             <div className="col-md-6 paddingRight3 second-section">
               <div className="accordion mt-2 ahh2" id="accordionExample">
