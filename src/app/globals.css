@@ -4432,17 +4432,18 @@ section.recent_news {
 }
 .IOS-services .IOS-slider {
   text-align: center;
-  padding: 26px 16px;
+  /* padding: 26px 16px; */
+  padding: 3rem 1.5rem 2rem 1.5rem;
   box-shadow: 0px 5.19px 16.62px 0px #f66a0026;
   background-color: var(--white);
   border-radius: 20px;
   margin: 16px;
   position: relative;
   min-height: 275px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-around; */
+  /* flex-direction: column; */
   gap: 16px;
   cursor: pointer;
   transition: all 0.4s ease;
@@ -4460,7 +4461,7 @@ section.recent_news {
 .IOS-services .IOS-slider:hover h3,
 .IOS-services .IOS-slider:hover p,
 .IOS-services .IOS-slider:hover button {
-  color: var(--white);
+  color: var(--white) !important;
 }
 .IOS-services .IOS-slider h3 {
   font-size: 24px;
@@ -5069,7 +5070,8 @@ color: var(--orange) !important;
 .AISoftwareDevBox {
   text-align: center;
   box-shadow: 1px 1px 23.21px 0px #0000001e;
-  padding: 46px 32px 26px 32px;
+  padding: 2rem;
+  /* padding: 46px 32px 26px 32px; */
   border-radius: 16px;
   cursor: pointer;
   transition: all 0.4s ease;
@@ -5090,7 +5092,7 @@ color: var(--orange) !important;
 }
 .AISoftwareDevBox:hover h4,
 .AISoftwareDevBox:hover p {
-  color: var(--white);
+  color: var(--white) !important;
 }
 
 .KeyOfAi {
