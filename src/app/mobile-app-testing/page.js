@@ -8,6 +8,7 @@ import BudgetSection from "../components/BudgetSection";
 import AppCta from "../components/AppCta";
 import Link from "next/link";
 import {faqData,topNotch,whyCynergy} from './data'
+import DropUsALine from "../components/DropUsALine";
 
 const page = () => {
   
@@ -25,9 +26,7 @@ const page = () => {
               The first-class mobile testing team of cynergy Studios fabricates
               automated testing of apps to hasten effective solutions instantly.
             </p>
-            <Link href="#getInTouch">
-              <button className="second-btn">Drop us a line</button>
-            </Link>
+           <DropUsALine />
           </div>
           <div className="col-md-6 appTestRight footerSection">
             <div className="row">
@@ -149,7 +148,7 @@ const page = () => {
               </p>
             </div>
             <div className="col-md-3 mgBottom25 d-flex align-items-center justify-content-end">
-              <button className="second-btn">Drop us a line</button>
+            <DropUsALine />
             </div>
           </div>
           <MaintenanceProcess />
@@ -169,7 +168,7 @@ const page = () => {
               </p>
             </div>
             <div className="col-md-5 d-flex align-items-center justify-content-end">
-              <button className="second-btn">Drop us a line</button>
+            <DropUsALine />
             </div>
           </div>
           <div className="row">

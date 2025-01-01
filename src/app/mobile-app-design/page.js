@@ -5,6 +5,7 @@ import FaqsSection from "../components/FaqsSection";
 import BudgetSection from "../components/BudgetSection";
 import MainBanner from "../components/MainBanner";
 import { faqData,topNotch } from "./data";
+import DropUsALine from "../components/DropUsALine";
 
 const page = () => {
  
@@ -31,7 +32,7 @@ const page = () => {
                 precision and creativity, setting your business ahead of the
                 curve.
               </p>
-              <button className="second-btn">Drop us a line</button>
+              <DropUsALine />
             </div>
             <div className="col-md-6 footerSection">
               <img
@@ -89,7 +90,7 @@ const page = () => {
               </p>
             </div>
             <div className="col-md-4 mgBottom d-flex align-items-center justify-content-end">
-              <button className="second-btn">Drop us a line</button>
+            <DropUsALine />
             </div>
           </div>
           <div className="row">

@@ -6,6 +6,7 @@ import BudgetSection from "../components/BudgetSection";
 import MainBanner from "../components/MainBanner";
 import Link from "next/link";
 import {faqData,mobileApp,whyChooseUs} from './data'
+import DropUsALine from "../components/DropUsALine";
 
 const page = () => {
  
@@ -37,9 +38,7 @@ const page = () => {
                     web apps. Also, you’ll experience multiple opportunities at
                     each facet of your application transformation.
                   </p>
-                  <Link href="#getInTouch">
-                  <button className="second-btn">Drop us a line</button>
-                </Link>
+                 <DropUsALine />
                 </div>
               </div>
               <div className="col-md-5 paddingRight3 py-2">
@@ -105,9 +104,7 @@ const page = () => {
               product consulting provides thorough guidance on the testing
               capabilities of our entire process.
             </p>
-            <Link href="#getInTouch">
-            <button>Drop us a line</button>
-            </Link>
+            <DropUsALine />
           </div>
         </div>
       </div>
@@ -125,9 +122,7 @@ const page = () => {
               While processing new app we create state-of-the-art features to
               build highly modernized mobile projects.
             </p>
-            <Link href="#getInTouch">
-            <button>Drop us a line</button>
-            </Link>
+            <DropUsALine />
           </div>
           <div className="col-md-6 mgTop25">
             <img src="./images/Group235483574.png" className="w-100 h-100" />
@@ -152,10 +147,7 @@ const page = () => {
               ensure cost-effective design modules for various mobile platforms
               either Native, hybrid, or cross-platform apps.
             </p>
-            <Link href="#getInTouch">
-            <button>
-              Drop us a line</button>
-            </Link>
+            <DropUsALine />
           </div>
         </div>
       </div>

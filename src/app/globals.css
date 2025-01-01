@@ -4458,11 +4458,11 @@ section.recent_news {
   font-weight: bold;
 }
 .right-let-mid button {
-  color: var(--orange);
+  /* color: var(--orange);
   border: 0;
   background: #0000;
   text-decoration: underline;
-  padding: 0;
+  padding: 0; */
 }
 
 .blogLastSection{

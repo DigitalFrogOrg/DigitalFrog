@@ -7,6 +7,7 @@ import IOSAppDesignServices from "../components/IosDesignServices";
 import MainBanner from "../components/MainBanner";
 import Link from "next/link";
 import {faqData,designProcess,workingWith,whyChooseUs} from './data'
+import DropUsALine from "../components/DropUsALine";
 
 const page = () => {
 
@@ -30,9 +31,7 @@ const page = () => {
               <p className="paragraphText my-4 col-md-9">
               With years of experience, our top-notch iOS app design services establish a well-organized platform for your app idea. We value credibility, believability, and innovation in your application for prevailing modernized tools and technologies.
               </p>
-              <Link href="#getInTouch">
-                <button className="second-btn">Drop us a line</button>
-              </Link>
+          <DropUsALine />
             </div>
           </div>
         </div>
