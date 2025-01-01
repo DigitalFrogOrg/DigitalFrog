@@ -7,6 +7,7 @@ import BudgetSection from "../components/BudgetSection";
 import MaintenanceProcess from "../components/MaintenanceProcess";
 import MainBanner from "../components/MainBanner";
 import Link from "next/link";
+import DropUsALine from "../components/DropUsALine";
 import { faqData,cynergyStudio,whychooseus } from "./data";
 const page = () => {
 
@@ -37,9 +38,7 @@ const page = () => {
                   mobile app with astounded tech features to achieve your
                   productive business goals.
                 </p>
-                <Link href="#getInTouch">
-                  <button className="second-btn">Drop us a line</button>
-                </Link>
+               <DropUsALine />
               </div>
             </div>
             <div className="col-md-5 mgTop25 paddingRight3 py-2">
@@ -90,7 +89,7 @@ const page = () => {
           <MaintenanceProcess />
 
           <div className="mt-5 d-flex align-items-center justify-content-center">
-            <button className="second-btn">Drop us a line</button>
+          <DropUsALine />
           </div>
         </div>
       </div>
@@ -146,9 +145,7 @@ const page = () => {
               </p>
             </div>
             <div className="col-md-5 d-flex justify-content-end align-items-center">
-            <Link href="#getInTouch">
-              <button className="second-btn">Drop us a line</button>
-            </Link>
+            <DropUsALine />
             </div>
           </div>
           <div className="row mt-5">

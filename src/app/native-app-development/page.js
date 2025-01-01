@@ -8,6 +8,7 @@ import WeCommitSlider from "../components/WeCommitSlider";
 import MobileExperiences from "../components/MobileExperiences";
 import TechAndTools from "../components/TechAndTools";
 import {faqData,developmentProcess,cynergyKnack,whyChooseUs} from './data'
+import DropUsALine from "../components/DropUsALine";
 
 const page = () => {
   
@@ -75,9 +76,7 @@ const page = () => {
 
           <div className="row mt-5">
             <div className="col-md-12 d-flex align-items-center justify-content-center">
-            <a href="tel:13463608407">
-              <button className="second-btn">Contact Us</button>
-            </a>
+           <DropUsALine />
             </div>
           </div>
         </div>
@@ -123,9 +122,7 @@ const page = () => {
           </div>
           <div className="row mt-5">
             <div className="col-md-12 d-flex align-items-center justify-content-center">
-            <a href="tel:13463608407">
-              <button className="second-btn">Contact Us</button>
-            </a>
+            <DropUsALine />
             </div>
           </div>
         </div>
@@ -179,9 +176,7 @@ const page = () => {
         </div>
         <div className="row mt-5">
             <div className="col-md-12 d-flex align-items-center justify-content-center">
-            <a href="tel:13463608407">
-              <button className="second-btn">Contact Us</button>
-            </a>
+            <DropUsALine />
             </div>
           </div>
       </div>

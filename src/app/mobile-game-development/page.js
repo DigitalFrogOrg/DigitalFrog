@@ -15,6 +15,7 @@ import AppCta from "../components/AppCta";
 import MainBanner from "../components/MainBanner";
 import Link from "next/link";
 import {topRanked,faqData,benefitsWorking,uptoTime} from './data'
+import DropUsALine from "../components/DropUsALine";
 
 function page() {
  
@@ -37,9 +38,7 @@ function page() {
                 <br />
                 We have achieved phenomenal growth in empowering diverse businesses with innovation and contemporary ideas to enliven various blueprints. We have globally earned remarkable endorsement and apprehension in the “INC 5000 list.” Throughout the journey, our unwavering focus has remained on transformation, client satisfaction, and making an indelible impact in the realms of technology and software.
                 </p>
-                <Link href="/contact-us">
-                  <button className="second-btn mt-3">Drop us a line</button>
-                </Link>
+                <DropUsALine />
               </div>
             </div>
             <div className="col-md-5 py-2 mgTop25 paddingRight3">
@@ -312,9 +311,7 @@ function page() {
               </h2>
             </div>
             <div className="col-md-3 d-flex align-items-center justify-content-end">
-             <Link href="#getInTouch">
-              <button className="second-btn">Drop us a line</button>
-             </Link>
+           <DropUsALine />
             </div>
           </div>
           <div className="row">

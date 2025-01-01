@@ -9,6 +9,9 @@
   --white: #ffffff;
 }
 
+.container{
+  max-width: 85% !important;
+}
 
 /* For the popup overlay */
 .popup-overlay {
@@ -2101,7 +2104,7 @@ button.dive_buttons::before {
 .back-to-top, .callBtn {
   position: fixed;
   left: 20px;
-  z-index: 1000;
+  z-index: 50;
   background-color: #DC5F00;
   color: white;
   width: 50px;
@@ -3904,9 +3907,12 @@ section.recent_news {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 80px 0px 00px 0px;
+  padding: 80px 0px 20px 0px;
   margin-top: 120px !important;
+  position: relative;
 }
+
+
 .mobile-cta {
   margin: -226px 0px -1px 12px;
 }
@@ -4452,11 +4458,11 @@ section.recent_news {
   font-weight: bold;
 }
 .right-let-mid button {
-  color: var(--orange);
+  /* color: var(--orange);
   border: 0;
   background: #0000;
   text-decoration: underline;
-  padding: 0;
+  padding: 0; */
 }
 
 .blogLastSection{
@@ -4992,7 +4998,7 @@ section.recent_news {
 }
 
 .innovativeHeading{
-  font-size: 4.5vw !important;
+  font-size: 4.6vw !important;
   font-weight: 700 !important;
   margin-top: 30px !important;
 }
@@ -5894,6 +5900,9 @@ button.dive_buttons::before {
 .weCommitboxNavs .slick-list{
   margin-right: -65rem !important;
 }
+.contactUsPara{
+  font-size: 16px !important;
+}
 .weCommitboxNavs .slick-next:before{
   position: absolute; /* Position relative to the parent */
   top: -0.3rem;
@@ -5949,6 +5958,10 @@ button.dive_buttons::before {
 }
 .caseStudy .slick-list {
   margin-right: -50rem !important;
+}
+.btn-schedule{
+  position: absolute;
+  bottom: 20px;
 }
 .cardTopMargin{
   margin-top: 1rem !important;

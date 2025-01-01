@@ -6,6 +6,7 @@ import BudgetSection from "../components/BudgetSection";
 import MainBanner from "../components/MainBanner";
 import IOSAppDesignServices from "../components/IosDesignServices";
 import {faqData,aiSoftware,aiBenefits} from './data'
+import DropUsALine from "../components/DropUsALine";
 const Page = () => {
 
   return (
@@ -17,7 +18,7 @@ const Page = () => {
         <div className="row">
           <div className="col-md-6 d-flex align-items-start justify-content-center flex-column">
             <h2 className="mainHeadingMobile">Why is AI Important in Education?</h2>
-            <p className="paragraphText">
+            <p className="paragraphText my-3">
               Artificial Intelligence in education refers to the use of machine
               learning algorithms, data analytics, and AI-powered tools to
               enhance teaching and learning experiences. It includes
@@ -30,6 +31,7 @@ const Page = () => {
               classroom to offering personalized tutoring for students and
               streamlining school management.
             </p>
+            <DropUsALine />
           </div>
           <div className="col-md-6">
             <img

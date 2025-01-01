@@ -6,6 +6,7 @@ import BudgetSection from "../components/BudgetSection";
 import MainBanner from "../components/MainBanner";
 import Link from "next/link";
 import { faqData,empowerWithEase } from "./data";
+import DropUsALine from "../components/DropUsALine";
 
 const page = () => {
  
@@ -19,16 +20,14 @@ const page = () => {
           <div className="col-md-6 d-flex align-items-start justify-content-center flex-column">
             <h2 className="mainHeadingMobile">Low-Code/No-Code Mastery: Platforms We Excel In</h2>
             <h3 className="my-2 subHeading" style={{fontWeight:'600'}}>Our Expertise in Action Services</h3>
-            <p className="paragraphText">
+            <p className="paragraphText my-3">
               At cynergy LA, we bring low-code and no-code solutions to life
               with a comprehensive suite of services. From rapid prototyping for
               swift market validation to crafting in-house products like CRMs or
               ERPs, and facilitating the complete development lifecycle of
               products destined for launch and scale.
             </p>
-            <Link href="#getInTouch">
-            <button className="second-btn">Drop us a line</button>
-            </Link>
+            <DropUsALine />
           </div>
           <div className="col-md-6 footerSection">
             <img
@@ -81,9 +80,7 @@ const page = () => {
               </h2>
             </div>
             <div className="col-md-6 d-flex align-items-center justify-content-end footerSection">
-            <Link href="#getInTouch">
-              <button className="second-btn">Drop us a line</button>
-            </Link>
+            <DropUsALine />
             </div>
           </div>
 

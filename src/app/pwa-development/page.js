@@ -7,6 +7,7 @@ import MainBanner from "../components/MainBanner";
 import TechAndTools from "../components/TechAndTools";
 import Link from "next/link";
 import { pwaDevelopmentService,faqData,developmentProcess,whyChooseUs } from "./data";
+import DropUsALine from "../components/DropUsALine";
 
 const page = () => {
 
@@ -28,9 +29,7 @@ const page = () => {
                 deliver the fastest, reliable, and engaging development process
                 to meet the needs of the users.
               </p>
-              <a href="tel:13463608407">
-                <button className="second-btn">Contact Us</button>
-              </a>
+             <DropUsALine />
             </div>
             <div className="col-md-6">
               <img
@@ -97,7 +96,7 @@ const page = () => {
               </p>
             </div>
             <div className="col-md-4 d-flex align-items-center justify-content-end">
-              <button className="second-btn">Get A Quote</button>
+            <DropUsALine />
             </div>
           </div>
 
@@ -346,9 +345,7 @@ const page = () => {
               </p>
             </div>
             <div className="col-md-4 d-flex align-items-center justify-content-end">
-             <Link href="#getInTouch">
-              <button className="second-btn">Drop us a line</button>
-             </Link>
+            <DropUsALine />
             </div>
             </div>
             <div className="row mt-4">
