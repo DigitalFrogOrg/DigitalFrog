@@ -64,7 +64,7 @@ const MobileAppTabs = () => {
           Mobile app development
           <br /> technologies we use
         </h2>
-        <p className="text-center">
+        <p className="text-center paragraphText">
           The top management of Cynergy Studios characterizes each support and
           maintenance step with beneficial
           <br />

@@ -3442,7 +3442,7 @@ section.recent_news {
 }
 .maintain-process {
   background-color: #fff;
-  padding: 26px;
+  padding: 2rem 1.5rem 1.5rem 2rem; 
   -webkit-box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.229);
   -moz-box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.229);
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.229);
@@ -3541,7 +3541,7 @@ section.recent_news {
 }
 .app-quality {
   background-color: #fff;
-  padding: 26px;
+  padding: 2rem 1rem 2rem 2rem;
   -webkit-box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.229);
   -moz-box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.229);
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.229);
@@ -3590,7 +3590,7 @@ section.recent_news {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
-  padding: 46px 50px 16px 20px;
+  padding: 46px 50px 1rem 20px;
   color: #fff;
 }
 .inner-blog-section-1 h3 {
@@ -3606,7 +3606,7 @@ section.recent_news {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
-  padding: 46px 50px 16px 20px;
+  padding: 46px 50px 0rem 20px;
   color: #000;
 }
 .inner-blog-section-2 h3 {
@@ -3626,23 +3626,26 @@ section.recent_news {
 }
 .benefit-col-1 {
   text-align: center;
-  padding: 15px;
+  padding: 2rem 1rem 0.8rem 1rem;
   background-color: #fafafa;
   border: 4px solid #fff;
   -webkit-box-shadow: 0px 0px 5px 5px rgb(110 110 110 / 7%);
   -moz-box-shadow: 0px 0px 5px 5px rgb(110 110 110 / 7%);
   box-shadow: 0px 0px 5px 5px rgb(110 110 110 / 7%);
-  height: 240px;
+  min-height: 260px;
   border-radius: 16px;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: space-between;
   flex-direction: column;
   cursor: pointer;
 }
 .benefit-col-1:hover .benefit-rectangle {
-  transition: all 0.6s;
-  background-color: #fff;
+  transition: all 0.6s !important;
+  background-color: #fff !important;
+}
+.benefit-col-1:hover p {
+  color: #fff !important;
 }
 .benefit-col-1:hover {
   transition: all 0.6s;
@@ -3747,7 +3750,7 @@ section.recent_news {
   -moz-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.3);
   border-radius: 12px;
-  padding: 2rem 2rem 0.5rem 3rem;
+  padding: 2rem 1.5rem 0.5rem 1.5rem;
   margin-top: 26px;
   min-height: 96%;
 }
@@ -4218,19 +4221,19 @@ section.recent_news {
 
 .choose-sec-1 {
   text-align: center;
-  padding: 26px;
+  padding: 3rem 2rem 1.5rem 2rem;
   background-color: #fafafa;
   -webkit-box-shadow: 0px 0px 5px 5px rgb(110 110 110 / 7%);
   -moz-box-shadow: 0px 0px 5px 5px rgb(110 110 110 / 7%);
   box-shadow: 0px 0px 5px 5px rgb(110 110 110 / 7%);
-  min-height: 200px;
+  min-height: 240px;
   border-radius: 16px;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: space-between;
   flex-direction: column;
   cursor: pointer;
-  margin: 0px 10px;
+  margin: 0px 3px;
 }
 .choose-sec-1:hover .choose-rectangle {
   transition: all 0.6s;
@@ -4294,7 +4297,7 @@ section.recent_news {
 }
 
 .text-section-01 {
-  padding: 20px 20px 6px 20px;
+  padding: 2rem 2rem 1rem 2rem;
   background-color: #fbfbfb;
   border-radius: 15px;
   margin: 20px 0;
@@ -4309,16 +4312,18 @@ section.recent_news {
 }
 .text-section-01:hover {
   background-color: #dc5f00;
-  color: #fff;
+  color: #fff !important;
   cursor: pointer;
 }
 .text-section-01:hover h1,
-.text-section-01:hover h2 {
-  color: #fff;
+.text-section-01:hover h2,
+.text-section-01:hover p {
+  color: #fff !important;
 }
 .line-image-1 {
-  height: 675px;
+  height: 100%;
   width: 100px;
+  padding: 6rem 0rem;
   object-fit: contain;
 }
 
@@ -4577,7 +4582,7 @@ section.recent_news {
   padding: 4rem 3rem 0.5rem 3rem;
   margin-top: 28px;
   border-radius: 20px;
-  width: 95%;
+  width: 100%;
   min-height: 280px;
 }
 .iosDesignBox:hover {
@@ -4722,6 +4727,7 @@ section.recent_news {
 .IosChooseBox:hover p {
   color: white !important;
 }
+
 .IosChooseBox:hover p.textBlack {
   color: #454545 !important;
 }

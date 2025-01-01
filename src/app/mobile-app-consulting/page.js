@@ -5,42 +5,10 @@ import FaqsSection from "../components/FaqsSection";
 import BudgetSection from "../components/BudgetSection";
 import MainBanner from "../components/MainBanner";
 import Link from "next/link";
+import {faqData,mobileApp,whyChooseUs} from './data'
 
 const page = () => {
-  const faqData = [
-    {
-      questionId: "01",
-      question: "Who will be working on my project?",
-      answer:
-        "Your project will be handled by a dedicated team of experts, including developers, designers, and project managers, all selected based on the specific needs of your project.",
-    },
-    {
-      questionId: "02",
-      question:
-        "Who owns the legal rights to the technology developed by Cynergy Studios?",
-      answer:
-        "Once the project is completed and payment is finalized, you will retain full legal rights and ownership of the technology developed by our team.",
-    },
-    {
-      questionId: "03",
-      question:
-        "How do you ensure the data security of mobile apps and websites?",
-      answer:
-        "We prioritize data security through stringent protocols, including encryption, secure coding practices, regular audits, and adherence to industry standards, ensuring your data remains safe.",
-    },
-    {
-      questionId: "04",
-      question: "How frequently do you share updates on the process?",
-      answer:
-        "We provide regular updates throughout the development cycle. The frequency of communication can be customized to meet your preferences, ensuring you’re always informed.",
-    },
-    {
-      questionId: "05",
-      question: "How will I be making the payments?",
-      answer:
-        "Payments can be made through a flexible structure, which may include milestone-based or scheduled payments, using secure and convenient payment options.",
-    },
-  ];
+ 
 
   return (
     <>
@@ -54,7 +22,7 @@ const page = () => {
               <div className="col-md-7 d-flex align-items-center justify-content-center pe-5">
                 <div className="text-section">
                   <h2 className="title-page mainHeadingMobile">Our Value Expedition</h2>
-                  <p className="title-page-p">
+                  <p className="paragraphText my-4">
                     The world’s preeminent ensemble Cynergy Studios, harnesses
                     the power of sustainability, believability, and solution to
                     empower business growth. We aim to bestow next-level expert
@@ -70,7 +38,7 @@ const page = () => {
                     each facet of your application transformation.
                   </p>
                   <Link href="#getInTouch">
-                  <button className="btn-app">Get In Touch</button>
+                  <button className="second-btn">Drop us a line</button>
                 </Link>
                 </div>
               </div>
@@ -100,54 +68,14 @@ const page = () => {
                 className="line-image-1"
               />
               <div>
-                <div className="text-section-01">
-                  <h2 className="title-page-2">Market Research</h2>
-                  <p className="title-page-p-2">
-                    Market analysis for mobile apps improves to identification
-                    of potential consumers and highlights the customization
-                    required from the audience in the application. In the
-                    competitive space, the mobile app market has surpassed the
-                    worth of $197 billion in 2021.
+                  {mobileApp.map((item,i)=>(
+                  <div className="text-section-01 mobileCardPadding" key={i}>
+                  <h2 className="cardHeading">{item.heading}</h2>
+                  <p className="cardDesc">
+                   {item.description}
                   </p>
-                </div>
-                <div className="text-section-01">
-                  <h2 className="title-page-2">Product Roadmap</h2>
-                  <p className="title-page-p-2">
-                    In the arena of innovative mobile structures, it helps to
-                    navigate the entire procedure of mobile app development from
-                    what features need to be prioritized and how to streamline
-                    the goals and the product’s vision.
-                  </p>
-                </div>
-                <div className="text-section-01">
-                  <h2 className="title-page-2">
-                    Infrastructure And Mobile Technology
-                  </h2>
-                  <p className="title-page-p-2">
-                    Infrastructure pertains to the foundational framework and
-                    mandatory resources to replenish digital products. It
-                    encircles hardware, software, networks, and services that
-                    produce optimal functioning of the apps, and websites.
-                  </p>
-                </div>
-                <div className="text-section-01">
-                  <h2 className="title-page-2">Testing and Launch</h2>
-                  <p className="title-page-p-2">
-                    Mobile app testing refers to the proceeding of corroborating
-                    app functionality and usability before the mobile app launch
-                    phase of (Android or iOS) apps. Here, we provide the best
-                    mobile app consulting services
-                  </p>
-                </div>
-                <div className="text-section-01">
-                  <h2 className="title-page-2">Maintenance and Support</h2>
-                  <p className="title-page-p-2">
-                    After the mobile application development process, it is very
-                    important to update the longevity and cogency of your mobile
-                    app. It not only helps in fixing bugs but also eradicates
-                    the errors interrupting the performance of your mobile
-                  </p>
-                </div>
+                  </div>
+                  ))}
               </div>
             </div>
             <div className="col-md-6 paddingLeft3 py-2">
@@ -168,7 +96,7 @@ const page = () => {
           </div>
           <div className="col-md-6 d-flex align-items-start justify-content-center flex-column paddingLeft3 gap-3">
             <h2 className="mainHeadingMobile mgTop25">Mobile App Optimization & Audit</h2>
-            <p>
+            <p className="paragraphText">
               Audit plays a significant role in the development process of
               mobile app, as it tests the security measures of the mobile apps,
               and also analyzes the compliant policy and all rules and
@@ -178,7 +106,7 @@ const page = () => {
               capabilities of our entire process.
             </p>
             <Link href="#getInTouch">
-            <button>Get In Touch</button>
+            <button>Drop us a line</button>
             </Link>
           </div>
         </div>
@@ -188,7 +116,7 @@ const page = () => {
         <div className="row">
           <div className="col-md-6 d-flex align-items-start justify-content-center flex-column pe-5 gap-3">
             <h2 className="mainHeadingMobile">Mobile App Modernization</h2>
-            <p>
+            <p className="paragraphText">
               The use of updated technologies and procedures is a mere need in
               today’s world. Adapting and enhancing prevalent mobile project
               implementation will attract more user engagement. Whereas, mobile
@@ -198,7 +126,7 @@ const page = () => {
               build highly modernized mobile projects.
             </p>
             <Link href="#getInTouch">
-            <button>Get In Touch</button>
+            <button>Drop us a line</button>
             </Link>
           </div>
           <div className="col-md-6 mgTop25">
@@ -214,7 +142,7 @@ const page = () => {
           </div>
           <div className="col-md-6 d-flex mgTop25 align-items-start justify-content-center flex-column paddingLeft3 gap-3">
             <h2 className="mainHeadingMobile">Mobile App Design</h2>
-            <p>
+            <p className="paragraphText">
               In the era of digitalization, mobile app design holds specific
               importance in the field of multiple mobile app types. It carries a
               wide range of uses, that catalyze fascinating features,
@@ -226,7 +154,7 @@ const page = () => {
             </p>
             <Link href="#getInTouch">
             <button>
-              Get In Touch</button>
+              Drop us a line</button>
             </Link>
           </div>
         </div>
@@ -235,7 +163,7 @@ const page = () => {
       <div className="orange-wrap py-5 appMobilePaddingSmall">
         <div className="container py-5 text-center">
           <h2 className="top-ranked mainHeadingMobile">Why Choose Us</h2>
-          <p>
+          <p className="paragraphText">
             With more than a decade of unmatchable experience in mobile
             consulting projects and mobile development, cynergy <br /> Studios
             has gained a spectacular place in the terrain of digital technology.
@@ -246,39 +174,16 @@ const page = () => {
             progress in mobile and web development.
           </p>
           <div className="row">
-            <div className="col-md-4">
-              <div className="up-to-mints-div">
-                <h4 className="text-center mt-2">Focused Strategies</h4>
-                <p className="text-center">
-                  Cynergy Studios' service scope presents extremely immersed
-                  mobile application development consulting services while
-                  exerting multiple apps like social networking app p, mobile
-                  banking, or user-friendly fitness
-                </p>
+            {whyChooseUs.map((item,i)=>(
+                <div className={`col-md-4 ${i > 0 ?'mgTop25':''}`} key={i}>
+                <div className="up-to-mints-div">
+                  <h4 className="cardHeading text-center">{item.heading}</h4>
+                  <p className="cardDesc text-center">
+                    {item.description}
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="col-md-4 mgTop25">
-              <div className="up-to-mints-div">
-                <h4 className="text-center mt-2">Drive Business Growth</h4>
-                <p className="text-center">
-                  Cynergy Studios, 100% proven track record will lead your
-                  business in the new dimensions of its growth, where you will
-                  experience top-notch mobile application consulting privileges.
-                  Whether you value Android app development
-                </p>
-              </div>
-            </div>
-            <div className="col-md-4 mgTop25">
-              <div className="up-to-mints-div">
-                <h4 className="text-center mt-2">Transparent Process</h4>
-                <p className="text-center">
-                  We believe in transparency of mobile application development
-                  and so our mobile application consultation depends on the firm
-                  objectives, and solutions to avoid any future obstacles in the
-                  processes.
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

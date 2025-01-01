@@ -355,10 +355,12 @@ const page = () => {
             {whyChooseUs.map((item, index) => (
                 <div className="col-md-4" key={index}>
                 <div className="IosChooseBox mobileCardPadding">
+                  <div>
                   <h4 className="cardHeading">{item.heading}</h4>
                   <p className="cardDesc">
                     {item.description}
                   </p>
+                  </div>
                   <span></span>
                 </div>
               </div>
