@@ -12,7 +12,7 @@ const page = () => {
   return (
     <>
       <Header />
-      <MainBanner MainBannerHeading="No Code/Low-Code<br /> Revolution" />
+      <MainBanner MainBannerHeading="Low-Code/No-Code" />
 
       <div className="container LowCodeNoCode appMobilePadding">
         <div className="row">

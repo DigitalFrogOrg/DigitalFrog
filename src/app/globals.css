@@ -4158,7 +4158,7 @@ section.recent_news {
   color: black;
   border: 1px solid var(--orange);
   border-radius: 40px;
-  padding: 16px 44px;
+  padding: 12px 40px;
   font-size: 18px;
   font-weight: 400;
   transition: 0.5s all;

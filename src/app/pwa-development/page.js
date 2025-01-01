@@ -357,7 +357,7 @@ const page = () => {
                 <div className="IosChooseBox mobileCardPadding">
                   <div>
                   <h4 className="cardHeading">{item.heading}</h4>
-                  <p className="cardDesc">
+                  <p className="cardDesc textBlack">
                     {item.description}
                   </p>
                   </div>
