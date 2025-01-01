@@ -5,7 +5,21 @@ import ContactUsForm from './ContactusForm';
 
 const DropUsALine = ({text="Drop us a line"}) => {
     const [isOpen, setIsOpen] = useState(false);
+    useEffect(() => {
+        localStorage.setItem('hideScroll', isOpen);
+        
+        if (isOpen) {
+          document.body.style.overflowY = 'hidden';
+        } else {
+          document.body.style.overflowY = 'auto';
+        }    
+        return () => {
+          document.body.style.overflowY = 'auto';
+        };
+    
 
+      }, [isOpen]);
+    
   return (
     <>
     <div className={`dropusline ${isOpen ? 'menu-active' : ''}`}>

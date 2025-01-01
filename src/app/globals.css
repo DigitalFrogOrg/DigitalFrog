@@ -2101,7 +2101,7 @@ button.dive_buttons::before {
 .back-to-top, .callBtn {
   position: fixed;
   left: 20px;
-  z-index: 1000;
+  z-index: 50;
   background-color: #DC5F00;
   color: white;
   width: 50px;
