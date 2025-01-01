@@ -32,19 +32,19 @@ function page() {
               <div className="text-section">
                 <h2 className="mainHeadingMobile">Discover Our History</h2>
                 <p className="paragraphText col-md-11 mt-4">
-                Leading with years of experience, Dignite Studios has been centering on the modernization of mobile software specifications to create magnificent web and mobile applications for their valuable clients. Our company of mobile business intelligence has a proven track record of triumphant mobile projects which are illustrious in today’s digital realm. 
+                Leading with years of experience, Cynergy Studios has been centering on the modernization of mobile software specifications to create magnificent web and mobile applications for their valuable clients. Our company of mobile business intelligence has a proven track record of triumphant mobile projects which are illustrious in today’s digital realm. 
                 <br />
                 <br />
                 We have achieved phenomenal growth in empowering diverse businesses with innovation and contemporary ideas to enliven various blueprints. We have globally earned remarkable endorsement and apprehension in the “INC 5000 list.” Throughout the journey, our unwavering focus has remained on transformation, client satisfaction, and making an indelible impact in the realms of technology and software.
                 </p>
                 <Link href="/contact-us">
-                  <button className="second-btn mt-3">Start Your Project</button>
+                  <button className="second-btn mt-3">Drop us a line</button>
                 </Link>
               </div>
             </div>
             <div className="col-md-5 py-2 mgTop25 paddingRight3">
               <img
-                src="./images/third-section.png"
+                src="./images/gameImage.jpg"
                 alt="faqs-sec"
                 className="h-100 w-100"
               />
@@ -250,7 +250,7 @@ function page() {
                 <p className="paragraphText">
                   Turn your illustrations into an unprecedented model that
                   robust iOS mobile applications in an exclusive manner. From
-                  code to launch, the top-notch developers of Dignite Studios
+                  code to launch, the top-notch developers of Cynergy Studios
                   will transform your entire mobile app with eminent
                   methodologies of mobile development to make your app version
                   highly functional, optimized, systemized, and scalable on any
@@ -278,7 +278,7 @@ function page() {
               />
               <div>
                   {topRanked.map((item,i)=>(
-                      <div className="text-section-hover" key={i}>
+                      <div className="text-section-hover mobileCardPadding" key={i}>
                       <h1 className="cardHeading">
                         {item.heading}
                       </h1>
@@ -313,7 +313,7 @@ function page() {
             </div>
             <div className="col-md-3 d-flex align-items-center justify-content-end">
              <Link href="#getInTouch">
-              <button className="second-btn">Start Your Project</button>
+              <button className="second-btn">Drop us a line</button>
              </Link>
             </div>
           </div>
@@ -333,8 +333,8 @@ function page() {
           <div className="row">
           {benefitsWorking.slice(3,6).map((item, i) => (
                <div className="col-md-4" key={i}>
-               <div className="mid-app-divs">
-                 <h4 className="cardHeading">{item.heading}</h4>
+               <div className="mid-app-divs mobileCardPadding">
+                 <h4 className="cardHeading ">{item.heading}</h4>
                  <p className="cardDesc">
                    {item.description}
                  </p>
@@ -346,83 +346,7 @@ function page() {
         </div>
       </div>
 
-      <div
-        className="last-section appMobilePaddingSmall"
-        style={{ backgroundColor: "#fff", padding: "30px 0px 100px 0px" }}
-      >
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12 py-5 d-flex align-items-center justify-content-center flex-column">
-              <div className="text-section">
-                <h1 className=" mainHeadingMobile">Optimized Process</h1>
-              </div>
-              <img
-                src="./images/banner-bottom.png"
-                alt="banner-bottom"
-                className="w-100 mt-5"
-              />
-            </div>
-          </div>
-        
-        </div>
-      </div>
-
-
-      <div className="container-fluid navs-app appMobilePadding">
-        <div className="row">
-          {/* <div className="col-md-1"></div> */}
-          <div className="col-md-1 navappImg d-flex align-items-end">
-            <img
-              src="./images/App-Navs/python.svg"
-              alt="python"
-              className="w-100 pythonImg tilt-effect"
-            />
-          </div>
-          <div className="col-md-1 navappImg d-flex align-items-center">
-            <img
-              src="./images/App-Navs/kotlin.svg"
-              alt="kotlin"
-              className="w-100 kotlinImg tilt-effect"
-            />
-          </div>
-          <div className="col-md-1 navappImg d-flex align-items-start">
-            <img
-              src="./images/App-Navs/react-native.svg"
-              alt="react-native"
-              className="w-100 reactnativeImg tilt-effect"
-            />
-          </div>
-          <div className="col-md-6">
-            <img
-              src="./images/App-Navs/main-laptop.png"
-              alt="main-laptop"
-              className="w-100"
-            />
-          </div>
-          <div className="col-md-1 navappImg d-flex align-items-start">
-            <img
-              src="./images/App-Navs/ruby.svg"
-              alt="ruby"
-              className="w-100 rubyImg tilt-effect"
-            />
-          </div>
-          <div className="col-md-1 navappImg d-flex align-items-center">
-            <img
-              src="./images/App-Navs/flutter.svg"
-              alt="flutter"
-              className="w-100 flutterImg tilt-effect"
-            />
-          </div>
-          <div className="col-md-1 navappImg d-flex align-items-end">
-            <img
-              src="./images/App-Navs/xios.svg"
-              alt="xios"
-              className="w-100 xiosImg tilt-effect"
-            />
-          </div>
-          {/* <div className="col-md-1"></div> */}
-        </div>
-      </div>
+     
 
       <div className="case-study py-5 my-5 appMobilePaddingSmall">
         <div className="row">
@@ -442,7 +366,7 @@ function page() {
           <div className="row">
             {uptoTime.map((item, i) => (
               <div className={`col-md-6 ${i > 1 ? "mt-3" : "mgTop15"} `} key={i}>
-              <div className="up-to-mints-div">
+              <div className="up-to-mints-div mobileCardPadding">
                 <h4 className="cardHeading">{item.heading}</h4>
                 <p className="cardDesc">
                   {item.description}

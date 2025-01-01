@@ -48,8 +48,8 @@ const BlogDetail = () => {
         <div className="row">
           <div className="col-md-6 d-flex align-items-start justify-content-center flex-column blogSection1Text">
             <p style={{color:'#696969',fontSize:'16px'}}>12 / Jun / 2024</p>
-            <h2 className="mainHeadingMobile" style={{fontSize:'50px'}}>AI Technology In Education <br /> Industry: Detailed Article</h2>
-            <p style={{color:'#696969',marginTop:'20px'}}>
+            <h2 className="blogHeading">AI Technology In Education <br /> Industry: Detailed Article</h2>
+            <p className="paragraphText" style={{color:'#696969',marginTop:'20px'}}>
             The integration of Artificial Intelligence (AI) in the education sector is transforming how students learn, teachers instruct, and educational institutions operate. 
             From personalized learning experiences to automated administrative tasks, AI has opened up new avenues for enhancing education. 
               <br />
@@ -77,19 +77,19 @@ const BlogDetail = () => {
 
     <div className="blogSection2 row">
         <div className="col-md-10">
-        <h1 className="mainHeadingMobile" style={{fontWeight:'bold',fontSize:'55px'}}>Key Applications of AI Technology in Education</h1>
-        <p className="my-4" style={{color:'#696969'}}>
+        <h1 className="blogHeading" style={{fontWeight:'bold',fontSize:'55px'}}>Key Applications of AI Technology in Education</h1>
+        <p className="my-4 paragraphText" style={{color:'#696969'}}>
         Artificial Intelligence in education refers to the use of machine learning algorithms, data analytics, and AI-powered tools to enhance teaching and learning experiences. It includes technologies that can adapt to individual learning needs, automate administrative processes, and provide insights that help educators make informed decisions. AI’s role in education ranges from supporting teachers in the classroom to offering personalized tutoring for students and streamlining school management.
         </p>
 
         {blogList.map((item,index)=>(
             <div key={index} className="my-4">
-                <h1 className="mainHeadingMobile" style={{fontWeight:'bold',fontSize:'45px'}}>{item.heading}</h1>
-                <p className="mt-3 paragraph">{item.description}</p>
+                <h1 className="blogHeadingSub" style={{fontWeight:'bold',fontSize:'45px'}}>{item.heading}</h1>
+                <p className="mt-3 paragraphText">{item.description}</p>
                 {item.points.map((point,i)=>(
                     <div className="d-flex align-items-start my-2 ps-4 gap-3">
                         <div className="smallCircle mt-2    " />
-                        <div key={i} className="paragraph">{point}</div>
+                        <div key={i} className="paragraphText">{point}</div>
                     </div>
                 ))} 
             </div>
@@ -102,11 +102,11 @@ const BlogDetail = () => {
     <div className="blogSection3" style={{backgroundColor:'#FEF4ED'}}>
         <div className="row blogSection3Row">
             <div className="col-md-7 blogSection1">
-            <h1 className="mainHeadingMobile" style={{fontWeight:'bold',fontSize:'55px',marginBottom:'2rem'}}>Benefits of AI in Education</h1>
+            <h1 className="blogHeading" style={{fontWeight:'bold',fontSize:'55px',marginBottom:'2rem'}}>Benefits of AI in Education</h1>
             {aiBenefits.map((item,index)=>(
                 <div key={index}>
                     <h2 className="subHeading" style={{fontSize:"26px",fontWeight:600,color:'#0D0D0D'}}>{item.heading}</h2>
-                    <p className="paragraph">{item.description}</p>
+                    <p className="paragraphText">{item.description}</p>
                 </div>
             ))}
             </div>
@@ -116,13 +116,13 @@ const BlogDetail = () => {
         </div>    
     </div>   
 
-     <div className="container WebAppDevelopmentServices appMobilePadding">
+     {/* <div className="container WebAppDevelopmentServices appMobilePadding">
         <div className="row">
           <div className="col-md-6 ">
-            <h2 className="mainHeadingMobile" style={{fontWeight:'bold',fontSize:'55px'}}>Challenges of AI Integration in Education</h2>
+            <h2 className="blogHeading" style={{fontWeight:'bold',fontSize:'55px'}}>Challenges of AI Integration in Education</h2>
           </div>
           <div className="col-md-6 paddingLeft3 d-flex align-items-center justify-content-center">
-            <p>
+            <p className="paragraphText">
               Combining all the aspects of curating PWAs, the industry-leading
               progressive web application development company Cynergy Studios
               dispenses the premium layout to design PWAs. Heretofore, we
@@ -142,9 +142,9 @@ const BlogDetail = () => {
           </div>
           <div className="col-md-6 paddingLeft3 d-flex align-items-center justify-content-center flex-column">
             {aiChallenges.map((item,index)=>(
-                 <div className="WebAppDevBox" key={index}>
-                 <h4>{item.heading}</h4>
-                 <p>
+                 <div className="WebAppDevBox mobileCardPadding" key={index}>
+                 <h4 className="cardHeading">{item.heading}</h4>
+                 <p className="cardDesc">
                    {item.description}
                  </p>
                </div>
@@ -154,17 +154,17 @@ const BlogDetail = () => {
            
           </div>
         </div>
-      </div> 
+      </div>  */}
 
     
-      <div
+      {/* <div
       
         className="IOSDevelopmentServices appMobilePaddingSmall"
         style={{paddingTop:'2rem',paddingBottom:'2rem'}}
       >
         <div className="container">
-          <h2 className="mainHeadingMobile">Challenges of AI Integration in Education</h2>
-          <p className="col-md-8 subparagraph">
+          <h2 className="blogHeading">Challenges of AI Integration in Education</h2>
+          <p className="col-md-8 paragraphText">
           While AI technology brings numerous benefits to the education sector, there are also several challenges that need to be addressed:
           </p>
           <div className="row">
@@ -277,10 +277,10 @@ const BlogDetail = () => {
           
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="blogLastSection">
-        <p className="text-center mainHeadingMobile" style={{fontSize:'36px',fontWeight:'700',color:'#fff'}}>Have More Questions Or Ready To <span style={{color:'#DC5F00'}}>Start Building</span> <br /> Your Dream product?</p>
+      <div className="blogLastSection mt-5">
+        <p className="text-center mobSmallHeading" style={{fontSize:'36px',fontWeight:'700',color:'#fff'}}>Have More Questions Or Ready To <span style={{color:'#DC5F00'}}>Start Building</span> <br /> Your Dream product?</p>
         <div className="row d-flex align-items-center justify-content-center" style={{marginTop:'-2rem'}}>
              <div className={`contactusBtnArea`}>
              <div className="buttons" onClick={togglePopup}>

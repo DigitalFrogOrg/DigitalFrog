@@ -7,6 +7,7 @@ import HotspotSection from "../components/HotspotSection";
 import Link from "next/link";
 import { submitForm } from "@/api/formServices";
 import MainBanner from "../components/MainBanner";
+import { links } from "./data";
 
 const page = () => {
   const [formData, setFormData] = useState({
@@ -94,19 +95,19 @@ const page = () => {
       <div className="container contact-main appMobilePadding contactusContainer">
         <div className="row">
           <h6>
-            <Link href="/" style={{ color: "#000" }}>
+            <Link href="/" style={{ color: "#AFAFAF" }}>
               Home
-            </Link>{" "}
-            /{" "}
-            <Link href="/contact-us" style={{ color: "#000" }}>
-              Contact Us
             </Link>
+            <span className="ms-2 me-2" style={{ color: "#AFAFAF" }}>
+              /
+            </span>
+              Contact Us
           </h6>
         </div>
         <div className="row mt-3">
           <div className="col-md-7">
-            <h2>Got a project in mind?</h2>
-            <p>Fill in this form or send us an e-mail</p>
+            <h2 className="heading50">Got a project in mind?</h2>
+            <p className="contactUsPara">Fill in this form or <span style={{textDecoration:'underline'}}><a style={{color:'#AFAFAF'}} href="mailto:info@cynergystudios.com">send us an e-mail</a></span></p>
             <form onSubmit={handleSubmit} className="contact-form">
               <input
                 type="text"
@@ -165,8 +166,8 @@ const page = () => {
               <div className="mt-3">
                 <input className="form-control"  ref={fileInputRef} type="file" name="file" onChange={handleFileChange} id="formFile" />
               </div> 
-              <div className='mt-2 d-flex align-items-center justify-content-end'>
-                    <button type='submit' disabled={loading} className='second-btn'>Send Message</button>
+              <div className='mt-2 d-flex align-items-center'>
+                    <button type='submit' disabled={loading} className='second-btn'>Submit Now</button>
               </div>
             </form>
           </div>
@@ -174,22 +175,25 @@ const page = () => {
           <div className="col-md-4 footerSection">
             <div className="contact-right">
               <h4>What's next?</h4>
-              <div className="steps">
-                <div className="step-1">
-                  <p>
+              <div className="steps d-flex flex-column">
+                <div className="d-flex gap-4 my-3">
+                  <div className="col-md-1 lineCircle">1</div>
+                  <p className="col-md-10" style={{marginLeft:'55px'}}>
                     Our experts will review your requirements and reach out to
                     you within 1-2 business days.
                   </p>
                 </div>
-                <div className="step-2">
-                  <p>
+                <div className="d-flex  gap-4 my-3">
+                  <div className="col-md-1 lineCircle">2</div>
+                  <p className="col-md-10" style={{marginLeft:'55px'}}>
                     Our team will gather all the requirements for your project,
                     and if necessary, we'll sign an NDA to ensure complete
                     confidentiality and privacy.
                   </p>
                 </div>
-                <div className="step-3">
-                  <p>
+                <div className="d-flex gap-4 my-3">
+                  <div className="col-md-1 lineCircle">3</div>
+                  <p className="col-md-10" style={{marginLeft:'55px'}}>
                     We will create a detailed proposal and action plan for your
                     project, including estimates, timelines, and other essential
                     details.
@@ -200,28 +204,24 @@ const page = () => {
           </div>
         </div>
 
-        <div className="row mt-5">
+        <div className="row" style={{ marginTop: "100px",marginBottom:'40px' }}>
           <div className="col-md-7">
             <div className="row">
               <div className="col-md-6">
                 <h6>Phones:</h6>
-                <ul className="phone-details">
-                  <li>+1 (415) 470-2865</li>
-                  <li>info@cynergystudio.com</li>
+                <ul className="phone-details gap-2">
+                  <li>+1 (346) 360-8407</li>
+                  <li>info@cynergystudios.com</li>
                 </ul>
               </div>
               <div className="col-md-6">
                 <h6>Follow:</h6>
-                <ul className="social-media">
-                  <li>
-                    <FaFacebookF />
+                <ul className="social-media gap-4 mt-2">
+                  {links.map((item,i)=>(
+                  <li key={i} className="linkCircle">
+                    <img src={`/images/${item.imgUrl}.png`} />
                   </li>
-                  <li>
-                    <FaInstagram />
-                  </li>
-                  <li>
-                    <FaLinkedinIn />
-                  </li>
+                  ))}
                 </ul>
               </div>
             </div>

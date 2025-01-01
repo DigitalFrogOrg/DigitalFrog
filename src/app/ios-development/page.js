@@ -58,7 +58,7 @@ const page = () => {
           </div>
           <div className="col-md-6 d-flex align-items-start justify-content-center flex-column paddingLeft3 paddingRight3 footerSection">
             <h2 className="mainHeadingMobile">iOS Development Company</h2>
-            <p>
+            <p className="paragraphText">
               Experience a seamless mobile app development process with Cynergy Studios, backed by years of expertise in iOS development. We utilize cutting-edge tools, programming languages, and innovative wireframes to thrive in the digital landscape. Elevate your iOS app development to new heights by integrating the latest functionalities and operations for an exceptional user experience.
             </p>
             <Link href="#getInTouch">
@@ -74,11 +74,17 @@ const page = () => {
         style={{ backgroundColor: "#FFFBF8" }}
         className="IOSDevelopmentServices appMobilePaddingSmall"
       >
-        <div className="container">
+        <div className="row d-flex flex-column align-items-center">
+        <div className="col-md-7">
           <h2 className="text-center mainHeadingMobile">iOS App Development Services</h2>
-          <p className="text-center">
+        </div>
+        <div className="col-md-6">
+          <p className="text-center paragraphText mt-4">
             As a premier iOS application development company, Cynergy Studios delivers top-notch application layouts through a standardized and well-structured approach, ensuring user-friendly experiences.
-          </p>
+            </p>
+        </div>
+        </div>
+        <div className="container">
           <div className="row mt-5">
             <div className="col-md-6 paddingRight3 second-section">
               <div className="accordion mt-2 ahh2" id="accordionExample">
@@ -194,6 +200,82 @@ const page = () => {
                 className="w-100"
               />
             </div>
+          </div>
+        </div>
+      </div>
+
+       <div
+        className="last-section appMobilePaddingSmall"
+        style={{ backgroundColor: "#fff", padding: "30px 0px 100px 0px" }}
+      >
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12 py-5 d-flex align-items-center justify-content-center flex-column">
+              <div className="text-section">
+                <h1 className=" mainHeadingMobile">Optimized Process</h1>
+              </div>
+              <img
+                src="./images/banner-bottom.png"
+                alt="banner-bottom"
+                className="w-100 mt-5"
+              />
+            </div>
+          </div>
+        
+        </div>
+      </div>
+
+
+      <div className="container-fluid navs-app appMobilePadding">
+        <div className="row">
+          <div className="col-md-1 navappImg d-flex align-items-end">
+            <img
+              src="./images/App-Navs/python.svg"
+              alt="python"
+              className="w-100 pythonImg tilt-effect"
+            />
+          </div>
+          <div className="col-md-1 navappImg d-flex align-items-center">
+            <img
+              src="./images/App-Navs/kotlin.svg"
+              alt="kotlin"
+              className="w-100 kotlinImg tilt-effect"
+            />
+          </div>
+          <div className="col-md-1 navappImg d-flex align-items-start">
+            <img
+              src="./images/App-Navs/react-native.svg"
+              alt="react-native"
+              className="w-100 reactnativeImg tilt-effect"
+            />
+          </div>
+          <div className="col-md-6">
+            <img
+              src="./images/App-Navs/main-laptop.png"
+              alt="main-laptop"
+              className="w-100"
+            />
+          </div>
+          <div className="col-md-1 navappImg d-flex align-items-start">
+            <img
+              src="./images/App-Navs/ruby.svg"
+              alt="ruby"
+              className="w-100 rubyImg tilt-effect"
+            />
+          </div>
+          <div className="col-md-1 navappImg d-flex align-items-center">
+            <img
+              src="./images/App-Navs/flutter.svg"
+              alt="flutter"
+              className="w-100 flutterImg tilt-effect"
+            />
+          </div>
+          <div className="col-md-1 navappImg d-flex align-items-end">
+            <img
+              src="./images/App-Navs/xios.svg"
+              alt="xios"
+              className="w-100 xiosImg tilt-effect"
+            />
           </div>
         </div>
       </div>

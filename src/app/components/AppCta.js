@@ -1,8 +1,15 @@
-import React from "react";
+"use client";
+import React, {useState} from "react";
+import Popup from "./Popup";
 
 const AppCta = ({CtaHeading}) => {
+    const [isPopupVisible, setIsPopupVisible] = useState(false);
+    const togglePopup = () => {
+      setIsPopupVisible(!isPopupVisible);
+    };
   return (
     <>
+      {isPopupVisible && <Popup togglePopup={togglePopup} />}
       <div style={{position: "relative"}} className="container">
         <div className="row app-cta">
           <div className="col-md-1"></div>
@@ -10,11 +17,9 @@ const AppCta = ({CtaHeading}) => {
             <h2 className="innovativeHeading">
               {CtaHeading}
             </h2>
-            <a className="scheduleBtn" href="tel:13463608407">
-            <button className="btn-schedule">
-              Schedule A call
+            <button className="btn-schedule" onClick={togglePopup}>
+              Contact Us
             </button>
-            </a>
           </div>
           <div className="col-md-5">
             <img

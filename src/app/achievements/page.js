@@ -43,8 +43,8 @@ const page = () => {
           </div>
           <div className="arrows-div mgTop25 col-md-6 d-flex align-items-start justify-content-center flex-column paddingLeft3">
             <img src="./images/achievement-page/arrow-1.png" alt="arrow-1" />
-            <h2 className="mainHeadingMobile">OrderPay: Mobile Ordering</h2>
-            <p>
+            <h1 className="heading50">OrderPay: Mobile Ordering</h1>
+            <p className="paragraphText">
             Take more tips, drive higher spend and turn tables faster, with the UK’s most cost-effective order and payment provider.We don’t believe in one-size-fits-all technology. Whether you’re a national restaurant chain, an independent cafe or an 18-hole golf course, we’ll help you find the right solution for your business.Let your customers order and pay the way that suits them, with no need to download an app or wait for a card terminal.
             </p>
             <div className="tags">
@@ -64,8 +64,8 @@ const page = () => {
             />
             <div className="arrows-div d-flex align-items-start justify-content-center flex-column mt-4">
               <img src="./images/achievement-page/arrow-1.png" alt="arrow-1" />
-              <h2 className="mainHeadingMobile">Cooper's Hawk</h2>
-              <p>
+              <h2 className="heading50">Cooper's Hawk</h2>
+              <p className="paragraphText">
                 We may share the information that we collect, both personal and
                 non-personal, with third parties such as advertisers, contest
                 sponsors, promotional and marketing partners, and others who
@@ -87,8 +87,8 @@ const page = () => {
             />
             <div className="arrows-div d-flex align-items-start justify-content-center flex-column mt-4">
               <img src="./images/achievement-page/arrow-1.png" alt="arrow-1" />
-              <h2 className="mainHeadingMobile">KC Elite ecommerce store</h2>
-              <p>
+              <h2 className="heading50">KC Elite ecommerce store</h2>
+              <p className="paragraphText">
                 We may share the information that we collect, both personal and
                 non-personal, with third parties such as advertisers, contest
                 sponsors, promotional and marketing partners, and others who
@@ -112,8 +112,8 @@ const page = () => {
             />
             <div className="arrows-div d-flex align-items-start justify-content-center flex-column mt-4">
               <img src="./images/achievement-page/arrow-1.png" alt="arrow-1" />
-              <h2 className="mainHeadingMobile">App Store Preview</h2>
-              <p>
+              <h2 className="heading50">App Store Preview</h2>
+              <p className="paragraphText">
                 We may share the information that we collect, both personal and
                 non-personal, with third parties such as advertisers, contest
                 sponsors, promotional and marketing partners, and others who
@@ -134,8 +134,8 @@ const page = () => {
             />
             <div className="arrows-div d-flex align-items-start justify-content-center flex-column mt-4">
               <img src="./images/achievement-page/arrow-1.png" alt="arrow-1" />
-              <h2 className="mainHeadingMobile">disfruta</h2>
-              <p>
+              <h2 className="heading50">Disfruta</h2>
+              <p className="paragraphText">
                 We may share the information that we collect, both personal and
                 non-personal, with third parties such as advertisers, contest
                 sponsors, promotional and marketing partners, and others who
@@ -159,8 +159,8 @@ const page = () => {
             />
             <div className="arrows-div d-flex align-items-start justify-content-center flex-column mt-4">
               <img src="./images/achievement-page/arrow-1.png" alt="arrow-1" />
-              <h2 className="mainHeadingMobile">Pauseitive </h2>
-              <p>
+              <h2 className="heading50">Pauseitive </h2>
+              <p className="paragraphText">
                 We may share the information that we collect, both personal and
                 non-personal, with third parties such as advertisers, contest
                 sponsors, promotional and marketing partners, and others who
@@ -181,8 +181,8 @@ const page = () => {
             />
             <div className="arrows-div d-flex align-items-start justify-content-center flex-column mt-4">
               <img src="./images/achievement-page/arrow-1.png" alt="arrow-1" />
-              <h2 className="mainHeadingMobile">Ontapp</h2>
-              <p>
+              <h2 className="heading50">Ontapp</h2>
+              <p className="paragraphText">
                 We may share the information that we collect, both personal and
                 non-personal, with third parties such as advertisers, contest
                 sponsors, promotional and marketing partners, and others who
@@ -207,8 +207,8 @@ const page = () => {
             />
             <div className="arrows-div d-flex align-items-start justify-content-center flex-column mt-4">
               <img src="./images/achievement-page/arrow-1.png" alt="arrow-1" />
-              <h2 className="mainHeadingMobile">PHILApp: Unity With a Purpose </h2>
-              <p>
+              <h2 className="heading50">PHILApp: Unity With a Purpose </h2>
+              <p className="paragraphText">
                 We may share the information that we collect, both personal and
                 non-personal, with third parties such as advertisers, contest
                 sponsors, promotional and marketing partners, and others who
@@ -229,8 +229,8 @@ const page = () => {
             />
             <div className="arrows-div d-flex align-items-start justify-content-center flex-column mt-4">
               <img src="./images/achievement-page/arrow-1.png" alt="arrow-1" />
-              <h2 className="mainHeadingMobile">Cooper's Hawk</h2>
-              <p>
+              <h2 className="heading50">Cooper's Hawk</h2>
+              <p className="paragraphText">
                 We may share the information that we collect, both personal and
                 non-personal, with third parties such as advertisers, contest
                 sponsors, promotional and marketing partners, and others who

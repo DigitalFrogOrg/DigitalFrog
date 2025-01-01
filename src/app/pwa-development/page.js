@@ -29,7 +29,7 @@ const page = () => {
                 to meet the needs of the users.
               </p>
               <a href="tel:13463608407">
-                <button className="second-btn">Schedule A Call</button>
+                <button className="second-btn">Contact Us</button>
               </a>
             </div>
             <div className="col-md-6">
@@ -69,7 +69,7 @@ const page = () => {
           </div>
           <div className="col-md-6 paddingLeft3 d-flex align-items-center justify-content-center flex-column">
             {pwaDevelopmentService?.map((item,index)=>(
-              <div className="WebAppDevBox" key={index}>
+              <div className="WebAppDevBox mobileCardPadding" key={index}>
               <h4  className="cardHeading">{item?.heading}</h4>
               <p className="cardDesc">
                 {item?.description}
@@ -104,7 +104,7 @@ const page = () => {
           <div className="row mt-5">
             {developmentProcess?.map((item,index)=>(
               <div className="col-md-6" key={index}>
-              <div className="DevelopmentProcessBox">
+              <div className="DevelopmentProcessBox mobileCardPadding">
                 <h4 className="cardHeading">{item.heading}</h4>
                 <p className="cardDesc">
                   {item.description}
@@ -337,7 +337,7 @@ const page = () => {
               <h2 className="mainHeadingMobile">Why Choose Us</h2>
               <p className="paragraphText">
                 To streamline the entire process of development hire iOS
-                developers from Dignite Studios. Here, hiring an iOS developer
+                developers from Cynergy Studios. Here, hiring an iOS developer
                 can ensure smooth collaboration and on-time delivery of
                 projects. Our team of mobile app developers works closely to
                 lead to higher productivity and better app performance. You can
@@ -347,18 +347,20 @@ const page = () => {
             </div>
             <div className="col-md-4 d-flex align-items-center justify-content-end">
              <Link href="#getInTouch">
-              <button className="second-btn">Start Your Project</button>
+              <button className="second-btn">Drop us a line</button>
              </Link>
             </div>
             </div>
             <div className="row mt-4">
             {whyChooseUs.map((item, index) => (
                 <div className="col-md-4" key={index}>
-                <div className="IosChooseBox">
+                <div className="IosChooseBox mobileCardPadding">
+                  <div>
                   <h4 className="cardHeading">{item.heading}</h4>
-                  <p className="cardDesc">
+                  <p className="cardDesc textBlack">
                     {item.description}
                   </p>
+                  </div>
                   <span></span>
                 </div>
               </div>

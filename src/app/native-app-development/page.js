@@ -51,7 +51,7 @@ const page = () => {
           <div className="row">
             {developmentProcess.slice(0, 3).map((item,index)=>(
                <div className={`col-md-4 ${index > 0 ?'mgTop15':''}`} key={index}>
-               <div className="MobileQaBoxes" style={{ minHeight: "250px" }}>
+               <div className="MobileQaBoxes mobileCardPadding" style={{ minHeight: "250px" }}>
                  <h4 className="cardHeading">{item.heading}</h4>
                  <p className="cardDesc">
                     {item.description}
@@ -63,7 +63,7 @@ const page = () => {
           <div className="row mt-4">
           {developmentProcess.slice(3, 6).map((item,index)=>(
                <div className={`col-md-4 ${index > 0 ?'mgTop15':''}`} key={index}>
-               <div className="MobileQaBoxes" style={{ minHeight: "250px" }}>
+               <div className="MobileQaBoxes mobileCardPadding" style={{ minHeight: "250px" }}>
                  <h4 className="cardHeading">{item.heading}</h4>
                  <p className="cardDesc">
                     {item.description}
@@ -76,7 +76,7 @@ const page = () => {
           <div className="row mt-5">
             <div className="col-md-12 d-flex align-items-center justify-content-center">
             <a href="tel:13463608407">
-              <button className="second-btn">Schedule A Call</button>
+              <button className="second-btn">Contact Us</button>
             </a>
             </div>
           </div>
@@ -107,7 +107,7 @@ const page = () => {
 
               {cynergyKnack.map((item,i)=>(
                  <div className={`col-md-3 ${i > 0 ?'mgTop25':''}`} key={i}>
-                 <div className="workingWithCynergyBox">
+                 <div className="workingWithCynergyBox mobileCardPadding">
                    <span></span>
                    <img
                      src = {`/images/${item.imgUrl}`} 
@@ -124,7 +124,7 @@ const page = () => {
           <div className="row mt-5">
             <div className="col-md-12 d-flex align-items-center justify-content-center">
             <a href="tel:13463608407">
-              <button className="second-btn">Schedule A Call</button>
+              <button className="second-btn">Contact Us</button>
             </a>
             </div>
           </div>
@@ -148,11 +148,13 @@ const page = () => {
 
            {whyChooseUs.slice(0,3).map((item,i)=>(
             <div className="col-md-4" key={i}>
-            <div className="IosChooseBox">
+            <div className="IosChooseBox mobileCardPadding">
+              <div>             
               <h4 className="cardHeading">{item.heading}</h4>
               <p className="cardDesc">
                 {item.description}
               </p>
+              </div>
               <span></span>
             </div>
           </div>
@@ -163,7 +165,7 @@ const page = () => {
         <div className="row mt-1">
         {whyChooseUs.slice(3,6).map((item,i)=>(
             <div className="col-md-4" key={i}>
-            <div className="IosChooseBox">
+            <div className="IosChooseBox mobileCardPadding">
               <h4 className="cardHeading">{item.heading}</h4>
               <p className="cardDesc">
                 {item.description}
@@ -178,7 +180,7 @@ const page = () => {
         <div className="row mt-5">
             <div className="col-md-12 d-flex align-items-center justify-content-center">
             <a href="tel:13463608407">
-              <button className="second-btn">Schedule A Call</button>
+              <button className="second-btn">Contact Us</button>
             </a>
             </div>
           </div>
