@@ -4740,7 +4740,7 @@ section.recent_news {
   font-size: 14px;
 }
 .mobileAppDesignBox {
-  height: 345px;
+  min-height: 345px;
   background-color: var(--white);
   border-radius: 12px;
   padding: 26px;
@@ -4778,7 +4778,7 @@ section.recent_news {
   color: var(--white);
 }
 .mobileAppDesignBox:hover p {
-  color: var(--white);
+  color: var(--white) !important;
 }
 .mobileAppDesignBox:hover img {
   filter: brightness(0) invert(1);
@@ -4806,7 +4806,7 @@ section.recent_news {
   cursor: pointer;
   transition: all 0.4s ease;
   margin-top: 20px;
-  /* min-height: 400px; */
+  min-height: 370px;
 }
 .DesignProcessBox h4 {
   font-size: 24px;
