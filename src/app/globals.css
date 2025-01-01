@@ -166,6 +166,10 @@ button.light-mode {
 
 }
 
+.dropuslinecross{
+  cursor: pointer;
+  transition: 0.5s all;
+}
 
 
 .Clock-style {
@@ -181,10 +185,26 @@ input:focus,select:focus{
 input:focus::placeholder{
   color: var(--orange) !important;
 }
-
-.container{
-  max-width: 85% !important;
+.nameInp::placeholder{
+  color: gray; 
+  opacity: 1;  
 }
+
+.formTextColor{
+  color: #AFAFAF;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.customInput{
+  width: 100% !important;
+  padding: 20px 10px 10px 0px !important;
+}
+
+.customInput:focus{
+  outline: none !important;
+}
+
 
 .webAppDevContainerFirst{
   margin-top: 5rem !important;
@@ -420,7 +440,7 @@ button.second-btn span {
   font-size: 11px;
 }
 
-.second-btn:hover,.file-btn:hover{
+.second-btn:hover,.file-btn:hover,.dropuslinecross:hover{
   background-color: #bf4d00 !important;
 }
 
@@ -919,12 +939,17 @@ ul.footer-info li a {
   color: #333;
 }
 
+.customInput::placeholder{
+  color: #AFAFAF;
+}
+
 .range-cyn {
   -webkit-appearance: none;
   appearance: none;
   width: 100%;
-  height: 2px;
-  background-color: #ddd;
+  border: none !important;
+  height: 4px;
+  background-color: #FFE3CE;
   border-radius: 5px;
   outline: none;
   cursor: pointer;
@@ -951,7 +976,8 @@ ul.footer-info li a {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: var(--orange);
+  border: 3px solid var(--orange) !important;
+  background-color: white;
   cursor: pointer;
   margin-top: -9px;
 }
@@ -4038,6 +4064,20 @@ section.recent_news {
   transition: all 0.6s ease;
   transform: translateY(-100%);
 }
+
+.dropusline{
+  background-color: var(--white);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.6s ease;
+  transform: translateX(100%);
+}
 .menu-active {
   opacity: 1;
   visibility: visible;
@@ -4911,7 +4951,7 @@ section.recent_news {
 }
 
 .contactUsPara{
-  font-size: 20px !important;
+  font-size: 21px !important;
   color: #AFAFAF !important;
   line-height: 27px !important;
   font-weight: 400 !important;

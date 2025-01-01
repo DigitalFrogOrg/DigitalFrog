@@ -7,6 +7,7 @@ import BudgetSection from "../components/BudgetSection";
 import TechAndTools from "../components/TechAndTools";
 import Link from "next/link";
 import {section2Data,section3Data,section5Data,chooseUsData,faqData} from './data'
+import DropUsALine from "../components/DropUsALine";
 
 const page = () => {
 
@@ -33,9 +34,7 @@ const page = () => {
               business growth depends on perfect app strategies and monitoring
               of the app.
             </p>
-            <Link href="#getInTouch">
-              <button className="second-btn">Drop us a line</button>
-            </Link>
+            <DropUsALine />
           </div>
           <div className="col-md-6">
             <img src="./images/image82.png" alt="image82" className="w-100" />
