@@ -6,6 +6,7 @@ import FaqsSection from "../components/FaqsSection";
 import BudgetSection from "../components/BudgetSection";
 import Link from "next/link";
 import {faqData,developerAdequacies,whyChooseUs} from './data'
+import DropUsALine from "../components/DropUsALine";
 
 const page = () => {
   
@@ -37,9 +38,7 @@ const page = () => {
               cutting-edge technologies. You can also hire an Android developer
               online relatable to your comfort zone.
             </p>
-            <Link href="#getInTouch">
-            <button className="second-btn">Drop us a line</button>
-            </Link>
+            <DropUsALine />
           </div>
           <div className="col-md-6">
             <img src="./images/456236.png" alt="456236" className="w-100" />
@@ -141,7 +140,7 @@ const page = () => {
               </p>
             </div>
             <div className="col-md-4 d-flex align-items-center justify-content-end">
-              <button className="second-btn">Get A Quote</button>
+            <DropUsALine />
             </div>
           </div>
 
@@ -238,9 +237,7 @@ const page = () => {
               </p>
             </div>
             <div className="col-md-4 d-flex align-items-center justify-content-end">
-              <Link href="#getInTouch">
-              <button className="second-btn">Drop us a line</button>
-              </Link>
+            <DropUsALine />
             </div>
 
             {whyChooseUs.map((item,i)=>(

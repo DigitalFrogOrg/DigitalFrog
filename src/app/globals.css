@@ -9,6 +9,9 @@
   --white: #ffffff;
 }
 
+.container{
+  max-width: 85% !important;
+}
 
 /* For the popup overlay */
 .popup-overlay {
@@ -3909,10 +3912,7 @@ section.recent_news {
   position: relative;
 }
 
-.btn-schedule{
-  position: absolute;
-  bottom: 20px;
-}
+
 .mobile-cta {
   margin: -226px 0px -1px 12px;
 }
@@ -4998,7 +4998,7 @@ section.recent_news {
 }
 
 .innovativeHeading{
-  font-size: 4vw !important;
+  font-size: 4.6vw !important;
   font-weight: 700 !important;
   margin-top: 30px !important;
 }
@@ -5958,6 +5958,10 @@ button.dive_buttons::before {
 }
 .caseStudy .slick-list {
   margin-right: -50rem !important;
+}
+.btn-schedule{
+  position: absolute;
+  bottom: 20px;
 }
 .cardTopMargin{
   margin-top: 1rem !important;
