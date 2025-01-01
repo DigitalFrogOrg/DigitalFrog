@@ -5894,6 +5894,9 @@ button.dive_buttons::before {
 .weCommitboxNavs .slick-list{
   margin-right: -65rem !important;
 }
+.contactUsPara{
+  font-size: 16px !important;
+}
 .weCommitboxNavs .slick-next:before{
   position: absolute; /* Position relative to the parent */
   top: -0.3rem;
