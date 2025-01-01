@@ -136,6 +136,7 @@ button.light-mode {
   align-items: center;
   justify-content: center;
   height: 50px;
+  transition: 0.5s all;
   background-color: var(--orange);
   border-radius: 100%;
   /* padding: 10px 10px 10px 10px !important; */
@@ -419,7 +420,7 @@ button.second-btn span {
   font-size: 11px;
 }
 
-.second-btn:hover{
+.second-btn:hover,.file-btn:hover{
   background-color: #bf4d00 !important;
 }
 
@@ -3829,6 +3830,10 @@ section.recent_news {
   font-size: 30px !important;
   font-weight: 600 !important;
 }
+.cardHeading25{
+  font-size: 20px !important;
+  font-weight: 700 !important;
+}
 .cardDesc{
   font-size: 16px !important;
   font-weight: 400 !important;
@@ -4472,21 +4477,24 @@ section.recent_news {
 .appTestBox {
   background-color: #fff;
   box-shadow: 2.84px 5.68px 23.6px 0px #0000002b;
-  padding: 46px 20px 15px 20px;
+  padding: 3rem 1.5rem 2rem 1.5rem;
   text-align: center;
   border-radius: 12px;
   transition: all 0.4s;
   cursor: pointer;
-  height: 292px;
-  width: 100%;
-  margin-bottom: -18px;
+  min-height: 315px;
+  width: 98%;
+  /* margin-bottom: -18px;  */
 }
 .appTestBox:hover {
-  background-image: url("/images/Group1707479837.png");
-  background-position: center;
+  background-image: url(/images/Group1707479837.png);
+  /* background-position: 20% 0px 0px -10% !important; */
   background-repeat: no-repeat;
-  background-size: contain;
-  transform: translateY(-10px);
+  /* transform: translateY(-10px); */
+  background-size:cover ;
+  /* background-position: center -6%; */
+  border: none !important;
+  margin: 0 0px;
 }
 .appTestBox:hover h4 {
   color: var(--orange);

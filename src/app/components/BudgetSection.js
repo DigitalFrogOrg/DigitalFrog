@@ -234,7 +234,7 @@ const handleFileChange = (e) => {
                 </div>
 
                 <div className="d-flex align-items-center gap-3 flex-wrap">
-                <button type="submit" disabled={loading} className="btn">
+                <button type="submit" disabled={loading} className="second-btn">
                  Submit Now
                 </button>
                 <button type="button" onClick={handleFileButtonClick} className="file-btn">
