@@ -27,6 +27,10 @@
   transition: visibility 0s, opacity 0.3s ease-in-out;
 }
 
+.container{
+  max-width: 85% !important;
+}
+
 /* Show the popup when it's visible */
 .popup-overlay.show {
   visibility: visible;
@@ -4126,7 +4130,7 @@ section.recent_news {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 400;
+  z-index: 1300;
   opacity: 1;
 }
 .menu-active {
