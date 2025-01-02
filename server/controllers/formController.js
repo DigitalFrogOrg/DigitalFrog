@@ -1,5 +1,9 @@
 const transporter = require('../config/smtp')
 const {validateEmail} = require('../utils/validators')
+const path = require('path');
+const fs = require('fs');
+
+const uploadsDir = path.join(__dirname, '../uploads');
 
 const submitForm = async(req,res) => {
     try{
@@ -10,6 +14,7 @@ const submitForm = async(req,res) => {
         }
 
         let uploadedFile = null;
+        let fileUrl = "N/A"
         if (req.file) {
           uploadedFile = {
             originalName: req.file.originalname,
@@ -17,23 +22,26 @@ const submitForm = async(req,res) => {
             path: req.file.path,
             size: req.file.size,
           };
+          fileUrl = `http://localhost:5000/api/form/download/${req.file.filename}`;
         }
+
+
 
         //Email content
         const mailOptions = {
             from: process.env.SMTP_USER,
             to:email,
             subject:'New Project Submission',
-            text:`You have a new project submission:\n\n
-            Full Name: ${fullName || 'N/A'}\n
-            Email: ${email || 'N/A'}\n
-            Type of Project: ${projectType || 'N/A'}\n
-            Timeline: ${timeline || 'N/A'}\n
-            phoneNumber: ${phoneNumber || 'N/A'}\n
-            description: ${description || 'N/A'}\n
-            budget: ${budget ? `$${budget}` : 'N/A'}\n
-            File: ${uploadedFile ? uploadedFile.savedName : "N/A"}\n
-            Nda: ${nda ? nda : "N/A"}\n`
+            html: `<p>You have a new project submission:</p>
+            <p><strong>Full Name: </strong> ${fullName || 'N/A'}</p>
+            <p><strong>Email: </strong> ${email || 'N/A'}</p>
+            <p><strong>Type of Project: </strong> ${projectType || 'N/A'}</p>
+            <p><strong>Timeline: </strong> ${timeline || 'N/A'}</p>
+            <p><strong>Phone Number: </strong> ${phoneNumber || 'N/A'}</p>
+            <p><strong>Description: </strong> ${description || 'N/A'}</p>
+            <p><strong>Budget: </strong> ${budget ? `$${budget}` : 'N/A'}</p>
+            <p><strong>File: </strong> ${uploadedFile ? `<a href="${fileUrl}" download>${uploadedFile.savedName}</a>` : "N/A"}</p>
+            <p><strong>NDA: </strong> ${nda ? nda : "N/A"}</p>`
         }
 
         //send email
@@ -45,4 +53,20 @@ const submitForm = async(req,res) => {
     }
 }
 
-module.exports = {submitForm}
+const downloadFile = async(req,res)=>{
+    const {filename} = req.params
+    const filePath = path.join(uploadsDir,filename)
+    console.log("filename",filename,filePath)
+    if(fs.existsSync(filePath)){
+        res.download(filePath,filename,(err)=>{
+            if(err){
+                console.log('Error downloading',err)
+                res.status(500).send('Error downloading the file.')
+            }
+        })
+    }else{
+        res.status(404).send('File not found')
+    }
+}
+
+module.exports = {submitForm,downloadFile}

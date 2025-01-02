@@ -233,6 +233,7 @@ const handleFileChange = (e) => {
                       onChange={handleChange}
                     />
                   </div>
+
                 </div>
 
 
@@ -263,6 +264,13 @@ const handleFileChange = (e) => {
                 {showTimeLineDropdown && <SubMenuDropdown closeDropdown={() => setShowTimeLineDropdown(false)} data={timelineOptions} handleCategoryClick={handleTimeLineClick} activeCategory={activeTimeline} handleSubOptionClick={handleTimelineSubOptionClick}   />}   
                 </div>
 
+                <input
+                                    type="file"
+                                    ref={fileInputRef}
+                                    style={{ display: "none" }}
+                                    onChange={handleFileChange}
+                                />
+
                 <div className="form-group d-flex gap-2 ms-2 align-items-center mt-4 mb-3">
                 <div class="custom-checkbox">
                   <input type="checkbox" name='nda' checked={nda} onChange={handleNdaChange}  id="checkbox" />
@@ -275,7 +283,7 @@ const handleFileChange = (e) => {
 
                 <div className="d-flex align-items-center gap-3 flex-wrap">
                 <button type="submit" disabled={loading} className="second-btn">
-                 Submit Now
+                 {loading ? 'Submitting...':'Submit Now'}
                 </button>
                 <button type="button" onClick={handleFileButtonClick} className="file-btn">
                 <img
