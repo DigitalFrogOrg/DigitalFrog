@@ -20,7 +20,7 @@ export default function VideoModal({closeVideo}) {
         src="/path/Cynergy-Showreel-Final.mp4"
         autoPlay
         loop
-        controls={true}
+        controls
         style={{
           width: '100%',
           height:'100vh',
