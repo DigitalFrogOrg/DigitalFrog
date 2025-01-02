@@ -1,23 +1,40 @@
 "use client";
 import React, { useState,useRef } from "react";
 import { submitForm } from "@/api/formServices";
+import SubMenuDropdown from "./SubMenuDropdown";
 
 function BudgetSection() {
   const [activeCategory, setActiveCategory] = useState(null);
-  const [selectedValue, setSelectedValue] = useState("");
+  const [activeTimeline, setActiveTimeline] = useState(null);
   const [showProjectDropdown, setShowProjectDropdown] = useState(false);
-  const options = [
+  const [showTimeLineDropdown, setShowTimeLineDropdown] = useState(false);
+  const projectOptions = [
     {
       category: "Web Development",
-      subOptions: ["AI", "Mobile", "Android"],
+      subOptions: ["AI & ML development", "Android Development", "IOS Development","No Code/Low Code Development","Mobile Game Development","Native App Development","PWA Development","Web App Development"],
     },
     {
       category: "Design",
-      subOptions: ["Figma", "WordPress"],
+      subOptions: ["Android App Design","iOS App Design Services","Mobile App Design"],
     },
     {
-      category: "Consultancy",
-      subOptions: ["App", "Mobile"],
+      category: "Maintenance & Consulting",
+      subOptions: ["Mobile App Consulting", "Mobile App Support & Maintenance","Mobile App Testing"],
+    },
+  ];
+
+  const timelineOptions = [
+    {
+      category: "Days",
+      subOptions: ["10 days", "20 days", "More than 20 days"],
+    },
+    {
+      category: "Months",
+      subOptions: ["1 month","2 month","More than 2 months"],
+    },
+    {
+      category: "Years",
+      subOptions: ["1 Year", "2 Year","More than 2 years"],
     },
   ];
 
@@ -106,10 +123,38 @@ const handleFileChange = (e) => {
       setActiveCategory(category); 
     }
   };
+  const handleTimeLineClick = (category) => {
+    if (activeTimeline === category) {
+      setActiveTimeline(null); 
+    } else {
+      setActiveTimeline(category); 
+    }
+  };
 
-  const handleSubOptionClick = (option) => {
-    setSelectedValue(option); 
+  const handleOpenProjectType = () => {
+    setShowTimeLineDropdown(false)
+    setShowProjectDropdown(!showProjectDropdown)
+  }
+  const handleOpenTimelineType = () => {
+    setShowProjectDropdown(false)
+    setShowTimeLineDropdown(!showTimeLineDropdown)
+  }
+
+  const handleSubOptionClick = (subOption) => {
+    setFormData((prevState) => ({
+      ...prevState,
+      projectType: subOption, 
+    }));
     setActiveCategory(null); 
+    setShowProjectDropdown(false);
+  };
+  const handleTimelineSubOptionClick = (subOption) => {
+    setFormData((prevState) => ({
+      ...prevState,
+      timeline: subOption, 
+    }));
+    setActiveTimeline(null); 
+    setShowTimeLineDropdown(false);
   };
 
   return (
@@ -191,10 +236,10 @@ const handleFileChange = (e) => {
                 </div>
 
 
-                <div className="form-group mt-3">
-                  <div onClick={() => setShowProjectDropdown(!showProjectDropdown)} className="customSelect">
+                <div className="form-group mt-3" style={{position:'relative'}}>
+                  <div onClick={handleOpenProjectType} className="customSelect">
                     <div>
-                      {selectedValue || "Type of Project"}
+                      {formData.projectType || "Type of Project"}
                     </div>
                     <div>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width={"15px"} height={"15px"} stroke-width="1.5" stroke="currentColor">
@@ -202,108 +247,20 @@ const handleFileChange = (e) => {
                     </svg>
                     </div>
                   </div>
-
-                  
-
-                  {/* {options.map((option, index) => (
-                    <div key={index} className="dropdown-group mb-2">
-                      <button
-                      type="button"
-                        className="btn btn-primary w-100 text-start"
-                        onClick={() => handleCategoryClick(option.category)}
-                      >
-                        {option.category}
-                      </button>
-
-                      {activeCategory === option.category && (
-                        <ul className="list-group mt-2">
-                          {option.subOptions.map((subOption, subIndex) => (
-                            <li
-                              key={subIndex}
-                              className="list-group-item list-group-item-action"
-                              onClick={() => handleSubOptionClick(subOption)}
-                              style={{ cursor: "pointer" }}
-                            >
-                              {subOption}
-                            </li>
-                          ))}
-                        </ul>
-                      )}
-                    </div>
-                  ))} */}
+                 {showProjectDropdown && <SubMenuDropdown closeDropdown={() => setShowProjectDropdown(false)} data={projectOptions} handleCategoryClick={handleCategoryClick} activeCategory={activeCategory} handleSubOptionClick={handleSubOptionClick}   />}   
                 </div>
-
-
-
-
-
-
-
-
-
-                {/* <div className="form-group mt-3">
-                  <select
-                    className="form-select"
-                    name="projectType"
-                    value={formData.projectType}
-                    onChange={handleChange}
-                  >
-                    <option value="" hidden>
-                      Type Of Project
-                    </option>
-                    <option value="web">Web Development</option>
-                    <option value="mobile">Mobile App Development</option>
-                    <option value="design">Design</option>
-                  </select>
-                </div> */}
-
-                {/* <div className="form-group mt-3">
-                  <label className="budgetLabel">Budget Range</label>
-                  <input
-                    type="range"
-                    className="range-cyn"
-                    min="100000"
-                    max="500000"
-                    step="10000"
-                    name="budget"
-                    value={formData.budget}
-                    onChange={handleBudgetChange}
-                  />
-                  <div className="budgetDisplay">
-                    <span>100,000 $</span>
-                    <span
-                      style={{
-                        border: "1px solid #e84c3d",
-                        padding: "6px",
-                        borderRadius: "12px",
-                      }}
-                    >
-                      {formData.budget} $
-                    </span>
-                    <span>500,000 $</span>
-                  </div>
-                </div> */}
-
-                <div className="form-group mt-3">
-                  <select
-                    className="form-select"
-                    name="timeline"
-                    value={formData.timeline}
-                    onChange={handleChange}
-                  >
-                    <option value="" hidden>
-                      Select Timeline
-                    </option>
-                    <option value="1_month">1 Month</option>
-                    <option value="2_months">2 Months</option>
-                    <option value="3_months">3 Months</option>
-                  </select>
-                  <input
-                    type="file"
-                    ref={fileInputRef}
-                    style={{ display: "none" }}
-                    onChange={handleFileChange}
-                />
+                <div className="form-group mt-3" style={{position:'relative'}}>
+                <div onClick={handleOpenTimelineType} className="customSelect">
+                    <div>
+                      {formData.timeline || "Select Timeline"}
+                    </div>
+                    <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width={"15px"} height={"15px"} stroke-width="1.5" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+                    </div>
+                </div>
+                {showTimeLineDropdown && <SubMenuDropdown closeDropdown={() => setShowTimeLineDropdown(false)} data={timelineOptions} handleCategoryClick={handleTimeLineClick} activeCategory={activeTimeline} handleSubOptionClick={handleTimelineSubOptionClick}   />}   
                 </div>
 
                 <div className="form-group d-flex gap-2 ms-2 align-items-center mt-4 mb-3">

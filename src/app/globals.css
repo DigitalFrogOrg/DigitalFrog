@@ -931,10 +931,29 @@ ul.footer-info li a {
   border-radius: 34px;
   display: flex;
   cursor: pointer;
-  position: relative;
   justify-content: space-between;
   align-items: center;
+}
 
+.dropdownSubOption{
+  padding: 4px 0px !important;
+}
+
+.dropdownSubOption:hover,.dropdownItem:hover{
+  color: var(--orange) !important;
+}
+
+.customSelectDropdown{
+  position: absolute;
+  top: 4rem;
+  overflow-y: auto;
+  z-index: 100;
+  width: 100%;
+  padding: 10px 0px;
+  max-height: 300px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* .form-control {
