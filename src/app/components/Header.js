@@ -7,6 +7,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Popup from "./Popup";
 import PopupMenu from "./PopupMenu";
+import appStore from "../../store/store";
 
 function Header() {
   const [activeTab, setActiveTab] = useState("development");
@@ -16,6 +17,7 @@ function Header() {
   const [showButton, setShowButton] = useState(false); // State for scroll button
   const [isPopupVisible, setIsPopupVisible] = useState(false);
   const [isPopupVisible2, setIsPopupVisible2] = useState(false);
+  const { showScroll } = appStore();
 
   const tabsContent = {
     development: {
@@ -230,7 +232,7 @@ function Header() {
       </header>
 
       {/* Button to toggle the full-screen menu */}
-      <div className={`bars-btn-container ${showButton ? "show" : ""}`}>
+      <div className={`bars-btn-container ${(showButton && !showScroll) ? "show" : ""}`}>
         <button className="bars-btn" onClick={toggleNavbar}>
           {isOpen ? <FaTimes /> : <FaBars />}
         </button>

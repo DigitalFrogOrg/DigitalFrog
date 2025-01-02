@@ -2,12 +2,14 @@
 
 import React, { useState, useEffect } from 'react';
 import ContactUsForm from './ContactusForm';
+import appStore from '../../store/store';
 
 const DropUsALine = ({text="Drop us a line"}) => {
     const [isOpen, setIsOpen] = useState(false);
+    const { setScroll } = appStore();
+    
     useEffect(() => {
-        localStorage.setItem('hideScroll', isOpen);
-        
+        setScroll(isOpen);
         if (isOpen) {
           document.body.style.overflowY = 'hidden';
         } else {
@@ -16,8 +18,6 @@ const DropUsALine = ({text="Drop us a line"}) => {
         return () => {
           document.body.style.overflowY = 'auto';
         };
-    
-
       }, [isOpen]);
     
   return (
