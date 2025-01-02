@@ -926,6 +926,7 @@ ul.footer-info li a {
   background-color: white;
   padding: 18px;
   font-size: 15px;
+  transition: all 0.3s;
   color: var(--heading-color);
   border: 1px solid rgb(216, 215, 215);
   border-radius: 34px;

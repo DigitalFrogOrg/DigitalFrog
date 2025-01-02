@@ -237,7 +237,7 @@ const handleFileChange = (e) => {
 
 
                 <div className="form-group mt-3" style={{position:'relative'}}>
-                  <div onClick={handleOpenProjectType} className="customSelect">
+                  <div onClick={handleOpenProjectType} style={{borderColor:showProjectDropdown?'#DC5F00':'rgb(216, 215, 215)',color:showProjectDropdown?'#DC5F00':''}} className="customSelect">
                     <div>
                       {formData.projectType || "Type of Project"}
                     </div>
@@ -250,7 +250,7 @@ const handleFileChange = (e) => {
                  {showProjectDropdown && <SubMenuDropdown closeDropdown={() => setShowProjectDropdown(false)} data={projectOptions} handleCategoryClick={handleCategoryClick} activeCategory={activeCategory} handleSubOptionClick={handleSubOptionClick}   />}   
                 </div>
                 <div className="form-group mt-3" style={{position:'relative'}}>
-                <div onClick={handleOpenTimelineType} className="customSelect">
+                <div onClick={handleOpenTimelineType} style={{borderColor:showTimeLineDropdown?'#DC5F00':'rgb(216, 215, 215)',color:showTimeLineDropdown?'#DC5F00':''}} className="customSelect">
                     <div>
                       {formData.timeline || "Select Timeline"}
                     </div>
