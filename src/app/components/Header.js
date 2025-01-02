@@ -21,37 +21,37 @@ function Header() {
     development: {
       heading: "Development",
       links: [
-        { href: "/ai-app-development", text: "AI App Development Services" },
-        { href: "/android-development", text: "Android Development Services" },
-        { href: "/ios-development", text: "IOS Development Services" },
-        { href: "/no-code-development", text: "No Code/Low Code Development Services" },
+        // { href: "/ai-app-development", text: "AI & Ml Development" },
+        { href: "/android-development", text: "Android Development " },
+        { href: "/ios-development", text: "IOS Development " },
+        { href: "/no-code-development", text: "No Code/Low Code Development " },
       ],
       links2: [
-        { href: "/mobile-game-development", text: "Mobile Game Development Services" },
-        { href: "/native-app-development", text: "Native App Development Service" },
-        { href: "/pwa-development", text: "PWA Development Services" },
-        { href: "/web-app-development", text: "Web App Development Services" },
+        { href: "/mobile-game-development", text: "Mobile Game Development " },
+        { href: "/native-app-development", text: "Native App Development" },
+        { href: "/pwa-development", text: "PWA Development " },
+        { href: "/web-app-development", text: "Web App Development " },
       ],
      
     },
     design: {
       heading: "Design",
       links: [
-        { href: "/android-app-design", text: "Android App Design Services" },
-        { href: "/ios-app-design", text: "iOS App Design Services" },
+        { href: "/android-app-design", text: "Android App Design " },
+        { href: "/ios-app-design", text: "iOS App Design " },
       ],
       links2: [
-        { href: "/mobile-app-design", text: "Mobile App Design Services" },
+        { href: "/mobile-app-design", text: "Mobile App Design " },
       ],
     },
     maintenance: {
       heading: "Maintenance & Consulting",
       links: [
-        { href: "/mobile-app-consulting", text: "Mobile App Consulting Services" },
-        { href: "/mobile-app-support", text: "Mobile App Support & Maintenance Services" },
+        { href: "/mobile-app-consulting", text: "Mobile App Consulting " },
+        { href: "/mobile-app-support", text: "Mobile App Support & Maintenance " },
       ],
       links2: [
-        { href: "/mobile-app-testing", text: "Mobile App Testing Services" },
+        { href: "/mobile-app-testing", text: "Mobile App Testing " },
       ],
     },
   };
@@ -83,7 +83,8 @@ function Header() {
   };
 
 
-  const toggleNavbarMobile = () => {
+  const toggleNavbarMobile = (e) => {
+ setActiveTab(e)
     // setIsOpen(!isOpen)
     // setDropdownOpen(!dropdownOpen)
     setIsPopupVisible2(!isPopupVisible2); // Toggle both the mobile menu and full-screen menu
@@ -164,10 +165,17 @@ function Header() {
                             <div className="col-md-7">
                               <div className="right-mega-menu">
                                 <h2>{tabsContent[activeTab].heading}</h2>
-                                <div className="d-flex align-items-center justify-content-evenly pb-5">
+                                <div className="d-flex pb-5">
                                   <ul>
                                     {tabsContent[activeTab].links.map(
                                       (link, index) => (
+                                        <div>
+                                            <li>
+                                                                        <Link href={"/ai-app-development"} className={isActive(link.href)}>
+                                                                           AI & Ml Development 
+                                                                           {index === 0 ? <div className="top-button"><h4 style={{fontSize: "15px",margin:"0px"}}>Top</h4></div> : null}
+                                                                           </Link>
+                                                                         </li>
                                         <li key={index}>
                                           <Link
                                             href={link.href}
@@ -176,6 +184,7 @@ function Header() {
                                             {link.text}
                                           </Link>
                                         </li>
+                                        </div>
                                       )
                                     )}
                                   </ul>
@@ -257,11 +266,50 @@ function Header() {
                   <ul>
                   <li>
                                 <a
-                                onClick={toggleNavbarMobile}
-                                  onMouseEnter={() => setActiveTab("development")}
+                                // onClick={toggleNavbarMobile}
+                                onClick={() => toggleNavbarMobile("development")}
+
                                   className={activeTab === "development" ? "active" : ""}
                                 >
                                   Development
+                                </a>
+                                {isPopupVisible2 && 
+                                                                <div className="col-md-12 right-mega-menu ">
+                                                                {/* <h2>{tabsContent[activeTab]?.heading || "Select a Category"}</h2> */}
+                                                                <div className="mobile-menu-updated mobile-popup">
+                                                                  <ul>
+                                                                    {tabsContent[activeTab]?.links?.map((link, index) => (
+                                                                    
+                                                                         
+                                                                      <li key={index}>
+                                                                        <Link href={link.href} className={isActive(link.href)}>
+                                                                          {link.text}
+                                                                        </Link>
+                                                                      </li>
+                                                                  ))}
+                                                                  </ul>
+                                                                  <ul>
+                                                                    {tabsContent[activeTab]?.links2?.map((link, index) => (
+                                                                      <li key={index}>
+                                                                        <Link href={link.href} className={isActive(link.href)}>
+                                                                          {link.text}
+                                                                        </Link>
+                                                                      </li>
+                                                                    ))}
+                                                                  </ul>
+                                                                </div>
+                                                              </div>
+                                }
+
+                                </li>
+                                <li>
+                                <a
+                                  // onMouseEnter={() => setActiveTab("design")}
+                                  className={activeTab === "design" ? "active" : ""}
+                                onClick={() => toggleNavbarMobile("design")}
+
+                                >
+                                  Design
                                 </a>
                                 {isPopupVisible2 && 
                                                                 <div className="col-md-12 right-mega-menu ">
@@ -292,19 +340,39 @@ function Header() {
                                 </li>
                                 <li>
                                 <a
-                                  onMouseEnter={() => setActiveTab("design")}
-                                  className={activeTab === "design" ? "active" : ""}
-                                >
-                                  Design
-                                </a>
-                                </li>
-                                <li>
-                                <a
-                                  onMouseEnter={() => setActiveTab("maintenance")}
+                                  // onMouseEnter={() => setActiveTab("maintenance")}
                                   className={activeTab === "maintenance" ? "active" : ""}
+                                  onClick={() => toggleNavbarMobile("maintenance")}
+
                                 >
                                   Maintenance & Consulting
                                 </a>
+                                {isPopupVisible2 && 
+                                                                <div className="col-md-12 right-mega-menu ">
+                                                                {/* <h2>{tabsContent[activeTab]?.heading || "Select a Category"}</h2> */}
+                                                                <div className="mobile-menu-updated mobile-popup">
+                                                                  <ul>
+                                                                    {tabsContent[activeTab]?.links?.map((link, index) => (
+                                                                      <li key={index}>
+                                                                        <Link href={link.href} className={isActive(link.href)}>
+                                                                          {link.text}
+                                                                        </Link>
+                                                                      </li>
+                                                                    ))}
+                                                                  </ul>
+                                                                  <ul>
+                                                                    {tabsContent[activeTab]?.links2?.map((link, index) => (
+                                                                      <li key={index}>
+                                                                        <Link href={link.href} className={isActive(link.href)}>
+                                                                          {link.text}
+                                                                        </Link>
+                                                                      </li>
+                                                                    ))}
+                                                                  </ul>
+                                                                </div>
+                                                              </div>
+                                }
+
                                 </li>
                                 </ul>
                               </div>
