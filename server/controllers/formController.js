@@ -56,7 +56,6 @@ const submitForm = async(req,res) => {
 const downloadFile = async(req,res)=>{
     const {filename} = req.params
     const filePath = path.join(uploadsDir,filename)
-    console.log("filename",filename,filePath)
     if(fs.existsSync(filePath)){
         res.download(filePath,filename,(err)=>{
             if(err){
