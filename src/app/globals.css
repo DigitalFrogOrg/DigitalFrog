@@ -4006,8 +4006,8 @@ section.recent_news {
   padding: 12px;
 }
 .case-studies-slider .slide-item img {
-  height: 226px;
-  object-fit: cover;
+  height: 296px;
+  object-fit:fill;
   border-radius: 0px;
 }
 .case-studies-slider .slide-item h3 {
