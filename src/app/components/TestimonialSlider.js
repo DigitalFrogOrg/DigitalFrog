@@ -65,7 +65,7 @@ const TestimonialSlider = () => {
             className={`carousel-item ${index === activeIndex ? "active" : ""}`}
             style={{
               backgroundImage: `url(${testimonial.imgSrc})`,
-              backgroundSize: "contain",
+              backgroundSize: "cover",
               backgroundPosition: "center",
               height: "700px", // Adjust the height of the carousel
               backgroundRepeat:"no-repeat"
