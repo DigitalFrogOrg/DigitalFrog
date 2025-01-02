@@ -920,6 +920,22 @@ ul.footer-info li a {
 .form-control::placeholder {
   color: var(--heading-color) !important;
 }
+
+.customSelect{
+  background-color: white;
+  padding: 18px;
+  font-size: 15px;
+  color: var(--heading-color);
+  border: 1px solid rgb(216, 215, 215);
+  border-radius: 34px;
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
 /* .form-control {
 } */
 .form-control::placeholder {

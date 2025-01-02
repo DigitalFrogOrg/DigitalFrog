@@ -3,6 +3,24 @@ import React, { useState,useRef } from "react";
 import { submitForm } from "@/api/formServices";
 
 function BudgetSection() {
+  const [activeCategory, setActiveCategory] = useState(null);
+  const [selectedValue, setSelectedValue] = useState("");
+  const [showProjectDropdown, setShowProjectDropdown] = useState(false);
+  const options = [
+    {
+      category: "Web Development",
+      subOptions: ["AI", "Mobile", "Android"],
+    },
+    {
+      category: "Design",
+      subOptions: ["Figma", "WordPress"],
+    },
+    {
+      category: "Consultancy",
+      subOptions: ["App", "Mobile"],
+    },
+  ];
+
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -78,6 +96,20 @@ const handleFileChange = (e) => {
     if (fileInputRef.current) {
       fileInputRef.current.value = ""; 
     }
+  };
+
+
+  const handleCategoryClick = (category) => {
+    if (activeCategory === category) {
+      setActiveCategory(null); 
+    } else {
+      setActiveCategory(category); 
+    }
+  };
+
+  const handleSubOptionClick = (option) => {
+    setSelectedValue(option); 
+    setActiveCategory(null); 
   };
 
   return (
@@ -158,7 +190,58 @@ const handleFileChange = (e) => {
                   </div>
                 </div>
 
+
                 <div className="form-group mt-3">
+                  <div onClick={() => setShowProjectDropdown(!showProjectDropdown)} className="customSelect">
+                    <div>
+                      {selectedValue || "Type of Project"}
+                    </div>
+                    <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width={"15px"} height={"15px"} stroke-width="1.5" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+                    </div>
+                  </div>
+
+                  
+
+                  {/* {options.map((option, index) => (
+                    <div key={index} className="dropdown-group mb-2">
+                      <button
+                      type="button"
+                        className="btn btn-primary w-100 text-start"
+                        onClick={() => handleCategoryClick(option.category)}
+                      >
+                        {option.category}
+                      </button>
+
+                      {activeCategory === option.category && (
+                        <ul className="list-group mt-2">
+                          {option.subOptions.map((subOption, subIndex) => (
+                            <li
+                              key={subIndex}
+                              className="list-group-item list-group-item-action"
+                              onClick={() => handleSubOptionClick(subOption)}
+                              style={{ cursor: "pointer" }}
+                            >
+                              {subOption}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
+                  ))} */}
+                </div>
+
+
+
+
+
+
+
+
+
+                {/* <div className="form-group mt-3">
                   <select
                     className="form-select"
                     name="projectType"
@@ -172,7 +255,7 @@ const handleFileChange = (e) => {
                     <option value="mobile">Mobile App Development</option>
                     <option value="design">Design</option>
                   </select>
-                </div>
+                </div> */}
 
                 {/* <div className="form-group mt-3">
                   <label className="budgetLabel">Budget Range</label>
