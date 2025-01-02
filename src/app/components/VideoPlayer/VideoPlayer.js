@@ -1,8 +1,9 @@
 "use client";
 import React, { useRef, useEffect, useState } from "react";
-
+import VideoModal from "./VideoModal";
 const VideoPlayer = () => {
   const videoRef = useRef(null);
+  const [showVideoModal,setShowVideoModal] = useState(false)
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const [videoSize, setVideoSize] = useState({ width: "26vw", height: "36vh" });
   const [popupOpen, setPopupOpen] = useState(false);
@@ -50,9 +51,13 @@ const VideoPlayer = () => {
     setPopupOpen(false);
   };
 
+
   return (
+    <>
+    { showVideoModal ?<VideoModal closeVideo={()=>setShowVideoModal(false)} /> :
     <div
       className="main-video-banner"
+      onClick={()=>setShowVideoModal(true)}
       style={{
         overflow: "hidden",
         position: "relative",
@@ -120,6 +125,8 @@ const VideoPlayer = () => {
         </div>
       )} */}
     </div>
+     }
+    </>
   );
 };
 
