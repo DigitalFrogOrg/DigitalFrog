@@ -30,7 +30,7 @@ const submitForm = async(req,res) => {
         //Email content
         const mailOptions = {
             from: process.env.SMTP_USER,
-            to:email,
+            to:process.env.TO_EMAIL,
             subject:'New Project Submission',
             html: `<p>You have a new project submission:</p>
             <p><strong>Full Name: </strong> ${fullName || 'N/A'}</p>
