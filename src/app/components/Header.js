@@ -23,17 +23,18 @@ function Header() {
     development: {
       heading: "Development",
       links: [
-        { href: "/web-app-development", text: "Web App Development Services" },
-        { href: "/pwa-development", text: "PWA Development Services" },
-        { href: "/native-app-development", text: "Native App Development Service" },
-        { href: "/mobile-game-development", text: "Mobile Game Development Services" },
+        { href: "/ai-app-development", text: "AI App Development Services" },
+        { href: "/android-development", text: "Android Development Services" },
+        { href: "/ios-development", text: "IOS Development Services" },
+        { href: "/no-code-development", text: "No Code/Low Code Development Services" },
       ],
       links2: [
-        { href: "/ios-development", text: "IOS Development Services" },
-        { href: "/android-development", text: "Android Development Services" },
-        { href: "/no-code-development", text: "No Code/Low Code Development Services" },
-        { href: "/ai-app-development", text: "AI App Development Services" },
+        { href: "/mobile-game-development", text: "Mobile Game Development Services" },
+        { href: "/native-app-development", text: "Native App Development Service" },
+        { href: "/pwa-development", text: "PWA Development Services" },
+        { href: "/web-app-development", text: "Web App Development Services" },
       ],
+     
     },
     design: {
       heading: "Design",
@@ -56,7 +57,7 @@ function Header() {
       ],
     },
   };
-
+  
   const pathname = usePathname();
 
   useEffect(() => {
@@ -172,7 +173,7 @@ function Header() {
                                         <li key={index}>
                                           <Link
                                             href={link.href}
-                                            className={isActive(link.href)}
+                                            className={isActive(link.href )}
                                           >
                                             {link.text}
                                           </Link>
@@ -265,9 +266,9 @@ function Header() {
                                   Development
                                 </a>
                                 {isPopupVisible2 && 
-                                                                <div className="col-md-12 right-mega-menu">
+                                                                <div className="col-md-12 right-mega-menu ">
                                                                 {/* <h2>{tabsContent[activeTab]?.heading || "Select a Category"}</h2> */}
-                                                                <div className="mobile-menu-updated">
+                                                                <div className="mobile-menu-updated mobile-popup">
                                                                   <ul>
                                                                     {tabsContent[activeTab]?.links?.map((link, index) => (
                                                                       <li key={index}>
