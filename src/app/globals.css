@@ -27,6 +27,10 @@
   transition: visibility 0s, opacity 0.3s ease-in-out;
 }
 
+.container{
+  max-width: 85% !important;
+}
+
 /* Show the popup when it's visible */
 .popup-overlay.show {
   visibility: visible;
@@ -921,6 +925,42 @@ ul.footer-info li a {
 .form-control::placeholder {
   color: var(--heading-color) !important;
 }
+
+.customSelect{
+  background-color: white;
+  padding: 18px;
+  font-size: 15px;
+  transition: all 0.3s;
+  color: var(--heading-color);
+  border: 1px solid rgb(216, 215, 215);
+  border-radius: 34px;
+  display: flex;
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdownSubOption{
+  padding: 4px 0px !important;
+}
+
+.dropdownSubOption:hover,.dropdownItem:hover{
+  color: var(--orange) !important;
+}
+
+.customSelectDropdown{
+  position: absolute;
+  top: 4rem;
+  overflow-y: auto;
+  z-index: 100;
+  width: 100%;
+  padding: 10px 0px;
+  max-height: 300px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 /* .form-control {
 } */
 .form-control::placeholder {
@@ -3805,6 +3845,8 @@ section.recent_news {
   margin-top: 20px;
 }
 
+
+
 .pythonImg{
   margin-left: 60%;
   margin-bottom: 1rem;
@@ -4004,8 +4046,8 @@ section.recent_news {
   padding: 12px;
 }
 .case-studies-slider .slide-item img {
-  height: 226px;
-  object-fit: cover;
+  height: 296px;
+  object-fit:fill;
   border-radius: 0px;
 }
 .case-studies-slider .slide-item h3 {
@@ -4076,11 +4118,22 @@ section.recent_news {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 1100;
   opacity: 0;
   visibility: hidden;
   transition: all 0.6s ease;
   transform: translateX(100%);
+}
+
+.videoModal{
+  background-color: var(--white);
+  height: 90vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1300;
+  opacity: 1;
 }
 .menu-active {
   opacity: 1;

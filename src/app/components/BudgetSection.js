@@ -1,8 +1,43 @@
 "use client";
 import React, { useState,useRef } from "react";
 import { submitForm } from "@/api/formServices";
+import SubMenuDropdown from "./SubMenuDropdown";
 
 function BudgetSection() {
+  const [activeCategory, setActiveCategory] = useState(null);
+  const [activeTimeline, setActiveTimeline] = useState(null);
+  const [showProjectDropdown, setShowProjectDropdown] = useState(false);
+  const [showTimeLineDropdown, setShowTimeLineDropdown] = useState(false);
+  const projectOptions = [
+    {
+      category: "Web Development",
+      subOptions: ["AI & ML development", "Android Development", "IOS Development","No Code/Low Code Development","Mobile Game Development","Native App Development","PWA Development","Web App Development"],
+    },
+    {
+      category: "Design",
+      subOptions: ["Android App Design","iOS App Design Services","Mobile App Design"],
+    },
+    {
+      category: "Maintenance & Consulting",
+      subOptions: ["Mobile App Consulting", "Mobile App Support & Maintenance","Mobile App Testing"],
+    },
+  ];
+
+  const timelineOptions = [
+    {
+      category: "Days",
+      subOptions: ["10 days", "20 days", "More than 20 days"],
+    },
+    {
+      category: "Months",
+      subOptions: ["1 month","2 month","More than 2 months"],
+    },
+    {
+      category: "Years",
+      subOptions: ["1 Year", "2 Year","More than 2 years"],
+    },
+  ];
+
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -78,6 +113,48 @@ const handleFileChange = (e) => {
     if (fileInputRef.current) {
       fileInputRef.current.value = ""; 
     }
+  };
+
+
+  const handleCategoryClick = (category) => {
+    if (activeCategory === category) {
+      setActiveCategory(null); 
+    } else {
+      setActiveCategory(category); 
+    }
+  };
+  const handleTimeLineClick = (category) => {
+    if (activeTimeline === category) {
+      setActiveTimeline(null); 
+    } else {
+      setActiveTimeline(category); 
+    }
+  };
+
+  const handleOpenProjectType = () => {
+    setShowTimeLineDropdown(false)
+    setShowProjectDropdown(!showProjectDropdown)
+  }
+  const handleOpenTimelineType = () => {
+    setShowProjectDropdown(false)
+    setShowTimeLineDropdown(!showTimeLineDropdown)
+  }
+
+  const handleSubOptionClick = (subOption) => {
+    setFormData((prevState) => ({
+      ...prevState,
+      projectType: subOption, 
+    }));
+    setActiveCategory(null); 
+    setShowProjectDropdown(false);
+  };
+  const handleTimelineSubOptionClick = (subOption) => {
+    setFormData((prevState) => ({
+      ...prevState,
+      timeline: subOption, 
+    }));
+    setActiveTimeline(null); 
+    setShowTimeLineDropdown(false);
   };
 
   return (
@@ -156,72 +233,43 @@ const handleFileChange = (e) => {
                       onChange={handleChange}
                     />
                   </div>
+
                 </div>
 
-                <div className="form-group mt-3">
-                  <select
-                    className="form-select"
-                    name="projectType"
-                    value={formData.projectType}
-                    onChange={handleChange}
-                  >
-                    <option value="" hidden>
-                      Type Of Project
-                    </option>
-                    <option value="web">Web Development</option>
-                    <option value="mobile">Mobile App Development</option>
-                    <option value="design">Design</option>
-                  </select>
-                </div>
 
-                {/* <div className="form-group mt-3">
-                  <label className="budgetLabel">Budget Range</label>
-                  <input
-                    type="range"
-                    className="range-cyn"
-                    min="100000"
-                    max="500000"
-                    step="10000"
-                    name="budget"
-                    value={formData.budget}
-                    onChange={handleBudgetChange}
-                  />
-                  <div className="budgetDisplay">
-                    <span>100,000 $</span>
-                    <span
-                      style={{
-                        border: "1px solid #e84c3d",
-                        padding: "6px",
-                        borderRadius: "12px",
-                      }}
-                    >
-                      {formData.budget} $
-                    </span>
-                    <span>500,000 $</span>
+                <div className="form-group mt-3" style={{position:'relative'}}>
+                  <div onClick={handleOpenProjectType} style={{borderColor:showProjectDropdown?'#DC5F00':'rgb(216, 215, 215)',color:showProjectDropdown?'#DC5F00':''}} className="customSelect">
+                    <div>
+                      {formData.projectType || "Type of Project"}
+                    </div>
+                    <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width={"15px"} height={"15px"} stroke-width="1.5" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+                    </div>
                   </div>
-                </div> */}
-
-                <div className="form-group mt-3">
-                  <select
-                    className="form-select"
-                    name="timeline"
-                    value={formData.timeline}
-                    onChange={handleChange}
-                  >
-                    <option value="" hidden>
-                      Select Timeline
-                    </option>
-                    <option value="1_month">1 Month</option>
-                    <option value="2_months">2 Months</option>
-                    <option value="3_months">3 Months</option>
-                  </select>
-                  <input
-                    type="file"
-                    ref={fileInputRef}
-                    style={{ display: "none" }}
-                    onChange={handleFileChange}
-                />
+                 {showProjectDropdown && <SubMenuDropdown closeDropdown={() => setShowProjectDropdown(false)} data={projectOptions} handleCategoryClick={handleCategoryClick} activeCategory={activeCategory} handleSubOptionClick={handleSubOptionClick}   />}   
                 </div>
+                <div className="form-group mt-3" style={{position:'relative'}}>
+                <div onClick={handleOpenTimelineType} style={{borderColor:showTimeLineDropdown?'#DC5F00':'rgb(216, 215, 215)',color:showTimeLineDropdown?'#DC5F00':''}} className="customSelect">
+                    <div>
+                      {formData.timeline || "Select Timeline"}
+                    </div>
+                    <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width={"15px"} height={"15px"} stroke-width="1.5" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+                    </div>
+                </div>
+                {showTimeLineDropdown && <SubMenuDropdown closeDropdown={() => setShowTimeLineDropdown(false)} data={timelineOptions} handleCategoryClick={handleTimeLineClick} activeCategory={activeTimeline} handleSubOptionClick={handleTimelineSubOptionClick}   />}   
+                </div>
+
+                <input
+                                    type="file"
+                                    ref={fileInputRef}
+                                    style={{ display: "none" }}
+                                    onChange={handleFileChange}
+                                />
 
                 <div className="form-group d-flex gap-2 ms-2 align-items-center mt-4 mb-3">
                 <div class="custom-checkbox">
@@ -235,7 +283,7 @@ const handleFileChange = (e) => {
 
                 <div className="d-flex align-items-center gap-3 flex-wrap">
                 <button type="submit" disabled={loading} className="second-btn">
-                 Submit Now
+                 {loading ? 'Submitting...':'Submit Now'}
                 </button>
                 <button type="button" onClick={handleFileButtonClick} className="file-btn">
                 <img

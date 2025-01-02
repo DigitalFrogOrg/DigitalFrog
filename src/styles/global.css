@@ -55,3 +55,27 @@ body {
 }
 
 
+
+/* Entire scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+  height: 12px; /* Height of the scrollbar (for horizontal scroll) */
+}
+
+/* Scrollbar track */
+::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Color of the track */
+}
+
+/* Scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: #eb7013; /* Color of the scrollbar thumb */
+  border-radius: 4px; /* Rounded corners for the thumb */
+  border: 3px solid #f0f0f0;
+}
+
+/* Scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #dc5f00; /* Darker shade on hover */
+}
+
