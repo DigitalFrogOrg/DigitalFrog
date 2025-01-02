@@ -112,7 +112,7 @@ const page = () => {
           </p>
           <div className="row">
             {section5Data?.map((item,i)=>(
-                  <div className="col-md-6  mb-5" key={i}>
+                  <div className="col-md-6" key={i}>
                   <div className="iosDesignBox mobileCardPadding">
                     <h4 className="cardHeading">{item.heading}</h4>
                     <p className="cardDesc">
