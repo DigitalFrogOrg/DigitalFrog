@@ -24,7 +24,7 @@ function CardDetailPopup({item,setSelectedCard}) {
               style={{ objectFit: 'cover', height: '100%' }}
             />
           </div>
-          <div className="col-md-6 d-flex flex-column justify-content-center ps-4 pt-4 pb-4">
+          <div className="col-md-6 d-flex flex-column justify-content-center p-4">
             <h2 className="heading50 mt-4">{item.heading}</h2>
             <p className="paragraphText pb-3 hide-scrollbar" style={{maxHeight:'200px'}}>
               {item.description}

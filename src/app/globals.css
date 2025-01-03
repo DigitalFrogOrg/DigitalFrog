@@ -4050,7 +4050,7 @@ section.recent_news {
 }
 .arrows-div img {
   right: 2px;
-  top: 20px;
+  top: 30px;
   position: absolute;
 }
 
@@ -5804,7 +5804,7 @@ color: var(--orange) !important;
     width: 14rem !important;
   }
   .container{
-    max-width: 85% !important;
+    max-width: 100% !important;
   }
   .paragraphText{
     margin-top: 20px !important;
@@ -6115,6 +6115,9 @@ button.dive_buttons::before {
 .line-android{
   width: 100%;
   height: 95%;
+}
+.achievements-page p {
+  width: 100%;
 }
 .accordion-header{
   margin-top: 0 !important;
