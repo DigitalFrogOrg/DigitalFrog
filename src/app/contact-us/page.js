@@ -233,7 +233,9 @@ const page = () => {
                 <ul className="social-media gap-4 mt-2">
                   {links.map((item,i)=>(
                   <li key={i} className="linkCircle">
+                    <a href={item.link} target="_blank">
                     <img src={`/images/${item.imgUrl}.png`} />
+                    </a>
                   </li>
                   ))}
                 </ul>

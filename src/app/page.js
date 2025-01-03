@@ -69,9 +69,9 @@ export default function Home() {
               <div className="banner-numbers">
                 <div className="right-banner-div">
                   <div className="banner-social">
-                    <FaLinkedin />
-                    <FaInstagram />
-                    <FaFacebook />
+                    <a href="#"><FaLinkedin /></a>
+                    <a href="https://www.instagram.com/cynergystudios/" target="_blank"><FaInstagram /></a>
+                    <a href="https://www.facebook.com/cynergystudiosonline" target="_blank"><FaFacebook /></a>
                   </div>
                   <span>We Are The Mobile Business Builders</span>
                 </div>

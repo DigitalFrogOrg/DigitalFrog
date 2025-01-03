@@ -26,12 +26,11 @@ function HotspotSection() {
                 alt="World Map"
                 className="mapImage"
               />
-              <div className="hotspot" style={{ top: "1%", left: "33%" }}>
+              <div className="hotspot" style={{ top: "12%", left: "29%" }}>
                 <div className="label">
                   <h6>USA</h6>
                   <p>
                     1 E Erie St Ste 525 Chicago, IL 60611
-                    <br /> Kingdom
                   </p>
                 </div>
                 <div className="marker"></div>
@@ -40,15 +39,15 @@ function HotspotSection() {
                 <div className="label">
                   <h6>UK</h6>
                   <p>
-                    82 King Street, Manchester, <br /> Lancashire, M2 4WQ,
+                  82 King St Manchester M2 4WQ, UK
                   </p>
                 </div>
                 <div className="marker"></div>
               </div>
-              <div className="hotspot" style={{ top: "23%", left: "76%" }}>
+              <div className="hotspot" style={{ top: "27%", left: "69.5%" }}>
                 <div className="label">
-                  <h6>USA</h6>
-                  <p>1 E Erie St Ste 525 Chicago, IL 60611</p>
+                  <h6>UAE</h6>
+                  <p>1 E Erie St Ste 525, IL 60611</p>
                 </div>
                 <div className="marker"></div>
               </div>
@@ -63,11 +62,11 @@ function HotspotSection() {
                 </div>
                 <div className="marker"></div>
               </div> */}
-              <div className="hotspot" style={{ top: "30%", left: "89%" }}>
+              <div className="hotspot" style={{ top: "33%", left: "89%" }}>
                 <div className="label">
                   <h6 style={{ width: "100px" }}>AUSTRALIA</h6>
                   <p>
-                    8 Elonera Road, Noble Park North, Victoria, Australia 3174
+                    8 Elnorea Road, Noble park North, Victoria, Australia 3174
                   </p>
                 </div>
                 <div className="marker"></div>
