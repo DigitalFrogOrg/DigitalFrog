@@ -8,6 +8,7 @@ import TechAndTools from "../components/TechAndTools";
 import Link from "next/link";
 import {section2Data,section3Data,section5Data,chooseUsData,faqData} from './data'
 import DropUsALine from "../components/DropUsALine";
+import AppCard from "../components/appCard";
 
 const page = () => {
 
@@ -56,13 +57,8 @@ const page = () => {
         </p>
         <div className="row">
           {section2Data.map((item,index)=>(
-            <div className="col-md-6 mt-3" key={index}>
-            <div className="up-to-mints-div mobileCardPadding">
-              <h4 className="cardHeading">{item.heading}</h4>
-              <p className="cardDesc">
-                {item.description}
-              </p>
-            </div>
+            <div className="col-md-6 my-2" key={index}>
+            <AppCard heading={item.heading} hoverEffect="effect1" description={item.description} />
           </div>
           ))
 
@@ -81,13 +77,8 @@ const page = () => {
           </p> 
           <div className="row">
             {section3Data?.map((item,i)=>(
-              <div className="col-md-4" key={i}>
-              <div className="DesignProcessBox mobileCardPadding">
-                <h4 className="cardHeading">{item.heading}</h4>
-                <p className="cardDesc text-center">
-                    {item.description}
-                </p>
-              </div>
+              <div className="col-md-4 my-2" key={i}>
+              <AppCard heading={item.heading} height={370} hoverEffect="effect2" isCenter={true} description={item.description} />
               </div>
             ))}
           </div>
@@ -112,13 +103,8 @@ const page = () => {
           </p>
           <div className="row">
             {section5Data?.map((item,i)=>(
-                  <div className="col-md-6" key={i}>
-                  <div className="iosDesignBox mobileCardPadding">
-                    <h4 className="cardHeading">{item.heading}</h4>
-                    <p className="cardDesc">
-                      {item.description}
-                    </p>
-                  </div>
+                  <div className="col-md-6 my-2" key={i}>
+                  <AppCard heading={item.heading} height={295} hoverEffect="effect3" description={item.description} />
                   </div>
             ))}
           </div>
@@ -137,13 +123,8 @@ const page = () => {
           </p>
           <div className="row mt-5">
             {chooseUsData?.map((item,i)=>(
-               <div className="col-md-4">
-               <div className="MobileQaBoxes mobileCardPadding">
-                 <h4 className="cardHeading">{item.heading}</h4>
-                 <p className="cardDesc">
-                  {item.description}
-                 </p>
-               </div>
+               <div className="col-md-4 my-2">
+                  <AppCard heading={item.heading} height={255} hoverEffect="effect2" isCenter={true} description={item.description} />
              </div>
             ))}
           </div>
