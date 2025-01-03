@@ -115,11 +115,11 @@ function footer() {
               <div className="footer-link">
                 <h5>Follow Us</h5>
                 <ul>
-                  <li>Facebook </li>
-                  <li>Instagram </li>
-                  <li>Github</li>
-                  <li>LinkedIn</li>
-                  <li>X</li>
+                  <li> <Link href="#"> Facebook </Link></li>
+                  <li><Link href="#"> Instagram </Link></li>
+                  <li><Link href="#"> Github</Link></li>
+                  <li><Link href="#"> LinkedIn</Link></li>
+                  <li><Link href="#"> X</Link></li>
                 </ul>
               </div>
             </div>
