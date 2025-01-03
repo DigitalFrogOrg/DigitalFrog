@@ -12,7 +12,7 @@ const Page = () => {
   return (
     <>
       <Header />
-      <MainBanner MainBannerHeading="AI App Development<br /> Services" />
+      <MainBanner MainBannerHeading="AI & ML Development<br /> Services" />
 
       <div className="container app-testing appMobilePadding">
         <div className="row">
