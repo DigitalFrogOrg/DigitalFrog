@@ -3,8 +3,11 @@ import Footer from "../components/Footer";
 import CaseStudySlider from "../components/CaseStudySlider";
 import RecentNews from "../components/RecentNews";
 import {cardData} from './data'
+import AchievementCard from "../components/AchievementCard";
+
 
 const page = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <>
       <Header />
@@ -17,7 +20,7 @@ const page = () => {
           </div>
           <hr />
           <div className="d-flex mt-2 align-items-center justify-content-between">
-            <div className="">@2024</div>
+            <div className="">@{currentYear}</div>
             <div className="d-flex gap-2 align-items-center">
               <div>
               Filter: All Work
@@ -34,50 +37,8 @@ const page = () => {
       </div>
 
       <div className="container achievements-page appMobilePadding mt-4">
-        <div className="row">
-          <div className="col-md-6">
-            <img
-              src="./images/achievement-page/orderPaying.png"
-              alt="image-1"
-              className="w-100"
-            />
-          </div>
-          <div className="arrows-div mgTop25 col-md-6 d-flex align-items-start justify-content-center flex-column paddingLeft3">
-            <img src="./images/achievement-page/arrow-1.png" alt="arrow-1" />
-            <h1 className="heading50">OrderPay: Mobile Ordering</h1>
-            <p className="paragraphText">
-            Take more tips, drive higher spend and turn tables faster, with the UK’s most cost-effective order and payment provider.We don’t believe in one-size-fits-all technology. Whether you’re a national restaurant chain, an independent cafe or an 18-hole golf course, we’ll help you find the right solution for your business.Let your customers order and pay the way that suits them, with no need to download an app or wait for a card terminal.
-            </p>
-            <div className="tags">
-              <button>#softwaredevelopment</button>
-              <button>#strategy</button>
-              <button>#designservices</button>
-            </div>
-          </div>
-        </div>
-        <hr className="my-5" />
-
-        <div className="row">
-        {cardData.map((item,i)=>(
-          <div className={`col-md-6 my-4 ${i < cardData.length - 2?'border-bottom pb-5':'' }`} key={i}>
-          <img
-            src={`/images/achievement-page/${item.imageUrl}`}
-            className="w-100"
-            alt="image-2"
-          />
-          <div className="arrows-div d-flex align-items-start me-4 justify-content-center flex-column mt-4">
-            <img src="./images/achievement-page/arrow-1.png" alt="arrow-1" />
-            <h2 className="heading50">{item.heading}</h2>
-            <p className="paragraphText">
-              {item.description}
-            </p>
-            <div className="tags">
-              {item.tags.map((tag,index)=>(<button key={index}>{tag}</button>))}
-            </div>
-          </div>
-          </div>
-        ))}
-        </div>
+       
+        <AchievementCard data={cardData} />
       </div>
 
       <div className="mt-5">

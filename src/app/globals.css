@@ -59,6 +59,10 @@
   cursor: pointer;
 }
 
+.cardHead:hover{
+  text-decoration: underline;
+}
+
 .tabs button {
   margin: 5px;
   padding: 10px;
@@ -2834,6 +2838,19 @@ section.recent_news {
   /* margin: 0 auto; */
   width: 200px;
 }
+
+.hide-scrollbar {
+  overflow: auto; /* Allows scrolling */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+
+  /* For Chrome, Edge, and Safari */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+
 .mobile-experiences img {
   border-radius: 20px;
 }
@@ -4024,8 +4041,8 @@ section.recent_news {
   position: relative;
 }
 .arrows-div img {
-  right: 0;
-  top: 35px;
+  right: 2px;
+  top: 20px;
   position: absolute;
 }
 
@@ -4200,11 +4217,35 @@ section.recent_news {
   top: 0;
   left: 0;
   padding: 20px;
-  background-color: hsla(0, 0%, 9%, 0.5);
-  z-index: 1000;
+  z-index: 1100;
   opacity: 0;
   animation: fadeIn 0.3s ease-in-out forwards;
 }
+
+.popupBg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(3px); /* Adjust the blur intensity */
+  display: flex;
+  transition: all 0.5s;
+  justify-content: center;
+  align-items: center;
+  z-index: 1200; /* Ensures it appears above other content */
+}
+
+
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+
+
+
+
 @keyframes fadeIn {
   from {
     opacity: 0;
