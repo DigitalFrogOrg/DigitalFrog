@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import CaseStudySlider from "../components/CaseStudySlider";
 import RecentNews from "../components/RecentNews";
+import {cardData} from './data'
 
 const page = () => {
   return (
@@ -55,194 +56,27 @@ const page = () => {
           </div>
         </div>
         <hr className="my-5" />
-        <div className="row">
-          <div className="col-md-6 paddingRight3">
-            <img
-              src="./images/achievement-page/image-4.png"
-              className="w-100"
-              alt="image-2"
-            />
-            <div className="arrows-div d-flex align-items-start justify-content-center flex-column mt-4">
-              <img src="./images/achievement-page/arrow-1.png" alt="arrow-1" />
-              <h2 className="heading50">Cooper's Hawk</h2>
-              <p className="paragraphText">
-                We may share the information that we collect, both personal and
-                non-personal, with third parties such as advertisers, contest
-                sponsors, promotional and marketing partners, and others who
-                provide our content or whose products or services we think may
-                interest you.
-              </p>
-              <div className="tags">
-                <button>#softwaredevelopment</button>
-                <button>#strategy</button>
-                <button>#designservices</button>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-6 paddingLeft3 mgTop25">
-            <img
-              src="./images/achievement-page/kcElite.png"
-              className="w-100"
-              alt="image-2"
-            />
-            <div className="arrows-div d-flex align-items-start justify-content-center flex-column mt-4">
-              <img src="./images/achievement-page/arrow-1.png" alt="arrow-1" />
-              <h2 className="heading50">KC Elite ecommerce store</h2>
-              <p className="paragraphText">
-                We may share the information that we collect, both personal and
-                non-personal, with third parties such as advertisers, contest
-                sponsors, promotional and marketing partners, and others who
-                provide our content or whose products or services we think may
-                interest you.
-              </p>
-              <div className="tags">
-                <button>#softwaredevelopment</button>
-                <button>#strategy</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr className="my-5" />
-        <div className="row">
-          <div className="col-md-6 paddingRight3">
-            <img
-              src="./images/achievement-page/appStore.png"
-              className="w-100"
-              alt="image-2"
-            />
-            <div className="arrows-div d-flex align-items-start justify-content-center flex-column mt-4">
-              <img src="./images/achievement-page/arrow-1.png" alt="arrow-1" />
-              <h2 className="heading50">App Store Preview</h2>
-              <p className="paragraphText">
-                We may share the information that we collect, both personal and
-                non-personal, with third parties such as advertisers, contest
-                sponsors, promotional and marketing partners, and others who
-                provide our content or whose products or services we think may
-                interest you.
-              </p>
-              <div className="tags">
-                <button>#softwaredevelopment</button>
-                <button>#designservices</button>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-6 paddingLeft3 mgTop25">
-            <img
-              src="./images/achievement-page/image-5.png"
-              className="w-100"
-              alt="image-2"
-            />
-            <div className="arrows-div d-flex align-items-start justify-content-center flex-column mt-4">
-              <img src="./images/achievement-page/arrow-1.png" alt="arrow-1" />
-              <h2 className="heading50">Disfruta</h2>
-              <p className="paragraphText">
-                We may share the information that we collect, both personal and
-                non-personal, with third parties such as advertisers, contest
-                sponsors, promotional and marketing partners, and others who
-                provide our content or whose products or services we think may
-                interest you.
-              </p>
-              <div className="tags">
-                <button>#designservices</button>
-                <button>#strategy</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr className="my-5" />
-        <div className="row">
-          <div className="col-md-6 paddingRight3">
-            <img
-              src="./images/achievement-page/image-6.png"
-              className="w-100"
-              alt="image-2"
-            />
-            <div className="arrows-div d-flex align-items-start justify-content-center flex-column mt-4">
-              <img src="./images/achievement-page/arrow-1.png" alt="arrow-1" />
-              <h2 className="heading50">Pauseitive </h2>
-              <p className="paragraphText">
-                We may share the information that we collect, both personal and
-                non-personal, with third parties such as advertisers, contest
-                sponsors, promotional and marketing partners, and others who
-                provide our content or whose products or services we think may
-                interest you.
-              </p>
-              <div className="tags">
-                <button>#softwaredevelopment</button>
-                <button>#designservices</button>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-6 paddingLeft3 mgTop25">
-            <img
-              src="./images/achievement-page/image-7.png"
-              className="w-100"
-              alt="image-2"
-            />
-            <div className="arrows-div d-flex align-items-start justify-content-center flex-column mt-4">
-              <img src="./images/achievement-page/arrow-1.png" alt="arrow-1" />
-              <h2 className="heading50">Ontapp</h2>
-              <p className="paragraphText">
-                We may share the information that we collect, both personal and
-                non-personal, with third parties such as advertisers, contest
-                sponsors, promotional and marketing partners, and others who
-                provide our content or whose products or services we think may
-                interest you.
-              </p>
-              <div className="tags">
-                <button>#designservices</button>
-                <button>#strategy</button>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <hr className="my-5" />
         <div className="row">
-          <div className="col-md-6 paddingRight3">
-            <img
-              src="./images/achievement-page/image-8.png"
-              className="w-100"
-              alt="image-2"
-            />
-            <div className="arrows-div d-flex align-items-start justify-content-center flex-column mt-4">
-              <img src="./images/achievement-page/arrow-1.png" alt="arrow-1" />
-              <h2 className="heading50">PHILApp: Unity With a Purpose </h2>
-              <p className="paragraphText">
-                We may share the information that we collect, both personal and
-                non-personal, with third parties such as advertisers, contest
-                sponsors, promotional and marketing partners, and others who
-                provide our content or whose products or services we think may
-                interest you.
-              </p>
-              <div className="tags">
-                <button>#softwaredevelopment</button>
-                <button>#designservices</button>
-              </div>
+        {cardData.map((item,i)=>(
+          <div className={`col-md-6 my-4 ${i < cardData.length - 2?'border-bottom pb-5':'' }`} key={i}>
+          <img
+            src={`/images/achievement-page/${item.imageUrl}`}
+            className="w-100"
+            alt="image-2"
+          />
+          <div className="arrows-div d-flex align-items-start me-4 justify-content-center flex-column mt-4">
+            <img src="./images/achievement-page/arrow-1.png" alt="arrow-1" />
+            <h2 className="heading50">{item.heading}</h2>
+            <p className="paragraphText">
+              {item.description}
+            </p>
+            <div className="tags">
+              {item.tags.map((tag,index)=>(<button key={index}>{tag}</button>))}
             </div>
           </div>
-          <div className="col-md-6 paddingLeft3 mgTop25">
-            <img
-              src="./images/achievement-page/image-9.png"
-              className="w-100"
-              alt="image-2"
-            />
-            <div className="arrows-div d-flex align-items-start justify-content-center flex-column mt-4">
-              <img src="./images/achievement-page/arrow-1.png" alt="arrow-1" />
-              <h2 className="heading50">Cooper's Hawk</h2>
-              <p className="paragraphText">
-                We may share the information that we collect, both personal and
-                non-personal, with third parties such as advertisers, contest
-                sponsors, promotional and marketing partners, and others who
-                provide our content or whose products or services we think may
-                interest you.
-              </p>
-              <div className="tags">
-                <button>#designservices</button>
-                <button>#strategy</button>
-              </div>
-            </div>
           </div>
+        ))}
         </div>
       </div>
 
