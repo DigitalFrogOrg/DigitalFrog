@@ -4282,6 +4282,10 @@ section.recent_news {
   margin-top: 10px;
   border-radius: 6px;
 }
+.popup-form input:focus, textarea:focus{
+  border: 1px solid var(--orange) !important;
+  outline: none !important;
+}
 .popup-form label {
   width: 100%;
   margin-bottom: 10px;
@@ -5892,8 +5896,11 @@ button.dive_buttons::before {
  .appMobilePaddingSmall{
   padding: 50px 10px !important;
  }
- .mainHeadingMobile,.budgetHeading,.accordionText,.lineHeading,.cardHeading,.blogHeading,.blogHeadingSub,.heading50,.text60{
+ .mainHeadingMobile,.budgetHeading,.accordionText,.lineHeading,.cardHeading,.blogHeading,.blogHeadingSub,.text60{
   font-size: 6.5vw !important;
+ }
+ .heading50{
+  font-size: 6vw !important;
  }
  .budgetLast{
   font-size: 16px !important;
