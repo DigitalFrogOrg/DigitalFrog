@@ -3923,7 +3923,29 @@ section.recent_news {
   margin-top: 26px;
   min-height: 96%;
 }
+
+.appCardContainer{
+  -webkit-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem 1.5rem 1rem 2rem;
+  overflow: hidden;
+}
+
+.appCardContainer:hover p {
+  color: white !important;
+}
+
+
+
+
+
 .cardHeading{
+  font-size: 30px !important;
+  font-weight: 600 !important;
+}
+.appCardHeading{
   font-size: 30px !important;
   font-weight: 600 !important;
 }
@@ -3961,6 +3983,17 @@ section.recent_news {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.effect1:hover{
+  cursor: pointer;
+  transition: 0.4s all;
+  background-color: var(--orange);
+  color: #fff;
+  background-image: url("/images/Group1707479840.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size:cover;
 }
 .up-to-mints-div:hover h4 {
   color: #fff;
@@ -4441,6 +4474,8 @@ section.recent_news {
   font-weight: bold;
 }
 
+
+
 .why-choose-sec {
   padding: 100px 0px;
   background-color: #fffbf8;
@@ -4827,6 +4862,16 @@ section.recent_news {
   cursor: pointer;
   transition: all 0.4s ease;
 }
+
+.effect3:hover{
+  background-image: url("/images/Group1707479838.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  color: white;
+}
 .iosDesignBox:hover h4,
 .iosDesignBox:hover p {
   color: var(--white) !important;
@@ -5069,6 +5114,13 @@ section.recent_news {
   color: #AFAFAF !important;
   line-height: 27px !important;
   font-weight: 400 !important;
+}
+
+.effect2:hover{
+  cursor: pointer;
+  transition: 0.4s all;
+  background-color: var(--orange);
+  color: #fff;
 }
 
 .DesignProcessBox:hover {
@@ -5698,6 +5750,15 @@ color: var(--orange) !important;
 .right-mega-menu {
   border-left: none;
 }
+.appCardContainer{
+  height: 300px !important;
+  padding: 1.5rem 1rem 1rem 1rem !important;
+}
+.cardDescArea{
+  height: 200px !important;
+  padding-bottom: 30px !important;
+}
+
 .mid-mega-option a {
   font-size: 15px !important;
   font-weight: normal;
@@ -5903,6 +5964,8 @@ button.dive_buttons::before {
  .mainHeadingMobile,.budgetHeading,.accordionText,.lineHeading,.cardHeading,.blogHeading,.blogHeadingSub,.text60{
   font-size: 6.5vw !important;
  }
+
+ 
  .heading50{
   font-size: 6vw !important;
  }

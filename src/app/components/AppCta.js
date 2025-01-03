@@ -15,7 +15,8 @@ const AppCta = ({CtaHeading}) => {
           <div className="col-md-1"></div>
           <div  className="col-md-6">
             <h2 className="innovativeHeading">
-              {CtaHeading}
+              {/* {CtaHeading} */}
+              into an Innovative <br /> Mobile App.
             </h2>
             <button className="btn-schedule" onClick={togglePopup}>
               Contact Us
