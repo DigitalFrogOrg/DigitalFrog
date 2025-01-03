@@ -172,12 +172,12 @@ function Header() {
                                     {tabsContent[activeTab].links.map(
                                       (link, index) => (
                                         <div>
-                                            <li>
+                                           {activeTab == 'development' && <li>
                                                                         <Link href={"/ai-app-development"} style={{fontWeight:'800'}} className={isActive(link.href)}>
                                                                            AI & Ml Development 
                                                                            {index === 0 ? <div className="top-button"><h4 style={{fontSize: "15px",margin:"0px"}}>Top</h4></div> : null}
                                                                            </Link>
-                                                                         </li>
+                                                                         </li>}
                                         <li key={index}>
                                           <Link
                                           style={{fontWeight:'800'}}

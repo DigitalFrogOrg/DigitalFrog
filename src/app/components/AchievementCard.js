@@ -25,9 +25,9 @@ function AchievementCard({data}) {
               onClick={() => setSelectedCard(item)}
             />
           </div>
-          <div className="arrows-div mgTop25 col-md-6 d-flex align-items-start justify-content-center flex-column paddingLeft3">
+          <div className="arrows-div mgTop25 col-md-6 d-flex align-items-start flex-column paddingLeft3">
             <img  style={{cursor:"pointer"}}  src="./images/achievement-page/arrow-1.png" onClick={() => setSelectedCard(item)} alt="arrow-1" />
-            <h1 className="heading50 cardHead"  style={{cursor:"pointer"}}  onClick={() => setSelectedCard(item)}>{item.heading}</h1>
+            <h1 className="heading50 cardHead my-3"  style={{cursor:"pointer"}}  onClick={() => setSelectedCard(item)}>{item.heading}</h1>
             <p className="paragraphText"  style={{cursor:"pointer"}}  onClick={() => setSelectedCard(item)}>
             {truncateString(item.description,450)}
             </p>
