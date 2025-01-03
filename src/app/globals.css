@@ -4110,9 +4110,13 @@ section.recent_news {
   width: 70px;
   height: 70px;
   position: fixed;
+  cursor: pointer;
   top: 26px;
   right: 26px;
   z-index: 101;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
 }
 .bars-btn svg {
   font-size: 26px;
@@ -4236,7 +4240,7 @@ section.recent_news {
   left: 0;
   width: 100vw;
   height: 100vh;
-  backdrop-filter: blur(3px); /* Adjust the blur intensity */
+  backdrop-filter: blur(6px); /* Adjust the blur intensity */
   display: flex;
   transition: all 0.5s;
   justify-content: center;
@@ -5967,6 +5971,12 @@ button.dive_buttons::before {
 
 .mgTop25{
   margin-top: 25px !important;
+}
+.bars-btn{
+  width: 40px;
+  height: 40px;
+  top: 15px !important;
+  right: 15px !important;
 }
 .mgTop15{
   margin-top: 15px !important;
