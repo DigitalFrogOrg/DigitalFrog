@@ -29,7 +29,7 @@ function AchievementCard({data}) {
             <img  style={{cursor:"pointer"}}  src="./images/achievement-page/arrow-1.png" onClick={() => setSelectedCard(item)} alt="arrow-1" />
             <h1 className="heading50 cardHead"  style={{cursor:"pointer"}}  onClick={() => setSelectedCard(item)}>{item.heading}</h1>
             <p className="paragraphText"  style={{cursor:"pointer"}}  onClick={() => setSelectedCard(item)}>
-              {item.description}
+            {truncateString(item.description,450)}
             </p>
             <div className="tags">
               {item.tags.map((tag,index)=>(<button style={{cursor:'default'}} key={index}>{tag}</button>))}
