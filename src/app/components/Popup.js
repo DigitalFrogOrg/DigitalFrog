@@ -76,7 +76,7 @@ function Popup({ togglePopup }) {
       };
 
     return (
-        <div className='main-popup'>
+        <div className='popupBg'>
             <div className='container h-100'>
                 <div className='row h-100'>
                     <div className='col-md-3'></div>
@@ -84,7 +84,7 @@ function Popup({ togglePopup }) {
                         <div className="popup-inner w-100">
                             <h2 className='formHeading'>Ready to discuss your project with us?</h2>
                             <form onSubmit={handleSubmit} className='popup-form'>
-                                <input name="fullName" value={formData.fullName} onChange={handleChange} placeholder='Full name*' />
+                                <input name="fullName" value={formData.fullName} onChange={handleChange}  placeholder='Full name*' />
                                 <input name="phoneNumber" value={formData.phoneNumber} onChange={handleChange} placeholder='Phone number *' />
                                 <input name="email" value={formData.email} onChange={handleChange} placeholder='Email *' />
                                 <textarea name="description" value={formData.description} onChange={handleChange} placeholder='Description *' rows={3}>

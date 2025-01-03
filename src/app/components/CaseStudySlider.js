@@ -75,21 +75,31 @@ const CaseStudySlider = () => {
                                     <h2 className="mt-4" style={{fontWeight:'300',fontSize:'30px'}}>ASL Flurry</h2>
                                     <p className="paragraphText">ASL Flurry is an educational app designed.</p>
                                 </div>
-                                <div className="slide-item">
+                                {/* <div className="slide-item">
                                     <img src="./images/blog-2.png" alt="Case 2" className="w-100" />
                                     <h3 className="mt-4" style={{fontWeight:'300',fontSize:'30px'}}>The Fortune Teller App by Full Moon</h3>
                                     <p className="paragraphText">The Fortune Teller App by Full Moon offers.</p>
-                                </div>
+                                </div> */}
                                 <div className="slide-item">
                                     <img src="./images/blog-3.png" alt="Case 3" className="w-100" />
                                     <h3 className="mt-4" style={{fontWeight:'300',fontSize:'30px'}}>Eksperience MyApp</h3>
                                     <p className="paragraphText">Eksperience MyApp is a versatile</p>
                                 </div>
                                 <div className="slide-item">
+                                    <img src="./images/blog-1.png" alt="Case 1" className="w-100" />
+                                    <h2 className="mt-4" style={{fontWeight:'300',fontSize:'30px'}}>ASL Flurry</h2>
+                                    <p className="paragraphText">ASL Flurry is an educational app designed.</p>
+                                </div>
+                                <div className="slide-item">
+                                    <img src="./images/blog-3.png" alt="Case 3" className="w-100" />
+                                    <h3 className="mt-4" style={{fontWeight:'300',fontSize:'30px'}}>Eksperience MyApp</h3>
+                                    <p className="paragraphText">Eksperience MyApp is a versatile</p>
+                                </div>
+                                {/* <div className="slide-item">
                                     <img src="./images/blog-2.png" alt="Case 4" className="w-100" />
                                     <h3 className="mt-4" style={{fontWeight:'300',fontSize:'30px'}}>The Fortune Teller App by Full Moon</h3>
                                     <p className="paragraphText">The Fortune Teller App by Full Moon offers.</p>
-                                </div>
+                                </div> */}
                             </Slider>
                         </div>
                     </div>

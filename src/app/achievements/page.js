@@ -2,8 +2,12 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import CaseStudySlider from "../components/CaseStudySlider";
 import RecentNews from "../components/RecentNews";
+import {cardData} from './data'
+import AchievementCard from "../components/AchievementCard";
+
 
 const page = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <>
       <Header />
@@ -16,7 +20,7 @@ const page = () => {
           </div>
           <hr />
           <div className="d-flex mt-2 align-items-center justify-content-between">
-            <div className="">@2024</div>
+            <div className="">@{currentYear}</div>
             <div className="d-flex gap-2 align-items-center">
               <div>
               Filter: All Work
@@ -33,217 +37,8 @@ const page = () => {
       </div>
 
       <div className="container achievements-page appMobilePadding mt-4">
-        <div className="row">
-          <div className="col-md-6">
-            <img
-              src="./images/achievement-page/orderPaying.png"
-              alt="image-1"
-              className="w-100"
-            />
-          </div>
-          <div className="arrows-div mgTop25 col-md-6 d-flex align-items-start justify-content-center flex-column paddingLeft3">
-            <img src="./images/achievement-page/arrow-1.png" alt="arrow-1" />
-            <h1 className="heading50">OrderPay: Mobile Ordering</h1>
-            <p className="paragraphText">
-            Take more tips, drive higher spend and turn tables faster, with the UK’s most cost-effective order and payment provider.We don’t believe in one-size-fits-all technology. Whether you’re a national restaurant chain, an independent cafe or an 18-hole golf course, we’ll help you find the right solution for your business.Let your customers order and pay the way that suits them, with no need to download an app or wait for a card terminal.
-            </p>
-            <div className="tags">
-              <button>#softwaredevelopment</button>
-              <button>#strategy</button>
-              <button>#designservices</button>
-            </div>
-          </div>
-        </div>
-        <hr className="my-5" />
-        <div className="row">
-          <div className="col-md-6 paddingRight3">
-            <img
-              src="./images/achievement-page/image-4.png"
-              className="w-100"
-              alt="image-2"
-            />
-            <div className="arrows-div d-flex align-items-start justify-content-center flex-column mt-4">
-              <img src="./images/achievement-page/arrow-1.png" alt="arrow-1" />
-              <h2 className="heading50">Cooper's Hawk</h2>
-              <p className="paragraphText">
-                We may share the information that we collect, both personal and
-                non-personal, with third parties such as advertisers, contest
-                sponsors, promotional and marketing partners, and others who
-                provide our content or whose products or services we think may
-                interest you.
-              </p>
-              <div className="tags">
-                <button>#softwaredevelopment</button>
-                <button>#strategy</button>
-                <button>#designservices</button>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-6 paddingLeft3 mgTop25">
-            <img
-              src="./images/achievement-page/kcElite.png"
-              className="w-100"
-              alt="image-2"
-            />
-            <div className="arrows-div d-flex align-items-start justify-content-center flex-column mt-4">
-              <img src="./images/achievement-page/arrow-1.png" alt="arrow-1" />
-              <h2 className="heading50">KC Elite ecommerce store</h2>
-              <p className="paragraphText">
-                We may share the information that we collect, both personal and
-                non-personal, with third parties such as advertisers, contest
-                sponsors, promotional and marketing partners, and others who
-                provide our content or whose products or services we think may
-                interest you.
-              </p>
-              <div className="tags">
-                <button>#softwaredevelopment</button>
-                <button>#strategy</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr className="my-5" />
-        <div className="row">
-          <div className="col-md-6 paddingRight3">
-            <img
-              src="./images/achievement-page/appStore.png"
-              className="w-100"
-              alt="image-2"
-            />
-            <div className="arrows-div d-flex align-items-start justify-content-center flex-column mt-4">
-              <img src="./images/achievement-page/arrow-1.png" alt="arrow-1" />
-              <h2 className="heading50">App Store Preview</h2>
-              <p className="paragraphText">
-                We may share the information that we collect, both personal and
-                non-personal, with third parties such as advertisers, contest
-                sponsors, promotional and marketing partners, and others who
-                provide our content or whose products or services we think may
-                interest you.
-              </p>
-              <div className="tags">
-                <button>#softwaredevelopment</button>
-                <button>#designservices</button>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-6 paddingLeft3 mgTop25">
-            <img
-              src="./images/achievement-page/image-5.png"
-              className="w-100"
-              alt="image-2"
-            />
-            <div className="arrows-div d-flex align-items-start justify-content-center flex-column mt-4">
-              <img src="./images/achievement-page/arrow-1.png" alt="arrow-1" />
-              <h2 className="heading50">Disfruta</h2>
-              <p className="paragraphText">
-                We may share the information that we collect, both personal and
-                non-personal, with third parties such as advertisers, contest
-                sponsors, promotional and marketing partners, and others who
-                provide our content or whose products or services we think may
-                interest you.
-              </p>
-              <div className="tags">
-                <button>#designservices</button>
-                <button>#strategy</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr className="my-5" />
-        <div className="row">
-          <div className="col-md-6 paddingRight3">
-            <img
-              src="./images/achievement-page/image-6.png"
-              className="w-100"
-              alt="image-2"
-            />
-            <div className="arrows-div d-flex align-items-start justify-content-center flex-column mt-4">
-              <img src="./images/achievement-page/arrow-1.png" alt="arrow-1" />
-              <h2 className="heading50">Pauseitive </h2>
-              <p className="paragraphText">
-                We may share the information that we collect, both personal and
-                non-personal, with third parties such as advertisers, contest
-                sponsors, promotional and marketing partners, and others who
-                provide our content or whose products or services we think may
-                interest you.
-              </p>
-              <div className="tags">
-                <button>#softwaredevelopment</button>
-                <button>#designservices</button>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-6 paddingLeft3 mgTop25">
-            <img
-              src="./images/achievement-page/image-7.png"
-              className="w-100"
-              alt="image-2"
-            />
-            <div className="arrows-div d-flex align-items-start justify-content-center flex-column mt-4">
-              <img src="./images/achievement-page/arrow-1.png" alt="arrow-1" />
-              <h2 className="heading50">Ontapp</h2>
-              <p className="paragraphText">
-                We may share the information that we collect, both personal and
-                non-personal, with third parties such as advertisers, contest
-                sponsors, promotional and marketing partners, and others who
-                provide our content or whose products or services we think may
-                interest you.
-              </p>
-              <div className="tags">
-                <button>#designservices</button>
-                <button>#strategy</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <hr className="my-5" />
-        <div className="row">
-          <div className="col-md-6 paddingRight3">
-            <img
-              src="./images/achievement-page/image-8.png"
-              className="w-100"
-              alt="image-2"
-            />
-            <div className="arrows-div d-flex align-items-start justify-content-center flex-column mt-4">
-              <img src="./images/achievement-page/arrow-1.png" alt="arrow-1" />
-              <h2 className="heading50">PHILApp: Unity With a Purpose </h2>
-              <p className="paragraphText">
-                We may share the information that we collect, both personal and
-                non-personal, with third parties such as advertisers, contest
-                sponsors, promotional and marketing partners, and others who
-                provide our content or whose products or services we think may
-                interest you.
-              </p>
-              <div className="tags">
-                <button>#softwaredevelopment</button>
-                <button>#designservices</button>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-6 paddingLeft3 mgTop25">
-            <img
-              src="./images/achievement-page/image-9.png"
-              className="w-100"
-              alt="image-2"
-            />
-            <div className="arrows-div d-flex align-items-start justify-content-center flex-column mt-4">
-              <img src="./images/achievement-page/arrow-1.png" alt="arrow-1" />
-              <h2 className="heading50">Cooper's Hawk</h2>
-              <p className="paragraphText">
-                We may share the information that we collect, both personal and
-                non-personal, with third parties such as advertisers, contest
-                sponsors, promotional and marketing partners, and others who
-                provide our content or whose products or services we think may
-                interest you.
-              </p>
-              <div className="tags">
-                <button>#designservices</button>
-                <button>#strategy</button>
-              </div>
-            </div>
-          </div>
-        </div>
+       
+        <AchievementCard data={cardData} />
       </div>
 
       <div className="mt-5">

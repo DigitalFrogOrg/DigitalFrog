@@ -172,14 +172,15 @@ function Header() {
                                     {tabsContent[activeTab].links.map(
                                       (link, index) => (
                                         <div>
-                                            <li>
-                                                                        <Link href={"/ai-app-development"} className={isActive(link.href)}>
+                                           {(activeTab == 'development' && index === 0) && <li>
+                                                                        <Link href={"/ai-app-development"} style={{fontWeight:'800'}} className={isActive(link.href)}>
                                                                            AI & Ml Development 
-                                                                           {index === 0 ? <div className="top-button"><h4 style={{fontSize: "15px",margin:"0px"}}>Top</h4></div> : null}
+                                                                          <div className="top-button"><h4 style={{fontSize: "15px",margin:"0px"}}>Top</h4></div>
                                                                            </Link>
-                                                                         </li>
+                                                                         </li>}
                                         <li key={index}>
                                           <Link
+                                          style={{fontWeight:'800'}}
                                             href={link.href}
                                             className={isActive(link.href )}
                                           >
@@ -195,6 +196,7 @@ function Header() {
                                       (link, index) => (
                                         <li key={index}>
                                           <Link
+                                          style={{fontWeight:'800'}}
                                             href={link.href}
                                             className={isActive(link.href)}
                                           >
