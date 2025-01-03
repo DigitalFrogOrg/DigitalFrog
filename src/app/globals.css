@@ -13,9 +13,9 @@
   background-color: rgb(220, 95, 0);
   padding: 6px 8px;
   float: right;
-  border-radius: 10px;
+  border-radius: 6px;
   margin: -5px 50px 0 0px;
-  rotate: -20deg;
+  rotate: -10deg;
 }
 
 /* For the popup overlay */
