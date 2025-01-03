@@ -173,7 +173,7 @@ function Header() {
                                       (link, index) => (
                                         <div>
                                            {(activeTab == 'development' && index === 0) && <li>
-                                                                        <Link href={"/ai-app-development"} style={{fontWeight:'800'}} className={isActive(link.href)}>
+                                                                        <Link href={"/ai-app-development"} style={{fontWeight:'800'}} className={isActive('/ai-app-development')}>
                                                                            AI & Ml Development 
                                                                           <div className="top-button"><h4 style={{fontSize: "15px",margin:"0px"}}>Top</h4></div>
                                                                            </Link>
