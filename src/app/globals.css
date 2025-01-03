@@ -4236,7 +4236,7 @@ section.recent_news {
   left: 0;
   width: 100vw;
   height: 100vh;
-  backdrop-filter: blur(3px); /* Adjust the blur intensity */
+  backdrop-filter: blur(6px); /* Adjust the blur intensity */
   display: flex;
   transition: all 0.5s;
   justify-content: center;
