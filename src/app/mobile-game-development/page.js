@@ -16,13 +16,14 @@ import MainBanner from "../components/MainBanner";
 import Link from "next/link";
 import {topRanked,faqData,benefitsWorking,uptoTime} from './data'
 import DropUsALine from "../components/DropUsALine";
+import AppCard from "../components/appCard";
 
 function page() {
  
   return (
     <>
       <Header />
-      <MainBanner MainBannerHeading="Mobile Game Development Services" />
+      <MainBanner MainBannerHeading="Mobile Game Development <br /> Services" />
 
       {/* Second Section */}
 
@@ -277,14 +278,10 @@ function page() {
               />
               <div>
                   {topRanked.map((item,i)=>(
-                      <div className="text-section-hover mobileCardPadding" key={i}>
-                      <h1 className="cardHeading">
-                        {item.heading}
-                      </h1>
-                      <p className="cardDesc">
-                        {item.description}
-                      </p>
+                      <div key={i} className="my-4">
+                        <AppCard heading={item.heading} height={168} hoverEffect="effect2" description={item.description} />  
                       </div>
+                     
                   ))}
               </div>
             </div>
@@ -315,27 +312,10 @@ function page() {
             </div>
           </div>
           <div className="row">
-            {benefitsWorking.slice(0,3).map((item, i) => (
-               <div className="col-md-4" key={i}>
-               <div className="mid-app-divs">
-                 <h4 className="cardHeading">{item.heading}</h4>
-                 <p className="cardDesc">
-                   {item.description}
-                 </p>
-               </div>
-             </div>
-            ))
-            }
-          </div>
-          <div className="row">
-          {benefitsWorking.slice(3,6).map((item, i) => (
-               <div className="col-md-4" key={i}>
-               <div className="mid-app-divs mobileCardPadding">
-                 <h4 className="cardHeading ">{item.heading}</h4>
-                 <p className="cardDesc">
-                   {item.description}
-                 </p>
-               </div>
+            {benefitsWorking.map((item, i) => (
+               <div className="col-md-4 my-2" key={i}>
+              <AppCard heading={item.heading} isCenter={true} height={370} hoverEffect="effect2" description={item.description} />
+             
              </div>
             ))
             }
@@ -345,7 +325,7 @@ function page() {
 
      
 
-      <div className="case-study py-5 my-5 appMobilePaddingSmall">
+      <div className="container case-study py-5 my-5 appMobilePaddingSmall">
         <div className="row">
           <div className="col-md-12">
             <h2 className="mainHeadingMobile">up-to-the-minute</h2>
@@ -358,24 +338,19 @@ function page() {
             </p>
           </div>
         </div>
-
-        <div className="container mt-5">
+      </div>
+      <div className="container mt-5">
           <div className="row">
             {uptoTime.map((item, i) => (
-              <div className={`col-md-6 ${i > 1 ? "mt-3" : "mgTop15"} `} key={i}>
-              <div className="up-to-mints-div mobileCardPadding">
-                <h4 className="cardHeading">{item.heading}</h4>
-                <p className="cardDesc">
-                  {item.description}
-                </p>
-              </div>
+              <div className={`col-md-6 my-2`} key={i}>
+              <AppCard heading={item.heading} height={206} hoverEffect="effect1" description={item.description} />
+              
             </div>
             ))}
           
     
           </div>
         </div>
-      </div>
 
       <AppCta CtaHeading="Into an Innovative Mobile App." />
 

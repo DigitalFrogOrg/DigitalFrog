@@ -7,6 +7,7 @@ import MainBanner from "../components/MainBanner";
 import Link from "next/link";
 import { faqData,empowerWithEase } from "./data";
 import DropUsALine from "../components/DropUsALine";
+import AppCard from "../components/appCard";
 
 const page = () => {
  
@@ -56,13 +57,8 @@ const page = () => {
           </p>
           <div className="row">
             {empowerWithEase.map((item,i)=>(
-                <div className="col-md-4" key={i}>
-                <div className="DesignProcessBox mobileCardPadding" style={{ height: "90%" }}>
-                  <h4 className="cardHeading">{item.heading}</h4>
-                  <p className="cardDesc">
-                    {item.description}
-                  </p>
-                </div>
+                <div className="col-md-4 my-2" key={i}>
+               <AppCard heading={item.heading} hoverEffect="effect2" isCenter={true} height={255} description={item.description} />
                 </div>
             ))
 

@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
+import AppCard from "./appCard";
 
 const IOSAppDesignServices = () => {
    const slider = useRef(null);
@@ -15,6 +16,13 @@ const IOSAppDesignServices = () => {
     slidesToScroll: 1,
     arrows: false,
   };
+
+  const data = [
+    {heading:"Modernized Design Consultancy",description:"Get recommendations on your exclusive Apple projects and scale your app store with modern app features, user experience,design, and appealing user interface. Design consultancy helps to roadmap the right path to your app idea, particularly to dispense highly intuitive."},
+    {heading:"High-End UX/UI Design",description:"Apple has a unique and delusional form of design strategy to make the iOS app store up-to-date with the latest hi-techde sign formations and procedures. Here, our iOS app designers value consistency in crafting highly intrinsic apps to stand out among global businesses. easy-to-use interfaces to hook large audiences promptly."},
+    {heading:"Motion Design",description:"There is fierce competition to develop attractive motion designs in the leading tech industries as it is the highest captivating format to attract users on a larger scale. It harbors powerful and essential tools to communicate with consumers or clients effectively. Our top iPhone app design team uses multiple graphic combinations."},
+    {heading:"High-End UX/UI Design",description:" Apple has a unique and delusional form of design strategy to make the iOS app store up-to-date with the latest hi-tech design formations and procedures. Here, our iOS app designers value consistency in crafting highly intrinsic apps to stand out among global businesses. easy-to-use interfaces to hook large audiences promptly."},
+  ]
 
   return (
     <div className="container IOS-services appMobilePadding">
@@ -54,61 +62,13 @@ const IOSAppDesignServices = () => {
 
         <div className="col-md-12 mt-5">
           <Slider ref={slider} {...settings}>
-            <div>
-              <div className="IOS-slider mobileCardPadding">
-                <h3 className="cardHeading">Modernized Design Consultancy</h3>
-                <p className="cardDesc">
-                  Get recommendations on your exclusive Apple projects and scale
-                  your app store with modern app features, user experience,
-                  design, and appealing user interface. Design consultancy helps
-                  to roadmap the right path to your app idea, particularly to
-                  dispense highly intuitive.
-                </p>
-                {/* <Link href="#getInTouch"><button>Drop us a line</button> </Link> */}
+
+            {data.map((item,i)=>(
+                <div key={i}>
+                  <AppCard isSlider={true} height={255} hoverEffect="effect1" heading={item.heading} description={item.description} />
               </div>
-            </div>
-            <div>
-              <div className="IOS-slider mobileCardPadding">
-                <h3 className="cardHeading">High-End UX/UI Design</h3>
-                <p className="cardDesc">
-                  Apple has a unique and delusional form of design strategy to
-                  make the iOS app store up-to-date with the latest hi-tech
-                  design formations and procedures. Here, our iOS app designers
-                  value consistency in crafting highly intrinsic apps to stand
-                  out among global businesses. easy-to-use interfaces to hook
-                  large audiences promptly.
-                </p>
-                {/* <Link href="#getInTouch"><button>Drop us a line</button> </Link> */}
-              </div>
-            </div>
-            <div>
-              <div className="IOS-slider mobileCardPadding">
-                <h3 className="cardHeading">Motion Design</h3>
-                <p className="cardDesc">
-                  There is fierce competition to develop attractive motion
-                  designs in the leading tech industries as it is the highest
-                  captivating format to attract users on a larger scale. It
-                  harbors powerful and essential tools to communicate with
-                  consumers or clients effectively. Our top iPhone app design
-                  team uses multiple graphic combinations.
-                </p>
-                {/* <Link href="#getInTouch"><button>Drop us a line</button></Link> */}
-              </div>
-            </div>
-            <div>
-              <div className="IOS-slider mobileCardPadding">
-                <h3 className="cardHeading">High-End UX/UI Design</h3>
-                <p className="cardDesc">
-                  Apple has a unique and delusional form of design strategy to
-                  make the iOS app store up-to-date with the latest hi-tech
-                  design formations and procedures. Here, our iOS app designers
-                  value consistency in crafting highly intrinsic apps to stand
-                  out among global businesses. easy-to-use interfaces to hook
-                  large audiences promptly.
-                </p>
-                {/* <Link href="#getInTouch"><button>Drop us a line</button> </Link> */}
-              </div>
-            </div>
+            ))}
+
           </Slider>
         </div>
       </div>
