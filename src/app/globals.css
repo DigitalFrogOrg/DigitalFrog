@@ -5104,7 +5104,7 @@ section.recent_news {
   font-size: 14px;
 }
 .mobileAppDesignBox {
-  min-height: 345px;
+  height: 355px;
   background-color: var(--white);
   border-radius: 12px;
   padding: 26px;

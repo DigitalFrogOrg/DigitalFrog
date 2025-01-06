@@ -42,7 +42,7 @@ const page = () => {
             <DropUsALine />
           </div>
           <div className="col-md-6">
-            <img src="./images/456236.png" alt="456236" className="w-100" />
+            <img src="/images/androidDev.png" alt="androidDev" className="w-100" />
           </div>
         </div>
       </div>
