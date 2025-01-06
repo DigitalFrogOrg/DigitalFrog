@@ -7,6 +7,7 @@ import BudgetSection from "../components/BudgetSection";
 import Link from "next/link";
 import {faqData,developerAdequacies,whyChooseUs} from './data'
 import DropUsALine from "../components/DropUsALine";
+import AppCard from "../components/appCard";
 
 const page = () => {
   
@@ -41,7 +42,7 @@ const page = () => {
             <DropUsALine />
           </div>
           <div className="col-md-6">
-            <img src="./images/456236.png" alt="456236" className="w-100" />
+            <img src="/images/androidDev.png" alt="androidDev" className="w-100" />
           </div>
         </div>
       </div>
@@ -146,13 +147,8 @@ const page = () => {
 
           <div className="row mt-5">
             {developerAdequacies.map((item,i)=>(
-              <div className="col-md-6">
-              <div className="DevelopmentProcessBox mobileCardPadding">
-                <h4 className="cardHeading">{item.heading}</h4>
-                <p className="cardDesc">
-                  {item.paragraph}
-                </p>
-              </div>
+              <div className="col-md-6 my-2" key={i}>
+                <AppCard heading={item.heading} hoverEffect="effect5" height={231} description={item.description} />
               </div>
             ))}
           </div>
@@ -163,10 +159,9 @@ const page = () => {
         <div className="row">
           <div className="col-md-6 d-flex align-items-center justify-content-start">
             <img
-              src="./images/image86.png"
-              alt="image86"
-              className="w-100"
-              style={{ margin: "-75px" }}
+              src="./images/androiddeveloper.png"
+              alt="androiddeveloper"
+              className="w-100 androiddeveloperImg"
             />
           </div>
           <div className="col-md-6 footerSection">
@@ -241,16 +236,8 @@ const page = () => {
             </div>
 
             {whyChooseUs.map((item,i)=>(
-              <div className="col-md-4" key={i}>
-              <div className="IosChooseBox">
-                <div>
-                <h4 className="cardHeading">{item.heading}</h4>
-                <p className="cardDesc textBlack">
-                  {item.description}
-                </p>
-                </div>
-                <span></span>
-              </div>
+              <div className="col-md-4 my-2" key={i}>
+              <AppCard heading={item.heading} hoverEffect="effect5" height={303} isCenter={true} showLine={true} description={item.description} />
             </div>
             ))}
           </div>

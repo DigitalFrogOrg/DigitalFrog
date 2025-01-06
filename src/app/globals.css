@@ -671,6 +671,9 @@ ul.footer-info li a {
   transform: rotate(-90deg);
   display: flex;
 }
+.imgCardDesc{
+  padding-bottom:100px !important;
+}
 .right-banner-div span {
   color: var(--heading-color);
   font-weight: bold;
@@ -3738,6 +3741,17 @@ section.recent_news {
   transition: 0.6s all;
   transform: translateX(40px);
 }
+.effect7:hover {
+  background-image: url("/images/back-maintainence.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.6s all;
+  transform: translateX(40px);
+}
+.effect7:hover .cardDesc{
+  color: #454545 !important;
+}
 .app-quality:hover h3 {
   color: var(--orange) !important;
   transition: 0.6s all;
@@ -3924,17 +3938,41 @@ section.recent_news {
   min-height: 96%;
 }
 
-.appCardContainer{
+.appCardContainer,.appImageCardContainer{
+  /* -webkit-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.3); */
+  /* -moz-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.3); */
+  /* box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.3); */
+  border-radius: 12px;
+  padding: 1.5rem 1.5rem 1rem 2rem;
+  overflow: hidden;
+  position: relative;
+  background-color: #FBFBFB;
+}
+.appImageCardContainer{
   -webkit-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.3);
   border-radius: 12px;
   padding: 1.5rem 1.5rem 1rem 2rem;
   overflow: hidden;
+  position: relative;
+  background-color: #FBFBFB;
 }
 
 .appCardContainer:hover p {
   color: white !important;
+}
+
+
+
+.cardBottomLine{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60%;
+  left: 20%;
+  height: 4px;
+  background-color: #ABABAB;
 }
 
 
@@ -3987,13 +4025,12 @@ section.recent_news {
 
 .effect1:hover{
   cursor: pointer;
-  transition: 0.4s all;
-  background-color: var(--orange);
-  color: #fff;
-  background-image: url("/images/Group1707479840.png");
-  background-position: center center;
+  background-image: url("/images/Group1707479841.png");
+  background-position: center;
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
+  color: white !important;
+  background-color: var(--orange);
 }
 .up-to-mints-div:hover h4 {
   color: #fff;
@@ -4909,6 +4946,33 @@ section.recent_news {
   filter: grayscale(1);
   transition: filter 0.3s ease;
 }
+.appImageCardContainer img {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  z-index: 9;
+  filter: grayscale(1);
+  transition: filter 0.3s ease;
+}
+.appImageCardContainer:hover img {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  z-index: 9;
+  filter: grayscale(0);
+  transition: filter 0.3s ease;
+}
+.appImageCardContainer span {
+  position: absolute;
+  top: 5%;
+  left: 49%;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  background-color: #f5f5f5;
+  z-index: 7;
+  transition: background-color 0.3s ease;
+}
 .workingWithCynergyBox span {
   position: absolute;
   top: 10%;
@@ -4937,11 +5001,26 @@ section.recent_news {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.effect6:hover {
+  background-image: url("/images/Group1707479839.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.effect6:hover h4 {
+  color: var(--orange);
+}
 .workingWithCynergyBox:hover h4 {
   color: var(--orange);
 }
 .workingWithCynergyBox:hover img {
   filter: grayscale(0);
+}
+.effect6:hover img {
+  filter: grayscale(0);
+}
+.effect6:hover span {
+  background-color: #fcefe6;
 }
 .workingWithCynergyBox:hover span {
   background-color: #fcefe6;
@@ -5025,7 +5104,7 @@ section.recent_news {
   font-size: 14px;
 }
 .mobileAppDesignBox {
-  min-height: 345px;
+  height: 355px;
   background-color: var(--white);
   border-radius: 12px;
   padding: 26px;
@@ -5122,6 +5201,9 @@ section.recent_news {
   background-color: var(--orange);
   color: #fff;
 }
+.effect2:hover p{
+  color: #fff !important;
+}
 
 .DesignProcessBox:hover {
   background-color: var(--orange);
@@ -5177,6 +5259,8 @@ color: var(--orange) !important;
   min-height: 260px;
   width: 98%;
 }
+
+
 .MobileQaBoxes h4 {
   font-size: 24px;
   font-weight: bold;
@@ -5276,16 +5360,7 @@ color: var(--orange) !important;
   font-size: 55px;
   font-weight: bold;
 }
-.WebAppDevBox {
-  background-color: var(--white);
-  /* padding: 26px; */
-  padding: 2rem 2rem 1.5rem 2.5rem;
-  border-radius: 12px;
-  box-shadow: 1px 1px 23.21px 0px #0000001e;
-  margin-top: 20px;
-  cursor: pointer;
-  transition: all 0.4s ease;
-}
+
 .WebAppDevBox h4 {
   margin-bottom: 12px;
   font-size: 24px;
@@ -5298,9 +5373,22 @@ color: var(--orange) !important;
   margin-bottom: 0px;
 }
 
+
+
 .WebAppDevBox:hover {
   background-color: var(--orange) !important;
   transform: translateX(-20px);
+}
+
+.effect4 {
+  background-color: var(--white);
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.effect4:hover {
+  background-color: var(--orange) !important;
+  transform: translateX(-20px) !important;
+  color: white !important;
 }
 .WebAppDevBox:hover h4,
 .WebAppDevBox:hover p {
@@ -5327,6 +5415,28 @@ color: var(--orange) !important;
   margin-top: 26px;
   min-height: 220px;
 }
+.effect5{
+  background-color: var(--white);
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.effect5:hover {
+  background-image: url("/images/Group3485457.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.effect5:hover h4 {
+  color: var(--orange);
+}
+.effect5:hover p {
+  color: #454545 !important;
+}
+.effect5:hover .cardBottomLine,.effect2:hover .cardBottomLine{
+  background-color: var(--orange) !important;
+}
+
 .DevelopmentProcessBox h4 {
   font-size: 24px;
   font-weight: bold;
@@ -5702,6 +5812,10 @@ color: var(--orange) !important;
   padding-top: 0 !important;
 }
 
+@media only screen and (max-width: 1550px) {
+  .cardHeading{font-size: 24px !important}
+}
+
 @media only screen and (max-width: 948px) {
   .webAppDev{
     padding-left: 40px !important;
@@ -5740,18 +5854,31 @@ color: var(--orange) !important;
 }
 
 @media only screen and (max-width: 480px) {
-
+  .effect7:hover {
+    transform: none;
+  }
   .right-main-menu .main-ul-li li a {
     color: var(--heading-color);
     font-size: 22px;
     /* text-transform: capitalize; */
     font-weight: bold;
 }
+.phase_a-second-col::before,.phase_a-first-col::before,
+.phase_a-third-col::before,.phase_b-first-col::before,
+.phase_b-second-col::before,
+.phase_b-third-col::before,.phase_b-forth-col::before,.phase_b-fifth-col::before{
+  
+  display: none;
+}
 .right-mega-menu {
   border-left: none;
 }
 .appCardContainer{
   height: 300px !important;
+  padding: 1.5rem 1rem 1rem 1rem !important;
+}
+.appImageCardContainer{
+  height: 400px !important;
   padding: 1.5rem 1rem 1rem 1rem !important;
 }
 .cardDescArea{

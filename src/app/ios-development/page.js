@@ -6,42 +6,11 @@ import BudgetSection from "../components/BudgetSection";
 import MainBanner from "../components/MainBanner";
 import Link from "next/link";
 import DropUsALine from "../components/DropUsALine";
+import { faqData,processes,cynergyStudio,whyChooseUs } from "./data";
+import AppCard from "../components/appCard";
 
 const page = () => {
-  const faqData = [
-    {
-      questionId: "01",
-      question: "What is an iOS app development service?",
-      answer:
-        "At Cynergy Studios, iOS app development services encompass creating high-quality applications for Apple devices. Our expert team guides you from concept to deployment, utilizing the latest tools and best practices to ensure a functional and user-friendly app.",
-    },
-    {
-      questionId: "02",
-      question: "How much does it cost to develop an app for iOS?",
-      answer:
-        "The cost to develop an iOS app at Cynergy Studios varies based on complexity and features. Simple apps may start around $5,000, while more complex applications can range from $20,000 to over $100,000. We provide tailored estimates based on your specific needs.",
-    },
-    {
-      questionId: "03",
-      question:
-        "How to choose an iOS app development company?",
-      answer:
-        "When selecting an iOS app development company like Cynergy Studios, consider: <br /> <br />  1. <b>Experience:</b> Review our portfolio of past projects. <br />2. <b>Client Reviews:</b> Check testimonials and case studies for feedback.<br /> 3. <b>Technical Expertise:</b> Ensure our team is skilled in the latest iOS technologies.<br /> 4. <b>Communication:</b> Look for clear and continuous collaboration.<br /> 5. <b>Post-Launch Support:</b> Choose a company that offers ongoing maintenance.",
-    },
-    {
-      questionId: "04",
-      question:
-        "How can I develop an iOS app?",
-      answer:
-        "To develop an iOS app with Cynergy Studios:<br /> <br /> 1. <b>Define Your Vision:</b> Collaborate to outline your app’s purpose. <br /> 2. <b>Market Research:</b> We assess competitors and user needs. <br /> 3. <b>Design:</b> Our team creates wireframes and prototypes.<br />  4. <b>Development:</b> We build your app using Xcode and Swift.<br /> 5. <b>Testing:</b> Extensive testing is conducted before launch.<br /> 6. <b>Launch:</b> We assist with the App Store submission process.<br /> 7. <b>Ongoing Support:</b> We provide updates based on feedback.",
-    },
-    {
-      questionId: "05",
-      question: "What is the hourly rate for iOS app development?",
-      answer:
-        "Cynergy Studios' hourly rates for iOS app development typically range from $50 to $200, depending on project complexity and expertise. Our rates reflect the high-quality services we provide, ensuring value for your investment.",
-    },
-  ];
+ 
   return (
     <>
       <Header />
@@ -201,7 +170,96 @@ const page = () => {
         </div>
       </div>
 
-       <div
+      <div style={{padding:'100px 0px 100px 0px'}} className="appMobilePaddingSmall">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-8">
+              <h2 className="mainHeadingMobile">Process</h2>
+              <p className="paragraphText">
+              We believe in focusing on a rigorous and systematic approach in every stage of development. Our consumer-centric strategy affirms the most advanced technologies to avoid errors and bugs. Our developers ensure the right testing process throughout the development phase to provide a unique user experience.
+              </p>
+            </div>
+            <div className="col-md-4 d-flex align-items-center justify-content-end">
+            <DropUsALine />
+            </div>
+          </div>
+
+          <div className="row mt-5">
+            {processes.map((item,i)=>(
+              <div className="col-md-4 my-2" key={i}>
+                <AppCard heading={item.heading} height={370} hoverEffect="effect2" isCenter={true} description={item.description} />
+            
+              {/* <div className="DevelopmentProcessBox mobileCardPadding">
+                <h4 className="cardHeading">{item.heading}</h4>
+                <p className="cardDesc">
+                  {item.paragraph}
+                </p>
+              </div> */}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div style={{padding:'100px 0px 100px 0px',background:'#FFFBF8'}} className="appMobilePaddingSmall">
+              <div className="container">
+                <h2 className="text-center mainHeadingMobile">
+                  Cynergy <span>Studios</span>
+                </h2>
+                <p className="text-center paragraphText">
+                  Harnessing productive measures to provision adequate mobile app
+                  evolution roadmap for the partners
+                  <br /> and clients to bystander sterling mobile app re-architecting
+                  from our top-notch support activities.
+                </p> 
+                <div className="row mt-5">
+                  <div className="col-md-7">
+                    {cynergyStudio.map((item,i)=>(
+                      <div key={i} className="my-4 col-md-10">
+                        <AppCard heading={item.heading} height={248} hoverEffect="effect7" description={item.description} />
+                      </div>
+                    
+                    ))}
+                  </div>
+                  <div className="col-md-5 marginTopMobile">
+                    <img
+                      src="./images/landing_prospecting.png"
+                      alt="landing_prospecting"
+                      className="w-100 h-100"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div style={{padding:'100px 0px 100px 0px'}} className="appMobilePaddingSmall">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-8">
+              <h2 className="mainHeadingMobile">Why Choose Us</h2>
+              <p className="paragraphText">
+              Cynergy Studios stands among the top mobile app development companies in the US, holding an experienced and skillful dedicated software development team to meet the needs of your valuable business, whether it's a start-up or a large enterprise we accommodate adeptly and productively.
+                      </p>
+            </div>
+            <div className="col-md-4 d-flex align-items-center justify-content-end">
+            <DropUsALine />
+            </div>
+            </div>
+            <div className="row mt-4">
+            {whyChooseUs.map((item, index) => (
+                <div className="col-md-4 my-2" key={index}>
+                  <AppCard heading={item.heading} showLine={true} height={303} isCenter={true} hoverEffect="effect5" description={item.description} />
+              </div>
+            ))
+            }
+            </div>
+          
+           
+        </div>
+      </div>
+
+       {/* <div
         className="last-section appMobilePaddingSmall"
         style={{ backgroundColor: "#fff", padding: "30px 0px 100px 0px" }}
       >
@@ -220,10 +278,10 @@ const page = () => {
           </div>
         
         </div>
-      </div>
+      </div> */}
 
 
-      <div className="container-fluid navs-app appMobilePadding">
+      {/* <div className="container-fluid navs-app appMobilePadding">
         <div className="row">
           <div className="col-md-1 navappImg d-flex align-items-end">
             <img
@@ -275,7 +333,7 @@ const page = () => {
             />
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="my-4">
         <AppCta CtaHeading="Into an Innovative Mobile App." />

@@ -8,10 +8,11 @@ import TechAndTools from "../components/TechAndTools";
 import Link from "next/link";
 import { pwaDevelopmentService,faqData,developmentProcess,whyChooseUs } from "./data";
 import DropUsALine from "../components/DropUsALine";
+import AppCard from "../components/appCard";
 
 const page = () => {
 
-  return (
+  return (  
     <>
       <Header />
       <MainBanner MainBannerHeading="PWA Development<br/> Services" />
@@ -68,12 +69,9 @@ const page = () => {
           </div>
           <div className="col-md-6 paddingLeft3 d-flex align-items-center justify-content-center flex-column">
             {pwaDevelopmentService?.map((item,index)=>(
-              <div className="WebAppDevBox mobileCardPadding" key={index}>
-              <h4  className="cardHeading">{item?.heading}</h4>
-              <p className="cardDesc">
-                {item?.description}
-              </p>
-            </div>
+                <div className="my-2" key={index}>
+                  <AppCard heading={item.heading} height={168} hoverEffect="effect4" description={item.description} />
+                </div>
             ))}
             
           
@@ -102,13 +100,8 @@ const page = () => {
 
           <div className="row mt-5">
             {developmentProcess?.map((item,index)=>(
-              <div className="col-md-6" key={index}>
-              <div className="DevelopmentProcessBox mobileCardPadding">
-                <h4 className="cardHeading">{item.heading}</h4>
-                <p className="cardDesc">
-                  {item.description}
-                </p>
-              </div>
+              <div className="col-md-6 my-2" key={index}>
+                  <AppCard heading={item.heading} height={231}  hoverEffect="effect5" description={item.description} />
             </div>
             ))}
 
@@ -350,16 +343,8 @@ const page = () => {
             </div>
             <div className="row mt-4">
             {whyChooseUs.map((item, index) => (
-                <div className="col-md-4" key={index}>
-                <div className="IosChooseBox mobileCardPadding">
-                  <div>
-                  <h4 className="cardHeading">{item.heading}</h4>
-                  <p className="cardDesc textBlack">
-                    {item.description}
-                  </p>
-                  </div>
-                  <span></span>
-                </div>
+                <div className="col-md-4 my-2" key={index}>
+                  <AppCard heading={item.heading} showLine={true} height={303} isCenter={true} hoverEffect="effect5" description={item.description} />
               </div>
             ))
             }

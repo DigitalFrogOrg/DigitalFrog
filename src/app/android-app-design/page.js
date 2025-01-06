@@ -7,6 +7,7 @@ import MainBanner from "../components/MainBanner";
 import Link from "next/link";
 import DropUsALine from "../components/DropUsALine";
 import { faqData,designProcess,androidAppDesign,whyChooseUs } from "./data";
+import AppCard from "../components/appCard";
 
 const page = () => {
 
@@ -64,11 +65,12 @@ const page = () => {
                     alt="mobile-search_12600961"
                   />
                   <h4 className="cardHeading">UX/UI Design</h4>
-                  <p className="cardDesc">
+                  <p className="cardDesc hide-scrollbar" style={{height:'255px'}}>
                     Cynergy Studios has an exceptional team of custom app
                     development services who can creatively build your Android
                     app to break through your business amplitude to the next
                     level.
+                   
                   </p>
                 </div>
               </div>
@@ -76,7 +78,7 @@ const page = () => {
                 <div className="mobileAppDesignBox mobileCardPadding">
                   <img src="./images/rgb_85900432.png" alt="rgb_85900432" />
                   <h4 className="cardHeading">Motion Design</h4>
-                  <p className="cardDesc">
+                  <p className="cardDesc hide-scrollbar" style={{height:'255px'}}>
                     Adding some flavourful features and high-end specifications
                     to capture attention and enhance the overall user experience
                     of the Android app. Cynergy’s professional Android UI
@@ -92,7 +94,7 @@ const page = () => {
                     alt="mobile-development_70753731"
                   />
                   <h4 className="cardHeading">Branding</h4>
-                  <p className="cardDesc">
+                  <p className="cardDesc hide-scrollbar" style={{height:'255px'}}>
                     It plays a significant role in enhancing the representation
                     of the brand's identity and its usefulness across multiple
                     platforms that resonate with your target audience. Our
@@ -108,7 +110,7 @@ const page = () => {
                     alt="cloud-computing_63418351"
                   />
                   <h4 className="cardHeading">Design Consultancy</h4>
-                  <p className="cardDesc">
+                  <p className="cardDesc hide-scrollbar" style={{height:'255px'}}>
                     This refers to the expert guidance to evaluate Android
                     mobile design aesthetically to function exceptionally in a
                     profound manner as per the client's exigencies. They work
@@ -142,13 +144,8 @@ const page = () => {
           </div>
           <div className="row mt-5">
             {designProcess.map((item,i)=>(
-              <div className="col-md-4" key={i}>
-              <div className="DesignProcessBox mobileCardPadding">
-                <h4 className="cardHeading">{item.heading}</h4>
-                <p className="cardDesc">
-                  {item.description}
-                </p>
-              </div>
+              <div className="col-md-4 my-2" key={i}>
+                <AppCard heading={item.heading} height={370} isCenter={true} hoverEffect="effect2" ef description={item.description} />
             </div>
             ))}
           </div>
@@ -173,13 +170,8 @@ const page = () => {
         </div>
         <div className="row">
           {androidAppDesign.map((item,i)=>(
-            <div className="col-md-6 mt-4" key={i}>
-            <div className="up-to-mints-div mobileCardPadding">
-              <h4 className="cardHeading">{item.heading}</h4>
-              <p className="cardDesc">
-                {item.description}
-              </p>
-            </div>
+            <div className="col-md-6 my-2" key={i}>
+                <AppCard heading={item.heading} height={206} hoverEffect="effect1" description={item.description} />
             </div>
           ))
 
@@ -199,13 +191,8 @@ const page = () => {
           </p>
           <div className="row mt-5">
             {whyChooseUs.map((item,i)=>(
-              <div className="col-md-4">
-              <div className="MobileQaBoxes mobileCardPadding">
-                <h4 className="cardHeading">{item.heading}</h4>
-                <p className="cardDesc">
-                  {item.description}
-                </p>
-              </div>
+              <div className="col-md-4 my-2">
+                <AppCard heading={item.heading} height={255} isCenter={true} hoverEffect="effect1" description={item.description} />
             </div>
             ))}
           </div>

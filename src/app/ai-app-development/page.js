@@ -7,6 +7,8 @@ import MainBanner from "../components/MainBanner";
 import IOSAppDesignServices from "../components/IosDesignServices";
 import {faqData,aiSoftware,aiBenefits} from './data'
 import DropUsALine from "../components/DropUsALine";
+import AppCard from "../components/appCard";
+import AppImageCard from "../components/AppImageCard";
 const Page = () => {
 
   return (
@@ -57,33 +59,15 @@ const Page = () => {
           accordingly
         </p>
         <div className="row mt-5">
-          {aiSoftware.slice(0,3).map((item,i)=>(
-            <div className={`col-md-4 ${i > 0 ?'mgTop25':''}`} key={i}>
-            <div className="AISoftwareDevBox mobileCardPadding">
-              <img src={`/images/${item.imgUrl}`} alt="IconStore1" />
-              <h4 className="cardHeading">{item.heading}</h4>
-              <p className="paragraphText">
-               {item.description}
-              </p>
-            </div>
+          {aiSoftware.map((item,i)=>(
+            <div className={`col-md-4 my-2`} key={i}>
+          <AppImageCard heading={item.heading} imageStyle="2" hoverEffect="effect2" imgUrl={`/images/${item.imgUrl}`} isCenter={true} height={512} description={item.description} />
+          
           </div>
           ))
           }
         </div>
-        <div className="row mt-4">
-        {aiSoftware.slice(3,6).map((item,i)=>(
-            <div className={`col-md-4 ${i > 0 ?'mgTop25':''}`} key={i}>
-            <div className="AISoftwareDevBox mobileCardPadding">
-              <img src={`/images/${item.imgUrl}`} alt="IconStore1" />
-              <h4 className="cardHeading">{item.heading}</h4>
-              <p className="paragraphText">
-               {item.description}
-              </p>
-            </div>
-          </div>
-          ))
-          }
-        </div>
+      
       </div>
 
       <div className="KeyOfAi appMobilePaddingSmall">
@@ -137,11 +121,11 @@ const Page = () => {
 
       <IOSAppDesignServices />
 
-      <div className="case-study py-5 appMobilePaddingSmall" style={{backgroundColor: "#fffbf8"}}>
-        <div className="row pt-5">
-          <div className="col-md-12">
-            <h2 className="mainHeadingMobile">Benefits of AI in Education</h2>
-            <p className="paragraphText">
+      <div className="py-5 appMobilePaddingSmall" style={{backgroundColor: "#fffbf8"}}>
+        <div className="row pt-5 col-12 d-flex justify-content-center" >
+          <div className="col-md-6">
+            <h2 className="mainHeadingMobile" style={{textAlign:'center'}} >Benefits of AI in Education</h2>
+            <p className="paragraphText" style={{textAlign:'center'}}>
               Our software development life cycle empowers companies to
               functionalize their brand identity by building an effective and
               powerful mobile app for its users. To create more clicks and
@@ -154,13 +138,8 @@ const Page = () => {
         <div className="container my-5">
           <div className="row">
             {aiBenefits.map((item,i)=>(
-              <div className="col-md-6 mb-4" key={i}>
-              <div className="up-to-mints-div mobileCardPadding">
-                <h4 className="cardHeading">{item.heading}</h4>
-                <p className="cardDesc">
-                  {item.description}
-                </p>
-              </div>
+              <div className="col-md-6 my-2" key={i}>
+              <AppCard heading={item.heading} hoverEffect="effect2" height={206} description={item.description} />
             </div>
             ))}
           </div>

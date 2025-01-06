@@ -79,3 +79,6 @@ body {
   background: #dc5f00; /* Darker shade on hover */
 }
 
+body{
+  overflow-x: hidden !important;
+}

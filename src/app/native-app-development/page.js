@@ -9,6 +9,8 @@ import MobileExperiences from "../components/MobileExperiences";
 import TechAndTools from "../components/TechAndTools";
 import {faqData,developmentProcess,cynergyKnack,whyChooseUs} from './data'
 import DropUsALine from "../components/DropUsALine";
+import AppCard from "../components/appCard";
+import AppImageCard from "../components/AppImageCard";
 
 const page = () => {
   
@@ -52,24 +54,14 @@ const page = () => {
           <div className="row">
             {developmentProcess.slice(0, 3).map((item,index)=>(
                <div className={`col-md-4 ${index > 0 ?'mgTop15':''}`} key={index}>
-               <div className="MobileQaBoxes mobileCardPadding" style={{ minHeight: "250px" }}>
-                 <h4 className="cardHeading">{item.heading}</h4>
-                 <p className="cardDesc">
-                    {item.description}
-                 </p>
-               </div>
+                <AppCard heading={item.heading} hoverEffect="effect1" height={255} isCenter={true} description={item.description} />
              </div>
             ))}
           </div>
           <div className="row mt-4">
           {developmentProcess.slice(3, 6).map((item,index)=>(
                <div className={`col-md-4 ${index > 0 ?'mgTop15':''}`} key={index}>
-               <div className="MobileQaBoxes mobileCardPadding" style={{ minHeight: "250px" }}>
-                 <h4 className="cardHeading">{item.heading}</h4>
-                 <p className="cardDesc">
-                    {item.description}
-                 </p>
-               </div>
+                <AppCard heading={item.heading} height={255} isCenter={true} hoverEffect="effect1" description={item.description} />
              </div>
             ))}
           </div>
@@ -106,17 +98,8 @@ const page = () => {
 
               {cynergyKnack.map((item,i)=>(
                  <div className={`col-md-3 ${i > 0 ?'mgTop25':''}`} key={i}>
-                 <div className="workingWithCynergyBox mobileCardPadding">
-                   <span></span>
-                   <img
-                     src = {`/images/${item.imgUrl}`} 
-                     alt="lightbulb_122683131"
-                   />
-                   <h4 className="cardHeading">{item.heading}</h4>
-                   <p className="cardDesc">
-                      {item.description}
-                   </p>
-                 </div>
+                  <AppImageCard heading={item.heading} imgUrl={`/images/${item.imgUrl}`} height={515} isCenter={true} hoverEffect="effect6" description={item.description} />
+
                </div>
               ))}
           </div>
@@ -145,15 +128,8 @@ const page = () => {
 
            {whyChooseUs.slice(0,3).map((item,i)=>(
             <div className="col-md-4" key={i}>
-            <div className="IosChooseBox mobileCardPadding">
-              <div>             
-              <h4 className="cardHeading">{item.heading}</h4>
-              <p className="cardDesc">
-                {item.description}
-              </p>
-              </div>
-              <span></span>
-            </div>
+                <AppCard heading={item.heading} showLine={true} height={303} isCenter={true} hoverEffect="effect2" description={item.description} />
+           
           </div>
            ))
 
@@ -161,14 +137,9 @@ const page = () => {
         </div>
         <div className="row mt-1">
         {whyChooseUs.slice(3,6).map((item,i)=>(
-            <div className="col-md-4" key={i}>
-            <div className="IosChooseBox mobileCardPadding">
-              <h4 className="cardHeading">{item.heading}</h4>
-              <p className="cardDesc">
-                {item.description}
-              </p>
-              <span></span>
-            </div>
+            <div className="col-md-4 my-2" key={i}>
+                <AppCard heading={item.heading} showLine={true} height={303} isCenter={true} hoverEffect="effect2" description={item.description} />
+            
           </div>
            ))
 
