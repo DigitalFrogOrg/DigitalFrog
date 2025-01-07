@@ -7,8 +7,9 @@ import FaqsSection from "../components/FaqsSection";
 import BudgetSection from "../components/BudgetSection";
 import AppCta from "../components/AppCta";
 import Link from "next/link";
-import {faqData,topNotch,whyCynergy} from './data'
+import {faqData,topNotch,whyCynergy,testingApp} from './data'
 import DropUsALine from "../components/DropUsALine";
+import AppCard from "../components/appCard";
 
 const page = () => {
   
@@ -30,71 +31,21 @@ const page = () => {
           </div>
           <div className="col-md-6 appTestRight footerSection">
             <div className="row">
-              <div className="col-md-6">
-                <div className="appTestBox">
-                  <h4 className="cardHeading25">
-                    Software Functional
-                    <br /> Testing Services
-                  </h4>
-                  <p className="cardDesc">
-                    At multiple granularity levels, functional testing ensures
-                    the software’s conformity to meet the corresponding output
-                    with the end-user’s expectations. The process enables the
-                    quick detection of prevailing defects, system failures, and
-                    function crashes of the apps. the tech industry while mobile
-                    testing.
-                  </p>
-                </div>
-              </div>
-              <div className="col-md-6 mt-5">
-                <div className="appTestBox">
-                  <h4  className="cardHeading25">
-                    Software Automated
-                    <br /> Testing Services
-                  </h4>
-                  <p className="cardDesc">
-                    The testing service refers to the automated testing
-                    methodology and usage of tools to execute comprehensive
-                    tests of software and generate swift reports over the
-                    testing measures. Here at Cynergy Studios, we conduct an
-                    effective approach to build strong mobile app evaluation
-                    which provides.
-                  </p>
-                </div>
-              </div>
-              <div className="col-md-6 footerSection">
-                <div className="appTestBox">
-                  <h4  className="cardHeading25">
-                    Software Data Testing
-                    <br /> Services
-                  </h4>
-                  <p className="cardDesc">
-                    It is a process that connects Functional Testing, User
-                    Interface, and data analytics of the apps to ensure data
-                    transforms and implementation of business rules. It focuses
-                    on the Broader Quality Assurance field to validate data
-                    processes. Our exclusive mobile testing team crafts
-                    cutting-edge mobile app testing solutions to satisfy clients
-                    by all means
-                  </p>
-                </div>
-              </div>
-              <div className="col-md-6 mt-5">
-                <div className="appTestBox">
-                  <h4  className="cardHeading25">
-                    Exclusive Error
-                    <br /> Detection
-                  </h4>
-                  <p className="cardDesc">
-                    In the testing phase, the level of quality assessment is
-                    analyzed in mobile application testing. It can prevent from
-                    bugs and serious development issues. Therefore, the skilled
-                    professionals of Cynergy Studios, conduct multiple phases to
-                    create an evaluation process to meet the success of the
-                    mobile performance testing of the app.
-                  </p>
-                </div>
-              </div>
+             <div className="col-md-6">
+                {testingApp.slice(0,2).map((item,i)=>(
+                  <div className="col-md-12 mb-5" key={i}>
+                    <AppCard height={355} hoverEffect="effect9" heading={item.heading} isCenter={true} description={item.description} />
+                  </div>
+                ))}
+             </div>
+             <div className="col-md-6">
+             {testingApp.slice(2,4).map((item,i)=>(
+                  <div  className="col-md-12 mgTop15" style={{margin:i==0?'6rem 0 3rem 0':''}} key={i}>
+                    <AppCard height={355} hoverEffect="effect9" heading={item.heading} isCenter={true} description={item.description} />
+                  </div>
+                ))}
+             </div>
+           
             </div>
           </div>
         </div>
@@ -174,14 +125,9 @@ const page = () => {
           <div className="row">
             {whyCynergy.map((item,i) => (
                <div className="col-md-4 mgTop25" key={i}>
-               <div className="up-to-mints-div mobileCardPadding">
-                 <h4 className="text-center cardHeading">
-                   {item.heading}
-                 </h4>
-                 <p className="text-center cardDesc">
-                  {item.description}
-                 </p>
-               </div>
+                <AppCard height={303} hoverEffect="effect2" showLine={true} isCenter={true} heading={item.heading} description={item.description} />
+             
+             
              </div>
             ))}
            

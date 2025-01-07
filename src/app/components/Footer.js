@@ -132,7 +132,7 @@ function footer() {
           <div className="row" style={{ alignItems: "center" }}>
             <div className="col-sm-5">
               <p>
-                Copyright @ {currentYear}. <strong> Cynergy Studio</strong>. All Right
+                Copyright @ {currentYear}. <strong> Cynergy Studios</strong>. All Right
                 Reserved.
               </p>
             </div>

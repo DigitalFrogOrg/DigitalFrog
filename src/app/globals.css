@@ -672,7 +672,7 @@ ul.footer-info li a {
   display: flex;
 }
 .imgCardDesc{
-  padding-bottom:100px !important;
+  padding-bottom:10rem !important;
 }
 .right-banner-div span {
   color: var(--heading-color);
@@ -3160,28 +3160,7 @@ section.recent_news {
   font-size: 14px;
 }
 
-.text-section-hover {
-  padding: 2rem 1.5rem 0.5rem 2rem;
-  background-color: #fff;
-  -webkit-box-shadow: 0px 5px 16px 0px #f66b0021;
-  -moz-box-shadow: 0px 5px 16px 0px #f66b0021;
-  box-shadow: 0px 5px 16px 0px #f66b0021;
-  border-radius: 15px;
-  margin: 20px 0;
-  box-shadow: 10px 5px 10px 0px #f66b0021;
-}
 
-.text-section-hover:hover {
-  background-color: #dc5f00;
-  color: #fff !important;
-  cursor: pointer;
-}
-.text-section-hover:hover h1,
-.text-section-hover:hover h2,
-.text-section-hover:hover p
- {
-  color: #fff !important;
-}
 .top-ranked {
   /* font-size: 66px;
   font-weight: bold; */
@@ -3610,38 +3589,7 @@ section.recent_news {
   font-size: 66px;
   font-weight: bold;
 }
-.maintain-process {
-  background-color: #fff;
-  padding: 2rem 1.5rem 1.5rem 2rem; 
-  -webkit-box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.229);
-  -moz-box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.229);
-  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.229);
-  border-radius: 12px;
-  cursor: pointer;
-  min-height: 180px;
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  flex-direction: column;
-}
-.maintain-process h3 {
-  font-size: 26px;
-}
-.maintain-process p {
-  font-size: 14px;
-  margin: 0;
-}
-.maintain-process:hover {
-  background-image: url("/images/back-maintainence.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: 0.6s all;
-}
-.maintain-process:hover h3 {
-  color: var(--orange) !important;
-  transition: 0.6s all;
-}
+
 .MobileAppTabs {
   padding: 100px 0px;
 }
@@ -3709,38 +3657,7 @@ section.recent_news {
 .app-quality-main h2 span {
   color: var(--orange);
 }
-.app-quality {
-  background-color: #fff;
-  padding: 2rem 1rem 2rem 2rem;
-  -webkit-box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.229);
-  -moz-box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.229);
-  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.229);
-  border-radius: 12px;
-  cursor: pointer;
-  min-height: 180px;
-  width: 80%;
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  flex-direction: column;
-  transition: transform 0.6s ease, background-image 0.6s ease;
-  margin-top: 26px;
-}
-.app-quality h3 {
-  font-size: 26px;
-}
-.app-quality p {
-  font-size: 14px;
-  margin: 0;
-}
-.app-quality:hover {
-  background-image: url("/images/back-maintainence.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: 0.6s all;
-  transform: translateX(40px);
-}
+
 .effect7:hover {
   background-image: url("/images/back-maintainence.png");
   background-position: center center;
@@ -3752,10 +3669,7 @@ section.recent_news {
 .effect7:hover .cardDesc{
   color: #454545 !important;
 }
-.app-quality:hover h3 {
-  color: var(--orange) !important;
-  transition: 0.6s all;
-}
+
 
 .specialists-for-platforms {
   background-color: #fffbf8;
@@ -3805,37 +3719,20 @@ section.recent_news {
   font-weight: bold;
   margin-bottom: 30px;
 }
-.benefit-col-1 {
-  text-align: center;
-  padding: 2rem 1rem 0.8rem 1rem;
-  background-color: #fafafa;
-  border: 4px solid #fff;
-  -webkit-box-shadow: 0px 0px 5px 5px rgb(110 110 110 / 7%);
-  -moz-box-shadow: 0px 0px 5px 5px rgb(110 110 110 / 7%);
-  box-shadow: 0px 0px 5px 5px rgb(110 110 110 / 7%);
-  min-height: 260px;
-  border-radius: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-  cursor: pointer;
-}
-.benefit-col-1:hover .benefit-rectangle {
-  transition: all 0.6s !important;
-  background-color: #fff !important;
-}
-.benefit-col-1:hover p {
-  color: #fff !important;
-}
-.benefit-col-1:hover {
+
+.effect8:hover {
   transition: all 0.6s;
   background-color: var(--orange);
   border: 4px solid var(--orange);
   background-image: url("/images/back-top-notch.png");
   background-position: top right;
   background-repeat: no-repeat;
+  color: white !important;
+  border: none !important;
   animation: fadeInUp 0.6s forwards;
+}
+.effect8:hover .cardBottomLine{
+  background-color: #fff !important;
 }
 @keyframes fadeInUp {
   from {
@@ -3847,12 +3744,7 @@ section.recent_news {
     transform: translateY(0);
   }
 }
-.benefit-col-1:hover h4 {
-  color: #fff;
-}
-.benefit-col-1:hover p {
-  color: #fff;
-}
+
 .benefit-rectangle {
   background-color: #ababab;
   height: 4px;
@@ -3860,29 +3752,8 @@ section.recent_news {
   width: 60%;
   margin-bottom: -16px;
 }
-.benefit-col-1 h4 {
-  font-size: 28px;
-  font-weight: bold;
-}
-.benefit-col-1 p {
-  font-size: 14px;
-  color: #656565;
-}
-.mid-app-divs {
-  padding: 2rem 2rem 0.5rem 2rem;
-  border-radius: 16px;
-  background-color: #fff;
-  -webkit-box-shadow: 0px 5px 16px 0px #f66b0021;
-  -moz-box-shadow: 0px 5px 16px 0px #f66b0021;
-  box-shadow: 0px 5px 16px 0px #f66b0021;
-  min-height: 370px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-top: 20px;
-}
+
+
 
 
 
@@ -3911,32 +3782,8 @@ section.recent_news {
   margin-top: 10rem !important;
 }
 
-.mid-app-divs:hover {
-  cursor: pointer;
-  transition: 0.4s all;
-  background-color: var(--orange);
-  color: #fff ;
-}
-.mid-app-divs:hover h4 {
-  color: #fff;
-}
-.mid-app-divs:hover p {
-  color: #fff !important;
-}
-.mid-app-divs h4 {
-  font-weight: bold;
-  font-size: 30px;
-}
-.up-to-mints-div {
-  background-color: #fff;
-  -webkit-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.3);
-  border-radius: 12px;
-  padding: 2rem 1.5rem 0.5rem 1.5rem;
-  margin-top: 26px;
-  min-height: 96%;
-}
+
+
 
 .appCardContainer,.appImageCardContainer{
   /* -webkit-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.3); */
@@ -3992,35 +3839,11 @@ section.recent_news {
   font-weight: 700 !important;
 }
 .cardDesc{
-  font-size: 16px !important;
+  font-size: 18px !important;
   font-weight: 400 !important;
   color: #656565 !important;
   line-height: 25px !important;
   margin-top: 15px !important;
-}
-.up-to-mints-div h4 {
-  font-weight: bold;
-  font-size: 24px;
-  margin: 0px 0px 10px 0px;
-}
-.up-to-mints-div p {
-  font-size: 14px;
-  margin: 0px;
-}
-.up-to-mints-div p,
-.up-to-mints-div h4 {
-  width: 100%;
-  text-align: left;
-}
-.up-to-mints-div:hover {
-  cursor: pointer;
-  transition: 0.4s all;
-  background-color: var(--orange);
-  color: #fff;
-  background-image: url("/images/Group1707479840.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .effect1:hover{
@@ -4032,12 +3855,7 @@ section.recent_news {
   color: white !important;
   background-color: var(--orange);
 }
-.up-to-mints-div:hover h4 {
-  color: #fff;
-}
-.up-to-mints-div:hover p {
-  color: #fff !important;
-}
+
 .app-cta {
   background-color: var(--orange);
   border-radius: 16px;
@@ -4599,30 +4417,7 @@ section.recent_news {
   background-color: #fffbf8;
 }
 
-.text-section-01 {
-  padding: 2rem 2rem 1rem 2rem;
-  background-color: #fbfbfb;
-  border-radius: 15px;
-  margin: 20px 0;
-}
-.text-section-01 h2 {
-  font-size: 22px;
-  margin-bottom: 6px;
-}
-.text-section-01 p {
-  font-size: 14px;
-  margin-bottom: 6px;
-}
-.text-section-01:hover {
-  background-color: #dc5f00;
-  color: #fff !important;
-  cursor: pointer;
-}
-.text-section-01:hover h1,
-.text-section-01:hover h2,
-.text-section-01:hover p {
-  color: #fff !important;
-}
+
 .line-image-1 {
   height: 100%;
   width: 100px;
@@ -4637,13 +4432,13 @@ section.recent_news {
   font-size: 54px;
   font-weight: bold;
 }
-.right-let-mid button {
+/* .right-let-mid button {
   color: var(--orange);
   border: 0;
   background: #0000;
   text-decoration: underline;
   padding: 0;
-}
+} */
 
 .blogLastSection{
   background-image: url("/images/blogContactus.png");
@@ -4722,8 +4517,22 @@ section.recent_news {
   border: none !important;
   margin: 0 0px;
 }
+
+.effect9:hover{
+  background-image: url(/images/Group1707479837.png);
+  background-repeat: no-repeat;
+  background-size:cover ;
+  border: none !important;
+  margin: 0 0px;
+}
 .appTestBox:hover h4 {
   color: var(--orange);
+}
+.effect9:hover h4 {
+  color: var(--orange);
+}
+.effect9:hover p {
+  color: #454545 !important;
 }
 .appTestBox h4 {
   font-size: 20px;
@@ -4882,23 +4691,7 @@ section.recent_news {
 .iosDesignProcess p {
   font-size: 14px;
 }
-.iosDesignBox {
-  box-shadow: 0px 5.19px 16.62px 0px #f66a0026;
-  background-color: var(--white);
-  padding: 4rem 3rem 0.5rem 3rem;
-  margin-top: 28px;
-  border-radius: 20px;
-  width: 100%;
-  min-height: 280px;
-}
-.iosDesignBox:hover {
-  background-image: url("/images/Group1707479838.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  cursor: pointer;
-  transition: all 0.4s ease;
-}
+
 
 .effect3:hover{
   background-image: url("/images/Group1707479838.png");
@@ -4909,14 +4702,7 @@ section.recent_news {
   transition: all 0.4s ease;
   color: white;
 }
-.iosDesignBox:hover h4,
-.iosDesignBox:hover p {
-  color: var(--white) !important;
-}
-.iosDesignBox h4 {
-  font-size: 24px;
-  font-weight: bold;
-}
+
 
 .workingWithCynergy {
   padding: 100px 0px;
@@ -4927,38 +4713,16 @@ section.recent_news {
   text-align: center;
 }
 
-.workingWithCynergyBox {
-  background-color: var(--white);
-  box-shadow: 2.84px 5.68px 23.21px 0px #0000001e;
-  text-align: center;
-  padding: 46px 16px 32px 16px;
-  border-radius: 10px;
-  cursor: pointer;
-  position: relative;
-  transition: all 0.5s ease;
-  height: 100%;
-}
-.workingWithCynergyBox img {
-  width: 50px;
-  height: 50px;
-  position: relative;
-  z-index: 9;
-  filter: grayscale(1);
-  transition: filter 0.3s ease;
-}
+
 .appImageCardContainer img {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   position: relative;
   z-index: 9;
   filter: grayscale(1);
   transition: filter 0.3s ease;
 }
 .appImageCardContainer:hover img {
-  width: 50px;
-  height: 50px;
-  position: relative;
-  z-index: 9;
   filter: grayscale(0);
   transition: filter 0.3s ease;
 }
@@ -4966,41 +4730,14 @@ section.recent_news {
   position: absolute;
   top: 5%;
   left: 49%;
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   border-radius: 100px;
   background-color: #f5f5f5;
   z-index: 7;
   transition: background-color 0.3s ease;
-}
-.workingWithCynergyBox span {
-  position: absolute;
-  top: 10%;
-  left: 49%;
-  width: 50px;
-  height: 50px;
-  border-radius: 100px;
-  background-color: #f5f5f5;
-  z-index: 7;
-  transition: background-color 0.3s ease;
-}
-.workingWithCynergyBox h4 {
-  font-weight: bold;
-  font-size: 24px;
-  margin: 10px 0px;
-  transition: color 0.3s ease;
-}
-.workingWithCynergyBox p {
-  margin: 0px;
-  font-size: 14px;
 }
 
-.workingWithCynergyBox:hover {
-  background-image: url("/images/Group1707479839.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 .effect6:hover {
   background-image: url("/images/Group1707479839.png");
   background-position: center;
@@ -5010,21 +4747,14 @@ section.recent_news {
 .effect6:hover h4 {
   color: var(--orange);
 }
-.workingWithCynergyBox:hover h4 {
-  color: var(--orange);
-}
-.workingWithCynergyBox:hover img {
-  filter: grayscale(0);
-}
+
 .effect6:hover img {
   filter: grayscale(0);
 }
 .effect6:hover span {
   background-color: #fcefe6;
 }
-.workingWithCynergyBox:hover span {
-  background-color: #fcefe6;
-}
+
 
 .IosChoose {
   padding: 100px 0px;
@@ -5038,60 +4768,6 @@ section.recent_news {
   font-size: 14px;
 }
 
-.IosChooseBox {
-  box-shadow: 2px 2px 20px -6px #0000001e;
-  background-color: var(--white);
-  /* padding: 26px 16px 6px 16px; */
-  padding: 2rem 1.5rem 0rem 1.5rem;
-  margin: 16px 0px;
-  border-radius: 16px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-  cursor: pointer;
-  transition: all 0.4s ease;
-  min-height: 90%;
-}
-.IosChooseBox h4 {
-  font-size: 24px;
-  margin: 10px 0px;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-.IosChooseBox p {
-  margin: 0px;
-  font-size: 14px;
-}
-.IosChooseBox span {
-  display: block;
-  width: 52%;
-  height: 3px;
-  border-radius: 10px;
-  background-color: #ababab;
-  margin-top: 28px;
-  transition: background-color 0.3s ease;
-}
-.IosChooseBox:hover {
-  background-image: url("/images/Group3485457.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.IosChooseBox:hover h4 {
-  color: var(--orange);
-}
-.IosChooseBox:hover p {
-  color: white !important;
-}
-
-.IosChooseBox:hover p.textBlack {
-  color: #454545 !important;
-}
-.IosChooseBox:hover span {
-  background-color: var(--orange);
-}
 
 .mobileAppDesign {
   padding: 100px 0px;
@@ -5248,40 +4924,7 @@ section.recent_news {
 background-color: white !important;
 color: var(--orange) !important;
 }
-.MobileQaBoxes {
-  background-color: var(--white);
-  border-radius: 20px;
-  box-shadow: 1px 1px 23.21px 0px #0000001e;
-  padding: 3rem 1.5rem 1rem 1.5rem;
-  text-align: center;
-  transition: all 0.4s ease;
-  cursor: pointer;
-  min-height: 260px;
-  width: 98%;
-}
 
-
-.MobileQaBoxes h4 {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 0px 0px 10px 0px;
-}
-.MobileQaBoxes p {
-  margin: 0px;
-}
-.MobileQaBoxes:hover {
-  background-image: url("/images/Group1707479841.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: var(--orange);
-}
-.MobileQaBoxes:hover h4 {
-  color: var(--white);
-}
-.MobileQaBoxes:hover p {
-  color: var(--white) !important;
-}
 
 .webAppDev {
   padding: 80px 0px 100px 140px !important;
@@ -5361,17 +5004,7 @@ color: var(--orange) !important;
   font-weight: bold;
 }
 
-.WebAppDevBox h4 {
-  margin-bottom: 12px;
-  font-size: 24px;
-  font-weight: bold;
-  color: var(--third-text-color);
-}
-.WebAppDevBox p {
-  font-size: 14px;
-  color: var(--third-text-color);
-  margin-bottom: 0px;
-}
+
 
 
 
@@ -5404,17 +5037,7 @@ color: var(--orange) !important;
   font-weight: bold;
 }
 
-.DevelopmentProcessBox {
-  background-color: var(--white);
-  /* padding: 36px; */
-  padding: 2rem 2.5rem 1rem 2.5rem;
-  border-radius: 12px;
-  box-shadow: 1px 1px 23.21px 0px #0000001e;
-  cursor: pointer;
-  transition: all 0.4s ease;
-  margin-top: 26px;
-  min-height: 220px;
-}
+
 .effect5{
   background-color: var(--white);
   cursor: pointer;
@@ -5437,24 +5060,6 @@ color: var(--orange) !important;
   background-color: var(--orange) !important;
 }
 
-.DevelopmentProcessBox h4 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 12px;
-}
-.DevelopmentProcessBox p {
-  font-size: 13px;
-  margin: 0px;
-}
-.DevelopmentProcessBox:hover h4 {
-  color: var(--orange);
-}
-.DevelopmentProcessBox:hover {
-  background-image: url("/images/Group3485457.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 .WebAppSolutions h2 {
   font-size: 55px;
   font-weight: bold;
@@ -5526,33 +5131,7 @@ color: var(--orange) !important;
   text-align: center;
 }
 
-.AISoftwareDevBox {
-  text-align: center;
-  box-shadow: 1px 1px 23.21px 0px #0000001e;
-  padding: 2rem;
-  /* padding: 46px 32px 26px 32px; */
-  border-radius: 16px;
-  cursor: pointer;
-  transition: all 0.4s ease;
-  min-height: 430px;
-}
-.AISoftwareDevBox img {
-  width: 126px;
-  height: 126px;
-  margin-bottom: 16px;
-}
-.AISoftwareDevBox h4 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 16px;
-}
-.AISoftwareDevBox:hover {
-  background-color: var(--orange);
-}
-.AISoftwareDevBox:hover h4,
-.AISoftwareDevBox:hover p {
-  color: var(--white) !important;
-}
+
 
 .KeyOfAi {
   padding: 100px 0px;
@@ -5607,15 +5186,7 @@ color: var(--orange) !important;
 .OurChooseOpt p {
   font-size: 14px;
 }
-.OurChooseOpt .IosChooseBox:hover {
-  background-color: var(--orange);
-}
-.OurChooseOpt .IosChooseBox:hover h4 {
-  color: var(--white);
-}
-.OurChooseOpt .IosChooseBox:hover p {
-  color: var(--white);
-}
+
 
 .midMobileAdd {
   padding: 100px 0px;
@@ -5658,7 +5229,7 @@ color: var(--orange) !important;
 .lines-1 {
   width: 40% !important;
   left: -75px;
-  top: 31%;
+  top: 36%;
 }
 .lineHeading{
   font-size: 1.5vw !important;
@@ -5667,17 +5238,17 @@ color: var(--orange) !important;
 .lines-2{
   width: 28% !important;
   left: 4%;
-  top: 58%;
+  top: 62%;
 }
 .lines-3 {
   width: 18% !important;
   right: 17%;
-  top: 52%;
+  top: 58%;
 }
 .lines-4 {
   width: 25% !important;
   right: 8%;
-  top: 60%;
+  top: 65%;
 }
 .mid-mob{
   margin: -50px 0px 120px 0px;
@@ -5845,9 +5416,7 @@ color: var(--orange) !important;
    .innovativeHeading{
     font-size: 70px !important;
    }
-   .MobileQaBoxes{
-    margin-top: 20px !important;
-  }
+   
   .webAppDevContainerFirst{
     margin-top: 0px !important;
   }
@@ -6113,9 +5682,7 @@ button.dive_buttons::before {
  .navs-app{
   overflow-x: hidden !important;
  }
- .app-quality{
-  width: 100%;
- }
+
  .subHeading{
   font-size: 5vw !important;
  }
@@ -6174,9 +5741,7 @@ button.dive_buttons::before {
 .mgTopNegative15{
   margin-top: -15px !important;
 }
-.iosDesignBox,.MobileQaBoxes{
-  width: 100% !important;
-}
+
 .removemb{
   margin-bottom: 10rem !important;
 }
@@ -6373,3 +5938,4 @@ button.dive_buttons::before {
     left: 22px;
   }
 }
+

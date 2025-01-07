@@ -4,8 +4,9 @@ import AppCta from "../components/AppCta";
 import FaqsSection from "../components/FaqsSection";
 import BudgetSection from "../components/BudgetSection";
 import MainBanner from "../components/MainBanner";
-import { faqData,topNotch } from "./data";
+import { faqData,topNotch,benefits } from "./data";
 import DropUsALine from "../components/DropUsALine";
+import AppCard from "../components/appCard";
 
 const page = () => {
  
@@ -45,13 +46,14 @@ const page = () => {
         </div>
       </div>
 
-      <div style={{overflowX:'hidden'}} className="case-study py-5 my-5 appMobilePaddingSmall">
-        <div className="row">
-          <div className="col-md-12">
-            <h2 className="mainHeadingMobile">
+      <div style={{overflowX:'hidden'}} className="container py-5 my-5 appMobilePaddingSmall">
+       
+        <div className="row d-flex justify-content-center">
+          <div className="col-md-6">
+            <h2 className="mainHeadingMobile text-center">
               Top Notch Team of <br /> Cynergy Studios
             </h2>
-            <p className="paragraphText">
+            <p className="paragraphText text-center">
               The unmatched creativity and expertise at Cynergy Studios lead to
               cutting-edge solutions that craft exceptional user interface
               designs.
@@ -59,20 +61,14 @@ const page = () => {
           </div>
         </div>
 
-        <div className="container mt-5">
-          <div className="row">
+        <div className="row mt-5">
             {topNotch.map((item,i)=>(
               <div className="col-md-6 my-2" key={i}>
-              <div className="up-to-mints-div mobileCardPadding">
-                <h4 className="cardHeading">{item.heading}</h4>
-                <p className="cardDesc">
-                  {item.description}
-                </p>
-              </div>
+              <AppCard heading={item.heading} hoverEffect="effect1" height={206} description={item.description} />
               </div>
             ))}
            
-          </div>
+          {/* </div> */}
         </div>
       </div>
 
@@ -145,67 +141,20 @@ const page = () => {
               Benefits Of Cynergy <br /> Studios
             </h2>
             <div className="row">
-              <div className="col-md-6 mt-3">
-                <div className="benefit-col-1">
-                  <div>
-                  <h4 className="cardHeading">Recognizable Brand</h4>
-                  <p className="cardDesc">
-                    Let’s elevate your brand with our premium mobile app design
-                    services in the digital landscape. As smartphones become
-                    integral to daily life, users have developed higher
-                    expectations for innovative app solutions that deliver
-                    seamless experiences and exceptional functionality.
-                  </p>
+                <div className="col-md-6 d-flex flex-column">
+                {benefits.slice(0,2).map((item,i)=>(
+                 <div className={`col-md-12`} style={{margin:i==0?'4rem 0 1rem 0':''}} key={i}>
+                    <AppCard heading={item.heading} isCenter={true} showLine={true} height={270} hoverEffect="effect8" description={item.description}  />
                   </div>
-                  <div className="benefit-rectangle"></div>
+                ))}
                 </div>
-              </div>
-              <div className="col-md-6 mgTop25">
-                <div className="benefit-col-1">
-                  <div>
-                  <h4 className="cardHeading">Galvanizing Designs</h4>
-                  <p className="cardDesc">
-                    Our dynamic brand style and captivating UI elements will
-                    enhance your brand's identity, foster user engagement, and
-                    boost business conversions. In a rapidly evolving
-                    technological landscape, it's essential to stay ahead and
-                    provide experiences that resonate with users.
-                  </p>
+                <div className="col-md-6 d-flex flex-column">
+                {benefits.slice(2,4).map((item,i)=>(
+                 <div className={`col-md-12 mt-3`} key={i}>
+                    <AppCard heading={item.heading} isCenter={true} showLine={true} height={270} hoverEffect="effect8" description={item.description}  />
                   </div>
-                  <div className="benefit-rectangle"></div>
+                ))}
                 </div>
-              </div>
-            </div>
-            <div className="row mt-3">
-              <div className="col-md-6 mt-3">
-                <div className="benefit-col-1">
-                  <div>
-                  <h4 className="cardHeading">Data-Driven Strategies</h4>
-                  <p className="cardDesc">
-                    Leveraging four years of experience, Cynergy Studios crafts
-                    data-driven app layouts that integrate diverse human
-                    insights to enhance user experience. We strategically
-                    utilize original data to design illustrations that resonate
-                    effectively.
-                  </p>
-                  </div>
-                  <div className="benefit-rectangle"></div>
-                </div>
-              </div>
-              <div className="col-md-6 mgTop25">
-                <div className="benefit-col-1">
-                  <div>
-                  <h4 className="cardHeading">Emerging Tech</h4>
-                  <p className="cardDesc">
-                    Utilizing advanced technologies such as Augmented Reality,
-                    AI-driven tools, and sentiment analysis empowers both large
-                    enterprises and startups to develop impactful solutions
-                    tailored to their specific needs.
-                  </p>
-                  </div>
-                  <div className="benefit-rectangle"></div>
-                </div>
-              </div>
             </div>
           </div>
         </div>

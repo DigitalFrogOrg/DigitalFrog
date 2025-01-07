@@ -7,6 +7,7 @@ import MainBanner from "../components/MainBanner";
 import Link from "next/link";
 import {faqData,mobileApp,whyChooseUs} from './data'
 import DropUsALine from "../components/DropUsALine";
+import AppCard from "../components/appCard";
 
 const page = () => {
  
@@ -68,12 +69,9 @@ const page = () => {
               />
               <div>
                   {mobileApp.map((item,i)=>(
-                  <div className="text-section-01 mobileCardPadding" key={i}>
-                  <h2 className="cardHeading">{item.heading}</h2>
-                  <p className="cardDesc">
-                   {item.description}
-                  </p>
-                  </div>
+                    <div className="my-4" key={i}>
+                      <AppCard heading={item.heading} hoverEffect="effect2" height={168} description={item.description} />
+                    </div>
                   ))}
               </div>
             </div>
@@ -167,13 +165,9 @@ const page = () => {
           </p>
           <div className="row">
             {whyChooseUs.map((item,i)=>(
-                <div className={`col-md-4 ${i > 0 ?'mgTop25':''}`} key={i}>
-                <div className="up-to-mints-div">
-                  <h4 className="cardHeading text-center">{item.heading}</h4>
-                  <p className="cardDesc text-center">
-                    {item.description}
-                  </p>
-                </div>
+                <div className={`col-md-4 my-2`} key={i}>
+                <AppCard heading={item.heading} height={255} hoverEffect="effect1" description={item.description} />
+               
               </div>
             ))}
           </div>

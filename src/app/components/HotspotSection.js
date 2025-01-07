@@ -47,7 +47,7 @@ function HotspotSection() {
               <div className="hotspot" style={{ top: "27%", left: "69.5%" }}>
                 <div className="label">
                   <h6>UAE</h6>
-                  <p>1 E Erie St Ste 525, IL 60611</p>
+                  <p>Address will be provided soon</p>
                 </div>
                 <div className="marker"></div>
               </div>

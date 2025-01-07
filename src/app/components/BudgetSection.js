@@ -172,29 +172,25 @@ const handleFileChange = (e) => {
                 Exploring Our App
                 <br /> Development Services?
               </h2>
-              <h4 className="subHeading my-4 budgetSubHeading">Share Your Project Details!</h4>
+              <h4 className="subHeading my-4 budgetSubHeading">Tell us about your project vision, goals, and requirements. </h4>
               <h3 className="mt-3 subHeading">
                 <img
                   src="/images/clock_icon.png"
                   alt="SmartObject"
                   className="Clock-style"
                 />
-                We respond promptly, typically within 30 minutes!
+                We value your time—expect a prompt response, often within just 30 minutes!
               </h3>
               <div className="mt-4 p-3 rounded budg-sec">
                 <ul>
                   <li>
-                    We’ll hop on a call and hear out your idea, protected by our
-                    NDA.
+                  Rest assured, your concepts are fully protected under our NDA, ensuring complete confidentiality.
                   </li>
                   <li>
-                    We’ll provide a free quote + our thoughts on the best
-                    approach for you.
+                  	Receive a free, customized quote along with our professional recommendations for the best approach to achieving your goals.
                   </li>
                   <li>
-                    Even if we don’t work together, feel free to consider us a
-                    free technicalresource to bounce your thoughts/questions off
-                    of.
+                  	Whether or not we work together, consider us your go-to technical resource for expert advice, questions, or brainstorming support. We're here to help you succeed.
                   </li>
                 </ul>
               </div>
