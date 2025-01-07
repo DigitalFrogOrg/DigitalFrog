@@ -3813,7 +3813,7 @@ section.recent_news {
   -webkit-box-shadow: 0px 0px 5px 5px rgb(110 110 110 / 7%);
   -moz-box-shadow: 0px 0px 5px 5px rgb(110 110 110 / 7%);
   box-shadow: 0px 0px 5px 5px rgb(110 110 110 / 7%);
-  min-height: 260px;
+  height: 270px;
   border-radius: 16px;
   display: flex;
   align-items: center;
@@ -3836,6 +3836,20 @@ section.recent_news {
   background-position: top right;
   background-repeat: no-repeat;
   animation: fadeInUp 0.6s forwards;
+}
+.effect8:hover {
+  transition: all 0.6s;
+  background-color: var(--orange);
+  border: 4px solid var(--orange);
+  background-image: url("/images/back-top-notch.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+  color: white !important;
+  border: none !important;
+  animation: fadeInUp 0.6s forwards;
+}
+.effect8:hover .cardBottomLine{
+  background-color: #fff !important;
 }
 @keyframes fadeInUp {
   from {
