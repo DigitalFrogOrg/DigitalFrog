@@ -4651,13 +4651,13 @@ section.recent_news {
   font-size: 54px;
   font-weight: bold;
 }
-.right-let-mid button {
+/* .right-let-mid button {
   color: var(--orange);
   border: 0;
   background: #0000;
   text-decoration: underline;
   padding: 0;
-}
+} */
 
 .blogLastSection{
   background-image: url("/images/blogContactus.png");
