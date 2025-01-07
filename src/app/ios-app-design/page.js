@@ -8,6 +8,8 @@ import MainBanner from "../components/MainBanner";
 import Link from "next/link";
 import {faqData,designProcess,workingWith,whyChooseUs} from './data'
 import DropUsALine from "../components/DropUsALine";
+import AppCard from "../components/appCard";
+import AppImageCard from "../components/AppImageCard";
 
 const page = () => {
 
@@ -51,13 +53,9 @@ const page = () => {
           </p>
           <div className="row">
             {designProcess.map((item, index) => (
-               <div className="col-md-6" key={index}>
-               <div className="iosDesignBox mobileCardPadding">
-                 <h4 className="cardHeading">{item.heading}</h4>
-                 <p className="cardDesc">
-                    {item.description}
-                 </p>
-               </div>
+               <div className="col-md-6 my-2" key={index}>
+                <AppCard heading={item.heading} height={292} hoverEffect="effect3" description={item.description} />
+             
              </div>
             ))}
           </div>
@@ -80,17 +78,7 @@ const page = () => {
         <div className="row mt-5">
           {workingWith.map((item, index) => (
                 <div className={`col-md-3 ${index > 0 ?'mgTop25':''}`} key={index}>
-                <div className="workingWithCynergyBox">
-                  <span></span>
-                  <img
-                    src={`/images/${item.imgUrl}`}
-                    alt="lightbulb_122683131"
-                  />
-                  <h4 className="cardHeading">{item.heading}</h4>
-                  <p className="cardDesc">
-                    {item.description}
-                  </p>
-                </div>
+                  <AppImageCard heading={item.heading} imgUrl={`/images/${item.imgUrl}`} height={515} hoverEffect="effect6" isCenter={true} description={item.description} />
               </div>
           ))}
       
@@ -116,16 +104,8 @@ const page = () => {
             <div className="col-md-4"></div>
 
             {whyChooseUs.map((item, index) => (
-               <div className="col-md-4" key={index}>
-               <div className="IosChooseBox">
-                 <div>
-                 <h4 className="cardHeading text-center">{item.heading}</h4>
-                 <p className="cardDesc textBlack">
-                   {item.description}
-                 </p>
-                 </div>
-                 <span></span>
-               </div>
+               <div className="col-md-4 my-2" key={index}>
+                <AppCard heading={item.heading} height={303} hoverEffect="effect5" isCenter={true} showLine={true} description={item.description} />
              </div>
             ))}
           </div>
