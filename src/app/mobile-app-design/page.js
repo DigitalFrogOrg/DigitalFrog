@@ -62,16 +62,9 @@ const page = () => {
         </div>
 
         <div className="row mt-5">
-          {/* <div className="row"> */}
             {topNotch.map((item,i)=>(
               <div className="col-md-6 my-2" key={i}>
               <AppCard heading={item.heading} hoverEffect="effect1" height={206} description={item.description} />
-              {/* <div className="up-to-mints-div mobileCardPadding">
-                <h4 className="cardHeading">{item.heading}</h4>
-                <p className="cardDesc">
-                  {item.description}
-                </p>
-              </div> */}
               </div>
             ))}
            
@@ -162,68 +155,7 @@ const page = () => {
                   </div>
                 ))}
                 </div>
-                
-                {/* <div className="benefit-col-1">
-                  <div>
-                  <h4 className="cardHeading">Recognizable Brand</h4>
-                  <p className="cardDesc">
-                    Let’s elevate your brand with our premium mobile app design
-                    services in the digital landscape. As smartphones become
-                    integral to daily life, users have developed higher
-                    expectations for innovative app solutions that deliver
-                    seamless experiences and exceptional functionality.
-                  </p>
-                  </div>
-                  <div className="benefit-rectangle"></div>
-                </div> */}
-              {/* </div> */}
-              {/* <div className="col-md-6 mgTop25">
-                <div className="benefit-col-1">
-                  <div>
-                  <h4 className="cardHeading">Galvanizing Designs</h4>
-                  <p className="cardDesc">
-                    Our dynamic brand style and captivating UI elements will
-                    enhance your brand's identity, foster user engagement, and
-                    boost business conversions. In a rapidly evolving
-                    technological landscape, it's essential to stay ahead and
-                    provide experiences that resonate with users.
-                  </p>
-                  </div>
-                  <div className="benefit-rectangle"></div>
-                </div>
-              </div> */}
             </div>
-            {/* <div className="row mt-3">
-              <div className="col-md-6 mt-3">
-                <div className="benefit-col-1">
-                  <div>
-                  <h4 className="cardHeading">Data-Driven Strategies</h4>
-                  <p className="cardDesc">
-                    Leveraging four years of experience, Cynergy Studios crafts
-                    data-driven app layouts that integrate diverse human
-                    insights to enhance user experience. We strategically
-                    utilize original data to design illustrations that resonate
-                    effectively.
-                  </p>
-                  </div>
-                  <div className="benefit-rectangle"></div>
-                </div>
-              </div>
-              <div className="col-md-6 mgTop25">
-                <div className="benefit-col-1">
-                  <div>
-                  <h4 className="cardHeading">Emerging Tech</h4>
-                  <p className="cardDesc">
-                    Utilizing advanced technologies such as Augmented Reality,
-                    AI-driven tools, and sentiment analysis empowers both large
-                    enterprises and startups to develop impactful solutions
-                    tailored to their specific needs.
-                  </p>
-                  </div>
-                  <div className="benefit-rectangle"></div>
-                </div>
-              </div>
-            </div> */}
           </div>
         </div>
       </div>
