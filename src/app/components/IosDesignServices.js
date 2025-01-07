@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
 import AppCard from "./appCard";
 
-const IOSAppDesignServices = () => {
+const IOSAppDesignServices = ({heading="IOS App Design Services",description=" We create app designs that combine modern design aesthetics with user experience research to deliver outstanding app experiences for your users. Tailored to your brand and industry, our UI/UX app design services will help you drive user engagement and gain customer loyalty.",data = [{heading:"Modernized Design Consultancy",description:"Get recommendations on your exclusive Apple projects and scale your app store with modern app features, user experience,design, and appealing user interface. Design consultancy helps to roadmap the right path to your app idea, particularly to dispense highly intuitive."},{heading:"High-End UX/UI Design",description:"Apple has a unique and delusional form of design strategy to make the iOS app store up-to-date with the latest hi-techde sign formations and procedures. Here, our iOS app designers value consistency in crafting highly intrinsic apps to stand out among global businesses. easy-to-use interfaces to hook large audiences promptly."},{heading:"Motion Design",description:"There is fierce competition to develop attractive motion designs in the leading tech industries as it is the highest captivating format to attract users on a larger scale. It harbors powerful and essential tools to communicate with consumers or clients effectively. Our top iPhone app design team uses multiple graphic combinations."},{heading:"High-End UX/UI Design",description:" Apple has a unique and delusional form of design strategy to make the iOS app store up-to-date with the latest hi-tech design formations and procedures. Here, our iOS app designers value consistency in crafting highly intrinsic apps to stand out among global businesses. easy-to-use interfaces to hook large audiences promptly."}]}) => {
    const slider = useRef(null);
   const settings = {
     dots: false,
@@ -17,28 +17,20 @@ const IOSAppDesignServices = () => {
     arrows: false,
   };
 
-  const data = [
-    {heading:"Modernized Design Consultancy",description:"Get recommendations on your exclusive Apple projects and scale your app store with modern app features, user experience,design, and appealing user interface. Design consultancy helps to roadmap the right path to your app idea, particularly to dispense highly intuitive."},
-    {heading:"High-End UX/UI Design",description:"Apple has a unique and delusional form of design strategy to make the iOS app store up-to-date with the latest hi-techde sign formations and procedures. Here, our iOS app designers value consistency in crafting highly intrinsic apps to stand out among global businesses. easy-to-use interfaces to hook large audiences promptly."},
-    {heading:"Motion Design",description:"There is fierce competition to develop attractive motion designs in the leading tech industries as it is the highest captivating format to attract users on a larger scale. It harbors powerful and essential tools to communicate with consumers or clients effectively. Our top iPhone app design team uses multiple graphic combinations."},
-    {heading:"High-End UX/UI Design",description:" Apple has a unique and delusional form of design strategy to make the iOS app store up-to-date with the latest hi-tech design formations and procedures. Here, our iOS app designers value consistency in crafting highly intrinsic apps to stand out among global businesses. easy-to-use interfaces to hook large audiences promptly."},
-  ]
+
 
   return (
     <div className="container IOS-services appMobilePadding">
       <div className="row">
         <div className="col-md-8">
-          <h2 className="mainHeadingMobile">IOS App Design Services</h2>
+          {/* <h2 className="mainHeadingMobile">{heading}</h2> */}
+          <h2 className="mainHeadingMobile" dangerouslySetInnerHTML={{ __html: heading }} />
         </div>
 
         <div className="row">
           <div className="col-md-8">
           <p className="paragraphText">
-            We create app designs that combine modern design aesthetics with
-            user experience research to deliver outstanding app experiences for
-            your users. Tailored to your brand and industry, our UI/UX app
-            design services will help you drive user engagement and gain
-            customer loyalty.
+            {description}
           </p>
           </div>
           <div className="col-md-4 d-flex align-items-start justify-content-end gap-2">   

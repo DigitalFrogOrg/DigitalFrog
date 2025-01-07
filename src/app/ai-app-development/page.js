@@ -5,7 +5,7 @@ import FaqsSection from "../components/FaqsSection";
 import BudgetSection from "../components/BudgetSection";
 import MainBanner from "../components/MainBanner";
 import IOSAppDesignServices from "../components/IosDesignServices";
-import {faqData,aiSoftware,aiBenefits} from './data'
+import {faqData,aiSoftware,aiBenefits,sliderData} from './data'
 import DropUsALine from "../components/DropUsALine";
 import AppCard from "../components/appCard";
 import AppImageCard from "../components/AppImageCard";
@@ -21,17 +21,10 @@ const Page = () => {
           <div className="col-md-6 d-flex align-items-start justify-content-center flex-column">
             <h2 className="mainHeadingMobile">Why is AI Important in Education?</h2>
             <p className="paragraphText my-3">
-              Artificial Intelligence in education refers to the use of machine
-              learning algorithms, data analytics, and AI-powered tools to
-              enhance teaching and learning experiences. It includes
-              technologies that can adapt to individual learning needs, automate
-              administrative processes, and provide insights that help educators
-              make informed decisions.
+            AI is revolutionizing education by enhancing personalized learning, improving administrative efficiency, and enabling real-time data analytics. AI-powered tools can adapt to students' individual needs, providing tailored content and feedback.
               <br />
               <br />
-              AI’s role in education ranges from supporting teachers in the
-              classroom to offering personalized tutoring for students and
-              streamlining school management.
+              Additionally, AI automates administrative tasks, allowing educators to focus more on teaching. It also opens up opportunities for scalable, accessible education, making learning more engaging, effective, and inclusive for diverse learners around the world.
             </p>
             <DropUsALine />
           </div>
@@ -51,12 +44,8 @@ const Page = () => {
           <br /> services we provide
         </h2>
         <p className="paragraphText">
-          One of the most significant contributions of AI in education is
-          personalized learning. Traditional classrooms often struggle
-          <br /> to address the diverse learning needs of each student. AI
-          solves this problem by analyzing a student’s performance,
-          <br /> learning style, and pace and then customizing content
-          accordingly
+        Cynergy offers comprehensive AI software development services, including AI-based learning platforms, intelligent tutoring systems,
+        <br /> adaptive learning solutions, and educational data analytics tools.Our team specializes in creating  machine learning models,<br /> natural language processing (NLP)  applications, and AI-powered chatbots to enhance student engagement, automate administrative tasks,<br /> and improve overall educational outcomes. Cynergy ensures that our AI solutions are scalable, secure,<br /> and tailored to the unique needs of educational institutions.
         </p>
         <div className="row mt-5">
           {aiSoftware.map((item,i)=>(
@@ -76,13 +65,8 @@ const Page = () => {
             Key Applications of AI
             <br /> Technology in Education
           </h2>
-          <p style={{ fontSize: "14px" }} className="paragraphText">
-            One of the most significant contributions of AI in education is
-            personalized learning. Traditional classrooms often
-            <br /> struggle to address the diverse learning needs of each
-            student. AI solves this problem by analyzing a student’s
-            <br /> performance, learning style, and pace and then customizing
-            content accordingly.
+          <p style={{ fontSize: "14px" }} className="paragraphText col-md-8">
+          AI is revolutionizing education by enhancing personalized learning, automating administrative tasks, and providing real-time feedback. Key applications include intelligent tutoring systems, adaptive learning platforms, and data-driven insights, making education more accessible, efficient, and tailored to individual needs.
           </p>
           <div className="row mt-5">
             <div className="col-md-6 paddingRight3">
@@ -95,42 +79,25 @@ const Page = () => {
             <div className="col-md-6 footerSection">
               <h4 className="title-page-2">Intelligent Tutoring Systems (ITS):</h4>
               <p className="paragraphText">
-                AI-based tutors can identify a student's strengths and
-                weaknesses and adjust the curriculum in real-time. This ensures
-                that learners receive content that matches their level of
-                understanding, leading to better learning outcomes.AI-based
-                tutors can identify a student's strengths This ensures that
-                learners receive content that matches their level of
-                understanding, leading to better learning outcomes.
+              Intelligent tutoring systems use AI to provide personalized tutoring experiences. These systems assess student performance in real-time, adapt content delivery, and offer immediate feedback, improving learning outcomes. They simulate one-on-one interactions, enabling scalable, efficient learning for diverse subjects and skill levels.
               </p>
               <h4 className="title-page-2">Adaptive Learning Platforms:</h4>
               <p className="paragraphText">
-                Platforms like Knewton and Smart Sparrow use machine learning to
-                create personalized learning paths for students. These systems
-                can suggest learning materials, exercises, and quizzes based on
-                the student’s progress and comprehension.Platforms like Knewton
-                and Smart Sparrow use machine learning to create personalized
-                learning paths for students. These systems can suggest learning
-                materials, exercises, and quizzes based on the student’s
-                progress and comprehension.
+              Adaptive learning platforms leverage AI to adjust educational content based on a learner's progress and performance. By analyzing student data, these systems dynamically tailor lessons, quizzes, and activities to individual needs. This personalized approach fosters deeper understanding, engagement, and retention for all learners.
               </p>
             </div>
           </div>
         </div>
       </div>
 
-      <IOSAppDesignServices />
+      <IOSAppDesignServices data={sliderData} heading="Artificial Intelligence (AI) <br /> Development Services" description="Cynergy’s Artificial Intelligence (AI) development services offer a wide range of benefits that empower businesses to enhance operational efficiency, improve decision-making, and drive innovation. By incorporating AI technologies into business processes, companies can streamline tasks, automate complex workflows, and reduce human error." />
 
       <div className="py-5 appMobilePaddingSmall" style={{backgroundColor: "#fffbf8"}}>
         <div className="row pt-5 col-12 d-flex justify-content-center" >
           <div className="col-md-6">
             <h2 className="mainHeadingMobile" style={{textAlign:'center'}} >Benefits of AI in Education</h2>
             <p className="paragraphText" style={{textAlign:'center'}}>
-              Our software development life cycle empowers companies to
-              functionalize their brand identity by building an effective and
-              powerful mobile app for its users. To create more clicks and
-              produce more revenue we provide a complete mobile solution to make
-              a global recognition of your mobile applications.
+            One of the key advantages of AI development is enhanced efficiency. AI systems can handle repetitive, time-consuming tasks with greater accuracy and speed, freeing up human resources for more strategic activities. This leads to higher productivity and allows businesses to allocate their workforce where it matters most.
             </p>
           </div>
         </div>

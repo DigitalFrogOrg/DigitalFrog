@@ -3839,7 +3839,7 @@ section.recent_news {
   font-weight: 700 !important;
 }
 .cardDesc{
-  font-size: 16px !important;
+  font-size: 18px !important;
   font-weight: 400 !important;
   color: #656565 !important;
   line-height: 25px !important;
@@ -5229,7 +5229,7 @@ color: var(--orange) !important;
 .lines-1 {
   width: 40% !important;
   left: -75px;
-  top: 31%;
+  top: 36%;
 }
 .lineHeading{
   font-size: 1.5vw !important;
@@ -5238,17 +5238,17 @@ color: var(--orange) !important;
 .lines-2{
   width: 28% !important;
   left: 4%;
-  top: 58%;
+  top: 62%;
 }
 .lines-3 {
   width: 18% !important;
   right: 17%;
-  top: 52%;
+  top: 58%;
 }
 .lines-4 {
   width: 25% !important;
   right: 8%;
-  top: 60%;
+  top: 65%;
 }
 .mid-mob{
   margin: -50px 0px 120px 0px;

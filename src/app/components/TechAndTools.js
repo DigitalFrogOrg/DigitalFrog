@@ -51,11 +51,9 @@ const TechAndTools = () => {
         <div className="row ">
           <h2 className="mainHeadingMobile">Technology And Tools</h2>
           <p className="paragraphText">
-            We impart cutting-edge tech solutions for your stellar web
-            development projects that deliver exclusive
-            <br /> programming languages, frameworks, and libraries that enable
-            us to rank apps with modern web technologies
-            <br /> and web development tools.
+          Cynergy leverages advanced technologies and state-of-the-art tools to bring your web development projects to life.<br /> 
+          Our expertise spans a range of programming languages, frameworks, and libraries, enabling us to  craft high-performing<br /> web applications that meet the demands of modern users.  By utilizing the latest innovations in web technologies,
+           Cynergy<br /> ensures your application is not only functional but also ahead of industry trends, delivering exceptional performance and reliability.
           </p>
         </div>
       </div>
