@@ -13,7 +13,6 @@ export default function VideoModal({closeVideo}) {
                     </div>
                   </div>
                 </div>
-        
          <div
       style={{
         overflow: "hidden",
