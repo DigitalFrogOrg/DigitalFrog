@@ -189,12 +189,7 @@ const page = () => {
               <div className="col-md-4 my-2" key={i}>
                 <AppCard heading={item.heading} height={370} hoverEffect="effect2" isCenter={true} description={item.description} />
             
-              {/* <div className="DevelopmentProcessBox mobileCardPadding">
-                <h4 className="cardHeading">{item.heading}</h4>
-                <p className="cardDesc">
-                  {item.paragraph}
-                </p>
-              </div> */}
+             
               </div>
             ))}
           </div>
