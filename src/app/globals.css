@@ -4736,8 +4736,22 @@ section.recent_news {
   border: none !important;
   margin: 0 0px;
 }
+
+.effect9:hover{
+  background-image: url(/images/Group1707479837.png);
+  background-repeat: no-repeat;
+  background-size:cover ;
+  border: none !important;
+  margin: 0 0px;
+}
 .appTestBox:hover h4 {
   color: var(--orange);
+}
+.effect9:hover h4 {
+  color: var(--orange);
+}
+.effect9:hover p {
+  color: #454545 !important;
 }
 .appTestBox h4 {
   font-size: 20px;

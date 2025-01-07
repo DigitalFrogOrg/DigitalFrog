@@ -7,8 +7,9 @@ import FaqsSection from "../components/FaqsSection";
 import BudgetSection from "../components/BudgetSection";
 import AppCta from "../components/AppCta";
 import Link from "next/link";
-import {faqData,topNotch,whyCynergy} from './data'
+import {faqData,topNotch,whyCynergy,testingApp} from './data'
 import DropUsALine from "../components/DropUsALine";
+import AppCard from "../components/appCard";
 
 const page = () => {
   
@@ -30,7 +31,21 @@ const page = () => {
           </div>
           <div className="col-md-6 appTestRight footerSection">
             <div className="row">
-              <div className="col-md-6">
+             <div className="col-md-6">
+                {testingApp.slice(0,2).map((item,i)=>(
+                  <div className="col-md-12 mb-5" key={i}>
+                    <AppCard height={355} hoverEffect="effect9" heading={item.heading} isCenter={true} description={item.description} />
+                  </div>
+                ))}
+             </div>
+             <div className="col-md-6">
+             {testingApp.slice(2,4).map((item,i)=>(
+                  <div  className="col-md-12 mgTop15" style={{margin:i==0?'6rem 0 3rem 0':''}} key={i}>
+                    <AppCard height={355} hoverEffect="effect9" heading={item.heading} isCenter={true} description={item.description} />
+                  </div>
+                ))}
+             </div>
+              {/* <div className="col-md-6">
                 <div className="appTestBox">
                   <h4 className="cardHeading25">
                     Software Functional
@@ -94,7 +109,7 @@ const page = () => {
                     mobile performance testing of the app.
                   </p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -174,14 +189,16 @@ const page = () => {
           <div className="row">
             {whyCynergy.map((item,i) => (
                <div className="col-md-4 mgTop25" key={i}>
-               <div className="up-to-mints-div mobileCardPadding">
+                <AppCard height={303} hoverEffect="effect2" showLine={true} isCenter={true} heading={item.heading} description={item.description} />
+             
+               {/* <div className="up-to-mints-div mobileCardPadding">
                  <h4 className="text-center cardHeading">
                    {item.heading}
                  </h4>
                  <p className="text-center cardDesc">
                   {item.description}
                  </p>
-               </div>
+               </div> */}
              </div>
             ))}
            
