@@ -17,7 +17,7 @@ const PopupMenu = ({ togglePopup }) => {
         { href: "/ios-development", text: "IOS Development Services" },
         { href: "/android-development", text: "Android Development Services" },
         { href: "/no-code-development", text: "No Code/Low Code Development Services" },
-        { href: "/ai-app-development", text: "AI App Development Services" },
+        { href: "/ai-ml-development", text: "AI App Development Services" },
       ],
     },
     design: {
