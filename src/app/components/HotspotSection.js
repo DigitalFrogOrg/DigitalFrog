@@ -35,7 +35,7 @@ function HotspotSection() {
                 </div>
                 <div className="marker"></div>
               </div>
-              <div className="hotspot" style={{ top: "-0.2%", left: "55%" }}>
+              {/* <div className="hotspot" style={{ top: "-0.2%", left: "55%" }}>
                 <div className="label">
                   <h6>UK</h6>
                   <p>
@@ -43,14 +43,14 @@ function HotspotSection() {
                   </p>
                 </div>
                 <div className="marker"></div>
-              </div>
-              <div className="hotspot" style={{ top: "27%", left: "69.5%" }}>
+              </div> */}
+              {/* <div className="hotspot" style={{ top: "27%", left: "69.5%" }}>
                 <div className="label">
                   <h6>UAE</h6>
                   <p>Address will be provided soon</p>
                 </div>
                 <div className="marker"></div>
-              </div>
+              </div> */}
               {/* <div className="hotspot" style={{ top: "7%", left: "73%" }}>
                 <div className="label">
                   <h6>UAE</h6>

@@ -24,17 +24,12 @@ const page = () => {
       <div style={{ backgroundColor: "#fffbf8" }} >
         <div className="container-fluid mobile-experiences appMobilePaddingSmall">
           <h2 className="text-center fs-1 mainHeadingMobile">
-            Empowering Industries With <br /> State-Of The Art Solutions
+            Empowering Industries With <br /> Innovative Solutions
           </h2>
           <p className="text-center paragraphText">
-            Among premier mobile app development companies, we batten
-            exceptional assistance on a wider scale to flourish Android and
-            <br /> iOS devices internationally. From the start to the launch of
-            mobile development, we construct and
-            <br /> refine the design and performance of the app productively. As
-            a reputable provider of native mobile app development services, we
-            strive to meet the
-            <br /> exigencies of our valuable consumers.
+          Cynergy is transforming industries through the development of forward-thinking, advanced solutions. By leveraging the latest technologies,
+          <br /> Cynergy craft unique and powerful web and mobile applications that help businesses thrive. Our expertise has earned us global<br />
+           recognition as we continue to create innovative digital experiences for brands and businesses worldwide.
           </p>
           <MobileExperiences />
         </div>
@@ -43,28 +38,17 @@ const page = () => {
       <div className="TechAndTools appMobilePaddingSmall">
         <h2 className="mainHeadingMobile">Development Process</h2>
         <p className="paragraphText">
-          We create accelerated methodologies to revolutionize native mobile app
-          development processes for more competent
-          <br /> and adequate solutions for apps. With sterling native mobile
-          app frameworks we build a sleek and tranquil process to
-          <br /> refine and make development quicker for Android apps and iOS
-          devices.
+        Our streamlined development process ensures efficiency and excellence at every stage
         </p>
         <div className="container mt-5">
           <div className="row">
-            {developmentProcess.slice(0, 3).map((item,index)=>(
-               <div className={`col-md-4 ${index > 0 ?'mgTop15':''}`} key={index}>
+            {developmentProcess.map((item,index)=>(
+               <div className={`col-md-4 my-2`} key={index}>
                 <AppCard heading={item.heading} hoverEffect="effect1" height={255} isCenter={true} description={item.description} />
              </div>
             ))}
           </div>
-          <div className="row mt-4">
-          {developmentProcess.slice(3, 6).map((item,index)=>(
-               <div className={`col-md-4 ${index > 0 ?'mgTop15':''}`} key={index}>
-                <AppCard heading={item.heading} height={255} isCenter={true} hoverEffect="effect1" description={item.description} />
-             </div>
-            ))}
-          </div>
+       
 
           <div className="row mt-5">
             <div className="col-md-12 d-flex align-items-center justify-content-center">
@@ -80,19 +64,10 @@ const page = () => {
         <div className="container workingWithCynergy appMobilePadding">
           <h2 className="mainHeadingMobile">Cynergy’s Knack Of Skills</h2>
           <p className="text-center paragraphText">
-            Over the past several years there has been a significant increase in
-            the usage of smartphones, where people typically have become more
-            dependent
-            <br /> on technology. Here, Cynergy’s dedicated software development
-            team provides the top benefits of native applications to bestow
-            absolute mobile
-            <br /> app solutions for iOS and Android platforms. We offer
-            services to expedite small and large enterprises for native mobile
-            applications
-            <br /> and non-native apps. Our user-centric native applications
-            will skyrocket your business to the next level with our thriving
-            ideas and <br />
-            best practices.
+          Cynergy’s expertise lies in crafting high-performance native apps that redefine user experiences. With a dedicated team and<br />
+           innovative methodologies, Cynergy build fast, responsive, and secure applications tailored to iOS and Android platforms. <br />
+           Our user-centric approach ensures compliance with industry standards, delivering feature-rich solutions<br />
+            that empower businesses to thrive in competitive markets.
           </p>
           <div className="row mt-5">
 
@@ -114,20 +89,15 @@ const page = () => {
       <div className="container text-center OurChooseOpt appMobilePadding">
         <h2 className="mainHeadingMobile">Why Choose Us</h2>
         <p className="paragraphText">
-          Since Cynergy Studios stepped into the world of digitalization, it has
-          been marking a prestigious reputation in the
-          <br /> leading industry of mobile apps. Prevailing a dominance with
-          unmatchable expertise, our mobile app development
-          <br /> dispenses top-notch native apps that follow the latest trends
-          and development tools. Throughout the process of native
-          <br />
-          app development, we capture growth advantages and resolve rising
-          business challenges.
+        Cynergy brings a wealth of expertise and innovation to the world of web and app development. Our team is dedicated to providing top-tier,
+        <br />
+         cutting-edge native applications tailored to meet your business needs. Cynergy follows the latest trends and employs the most<br /> advanced development tools, ensuring that your app stands out in a competitive digital landscape.
+          Cynergy’s goal is to drive your <br />business growth by crafting custom solutions that address your challenges while offering enhanced performance and scalability.
         </p>
         <div className="row mt-4">
 
-           {whyChooseUs.slice(0,3).map((item,i)=>(
-            <div className="col-md-4" key={i}>
+           {whyChooseUs.map((item,i)=>(
+            <div className="col-md-4 my-2" key={i}>
                 <AppCard heading={item.heading} showLine={true} height={303} isCenter={true} hoverEffect="effect2" description={item.description} />
            
           </div>
@@ -135,16 +105,7 @@ const page = () => {
 
            }   
         </div>
-        <div className="row mt-1">
-        {whyChooseUs.slice(3,6).map((item,i)=>(
-            <div className="col-md-4 my-2" key={i}>
-                <AppCard heading={item.heading} showLine={true} height={303} isCenter={true} hoverEffect="effect2" description={item.description} />
-            
-          </div>
-           ))
-
-           }   
-        </div>
+       
         <div className="row mt-5">
             <div className="col-md-12 d-flex align-items-center justify-content-center">
             <DropUsALine />

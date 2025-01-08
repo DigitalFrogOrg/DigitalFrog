@@ -9,6 +9,7 @@ import MainBanner from "../components/MainBanner";
 import Link from "next/link";
 import DropUsALine from "../components/DropUsALine";
 import { faqData,cynergyStudio,whychooseus } from "./data";
+import AppCard from "../components/appCard";
 const page = () => {
 
 
@@ -24,19 +25,7 @@ const page = () => {
               <div className="text-section">
                 <h1 className="title-page mainHeadingMobile">Mobile App Maintenance Company</h1>
                 <p className="paragraphText">
-                  With years of proven track record in maintenance and support,
-                  Cynergy Studios furnishes comprehensive mobile app maintenance
-                  services, compliance management services, and security
-                  management services to keep your app updated and optimized to
-                  ensure technological amelioration.
-                  <br />
-                  <br /> The scope of our services prevails in new app features,
-                  app compliance, and maintenance KPIs throughout the process to
-                  boost large and small enterprises with unbeatable results.
-                  With protracted skills, delineated process, and indigenous
-                  strategy our maintenance and support experts construct your
-                  mobile app with astounded tech features to achieve your
-                  productive business goals.
+                Cynergy, with a proven track record in maintenance and support, offers comprehensive services to keep your mobile app updated, secure, and optimized. Our solutions focus on compliance, security, and technological enhancement to ensure seamless performance.
                 </p>
                <DropUsALine />
               </div>
@@ -57,14 +46,9 @@ const page = () => {
           <div className="col-md-12 py-5 d-flex align-items-center justify-content-center flex-column text-center">
             <h2 className="mb-4 mainHeadingMobile">Support and Maintenance Services</h2>
             <p className="mb-4 paragraphText">
-              The scope of our services prevails in new app features, app
-              compliance, and maintenance KPIs throughout the process to boost
-              large
-              <br /> and small enterprises with unbeatable results. With
-              protracted skills, delineated process, and indigenous strategy our
-              maintenance and <br />
-              support experts construct your mobile app with astounded tech
-              features to achieve your productive business goals.
+            Our service scope includes introducing new app features, maintaining app compliance, and monitoring key performance indicators (KPIs).<br />
+             With expertise, a clear process, and innovative strategies, Cynergy helps enterprises—big or small—achieve their business goals through<br /> 
+             reliable maintenance and support.
             </p>
             <img
               src="./images/banner-bottom.png"
@@ -79,11 +63,7 @@ const page = () => {
         <div className="container">
           <h2 className="text-center mainHeadingMobile">Maintenance Process</h2>
           <p className="text-center paragraphText">
-            The top management of Cynergy Studios characterizes each support and
-            maintenance step with beneficial
-            <br />
-            processes to streamline the app's performance and potency with
-            clarity.
+          At Cynergy, our comprehensive maintenance process ensures app performance, user satisfaction, and seamless functionality. <br />Each step is strategically designed to meet client needs and industry standards.
           </p>
 
           <MaintenanceProcess />
@@ -99,7 +79,7 @@ const page = () => {
       <div className="app-quality-main appMobilePaddingSmall">
         <div className="container">
           <h2 className="text-center mainHeadingMobile">
-            Cynergy <span>Studios</span>
+          Elevating Mobile App <br /> <span>Excellence</span>
           </h2>
           <p className="text-center paragraphText">
             Harnessing productive measures to provision adequate mobile app
@@ -110,12 +90,10 @@ const page = () => {
           <div className="row mt-5">
             <div className="col-md-7">
               {cynergyStudio.map((item,i)=>(
-                <div className="app-quality mobileCardPadding" key={i}>
-                <h3 className="cardHeading">{item.heading}</h3>
-                <p className="cardDesc">
-                  {item.description}
-                </p>
-                </div>
+               <div className="my-4 col-md-11">
+                <AppCard height={240} hoverEffect="effect7" heading={item.heading} description={item.description} />
+               </div>
+            
               ))}
             </div>
             <div className="col-md-5 marginTopMobile">
@@ -135,13 +113,7 @@ const page = () => {
             <div className="col-md-7">
               <h2 className="mainHeadingMobile">Why Choose Us</h2>
               <p className="paragraphText">
-                In the modern times of technological enhancement software mobile
-                app support and maintenance is as necessary as a penny, to keep
-                the IT environment healthy and viable. So, are you wondering
-                about hiring app support and maintenance partners? At Cynergy
-                Studios, we not only update mobile applications but also
-                discover and implement new launch processes to scale apps in a
-                split second.
+              In today’s tech-driven world, consistent mobile app maintenance is essential to ensure app viability. At Cynergy, Cynergy is not only updates apps but also explores and implements strategies to scale them efficiently.
               </p>
             </div>
             <div className="col-md-5 d-flex justify-content-end align-items-center">
@@ -151,15 +123,8 @@ const page = () => {
           <div className="row mt-5">
             {whychooseus.map((item,i)=>(
                 <div className="col-md-4 my-3" key={i}>
-                <div className="choose-sec-1 mobileCardPadding">
-                  <div>
-                  <h4 className="cardHeading">{item.heading}</h4>
-                  <p className="cardDesc">
-                    {item.description}
-                  </p>
-                  </div>
-                  <div className="choose-rectangle"></div>
-                </div>
+                  <AppCard heading={item.heading} hoverEffect="effect5" height={303} showLine={true} isCenter={true} description={item.description} />
+              
               </div>
             ))}
           </div>

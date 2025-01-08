@@ -1,53 +1,62 @@
 export const faqData = [
     {
       questionId: "01",
-      question: "How much does it cost to build an Android app?",
+      question: "What is a mobile app testing service?",
       answer:
-        "The cost of building an Android app can vary widely based on several factors, including the app's complexity, features, design, and the development team’s location and expertise. On average, a basic app can range from $5,000 to $50,000, while more complex applications with advanced features can cost upwards of $100,000. At Cynergy Studios, we provide tailored estimates based on your specific project requirements.",
+        "Mobile app testing services ensure that your app functions as intended is free of bugs, performs well across devices, and meets user expectations. The service includes functional testing, security assessments, usability checks, and performance evaluations, ensuring a seamless user experience.",
     },
     {
       questionId: "02",
-      question: "Is Android app development profitable?",
+      question: "How are mobile apps tested?",
       answer:
-        "Yes, Android app development can be highly profitable. With a vast user base and the increasing popularity of mobile applications, businesses can tap into new revenue streams through in-app purchases, subscriptions, and advertising. Additionally, Android apps often reach a wider audience due to the platform's global market share, particularly in emerging markets.",
+        "Mobile apps are tested using a combination of manual and automated testing methods. This includes functional testing, performance testing, compatibility checks across different devices, and security evaluations to identify and fix bugs, ensuring the app meets quality standards.",
     },
     {
       questionId: "03",
-      question: "Which technology is best for Android app development?",
+      question: "How much does mobile application testing cost?",
       answer:
-        "The best technology for Android app development largely depends on the specific requirements of your project. Commonly used technologies include: <ul> <li><b>Java and Kotlin:</b> The primary programming languages for native Android app development.</li> <li><b>Flutter:</b>A UI toolkit by Google for building natively compiled applications for mobile, web, and desktop from a single codebase.</li> <li><b>React Native:</b> A popular framework for building cross-platform apps using JavaScript. At Cynergy Studios, we choose the technology that best aligns with your project goals and target audience.</li></ul>",
+        "The cost of mobile app testing depends on factors like the complexity of the app, the number of devices to be tested, and the types of tests required. Typically, pricing can range from a few hundred to several thousand dollars, based on the scope of testing.",
     },
     {
       questionId: "04",
-      question: "Which software is required for Android app development?",
+      question: "What are the different types of mobile app testing?",
       answer:
-        "To develop Android apps, several software tools are commonly used: <ul><li><b>Android Studio:</b>The official integrated development environment (IDE) for Android development.</li> <li><b>Java Development Kit (JDK):</b>Required for writing Java code.</li> <li><b>Android Software Development Kit (SDK):</b>A set of development tools for building Android apps.</li> <li><b>Emulators:</b>For testing apps on different Android devices and screen sizes. These tools enable developers to efficiently create, test, and deploy Android applications.</li></ul>",
+        "Different types of mobile app testing include functional testing, usability testing, compatibility testing, performance testing, security testing, and localization testing. Each type focuses on different aspects of the app, ensuring it meets quality, security, and user experience standards.",
     },
     {
       questionId: "05",
       question:
-        "How much does it cost to hire a custom Android application development agency?",
+        "What is QA mobile testing?",
       answer:
-        "The cost to hire a custom Android application development agency can vary based on factors such as the agency's expertise, location, and the complexity of your project. Typically, hourly rates can range from $25 to $150, depending on the agency’s experience and the services offered. For a complete project, costs can range from $10,000 to $200,000 or more. At Cynergy Studios, we offer flexible pricing models to fit your budget while delivering high-quality development services.",
+        "QA mobile testing focuses on assessing the quality of mobile applications through various tests to ensure they are error-free, reliable, and perform well under real-world conditions. It includes testing for functionality, usability, security, and performance to meet end-user expectations.",
     },
   ];
 
 export const topNotch = [
-  {heading:"Exclusive Error Detection",description:"Errors are an imminent part of applications. They must be addressed in the app development process because they can malfunction, crash, freeze, or yield improper results. Thus, the outcome can reflect the user experience, app performance, and overall app stability. Here at cynergy Studios, our remarkable testing experts fabricate the risk-free processing mobile app to operate critical functions like login, data entry, and payment processing secured by all means. Therefore, it will lead to more user satisfaction and revenue generation from your mobile apps."},
-  {heading:"Quality Assurance",description:"In the testing phase, the level of quality assessment is analyzed in mobile application testing. It can prevent from bugs and serious development issues. Therefore, the skilled professionals of cynergy Studios, conduct multiple phases to create an evaluation process to meet the success of the mobile performance testing of the app. "},
-  {heading:"Security Prevalence",description:"A recent study found the number of mobile application users in the USA than desktop applications. In 2015, 54% of users spent their leisure hours while using digital media applications on mobile devices. Such mobile apps are meant to store large amounts of user’s data and that must be protected by an authoritative body. Thus, Our prodigious mobile app testing services tend to focus on the security testing guidelines in the pre-production phase to avoid implementation errors or high-frequency risks. The mobile app security testing process ensures secure configuration, prevention of encryption methods, and shielded transmission of data."},
-  {heading:"Fast Development Process",description:"Fast-paced and high-quality mobile apps are the most advocated in today’s modern world of lucrative business. Whereas it has a huge influence on entrepreneurs, small and large enterprises, and the masses. To avoid intrusion and disruption, cynergy’s highly skillful mobile testing engineers develop a quick flow to eradicate all the forthcoming hurdles such as, creative adaptive testing, evaluating the right platform for testing, mobile app testing automated programs, and updating new feeds at a similar speed."},
+  {heading:"Software Functional Testing Services",description:"Functional testing ensures your app meets user expectations by detecting defects, system failures, and crashes. Cynergy’s expert team creates improvement plans for validating output/input results and delivers effective end-to-end testing solutions."},
+  {heading:"Software Automated Testing Services",description:"Automated testing uses advanced tools to execute comprehensive tests and generate fast reports. Cynergy ensures cost-effectiveness, rapid execution, and multiple iterations to build successful mobile apps with reliable testing."},
+  {heading:"Software Data Testing Services",description:"Data testing connects functional testing, user interfaces, and data analytics, ensuring smooth data transformation and rule implementation. Cynergy’s exclusive team crafts cutting-edge mobile app testing solutions to meet client expectations."},
+  {heading:"Inevitable Testing Process",description:"Cynergy streamlines an effective testing methodology, preventing potential issues and providing reliable solutions for customers, ensuring app functionality and performance meet the highest standards."},
 ]
 
 export const whyCynergy = [
-  {heading:"Innovative Mobile Performance Testing",description:"The interpretive minds of cynergy’s mobile application testing specialists bestow cutting-edge solutions to produce effective in-house testing of mobile apps. We always tend to offer reliable and compatible testing processes to uplift our client’s businesses."},
-  {heading:"Quality Assessment",description:"The rigorous mobile app functional testing ensures a modern strategic approach in the mobile app development process with thorough mobile security testing and mobile accessibility testing in a particular testing time frame. Our remarkable testing team provides the best solution for mobile testing portfolio and mobile testing specifics to ensure the quality of the application. "},
-  {heading:"Proven Track Record",description:"With our commitment to excellence, we take pride in delivering the best solutions to our clients and partners. Dignite’s reliability and loyalty can’t be ever judged. We always strive to produce the required mobile app testing procedure for valuable customers under the mentioned testing time."},
+  {heading:"Innovative Mobile Performance Testing",description:"Cynergy's mobile app testing specialists provide cutting-edge in-house solutions for mobile performance testing. Cynergy’s reliable and compatible testing processes are designed to elevate our clients' businesses by ensuring seamless app performance."},
+  {heading:"Quality Assessment",description:"Cynergy’s comprehensive mobile app functional testing uses modern strategies, focusing on mobile security and accessibility. Our expert team ensures the highest quality by providing tailored testing solutions within a set timeframe, guaranteeing your app’s reliability and performance. "},
+  {heading:"Proven Track Record",description:"With a commitment to excellence, Cynergy prides itself on delivering top-quality solutions to our clients. Cynergy’s reputation for reliability and loyalty speaks for itself, as we consistently meet our customers' mobile app testing needs within the specified timeline."},
 ]
 
 export const testingApp = [
-  {heading:"Software Functional Testing Services",description:"At multiple granularity levels, functional testing ensures the software’s conformity to meet the corresponding output with the end-user’s expectations. The process enables the quick detection of prevailing defects, system failures, and function crashes of the apps. the tech industry while mobile testing."},
-  {heading:"Software Automated Testing Services",description:"The testing service refers to the automated testing methodology and usage of tools to execute comprehensive tests of software and generate swift reports over the testing measures. Here at Cynergy Studios, we conduct an effective approach to build strong mobile app evaluation which provides."},
-  {heading:"Software Data Testing Services",description:"It is a process that connects Functional Testing, User Interface, and data analytics of the apps to ensure data transforms and implementation of business rules. It focuses on the Broader Quality Assurance field to validate data processes. Our exclusive mobile testing team crafts cutting-edge mobile app testing solutions to satisfy clients by all means"},
-  {heading:"Exclusive Error Detection",description:"In the testing phase, the level of quality assessment is analyzed in mobile application testing. It can prevent from bugs and serious development issues. Therefore, the skilled professionals of Cynergy Studios, conduct multiple phases to create an evaluation process to meet the success of the mobile performance testing of the app."},
+  {heading:"Software Functional Testing",description:"Software functional testing ensures that an application performs as intended by verifying its functionalities against specified requirements. It detects defects early in the process, ensuring the app's stability, seamless interaction, and proper integration of features. This testing is crucial for enhancing user satisfaction and app reliability."},
+  {heading:"Software Automated Testing",description:"Software automated testing involves using specialized tools to run tests on applications automatically, ensuring quicker execution and reliable results. This approach saves time, improves accuracy, and enables frequent iterations, leading to more efficient testing of mobile apps and faster identification of potential issues."},
+  {heading:"Software Data Testing",description:"Software data testing validates the accuracy and consistency of data transferred and processed by an application. It ensures that business rules are correctly implemented, and data transformations are accurate. By thoroughly testing data handling, Cynergy guarantees secure and efficient data flow, contributing to a seamless user experience."},
+  {heading:"Exclusive Error Detection",description:"Exclusive error detection focuses on identifying and resolving application errors, such as crashes, freezes, or incorrect outputs. By addressing these issues early in the development process, Cynergy ensures improved app performance, enhanced user experience, and higher reliability, ultimately boosting user satisfaction and driving app success."},
+]
+
+export const inevitable = [
+  {heading:"Requirement Analysis",description:"Cynergy conducts thorough research on app type and target audience to understand client needs and ensure a successful testing process with top-ranked engineers guiding the mobile app testing journey."},
+  {heading:"Test Plan Creation",description:"Through usability testing, surveys, and analytics, Cynergy creates a comprehensive test plan to evaluate user behavior and assess consumer needs, delivering the most suitable approach for mobile app testing."},
+  {heading:"Test Case Creation",description:"Cynergy verifies app viability and functionality through in-depth mobile functional testing, ensuring compatibility, security, and performance to ensure apps meet all necessary requirements."},
+  {heading:"Mobile Test Automation",description:"By executing tests through real devices, emulators, or simulators, Cynergy detects system configurations and app performance, ensuring high-quality testing results for your mobile application."},
+  {heading:"Defect Logging",description:"Cynergy’s structured bug tracking process identifies and monitors issues like design flaws and hardware malfunctions, ensuring a comprehensive evaluation of errors, severity, and bugs during mobile app testing."},
+  {heading:"Fixing and Accreditation",description:"After fixing defects, Cynergy’s experts ensure the stability and functionality of the app, re-examining compatibility and reliability to ensure the app functions optimally and meets high standards."},
 ]
