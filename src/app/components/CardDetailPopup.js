@@ -1,10 +1,25 @@
 "use client"
-import React,{useRef} from 'react'
+import React,{useRef,useEffect} from 'react'
 
 function CardDetailPopup({item,setSelectedCard}) {
+  const divRef = useRef(null);
+  
+  const handleOutsideClick = (event) => {
+    if (divRef.current && !divRef.current.contains(event.target)) {
+      setSelectedCard(null); 
+    }
+  };
+
+   useEffect(() => {
+      document.addEventListener('mousedown', handleOutsideClick);
+      return () => {
+        document.removeEventListener('mousedown', handleOutsideClick);
+      };
+    }, []);
+
   return (
     <div className='popupBg'>
-    <div className="container my-5">
+    <div ref={divRef} className="container my-5">
       <div style={{position:'relative'}} className="card shadow-lg border-0">
         <div className='row' style={{position:'absolute',right:'4rem',top:'0.5rem'}}>
          <div>
