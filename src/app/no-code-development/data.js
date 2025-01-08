@@ -1,42 +1,42 @@
 export const faqData = [
     {
       questionId: "01",
-      question: "How much does a mobile app designer cost?",
+      question: "What is low-code/no-code development?",
       answer:
-        "The cost of hiring a mobile app designer varies widely based on experience, location, and project complexity. On average, freelance designers may charge between $50 to $150 per hour, while design agencies can range from $100 to $250 per hour or more.",
+        "Low-code/no-code development allows users to create applications with minimal coding by using visual interfaces, templates, and drag-and-drop features. This approach enables faster development, reduces the need for specialized technical skills, and empowers businesses to build apps with ease.",
     },
     {
       questionId: "02",
-      question: "What does a mobile app designer do?",
+      question: "How fast can I develop an app with low-code/no-code platforms?",
       answer:
-        "A mobile app designer is responsible for creating the visual elements and user experience of an app. They design the layout, icons, and overall aesthetics, ensuring the app is user-friendly and aligns with branding.",
+        "Using low-code/no-code platforms, apps can be developed much faster than traditional coding methods. You can launch prototypes within days and scale up applications in weeks, drastically reducing development time.",
     },
     {
       questionId: "03",
-      question: "Who designs mobile apps?",
+      question: "Can low-code/no-code apps scale as my business grows?",
       answer:
-        "Mobile apps are designed by a combination of professionals, including UI/UX designers, graphic designers, and sometimes product managers, who collaborate to create an intuitive and visually appealing user experience.",
+        "Yes, low-code/no-code apps can be highly scalable. These platforms allow for easy modification and expansion, ensuring your app can handle increasing demand, additional features, and evolving business needs without starting from scratch.",
     },
     {
       questionId: "04",
       question:
-        "What is the difference between an app developer and an app designer?",
+        "Do I need coding experience to use low-code/no-code platforms?",
       answer:
-        "An app developer focuses on coding and building the app's functionality, while an app designer concentrates on the visual aspects and user experience. Both roles are essential for successful app development.",
+        "No, you don’t need coding experience to use low-code/no-code platforms. These platforms are designed with visual interfaces and simple tools, allowing anyone—regardless of technical expertise—to build functional applications quickly and efficiently.",
     },
     {
       questionId: "05",
-      question: "How can to improve the app experience?",
+      question: "Are low-code/no-code apps secure?",
       answer:
-        "To enhance the app experience, prioritize user feedback, conduct usability testing, streamline navigation, optimize loading times, and ensure consistent updates with new features. User-centric design and continuous improvement are key.",
+        "Yes, low-code/no-code platforms can offer high levels of security, with built-in features like authentication, data encryption, and secure APIs. However, it’s important to choose the right platform and follow best practices to ensure the security of your app.",
     },
   ];
 
   export const empowerWithEase = [
-    {heading:"Low-Code/No-Code Solutions",description:"Cynergy LA offers specialized services in low-code and no-code solutions, streamlining development processes for quicker and more cost-effective application deployment."},
-    {heading:"Rapid Prototyping",description:"Rapid Prototyping: Our services enable clients to swiftly visualize and iterate on their ideas, accelerating the development cycle without the need for extensive coding, ensuring efficient concept validation."},
-    {heading:"Scalable Product Launch",description:"Scalable Product Launch: We support clients in seamlessly launching and scaling their products, harnessing the agility and flexibility inherent in low-code and no-code development for efficient and adaptable solutions."},
-    {heading:"Cross-Platform Proficiency",description:"Cross-Platform Proficiency: With expertise in various platforms like WordPress, Wix, Bubble, FlutterFlow, and Appian, Cynergy ensures a versatile and tailored approach to development, catering to diverse client needs across different technologies."},
-    {heading:"Support And Maintenance",description:"After our native app development services, we establish maintenance packages to update the app features and designs on monthly or yearly terms and conditions. top-notch solutions for your apps to make it flawless and unique."},
-    {heading:"Innovative Development",description:"Innovative Development: Cynergy excels in bringing innovative ideas to life through no-code and low-code platforms, providing clients with a cutting-edge and customized approach to digital development."},
+    {heading:"Low-Code/No-Code Solutions",description:"Cynergy offers tailored low-code/no-code solutions to meet specific business needs, enabling rapid app development, automation, and workflow optimization, all without requiring deep technical expertise."},
+    {heading:"Rapid Prototyping",description:"Cynergy’s rapid prototyping process helps turn ideas into tangible app prototypes quickly, enabling efficient validation and feedback before full-scale development, reducing risks and time to market."},
+    {heading:"Scalable Product Launch",description:"With low-code/no-code platforms, Cynergy creates scalable applications that grow alongside your business, ensuring your products can easily handle increasing demand while maintaining high performance."},
+    {heading:"Cross-Platform Proficiency",description:"Cynergy design applications using low-code/no-code tools that support multiple platforms, ensuring seamless performance across devices and operating systems, and maximizing your reach and engagement."},
+    {heading:"Support And Maintenance",description:"Cynergy’s ongoing support and maintenance services ensure your low-code/no-code apps remain up-to-date, secure, and functional, with continuous enhancements to meet evolving business needs."},
+    {heading:"Innovative Development",description:"Cynergy’s innovative approach to low-code/no-code development pushes the boundaries of what’s possible, integrating cutting-edge features and automation to create future-proof, efficient solutions."},
   ]

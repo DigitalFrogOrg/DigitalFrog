@@ -61,15 +61,11 @@ const MobileAppTabs = () => {
     <div className="MobileAppTabs appMobilePadding">
       <div className="container">
         <h2 className="text-center mainHeadingMobile">
-          Mobile app development
-          <br /> technologies we use
+          Mobile App Development
+          <br /> Technologies We Use
         </h2>
         <p className="text-center paragraphText">
-          The top management of Cynergy Studios characterizes each support and
-          maintenance step with beneficial
-          <br />
-          processes to streamline the app's performance and potency with
-          clarity.
+        Leveraging cutting-edge mobile app testing solutions, Cynergy stays aligned with current trends while preserving critical insights.<br /> Cynergy’s testing services employ advanced tools and software to ensure superior quality and performance.
         </p>
         <div className="row">
           <div className="col-md-12">

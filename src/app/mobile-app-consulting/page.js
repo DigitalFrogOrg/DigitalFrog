@@ -23,21 +23,10 @@ const page = () => {
             <div className="row">
               <div className="col-md-7 d-flex align-items-center justify-content-center pe-5">
                 <div className="text-section">
-                  <h2 className="title-page mainHeadingMobile">Our Value Expedition</h2>
+                  <h2 className="title-page mainHeadingMobile">Top-Notch Mobile App Consulting Services</h2>
                   <p className="paragraphText my-4">
-                    The world’s preeminent ensemble Cynergy Studios, harnesses
-                    the power of sustainability, believability, and solution to
-                    empower business growth. We aim to bestow next-level expert
-                    guidance and innovative solutions to deploy unique
-                    infrastructure to your mobile and web apps. Also, you’ll
-                    experience multiple opportunities at each facet of your
-                    application transformation.
-                    <br />
-                    <br />
-                    We aim to bestow next-level expert guidance and innovative
-                    solutions to deploy unique infrastructure to your mobile and
-                    web apps. Also, you’ll experience multiple opportunities at
-                    each facet of your application transformation.
+                  With years of expertise in mobile app consulting, Cynergy has built a legacy of delivering exceptional services to our partners and clients. From initial app audits to mobile API development, Cynergy provides comprehensive solutions to create competitive, high-performing apps. Cynergy’s mobile consulting team excels in agile methodologies, focusing on efficient planning, design, and development to craft engaging mobile experiences.
+                   
                   </p>
                  <DropUsALine />
                 </div>
@@ -94,13 +83,7 @@ const page = () => {
           <div className="col-md-6 d-flex align-items-start justify-content-center flex-column paddingLeft3 gap-3">
             <h2 className="mainHeadingMobile mgTop25">Mobile App Optimization & Audit</h2>
             <p className="paragraphText">
-              Audit plays a significant role in the development process of
-              mobile app, as it tests the security measures of the mobile apps,
-              and also analyzes the compliant policy and all rules and
-              regulations. On the other hand, it helps in detecting security
-              threats that steer to data breaches. At cynergy Studios, our
-              product consulting provides thorough guidance on the testing
-              capabilities of our entire process.
+            Our mobile app audits are designed to assess security, compliance, and functionality, helping to identify and address any vulnerabilities or breaches. Cynergy offers expert guidance in optimizing mobile app performance and ensuring adherence to industry standards and regulations.
             </p>
             <DropUsALine />
           </div>
@@ -112,13 +95,7 @@ const page = () => {
           <div className="col-md-6 d-flex align-items-start justify-content-center flex-column pe-5 gap-3">
             <h2 className="mainHeadingMobile">Mobile App Modernization</h2>
             <p className="paragraphText">
-              The use of updated technologies and procedures is a mere need in
-              today’s world. Adapting and enhancing prevalent mobile project
-              implementation will attract more user engagement. Whereas, mobile
-              development initiatives must hold the smartest ways to craft a
-              newfangled strategy for further mobile development initiatives.
-              While processing new app we create state-of-the-art features to
-              build highly modernized mobile projects.
+            As technology evolves, so must your mobile apps. Cynergy helps modernize and enhance your existing mobile applications, incorporating the latest features and strategies to boost user engagement. Our approach ensures your app remains relevant in a fast-changing digital landscape.
             </p>
             <DropUsALine />
           </div>
@@ -136,14 +113,7 @@ const page = () => {
           <div className="col-md-6 d-flex mgTop25 align-items-start justify-content-center flex-column paddingLeft3 gap-3">
             <h2 className="mainHeadingMobile">Mobile App Design</h2>
             <p className="paragraphText">
-              In the era of digitalization, mobile app design holds specific
-              importance in the field of multiple mobile app types. It carries a
-              wide range of uses, that catalyze fascinating features,
-              user-accessibility, engagement rate, and overall experience of the
-              apps. In the era of digitalization, mobile app design holds
-              specific importance in the field of multiple mobile app types.We
-              ensure cost-effective design modules for various mobile platforms
-              either Native, hybrid, or cross-platform apps.
+            In today's digital age, the design of mobile apps is crucial for user engagement, accessibility, and overall experience. At Cynergy, we offer cost-effective design solutions for all mobile platforms—whether Native, Hybrid, or Cross-Platform—to ensure your app stands out in a crowded market.
             </p>
             <DropUsALine />
           </div>
@@ -154,14 +124,7 @@ const page = () => {
         <div className="container py-5 text-center">
           <h2 className="top-ranked mainHeadingMobile">Why Choose Us</h2>
           <p className="paragraphText">
-            With more than a decade of unmatchable experience in mobile
-            consulting projects and mobile development, cynergy <br /> Studios
-            has gained a spectacular place in the terrain of digital technology.
-            Here, we’ve helped multiple industries and
-            <br /> brands to flourish their businesses with modernized
-            strategies and produce super easiest formulas to drive growth and{" "}
-            <br />
-            progress in mobile and web development.
+          With over a decade of unmatched experience in mobile consulting and development, Cynergy has established itself as a leader in<br /> the digital technology landscape. Cynergy has helped countless industries and brands flourish by implementing<br /> innovative strategies and simplifying formulas for driving growth in both mobile and web development.
           </p>
           <div className="row">
             {whyChooseUs.map((item,i)=>(

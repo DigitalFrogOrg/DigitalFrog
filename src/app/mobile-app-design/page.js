@@ -21,17 +21,7 @@ const page = () => {
             <div className="col-md-6 d-flex align-items-start justify-content-center flex-column">
               <h2 className="mainHeadingMobile">Why Choose Us</h2>
               <p className="paragraphText my-3 col-md-11">
-                At Cynergy Studios, we bring vast expertise in mobile app
-                design, having delivered standout UI/UX solutions to a diverse
-                range of clients. Our approach is all about
-                customization—crafting unique app interfaces that amplify brand
-                awareness, boost user engagement, and drive effective leads.
-                Specializing in both iOS and Android platforms, we create
-                intuitive designs that help your app rank among top business
-                applications. Experience strategic, expert consultation that
-                prevents costly mistakes and ensures your app is built with
-                precision and creativity, setting your business ahead of the
-                curve.
+              Cynergy specializes in creating intuitive and visually appealing mobile app designs that offer seamless user experiences. Our expert team combines creativity with the latest design trends to ensure your app stands out in the competitive marketplace. With a user-centric approach, Cynergy focuses on understanding your audience and building designs that are not only aesthetically pleasing but also functional. Cynergy’s deliver high-quality, responsive, and scalable designs tailored to your business needs, ensuring your app’s success on both iOS and Android platforms. Choose us for innovative mobile app designs that drive results.
               </p>
               <DropUsALine />
             </div>
@@ -49,14 +39,12 @@ const page = () => {
       <div style={{overflowX:'hidden'}} className="container py-5 my-5 appMobilePaddingSmall">
        
         <div className="row d-flex justify-content-center">
-          <div className="col-md-6">
+          <div className="col-md-7">
             <h2 className="mainHeadingMobile text-center">
               Top Notch Team of <br /> Cynergy Studios
             </h2>
             <p className="paragraphText text-center">
-              The unmatched creativity and expertise at Cynergy Studios lead to
-              cutting-edge solutions that craft exceptional user interface
-              designs.
+            Cynergy stands out for its unmatched creativity and expertise in delivering cutting-edge solutions for designing exceptional user interfaces that elevate user experiences to the highest level.
             </p>
           </div>
         </div>
@@ -68,7 +56,6 @@ const page = () => {
               </div>
             ))}
            
-          {/* </div> */}
         </div>
       </div>
 
@@ -78,11 +65,7 @@ const page = () => {
             <div className="col-md-8 py-5">
               <h2 className="mainHeadingMobile">Specialists for Platforms</h2>
               <p className="paragraphText">
-                Cynergy Studios boasts a top-tier team of designers dedicated to
-                creating an engaging operational framework that meets the needs
-                of our valued clients. From contemporary UI designs to sleek
-                aesthetics, our experts develop a unique and intuitive range of
-                solutions for further use.
+              Cynergy brings together a top-tier team of designers who focus on creating seamless and effective operational mechanisms tailored to meet our clients' needs. From modern UI designs to sleek layouts, our experts develop intuitive, unique designs that enhance user experience and drive engagement.
               </p>
             </div>
             <div className="col-md-4 mgBottom d-flex align-items-center justify-content-end">
@@ -94,13 +77,8 @@ const page = () => {
               <div className="m-1 inner-blog-section-1 row">
                 <div className="col-md-6">
                   <h3 className="cardHeading">Native Android App Design</h3>
-                  <p style={{color:'white',fontSize:'16px',lineHeight:'27px',marginTop:'20px'}}>
-                    Native apps are specifically designed for distinct mobile
-                    operating systems, meaning they can't be used
-                    interchangeably across platforms like iOS and Android. Our
-                    outstanding mobile application design services focus on
-                    creating an appealing UX design stage that quickly captures
-                    consumer interest.
+                  <p style={{color:'white',fontSize:'16px',lineHeight:'27px',marginTop:'20px',height:'235px'}} className="hide-scrollbar">
+                  Native apps are crafted specifically for one mobile operating system, such as iOS or Android, and cannot be used on other platforms. At Cynergy, we specialize in creating compelling and user-friendly UX designs that attract and engage users quickly on their native platforms.
                   </p>
                 </div>
                 <div className="col-md-6"></div>
@@ -110,13 +88,8 @@ const page = () => {
               <div className="m-1 inner-blog-section-2 row">
                 <div className="col-md-6">
                   <h3>Cross-Platform Android App Design</h3>
-                  <p style={{color:'#656565',fontSize:'16px',lineHeight:'27px',marginTop:'20px'}}>
-                    Cross-platform apps are designed to operate on various
-                    platforms, such as iOS and Android, utilizing a single
-                    codebase for all functionalities.
-                    <br />
-                    This approach simplifies development and allows for broader
-                    accessibility across different operating systems.
+                  <p style={{color:'#454545',fontSize:'16px',lineHeight:'27px',marginTop:'20px',height:'235px'}} className="hide-scrollbar">
+                  Cross-platform apps are designed to function across multiple operating systems like iOS and Android using a unified code base. Cynergy delivers efficient cross-platform designs that ensure a smooth user experience, making apps versatile and accessible on a variety of devices.
                   </p>
                   <br />
                   <br />

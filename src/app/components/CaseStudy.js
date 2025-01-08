@@ -23,13 +23,7 @@ const CaseStudy = () => {
         <div className="col-md-12">
           <h2 className="mainHeadingMobile">Mobile Game We Develop</h2>
           <p className="paragraphText">
-            Cynergy Studios creates top-notch mobile applications and
-            cutting-edge mobile features for their users to clinch their potency
-            and worthiness. Our mobile app services endeavor to build Android
-            and IOS mobile applications that function as per the required needs
-            of the user. Heading with successful mobile projects we fabricate
-            app success in the procreation of unbeatable user interfaces, coding
-            systems, database management, security, and maintenance
+          At Cynergy, we specialize in developing high-performance mobile applications that deliver seamless experiences across all platforms. Whether it’s Android or iOS, Cynergy ensures your app functions perfectly by incorporating top-tier user interfaces, robust coding systems, efficient database management, and comprehensive security measures. Cynergy builds apps that not only meet but exceed expectations, driving success for businesses in the mobile-first world.
           </p>
         </div>
       </div>

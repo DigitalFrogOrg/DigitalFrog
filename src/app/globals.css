@@ -3687,6 +3687,7 @@ section.recent_news {
   border-radius: 10px;
   padding: 46px 50px 1rem 20px;
   color: #fff;
+  height: 400px;
 }
 .inner-blog-section-1 h3 {
   font-size: 26px;
@@ -3703,6 +3704,7 @@ section.recent_news {
   border-radius: 10px;
   padding: 46px 50px 0rem 20px;
   color: #000;
+  height: 400px;
 }
 .inner-blog-section-2 h3 {
   font-size: 26px;
@@ -3844,6 +3846,7 @@ section.recent_news {
   color: #656565 !important;
   line-height: 25px !important;
   margin-top: 15px !important;
+  padding-bottom: 20px !important;
 }
 
 .effect1:hover{
@@ -5151,7 +5154,8 @@ color: var(--orange) !important;
   background-color: var(--white);
   border-radius: 10px;
   margin: 10px 20px;
-  min-height: 520px;
+  height: 606px;
+  padding-bottom: 10px;
 }
 .weCommitbox img {
   border-radius: 10px;

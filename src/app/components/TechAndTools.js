@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const TechAndTools = () => {
+const TechAndTools = ({desc="Cynergy leverages a proven technology stack to develop secure, scalable, and high-performing apps for iOS and Android platforms.<br /> From rich layouts to in-app notifications, Cynergy’s solutions ensure a solid foundation for your app’s success."}) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const settings = {
@@ -48,13 +48,13 @@ const TechAndTools = () => {
   return (
     <div className="TechAndTools">
       <div className="container appMobilePadding">
-        <div className="row ">
-          <h2 className="mainHeadingMobile">Technology And Tools</h2>
+        <div className="row justify-content-center flex-column d-flex align-items-center">
+          <h2 className="mainHeadingMobile">Tech Stack that Drives<br /> Your Success</h2>
+          <div className="col-md-9">
           <p className="paragraphText">
-          Cynergy leverages advanced technologies and state-of-the-art tools to bring your web development projects to life.<br /> 
-          Our expertise spans a range of programming languages, frameworks, and libraries, enabling us to  craft high-performing<br /> web applications that meet the demands of modern users.  By utilizing the latest innovations in web technologies,
-           Cynergy<br /> ensures your application is not only functional but also ahead of industry trends, delivering exceptional performance and reliability.
+            {desc}
           </p>
+          </div>
         </div>
       </div>
 

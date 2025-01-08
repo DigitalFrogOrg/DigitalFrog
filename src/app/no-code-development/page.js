@@ -20,13 +20,9 @@ const page = () => {
         <div className="row">
           <div className="col-md-6 d-flex align-items-start justify-content-center flex-column">
             <h2 className="mainHeadingMobile">Low-Code/No-Code Mastery: Platforms We Excel In</h2>
-            <h3 className="my-2 subHeading" style={{fontWeight:'600'}}>Our Expertise in Action Services</h3>
+            {/* <h3 className="my-2 subHeading" style={{fontWeight:'600'}}>Our Expertise in Action Services</h3> */}
             <p className="paragraphText my-3">
-              At cynergy LA, we bring low-code and no-code solutions to life
-              with a comprehensive suite of services. From rapid prototyping for
-              swift market validation to crafting in-house products like CRMs or
-              ERPs, and facilitating the complete development lifecycle of
-              products destined for launch and scale.
+            Cynergy specializes in leading low-code/no-code platforms like Bubble, OutSystems, and Mendix, enabling businesses to quickly create powerful applications without extensive coding knowledge, streamlining workflows, and reducing development time.
             </p>
             <DropUsALine />
           </div>
@@ -48,12 +44,7 @@ const page = () => {
             Code/Low-Code
           </h2>
           <p className="text-center paragraphText">
-            ow-code platforms like Bubble are fantastic for rapidly developing
-            web and mobile applications without needing extensive
-            <br /> coding knowledge. They excel in creating prototypes, MVPs
-            (Minimum Viable Products), and simple to moderately complex
-            <br /> applications, offering drag-and-drop interfaces and pre-built
-            templates for ease of use.
+          Cynergy’s low-code/no-code solutions empower businesses to rapidly create apps and automate processes with minimal coding.<br /> This approach accelerates development, enhances collaboration, and reduces the need for specialized technical expertise.
           </p>
           <div className="row">
             {empowerWithEase.map((item,i)=>(

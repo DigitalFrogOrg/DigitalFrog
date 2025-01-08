@@ -7,7 +7,7 @@ import FaqsSection from "../components/FaqsSection";
 import BudgetSection from "../components/BudgetSection";
 import AppCta from "../components/AppCta";
 import Link from "next/link";
-import {faqData,topNotch,whyCynergy,testingApp} from './data'
+import {faqData,topNotch,whyCynergy,testingApp,inevitable} from './data'
 import DropUsALine from "../components/DropUsALine";
 import AppCard from "../components/appCard";
 
@@ -22,10 +22,9 @@ const page = () => {
       <div className="container app-testing appMobilePadding" >
         <div className="row">
           <div className="col-md-6 d-flex align-items-start justify-content-center flex-column">
-            <h2 className="mainHeadingMobile">Mobile App Testing Services</h2>
+            <h2 className="mainHeadingMobile">Real-Time Mobile App Testing</h2>
             <p className="paragraphText my-3">
-              The first-class mobile testing team of cynergy Studios fabricates
-              automated testing of apps to hasten effective solutions instantly.
+            With years of proven success, Cynergy offers top-tier mobile app testing services that deliver fast, flawless applications ready to stand out in the competitive digital market. Cynergy focuses on scaling businesses by ensuring seamless performance, superior usability, optimal efficiency, risk-free compatibility, and innovative solutions for growth in the digital space.
             </p>
            <DropUsALine />
           </div>
@@ -56,13 +55,10 @@ const page = () => {
           <div className="row">
             <div className="col-md-6 d-flex align-items-start justify-content-center flex-column">
               <h2 className="mainHeadingMobile">
-                Top-Notch <span>Benefits</span>
+              Mobile App Testing  <span>Services</span>
               </h2>
               <p className="paragraphText">
-                The first-class application testing services of Cynergy Studios
-                pursue the perfection of landscape to meet the reality of
-                diverse devices, and user expectations to ensure refined
-                customized solutions for your apps.
+              Cynergy offers premium mobile app testing services, leveraging automated testing to deliver fast and effective solutions, ensuring flawless performance and optimal user experience.
               </p>
 
               {topNotch.map((item) => (
@@ -102,7 +98,7 @@ const page = () => {
             <DropUsALine />
             </div>
           </div>
-          <MaintenanceProcess />
+          <MaintenanceProcess data={inevitable} />
         </div>
       </div>
 
@@ -110,12 +106,9 @@ const page = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-7">
-              <h2 className="mainHeadingMobile">Why Cynergy Studios</h2>
+              <h2 className="mainHeadingMobile">Why Choose Cynergy</h2>
               <p className="paragraphText">
-                The top-class mobile app testing services of Cynergy Studios
-                streamline highly effective testing methodology to prevent
-                disasters and provide the most reliable solutions to their
-                partners and customers.
+              Cynergy offers top-tier mobile app testing services, utilizing highly effective testing methodologies to prevent issues and deliver the most reliable solutions for our clients and partners.
               </p>
             </div>
             <div className="col-md-5 d-flex align-items-center justify-content-end">

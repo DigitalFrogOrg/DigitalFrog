@@ -117,7 +117,7 @@ function footer() {
                 <ul>
                   <li> <a href="https://www.facebook.com/cynergystudiosonline" target="_blank"> Facebook </a></li>
                   <li><a href="https://www.instagram.com/cynergystudios/" target="_blank"> Instagram</a></li>
-                  <li><a href="#"> Github</a></li>
+                  <li><a href="https://github.com/cynergystudios" target="_blank"> Github</a></li>
                   <li><a href="#"> LinkedIn</a></li>
                   <li><a href="#"> X</a></li>
                 </ul>
