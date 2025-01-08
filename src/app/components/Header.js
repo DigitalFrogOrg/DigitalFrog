@@ -23,7 +23,7 @@ function Header() {
     development: {
       heading: "Development",
       links: [
-        // { href: "/ai-app-development", text: "AI & Ml Development" },
+        // { href: "/ai-ml-development", text: "AI & Ml Development" },
         { href: "/android-development", text: "Android Development " },
         { href: "/ios-development", text: "IOS Development " },
         { href: "/no-code-development", text: "No Code/Low Code Development " },
@@ -173,8 +173,8 @@ function Header() {
                                       (link, index) => (
                                         <div>
                                            {(activeTab == 'development' && index === 0) && <li>
-                                                                        <Link href={"/ai-app-development"} style={{fontWeight:'800'}} className={isActive('/ai-app-development')}>
-                                                                           AI & Ml Development 
+                                                                        <Link href={"/ai-ml-development"} style={{fontWeight:'800'}} className={isActive('/ai-ml-development')}>
+                                                                           AI & ML Development 
                                                                           <div className="top-button"><h4 style={{fontSize: "15px",margin:"0px"}}>Top</h4></div>
                                                                            </Link>
                                                                          </li>}
