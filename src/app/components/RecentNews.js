@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
+import Image from 'next/image'
 
 function RecentNews() {
   return (
@@ -13,7 +14,9 @@ function RecentNews() {
                     <div className='blog_col'>
                     <Link href="/blog/1">
                         
-                        <img src='/images/recent2.png' alt='Blog 01' className='img-fluid'/>
+                        <Image src="/images/recent2.png" alt="Blog 01" layout="responsive"  width={100} height={100} />
+                        
+                        {/* <img src='/images/recent2.png' alt='Blog 01' className='img-fluid'/> */}
                         </Link>
                         <span className='date'>28 / Aug / 2024</span>
                         <Link href="/blog/1">
@@ -27,8 +30,8 @@ function RecentNews() {
                     <div className='blog_col'>
                         <div className='blog_col'>
                     <Link href="/blog/1">
-
-                            <img src='/images/recentOne.png' alt='Blog 02' className='img-fluid'/>
+                    <Image src="/images/recentOne.png" alt="Blog 02" layout="responsive"  width={100} height={100} />
+                            {/* <img src='/images/recentOne.png' alt='Blog 02' className='img-fluid'/> */}
                         </Link>
                             <span className='date'>28 / Aug / 2024</span>
                                 <Link href="/blog/1">
@@ -44,7 +47,8 @@ function RecentNews() {
                     <div className='blog_col'>
                         <div className='blog_col'>
                     <Link href="/blog/1">
-                            <img src='/images/recent3.png' alt='Blog 03' className='img-fluid'/>
+                            {/* <img src='/images/recent3.png' alt='Blog 03' className='img-fluid'/> */}
+                            <Image src="/images/recent3.png" alt="Blog 03" layout="responsive"  width={100} height={100} />
 
                     </Link>
                                 <span className='date'>28 / Aug / 2024</span>
