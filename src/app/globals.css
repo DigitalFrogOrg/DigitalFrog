@@ -5430,6 +5430,19 @@ color: var(--orange) !important;
   .effect7:hover {
     transform: none;
   }
+  .tab-pannell .pe-5{
+    padding-right: 1.5rem !important;
+  }
+  .how-steps{
+    border: none !important;
+    padding: 20px 0px 20px 20px !important;
+  }
+  .dotted{
+    display: none;
+  }
+  .react-tabs__tab{
+    font-size: 12px !important;
+  }
   .right-main-menu .main-ul-li li a {
     color: var(--heading-color);
     font-size: 22px;
