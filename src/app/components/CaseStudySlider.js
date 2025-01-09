@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
+import Image from "next/image";
 
 const CaseStudySlider = () => {
     const slider = useRef(null);
@@ -71,7 +72,9 @@ const CaseStudySlider = () => {
                         <div className="col-md-12">
                             <Slider ref={slider} {...settings}>
                                 <div className="slide-item">
-                                    <img src="./images/blog-1.png" alt="Case 1" className="w-100" />
+                                    {/* <img src="./images/blog-1.png" alt="Case 1" className="w-100" /> */}
+                                    <Image src="/images/blog-3.png" alt="ASL Flurry" layout="responsive"  width={100} height={100} />
+                                    
                                     <h2 className="mt-4" style={{fontWeight:'300',fontSize:'30px'}}>ASL Flurry</h2>
                                     <p className="paragraphText">ASL Flurry is an educational app designed.</p>
                                 </div>
@@ -81,17 +84,23 @@ const CaseStudySlider = () => {
                                     <p className="paragraphText">The Fortune Teller App by Full Moon offers.</p>
                                 </div> */}
                                 <div className="slide-item">
-                                    <img src="./images/blog-3.png" alt="Case 3" className="w-100" />
+                                    {/* <img src="./images/blog-3.png" alt="Case 3" className="w-100" /> */}
+                                    <Image src="/images/blog-3.png" alt="Eksperience" layout="responsive"  width={100} height={100} />
+
                                     <h3 className="mt-4" style={{fontWeight:'300',fontSize:'30px'}}>Eksperience MyApp</h3>
                                     <p className="paragraphText">Eksperience MyApp is a versatile</p>
                                 </div>
                                 <div className="slide-item">
-                                    <img src="./images/blog-1.png" alt="Case 1" className="w-100" />
+                                <Image src="/images/blog-3.png" alt="ASL Flurry" layout="responsive"  width={100} height={100} />
+
+                                    {/* <img src="./images/blog-1.png" alt="Case 1" className="w-100" /> */}
                                     <h2 className="mt-4" style={{fontWeight:'300',fontSize:'30px'}}>ASL Flurry</h2>
                                     <p className="paragraphText">ASL Flurry is an educational app designed.</p>
                                 </div>
                                 <div className="slide-item">
-                                    <img src="./images/blog-3.png" alt="Case 3" className="w-100" />
+                                    {/* <img src="./images/blog-3.png" alt="Case 3" className="w-100" /> */}
+                                    <Image src="/images/blog-3.png" alt="ASL Flurry" layout="responsive"  width={100} height={100} />
+                                    
                                     <h3 className="mt-4" style={{fontWeight:'300',fontSize:'30px'}}>Eksperience MyApp</h3>
                                     <p className="paragraphText">Eksperience MyApp is a versatile</p>
                                 </div>

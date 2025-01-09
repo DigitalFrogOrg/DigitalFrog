@@ -9,6 +9,7 @@ import Link from "next/link";
 import {section2Data,section3Data,section5Data,chooseUsData,faqData} from './data'
 import DropUsALine from "../components/DropUsALine";
 import AppCard from "../components/appCard";
+import Image from "next/image";
 
 const page = () => {
 
@@ -31,7 +32,8 @@ const page = () => {
             <DropUsALine />
           </div>
           <div className="col-md-6">
-            <img src="./images/image82.png" alt="image82" className="w-100" />
+          {/* <img src="./images/image82.png" alt="image82" className="w-100" /> */}
+            <Image src="/images/image82.png" alt="image82" layout="responsive" width={100} height={100} />
           </div>
         </div>
       </div>
