@@ -32,17 +32,17 @@ function CardDetailPopup({item,setSelectedCard}) {
         </div>   
         </div>
         <div className="row g-0">
-          <div className="col-md-6">
+          <div className="col-md-5">
             {/* <img
               src={`${item.popupImages[0]}`}
               alt="Card Image"
               className="img-fluid rounded-start"
               style={{ objectFit: 'cover', height: '100%' }}
             /> */}
-          <Image src={item.popupImages[0]} alt={item.heading} style={{cursor:"pointer"}} layout="responsive" width={100} height={100} />
+          <Image src={item.popupImages[0]} alt={item.heading} style={{cursor:"pointer"}} layout="responsive" objectFit='cover' width={100} height={100} />
             
           </div>
-          <div className="col-md-6 d-flex flex-column justify-content-center p-4">
+          <div  className="col-md-7 d-flex flex-column justify-content-center p-4">
             <h2 className="heading50 mt-4">{item.heading}</h2>
             <p className="paragraphText pb-3 hide-scrollbar" style={{maxHeight:'200px'}}>
               {item.description}
