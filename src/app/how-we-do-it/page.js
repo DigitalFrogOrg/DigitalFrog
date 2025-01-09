@@ -57,7 +57,7 @@ function page() {
       </div>
       <div className="container-fluid">
         <div className="row">
-          <div className="col-md-12 p-5">
+          <div className="col-md-12 container" style={{ marginTop: "100px" }}>
             <Tabs>
               <TabList>
                 <Tab>Our Process</Tab>
