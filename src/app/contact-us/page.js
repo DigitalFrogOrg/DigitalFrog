@@ -9,7 +9,7 @@ import { submitForm } from "@/api/formServices";
 import MainBanner from "../components/MainBanner";
 import { links } from "./data";
 
-const page = () => {
+const ContactUs = () => {
   const [formData, setFormData] = useState({
     fullName: "",
     phoneNumber:"",
@@ -253,4 +253,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default ContactUs;

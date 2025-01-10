@@ -10,7 +10,7 @@ import CaseStudySlider from "../components/CaseStudySlider";
 import {agile,waterfall,hybrid,process} from './data'
 import Image from "next/image";
 
-function page() {
+function HowWeDoIt() {
   const sectionsRef = useRef([]);
 
   useEffect(() => {
@@ -80,12 +80,12 @@ function page() {
                     <div className="col-md-9">
                       {i==0 && <h3>PHASE A - R&D</h3>}
                       <div className="row how-steps">
-                        {/* <img
+                        <img
                           src="./images/dotted.png"
                           alt="dotted"
                           className="dotted"
-                        /> */}
-                        <Image src="/images/dotted.png" className="dotted" alt="dotted"  layout="responsive"  width={100} height={100} />
+                        />
+                        {/* <Image src="/images/dotted.png" className="dotted" alt="dotted"  layout="responsive"  width={100} height={100} /> */}
                         
                         <div className="col-md-4">
                           <h4>
@@ -115,12 +115,12 @@ function page() {
                     <div className="col-md-9">
                       {i==0 && <h3>PHASE B - Agile</h3>}
                       <div className="row how-steps">
-                        {/* <img
+                        <img
                           src="./images/dotted.png"
                           alt="dotted"
                           className="dotted"
-                        /> */}
-                        <Image src="/images/dotted.png" className="dotted" alt="dotted"  layout="responsive"  width={100} height={100} />
+                        />
+                        {/* <Image src="/images/dotted.png" className="dotted" alt="dotted"  layout="responsive"  width={100} height={100} /> */}
 
                         <div className="col-md-4">
                           <h4>
@@ -150,12 +150,12 @@ function page() {
                     <div className="col-md-9">
                       {i==0 && <h3>PHASE C - Waterfall</h3>}
                       <div className="row how-steps">
-                        {/* <img
+                        <img
                           src="./images/dotted.png"
                           alt="dotted"
                           className="dotted"
-                        /> */}
-                        <Image src="/images/dotted.png" className="dotted" alt="dotted" layout="responsive"  width={100} height={100} />
+                        />
+                        {/* <Image src="/images/dotted.png" className="dotted" alt="dotted" layout="responsive"  width={100} height={100} /> */}
 
                         <div className="col-md-4">
                           <h4>
@@ -185,12 +185,12 @@ function page() {
                     <div className="col-md-9">
                       {i==0 && <h3>PHASE D - Hybrid</h3>}
                       <div className="row how-steps">
-                        {/* <img
+                        <img
                           src="./images/dotted.png"
                           alt="dotted"
                           className="dotted"
-                        /> */}
-                        <Image src="/images/dotted.png" className="dotted" alt="dotted" layout="responsive"  width={100} height={100} />
+                        />
+                        {/* <Image src="/images/dotted.png" className="dotted" alt="dotted" layout="responsive"  width={100} height={100} /> */}
 
                         <div className="col-md-4">
                           <h4>
@@ -223,4 +223,4 @@ function page() {
   );
 }
 
-export default page;
+export default HowWeDoIt;
