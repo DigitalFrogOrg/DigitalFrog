@@ -72,22 +72,22 @@ const CaseStudySlider = () => {
                         <div className="col-md-12">
                             <Slider ref={slider} {...settings}>
                                 <div className="slide-item">
-                                    <Image src="/images/casestudy1.png" alt="ASL Flurry" layout="responsive"  width={100} height={100} />
+                                <img src="/images/casestudy1.png" alt="VPN Blitz" className="w-100" />
                                     <h2 className="mt-4" style={{fontWeight:'300',fontSize:'30px'}}>VPN Blitz</h2>
                                     <p className="paragraphText">Blitz Turb o VPN Is A Free Android App</p>
                                 </div>
                                 <div className="slide-item">
-                                    <Image src="/images/casestudy2.png" alt="Eksperience" layout="responsive" width={100} height={100} />
+                                    <img src="/images/casestudy2.png" alt="ASL Flurry" className="w-100" />
                                     <h3 className="mt-4" style={{fontWeight:'300',fontSize:'30px'}}>ASL Flurry</h3>
                                     <p className="paragraphText">ASL Flurry Is An Educational App Designed</p>
                                 </div>
                                 <div className="slide-item">
-                                <Image src="/images/casestudy3.png" alt="ASL Flurry" layout="responsive"  width={100} height={100} />
+                                <img src="/images/casestudy3.png" alt="IONOS eCommerce" className="w-100" />
                                     <h2 className="mt-4" style={{fontWeight:'300',fontSize:'30px'}}>IONOS eCommerce</h2>
                                     <p className="paragraphText">The Professionally Website Or App</p>
                                 </div>
                                 <div className="slide-item">
-                                    <Image src="/images/casestudy4.png" alt="ASL Flurry" layout="responsive"  width={100} height={100} />
+                                <img src="/images/casestudy4.png" alt="PartyShark" className="w-100" />
                                     <h3 className="mt-4" style={{fontWeight:'300',fontSize:'30px'}}>PartyShark</h3>
                                     <p className="paragraphText">PartyShark Is The Ultimate Party App.</p>
                                 </div>
