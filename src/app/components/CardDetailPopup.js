@@ -12,9 +12,17 @@ function CardDetailPopup({item,setSelectedCard}) {
   };
 
    useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") {
+        setSelectedCard(null); 
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+
       document.addEventListener('mousedown', handleOutsideClick);
       return () => {
         document.removeEventListener('mousedown', handleOutsideClick);
+        window.removeEventListener("keydown", handleKeyDown);
       };
     }, []);
 
@@ -36,7 +44,7 @@ function CardDetailPopup({item,setSelectedCard}) {
             <img
               src={item.popupImages[0]}
               alt="Card Image"
-              className="img-fluid rounded-start"
+              className="img-fluid w-100 rounded-start"
               style={{ objectFit: 'cover', height: '100%' }}
             />
           {/* <Image src={item.popupImages[0]} alt={item.heading} style={{cursor:"pointer"}} layout="responsive" objectFit='cover' width={100} height={100} /> */}
@@ -48,7 +56,7 @@ function CardDetailPopup({item,setSelectedCard}) {
               {item.description}
             </p>
           {item.tags.length > 0 &&  
-            <div className="tags">
+            <div className="tags cardTags">
                     {item.tags.map((tag,index)=>(<button key={index}>{tag}</button>))}
             </div>
             }

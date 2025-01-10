@@ -3925,17 +3925,33 @@ section.recent_news {
   margin-bottom: 60px;
   width: 85%;
 }
-.achievements-page .tags {
+/* .achievements-page .tags {
+  display: flex;
+  gap: 20px;
+} */
+/* .achievements-page .tags button {
+  background-color: #ffd7b8;
+  color: var(--orange);
+  border: 0;
+  padding: 10px 16px;
+  border-radius: 100px;
+} */
+
+
+.cardTags {
   display: flex;
   gap: 20px;
 }
-.achievements-page .tags button {
+
+.cardTags button{
   background-color: #ffd7b8;
   color: var(--orange);
   border: 0;
   padding: 10px 16px;
   border-radius: 100px;
 }
+
+
 .arrows-div {
   position: relative;
 }
@@ -4131,7 +4147,7 @@ section.recent_news {
   left: 0;
   width: 100vw;
   height: 100vh;
-  backdrop-filter: blur(6px); /* Adjust the blur intensity */
+  backdrop-filter: blur(6px); 
   display: flex;
   transition: all 0.5s;
   justify-content: center;
@@ -4921,7 +4937,7 @@ section.recent_news {
 .innovativeHeading{
   font-size: 4.5vw !important;
   font-weight: 700 !important;
-  margin-top: 30px !important;
+  margin-top: 10px !important;
 }
 .btn-schedule:hover{
 background-color: white !important;
@@ -5429,6 +5445,9 @@ color: var(--orange) !important;
 @media only screen and (max-width: 480px) {
   .effect7:hover {
     transform: none;
+  }
+  .cardImgHeight{
+    height: 230px !important;
   }
   .tab-pannell .pe-5{
     padding-right: 1.5rem !important;

@@ -16,7 +16,7 @@ const page = () => {
   return (
     <>
       <Header />
-      <MainBanner MainBannerHeading="Mobile App Support <br /> & Maintenance <br /> Services" />
+      <MainBanner MainBannerHeading="Mobile App Support & Maintenance " />
 
       <div className="second-last-section appMobilePaddingSmall">
         <div className="container">

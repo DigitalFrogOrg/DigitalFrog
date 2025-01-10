@@ -23,7 +23,7 @@ function page() {
   return (
     <>
       <Header />
-      <MainBanner MainBannerHeading="Mobile Game Development <br /> Services" />
+      <MainBanner MainBannerHeading="Mobile Game Development" />
 
       {/* Second Section */}
 

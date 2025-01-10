@@ -14,7 +14,7 @@ const page = () => {
   return (
     <>
       <Header />
-      <MainBanner MainBannerHeading="IOS Development<br /> Services" />
+      <MainBanner MainBannerHeading="IOS Development" />
 
       <div className="container app-testing">
         <div className="row">

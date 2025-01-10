@@ -1,6 +1,11 @@
 import React from "react";
 
 const MainBanner = ({ MainBannerHeading }) => {
+
+  // const extractText = (val)=>{
+  //   return  val?.split('<br />')[0]
+  // }
+
   return (
     <>
       {/* <div className="app-page">
@@ -18,7 +23,7 @@ const MainBanner = ({ MainBannerHeading }) => {
       <div className="about-banner">
         <div className="container">
           <div className="row">
-            <div className="col-md-12">
+            <div className="col-md-10 col-sm-12">
              <h1 dangerouslySetInnerHTML={{ __html: MainBannerHeading }} />
             </div>
           </div>

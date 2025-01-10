@@ -25,8 +25,8 @@ function Header() {
       links: [
         // { href: "/ai-ml-development", text: "AI & Ml Development" },
         { href: "/android-development", text: "Android Development " },
-        { href: "/ios-development", text: "IOS Development " },
-        { href: "/no-code-development", text: "No Code/Low Code Development " },
+        { href: "/ios-development", text: "iOS Development " },
+        { href: "/no-code-development", text: "No-Code / Low-Code Development " },
       ],
       links2: [
         { href: "/mobile-game-development", text: "Mobile Game Development " },

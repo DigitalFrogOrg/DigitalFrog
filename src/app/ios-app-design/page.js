@@ -16,7 +16,7 @@ const page = () => {
   return (
     <>
       <Header />
-      <MainBanner MainBannerHeading="IOS App Design <br /> Services" />
+      <MainBanner MainBannerHeading="iOS App Design" />
 
       <div className="why-choose-us appMobilePaddingSmall">
         <div className="container">

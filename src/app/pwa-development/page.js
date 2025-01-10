@@ -15,7 +15,7 @@ const page = () => {
   return (  
     <>
       <Header />
-      <MainBanner MainBannerHeading="PWA Development<br/> Services" />
+      <MainBanner MainBannerHeading="PWA Development" />
 
       <div className="why-choose-us appMobilePadding">
         <div className="container">

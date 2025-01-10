@@ -14,7 +14,7 @@ const page = () => {
   return (
     <>
       <Header />
-      <MainBanner MainBannerHeading="Android App Design <br /> Services" />
+      <MainBanner MainBannerHeading="Android App Design" />
 
       <div className="why-choose-us appMobilePaddingSmall">
         <div className="container">

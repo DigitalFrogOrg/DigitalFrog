@@ -14,7 +14,7 @@ const Page = () => {
   return (
     <>
       <Header />
-      <MainBanner MainBannerHeading="AI App Development<br /> Services" />
+      <MainBanner MainBannerHeading="AI App Development" />
 
       <div className="container app-testing appMobilePadding">
         <div className="row">

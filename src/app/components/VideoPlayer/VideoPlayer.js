@@ -88,7 +88,7 @@ const VideoPlayer = () => {
           width: screenWidth < 480 ? '100%' : videoSize.width,
           height: screenWidth < 480 ? ''  : videoSize.height,
           objectFit: "cover",
-          transition: "width 0.9s, height 0.6s",
+          transition: "width 0.2s, height 0.2s",
         }}
       />
       <div
