@@ -4,7 +4,7 @@ import VideoModal from "./VideoModal";
 const VideoPlayer = () => {
   const videoRef = useRef(null);
   const [showVideoModal,setShowVideoModal] = useState(false)
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [screenWidth, setScreenWidth] = useState(0);
   const [videoSize, setVideoSize] = useState({ width: "26vw", height: "36vh" });
   const [popupOpen, setPopupOpen] = useState(false);
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
@@ -30,6 +30,16 @@ const VideoPlayer = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
+  }, []);
+
+  useEffect(() => {
+    const handleResize = () => setScreenWidth(window.innerWidth);
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const handleCursorHover = (isHovering) => {

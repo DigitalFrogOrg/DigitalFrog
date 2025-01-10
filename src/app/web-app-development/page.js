@@ -32,8 +32,8 @@ const page = () => {
             <DropUsALine />
           </div>
           <div className="col-md-6">
-          {/* <img src="./images/image82.png" alt="image82" className="w-100" /> */}
-            <Image src="/images/image82.png" alt="image82" layout="responsive" width={100} height={100} />
+          <img src="./images/image82.png" alt="image82" className="w-100" />
+            {/* <Image src="/images/image82.png" alt="image82" layout="responsive" width={100} height={100} /> */}
           </div>
         </div>
       </div>
