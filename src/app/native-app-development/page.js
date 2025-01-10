@@ -17,7 +17,7 @@ const page = () => {
   return (
     <>
       <Header />
-      <MainBanner MainBannerHeading="Native App Development<br /> Services" />
+      <MainBanner MainBannerHeading="Native App Development" />
 
       <WeCommitSlider />
 

@@ -23,7 +23,7 @@ function AchievementCard({data}) {
               alt="image-1"
               className="w-100"
 
-              style={{cursor:"pointer",height:'400px',objectFit:'cover',borderRadius:'10px'}} 
+              style={{cursor:"pointer",objectFit:'cover',borderRadius:'10px'}} 
               onClick={() => setSelectedCard(item)}
             />
           {/* <Image src={item.imageUrl} alt={item.heading} style={{cursor:"pointer"}}  onClick={() => setSelectedCard(item)} layout="responsive" width={100} height={100} /> */}
@@ -35,7 +35,7 @@ function AchievementCard({data}) {
             <p className="paragraphText"  style={{cursor:"pointer"}}  onClick={() => setSelectedCard(item)}>
             {truncateString(item.description,450)}
             </p>
-            <div className="tags">
+            <div className="tags cardTags">
               {item.tags.map((tag,index)=>(<button style={{cursor:'default'}} key={index}>{tag}</button>))}
             </div>
           </div>
@@ -51,7 +51,7 @@ function AchievementCard({data}) {
     <img
       src={`${item.imageUrl}`}
       className="w-100"
-      style={{cursor:"pointer",height:'400px',objectFit:'cover',borderRadius:'10px'}} 
+      style={{cursor:"pointer",objectFit:'cover',borderRadius:'10px'}} 
       alt="image-2"
       onClick={() => setSelectedCard(item)}
     />
@@ -61,7 +61,7 @@ function AchievementCard({data}) {
       <p onClick={() => setSelectedCard(item)} style={{cursor:"pointer"}} className="paragraphText">
         {truncateString(item.description,270)}
       </p>
-      <div className="tags">
+      <div className="tags cardTags">
         {item.tags.map((tag,index)=>(<button style={{cursor:'default'}} key={index}>{tag}</button>))}
       </div>
     </div>

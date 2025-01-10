@@ -1,7 +1,8 @@
-import React,{useState,useRef} from 'react';
+import React,{useState,useRef,useEffect} from 'react';
 import { submitForm } from '@/api/formServices';
 
 function Popup({ togglePopup }) {
+     const outsideRef = useRef(null);
     const [formData,setFormData] = useState({
         fullName: "",
         phoneNumber: "",
@@ -19,6 +20,28 @@ function Popup({ togglePopup }) {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
     }
+
+     useEffect(() => {
+        const handleKeyDown = (e) => {
+          if (e.key === "Escape") {
+            togglePopup(); 
+          }
+        };
+
+        const handleClickOutside = (event) => {
+            if (outsideRef.current && !outsideRef.current.contains(event.target)) {
+                togglePopup();  
+            }
+          };
+    
+        window.addEventListener("keydown", handleKeyDown);
+        document.addEventListener('click', handleClickOutside);
+    
+        return () => {
+          document.removeEventListener('click', handleClickOutside);
+          window.removeEventListener("keydown", handleKeyDown);
+        };
+      }, [togglePopup]);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -77,10 +100,10 @@ function Popup({ togglePopup }) {
 
     return (
         <div className='popupBg'>
-            <div className='container h-100'>
-                <div className='row h-100'>
+            <div  className='container h-100'>
+                <div  className='row h-100'>
                     <div className='col-md-3'></div>
-                    <div className='formContainer h-100 d-flex align-items-center justify-content-center'>
+                    <div ref={outsideRef} className='formContainer h-100 d-flex align-items-center justify-content-center'>
                         <div className="popup-inner w-100">
                             <h2 className='formHeading'>Ready to discuss your project with us?</h2>
                             <form onSubmit={handleSubmit} className='popup-form'>

@@ -15,7 +15,7 @@ const page = () => {
   return (
     <>
       <Header />
-      <MainBanner MainBannerHeading="Mobile App Consulting <br /> Services" />
+      <MainBanner MainBannerHeading="Mobile App Consulting" />
 
       <div className="orange-wrap appMobilePaddingSmall">
         <div className="second-last-section">

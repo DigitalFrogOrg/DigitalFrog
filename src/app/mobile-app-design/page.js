@@ -13,7 +13,7 @@ const page = () => {
   return (
     <>
       <Header />
-      <MainBanner MainBannerHeading="Mobile App Design<br /> Services" />
+      <MainBanner MainBannerHeading="Mobile App Design" />
 
       <div className="why-choose-us appMobilePaddingSmall">
         <div className="container">

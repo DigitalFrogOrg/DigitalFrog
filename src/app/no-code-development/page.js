@@ -5,16 +5,17 @@ import FaqsSection from "../components/FaqsSection";
 import BudgetSection from "../components/BudgetSection";
 import MainBanner from "../components/MainBanner";
 import Link from "next/link";
-import { faqData,empowerWithEase } from "./data";
+import { faqData,empowerWithEase,cardData } from "./data";
 import DropUsALine from "../components/DropUsALine";
 import AppCard from "../components/appCard";
+import AchievementCard from "../components/AchievementCard";
 
 const page = () => {
  
   return (
     <>
       <Header />
-      <MainBanner MainBannerHeading="Low-Code/No-Code" />
+      <MainBanner MainBannerHeading="No-Code / Low-Code Development" />
 
       <div className="container LowCodeNoCode appMobilePadding">
         <div className="row">
@@ -71,7 +72,11 @@ const page = () => {
             </div>
           </div>
 
-          <div className="row mt-5">
+          <div className="mt-5">
+            <AchievementCard data={cardData} />
+          </div>
+
+          {/* <div className="row mt-5">
             <div className="col-md-6">
               <div className="SuccessfullBox">
                 <img src="./images/232343.png" alt="232343" className="w-100" />
@@ -148,7 +153,7 @@ const page = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 

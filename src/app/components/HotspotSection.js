@@ -14,7 +14,7 @@ function HotspotSection() {
                   <br /> Get In Touch!
                 </strong>
               </h2>
-              <Link href="#" className="second-btn">
+              <Link href="/contact-us" className="second-btn">
                 Make An Appointment
               </Link>
             </div>

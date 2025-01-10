@@ -15,12 +15,21 @@ const DropUsALine = ({text="Drop us a line"}) => {
           document.body.style.overflowY = 'hidden';
         } else {
           document.body.style.overflowY = 'auto';
-        }    
+        } 
+        
+        const handleKeyDown = (e) => {
+          if (e.key === "Escape") {
+            setIsOpen(false)
+          }
+        };
+        window.addEventListener("keydown", handleKeyDown);
         return () => {
           document.body.style.overflowY = 'auto';
+          window.removeEventListener("keydown", handleKeyDown);
+
         };
       }, [isOpen]);
-    
+
   return (
     <>
     <div className={`dropusline ${isOpen ? 'menu-active' : ''}`}>

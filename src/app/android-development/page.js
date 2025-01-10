@@ -14,7 +14,7 @@ const page = () => {
   return (
     <>
       <Header />
-      <MainBanner MainBannerHeading="Android Development<br/> Services" />
+      <MainBanner MainBannerHeading="Android Development" />
 
       <div
         className="container-fluid webAppDev appMobilePadding"
