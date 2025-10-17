@@ -225,7 +225,7 @@ const ContactUs = () => {
                 <h6>Phones:</h6>
                 <ul className="phone-details gap-2">
                   <li><a href="tel:13463608407"  style={{color:'black'}}>+1 (346) 360-8407</a></li>
-                  <li><a href="mailto:info@cynergystudios.com" style={{color:'black'}}>info@cynergystudios.com</a></li>
+                  <li><a href="mailto:info@cynergystudios.com" style={{color:'black'}}>info@digitalfrog.com</a></li>
                 </ul>
               </div>
               <div className="col-md-6">

@@ -258,6 +258,7 @@ function Header() {
               <img
                 src={theme === "light" ? "./images/black-Logo.png" : "./images/white-Logo.png"}
                 alt="Logo"
+                className="container-fluid"
               />
             </Link>
             <ul className="main-ul-li">
@@ -391,9 +392,9 @@ function Header() {
             </ul>
 
             <ul className="social-media">
-              <li><FaFacebookF /></li>
-              <li><FaInstagram /></li>
-              <li><FaLinkedinIn /></li>
+              <li><a href="https://www.facebook.com/digitalfrog.io" target="_blank"><FaFacebookF /></a></li>
+              <li><a href="https://www.instagram.com/digitalfrog.io?igsh=MTJjejMwb2RiMWgycQ==" target="_blank"><FaInstagram /></a></li>
+              <li><a href="https://www.linkedin.com/company/digitalfrog.co/posts/?feedView=all" target="_blank"><FaLinkedinIn /></a></li>
             </ul>
           </div>
           <div className="col-md-4 left-menu-img h-100"></div>

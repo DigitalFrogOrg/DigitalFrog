@@ -576,6 +576,8 @@ ul.footer-info li a {
   justify-content: center;
   align-items: center;
   gap: 20px;
+    filter : invert(44%) sepia(95%) saturate(397%) hue-rotate(156deg) brightness(94%) contrast(89%);
+
 }
 
 .copyright-sec ul.social-media li {
@@ -1008,7 +1010,7 @@ ul.footer-info li a {
   width: 100%;
   border: none !important;
   height: 4px;
-  background-color: #ffe3ce;
+  background-color: #2b90c379;
   border-radius: 5px;
   outline: none;
   cursor: pointer;
@@ -3401,6 +3403,8 @@ section.recent_news {
   z-index: 9;
   object-position: center;
   object-fit: contain;
+    filter : invert(44%) sepia(95%) saturate(397%) hue-rotate(156deg) brightness(94%) contrast(89%);
+
 }
 
 /* faqs page css */
@@ -3568,14 +3572,20 @@ section.recent_news {
   justify-content: center;
   border-radius: 50%;
   cursor: pointer;
+
 }
+
 
 .linkCircle:hover {
   border-color: var(--orange);
+
 }
 
 .linkCircle img {
   width: 20px;
+      filter : invert(44%) sepia(95%) saturate(397%) hue-rotate(156deg) brightness(94%) contrast(89%);
+
+
 }
 
 .contact-main .social-media {
@@ -3591,6 +3601,8 @@ section.recent_news {
   border-radius: 100px;
   padding: 9px;
   margin-right: 12px;
+    filter : invert(44%) sepia(95%) saturate(397%) hue-rotate(156deg) brightness(94%) contrast(89%);
+
 }
 .contact-main .phone-details {
   display: flex;
