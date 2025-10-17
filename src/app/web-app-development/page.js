@@ -81,7 +81,7 @@ const page = () => {
           <h2 className="mainHeadingMobile">
             Web App Development
             <br /> With{" "}
-            <span style={{ color: "#d35e1e" }}>Cynergy Studios</span>
+            <span style={{ color: "#d35e1e" }}>Digital Frog</span>
           </h2>
           <p className="text-center paragraphText">
           Our expert development team provides meticulous, detail-oriented services to enhance your web application's credibility and performance.<br /> Cynergy prioritize the integrity and security of each development phase, ensuring robust and reliable web solutions.

@@ -10,21 +10,21 @@ const testimonialsData = [
     role: "Tech Startup Founder",
     avatar: "/images/review-avatar-1.png",
     review:
-      "Working with Cynergy Studios was a game-changer for our business. Their team turned our vision into a stunning mobile app, delivered on time, and exceeded our expectations. Highly recommend!",
+      "Working with Digital Frog was a game-changer for our business. Their team turned our vision into a stunning mobile app, delivered on time, and exceeded our expectations. Highly recommend!",
   },
   {
     name: "Shamus Tom",
     role: "E-commerce Business Owner",
     avatar: "/images/review-avatar-2.png",
     review:
-      "Cynergy Studios' expertise in web development is unmatched. They understood our needs, offered creative solutions, and delivered a flawless product. The ongoing support has been exceptional.",
+      "Digital Frog' expertise in web development is unmatched. They understood our needs, offered creative solutions, and delivered a flawless product. The ongoing support has been exceptional.",
   },
   {
     name: "John Kally",
     role: "Digital Marketing Agency CEO",
     avatar: "/images/review-avatar-3.png",
     review:
-      "From concept to launch, Cynergy Studios was with us every step of the way. Their professionalism, technical skills, and focus on security made our web app a great success.",
+      "From concept to launch, Digital Frog was with us every step of the way. Their professionalism, technical skills, and focus on security made our web app a great success.",
   },
   {
     name: "Raj Patel",
@@ -38,14 +38,14 @@ const testimonialsData = [
     role: "Tech Startup CEO",
     avatar: "/images/review-avatar-4.jpg",
     review:
-      "Cynergy Studios transformed our idea into a sleek app! Their team understood our vision and delivered beyond expectations. Highly recommend!",
+      "Digital Frog transformed our idea into a sleek app! Their team understood our vision and delivered beyond expectations. Highly recommend!",
   },
   {
     name: "John Davis",
     role: "Marketing Agency Investor",
     avatar: "/images/review-avatar-6.jpg",
     review:
-      "We were blown away by the professionalism and expertise of Cynergy Studios. Our app not only looks amazing but performs flawlessly!",
+      "We were blown away by the professionalism and expertise of Digital Frog. Our app not only looks amazing but performs flawlessly!",
   },
 ];
 

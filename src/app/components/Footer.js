@@ -67,7 +67,7 @@ function Footer() {
               </ul>
             </div>
             <div className="col-sm-3">
-              <div className="footer-link">
+              <div className="footer-link ">
                 <h5>Overview</h5>
                 <ul>
                   <li>
@@ -132,14 +132,14 @@ function Footer() {
           <div className="row" style={{ alignItems: "center" }}>
             <div className="col-sm-5">
               <p>
-                Copyright @ {currentYear}. <strong> Cynergy Studios</strong>. All Right
+                Copyright @ {currentYear}. <strong> Digital Frog</strong>. All Right
                 Reserved.
               </p>
             </div>
             <div className="col-sm-2"></div>
             <div className="col-sm-5 d-flex justify-content-end">
               {/* <p className="text-end">
-                Designed & Developed By Cynergy Studios
+                Designed & Developed By Digital Frog
               </p> */}
               {/* <ul className="social-media">
                 <li>

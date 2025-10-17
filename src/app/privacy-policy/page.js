@@ -36,23 +36,23 @@ const page = () => {
                 </li>
                 <li>
                   Company: When this policy mentions “Company,” “we,” “us,” or
-                  “our,” it refers to Cynergy Studios (1 E Erie St Ste 525
+                  “our,” it refers to Digital Frog (1 E Erie St Ste 525
                   Chicago, IL 60611 ), which is responsible for your information
                   under this Privacy Policy.
                 </li>
                 <li>
-                  Country: where Cynergy Studios or the owners/founders of
-                  Cynergy Studios are based, in this case, is United States
+                  Country: where Digital Frog or the owners/founders of
+                  Digital Frog are based, in this case, is United States
                 </li>
                 <li>
                   Customer refers to the company, organization, or person that
-                  signs up to use the Cynergy Studios Service to manage the
+                  signs up to use the Digital Frog Service to manage the
                   relationships with your consumers or service users.
                 </li>
                 <li>
                   Device: any internet-connected device such as a phone, tablet,
                   computer, or any other device that can be used to visit
-                  Cynergy Studios and use the services.
+                  Digital Frog and use the services.
                 </li>
                 <li>
                   IP address: Every device connected to the Internet is assigned
@@ -63,7 +63,7 @@ const page = () => {
                 </li>
                 <li>
                   Personnel refers to those individuals who are employed by
-                  Cynergy Studios or are under contract to perform a service on
+                  Digital Frog or are under contract to perform a service on
                   behalf of one of the parties.
                 </li>
                 <li>
@@ -73,7 +73,7 @@ const page = () => {
                   identifiability of a natural person.
                 </li>
                 <li>
-                  Service refers to the service provided by Cynergy Studios as
+                  Service refers to the service provided by Digital Frog as
                   described in the relative terms (if available) and on this
                   platform.
                 </li>
@@ -107,12 +107,12 @@ const page = () => {
           <div className="row mt-5">
             <div className="col-md-12">
               <h2 className="mb-4 fw-bold">
-                When does Cynergy Studios use end-user information from third
+                When does Digital Frog use end-user information from third
                 parties?
               </h2>
               <p>
-                Cynergy Studios will collect End User Data necessary to provide
-                the Cynergy Studios services to our customers. End users may
+                Digital Frog will collect End User Data necessary to provide
+                the Digital Frog services to our customers. End users may
                 voluntarily provide us with information they have made available
                 on social media websites. If you provide us with any such
                 information, we may collect publicly available information from
@@ -125,15 +125,15 @@ const page = () => {
           <div className="row mt-5">
             <div className="col-md-12">
               <h2 className="mb-4 fw-bold">
-                When does Cynergy Studios use customer information from third
+                When does Digital Frog use customer information from third
                 parties?
               </h2>
               <p>
                 We receive some information from third parties when you contact
                 us. For example, when you submit your email address to us to
-                show interest in becoming a Cynergy Studios customer, we receive
+                show interest in becoming a Digital Frog customer, we receive
                 information from a third party that provides automated fraud
-                detection services to Cynergy Studios. We also occasionally
+                detection services to Digital Frog. We also occasionally
                 collect information that is made publicly available on social
                 media websites. You can control how much of your information
                 social media websites make public by visiting these websites and
@@ -259,7 +259,7 @@ const page = () => {
               </h2>
               <p>
                 We keep your information only so long as we need it to provide
-                Cynergy Studios to you and fulfill the purposes described in
+                Digital Frog to you and fulfill the purposes described in
                 this policy. This is also the case for anyone that we share your
                 information with and who carries out services on our behalf.
                 When we no longer need to use your information, and there is no
@@ -287,7 +287,7 @@ const page = () => {
                 information (credit cards, social security numbers, financials,
                 etc.) is never kept on file. We cannot, however, ensure or
                 warrant the absolute security of any information you transmit to
-                Cynergy Studios or guarantee that your information on the
+                Digital Frog or guarantee that your information on the
                 Service may not be accessed, disclosed, altered, or destroyed by
                 a breach of any of our physical, technical, or managerial
                 safeguards.
@@ -300,7 +300,7 @@ const page = () => {
                 Could my information be transferred to other countries?
               </h2>
               <p>
-                Cynergy Studios is incorporated in the United States.
+                Digital Frog is incorporated in the United States.
                 Information collected via our website, through direct
                 interactions with you, or from the use of our help services may
                 be transferred from time to time to our offices or personnel or
@@ -317,7 +317,7 @@ const page = () => {
           <div className="row mt-5">
             <div className="col-md-12">
               <h2 className="mb-4 fw-bold">
-                Is the information collected through the Cynergy Studios Service
+                Is the information collected through the Digital Frog Service
                 secure?
               </h2>
               <p>
@@ -343,8 +343,8 @@ const page = () => {
               </h2>
               <p>
                 The rights you have to request updates or corrections to the
-                information Cynergy Studios collects depend on your relationship
-                with Cynergy Studios. Personnel may update or correct their
+                information Digital Frog collects depend on your relationship
+                with Digital Frog. Personnel may update or correct their
                 information as detailed in our internal company employment
                 policies.
                 <br />
@@ -391,7 +391,7 @@ const page = () => {
             <div className="col-md-12">
               <h2 className="mb-4 fw-bold">Personnel</h2>
               <p>
-                If you are a Cynergy Studios worker or applicant, we collect
+                If you are a Digital Frog worker or applicant, we collect
                 information you voluntarily provide to us. We use the
                 information collected for Human Resources purposes in order to
                 administer benefits to workers and screen applicants.
@@ -415,9 +415,9 @@ const page = () => {
               <p>
                 We reserve the right to transfer information to a third party in
                 the event of a sale, merger or other transfer of all or
-                substantially all of the assets of Cynergy Studios or any of its
+                substantially all of the assets of Digital Frog or any of its
                 Corporate Affiliates (as defined herein), or that portion of
-                Cynergy Studios or any of its Corporate Affiliates to which the
+                Digital Frog or any of its Corporate Affiliates to which the
                 Service relates, or in the event that we discontinue our
                 business or file a petition or have filed against us a petition
                 in bankruptcy, reorganization or similar proceeding, provided
@@ -434,7 +434,7 @@ const page = () => {
                 about you to our Corporate Affiliates. For page 6/8 purposes of
                 this Privacy Policy, "Corporate Affiliate" means any person or
                 entity that directly or indirectly controls, is controlled by,
-                or is under common control with Cynergy Studios, whether by
+                or is under common control with Digital Frog, whether by
                 ownership or otherwise. Those Corporate Affiliates will treat
                 any information relating to you that we provide to our Corporate
                 Affiliates in accordance with the terms of this Privacy Policy.
@@ -460,7 +460,7 @@ const page = () => {
                 state, national, or international laws.
                 <br />
                 <br />
-                By using Cynergy Studios or contacting us directly, you signify
+                By using Digital Frog or contacting us directly, you signify
                 your acceptance of this Privacy Policy. If you do not agree to
                 this Privacy Policy, you should not engage with our website, or
                 use our services. Continued use of the website, direct
@@ -477,7 +477,7 @@ const page = () => {
               <p>
                 We've updated our Privacy Policy to provide you with complete
                 transparency into what is being set when you visit our site and
-                how it's being used. By using Cynergy Studios, registering an
+                how it's being used. By using Digital Frog, registering an
                 account, or making a purchase, you hereby consent to our Privacy
                 Policy and agree to its terms.
               </p>
@@ -489,7 +489,7 @@ const page = () => {
               <p>
                 This Privacy Policy applies only to the Services. The Services
                 may contain links to other websites not operated or controlled
-                by Cynergy Studios. We are not responsible for the content,
+                by Digital Frog. We are not responsible for the content,
                 accuracy or opinions expressed in such websites, and such
                 websites are not investigated, monitored or checked for accuracy
                 or completeness by us. Please remember that when you use a link
@@ -506,7 +506,7 @@ const page = () => {
             <div className="col-md-12">
               <h2 className="mb-4 fw-bold">Cookies</h2>
               <p>
-                Cynergy Studios uses "Cookies" to identify the areas of our
+                Digital Frog uses "Cookies" to identify the areas of our
                 website that you have visited. A cookie is a small piece of data
                 stored on your computer or mobile device by your web browser. We
                 use cookies to enhance the performance and functionality of our
@@ -569,11 +569,11 @@ const page = () => {
                 services ("Third-Party Services").
                 <br />
                 <br />
-                You acknowledge and agree that Cynergy Studios shall not be
+                You acknowledge and agree that Digital Frog shall not be
                 responsible for any Third-Party Services, including their
                 accuracy, completeness, timeliness, validity, copyright
                 compliance, legality, decency, quality, or any other aspect
-                thereof. Cynergy Studios does not assume and shall not have any
+                thereof. Digital Frog does not assume and shall not have any
                 liability or responsibility to you or any other person or entity
                 for any Third-Party Services.
                 <br />

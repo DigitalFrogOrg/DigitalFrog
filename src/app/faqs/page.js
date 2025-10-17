@@ -11,33 +11,33 @@ const faqs = [
     question:
       "Can an app development company help with cross-platform app development?",
     answer:
-      "Absolutely! At Cynergy Studios, we specialize in cross-platform development, ensuring seamless functionality on both Android and iOS devices.",
+      "Absolutely! At Digital Frog, we specialize in cross-platform development, ensuring seamless functionality on both Android and iOS devices.",
     id: "collapseOne",
   },
   {
     question: "How much does it cost to develop a mobile app?",
     answer:
-      "The cost varies based on complexity and features, but we offer flexible pricing options tailored to different budgets at Cynergy Studios.",
+      "The cost varies based on complexity and features, but we offer flexible pricing options tailored to different budgets at Digital Frog.",
     id: "collapseTwo",
   },
   {
     question:
       "Can you recommend a reliable mobile app development company for Android and iOS?",
     answer:
-      "We recommend Cynergy Studios for high-quality mobile app development for both Android and iOS platforms.",
+      "We recommend Digital Frog for high-quality mobile app development for both Android and iOS platforms.",
     id: "collapseThree",
   },
   {
     question:
       "What factors should I consider when choosing an app development agency?",
     answer:
-      "Consider their experience, portfolio, industry expertise, and communication style. Cynergy Studios excels in all these areas.",
+      "Consider their experience, portfolio, industry expertise, and communication style. Digital Frog excels in all these areas.",
     id: "collapseFour",
   },
   {
     question: "How to find affordable app development services for startups?",
     answer:
-      "Cynergy Studios offers cost-effective solutions tailored specifically for startups to help you launch successfully.",
+      "Digital Frog offers cost-effective solutions tailored specifically for startups to help you launch successfully.",
     id: "collapseFive",
   },
   {
@@ -50,7 +50,7 @@ const faqs = [
     question:
       "How to assess the portfolio of a mobile app development company?",
     answer:
-      "Look for variety in projects, user experience quality, and design. Cynergy Studios showcases a diverse portfolio demonstrating our capabilities.",
+      "Look for variety in projects, user experience quality, and design. Digital Frog showcases a diverse portfolio demonstrating our capabilities.",
     id: "collapseSeven",
   },
   {
@@ -63,7 +63,7 @@ const faqs = [
   {
     question: "What technologies should a modern app development company use?",
     answer:
-      "Modern companies should use technologies like Swift, Kotlin, and React Native for mobile apps, which Cynergy Studios employs.",
+      "Modern companies should use technologies like Swift, Kotlin, and React Native for mobile apps, which Digital Frog employs.",
     id: "collapseNine",
   },
   {
@@ -76,13 +76,13 @@ const faqs = [
   {
     question: "How to choose between native and hybrid app development?",
     answer:
-      "Native apps offer high performance, while hybrid apps can be cost-effective. Cynergy Studios helps you choose the best option for your project.",
+      "Native apps offer high performance, while hybrid apps can be cost-effective. Digital Frog helps you choose the best option for your project.",
     id: "collapseEleven",
   },
   {
     question: "What is the average hourly rate for app development services?",
     answer:
-      "Rates vary, but Cynergy Studios offers competitive pricing with transparent costs based on project complexity.",
+      "Rates vary, but Digital Frog offers competitive pricing with transparent costs based on project complexity.",
     id: "collapseTwelve",
   },
   {
@@ -95,7 +95,7 @@ const faqs = [
     question:
       "How to ensure the security and privacy of user data in app development?",
     answer:
-      "Cynergy Studios prioritizes security through encryption, secure coding practices, and regular testing to protect user data.",
+      "Digital Frog prioritizes security through encryption, secure coding practices, and regular testing to protect user data.",
     id: "collapseFourteen",
   },
   {
@@ -108,33 +108,33 @@ const faqs = [
   {
     question: "What are the latest trends in mobile app development?",
     answer:
-      "Trends include AI features, augmented reality, and progressive web apps. Cynergy Studios stays current with these advancements.",
+      "Trends include AI features, augmented reality, and progressive web apps. Digital Frog stays current with these advancements.",
     id: "collapseSixteen",
   },
   {
     question:
       "Are there any top-rated app development companies for social media apps?",
     answer:
-      "Cynergy Studios specializes in creating engaging social media apps designed to foster community and interaction.",
+      "Digital Frog specializes in creating engaging social media apps designed to foster community and interaction.",
     id: "collapseSeventeen",
   },
   {
     question: "Should I hire a freelance app developer or a company?",
     answer:
-      "A company like Cynergy Studios provides a full team for comprehensive support, while freelancers may be suitable for smaller projects.",
+      "A company like Digital Frog provides a full team for comprehensive support, while freelancers may be suitable for smaller projects.",
     id: "collapseEighteen",
   },
   {
     question:
       "Are there any top-rated app development companies for healthcare apps?",
     answer:
-      "Yes, Cynergy Studios has extensive experience in developing secure and compliant healthcare applications.",
+      "Yes, Digital Frog has extensive experience in developing secure and compliant healthcare applications.",
     id: "collapseNineteen",
   },
   {
     question: "What is the average hourly rate for web development services?",
     answer:
-      "Web development rates vary, but we offer competitive pricing at Cynergy Studios, tailored to your project scope.",
+      "Web development rates vary, but we offer competitive pricing at Digital Frog, tailored to your project scope.",
     id: "collapseTwenty",
   },
   {
@@ -166,7 +166,7 @@ const faqs = [
   {
     question: "What are the latest trends in web development?",
     answer:
-      "Trends include Progressive Web Apps, AI chatbots, and responsive design. Cynergy Studios incorporates these into our projects.",
+      "Trends include Progressive Web Apps, AI chatbots, and responsive design. Digital Frog incorporates these into our projects.",
     id: "collapseTwentyFive",
   },
   {
@@ -179,19 +179,19 @@ const faqs = [
     question:
       "Are there any top-rated web development companies for small businesses?",
     answer:
-      "Cynergy Studios provides affordable, high-quality web development services tailored specifically for small businesses.",
+      "Digital Frog provides affordable, high-quality web development services tailored specifically for small businesses.",
     id: "collapseTwentySeven",
   },
   {
     question: "Should I hire a freelance web developer?",
     answer:
-      "Freelancers can be effective for small projects, but a full-service company like Cynergy Studios is ideal for comprehensive solutions.",
+      "Freelancers can be effective for small projects, but a full-service company like Digital Frog is ideal for comprehensive solutions.",
     id: "collapseTwentyEight",
   },
   {
     question: "What are the best app development companies in California?",
     answer:
-      "Cynergy Studios is recognized for our expertise and customer-centric approach in app development.",
+      "Digital Frog is recognized for our expertise and customer-centric approach in app development.",
     id: "collapseTwentyNine",
   },
   {
@@ -203,7 +203,7 @@ const faqs = [
   {
     question: "What technologies should a modern web development company use?",
     answer:
-      "A modern company should be skilled in HTML5, CSS3, JavaScript frameworks, and server-side technologies, all utilized at Cynergy Studios.",
+      "A modern company should be skilled in HTML5, CSS3, JavaScript frameworks, and server-side technologies, all utilized at Digital Frog.",
     id: "collapseThirtyOne",
   },
   {
@@ -216,20 +216,20 @@ const faqs = [
     question:
       "What factors should I consider when choosing a web development agency?",
     answer:
-      "Look for experience, a strong portfolio, and good communication. Cynergy Studios excels in all these areas.",
+      "Look for experience, a strong portfolio, and good communication. Digital Frog excels in all these areas.",
     id: "collapseThirtyThree",
   },
   {
     question:
       "Can you recommend a reliable web development company for e-commerce sites?",
     answer:
-      "Cynergy Studios specializes in building secure, user-friendly e-commerce websites with integrated payment systems.",
+      "Digital Frog specializes in building secure, user-friendly e-commerce websites with integrated payment systems.",
     id: "collapseThirtyFour",
   },
   {
     question: "How to find affordable web development services for startups?",
     answer:
-      "Cynergy Studios offers tailored, budget-friendly web development solutions to help startups succeed.",
+      "Digital Frog offers tailored, budget-friendly web development solutions to help startups succeed.",
     id: "collapseThirtyFive",
   },
   {
@@ -242,25 +242,25 @@ const faqs = [
     question:
       "Are there any full-stack web development companies in California?",
     answer:
-      "Yes, Cynergy Studios is a full-stack web development company, managing both front-end and back-end development.",
+      "Yes, Digital Frog is a full-stack web development company, managing both front-end and back-end development.",
     id: "collapseThirtySeven",
   },
   {
     question: "How do I assess the portfolio of a web development company?",
     answer:
-      "Look for project diversity and experience in relevant areas. Cynergy Studios showcases a wide range of successful projects.",
+      "Look for project diversity and experience in relevant areas. Digital Frog showcases a wide range of successful projects.",
     id: "collapseThirtyEight",
   },
   {
     question: "What are the best languages for building a mobile app?",
     answer:
-      "Languages like Swift, Kotlin, and JavaScript with React Native are ideal for mobile app development, which we use at Cynergy Studios.",
+      "Languages like Swift, Kotlin, and JavaScript with React Native are ideal for mobile app development, which we use at Digital Frog.",
     id: "collapseThirtyNine",
   },
   {
     question: "What services do you offer?",
     answer:
-      "We offer mobile app development, web development, design, consulting, and support services at Cynergy Studios.",
+      "We offer mobile app development, web development, design, consulting, and support services at Digital Frog.",
     id: "collapseForty",
   },
   {
@@ -272,7 +272,7 @@ const faqs = [
   {
     question: "Do you build websites, too?",
     answer:
-      "Yes, Cynergy Studios specializes in both mobile app and website development.",
+      "Yes, Digital Frog specializes in both mobile app and website development.",
     id: "collapseFortyTwo",
   },
   {
@@ -296,7 +296,7 @@ const faqs = [
   {
     question: "How long have you been in business?",
     answer:
-      "Cynergy Studios has been in business for over a decade, delivering high-quality digital solutions.",
+      "Digital Frog has been in business for over a decade, delivering high-quality digital solutions.",
     id: "collapseFortySix",
   },
   {

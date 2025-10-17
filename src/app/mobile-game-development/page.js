@@ -264,7 +264,7 @@ function page() {
           <div className="row">
             <div className="col-md-9 py-5">
               <h2 className="mainHeadingMobile">
-                Benefits of working with <br /> Cynergy Studios
+                Benefits of working with <br /> Digital Frog
               </h2>
             </div>
             <div className="col-md-3 d-flex align-items-center justify-content-end">

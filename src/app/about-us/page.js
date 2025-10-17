@@ -61,7 +61,7 @@ function page() {
               Mobile App <br /> Development Services
             </h3>
             <p className="w-100">
-              Cynergy Studios' Mobile App Development Services bring your
+              Digital Frog' Mobile App Development Services bring your
               creative ideas to life with sleek, high-performance mobile apps.
               Our expert developers use advanced technology and industry
               knowledge to craft apps that are intuitive, engaging, and
@@ -90,7 +90,7 @@ function page() {
               Problem-Solving Pioneers in a <br /> Strove Digital World
             </h3>
             <p>
-              In today’s digital age, Cynergy Studios leads the way in solving
+              In today’s digital age, Digital Frog leads the way in solving
               complex challenges with smart technological solutions. Our
               expertise spans app development, web design, and digital
               transformation, all tailored to meet diverse business needs and

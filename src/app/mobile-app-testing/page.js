@@ -85,11 +85,11 @@ const page = () => {
             <div className="col-md-9">
               <h2 className="mainHeadingMobile">Inevitable Testing Process</h2>
               <p className="paragraphText">
-                The top-class mobile app testing services of Cynergy Studios
+                The top-class mobile app testing services of Digital Frog
                 streamline highly effective testing methodology to prevent
                 disasters and provide the most reliable solutions to their
                 partners and customers.The top-class mobile app testing services
-                of Cynergy Studios streamline highly effective testing
+                of Digital Frog streamline highly effective testing
                 methodology to prevent disasters and provide the most reliable
                 solutions to their partners and customers.
               </p>

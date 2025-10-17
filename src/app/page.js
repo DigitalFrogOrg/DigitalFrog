@@ -31,7 +31,7 @@ export default function Home() {
     {
       questionId: "02",
       question:
-        "Who owns the legal rights to the technology developed by Cynergy Studios?",
+        "Who owns the legal rights to the technology developed by Digital Frog?",
       answer:
         "Once the project is completed and payment is finalized, you will retain full legal rights and ownership of the technology developed by our team.",
     },
@@ -93,7 +93,7 @@ export default function Home() {
           <br /> Reimagine Mobile Experiences Across Every Industry.
         </h2>
         <p className="text-center">
-          Cynergy Studios crafts powerful mobile apps across a wide range of
+          Digital Frog crafts powerful mobile apps across a wide range of
           industries. Whether in healthcare, retail, education, <br /> or
           entertainment, we design solutions that foster success and enhance
           user experiences, regardless of the sector.

@@ -51,10 +51,8 @@
 }
 body {
   font-family: "NobelUno-Medium" !important;
-  overflow-x: hidden ;
+  overflow-x: hidden;
 }
-
-
 
 /* Entire scrollbar */
 ::-webkit-scrollbar {
@@ -69,16 +67,16 @@ body {
 
 /* Scrollbar thumb */
 ::-webkit-scrollbar-thumb {
-  background: #eb7013; /* Color of the scrollbar thumb */
+  background: #2b90c3 !important; /* Color of the scrollbar thumb */
   border-radius: 4px; /* Rounded corners for the thumb */
   border: 3px solid #f0f0f0;
 }
 
 /* Scrollbar thumb on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #dc5f00; /* Darker shade on hover */
+  background: #2b90c3; /* Darker shade on hover */
 }
 
-body{
+body {
   overflow-x: hidden !important;
 }

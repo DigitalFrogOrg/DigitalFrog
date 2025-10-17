@@ -25,25 +25,25 @@ const page = () => {
             <div className="col-md-12">
               <h2 className="mb-4 fw-bold">General Terms</h2>
               <p>
-                By accessing and placing an order with Cynergy Studios, you
+                By accessing and placing an order with Digital Frog, you
                 confirm that you are in agreement with and bound by the terms of
                 service contained in the Terms & Conditions outlined below.
                 These terms apply to the entire website and any email or other
-                type of communication between you and Cynergy Studios.
+                type of communication between you and Digital Frog.
                 <br />
                 <br />
-                Under no circumstances shall Cynergy Studios team be liable for
+                Under no circumstances shall Digital Frog team be liable for
                 any direct, indirect, special, incidental, or consequential
                 damages, including, but not limited to, loss of data or profit
                 arising out of the use, or the inability to use, the materials
-                on this site, even if Cynergy Studios team or an authorized
+                on this site, even if Digital Frog team or an authorized
                 representative has been advised of the possibility of such
                 damages. If your use of materials from this site results in the
                 need for servicing, repair, or correction of equipment or data,
                 you assume any costs thereof.
                 <br />
                 <br />
-                Cynergy Studios will not be responsible for any outcome that may
+                Digital Frog will not be responsible for any outcome that may
                 occur during the course of the usage of our resources. We
                 reserve the right to change prices and revise the resource usage
                 policy at any moment.
@@ -54,7 +54,7 @@ const page = () => {
             <div className="col-md-12">
               <h2 className="mb-4 fw-bold">License</h2>
               <p>
-                Cynergy Studios grants you a revocable, non-exclusive,
+                Digital Frog grants you a revocable, non-exclusive,
                 non-transferable, limited license to download, install, and use
                 the website strictly in accordance with the terms of this
                 Agreement.
@@ -64,7 +64,7 @@ const page = () => {
                 Studios," "us," "we," or "our"), the provider of the Cynergy
                 Studios website and the services accessible from the Cynergy
                 Studios website (which are collectively referred to in these
-                Terms & Conditions as the "Cynergy Studios Service").
+                Terms & Conditions as the "Digital Frog Service").
                 <br /> <br />
                 You agree to be bound by these Terms & Conditions. If you do not
                 agree to these Terms & Conditions, please do not use the Cynergy
@@ -91,13 +91,13 @@ const page = () => {
                 </li>
                 <li>
                   Company: when these terms mention “Company,” “we,” “us,” or
-                  “our,” it refers to Cynergy Studios (1 E Erie St Ste 525
+                  “our,” it refers to Digital Frog (1 E Erie St Ste 525
                   Chicago, IL 60611), which is responsible for your information
                   under this Terms & Conditions.
                 </li>
                 <li>
-                  Country: where Cynergy Studios or the owners/founders of
-                  Cynergy Studios are based, in this case, is United States of
+                  Country: where Digital Frog or the owners/founders of
+                  Digital Frog are based, in this case, is United States of
                   America
                 </li>
                 <li>
@@ -106,7 +106,7 @@ const page = () => {
                   Studios and use the services.
                 </li>
                 <li>
-                  Service refers to the service provided by Cynergy Studios as
+                  Service refers to the service provided by Digital Frog as
                   described in the relative terms (if available) and on this
                   platform.
                 </li>
@@ -139,7 +139,7 @@ const page = () => {
                 </li>
                 <li>
                   Remove, alter, or obscure any proprietary notice (including
-                  any notice of copyright or trademark) of Cynergy Studios or
+                  any notice of copyright or trademark) of Digital Frog or
                   its affiliates, partners, suppliers, or the licensors of the
                   website.
                 </li>
@@ -151,12 +151,12 @@ const page = () => {
               <h2 className="mb-4 fw-bold">Your Suggestions</h2>
               <p>
                 Any feedback, comments, ideas, improvements or suggestions
-                (collectively, "Suggestions") provided by you to Cynergy Studios
+                (collectively, "Suggestions") provided by you to Digital Frog
                 with respect to the website shall remain the sole and exclusive
-                property of Cynergy Studios.
+                property of Digital Frog.
                 <br />
                 <br />
-                Cynergy Studios shall be free to use, copy, modify, publish, or
+                Digital Frog shall be free to use, copy, modify, publish, or
                 redistribute the Suggestions for any purpose and in any way
                 without any credit or any compensation to you.
               </p>
@@ -180,7 +180,7 @@ const page = () => {
               <p>
                 This Terms & Conditions applies only to the Services. The
                 Services may contain links to other websites not operated or
-                controlled by Cynergy Studios. We are not responsible for the
+                controlled by Digital Frog. We are not responsible for the
                 content, accuracy, or opinions expressed in such websites, and
                 such websites are not investigated, monitored, or checked for
                 accuracy or completeness by us. Please remember that when you
@@ -197,7 +197,7 @@ const page = () => {
             <div className="col-md-12">
               <h2 className="mb-4 fw-bold">Cookies</h2>
               <p>
-                Cynergy Studios uses "Cookies" to identify the areas of our
+                Digital Frog uses "Cookies" to identify the areas of our
                 website that you have visited. A cookie is a small piece of data
                 stored on your computer or mobile device by your web browser. We
                 use cookies to enhance the performance and functionality of our
@@ -219,13 +219,13 @@ const page = () => {
                 Changes To Our Terms & Conditions
               </h2>
               <p>
-                You acknowledge and agree that Cynergy Studios may stop
+                You acknowledge and agree that Digital Frog may stop
                 (permanently or temporarily) providing the Service (or any
                 features within the Service) to you or to users generally at
-                Cynergy Studios’s sole discretion without prior notice to you.
+                Digital Frog’s sole discretion without prior notice to you.
                 You may stop using the Service at any time. You do not need to
-                inform Cynergy Studios when you stop using the Service
-                specifically. You acknowledge and agree that if Cynergy Studios
+                inform Digital Frog when you stop using the Service
+                specifically. You acknowledge and agree that if Digital Frog
                 disables access to your account, you may be prevented from
                 accessing the Service, your account details or any files or
                 other materials which is contained in your account. If we decide
@@ -239,7 +239,7 @@ const page = () => {
             <div className="col-md-12">
               <h2 className="mb-4 fw-bold">Modifications to Our website</h2>
               <p>
-                Cynergy Studios reserves the right to modify, suspend or
+                Digital Frog reserves the right to modify, suspend or
                 discontinue, temporarily or permanently, the website or any
                 service to which it connects, with or without notice and without
                 liability to you.
@@ -250,12 +250,12 @@ const page = () => {
             <div className="col-md-12">
               <h2 className="mb-4 fw-bold">Updates to Our website</h2>
               <p>
-                Cynergy Studios may, from time to time, provide enhancements or
+                Digital Frog may, from time to time, provide enhancements or
                 improvements to the features/ functionality of the website,
                 which may include patches, bug fixes, updates, upgrades and
                 other modifications ("Updates"). Updates may modify or delete
                 certain features and/or functionalities of the website. You
-                agree that Cynergy Studios has no obligation to (i) Provide any
+                agree that Digital Frog has no obligation to (i) Provide any
                 Updates, or (ii) continue to provide or enable any particular
                 features and/or functionalities of the website to you. You
                 further agree that all Updates will be (i) deemed to constitute
@@ -275,7 +275,7 @@ const page = () => {
                 Studios shall not be responsible for any Third-Party Services,
                 including their accuracy, completeness, timeliness, validity,
                 copyright compliance, legality, decency, quality, or any other
-                aspect thereof. Cynergy Studios does not assume and shall not
+                aspect thereof. Digital Frog does not assume and shall not
                 have any liability or responsibility to you or any other person
                 or entity for any Third-Party Services. Third-party services and
                 links thereto are provided solely as a convenience to you and
@@ -289,7 +289,7 @@ const page = () => {
               <h2 className="mb-4 fw-bold">Term and Termination</h2>
               <p>
                 This Agreement shall remain in effect until terminated by you or
-                Cynergy Studios. Cynergy Studios may, in its sole discretion, at
+                Digital Frog. Digital Frog may, in its sole discretion, at
                 any time and for any or no reason, suspend or terminate this
                 Agreement with or without prior notice. This Agreement will
                 terminate immediately, without prior notice from Cynergy
@@ -299,7 +299,7 @@ const page = () => {
                 Upon termination of this Agreement, you shall cease all use of
                 the website and delete all copies of the website from your
                 computer. Termination of this Agreement will not limit any of
-                Cynergy Studios's rights or remedies at law or in equity in case
+                Digital Frog's rights or remedies at law or in equity in case
                 of breach by you (during the term of this Agreement) of any of
                 your obligations under the present Agreement.
               </p>
@@ -328,7 +328,7 @@ const page = () => {
             <div className="col-md-12">
               <h2 className="mb-4 fw-bold">Indemnification</h2>
               <p>
-                You agree to indemnify and hold Cynergy Studios and its parents,
+                You agree to indemnify and hold Digital Frog and its parents,
                 subsidiaries, affiliates, officers, employees, agents, partners,
                 and licensors (if any) harmless from any claim or demand,
                 including reasonable attorneys' fees, due to or arising out of
@@ -344,7 +344,7 @@ const page = () => {
               <p>
                 The website is provided to you "AS IS" and "AS AVAILABLE" and
                 with all faults and defects without warranty of any kind. To the
-                maximum extent permitted under applicable law, Cynergy Studios,
+                maximum extent permitted under applicable law, Digital Frog,
                 on its own behalf and on behalf of its affiliates and their
                 respective licensors and service providers, expressly disclaims
                 all warranties, whether express, implied, statutory or
@@ -352,7 +352,7 @@ const page = () => {
                 warranties of merchantability, fitness for a particular purpose,
                 title and non-infringement, and warranties that may arise out of
                 course of dealing, course of performance, usage or trade
-                practice. Without limitation to the foregoing, Cynergy Studios
+                practice. Without limitation to the foregoing, Digital Frog
                 provides no warranty or undertaking and makes no representation
                 of any kind that the website will meet your requirements,
                 achieve any intended results, be compatible or work with any
@@ -362,15 +362,15 @@ const page = () => {
                 corrected.
                 <br />
                 <br />
-                Without limiting the foregoing, neither Cynergy Studios nor any
-                Cynergy Studios's provider makes any representation or warranty
+                Without limiting the foregoing, neither Digital Frog nor any
+                Digital Frog's provider makes any representation or warranty
                 of any kind, express or implied: (i) as to the operation or
                 availability of the website, or the information, content, and
                 materials or products included thereon; (ii) that the website
                 will be uninterrupted or error-free; (iii) as to the accuracy,
                 reliability, or currency of any information or content provided
                 through the website; or (iv) that the website, its servers, the
-                content, or e-mails sent from or on behalf of Cynergy Studios
+                content, or e-mails sent from or on behalf of Digital Frog
                 are free of viruses, scripts, trojan horses, worms, malware,
                 timebombs or other harmful components.
                 <br />
@@ -387,11 +387,11 @@ const page = () => {
               <h2 className="mb-4 fw-bold">Limitation of Liability</h2>
               <p>
                 Notwithstanding any damages that you might incur, the entire
-                liability of Cynergy Studios and any of its suppliers under any
+                liability of Digital Frog and any of its suppliers under any
                 provision of this Agreement and your exclusive remedy for all of
                 the foregoing shall be limited to the amount actually paid by
                 you for the website. To the maximum extent permitted by
-                applicable law, in no event shall Cynergy Studios or its
+                applicable law, in no event shall Digital Frog or its
                 suppliers be liable for any special, incidental, indirect, or
                 consequential damages whatsoever (including, but not limited to,
                 damages for loss of profits, for loss of data or other
@@ -400,7 +400,7 @@ const page = () => {
                 of or inability to use the website, third-party software and/or
                 third-party hardware used with the website, or otherwise in
                 connection with any provision of this Agreement), even if
-                Cynergy Studios or any supplier has been advised of the
+                Digital Frog or any supplier has been advised of the
                 possibility of such damages and even if the remedy fails of its
                 essential purpose. Some states/jurisdictions do not allow the
                 exclusion or limitation of incidental or consequential damages,
@@ -418,17 +418,17 @@ const page = () => {
                 extent possible under applicable law and the remaining
                 provisions will continue in full force and effect. This
                 Agreement, together with the Privacy Policy and any other legal
-                notices published by Cynergy Studios on the Services, shall
-                constitute the entire agreement between you and Cynergy Studios
+                notices published by Digital Frog on the Services, shall
+                constitute the entire agreement between you and Digital Frog
                 concerning the Services. If any provision of this Agreement is
                 deemed invalid by a court of competent jurisdiction, the
                 invalidity of such provision shall not affect the validity of
                 the remaining provisions of this Agreement, which shall remain
                 in full force and effect. No waiver of any term of this
                 Agreement shall be deemed a further or continuing waiver of such
-                term or any other term, and Cynergy Studios’s failure to assert
+                term or any other term, and Digital Frog’s failure to assert
                 any right or provision under this Agreement shall not constitute
-                a waiver of such right or provision. YOU AND Cynergy Studios
+                a waiver of such right or provision. YOU AND Digital Frog
                 AGREE THAT ANY CAUSE OF ACTION ARISING OUT OF OR RELATED TO THE
                 SERVICES MUST COMMENCE WITHIN ONE (1) YEAR AFTER THE CAUSE OF
                 ACTION ACCRUES. OTHERWISE, SUCH CAUSE OF ACTION IS PERMANENTLY
@@ -460,14 +460,14 @@ const page = () => {
             <div className="col-md-12">
               <h2 className="mb-4 fw-bold">Amendments to this Agreement</h2>
               <p>
-                Cynergy Studios reserves the right, at its sole discretion, to
+                Digital Frog reserves the right, at its sole discretion, to
                 modify or replace this Agreement at any time. If a revision is
                 material, we will provide at least 30 days' notice prior to any
                 new terms taking effect. What constitutes a material change will
                 be determined at our sole discretion. By continuing to access or
                 use our website after any revisions become effective, you agree
                 to be bound by the revised terms. If you do not agree to the new
-                terms, you are no longer authorized to use Cynergy Studios.
+                terms, you are no longer authorized to use Digital Frog.
               </p>
             </div>
           </div>
@@ -476,11 +476,11 @@ const page = () => {
               <h2 className="mb-4 fw-bold">Entire Agreement</h2>
               <p>
                 The Agreement constitutes the entire agreement between you and
-                Cynergy Studios regarding your use of the website and supersedes
+                Digital Frog regarding your use of the website and supersedes
                 all prior and contemporaneous written or oral agreements between
-                you and Cynergy Studios. You may be subject to additional terms
+                you and Digital Frog. You may be subject to additional terms
                 and conditions that apply when you use or purchase other Cynergy
-                Studios services, which Cynergy Studios will provide to you at
+                Studios services, which Digital Frog will provide to you at
                 the time of such use or purchase.
               </p>
             </div>
@@ -508,14 +508,14 @@ const page = () => {
                 The website and its entire contents, features, and functionality
                 (including but not limited to all information, software, text,
                 displays, images, video and audio, and the design, selection,
-                and arrangement thereof) are owned by Cynergy Studios, its
+                and arrangement thereof) are owned by Digital Frog, its
                 licensors or other providers of such material and are protected
                 by the United States of America and international copyright,
                 trademark, patent, trade secret, and other intellectual property
                 or proprietary rights laws. The material may not be copied,
                 modified, reproduced, downloaded, or distributed in any way, in
                 whole or in part, without the express prior written permission
-                of Cynergy Studios, unless and except as is expressly provided
+                of Digital Frog, unless and except as is expressly provided
                 in these Terms & Conditions. Any unauthorized use of the
                 material is prohibited.
               </p>
@@ -530,7 +530,7 @@ const page = () => {
                 REGARDING THE ENFORCEMENT OR VALIDITY OF YOUR OR Cynergy
                 Studios’s INTELLECTUAL PROPERTY RIGHTS. The term “dispute” means
                 any dispute, action, or other controversy between you and
-                Cynergy Studios concerning the Services or this agreement,
+                Digital Frog concerning the Services or this agreement,
                 whether in contract, warranty, tort, statute, regulation,
                 ordinance, or any other legal or equitable basis. “Dispute” will
                 be given the broadest possible meaning allowable under law.
@@ -541,16 +541,16 @@ const page = () => {
             <div className="col-md-12">
               <h2 className="mb-4 fw-bold">Notice of Dispute</h2>
               <p>
-                In the event of a dispute, you or Cynergy Studios must give the
+                In the event of a dispute, you or Digital Frog must give the
                 other a Notice of Dispute, which is a written statement that
                 sets forth the name, address, and contact information of the
                 party giving it, the facts giving rise to the dispute, and the
-                relief requested.. Cynergy Studios will send any Notice of
+                relief requested.. Digital Frog will send any Notice of
                 Dispute to you by mail to your address if we have it, or
-                otherwise to your email address. You and Cynergy Studios will
+                otherwise to your email address. You and Digital Frog will
                 attempt to resolve any dispute through informal negotiation
                 within sixty (60) days from the date the Notice of Dispute is
-                sent. After sixty (60) days, you or Cynergy Studios may commence
+                sent. After sixty (60) days, you or Digital Frog may commence
                 arbitration.
               </p>
             </div>
@@ -559,7 +559,7 @@ const page = () => {
             <div className="col-md-12">
               <h2 className="mb-4 fw-bold">Binding Arbitration</h2>
               <p>
-                If you and Cynergy Studios don’t resolve any dispute by informal
+                If you and Digital Frog don’t resolve any dispute by informal
                 negotiation, any other effort to resolve the dispute will be
                 conducted exclusively by binding arbitration, as described in
                 this section. You are giving up the right to litigate (or
@@ -586,8 +586,8 @@ const page = () => {
                 products, services, features, technologies, or promotions, you
                 expressly agree that such submissions will automatically be
                 treated as non-confidential and non-proprietary and will become
-                the sole property of Cynergy Studios without any compensation or
-                credit to you whatsoever. Cynergy Studios and its affiliates
+                the sole property of Digital Frog without any compensation or
+                credit to you whatsoever. Digital Frog and its affiliates
                 shall have no obligations with respect to such submissions or
                 posts and may use the ideas contained in such submissions or
                 posts for any purposes in any medium in perpetuity, including,
@@ -600,7 +600,7 @@ const page = () => {
             <div className="col-md-12">
               <h2 className="mb-4 fw-bold">Promotions</h2>
               <p>
-                Cynergy Studios may, from time to time, include contests,
+                Digital Frog may, from time to time, include contests,
                 promotions, sweepstakes, or other activities (“Promotions”) that
                 require you to submit material or information concerning
                 yourself. Please note that all Promotions may be governed by
@@ -642,22 +642,22 @@ const page = () => {
                 unenforceable, the remainder of these Terms & Conditions will
                 continue in full force and effect. Any waiver of any provision
                 of these Terms & Conditions will be effective only if in writing
-                and signed by an authorized representative of Cynergy Studios.
-                Cynergy Studios will be entitled to injunctive or other
+                and signed by an authorized representative of Digital Frog.
+                Digital Frog will be entitled to injunctive or other
                 equitable relief (without the obligations of posting any bond or
                 surety) in the event of any breach or anticipatory breach by
-                you. Cynergy Studios operates and controls the Cynergy Studios
+                you. Digital Frog operates and controls the Digital Frog
                 Service from its offices in the United States of America. The
                 Service is not intended for distribution to or use by any person
                 or entity in any jurisdiction or country where such distribution
                 or use would be contrary to law or regulation. Accordingly,
-                those persons who choose to access the Cynergy Studios Service
+                those persons who choose to access the Digital Frog Service
                 from other locations do so on their own initiative and are
                 solely responsible for compliance with local laws if and to the
                 extent local laws are applicable. These Terms & Conditions
-                (which include and incorporate the Cynergy Studios Privacy
+                (which include and incorporate the Digital Frog Privacy
                 Policy) contain the entire understanding and supersedes all
-                prior understandings between you and Cynergy Studios concerning
+                prior understandings between you and Digital Frog concerning
                 its subject matter and cannot be changed or modified by you. The
                 section headings used in this Agreement are for convenience only
                 and will not be given any legal import.

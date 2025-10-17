@@ -100,7 +100,7 @@ const VideoPlayer = () => {
           transform: "translate(-50%, -50%)",
           height: "100px",
           width: "100px",
-          backgroundColor: "#dc5f00",
+          backgroundColor: "#2b90c3",
           color: "white",
           display: "flex",
           alignItems: "center",

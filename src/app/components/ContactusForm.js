@@ -113,7 +113,7 @@ return(
                   <span className="formTextColor">$ 0</span>
                  {formData.budget > 0 && <span
                     style={{
-                      border: "1px solid #dc5f00",
+                      border: "1px solid #2b90c3",
                       padding: "6px",
                       borderRadius: "12px",
                       color: "#AFAFAF",

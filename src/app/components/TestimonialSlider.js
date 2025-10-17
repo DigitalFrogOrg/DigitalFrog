@@ -78,9 +78,9 @@ const TestimonialSlider = () => {
                 <Link href="/mobile-app-design">
                   <button
                     style={{
-                      backgroundColor: index === 1 ? "#fff" : "#DC5F00",
-                      color: index === 1 ? "#DC5F00" : "#fff",
-                      borderColor: "#DC5F00",
+                      backgroundColor: index === 1 ? "#fff" : "#2b90c3",
+                      color: index === 1 ? "#2b90c3" : "#fff",
+                      borderColor: "#2b90c3",
                       borderWidth: 1,
                     }}
                   >
@@ -90,8 +90,8 @@ const TestimonialSlider = () => {
                 <Link href="/native-app-development">
                   <button
                     style={{
-                      backgroundColor: index === 1 ? "#fff" : "#DC5F00",
-                      color: index === 1 ? "#DC5F00" : "#fff",
+                      backgroundColor: index === 1 ? "#fff" : "#2b90c3",
+                      color: index === 1 ? "#2b90c3" : "#fff",
                     }}
                   >
                     App Development

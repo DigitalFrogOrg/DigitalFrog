@@ -22,10 +22,11 @@ function Evolution() {
                     <div className="dot"></div>
                   </div>
                   <img
+                  className="icon-color"
                     src="/images/clipboard.png"
                     alt="Specifications & Planning"
                   />
-                  <h3>Specifications & Planning</h3>
+                  <h3>Specifications & Planning</h3>  
                   <p>Dive into the specs to:</p>
                   <ul>
                     <li>Solidify what is being built so we are aligned.</li>
@@ -39,7 +40,7 @@ function Evolution() {
                     </li>
                   </ul>
                     <a
-                    
+
                     target="_blank"
                     href="https://www.figma.com/design/0B1dqt4hJ4WqW3HR5glJRo/Project---Four-Elements---Final-File?node-id=0-1&node-type=canvas&t=Bqf8eBgtvtNICCQ5-0">
                   <button type="button" className="whole-btn2">
@@ -63,6 +64,7 @@ function Evolution() {
                     <div className="dot"></div>
                   </div>
                   <img
+                    className="icon-color"
                     src="/images/prototype.png"
                     alt="Designs, Wireframe & Prototype"
                   />
@@ -114,6 +116,7 @@ function Evolution() {
                   <img
                     src="/images/Groupthree.png"
                     alt="Specifications & Planning"
+                    className="icon-color"
                   />
                   <h3>Estimates & Timeline</h3>
                   <p>
@@ -139,6 +142,7 @@ function Evolution() {
                       <div class="dot"></div>
                     </div>
                     <img
+                    className="icon-color"
                       src="/images/buildicon.png"
                       alt="Designs, Wireframe & Prototype"
                     />
@@ -163,6 +167,7 @@ function Evolution() {
                       <div class="dot"></div>
                     </div>
                     <img
+                    className="icon-color"
                       src="/images/testicon.png"
                       alt="Specifications & Planning"
                     />
@@ -183,6 +188,7 @@ function Evolution() {
                       <div class="dot"></div>
                     </div>
                     <img
+                      className="icon-color"
                       src="/images/deploy.png"
                       alt="Designs, Wireframe & Prototype"
                     />
@@ -209,6 +215,7 @@ function Evolution() {
                     <img
                       src="/images/measure.png"
                       alt="Specifications & Planning"
+                      className="icon-color"
                     />
                     <h3>Measure</h3>
                     <p>
@@ -231,6 +238,7 @@ function Evolution() {
                     <img
                       src="/images/maintain.png"
                       alt="Designs, Wireframe & Prototype"
+                      className="icon-color"  
                     />
                     <h3>Maintain</h3>
                     <p>

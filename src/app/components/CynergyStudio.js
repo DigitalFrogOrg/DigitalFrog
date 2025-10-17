@@ -27,7 +27,7 @@ function CynergyStudio() {
       {isPopupVisible && <Popup togglePopup={togglePopup} />}
       <div className="container-fluid">
         <div className="cynergy_studio_col">
-          <h2>Why Cynergy Studios?</h2>
+          <h2>Why Digital Frog?</h2>
           <div className="cynergy_studio_detail container">
             <div className="row">
               <div className="col-sm-6">
@@ -72,7 +72,7 @@ function CynergyStudio() {
                   <button>Read More</button>
                   <div className="blur-box-03">
                     <p>
-                      Cynergy Studios has a proven history of delivering
+                      Digital Frog has a proven history of delivering
                       successful projects across various industries. Our
                       consistent quality and timely execution have earned us
                       trust and long-term partnerships with clients worldwide.

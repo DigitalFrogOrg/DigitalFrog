@@ -139,7 +139,7 @@ const page = () => {
             </p>
             <div className="row mt-5 lines-andrd">
               <div className="col-md-11 line-area1">
-                <h3 style={{fontWeight: '700',color:'#DC5F00'}} className="text-end mt-2">Junior Developer</h3>
+                <h3 style={{fontWeight: '700',color:'#2b90c3'}} className="text-end mt-2">Junior Developer</h3>
                 <p className="text-end navHeading">
                 Cynergy’s junior Android developers work under the guidance of senior developers to bring your app ideas to life. With a focus on performance and security, they contribute to building high-quality apps that meet your requirements.
                 </p>

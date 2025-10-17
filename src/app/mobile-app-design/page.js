@@ -41,7 +41,7 @@ const page = () => {
         <div className="row d-flex justify-content-center">
           <div className="col-md-7">
             <h2 className="mainHeadingMobile text-center">
-              Top Notch Team of <br /> Cynergy Studios
+              Top Notch Team of <br /> Digital Frog
             </h2>
             <p className="paragraphText text-center">
             Cynergy stands out for its unmatched creativity and expertise in delivering cutting-edge solutions for designing exceptional user interfaces that elevate user experiences to the highest level.
