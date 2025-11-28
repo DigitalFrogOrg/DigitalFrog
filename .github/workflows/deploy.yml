@@ -23,4 +23,4 @@ jobs:
       run: |
         ssh -o StrictHostKeyChecking=no \
         ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} \
-        "cd /home/ubuntu/digital-frog/DigitalFrog && ./deploy.sh"
+        "cd /home/ubuntu/digital-frog && ./deploy.sh"
