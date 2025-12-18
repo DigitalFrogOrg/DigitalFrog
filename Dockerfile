@@ -21,6 +21,7 @@ FROM nginx:alpine
 
 # Build output copying in nginx  html folder 
 COPY --from=builder /app/out /usr/share/nginx/html
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Nginx default port expose
 EXPOSE 80
