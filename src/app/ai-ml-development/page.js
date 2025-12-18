@@ -10,7 +10,10 @@ import DropUsALine from "../components/DropUsALine";
 import AppCard from "../components/appCard";
 import AppImageCard from "../components/AppImageCard";
 const Page = () => {
+           
 
+
+  
   return (
     <>
       <Header />
