@@ -31,7 +31,7 @@ const testimonialsData = [
     role: "E-commerce Business Admin",
     avatar: "/images/review-avatar-5.jpg",
     review:
-      "Working with Cynergy was a game-changer! They took our concept and turned it into an engaging app that our users love. Truly a remarkable experience!",
+      "Working with Digital Frog was a game-changer! They took our concept and turned it into an engaging app that our users love. Truly a remarkable experience!",
   },
   {
     name: "Maria Thompson",

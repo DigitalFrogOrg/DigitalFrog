@@ -23,7 +23,7 @@ function Footer() {
           <img
             src={
               theme === "light"
-                ? "/images/get-in-touch.png"
+                ? "/images/get-in-touch-digitalfrog.png"
                 : "/images/get-in-touch-white.png"
             }
             alt="get-in-touch"
@@ -57,8 +57,8 @@ function Footer() {
                 </li>
                 <li>
                   <FaEnvelope />{" "}
-                  <a href="mailto:info@cynergystudios.com">
-                    info@cynergystudios.com
+                  <a href="mailto:info@digitalfrog.com">
+                    info@digitalfrog.com
                   </a>
                 </li>
                 <li>
@@ -115,9 +115,9 @@ function Footer() {
               <div className="footer-link">
                 <h5>Follow Us</h5>
                 <ul>
-                  <li> <a href="https://www.facebook.com/cynergystudiosonline" target="_blank"> Facebook </a></li>
-                  <li><a href="https://www.instagram.com/cynergystudios/" target="_blank"> Instagram</a></li>
-                  <li><a href="https://github.com/cynergystudios" target="_blank"> Github</a></li>
+                  <li> <a href="https://www.facebook.com/share/19yv32mkyT/" target="_blank"> Facebook </a></li>
+                  <li><a href="https://www.instagram.com/digitalfrog.io/" target="_blank"> Instagram</a></li>
+                  <li><a href="https://github.com/digitalfrogio" target="_blank"> Github</a></li>
                   <li><a href="#"> LinkedIn</a></li>
                   <li><a href="#"> X</a></li>
                 </ul>

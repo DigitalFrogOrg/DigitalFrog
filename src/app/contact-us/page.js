@@ -113,7 +113,7 @@ const ContactUs = () => {
         <div className="row mt-3">
           <div className="col-md-7">
             <h2 className="heading50">Got a project in mind?</h2>
-            <p className="contactUsPara mt-2">Fill in this form or <span style={{textDecoration:'underline'}}><a style={{color:'#AFAFAF'}} href="mailto:info@cynergystudios.com">send us an e-mail</a></span></p>
+            <p className="contactUsPara mt-2">Fill in this form or <span style={{textDecoration:'underline'}}><a style={{color:'#AFAFAF'}} href="mailto:info@digitalfrog.com">send us an e-mail</a></span></p>
             <form onSubmit={handleSubmit} className="contact-form">
               <input
                 type="text"
@@ -225,7 +225,7 @@ const ContactUs = () => {
                 <h6>Phones:</h6>
                 <ul className="phone-details gap-2">
                   <li><a href="tel:13463608407"  style={{color:'black'}}>+1 (346) 360-8407</a></li>
-                  <li><a href="mailto:info@cynergystudios.com" style={{color:'black'}}>info@digitalfrog.com</a></li>
+                  <li><a href="mailto:info@digitalfrog.com" style={{color:'black'}}>info@digitalfrog.com</a></li>
                 </ul>
               </div>
               <div className="col-md-6">

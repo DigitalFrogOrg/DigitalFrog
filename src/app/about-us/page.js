@@ -11,19 +11,19 @@ function page() {
       src: "./images/vector-star.png",
     },
     {
-      src: "./images/cynergy-studios.png",
+      src: "./images/digital-frog.png",
     },
     {
       src: "./images/vector-star.png",
     },
     {
-      src: "./images/cynergy-studios.png",
+      src: "./images/digital-frog.png",
     },
     {
       src: "./images/vector-star.png",
     },
     {
-      src: "./images/cynergy-studios.png",
+      src: "./images/digital-frog.png",
     },
     // {
     //   src: "./images/trustees/client-7.png",
@@ -214,7 +214,7 @@ function page() {
       {/* <div className="container py-4">
         <div className="row">
           <div className="col-md-6">
-            <h2>Digital Challenges Bow to cynergy studio Services</h2>
+            <h2>Digital Challenges Bow to  studio Services</h2>
           </div>
           <div className="col-md-6">
             <p>

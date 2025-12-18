@@ -65,7 +65,7 @@ const MobileAppTabs = () => {
           <br /> Technologies We Use
         </h2>
         <p className="text-center paragraphText">
-        Leveraging cutting-edge mobile app testing solutions, Cynergy stays aligned with current trends while preserving critical insights.<br /> Cynergy’s testing services employ advanced tools and software to ensure superior quality and performance.
+        Leveraging cutting-edge mobile app testing solutions, Digital Frog stays aligned with current trends while preserving critical insights.<br /> Digital Frog’s testing services employ advanced tools and software to ensure superior quality and performance.
         </p>
         <div className="row">
           <div className="col-md-12">

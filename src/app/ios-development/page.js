@@ -29,7 +29,7 @@ const page = () => {
           <div className="col-md-6 d-flex align-items-start justify-content-center flex-column paddingLeft3 paddingRight3 footerSection">
             <h2 className="mainHeadingMobile">iOS Development Company</h2>
             <p className="paragraphText">
-            At Cynergy, we specialize in creating innovative and user-friendly mobile applications tailored to your business needs. With a focus on iOS platforms, Cynergy utilizes the latest tools and technologies to develop high-performing apps that exceed industry standards. Our iOS app development services aim to craft seamless user experiences, robust security, and reliable performance. Whether you’re a startup or an established enterprise, Cynergy provides end-to-end solutions to enhance your digital presence.
+            At Digital Frog, we specialize in creating innovative and user-friendly mobile applications tailored to your business needs. With a focus on iOS platforms, Digital Frog utilizes the latest tools and technologies to develop high-performing apps that exceed industry standards. Our iOS app development services aim to craft seamless user experiences, robust security, and reliable performance. Whether you’re a startup or an established enterprise, Digital Frog provides end-to-end solutions to enhance your digital presence.
             </p>
             <DropUsALine />
           </div>
@@ -37,7 +37,7 @@ const page = () => {
       </div>
 
       <div
-        style={{ backgroundColor: "#FFFBF8" }}
+        style={{ backgroundColor: "#2b90c31e" }}
         className="IOSDevelopmentServices appMobilePaddingSmall"
       >
         <div className="row d-flex flex-column align-items-center">
@@ -46,7 +46,7 @@ const page = () => {
         </div>
         <div className="col-md-6">
           <p className="text-center paragraphText mt-4">
-          Cynergy offers comprehensive iOS app development solutions that are designed to give your business an edge. Our team of skilled developers creates custom iOS apps tailored to meet your specific requirements. From user-friendly interfaces to robust functionalities, Cynergy ensures that your app delivers an exceptional experience to users across all Apple devices.
+          Digital Frog offers comprehensive iOS app development solutions that are designed to give your business an edge. Our team of skilled developers creates custom iOS apps tailored to meet your specific requirements. From user-friendly interfaces to robust functionalities, Digital Frog ensures that your app delivers an exceptional experience to users across all Apple devices.
             </p>
         </div>
         </div>
@@ -75,7 +75,7 @@ const page = () => {
                     data-bs-parent="#accordionExample"
                   >
                     <div className="accordion-body">
-                    Cynergy offers comprehensive iOS app development solutions that are designed to give your business an edge. Our team of skilled developers creates custom iOS apps tailored to meet your specific requirements. From user-friendly interfaces to robust functionalities, Cynergy ensures that your app delivers an exceptional experience to users across all Apple devices.
+                    Digital Frog offers comprehensive iOS app development solutions that are designed to give your business an edge. Our team of skilled developers creates custom iOS apps tailored to meet your specific requirements. From user-friendly interfaces to robust functionalities, Digital Frog ensures that your app delivers an exceptional experience to users across all Apple devices.
 
                     </div>
                   </div>
@@ -101,7 +101,7 @@ const page = () => {
                     data-bs-parent="#accordionExample"
                   >
                     <div className="accordion-body">
-                    Our designers create aesthetically pleasing, intuitive, and functional user interfaces for your iOS apps. Cynergy utilize the best UI/UX design practices and tools to craft smooth, responsive designs that enhance the user experience. Whether it’s for an iPhone or an iPad, Cynergy ensures your app’s design is visually appealing and easy to navigate.
+                    Our designers create aesthetically pleasing, intuitive, and functional user interfaces for your iOS apps. Digital Frog utilize the best UI/UX design practices and tools to craft smooth, responsive designs that enhance the user experience. Whether it’s for an iPhone or an iPad, Digital Frog ensures your app’s design is visually appealing and easy to navigate.
                     </div>
                   </div>
                 </div>
@@ -126,7 +126,7 @@ const page = () => {
                     data-bs-parent="#accordionExample"
                   >
                     <div className="accordion-body">
-                    Our team offers seamless integration of third-party services into your iOS apps. Whether you need to add payment gateways, chatbots, social media logins, or advanced biometric authentication, Cynergy ensures a secure and smooth integration process. This allows you to add valuable features that enhance user engagement and streamline app operations.
+                    Our team offers seamless integration of third-party services into your iOS apps. Whether you need to add payment gateways, chatbots, social media logins, or advanced biometric authentication, Digital Frog ensures a secure and smooth integration process. This allows you to add valuable features that enhance user engagement and streamline app operations.
 
                     </div>
                   </div>
@@ -152,7 +152,7 @@ const page = () => {
                     data-bs-parent="#accordionExample"
                   >
                     <div className="accordion-body">
-                    Cynergy helps you migrate your existing iOS app to the latest platform versions and technologies. Our app migration services ensure that your app’s performance, functionality, and security are optimized, while keeping it compatible with the latest iOS updates. Cynergy also offer regular app upgrades to ensure your app stays competitive and up-to-date.
+                    Digital Frog helps you migrate your existing iOS app to the latest platform versions and technologies. Our app migration services ensure that your app’s performance, functionality, and security are optimized, while keeping it compatible with the latest iOS updates. Digital Frog also offer regular app upgrades to ensure your app stays competitive and up-to-date.
 
                     </div>
                   </div>
@@ -178,7 +178,7 @@ const page = () => {
                     data-bs-parent="#accordionExample"
                   >
                     <div className="accordion-body">
-                    Expand your brand’s presence across multiple Apple devices with our Apple TV app development services. Cynergy designs custom apps that are optimized for Apple TV, enhancing the user experience with smooth interfaces and innovative features. Our developers ensure seamless integration with Apple’s ecosystem to provide a comprehensive app experience.
+                    Expand your brand’s presence across multiple Apple devices with our Apple TV app development services. Digital Frog designs custom apps that are optimized for Apple TV, enhancing the user experience with smooth interfaces and innovative features. Our developers ensure seamless integration with Apple’s ecosystem to provide a comprehensive app experience.
 
                     </div>
                   </div>
@@ -203,7 +203,7 @@ const page = () => {
             <div className="col-md-8">
               <h2 className="mainHeadingMobile">Our iOS App Development Process</h2>
               <p className="paragraphText">
-              Our development process is designed to ensure a seamless and efficient project journey. Cynergy follows a structured approach that emphasizes innovation, security, and scalability, ensuring your app is not only functional but also future-proof.
+              Our development process is designed to ensure a seamless and efficient project journey. Digital Frog follows a structured approach that emphasizes innovation, security, and scalability, ensuring your app is not only functional but also future-proof.
               </p>
             </div>
             <div className="col-md-4 d-flex align-items-center justify-content-end">
@@ -223,13 +223,13 @@ const page = () => {
         </div>
       </div>
 
-      <div style={{padding:'100px 0px 100px 0px',background:'#FFFBF8'}} className="appMobilePaddingSmall">
+      <div style={{padding:'100px 0px 100px 0px',background:'#2b90c31e'}} className="appMobilePaddingSmall">
               <div className="container">
                 <h2 className="text-center mainHeadingMobile">
-                Industries <span style={{color:'#f2652e'}}>We Serve</span>
+                Industries <span style={{color:'#2b90c3'}}>We Serve</span>
                 </h2>
                 <p className="text-center paragraphText">
-                Cynergy specializes in providing iOS app development services for a wide range of  industries, including healthcare,<br /> e-commerce, entertainment, education, and more. Our expert developers tailor each app to suit the specific needs of the<br /> industry, ensuring it meets functional, security, and usability requirements.
+                Digital Frog specializes in providing iOS app development services for a wide range of  industries, including healthcare,<br /> e-commerce, entertainment, education, and more. Our expert developers tailor each app to suit the specific needs of the<br /> industry, ensuring it meets functional, security, and usability requirements.
                 </p> 
                 <div className="row mt-5">
                   <div className="col-md-7">
@@ -258,7 +258,7 @@ const page = () => {
             <div className="col-md-8">
               <h2 className="mainHeadingMobile">Why Choose Us</h2>
               <p className="paragraphText">
-              Cynergy is committed to delivering top-quality iOS app development services that drive business growth and user satisfaction. Our experienced team works closely with you throughout the development process, ensuring your app is delivered on time, within budget, and meets all your expectations. With a focus on innovation, security, and user-centric design, Cynergy builds apps that help you stay ahead in the competitive mobile app market.
+              Digital Frog is committed to delivering top-quality iOS app development services that drive business growth and user satisfaction. Our experienced team works closely with you throughout the development process, ensuring your app is delivered on time, within budget, and meets all your expectations. With a focus on innovation, security, and user-centric design, Digital Frog builds apps that help you stay ahead in the competitive mobile app market.
                       </p>
             </div>
             <div className="col-md-4 d-flex align-items-center justify-content-end">

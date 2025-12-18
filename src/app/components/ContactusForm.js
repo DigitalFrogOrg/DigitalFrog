@@ -82,7 +82,7 @@ return(
           <div className="text-center mb-4">
             <h2 className="font-weight-bold mainHeadingMobile">Get A Project In Mind?</h2>
             <p className="contactUsPara mb-3 mt-2">
-              Fill in this form or <span style={{textDecoration:'underline'}}><a style={{color:'#AFAFAF'}} href="mailto:info@cynergystudios.com">send us an e-mail</a></span>
+              Fill in this form or <span style={{textDecoration:'underline'}}><a style={{color:'#AFAFAF'}} href="mailto:info@digitalfrog.com">send us an e-mail</a></span>
             </p>
           </div>
           <form onSubmit={handleSubmit} className="contact-form">

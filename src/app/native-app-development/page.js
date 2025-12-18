@@ -21,14 +21,14 @@ const page = () => {
 
       <WeCommitSlider />
 
-      <div style={{ backgroundColor: "#fffbf8" }} >
+      <div style={{ backgroundColor: "#2b90c31e" }} >
         <div className="container-fluid mobile-experiences appMobilePaddingSmall">
           <h2 className="text-center fs-1 mainHeadingMobile">
             Empowering Industries With <br /> Innovative Solutions
           </h2>
           <p className="text-center paragraphText">
-          Cynergy is transforming industries through the development of forward-thinking, advanced solutions. By leveraging the latest technologies,
-          <br /> Cynergy craft unique and powerful web and mobile applications that help businesses thrive. Our expertise has earned us global<br />
+          Digital Frog is transforming industries through the development of forward-thinking, advanced solutions. By leveraging the latest technologies,
+          <br /> Digital Frog craft unique and powerful web and mobile applications that help businesses thrive. Our expertise has earned us global<br />
            recognition as we continue to create innovative digital experiences for brands and businesses worldwide.
           </p>
           <MobileExperiences />
@@ -60,12 +60,12 @@ const page = () => {
 
       <TechAndTools />
 
-      <div style={{ backgroundColor: "#fffbf8" }}>
+      <div style={{ backgroundColor: "#2b90c31e" }}>
         <div className="container workingWithCynergy appMobilePadding">
-          <h2 className="mainHeadingMobile">Cynergy’s Knack Of Skills</h2>
+          <h2 className="mainHeadingMobile">Digital Frog’s Knack Of Skills</h2>
           <p className="text-center paragraphText">
-          Cynergy’s expertise lies in crafting high-performance native apps that redefine user experiences. With a dedicated team and<br />
-           innovative methodologies, Cynergy build fast, responsive, and secure applications tailored to iOS and Android platforms. <br />
+          Digital Frog’s expertise lies in crafting high-performance native apps that redefine user experiences. With a dedicated team and<br />
+           innovative methodologies, Digital Frog build fast, responsive, and secure applications tailored to iOS and Android platforms. <br />
            Our user-centric approach ensures compliance with industry standards, delivering feature-rich solutions<br />
             that empower businesses to thrive in competitive markets.
           </p>
@@ -89,10 +89,10 @@ const page = () => {
       <div className="container text-center OurChooseOpt appMobilePadding">
         <h2 className="mainHeadingMobile">Why Choose Us</h2>
         <p className="paragraphText">
-        Cynergy brings a wealth of expertise and innovation to the world of web and app development. Our team is dedicated to providing top-tier,
+        Digital Frog brings a wealth of expertise and innovation to the world of web and app development. Our team is dedicated to providing top-tier,
         <br />
-         cutting-edge native applications tailored to meet your business needs. Cynergy follows the latest trends and employs the most<br /> advanced development tools, ensuring that your app stands out in a competitive digital landscape.
-          Cynergy’s goal is to drive your <br />business growth by crafting custom solutions that address your challenges while offering enhanced performance and scalability.
+         cutting-edge native applications tailored to meet your business needs. Digital Frog follows the latest trends and employs the most<br /> advanced development tools, ensuring that your app stands out in a competitive digital landscape.
+          Digital Frog’s goal is to drive your <br />business growth by crafting custom solutions that address your challenges while offering enhanced performance and scalability.
         </p>
         <div className="row mt-4">
 

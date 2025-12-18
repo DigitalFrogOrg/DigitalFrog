@@ -84,8 +84,8 @@ const page = () => {
                   you.
                 </li>
                 <li>
-                  You: a person or entity that is registered with Cynergy
-                  Studios to use the Services.
+                  You: a person or entity that is registered with Digital Frog 
+                  to use the Services.
                 </li>
               </ul>
             </div>

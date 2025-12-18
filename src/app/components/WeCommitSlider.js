@@ -22,7 +22,7 @@ const WeCommitSlider = () => {
         <div className="col-md-8 text-center">
           <h2 className="mainHeadingMobile">We Commit To Deliver</h2>
           <p className="paragraphText">
-          As a leader in web and mobile app development, we deliver unparalleled solutions that elevate Android and iOS platforms globally. From ideation to launch, our team refines every aspect of app design and performance to ensure exceptional results. Cynergy’s commitment to quality drives us to create applications that meet and exceed the expectations of our clients.
+          As a leader in web and mobile app development, we deliver unparalleled solutions that elevate Android and iOS platforms globally. From ideation to launch, our team refines every aspect of app design and performance to ensure exceptional results. Digital Frog's commitment to quality drives us to create applications that meet and exceed the expectations of our clients.
           </p>
         </div>
         <div className="col-md-2 d-flex align-items-center justify-content-end gap-2">
@@ -51,7 +51,7 @@ const WeCommitSlider = () => {
                 />
                 <h4>Full Stack Native App Development Services</h4>
                 <p style={{height:'140px',overflowY:'auto',fontSize:'16px'}} className="hide-scrollbar">
-                With extensive experience and a proven track record, Cynergy partners with top industries to implement strategies that drive growth and success. Cynergy’s full-stack native app development services are tailored to create platform-specific apps with cutting-edge features, intuitive designs, and seamless functionality. By leveraging innovative tools and technologies, Cynergy crafts iOS and Android applications that enhance your digital presence and position your business for success.
+                With extensive experience and a proven track record, Digital Frog partners with top industries to implement strategies that drive growth and success. Digital Frog's full-stack native app development services are tailored to create platform-specific apps with cutting-edge features, intuitive designs, and seamless functionality. By leveraging innovative tools and technologies, Digital Frog crafts iOS and Android applications that enhance your digital presence and position your business for success.
                 </p>
               </div>
             </div>
@@ -64,7 +64,7 @@ const WeCommitSlider = () => {
                 />
                 <h4>Tablet App Development Services</h4>
                 <p style={{height:'140px',overflowY:'auto',fontSize:'18px'}} className="hide-scrollbar">
-                The demand for tablet apps continues to grow in today’s tech-driven world. Cynergy’s expertise extends to developing native apps for Apple tablets and iPads, delivering intuitive solutions that cater to various industries—from startups to established enterprises. Cynergy designs apps that offer robust performance and a user-friendly experience across tablet devices, helping businesses scale effectively.
+                The demand for tablet apps continues to grow in today’s tech-driven world. Digital Frog's expertise extends to developing native apps for Apple tablets and iPads, delivering intuitive solutions that cater to various industries—from startups to established enterprises. Digital Frog designs apps that offer robust performance and a user-friendly experience across tablet devices, helping businesses scale effectively.
                 </p>
               </div>
             </div>
@@ -77,7 +77,7 @@ const WeCommitSlider = () => {
                 />
                 <h4>Android App Development Services</h4>
                 <p style={{height:'140px',overflowY:'auto',fontSize:'18px'}} className="hide-scrollbar">
-                Our Android app development services offer a streamlined process for creating native apps optimized for both mobile and desktop platforms. Using advanced tools like Kotlin, Java, and Android Jetpack, Cynergy delivers customized solutions that stand out in the competitive marketplace. From design to deployment on the Google Play Store, our expert developers focus on building applications that drive engagement and results.
+                Our Android app development services offer a streamlined process for creating native apps optimized for both mobile and desktop platforms. Using advanced tools like Kotlin, Java, and Android Jetpack, Digital Frog delivers customized solutions that stand out in the competitive marketplace. From design to deployment on the Google Play Store, our expert developers focus on building applications that drive engagement and results.
                 </p>
               </div>
             </div>
@@ -90,7 +90,7 @@ const WeCommitSlider = () => {
                 />
                 <h4>IPad App Development Services</h4>
                 <p style={{height:'140px',overflowY:'auto',fontSize:'18px'}} className="hide-scrollbar">
-                Building apps for iPads offers unique opportunities for creating immersive and complex solutions. Cynergy’s team leverages split-screen functionality and large canvas designs to develop apps that perform seamlessly on both iPhones and iPads. With years of expertise in native app development, Cynergy delivers reliable, high-quality apps that empower businesses worldwide.
+                Building apps for iPads offers unique opportunities for creating immersive and complex solutions. Digital Frog's team leverages split-screen functionality and large canvas designs to develop apps that perform seamlessly on both iPhones and iPads. With years of expertise in native app development, Digital Frog delivers reliable, high-quality apps that empower businesses worldwide.
                 </p>
               </div>
             </div>
@@ -103,7 +103,7 @@ const WeCommitSlider = () => {
                 />
                 <h4>iOS App Development</h4>
                 <p style={{height:'140px',overflowY:'auto',fontSize:'18px'}} className="hide-scrollbar">
-                The Apple ecosystem powers a vast global network of users, and Cynergy specializes in creating high-performance native apps for iOS devices. By utilizing the latest Apple programming languages, we build robust architectures that deliver superior functionality and multitasking capabilities. Cynergy’s experienced developers craft seamless, error-free iOS applications tailored to your specific needs, ensuring a flawless user experience.
+                The Apple ecosystem powers a vast global network of users, and Digital Frog specializes in creating high-performance native apps for iOS devices. By utilizing the latest Apple programming languages, we build robust architectures that deliver superior functionality and multitasking capabilities. Digital Frog's experienced developers craft seamless, error-free iOS applications tailored to your specific needs, ensuring a flawless user experience.
                 </p>
               </div>
             </div>

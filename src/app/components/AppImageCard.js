@@ -7,7 +7,7 @@ export default function AppImageCard({heading,imageStyle="",imgUrl="",descriptio
         (
         <div className='d-flex justify-content-center my-3'>
         {imageStyle != 2 && <span></span>}
-          <img src = {imgUrl} alt="image" style={{width:imageStyle == 2?'90px':'',height:imageStyle == 2?'90px':'',}} />
+          <img src = {imgUrl} alt="image" className="service-icon" style={{width:imageStyle == 2?'90px':'',height:imageStyle == 2?'90px':'',}} />
         </div>
       )}
        <h4 style={{zIndex:1000}} className={`cardHeading mt-4 ${isCenter ?'text-center':''}`}>{heading}</h4>

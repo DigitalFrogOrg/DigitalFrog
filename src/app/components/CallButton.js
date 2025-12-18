@@ -6,7 +6,7 @@ import { FaPhone,FaHeadphones,FaSkype,FaWhatsapp } from 'react-icons/fa';
 const CallButton = () => {
   const [isOpen, setIsOpen] = useState(false);
   const divRef = useRef(null);
-  const message = 'Hello%Cynergy%Team';
+  const message = 'Hello%digitalfrog%Team';
 
   const handleOutsideClick = (event) => {
     if (divRef.current && !divRef.current.contains(event.target)) {
@@ -38,7 +38,7 @@ const CallButton = () => {
             <FaHeadphones />
           </div>
           <div>
-            Let's Connect With Cynergy Team
+            Let's Connect With Digital Frog Team
           </div>
         </div>
         <div className='p-3 border-bottom' style={{fontWeight:'bold'}}>
@@ -66,8 +66,8 @@ const CallButton = () => {
           </svg>
           </div>
           <div className='underlineHover'>
-          <a href="mailto:info@cynergystudios.com">
-            info@cynergystudios.com
+          <a href="mailto:info@digitalfrog.com">
+            info@digitalfrog.com
           </a>
           </div>
          </div>
@@ -84,8 +84,8 @@ const CallButton = () => {
             <FaSkype color='#2b90c3' size={20} />
           </div>
           <div className='underlineHover'>
-            <a href="skype:cynergystudios?chat" target='_blank'>
-            Cynergy
+            <a href="skype:digitalfrog?chat" target='_blank'>
+            Digital Frog
             </a>
           </div>
          </div>

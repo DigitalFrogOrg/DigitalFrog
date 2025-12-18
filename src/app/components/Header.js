@@ -391,7 +391,8 @@ function Header() {
               <li><Link href="/contact-us">Contact Us</Link></li>
             </ul>
 
-            <ul className="social-media">
+            <ul className="social-media" style={{  filter : "invert(44%) sepia(95%) saturate(397%) hue-rotate(156deg) brightness(94%) contrast(89%)"
+}}>
               <li><a href="https://www.facebook.com/digitalfrog.io" target="_blank"><FaFacebookF /></a></li>
               <li><a href="https://www.instagram.com/digitalfrog.io?igsh=MTJjejMwb2RiMWgycQ==" target="_blank"><FaInstagram /></a></li>
               <li><a href="https://www.linkedin.com/company/digitalfrog.co/posts/?feedView=all" target="_blank"><FaLinkedinIn /></a></li>

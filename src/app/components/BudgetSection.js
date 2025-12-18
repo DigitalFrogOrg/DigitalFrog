@@ -183,7 +183,7 @@ const handleFileChange = (e) => {
               </h3>
               <div className="mt-4 p-3 rounded budg-sec ">
                 <ul>
-                  <li>
+                  <li style={{color:"black"}}>
                   Rest assured, your concepts are fully protected under our NDA, ensuring complete confidentiality.
                   </li>
                   <li>
@@ -201,8 +201,8 @@ const handleFileChange = (e) => {
                 Alternatively, contact us via phone
                 <a href="tel:13463608407"><span style={{fontWeight:"bold"}}> +1 (346) 360-8407 </span></a>
                 or email
-                <a href="mailto:info@cynergystudios.com">
-                <span style={{fontWeight:"bold"}}> info@cynergystudios.com</span>
+                <a href="mailto:info@digitalfrog.com">
+                <span style={{fontWeight:"bold"}}> info@digitalfrog.com</span>
                 </a>
               </h6>
             </div>
